@@ -1,19 +1,19 @@
 import styled from "styled-components";
 
 export const ServicesContainer = styled.div`
-    height: 800px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     background: #4a0033;
+Padding: 10px;
 
     @media screen and (max-width: 768px){
-        height: 1100px;
+
     }
 
     @media screen and (max-width: 480px){
-        height: 1300px;
+
     }
 `;
 
@@ -25,6 +25,7 @@ export const ServicesWrapper = styled.div`
     align-items: center;
     grid-gap: 16px;
     padding: 0 50px;
+	overflow-y:hidden;
 
     @media screen and (max-width: 1000px){
         grid-template-columns: 1fr 1fr;
@@ -64,7 +65,8 @@ export const ServicesIcon = styled.img`
 export const ServicesH1 = styled.h1`
     font-size: 2.5rem;
     color: #fff;
-    margin-bottom: 64px;
+    margin-bottom: 44px;
+margin-left: 30px;
 
     @media screen and (max-width: 480px){
         font-size: 2rem;
@@ -79,6 +81,28 @@ export const ServicesH2 = styled.h2`
 
 export const ServicesP = styled.p`
     font-size: 1rem;
-    text-align: center;
+	color: white;
+	margin-bottom: 80px;
+	width:60%;
+	margin-left: 30px;
 `;
 
+export const FragmentQuote = styled.div`
+	color: white;
+	display: flex;
+	justify-content:center;
+	width: 100%;
+	  font-family: serif;
+  font-style: italic;
+`;
+
+export const FragmentDiv = styled.div`
+	width: 70%;
+	margin: 20px;
+`;
+
+export const FragmentCite = styled.div`
+float:right;
+font-family: serif;
+  font-style: italic;
+`;
