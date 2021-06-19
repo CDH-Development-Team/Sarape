@@ -9,6 +9,9 @@ import Icon7 from '../../textiles_png/3_textiles/AT-2020-16-5.png';
 import Icon8 from '../../textiles_png/3_textiles/AT-2020-16-6.png';
 import Icon9 from '../../textiles_png/3_textiles/AT-2020-16-7.png';
 
+
+import {fragmentOne, fragmentTwo, fragmentThree, fragmentFour, fragmentFive, fragmentSix} from './Fragment/FragmentsData.js';
+
 import { 
     ServicesContainer, 
     ServicesH1, 
@@ -20,6 +23,8 @@ import {
 	FragmentQuote,
 	FragmentDiv,
 	FragmentCite } from './ServicesElements';
+	
+import Fragment from './Fragment/index.js';
 
 const Services = () => {
     return (
@@ -69,6 +74,12 @@ const Services = () => {
 Porfirio Gutiérrez
 </FragmentCite>
 </FragmentDiv></FragmentQuote>
+<Fragment {...fragmentOne}/>
+<Fragment {...fragmentTwo}/>
+<Fragment {...fragmentThree}/>
+<Fragment {...fragmentFour}/>
+<Fragment {...fragmentFive}/>
+<Fragment {...fragmentSix}/>
         </ServicesContainer>
     )
 }

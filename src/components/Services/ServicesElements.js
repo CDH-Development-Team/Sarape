@@ -106,3 +106,8 @@ float:right;
 font-family: serif;
   font-style: italic;
 `;
+
+export const FragmentSeries = styled.div`
+
+
+`;
