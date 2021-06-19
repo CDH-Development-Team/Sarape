@@ -7,6 +7,7 @@ export const ServicesContainer = styled.div`
     justify-content: center;
     background: #4a0033;
 Padding: 10px;
+padding-top: 80px;
 
     @media screen and (max-width: 768px){
 
