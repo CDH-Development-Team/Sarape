@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-import HeroSection from '../components/HeroSection';
-import InfoSection from '../components/InfoSection';
-import { tourismObjOne, tourismObjTwo, tourismObjThree, tourismObjFour } from '../components/InfoSection/Data';
-import Services from '../components/Services';
+import TourismSection from '../components/TourismSection';
+import { tourismObjOne, tourismObjTwo, tourismObjThree, tourismObjFour } from '../components/TourismSection/Data';
 
 const Tourism = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,11 +15,10 @@ const Tourism = () => {
         <>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle} />
-            <HeroSection />
-            <InfoSection {...tourismObjOne}/>
-            <InfoSection {...tourismObjTwo}/>
-            <InfoSection {...tourismObjThree}/>
-            <InfoSection {...tourismObjFour}/>
+            <TourismSection {...tourismObjOne}/>
+            <TourismSection {...tourismObjTwo}/>
+            <TourismSection {...tourismObjThree}/>
+            <TourismSection {...tourismObjFour}/>
         </>
     )
 }
