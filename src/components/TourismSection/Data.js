@@ -1,5 +1,8 @@
 import img1 from "../../images/tourismInMexico.jpg";
 import img2 from "../../images/candids.jpg";
+import img3 from "../../images/8425.jpg";
+import img4 from "../../images/educational_textile.jpg";
+import img5 from "../../images/8-1_85_185_50A_crop.jpg";
 
 export const tourismObjOne = {
     id : 'SectionOne',
@@ -12,7 +15,7 @@ export const tourismObjOne = {
     description2:"As tourism to Mexico increased, many visitors purchased these colorful sarapes as souvenirs. With demand on the rise, sarape-manufacturing plants were established. Through the use of electric-powered looms, synthetic dyes, and acrylic yarns, production time was shortened and the number of textiles increased. As a result, by the 1930s, there was a drastic decline in handwoven sarapes and the use of natural-dyed yarns.",
     buttonLabel: "",
     imgStart: false,
-    img: img1,
+    img: img5,
     alt: 'Paper',
     dark: true,
     primary: true,
@@ -30,7 +33,7 @@ export const tourismObjTwo = {
     description2:"The attire of the two male figures wrapped in Saltillo sarapes indicates they are part of the upper class. The vaquero carries a sarape rolled up behind his saddle. ",
     buttonLabel: "",
     imgStart: true,
-    img: img1,
+    img: img2,
     alt: 'Paper',
     dark: true,
     primary: true,
