@@ -78,7 +78,17 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
     max-width: 440px;
-    margin-bottom: 35px;
+    margin-bottom: 5%;
+    padding-top: 35%;
+    font-size: 18px;
+    line-height: 24px;
+    color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
+`;
+
+export const Caption = styled.p`
+    max-width: 440px;
+    margin-bottom: 5%;
+    padding-top: 1%;
     font-size: 18px;
     line-height: 24px;
     color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
@@ -98,5 +108,6 @@ export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
+    padding-top: 4%;
 `;
 

@@ -1,20 +1,22 @@
 import React from 'react';
 import { Button } from "../ButtonElement";
 
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img } from './TourismElements';
+import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img, Artifact, Caption } from './TourismElements';
 
-const TourismSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText,description,description2, buttonLabel, img,alt, primary, dark, dark2}) => {
+const TourismSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText,description,description2,description3, buttonLabel, img,alt, artifact, artifactAlt, artifactInfo, primary, dark, dark2}) => {
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
                 <InfoWrapper>
+                <TopLine>{topLine}</TopLine>
                     <InfoRow imgStart={imgStart}>
                         <Column1>
                             <TextWrapper>
-                                <TopLine>{topLine}</TopLine>
                                 <Heading lightText={lightText}>{headline}</Heading>
-                                <Subtitle darkText={darkText}>{description}</Subtitle>
-                                <Subtitle darkText={darkText}>{description2}</Subtitle>
+                                <ImgWrap>
+                                    <Img src={artifact} alt={artifactAlt}/>
+                                    <Caption darkText={darkText}>{artifactInfo}</Caption>
+                                </ImgWrap>
                                 {/* <BtnWrap>
                                     <Button to="home"
                                     smooth={true}
@@ -31,7 +33,10 @@ const TourismSection = ({lightBg, id, imgStart, topLine, lightText, headline, da
                         </Column1>    
                         <Column2>
                             <ImgWrap>
+                                <Subtitle darkText={darkText}>{description}</Subtitle>
                                 <Img src={img} alt={alt}/>
+                                <Caption darkText={darkText}>{description2}</Caption>
+                                <Caption darkText={darkText}>{description3}</Caption>
                             </ImgWrap>
                         </Column2>
                     </InfoRow>    
