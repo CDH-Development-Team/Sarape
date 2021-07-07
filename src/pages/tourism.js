@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-import TourismSection from '../components/TourismSection';
+import TourismSection from '../components/TourismSection/tourism.js';
 import { tourismObjOne, tourismObjTwo, tourismObjThree, tourismObjFour } from '../components/TourismSection/Data';
 
 const Tourism = () => {
