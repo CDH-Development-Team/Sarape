@@ -35,6 +35,11 @@ const Navbar = ({ toggle }) => {
                                 Natural Dyeing
                             </NavLinks>
                         </NavItem>
+                        <NavItem>
+                            <NavLinks to="tourism">
+                                Tourism
+                            </NavLinks>
+                        </NavItem>
                     </NavMenu>
                     {/* <NavBtn>
                         <NavBtnLink to="/signin">Sign In</NavBtnLink>
