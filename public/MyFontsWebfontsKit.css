@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4101245, 2021-06-10T14:21:03-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: CancioneITCStd by ITC
+ * URL: https://www.myfonts.com/fonts/itc/cancione/cancione/
+ * Copyright: Copyright 1997 International Typeface Corporation. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2021 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3e947d");
+  
+@font-face {
+  font-family: "CancioneITCStd";
+  src: url('webFonts/CancioneITCStd/font.woff2') format('woff2'), url('webFonts/CancioneITCStd/font.woff') format('woff');
+}
+

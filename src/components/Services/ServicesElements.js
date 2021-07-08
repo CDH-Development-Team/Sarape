@@ -6,9 +6,10 @@ export const ServicesContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     background: #4a0033;
-Padding: 10px;
-padding-top: 80px;
-
+    // Padding: 10px;
+    padding-top: 80px;
+    align-items: center;
+    
     @media screen and (max-width: 768px){
 
     }
@@ -26,7 +27,7 @@ export const ServicesWrapper = styled.div`
     align-items: center;
     grid-gap: 16px;
     padding: 0 50px;
-	overflow-y:hidden;
+	overflow-y: hidden;
 
     @media screen and (max-width: 1000px){
         grid-template-columns: 1fr 1fr;
@@ -67,7 +68,7 @@ export const ServicesH1 = styled.h1`
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 44px;
-margin-left: 30px;
+    margin-left: 30px;
 
     @media screen and (max-width: 480px){
         font-size: 2rem;
@@ -84,7 +85,8 @@ export const ServicesP = styled.p`
     font-size: 1rem;
 	color: white;
 	margin-bottom: 80px;
-	width:60%;
+	width:40%;
+	font-family: serif;
 	margin-left: 30px;
 `;
 
@@ -93,19 +95,20 @@ export const FragmentQuote = styled.div`
 	display: flex;
 	justify-content:center;
 	width: 100%;
-	  font-family: serif;
-  font-style: italic;
+	font-family: serif;
+    font-style: italic;
 `;
 
 export const FragmentDiv = styled.div`
 	width: 70%;
 	margin: 20px;
+    font-family: cursive;
 `;
 
 export const FragmentCite = styled.div`
-float:right;
-font-family: serif;
-  font-style: italic;
+    float: right;
+    font-family: cursive;
+    font-style: italic;
 `;
 
 export const FragmentSeries = styled.div`

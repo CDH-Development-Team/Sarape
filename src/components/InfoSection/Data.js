@@ -1,7 +1,7 @@
 import img from "../../images/porfirio.jpg";
 import img2 from "../../images/svg-2.svg";
 import img3 from "../../images/svg-3.svg";
-import img4 from "../../images/svg-4.svg";
+import img4 from "../../images/pintura.jpg";
 import img5 from "../../images/svg-5.svg";
 import img6 from "../../images/tourismInMexico.jpg";
 import img7 from "../../images/candids.jpg";
@@ -9,20 +9,21 @@ import img7 from "../../images/candids.jpg";
 
 export const homeObjOne = {
     id : 'about',
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
     topLine: '',
     headline: "",
     description: "Join Zapotec textile artist Porfirio Gutiérrez and ASM curators to learn about the iconic Mexican Saltillo sarape’s history, regional influence, and contemporary manifestations. Discover how Indigenous textiles embody the interconnection of peoples, traditions, arts, culture, and environmental stewardship.",
     description2: "For thousands of years, Indigenous people of the Americas have woven textiles on backstrap looms using local materials, including cotton, other plant fibers, and animal hair. In Mexico, as in other parts of the Americas, weaving practices were further shaped by Spanish colonization, which introduced sheep and the treadle loom. The distinctive Saltillo sarape design developed out of this early colonial period. Today, Indigenous and Hispanic weavers in Mexico and the southwestern United States continue to interpret the Saltillo sarape’s designs.",    
+    description3: "A sarape is a woolen blanket woven longer than it is wide. Named for the town of Saltillo, where they were popular trade items from the 1600s to the 1800s, Saltillo sarapes are distinguished by a central diamond design or a circular medallion on a contrasting background enclosed by a border design. Traditionally, they are woven on treadle looms with wool yarn colored by natural dyes derived from plants, such as indigo (Indigofera tinctoria), and from cochineal, an insect.",
     buttonLabel: "",
     imgStart: false,
     img: img,
     alt: 'Car',
-    dark: false,
-    primary: false,
-    darkText: true
+    dark: true,
+    primary: true,
+    darkText: false
 };
 
 export const homeObjTwo = {
@@ -54,6 +55,43 @@ export const homeObjThree = {
     imgStart: true,
     img: img3,
     alt: 'Paper',
+    dark: true,
+    primary: true,
+    darkText: false
+};
+
+export const homeObjFour = {
+    id : 'about',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: '',
+    headline: "THE LOOM",
+    description: "Spain imposed the European guild system on textile production, which dictated who could perform certain tasks. As a result, men were employed as weavers in the obrajes (textile workshops). They used European treadle looms with foot pedals to produce fabric for export, for domestic use, and to fulfill tribute payments to the Spanish authorities. The Aztecs had also demanded tribute in the form of textiles from those they conquered. ",
+    description2: " The treadle looms could quickly produce wide textiles that had tighter warp tension, which is important for creating complicated designs like those in Saltillo sarapes. In the obrajes, yarn was spun on European-style spinning wheels, which further increased production speed. Indigenous women, who traditionally were the weavers, continued to use hand spindles for spinning the yarns and the backstrap loom to weave their own clothing and household textiles.",    
+    buttonLabel: "",
+    imgStart: false,
+    img: img4,
+    alt: 'Car',
+    dark: true,
+    primary: true,
+    darkText: false
+};
+
+
+export const homeObjFive = {
+    id : 'about',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: '',
+    headline: "",
+    description: "",
+    description2: "",    
+    buttonLabel: "",
+    imgStart: false,
+    img: img,
+    alt: 'Car',
     dark: true,
     primary: true,
     darkText: false

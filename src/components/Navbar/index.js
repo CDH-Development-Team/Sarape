@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaBars } from "react-icons/fa"
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements';
-import logo from "../../images/logo.png"
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, NavP, NavP2, NavDiv} from './NavbarElements';
+import logo from "../../images/logo.png";
 
 const Navbar = ({ toggle }) => {
     return (
@@ -9,37 +9,35 @@ const Navbar = ({ toggle }) => {
             <Nav>
                 <NavbarContainer>
                     <NavLogo to='/'>
-                        <img style={{height: 2.2+"em"}} src={logo} alt="logo" />
+                        <img style={{height: 2+"em"}} src={logo} alt="logo"/>
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
-                        <NavItem>
-                            <NavLinks to="about">
-                                History & Geography
+                        {/* <NavItem> */}
+                            <NavLinks to="/index">
+                                <NavDiv>
+                                    <NavP>WRAPPED IN COLOR</NavP>
+                                    <NavP2>LEGACIES OF THE MEXICAN SARAPE</NavP2>
+                                </NavDiv>
                             </NavLinks>
-                        </NavItem>
-                        <NavItem>
+                        {/* </NavItem> */}
+                        {/* <NavItem>
                             <NavLinks to="discover">
-                                Porfirio Gutierrez
+                            Toolkit
                             </NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to="services">
-                                Family & Philosophy
+                            History & Geography
                             </NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to="signup">
-                                Natural Dyeing
+                            Contact
                             </NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to="tourism">
-                                Tourism
-                            </NavLinks>
-                        </NavItem>
+                        </NavItem> */}
                     </NavMenu>
                     {/* <NavBtn>
                         <NavBtnLink to="/signin">Sign In</NavBtnLink>
