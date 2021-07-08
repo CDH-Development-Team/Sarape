@@ -4,6 +4,7 @@ import Home from "./pages";
 import fragments from "./pages/fragments.js";
 import SigninPage from "./pages/signin";
 import Tourism from "./pages/tourism";
+import GeographyPage from "./pages/geography.js";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
 	<Route path = "/fragments" component={fragments} exact />
         <Route path = "/signin" component={SigninPage} exact />
         <Route path = "/tourism" component={Tourism} exact />
+        <Route path = "/geography" component={GeographyPage} exact />
       </Switch>
     </Router>
   );
