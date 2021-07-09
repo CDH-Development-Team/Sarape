@@ -1,7 +1,7 @@
 import img1 from "../../images/tourismInMexico.jpg";
 import img2 from "../../images/candids.jpg";
-import img3 from "../../textiles_png/8_textiles/8.2_8245.png"
-import img4 from "../../textiles_png/8_textiles/8.3_educational_textile.png";
+import img3 from "../../textiles_png/8_textiles/8425.jpg";
+import img4 from "../../textiles_png/8_textiles/educational_textile.jpg";
 import img5 from "../../images/8-1_85_185_50A_crop.jpg";
 
 export const tourismObjOne = {
