@@ -8,7 +8,7 @@ export const GeographyContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     background: #4a0033;
-Padding: 10px;
+Padding: 0px;
 padding-top: 80px;
 
     @media screen and (max-width: 768px){
@@ -42,7 +42,8 @@ column-count:3;
 
  export const GeographyEntry = styled.div`
 height: 100%;
-margin-top:50px;
+margin-top:100px;
+padding: 10px;
 `;
 
 export const GeographyEntryImg = styled.div`
@@ -87,4 +88,28 @@ export const Statue = styled.div`
 
 export const StatueImg = styled.div`
 
+`;
+
+export const BackgroundDiv = styled.div`
+position: relative;
+height: 90vw;
+`;
+
+export const BackgroundContentLeft=styled.div`
+position: absolute;
+bottom:10%;
+width: 30%;
+left:5%;
+`;
+export const BackgroundContentRight=styled.div`
+position: absolute;
+bottom:20%;
+right:5%;
+Width: 30%;
+`;
+
+export const BackgroundImg=styled.div`
+position:absolute;
+top:0;
+left:0;
 `;
