@@ -9,33 +9,37 @@ const Sidebar = ({toggle, isOpen}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="about" onClick={toggle}>
-                        Section 1
+                    <SidebarLink to="/" onClick={toggle}>
+                        Home
                     </SidebarLink>
-                    <SidebarLink to="discover" onClick={toggle}>
-                        Section 2
+                    <SidebarLink to="/geography" onClick={toggle}>
+                        Geography
                     </SidebarLink>
-                    <SidebarLink to="services" onClick={toggle}>
-                        Section 3
+                    <SidebarLink to="/history" onClick={toggle}>
+                        History
                     </SidebarLink>
-                    <SidebarLink to="signup" onClick={toggle}>
-                        Section 4
+                    <SidebarLink to="/porifirio" onClick={toggle}>
+                        Porifirio
                     </SidebarLink>        
-                    <SidebarLink to="discover1" onClick={toggle}>
-                        Section 5
+                    <SidebarLink to="/dyeing" onClick={toggle}>
+                        Dyeing
                     </SidebarLink>
-                    <SidebarLink to="services1" onClick={toggle}>
-                        Section 6
+                    <SidebarLink to="/family" onClick={toggle}>
+                        Family
                     </SidebarLink>
-                    <SidebarLink to="signup1" onClick={toggle}>
-                        Section 7
+                    <SidebarLink to="/sarapeSyles" onClick={toggle}>
+                        Sarape Styles
+                    </SidebarLink>  
+                    <SidebarLink to="/saltillo" onClick={toggle}>
+                        Saltillo Influences
+                    </SidebarLink> 
+                    <SidebarLink to="/tourism" onClick={toggle}>
+                        Tourism
+                    </SidebarLink> <br />
+                    <SidebarLink to="/credits" onClick={toggle}>
+                        Credits
                     </SidebarLink>                                                      
                 </SidebarMenu>
-                <SideBtnWrap>
-                    <SidebarRoute to="/signin">
-                        Sign In
-                    </SidebarRoute>
-                </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>
     );
