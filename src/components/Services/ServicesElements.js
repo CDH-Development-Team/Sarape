@@ -86,7 +86,8 @@ export const ServicesP = styled.p`
 	color: white;
 	margin-bottom: 80px;
 	width:40%;
-	font-family: serif;
+    font-family: myriad-pro,sans-serif;
+    font-weight: 10;
 	margin-left: 30px;
 `;
 
@@ -95,19 +96,21 @@ export const FragmentQuote = styled.div`
 	display: flex;
 	justify-content:center;
 	width: 100%;
-	font-family: serif;
-    font-style: italic;
+    font-family: myriad-pro-condensed,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1rem;
 `;
 
 export const FragmentDiv = styled.div`
 	width: 70%;
 	margin: 20px;
-    font-family: cursive;
+    font-family: Lucida Handwriting;
 `;
 
 export const FragmentCite = styled.div`
     float: right;
-    font-family: cursive;
+    font-family: Lucida Handwriting;
     font-style: italic;
 `;
 
