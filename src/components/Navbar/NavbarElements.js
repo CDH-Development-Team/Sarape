@@ -6,7 +6,6 @@ import { Link as LinkS} from "react-scroll";
 export const Nav = styled.nav`
     background: rgba(173, 0, 66,1);
     height: 80px;
-    margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,13 +37,15 @@ export const NavLogo = styled(LinkR)`
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    // margin-left: 24px;
+    margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
+    margin: 0 auto;
 `;
 
 export const MobileIcon = styled.div`
-    display: none;
+    color: #fff;
+    margin: auto 0;
 
     // @media screen and (max-width: 768px) {
         display: block;
@@ -133,14 +134,15 @@ export const NavBtnLink = styled(LinkR)`
     }
 `;
 
-export const NavP = styled.p`
+export const NavP = styled.div`
     font-size: 40px;
 `;
 
-export const NavP2 = styled.p`
+export const NavP2 = styled.div`
     font-size: 22px;
+    margin-right: 4rem;
 `;
 
 export const NavDiv = styled.div`
-
+    margin: 0 auto;
 `;

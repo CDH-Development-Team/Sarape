@@ -11,37 +11,22 @@ const Navbar = ({ toggle }) => {
                     <NavLogo to='/'>
                         <img style={{height: 2+"em"}} src={logo} alt="logo"/>
                     </NavLogo>
+                    <NavMenu>
+                        <NavLinks to="/index">
+                            <NavDiv>
+                                <NavP>WRAPPED IN COLOR</NavP>
+                                <NavP2>LEGACIES OF THE MEXICAN SARAPE</NavP2>
+                            </NavDiv>
+                        </NavLinks>
+                    </NavMenu>
+                    <NavLinks to="/index">
+                            <NavDiv>
+                                <NavP2>About This Exhibit</NavP2>
+                            </NavDiv>
+                        </NavLinks>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
-                    <NavMenu>
-                        {/* <NavItem> */}
-                            <NavLinks to="/index">
-                                <NavDiv>
-                                    <NavP>WRAPPED IN COLOR</NavP>
-                                    <NavP2>LEGACIES OF THE MEXICAN SARAPE</NavP2>
-                                </NavDiv>
-                            </NavLinks>
-                        {/* </NavItem> */}
-                        {/* <NavItem>
-                            <NavLinks to="discover">
-                            Toolkit
-                            </NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to="services">
-                            History & Geography
-                            </NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to="signup">
-                            Contact
-                            </NavLinks>
-                        </NavItem> */}
-                    </NavMenu>
-                    {/* <NavBtn>
-                        <NavBtnLink to="/signin">Sign In</NavBtnLink>
-                    </NavBtn> */}
                 </NavbarContainer>
             </Nav> 
         </>
