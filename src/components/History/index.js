@@ -14,7 +14,7 @@ const History = () =>{
     return(
 <>
  <GeographyContainer>
- <img src={headerImg} width={'100%'}></img>
+ <div  style={{background:"white", height:"50%"}}>ds{/*<img src={headerImg} style={{width:"100%"}}></img>*/}</div>
 <br/><br/>
 <h1> History and Geography</h1>
 <BackgroundDiv>

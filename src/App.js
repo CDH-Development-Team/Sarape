@@ -8,6 +8,7 @@ import GeographyPage from "./pages/geography.js";
 import HistoryPage from "./pages/history.js";
 import Section7 from "./pages/section7.js"
 
+
 function App() {
   return (
     <Router >

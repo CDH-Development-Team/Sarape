@@ -1,15 +1,13 @@
 import styled from "styled-components";
-
 export const GeographyContainer = styled.div`
 
     display: flex;
     color:white;
-    height:100%;
     flex-direction: column;
     justify-content: center;
     background: #4a0033;
-Padding: 0px;
-padding-top: 80px;
+    Padding: 0px;
+
 
     @media screen and (max-width: 768px){
 
@@ -113,3 +111,31 @@ position:absolute;
 top:0;
 left:0;
 `;
+
+export const GeographyMosaicParent = styled.div` 
+    display: grid; 
+    grid-template-columns: repeat(18, 1fr); 
+    grid-template-rows: repeat(8, 1fr); 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    height: ${({height}) => (height)+"px"};
+    width: ${({width}) => (width)+"px"};
+
+    `;
+    export const GeographyMosaic1 = styled.div` grid-area: 1 / 1 / 4 / 3;`; 
+    export const GeographyMosaic2 = styled.div` grid-area: 1 / 3 / 4 / 7; `;
+    export const GeographyMosaic3 = styled.div` grid-area: 1 / 7 / 3 / 12;`; 
+    export const GeographyMosaic4 = styled.div` grid-area: 1 / 12 / 3 / 16;`;
+    export const GeographyMosaic5 = styled.div` grid-area: 1 / 16 / 3 / 19;`;
+    export const GeographyMosaic6 = styled.div` grid-area: 4 / 1 / 6 / 4; `;
+    export const GeographyMosaic7 = styled.div`grid-area: 6 / 1 / 9 / 4; `;
+    export const GeographyMosaic8 = styled.div` grid-area: 4 / 4 / 6 / 7;`;
+    export const GeographyMosaic9 = styled.div` grid-area: 6 / 4 / 9 / 7;`;
+    export const GeographyMosaic10 = styled.div `grid-area: 3 / 7 / 6 / 12;`;
+    export const GeographyMosaic11 = styled.div `grid-area: 6 / 7 / 8 / 10;`;
+    export const GeographyMosaic12 = styled.div`grid-area: 6 / 10 / 9 / 12;`; 
+    export const GeographyMosaic13 = styled.div`grid-area: 8 / 7 / 9 / 10; `;
+    export const GeographyMosaic14 = styled.div`grid-area: 3 / 12 / 6 / 16; `;
+    export const GeographyMosaic15 = styled.div`grid-area: 6 / 12 / 9 / 16; `;
+    export const GeographyMosaic16 = styled.div `grid-area: 3 / 16 / 7 / 19;`;
+    export const GeographyMosaic17 = styled.div `grid-area: 7 / 16 / 9 / 19;`;

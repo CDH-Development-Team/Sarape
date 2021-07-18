@@ -10,11 +10,16 @@ import Icon8 from '../../images/section 2/8.png';
 import Icon9 from '../../images/section 2/9.png';
 import Icon10 from '../../images/section 2/10.png';
 import Icon11 from '../../images/section 2/11.png';
+import Color1 from '../../images/section 2/color1.png'
 import headerImg from '../../images/section 2/header.jpg';
 
-import { GeographyContainer, MosaicWrapper, MosaicImg, HeaderText, GeographyEntry, GeographyEntryText, GeographyEntryImg, GeographyEntryDescription, GeographyStatues, Statue, StatueImg} from './geographyElements.js';
 
+
+import { GeographyContainer, MosaicWrapper, MosaicImg, HeaderText, GeographyEntry, GeographyEntryText, GeographyEntryImg, GeographyEntryDescription, GeographyStatues, Statue, StatueImg} from './geographyElements.js';
+import { GeographyMosaicParent, GeographyMosaic1, GeographyMosaic2, GeographyMosaic3, GeographyMosaic4, GeographyMosaic5, GeographyMosaic6, GeographyMosaic7, GeographyMosaic8, GeographyMosaic9, GeographyMosaic10, GeographyMosaic11, GeographyMosaic12, GeographyMosaic13, GeographyMosaic14, GeographyMosaic15, GeographyMosaic16, GeographyMosaic17 } from './geographyElements.js';
+import useWindowDimensions from './dimensions';
 const Geography = () => {
+    const {height, width} = useWindowDimensions();
     return (
         <>
         <GeographyContainer>
@@ -22,8 +27,69 @@ const Geography = () => {
         <MosaicImg width={'22%'} top={'0'} left={'0'}>
             <img src={Icon4} width={'100%'}/>
         </MosaicImg>
-        </MosaicWrapper> */}
-<img src={headerImg} width={'100%'}></img>
+        </MosaicWrapper> 
+        (width-(width%18))/18*8
+        (width-(width%18))
+        */}
+        
+<GeographyMosaicParent height={(width-(width%18))/18*8} width={(width-(width%18))}>
+    <GeographyMosaic1>
+        <img src={Color1} height={"100%"} width={"100%"}></img>
+    </GeographyMosaic1>
+    <GeographyMosaic2>
+        <img src={Icon2} height={"100%"} width={"100%"}></img>
+    </GeographyMosaic2>
+    <GeographyMosaic3>
+    <img src={Color1} width ={"100%"} height={"100%"}></img>
+    </GeographyMosaic3>
+    <GeographyMosaic4>
+    <img src={Icon6} height={"100%"} width={"100%"}></img>    
+    </GeographyMosaic4>
+    <GeographyMosaic5>
+        <img src={Icon7} height={"100%"} width={"100%"}></img>
+    </GeographyMosaic5>
+<GeographyMosaic6>
+    <img src={Icon1} height={"100%"} width={"100%"}></img>
+</GeographyMosaic6>
+
+<GeographyMosaic7>
+<img src={Color1} height={"100%"} width={"100%"}></img>
+</GeographyMosaic7>
+<GeographyMosaic8>
+<img src = {Color1} height={"100%"} width={"100%"}></img>
+</GeographyMosaic8>
+<GeographyMosaic9>
+<img src = {Color1} height={"100%"} width={"100%"}></img>
+</GeographyMosaic9>
+<GeographyMosaic10>
+<img src = {Icon3} height={"100%"} width={"100%"}></img>
+</GeographyMosaic10>
+<GeographyMosaic11>
+<img src = {Icon4} height={"100%"} width={"100%"}></img>
+</GeographyMosaic11>
+<GeographyMosaic12>
+<img src = {Color1} height={"100%"} width={"100%"}></img>
+</GeographyMosaic12>
+<GeographyMosaic13>
+<img src = {Icon3} height={"100%"} width={"100%"}></img>
+</GeographyMosaic13>
+<GeographyMosaic14>
+<img src = {Color1} height={"100%"} width={"100%"}></img>
+</GeographyMosaic14>
+<GeographyMosaic15>
+<img src = {Icon5} height={"100%"} width={"100%"}></img>
+</GeographyMosaic15>
+<GeographyMosaic16>
+<img src = {Icon8} height={"100%"} width={"100%"}></img>
+</GeographyMosaic16>
+<GeographyMosaic17>
+<img src = {Color1} height={"100%"} width={"100%"}></img>
+</GeographyMosaic17>
+
+
+    
+    
+</GeographyMosaicParent>
 <br/><br/>
 <h1> History and Geography</h1>
 <HeaderText>The sarape has been woven in many places throughout Mexico, but is primarily associated with the town of Saltillo, in the state of Coahuila, in northeastern Mexico. The Saltillo sarape grew out of Indigenous weaving traditions and designs combined with Spanish weaving technology and influence. In 1519, upon entering Mexico, Spanish military leader Hernan Cortés and his soldiers formed an alliance with the Tlaxcalan Indians of central Mexico to take over the vast Aztec empire. After the defeat of the Aztecs, the Tlaxcalans were enlisted to help with Spain’s colonization efforts. In 1591, four hundred Tlaxcalan families were sent northward to help colonize the areas dominated by the Chichimeca Indians. In return, the Tlaxcalans were awarded greater privileges and their own area, called Barrio San Esteban de Nuevo Tlaxcala, which would become Saltillo. Saltillo grew to be an important center for trade, linking central Mexico with northern portions of Mexico and Texas. Continuing into the early 1800s, Saltillo held a bustling, annual trade fair, where Saltillo’s agrarian supplies, as well as sarapes, were traded alongside goods from various areas of Mexico and from Europe and Asia. During this time, Spanish traders sent merchandise acquired in Asia to Europe via Mexico. These items likely inspired new artistic ideas and possibly influenced the distinctive Saltillo sarape design. Saltillo sarapes, prized for their fineness, durability, and appealing designs, became widely traded throughout the Americas and abroad.</HeaderText>
