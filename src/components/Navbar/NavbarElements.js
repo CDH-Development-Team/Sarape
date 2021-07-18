@@ -40,10 +40,12 @@ export const NavLogo = styled(LinkR)`
     // margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
+    margin: 0 auto;
 `;
 
 export const MobileIcon = styled.div`
-    display: none;
+    color: #fff;
+    margin: auto 0;
 
     @media screen and (max-width: 768px) {
         display: block;
@@ -132,14 +134,14 @@ export const NavBtnLink = styled(LinkR)`
     }
 `;
 
-export const NavP = styled.p`
+export const NavP = styled.div`
     font-size: 40px;
 `;
 
-export const NavP2 = styled.p`
+export const NavP2 = styled.div`
     font-size: 22px;
 `;
 
 export const NavDiv = styled.div`
-
+    margin: 0 auto;
 `;
