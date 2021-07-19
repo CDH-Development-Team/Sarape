@@ -1,6 +1,6 @@
 import img1 from "../../textiles_png/7_textiles/seven_other/7C4_Kathy Marianito in traditional garb.png"
 
-export const sevenObj = {
+export const sixObj = {
     id : 'about',
     lightBg: false,
     lightText: true,
@@ -15,10 +15,6 @@ export const sevenObj = {
     imgdesc: "",
     img: "Add IMAGE HERE",
     alt: 'One',
-    imgdesc2: "Regional Weaving Centers",
-    img2: "Add IMAGE HERE", 
-    alt2: 'One',
-    imgdesc3: "",
     dark: true,
     primary: true,
     darkText: false,

@@ -32,46 +32,30 @@ const Section6 = () => {
             <ServicesWrapper>
                 <ServicesCard>
                     <ServicesIcon onClick={openModal} src={img2}/>
-                    {/* <ServicesH2>Reduce Expenses</ServicesH2>
-                    <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP> */}
                     <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {img2} />
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon onClick={openModal} src={img3}/>
-                    {/* <ServicesH2>Virtual offices</ServicesH2> */}
-                    {/* <ServicesP>You can access our platform from anywhere.</ServicesP> */}
                     <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {img3} />
                     <ServicesIcon onClick={openModal} src={img4}/>
-                    {/* <ServicesH2>Premium Benefits</ServicesH2> */}
-                    {/* <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
                     <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {img4} />
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon onClick={openModal} src={img5}/>
-                    {/* <ServicesH2>Premium Benefits</ServicesH2> */}
-                    {/* <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
                     <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {img5} />
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon onClick={openModal} src={img6}/>
-                    {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
                     <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {img6} />
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon onClick={openModal} src={img7}/>
-                    {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
                     <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {img7} />  
                     <ServicesIcon onClick={openModal} src={img8}/>
-                    {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
                     <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {img8} />                   
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon onClick={openModal} src={img9}/>
-                    {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
                     <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {img9} />                    
                 </ServicesCard>
             </ServicesWrapper>

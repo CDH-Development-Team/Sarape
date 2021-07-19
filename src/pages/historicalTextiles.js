@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import HistoricalSection from '../components/Section7/section7index';
-import { sevenObj, sevenObjOne, sevenObjTwo, sevenObjThree, sevenObjFour, sevenObjFive, sevenObjSix, sevenObjSeven} from '../components/Section7/section7-data';
+import { sixObj } from '../components/HistoricalTextiles/historicalData';
 import Section6 from '../components/Services/section6';
 
 
