@@ -13,7 +13,7 @@ export const sixObj = {
     block: true,
     imgStart: false,
     imgdesc: "",
-    img: "Add IMAGE HERE",
+    img: img1,
     alt: 'One',
     dark: true,
     primary: true,
