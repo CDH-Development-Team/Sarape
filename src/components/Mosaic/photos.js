@@ -1,31 +1,55 @@
+import img from "../../images/5A3_Familia.jpg";
+import img1 from "../../images/5B4_Bobbins by Craig Holmes.jpg"
+import img2 from "../../images/5B2_08-09-18 The Big Boys a.jpg"
+import img3 from "../../images/5A1_Parents by Javier Lazo.jpg"
+import img4 from "../../images/By Alana Coghlan.jpg"
+import img5 from "../../images/Teotitlan shoot-by nikhol esteras.jpg"
+import img6 from "../../images/5A2_Porfirio_Gutierrez_by_recker.jpg"
+import img7 from "../../images/PGOAX82718-0242.jpg"
+
 export const photos = [
     {
-      src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+      src: img1,
       width: 1,
       height: 1
     },
     {
-      src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
+      src: img1,
       width: 1,
       height: 1
     },
     {
-      src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
+      src: img7,
       width: 1,
       height: 1
     },
     {
-      src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
+      src: img6,
       width: 1,
       height: 1
     },
     {
-      src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
+      src: img6,
       width: 1,
       height: 1
     },
     {
-      src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
+      src: img5,
+      width: 1,
+      height: 1
+    },
+    {
+      src: img6,
+      width: 1,
+      height: 1
+    },
+    {
+      src: img7,
+      width: 1,
+      height: 1
+    },
+    {
+      src: img,
       width: 1,
       height: 1
     },
@@ -40,47 +64,22 @@ export const photos = [
       height: 1
     },
     {
-      src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+      src: img,
       width: 1,
       height: 1
     },
     {
-      src: "https://source.unsplash.com/XiDA78wAZVw/600x799",
+      src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
       width: 1,
       height: 1
     },
     {
-      src: "https://source.unsplash.com/x8xJpClTvR0/800x599",
+      src: "https://source.unsplash.com/PpOHJezOalU/800x599",
       width: 1,
       height: 1
     },
     {
-      src: "https://source.unsplash.com/u9cG4cuJ6bU/4927x1000",
-      width: 1,
-      height: 1
-    },
-    {
-      src: "https://source.unsplash.com/qGQNmBE7mYw/800x599",
-      width: 1,
-      height: 1
-    },
-    {
-      src: "https://source.unsplash.com/NuO6iTBkHxE/800x599",
-      width: 1,
-      height: 1
-    },
-    {
-      src: "https://source.unsplash.com/pF1ug8ysTtY/600x400",
-      width: 1,
-      height: 1
-    },
-    {
-      src: "https://source.unsplash.com/A-fubu9QJxE/800x533",
-      width: 1,
-      height: 1
-    },
-    {
-      src: "https://source.unsplash.com/5P91SF0zNsI/740x494",
+      src: img,
       width: 1,
       height: 1
     }

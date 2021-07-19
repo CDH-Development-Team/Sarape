@@ -1,37 +1,46 @@
-import React from 'react';
+import React,  { useState, useCallback }  from 'react';
 import { HeadWrapper,Head,Img1,Img2,Img3,Img4,Img5,Img6,Img7,Img8,Img9,Img10,Img11 } from "./MosaicElements";
 import Gallery from "react-photo-gallery";
-import img from "../../images/5A3_Familia.jpg";
-import img2 from "../../images/5B4_Bobbins by Craig Holmes.jpg";
-import img3 from "../../images/5B2_08-09-18 The Big Boys a.jpg";
+
+
+import Carousel, { Modal, ModalGateway } from "react-images";
 import {photos} from "./photos.js";
    
 const Mosaic = () => {
-    return (
-        <>
-        <HeadWrapper>
-            <Head>              
-                <Gallery photos={photos} />
-            </Head>
-        </HeadWrapper>
+    const [currentImage, setCurrentImage] = useState(0);
+  const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-            {/* <HeadWrapper>
-                <Head>
-                    <Img1 src={img}></Img1>  
-                    <Img2 src={img2}></Img2>
-                    <Img3 src={img3}></Img3>
-                    <Img4></Img4>  
-                    <Img5></Img5>
-                    <Img6></Img6>
-                    <Img7></Img7>  
-                    <Img8></Img8>
-                    <Img9></Img9>
-                    <Img10></Img10>  
-                    <Img11></Img11>
-                </Head>  
-            </HeadWrapper> */}
-        </>
-    )
+  const openLightbox = useCallback((event, { photo, index }) => {
+    setCurrentImage(index);
+    setViewerIsOpen(true);
+  }, []);
+
+  const closeLightbox = () => {
+    setCurrentImage(0);
+    setViewerIsOpen(false);
+  };
+
+  return (
+    <HeadWrapper>
+        <Head>
+        <Gallery photos={photos} onClick={openLightbox} />
+        <ModalGateway>
+            {viewerIsOpen ? (
+            <Modal onClose={closeLightbox}>
+                <Carousel
+                currentIndex={currentImage}
+                views={photos.map(x => ({
+                    ...x,
+                    srcset: x.srcSet,
+                    caption: x.title
+                }))}
+                />
+            </Modal>
+            ) : null}
+        </ModalGateway>
+        </Head>
+    </HeadWrapper>
+  );
 }
 
 export default Mosaic;
