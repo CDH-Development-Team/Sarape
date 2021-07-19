@@ -33,7 +33,7 @@ const Sidebar = ({toggle, isOpen}) => {
                     <SidebarLink to="/saltillo" onClick={toggle}>
                         Saltillo Influences
                     </SidebarLink> 
-                    <SidebarLink to="/tourism" onClick={toggle}>
+                    <SidebarLink href="/tourism" onClick={toggle}>
                         Tourism
                     </SidebarLink> <br />
                     <SidebarLink to="/credits" onClick={toggle}>
