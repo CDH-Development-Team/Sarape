@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { GeographyContainer, MosaicWrapper, MosaicImg, HeaderText, GeographyEntry, GeographyEntryText, GeographyEntryImg, GeographyEntryDescription, GeographyStatues, Statue, StatueImg, BackgroundDiv, BackgroundContentLeft, BackgroundContentRight, BackgroundImg} from '../Geography/geographyElements.js';
+import { GeographyContainer, MosaicWrapper, MosaicImg, HeaderText, GeographyEntry, GeographyEntryText, GeographyEntryImg, GeographyEntryDescription, GeographyStatues, Statue, StatueImg, BackgroundDiv, BackgroundContentLeft, BackgroundContentRight, BackgroundImg, HistoryMosaicParent, HistoryMosaic1, HistoryMosaic2, HistoryMosaic3, HistoryMosaic4, HistoryMosaic5, HistoryMosaic6, HistoryMosaic7, HistoryMosaic8, HistoryMosaic9, HistoryMosaic10, HistoryMosaic11, HistoryMosaic12, HistoryMosaic13, HistoryMosaic14} from '../Geography/geographyElements.js';
 import headerImg from '../../images/section 2/history/header.jpg'
 import Icon1 from '../../images/section 2/history/1.png'
 import Icon2 from "../../images/section 2/history/2.png"
@@ -9,13 +9,67 @@ import Icon4 from "../../images/section 2/history/4.png"
 import Icon5 from "../../images/section 2/history/5.png"
 import Icon6 from "../../images/section 2/history/6.png"
 import Icon7 from "../../images/section 2/history/7.png"
-
+import Icon8 from "../../images/section 2/history/8.png"
+import Color1 from '../../images/section 2/color1.png'
+import "../Geography/geography.css";
+import useWindowDimensions from '../Geography/dimensions';
 const History = () =>{
+    const {height, width} = useWindowDimensions();
     return(
 <>
  <GeographyContainer>
- <div  style={{background:"white", height:"50%"}}>ds{/*<img src={headerImg} style={{width:"100%"}}></img>*/}</div>
-<br/><br/>
+     <HistoryMosaicParent height={((width-(width%38))/38*24)*0.8} width={(width-(width%38))*0.8}>
+        <HistoryMosaic1 className="mosaic">
+        <img src={Icon1} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic1>
+
+        <HistoryMosaic2 className="mosaic">
+        <img src={Color1} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic2>
+        <HistoryMosaic3 className="mosaic">
+        <img src={Icon7} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic3>
+        <HistoryMosaic4 className="mosaic">
+        <img src={Color1} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic4 >
+        <HistoryMosaic5 className="mosaic">
+        <img src={Color1} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic5 >
+        <HistoryMosaic6 className="mosaic">
+        <img src={Icon8} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic6>
+
+        <HistoryMosaic7 className="mosaic">
+        <img src={Color1} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic7>
+
+        <HistoryMosaic8 className="mosaic">
+        <img src={Icon2} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic8>
+
+        <HistoryMosaic9 className="mosaic">
+        <img src={Color1} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic9>
+
+        <HistoryMosaic10 className="mosaic">
+        <img src={Color1} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic10>
+
+        <HistoryMosaic11 className="mosaic">
+        <img src={Icon4} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic11>
+
+        <HistoryMosaic12 className="mosaic">
+        <img src={Icon3} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic12>
+
+        <HistoryMosaic13 className="mosaic">
+        <img src={Icon6} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic13>
+        <HistoryMosaic14 className="mosaic">
+        <img src={Color1} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic14>
+     </HistoryMosaicParent >
 <h1> History and Geography</h1>
 <BackgroundDiv>
     <BackgroundImg><img src={Icon1} width={"100%"}/>
