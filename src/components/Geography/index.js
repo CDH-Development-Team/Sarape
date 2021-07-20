@@ -1,6 +1,11 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import Modal from 'react-modal';
+
+
 import Icon1 from '../../images/section 2/1.jpg';
 import Icon2 from '../../images/section 2/2.png';
+import close from '../../images/close.svg';
 import Icon3 from '../../images/section 2/3.png';
 import Icon4 from '../../images/section 2/4.png';
 import Icon5 from '../../images/section 2/5.png';
@@ -18,8 +23,75 @@ import headerImg from '../../images/section 2/header.jpg';
 import { GeographyContainer, MosaicWrapper, MosaicImg, HeaderText, GeographyEntry, GeographyEntryText, GeographyEntryImg, GeographyEntryDescription, GeographyStatues, Statue, StatueImg} from './geographyElements.js';
 import { GeographyMosaicParent, GeographyMosaic1, GeographyMosaic2, GeographyMosaic3, GeographyMosaic4, GeographyMosaic5, GeographyMosaic6, GeographyMosaic7, GeographyMosaic8, GeographyMosaic9, GeographyMosaic10, GeographyMosaic11, GeographyMosaic12, GeographyMosaic13, GeographyMosaic14, GeographyMosaic15, GeographyMosaic16, GeographyMosaic17 } from './geographyElements.js';
 import useWindowDimensions from './dimensions';
+
+
+const customStyles = {
+    content: {
+      position:"absolute",
+      top:0,
+      left:0,
+      width: "100%",    
+      height: "100%",
+      background: "#000",
+      color: "#fff"
+    },
+  };
+
+  
+  
 const Geography = () => {
+    // function MosaicModal(props){
+    //     let subtitle;
+    //     const [modalIsOpen, setIsOpen] = React.useState(false);
+    
+        
+    //     function openModal() {
+    //         setIsOpen(true);
+    //       }
+    //       function afterOpenModal() {
+    //         // references are now sync'd and can be accessed.
+            
+    //       }
+        
+    //       function closeModal() {
+    //         setIsOpen(false);
+    //       }
+    //     return (
+            
+    //         <Modal
+    //         isOpen={modalIsOpen}
+    //         onAfterOpen={afterOpenModal}
+    //         onRequestClose={closeModal}
+    //         style={customStyles}
+    //         >
+    //             <img src={close} onClick={closeModal} style={{width:"5%", background:"white"}}/>
+    //             {props.content}
+    //         </Modal>
+            
+            
+    //     )
+    // }
+
+    let subtitle;
+        const [modalIsOpen, setIsOpen] = React.useState(false);
+    
+        
+        function openModal() {
+            setIsOpen(true);
+          }
+          function afterOpenModal() {
+            // references are now sync'd and can be accessed.
+            
+          }
+        
+          function closeModal() {
+            setIsOpen(false);
+          }
+
+
+    const modalRef = React.useRef(null);
     const {height, width} = useWindowDimensions();
+    const [content, setContent] = React.useState(null);
     return (
         <>
         <GeographyContainer>
@@ -33,54 +105,196 @@ const Geography = () => {
         */}
         
 <GeographyMosaicParent height={(width-(width%18))/18*8} width={(width-(width%18))}>
+<Modal
+            isOpen={modalIsOpen}
+            onAfterOpen={afterOpenModal}
+            onRequestClose={closeModal}
+            style={customStyles}
+            >
+                <img src={close} onClick={closeModal} style={{width:"5%", background:"white"}}/>
+
+                
+            {content}
+
+        
+            </Modal>
     <GeographyMosaic1>
         <img src={Color1} height={"100%"} width={"100%"}></img>
     </GeographyMosaic1>
     <GeographyMosaic2>
-        <img src={Icon2} height={"100%"} width={"100%"}></img>
+        <img src={Icon2} height={"100%"} width={"100%"} onClick={
+            () =>{
+                setContent(
+                    <GeographyEntry>
+<GeographyEntryImg><img src={Icon2} width={"100%"}></img><GeographyEntryDescription>
+Entrance into Guadalajara<br/>Homenaje á Cristóbal Colón: Antigüedades Méxicanas, Lienza 53.<br/> Fray Angelico Chavez History Library/New Mexico History Museum, 972MexH
+</GeographyEntryDescription>
+</GeographyEntryImg>
+<GeographyEntryText>
+Tlaxcalan forces accompanied the Spaniards on post-conquest explorations of northern Mexico. This scene is from the 1522 exploration led by Cristóbal de Olid, one of Cortés’s lieutenants.
+</GeographyEntryText>
+</GeographyEntry>
+                );
+                openModal();}
+                }></img>
+        
     </GeographyMosaic2>
+
     <GeographyMosaic3>
     <img src={Color1} width ={"100%"} height={"100%"}></img>
     </GeographyMosaic3>
+
+
     <GeographyMosaic4>
-    <img src={Icon6} height={"100%"} width={"100%"}></img>    
+    <img src={Icon6} height={"100%"} width={"100%"} onClick={
+        () =>{
+            setContent(
+                <GeographyEntry>
+<GeographyEntryImg><img src={Icon6} width={"100%"}></img><GeographyEntryDescription>
+Mitla, Oaxaca, Mexico<br/> Joel Carillet, photographer, 2018
+</GeographyEntryDescription>
+</GeographyEntryImg>
+<GeographyEntryText>
+Mitla, another capital of the early Zapotec civilization, is known for the geometric designs covering many of its buildings. These details inspired traditional Zapotec weaving designs. Built about 1,600 years ago, Mitla was an important Zapotec and Mixtec religious center until its destruction by the Spaniards in 1553. 
+</GeographyEntryText>
+</GeographyEntry>   
+            );
+            openModal();
+        }
+    }></img> 
     </GeographyMosaic4>
+
+
     <GeographyMosaic5>
-        <img src={Icon7} height={"100%"} width={"100%"}></img>
+        <img src={Icon7} height={"100%"} width={"100%"} onClick={
+            () =>{
+                setContent(
+                    <GeographyEntry>
+<GeographyEntryImg><img src={Icon7} width={"100%"}></img><GeographyEntryDescription>
+Mitla, Oaxaca, Mexico<br/> Alana Coghlan, photographer, 2013
+</GeographyEntryDescription>
+</GeographyEntryImg>
+<GeographyEntryText>
+Notice the architectural details carved into these ancient walls at Mitla. Today, Zapotec weavers integrate a variety of design details from Mitla’s buildings into their textile designs.
+</GeographyEntryText>
+</GeographyEntry>
+                );
+                openModal();
+            }
+        }></img>
     </GeographyMosaic5>
+
 <GeographyMosaic6>
-    <img src={Icon1} height={"100%"} width={"100%"}></img>
+    <img src={Icon1} height={"100%"} width={"100%"} onClick={
+        () => {
+            setContent(
+            <GeographyEntry>
+<GeographyEntryImg><img src={Icon1} width={"100%"}></img><GeographyEntryDescription>
+Homenaje á Cristóbal Colón: Antigüedades Méxicanas, Lienza 27.<br/> Fray Angelico Chavez History Library/New Mexico History Museum, 972MexH</GeographyEntryDescription></GeographyEntryImg>
+<GeographyEntryText>La Malinche, a Nahua woman, interprets for Hernan Cortés in a discussion with Tlaxcalans about forming an alliance against the Aztecs. Notice the Tlaxcalans wearing textiles draped like cloaks. These weavings may have influenced the Saltillo sarape’s design and how it was worn.</GeographyEntryText>
+</GeographyEntry>
+        );
+        openModal();
+            }
+    }></img>
+    
 </GeographyMosaic6>
 
 <GeographyMosaic7>
 <img src={Color1} height={"100%"} width={"100%"}></img>
 </GeographyMosaic7>
+
 <GeographyMosaic8>
 <img src = {Color1} height={"100%"} width={"100%"}></img>
 </GeographyMosaic8>
+
 <GeographyMosaic9>
 <img src = {Color1} height={"100%"} width={"100%"}></img>
 </GeographyMosaic9>
+
 <GeographyMosaic10>
-<img src = {Icon3} height={"100%"} width={"100%"}></img>
+<img src = {Icon3} height={"100%"} width={"100%"} onClick={
+    () => {
+    setContent(
+<GeographyEntry wide={true}>
+<GeographyEntryImg wide={true}><img src={Icon3} width={"100%"}></img>
+</GeographyEntryImg>
+<GeographyEntryText wide={true}>
+Monte Albán was the most important center of the Zapotec civilization politically, economically, and culturally. One of the oldest Mesoamerican cities, it was inhabited for nearly 1,500 years by a succession of Olmecs, Zapotecs, and Mixtecs until about 850 CE (1,270 years ago). 
+</GeographyEntryText>
+<GeographyEntryDescription wide={true}>
+Monte Albán, Oaxaca, Mexico<br/> Dana Danielson, photographer, 2013
+</GeographyEntryDescription>
+</GeographyEntry>
+    );
+    openModal();
+    }
+}></img>
+
 </GeographyMosaic10>
+
+
 <GeographyMosaic11>
-<img src = {Icon4} height={"100%"} width={"100%"}></img>
-</GeographyMosaic11>
+<img src = {Icon4} height={"100%"} width={"100%"} onClick={
+    () => {
+        setContent(
+        <GeographyEntry wide={true}>
+<GeographyEntryImg wide={true}><img src={Icon4} width={"100%"}></img>
+</GeographyEntryImg>
+<GeographyEntryDescription wide={true}>
+Teotitlán del Valle, Oaxaca, Mexico<br/> Joe Coca, photographer, 2019
+</GeographyEntryDescription>
+</GeographyEntry>);
+openModal();
+    }
+}></img>
+
+
+</GeographyMosaic11> 
+
 <GeographyMosaic12>
 <img src = {Color1} height={"100%"} width={"100%"}></img>
 </GeographyMosaic12>
 <GeographyMosaic13>
-<img src = {Icon3} height={"100%"} width={"100%"}></img>
+<img src = {Color1} height={"100%"} width={"100%"}></img>
 </GeographyMosaic13>
 <GeographyMosaic14>
 <img src = {Color1} height={"100%"} width={"100%"}></img>
 </GeographyMosaic14>
 <GeographyMosaic15>
-<img src = {Icon5} height={"100%"} width={"100%"}></img>
+<img src = {Icon5} height={"100%"} width={"100%"} onClick={
+    () => {
+        setContent(
+
+<GeographyEntry wide={true}>
+<GeographyEntryImg wide={true}><img src={Icon5} width={"100%"}></img>
+</GeographyEntryImg>
+<GeographyEntryDescription wide={true}>
+Teotitlán del Valle, Oaxaca, Mexico<br/> Javier Lazo, photographer, 2019
+</GeographyEntryDescription>
+</GeographyEntry>
+        );
+        openModal();
+    }
+}></img>
 </GeographyMosaic15>
 <GeographyMosaic16>
-<img src = {Icon8} height={"100%"} width={"100%"}></img>
+<img src = {Icon8} height={"100%"} width={"100%"} onClick={
+    () => {
+        setContent(
+            <GeographyEntry>
+<GeographyEntryImg><img src={Icon8} width={"100%"}></img><GeographyEntryDescription>
+Mitla, Oaxaca, Mexico<br/> Alana Coghlan, photographer, 2013
+</GeographyEntryDescription>
+</GeographyEntryImg>
+<GeographyEntryText>
+Textile fragment with indigo design, c. 1250–1500 CE  Casas Grandes, northern Sierra province, Río Chico region, Chihuahua, Mexico ASM 22551
+</GeographyEntryText>
+</GeographyEntry>
+        );
+        openModal();
+    }
+}></img>
 </GeographyMosaic16>
 <GeographyMosaic17>
 <img src = {Color1} height={"100%"} width={"100%"}></img>
@@ -99,21 +313,7 @@ const Geography = () => {
 
 </GeographyEntry>
 
-<GeographyEntry>
-<GeographyEntryImg><img src={Icon1} width={"100%"}></img><GeographyEntryDescription>
-Homenaje á Cristóbal Colón: Antigüedades Méxicanas, Lienza 27.<br/> Fray Angelico Chavez History Library/New Mexico History Museum, 972MexH</GeographyEntryDescription></GeographyEntryImg>
-<GeographyEntryText>La Malinche, a Nahua woman, interprets for Hernan Cortés in a discussion with Tlaxcalans about forming an alliance against the Aztecs. Notice the Tlaxcalans wearing textiles draped like cloaks. These weavings may have influenced the Saltillo sarape’s design and how it was worn.</GeographyEntryText>
-</GeographyEntry>
 
-<GeographyEntry>
-<GeographyEntryImg><img src={Icon2} width={"100%"}></img><GeographyEntryDescription>
-Entrance into Guadalajara<br/>Homenaje á Cristóbal Colón: Antigüedades Méxicanas, Lienza 53.<br/> Fray Angelico Chavez History Library/New Mexico History Museum, 972MexH
-</GeographyEntryDescription>
-</GeographyEntryImg>
-<GeographyEntryText>
-Tlaxcalan forces accompanied the Spaniards on post-conquest explorations of northern Mexico. This scene is from the 1522 exploration led by Cristóbal de Olid, one of Cortés’s lieutenants.
-</GeographyEntryText>
-</GeographyEntry>
 
 <GeographyEntry>
 <GeographyEntryImg><div style={{color:"black", background: "white", height:"100px"}}>NO IMAGE</div>
@@ -123,62 +323,13 @@ The original source of the sarape’s patterns, including the central diamond an
 </GeographyEntryText>
 </GeographyEntry>
 
-<GeographyEntry wide={true}>
-<GeographyEntryImg wide={true}><img src={Icon3} width={"100%"}></img>
-</GeographyEntryImg>
-<GeographyEntryText wide={true}>
-Monte Albán was the most important center of the Zapotec civilization politically, economically, and culturally. One of the oldest Mesoamerican cities, it was inhabited for nearly 1,500 years by a succession of Olmecs, Zapotecs, and Mixtecs until about 850 CE (1,270 years ago). 
-</GeographyEntryText>
-<GeographyEntryDescription wide={true}>
-Monte Albán, Oaxaca, Mexico<br/> Dana Danielson, photographer, 2013
-</GeographyEntryDescription>
-</GeographyEntry>
 
-<GeographyEntry wide={true}>
-<GeographyEntryImg wide={true}><img src={Icon4} width={"100%"}></img>
-</GeographyEntryImg>
-<GeographyEntryDescription wide={true}>
-Teotitlán del Valle, Oaxaca, Mexico<br/> Joe Coca, photographer, 2019
-</GeographyEntryDescription>
-</GeographyEntry>
 
-<GeographyEntry wide={true}>
-<GeographyEntryImg wide={true}><img src={Icon5} width={"100%"}></img>
-</GeographyEntryImg>
-<GeographyEntryDescription wide={true}>
-Teotitlán del Valle, Oaxaca, Mexico<br/> Javier Lazo, photographer, 2019
-</GeographyEntryDescription>
-</GeographyEntry>
 
-<GeographyEntry>
-<GeographyEntryImg><img src={Icon6} width={"100%"}></img><GeographyEntryDescription>
-Mitla, Oaxaca, Mexico<br/> Joel Carillet, photographer, 2018
-</GeographyEntryDescription>
-</GeographyEntryImg>
-<GeographyEntryText>
-Mitla, another capital of the early Zapotec civilization, is known for the geometric designs covering many of its buildings. These details inspired traditional Zapotec weaving designs. Built about 1,600 years ago, Mitla was an important Zapotec and Mixtec religious center until its destruction by the Spaniards in 1553. 
-</GeographyEntryText>
-</GeographyEntry>
 
-<GeographyEntry>
-<GeographyEntryImg><img src={Icon7} width={"100%"}></img><GeographyEntryDescription>
-Mitla, Oaxaca, Mexico<br/> Alana Coghlan, photographer, 2013
-</GeographyEntryDescription>
-</GeographyEntryImg>
-<GeographyEntryText>
-Notice the architectural details carved into these ancient walls at Mitla. Today, Zapotec weavers integrate a variety of design details from Mitla’s buildings into their textile designs.
-</GeographyEntryText>
-</GeographyEntry>
 
-<GeographyEntry>
-<GeographyEntryImg><img src={Icon8} width={"100%"}></img><GeographyEntryDescription>
-Mitla, Oaxaca, Mexico<br/> Alana Coghlan, photographer, 2013
-</GeographyEntryDescription>
-</GeographyEntryImg>
-<GeographyEntryText>
-Textile fragment with indigo design, c. 1250–1500 CE  Casas Grandes, northern Sierra province, Río Chico region, Chihuahua, Mexico ASM 22551
-</GeographyEntryText>
-</GeographyEntry>
+
+
 
 <GeographyEntry>
     <div style={{margin: "20px 40px", width:"70%"}}> 
@@ -209,7 +360,7 @@ Textile fragment with indigo design, c. 1250–1500 CE  Casas Grandes, northern 
             </StatueImg>
             <div>
                 Zapotec pottery urn, possibly representing a king wearing a mask of Cocijo, god of rain and lightning<br/> Ceramic<br/> Collected on a University of Arizona Expedition, 1924–1925<br/> Oaxaca, Mexico<br/> 5536
-            </div>
+            </div>  
         </Statue>
 
     </GeographyStatues>

@@ -18,17 +18,7 @@ export const GeographyContainer = styled.div`
     }
 `;
 
-export const MosaicWrapper = styled.div`
-width: 100%;
-`;
 
-export const MosaicImg = styled.div`
-    position: absolute;
-    top: ${({ top }) => top};
-    left: ${({ left }) => left};
-    max-width: ${({ width }) => width};
-    
-`;
 
 export const HeaderText=styled.div`
 margin: 50px;
@@ -38,9 +28,8 @@ column-count:3;
 }
 `;
 
- export const GeographyEntry = styled.div`
-height: 100%;
-margin-top:100px;
+ export const GeographyEntry = styled.div`  
+maxHeight:100%;
 padding: 10px;
 `;
 
@@ -110,6 +99,14 @@ export const BackgroundImg=styled.div`
 position:absolute;
 top:0;
 left:0;
+`;
+
+export const MosaicModal = styled.div`
+position:absolute;
+top:0;
+left:0;
+background: #000;
+display:none;
 `;
 
 export const GeographyMosaicParent = styled.div` 
