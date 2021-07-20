@@ -14,6 +14,7 @@ export const Nav = styled.nav`
     top: 0;
     z-index: 10;
 
+
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
     }
@@ -40,7 +41,6 @@ export const NavLogo = styled(LinkR)`
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
-    margin: 0 auto;
 `;
 
 export const MobileIcon = styled.div`
@@ -139,10 +139,10 @@ export const NavP = styled.div`
 `;
 
 export const NavP2 = styled.div`
-    font-size: 22px;
-    margin-right: 4rem;
+    font-size: 1rem;
 `;
 
 export const NavDiv = styled.div`
     margin: 0 auto;
+    align-items: left;
 `;

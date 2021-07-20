@@ -7,7 +7,7 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 import {photos} from "./photos.js";
    
 const Mosaic = () => {
-    const [currentImage, setCurrentImage] = useState(0);
+  const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
   const openLightbox = useCallback((event, { photo, index }) => {
@@ -27,14 +27,15 @@ const Mosaic = () => {
         <ModalGateway>
             {viewerIsOpen ? (
             <Modal onClose={closeLightbox}>
-                <Carousel
+                {/* <Carousel
                 currentIndex={currentImage}
                 views={photos.map(x => ({
                     ...x,
                     srcset: x.srcSet,
                     caption: x.title
                 }))}
-                />
+                /> */}
+                <div>Hello</div>
             </Modal>
             ) : null}
         </ModalGateway>

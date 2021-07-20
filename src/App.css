@@ -1,4 +1,5 @@
 @import url("//hello.myfonts.net/count/3e947d");
+/* @import url("https://use.typekit.net/qpc1jsr.css"); */
   
 /* @font-face {
   font-family: "CancioneITCStd";
@@ -9,8 +10,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: CancioneITCStd;
-  line-height: 3ch;
+  font-family: "CancioneITCStd";
+  /* font-family: myriad-pro, sans-serif; */
+  line-height: ch;
   /* overflow-x: hidden; */
   /* src: url('webFonts/CancioneITCStd/font.woff2') format('woff2'), url('webFonts/CancioneITCStd/font.woff') format('woff'); */
 }
+/* html, body, #root, .App {
+  height: 100%;
+} */

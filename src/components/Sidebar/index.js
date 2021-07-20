@@ -27,15 +27,15 @@ const Sidebar = ({toggle, isOpen}) => {
                     <SidebarLink to="/family" onClick={toggle}>
                         Family
                     </SidebarLink>
-                    <SidebarLink to="/sarapeSyles" onClick={toggle}>
+                    <SidebarLink to="/sarapeStyles" onClick={toggle}>
                         Sarape Styles
                     </SidebarLink>  
-                    <SidebarLink to="/saltillo" onClick={toggle}>
+                    <SidebarLink to="/section7" onClick={toggle}>
                         Saltillo Influences
                     </SidebarLink> 
                     <SidebarLink to="/tourism" onClick={toggle}>
                         Tourism
-                    </SidebarLink> <br />
+                    </SidebarLink>
                     <SidebarLink to="/credits" onClick={toggle}>
                         Credits
                     </SidebarLink>                                                      

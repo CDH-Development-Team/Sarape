@@ -9,6 +9,7 @@ import HistoryPage from "./pages/history.js";
 import Section7 from "./pages/section7.js"
 import Section5 from "./pages/section5.js"
 
+
 function App() {
   return (
     <Router >
