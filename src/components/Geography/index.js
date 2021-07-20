@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
+import "./geography.css";
 
 
 import Icon1 from '../../images/section 2/1.jpg';
@@ -15,6 +16,8 @@ import Icon8 from '../../images/section 2/8.png';
 import Icon9 from '../../images/section 2/9.png';
 import Icon10 from '../../images/section 2/10.png';
 import Icon11 from '../../images/section 2/11.png';
+import Icon12 from '../../images/section 2/12.jpg';
+import Icon13 from '../../images/section 2/13.jpg';
 import Color1 from '../../images/section 2/color1.png'
 import headerImg from '../../images/section 2/header.jpg';
 
@@ -104,7 +107,7 @@ const Geography = () => {
         (width-(width%18))
         */}
         
-<GeographyMosaicParent height={(width-(width%18))/18*8} width={(width-(width%18))}>
+<GeographyMosaicParent  height={(width-(width%18))/18*8} width={(width-(width%18))}>
 <Modal
             isOpen={modalIsOpen}
             onAfterOpen={afterOpenModal}
@@ -118,10 +121,10 @@ const Geography = () => {
 
         
             </Modal>
-    <GeographyMosaic1>
+    <GeographyMosaic1 className={"mosaic"}>
         <img src={Color1} height={"100%"} width={"100%"}></img>
     </GeographyMosaic1>
-    <GeographyMosaic2>
+    <GeographyMosaic2 className={"mosaic"}> 
         <img src={Icon2} height={"100%"} width={"100%"} onClick={
             () =>{
                 setContent(
@@ -140,12 +143,12 @@ Tlaxcalan forces accompanied the Spaniards on post-conquest explorations of nort
         
     </GeographyMosaic2>
 
-    <GeographyMosaic3>
+    <GeographyMosaic3 className={"mosaic"}>
     <img src={Color1} width ={"100%"} height={"100%"}></img>
     </GeographyMosaic3>
 
 
-    <GeographyMosaic4>
+    <GeographyMosaic4 className={"mosaic"}>
     <img src={Icon6} height={"100%"} width={"100%"} onClick={
         () =>{
             setContent(
@@ -165,7 +168,7 @@ Mitla, another capital of the early Zapotec civilization, is known for the geome
     </GeographyMosaic4>
 
 
-    <GeographyMosaic5>
+    <GeographyMosaic5 className={"mosaic"}>
         <img src={Icon7} height={"100%"} width={"100%"} onClick={
             () =>{
                 setContent(
@@ -184,7 +187,7 @@ Notice the architectural details carved into these ancient walls at Mitla. Today
         }></img>
     </GeographyMosaic5>
 
-<GeographyMosaic6>
+<GeographyMosaic6 className={"mosaic"}>
     <img src={Icon1} height={"100%"} width={"100%"} onClick={
         () => {
             setContent(
@@ -200,19 +203,30 @@ Homenaje á Cristóbal Colón: Antigüedades Méxicanas, Lienza 27.<br/> Fray An
     
 </GeographyMosaic6>
 
-<GeographyMosaic7>
+<GeographyMosaic7 className={"mosaic"}>
 <img src={Color1} height={"100%"} width={"100%"}></img>
 </GeographyMosaic7>
 
-<GeographyMosaic8>
+<GeographyMosaic8 className={"mosaic"}>
 <img src = {Color1} height={"100%"} width={"100%"}></img>
 </GeographyMosaic8>
 
-<GeographyMosaic9>
-<img src = {Color1} height={"100%"} width={"100%"}></img>
+<GeographyMosaic9 className={"mosaic"}>
+<img src = {Icon13} height={"100%"} width={"100%"} onClick={
+    () =>{
+        setContent(
+            <GeographyEntry>
+<GeographyEntryImg><img src={Icon13} height={"100%"} width={"100%"}></img></GeographyEntryImg>
+<GeographyEntryText>By the early 1600s, the 1,500-mile-long northern trade route, El Camino Real de Tierra Adentro, was established, taking both Spanish and Indigenous Mexican influence into what is today New Mexico. El Camino Real means the Royal Road, sometimes referred to as the King’s Road because it was controlled by the King of Spain or his representatives. It connected the Spanish Colonial capital at Mexico City to Ohkay Owingeh (the Pueblo of San Juan) near Santa Fe, New Mexico. Thousands of settlers, along with militia, friars, and priests, used this road for colonization and commerce, which in turn helped carry the Saltillo sarape northward.</GeographyEntryText>
+
+</GeographyEntry>
+        );
+        openModal();
+    }
+}></img>
 </GeographyMosaic9>
 
-<GeographyMosaic10>
+<GeographyMosaic10 className={"mosaic"}>
 <img src = {Icon3} height={"100%"} width={"100%"} onClick={
     () => {
     setContent(
@@ -234,7 +248,7 @@ Monte Albán, Oaxaca, Mexico<br/> Dana Danielson, photographer, 2013
 </GeographyMosaic10>
 
 
-<GeographyMosaic11>
+<GeographyMosaic11 className={"mosaic"}>
 <img src = {Icon4} height={"100%"} width={"100%"} onClick={
     () => {
         setContent(
@@ -252,16 +266,29 @@ openModal();
 
 </GeographyMosaic11> 
 
-<GeographyMosaic12>
-<img src = {Color1} height={"100%"} width={"100%"}></img>
+<GeographyMosaic12 className={"mosaic"}>
+<img src = {Icon12} height={"100%"} width={"100%"} onClick={
+    () => {
+        setContent(
+            <GeographyEntry>
+<GeographyEntryImg><img src={Icon12} height={"100%"} width={"100%"}></img>
+</GeographyEntryImg>
+<GeographyEntryText>
+The original source of the sarape’s patterns, including the central diamond and circular medallion, is still debated and remains a bit of a mystery. The central diamond was a prominent design on ancient Zapotec architecture, and is still used on Saltillo sarapes. The Zapotec civilization is among the oldest in Mexico, and it was one of the most sophisticated in early Mesoamerica. For more than 2,500 years, the Zapotecs have lived in Oaxaca’s central valley. Early on, they developed impressive trade networks, exchanging weavings, pottery, jewelry, and foods. Their architecture and engineering skills are evidenced in their two ancient capital cities, Mitla and Monte Albán, and related irrigation systems. They also developed hieroglyphic writing, mathematics, and a calendar.The Zapotec town of Teotitlán del Valle, Oaxaca, remains one of the most important weaving centers in Mexico. About 80 percent of the population of 6,000 are involved in some aspect of the weaving tradition, and most people still earn their living as weavers. With nearly a million members, today Zapotecs are the third-largest Indigenous group in Mexico. The majority live in their ancestral homeland in the state of Oaxaca, but there are also large populations outside Mexico, most notably in California (an estimated 80,000 reside in the Los Angeles area) and, to a lesser degree, in other parts of the United States.
+</GeographyEntryText>
+</GeographyEntry>
+        );
+        openModal();
+    }
+}></img>
 </GeographyMosaic12>
-<GeographyMosaic13>
+<GeographyMosaic13 className={"mosaic"}>
 <img src = {Color1} height={"100%"} width={"100%"}></img>
 </GeographyMosaic13>
-<GeographyMosaic14>
+<GeographyMosaic14 className={"mosaic"}>
 <img src = {Color1} height={"100%"} width={"100%"}></img>
 </GeographyMosaic14>
-<GeographyMosaic15>
+<GeographyMosaic15 className={"mosaic"}>
 <img src = {Icon5} height={"100%"} width={"100%"} onClick={
     () => {
         setContent(
@@ -278,12 +305,12 @@ Teotitlán del Valle, Oaxaca, Mexico<br/> Javier Lazo, photographer, 2019
     }
 }></img>
 </GeographyMosaic15>
-<GeographyMosaic16>
+<GeographyMosaic16 className={"mosaic"}>
 <img src = {Icon8} height={"100%"} width={"100%"} onClick={
     () => {
         setContent(
             <GeographyEntry>
-<GeographyEntryImg><img src={Icon8} width={"100%"}></img><GeographyEntryDescription>
+<GeographyEntryImg><img src={Icon8} height={"100%"} width={"100%"}></img><GeographyEntryDescription>
 Mitla, Oaxaca, Mexico<br/> Alana Coghlan, photographer, 2013
 </GeographyEntryDescription>
 </GeographyEntryImg>
@@ -296,7 +323,7 @@ Textile fragment with indigo design, c. 1250–1500 CE  Casas Grandes, northern 
     }
 }></img>
 </GeographyMosaic16>
-<GeographyMosaic17>
+<GeographyMosaic17 className={"mosaic"}>
 <img src = {Color1} height={"100%"} width={"100%"}></img>
 </GeographyMosaic17>
 
@@ -307,21 +334,11 @@ Textile fragment with indigo design, c. 1250–1500 CE  Casas Grandes, northern 
 <br/><br/>
 <h1> History and Geography</h1>
 <HeaderText>The sarape has been woven in many places throughout Mexico, but is primarily associated with the town of Saltillo, in the state of Coahuila, in northeastern Mexico. The Saltillo sarape grew out of Indigenous weaving traditions and designs combined with Spanish weaving technology and influence. In 1519, upon entering Mexico, Spanish military leader Hernan Cortés and his soldiers formed an alliance with the Tlaxcalan Indians of central Mexico to take over the vast Aztec empire. After the defeat of the Aztecs, the Tlaxcalans were enlisted to help with Spain’s colonization efforts. In 1591, four hundred Tlaxcalan families were sent northward to help colonize the areas dominated by the Chichimeca Indians. In return, the Tlaxcalans were awarded greater privileges and their own area, called Barrio San Esteban de Nuevo Tlaxcala, which would become Saltillo. Saltillo grew to be an important center for trade, linking central Mexico with northern portions of Mexico and Texas. Continuing into the early 1800s, Saltillo held a bustling, annual trade fair, where Saltillo’s agrarian supplies, as well as sarapes, were traded alongside goods from various areas of Mexico and from Europe and Asia. During this time, Spanish traders sent merchandise acquired in Asia to Europe via Mexico. These items likely inspired new artistic ideas and possibly influenced the distinctive Saltillo sarape design. Saltillo sarapes, prized for their fineness, durability, and appealing designs, became widely traded throughout the Americas and abroad.</HeaderText>
-<GeographyEntry>
-<GeographyEntryImg><div style={{color:"black", background: "white", height:"100px"}}>NO IMAGE</div></GeographyEntryImg>
-<GeographyEntryText>By the early 1600s, the 1,500-mile-long northern trade route, El Camino Real de Tierra Adentro, was established, taking both Spanish and Indigenous Mexican influence into what is today New Mexico. El Camino Real means the Royal Road, sometimes referred to as the King’s Road because it was controlled by the King of Spain or his representatives. It connected the Spanish Colonial capital at Mexico City to Ohkay Owingeh (the Pueblo of San Juan) near Santa Fe, New Mexico. Thousands of settlers, along with militia, friars, and priests, used this road for colonization and commerce, which in turn helped carry the Saltillo sarape northward.</GeographyEntryText>
-
-</GeographyEntry>
 
 
 
-<GeographyEntry>
-<GeographyEntryImg><div style={{color:"black", background: "white", height:"100px"}}>NO IMAGE</div>
-</GeographyEntryImg>
-<GeographyEntryText>
-The original source of the sarape’s patterns, including the central diamond and circular medallion, is still debated and remains a bit of a mystery. The central diamond was a prominent design on ancient Zapotec architecture, and is still used on Saltillo sarapes. The Zapotec civilization is among the oldest in Mexico, and it was one of the most sophisticated in early Mesoamerica. For more than 2,500 years, the Zapotecs have lived in Oaxaca’s central valley. Early on, they developed impressive trade networks, exchanging weavings, pottery, jewelry, and foods. Their architecture and engineering skills are evidenced in their two ancient capital cities, Mitla and Monte Albán, and related irrigation systems. They also developed hieroglyphic writing, mathematics, and a calendar.The Zapotec town of Teotitlán del Valle, Oaxaca, remains one of the most important weaving centers in Mexico. About 80 percent of the population of 6,000 are involved in some aspect of the weaving tradition, and most people still earn their living as weavers. With nearly a million members, today Zapotecs are the third-largest Indigenous group in Mexico. The majority live in their ancestral homeland in the state of Oaxaca, but there are also large populations outside Mexico, most notably in California (an estimated 80,000 reside in the Los Angeles area) and, to a lesser degree, in other parts of the United States.
-</GeographyEntryText>
-</GeographyEntry>
+
+
 
 
 
