@@ -91,8 +91,6 @@ const Geography = () => {
             setIsOpen(false);
           }
 
-
-    const modalRef = React.useRef(null);
     const {height, width} = useWindowDimensions();
     const [content, setContent] = React.useState(null);
     return (
