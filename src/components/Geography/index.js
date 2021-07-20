@@ -6,7 +6,7 @@ import "./geography.css";
 
 import Icon1 from '../../images/section 2/1.jpg';
 import Icon2 from '../../images/section 2/2.png';
-import close from '../../images/close.svg';
+import close from '../../images/close.png';
 import Icon3 from '../../images/section 2/3.png';
 import Icon4 from '../../images/section 2/4.png';
 import Icon5 from '../../images/section 2/5.png';
@@ -114,7 +114,7 @@ const Geography = () => {
             onRequestClose={closeModal}
             style={customStyles}
             >
-                <img src={close} onClick={closeModal} style={{width:"5%", background:"white"}}/>
+                <img src={close} onClick={closeModal} style={{width:"5%"}}/>
 
                 
             {content}
