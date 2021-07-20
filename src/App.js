@@ -8,6 +8,7 @@ import GeographyPage from "./pages/geography.js";
 import HistoryPage from "./pages/history.js";
 import Section7 from "./pages/section7.js"
 import Section5 from "./pages/section5.js"
+import Section6 from "./pages/historicalTextiles.js";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path = "/history" component={HistoryPage} exact />
         <Route path = "/section7" component={Section7} exact />
         <Route path = "/section5" component={Section5} exact />
+        <Route path = "/historicalTextiles" component={Section6} exact />
       </Switch>
     </Router>
   );

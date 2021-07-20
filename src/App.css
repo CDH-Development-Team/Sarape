@@ -13,7 +13,7 @@
   font-family: "CancioneITCStd";
   /* font-family: myriad-pro, sans-serif; */
   line-height: ch;
-  /* overflow-x: hidden; */
+  overflow-x: hidden; 
   /* src: url('webFonts/CancioneITCStd/font.woff2') format('woff2'), url('webFonts/CancioneITCStd/font.woff') format('woff'); */
 }
 /* html, body, #root, .App {

@@ -1,6 +1,8 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import Modal from 'react-modal';
 
-import { GeographyContainer, MosaicWrapper, MosaicImg, HeaderText, GeographyEntry, GeographyEntryText, GeographyEntryImg, GeographyEntryDescription, GeographyStatues, Statue, StatueImg, BackgroundDiv, BackgroundContentLeft, BackgroundContentRight, BackgroundImg} from '../Geography/geographyElements.js';
+import { GeographyContainer, MosaicWrapper, MosaicImg, HeaderText, GeographyEntry, GeographyEntryText, GeographyEntryImg, GeographyEntryDescription, GeographyStatues, Statue, StatueImg, BackgroundDiv, BackgroundContentLeft, BackgroundContentRight, BackgroundImg, HistoryMosaicParent, HistoryMosaic1, HistoryMosaic2, HistoryMosaic3, HistoryMosaic4, HistoryMosaic5, HistoryMosaic6, HistoryMosaic7, HistoryMosaic8, HistoryMosaic9, HistoryMosaic10, HistoryMosaic11, HistoryMosaic12, HistoryMosaic13, HistoryMosaic14} from '../Geography/geographyElements.js';
 import headerImg from '../../images/section 2/history/header.jpg'
 import Icon1 from '../../images/section 2/history/1.png'
 import Icon2 from "../../images/section 2/history/2.png"
@@ -9,15 +11,64 @@ import Icon4 from "../../images/section 2/history/4.png"
 import Icon5 from "../../images/section 2/history/5.png"
 import Icon6 from "../../images/section 2/history/6.png"
 import Icon7 from "../../images/section 2/history/7.png"
+import Icon8 from "../../images/section 2/history/8.png"
+import close from '../../images/close.png';
+import Color1 from '../../images/section 2/color1.png'
+import "../Geography/geography.css";
+import useWindowDimensions from '../Geography/dimensions';
 
+const customStyles = {
+    content: {
+      position:"absolute",
+      top:0,
+      left:0,
+      width: "100%",    
+      height: "100%",
+      background: "#000",
+      color: "#fff"
+    },
+  };
 const History = () =>{
+    const {height, width} = useWindowDimensions();
+    let subtitle;
+        const [modalIsOpen, setIsOpen] = React.useState(false);
+    
+        
+        function openModal() {
+            setIsOpen(true);
+          }
+          function afterOpenModal() {
+            // references are now sync'd and can be accessed.
+            
+          }
+        
+          function closeModal() {
+            setIsOpen(false);
+          }
+
+    const [content, setContent] = React.useState(null);
     return(
 <>
  <GeographyContainer>
- <div  style={{background:"white", height:"50%"}}>ds{/*<img src={headerImg} style={{width:"100%"}}></img>*/}</div>
-<br/><br/>
-<h1> History and Geography</h1>
-<BackgroundDiv>
+ <Modal
+            isOpen={modalIsOpen}
+            onAfterOpen={afterOpenModal}
+            onRequestClose={closeModal}
+            style={customStyles}
+            >
+                <img src={close} onClick={closeModal} style={{width:"5%"}}/>
+
+                
+            {content}
+
+        
+            </Modal>
+     <HistoryMosaicParent height={((width-(width%38))/38*24)*0.8} width={(width-(width%38))*0.8}>
+        <HistoryMosaic1 className="mosaic">
+        <img src={Icon1} height={"100%"} width={"100%"} onClick={
+            () => {
+                setContent(
+                    <BackgroundDiv>
     <BackgroundImg><img src={Icon1} width={"100%"}/>
     <BackgroundContentLeft>
     Zoque woman weaving on a backstrap loomTuxtla Gutiérrez, Chiapas, MexicoDonald Cordry, photographer, 1940ASM Cordry 1143
@@ -28,8 +79,71 @@ const History = () =>{
     </BackgroundContentRight>
     </BackgroundImg>
 </BackgroundDiv>
+                );
+                openModal();
+            }
+        }></img>
+        </HistoryMosaic1>
+
+        <HistoryMosaic2 className="mosaic">
+        <img src={Color1} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic2>
+        <HistoryMosaic3 className="mosaic">
+        <img src={Icon7} height={"100%"} width={"100%"} onClick={
+            () => {
+                setContent(
+                    <GeographyEntry>
+    <GeographyEntryImg>
+        <img src={Icon7} width={"100%"}></img>
+    </GeographyEntryImg>
+    <GeographyEntryText>
+    The Spanish capa (cape), a large overcoat with an open front and often a hood, may have been an influence on the sarape as a more formal garment. 
+    </GeographyEntryText>
+
+    <GeographyEntryDescription>
+    Spanish cape, late 1500s <br/>Silk, metal thread <br/>Purchase, Rogers Fund, 1939<br/>The Metropolitan Museum of Art, 39.53
+    </GeographyEntryDescription>
+</GeographyEntry>
+                );
+                openModal();
+            }
+        }></img>
+        </HistoryMosaic3>
+        <HistoryMosaic4 className="mosaic">
+        <img src={Color1} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic4 >
+        <HistoryMosaic5 className="mosaic">
+        <img src={Color1} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic5 >
+        <HistoryMosaic6 className="mosaic">
+        <img src={Icon8} height={"100%"} width={"100%"} onClick={
+            () => {
+                setContent(
 
 <GeographyEntry>
+    <GeographyEntryImg><img src={Icon8} width={"100%"}/>
+    </GeographyEntryImg>
+
+    <GeographyEntryText>An Aztec woman teaches a girl to weave on a backstrap loom.</GeographyEntryText>
+    <GeographyEntryDescription>
+    Codex Mendoza, Vol. 3, Folio 60r, c. 1541–1542<br/>Viceroyalty of SpainBodleian Libraries,<br/> University of Oxford
+    </GeographyEntryDescription>
+</GeographyEntry>
+                );
+                openModal();
+            }
+        }></img>
+        </HistoryMosaic6>
+
+        <HistoryMosaic7 className="mosaic">
+        <img src={Color1} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic7>
+
+        <HistoryMosaic8 className="mosaic">
+        <img src={Icon2} height={"100%"} width={"100%"} onClick={
+            () =>{
+                setContent(
+                    <GeographyEntry>
     <GeographyEntryImg><img src={Icon2} width={"100%"}/>
     </GeographyEntryImg>
 
@@ -38,15 +152,25 @@ const History = () =>{
 <br/><br/><br/><br/><br/><br/>right<br></br>Notice how the tilmàtli are similar to the Saltillo sarape in design and how they were worn.<br/><br/>Codex Mendoza, Folio 65r, c. 1541–1542<br/>Viceroyalty of Spain<br></br>Bodleian Library, Oxford University
     </GeographyEntryText>
 </GeographyEntry>
+                );
+                openModal();
+            }
+        }></img>
+        </HistoryMosaic8>
 
-<GeographyEntry>
-<GeographyEntryImg><img src={Icon3} width={"100%"}></img></GeographyEntryImg>
-<GeographyEntryText>
-excoco ruler Nezahualpilli shown wearing a xiuhtilmatli (blue cape), which would have been woven on a backstrap loom. Note the complex designs and the natural dye colors: blue from the indigo plant and red from cochineal insects.
-</GeographyEntryText>
-</GeographyEntry>
+        <HistoryMosaic9 className="mosaic">
+        <img src={Color1} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic9>
 
-<GeographyEntry wide={true}>
+        <HistoryMosaic10 className="mosaic">
+        <img src={Color1} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic10>
+
+        <HistoryMosaic11 className="mosaic">
+        <img src={Icon4} height={"100%"} width={"100%"} onClick={
+            () =>{
+                setContent(
+                    <GeographyEntry wide={true}>
     <GeographyEntryImg wide={true} style={{padding:"0px 50px"}}>
         <img src = {Icon4} width={"100%"}></img>
     </GeographyEntryImg>
@@ -57,6 +181,57 @@ excoco ruler Nezahualpilli shown wearing a xiuhtilmatli (blue cape), which would
     Codex Primeros Memoriales, Vol. 3, Estampa 21<br></br>Bernardino Sahagún, Historia General de las Cosas de Nueva España Biblioteca Medicea Laurenziana
     </GeographyEntryDescription>
 </GeographyEntry>
+                );
+                openModal();
+            }
+        }></img>
+        </HistoryMosaic11>
+
+        <HistoryMosaic12 className="mosaic">
+        <img src={Icon3} height={"100%"} width={"100%"} onClick={
+            () => {
+                setContent(
+                    <GeographyEntry>
+<GeographyEntryImg><img src={Icon3} width={"100%"}></img></GeographyEntryImg>
+<GeographyEntryText>
+excoco ruler Nezahualpilli shown wearing a xiuhtilmatli (blue cape), which would have been woven on a backstrap loom. Note the complex designs and the natural dye colors: blue from the indigo plant and red from cochineal insects.
+</GeographyEntryText>
+</GeographyEntry>
+                );
+                openModal();
+            }
+        }></img>
+        </HistoryMosaic12>
+
+        <HistoryMosaic13 className="mosaic">
+        <img src={Icon6} height={"100%"} width={"100%"} onClick={
+            () => {
+                setContent(
+                    <GeographyEntry>
+    <GeographyEntryImg>
+        <img src={Icon6} width={"100%"}></img>
+    </GeographyEntryImg>
+    <GeographyEntryText>
+    Sarapes are worn in many ways: wrapped or draped like a shawl, over one shoulder, or as a poncho. The typical sarape may be woven in one piece, but more frequently consists of two panels joined together leaving a neck slit, also called a bocamanga, through which the wearer’s head could fit.In Spanish Colonial times, the sarape was mainly worn in northern Mexico by hacendados, or ranch owners, who traveled on horseback. The sarape’s loose fit made it a practical riding garment. Later, it became a status symbol worn by wealthy “city folk.” While anyone could wear one, they were expensive to buy. These textiles were masterfully woven with incredible tightness and complex designs. It is possible that they were created in small workshops, located on many of the large ranches or haciendas
+    </GeographyEntryText>
+    <GeographyEntryDescription>
+    Rancheros, 1836 <br/>Carl Nebel   <br/>German, 1805–1855<br/>Lithograph<br/>Voyage Pittoresque et Archéologique dans la Partie la plus Intéressante du MéxiqueAlbum, Alamy Stock Photo
+    </GeographyEntryDescription>
+</GeographyEntry>
+                );
+                openModal();
+            }
+        }></img>
+        </HistoryMosaic13>
+        <HistoryMosaic14 className="mosaic">
+        <img src={Color1} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic14>
+     </HistoryMosaicParent >
+
+
+
+<br/><br/><br/><br/><br/><br/>
+
 
 <GeographyEntry wide={true}>
     <GeographyEntryImg wide={true}>
@@ -71,30 +246,9 @@ excoco ruler Nezahualpilli shown wearing a xiuhtilmatli (blue cape), which would
     </GeographyEntryDescription>
 </GeographyEntry>
 
-<GeographyEntry>
-    <GeographyEntryImg>
-        <img src={Icon6} width={"100%"}></img>
-    </GeographyEntryImg>
-    <GeographyEntryText>
-    Sarapes are worn in many ways: wrapped or draped like a shawl, over one shoulder, or as a poncho. The typical sarape may be woven in one piece, but more frequently consists of two panels joined together leaving a neck slit, also called a bocamanga, through which the wearer’s head could fit.In Spanish Colonial times, the sarape was mainly worn in northern Mexico by hacendados, or ranch owners, who traveled on horseback. The sarape’s loose fit made it a practical riding garment. Later, it became a status symbol worn by wealthy “city folk.” While anyone could wear one, they were expensive to buy. These textiles were masterfully woven with incredible tightness and complex designs. It is possible that they were created in small workshops, located on many of the large ranches or haciendas
-    </GeographyEntryText>
-    <GeographyEntryDescription>
-    Rancheros, 1836 <br/>Carl Nebel   <br/>German, 1805–1855<br/>Lithograph<br/>Voyage Pittoresque et Archéologique dans la Partie la plus Intéressante du MéxiqueAlbum, Alamy Stock Photo
-    </GeographyEntryDescription>
-</GeographyEntry>
 
-<GeographyEntry>
-    <GeographyEntryImg>
-        <img src={Icon7} width={"100%"}></img>
-    </GeographyEntryImg>
-    <GeographyEntryText>
-    The Spanish capa (cape), a large overcoat with an open front and often a hood, may have been an influence on the sarape as a more formal garment. 
-    </GeographyEntryText>
 
-    <GeographyEntryDescription>
-    Spanish cape, late 1500s <br/>Silk, metal thread <br/>Purchase, Rogers Fund, 1939<br/>The Metropolitan Museum of Art, 39.53
-    </GeographyEntryDescription>
-</GeographyEntry>
+
  </GeographyContainer>
 </>
     )

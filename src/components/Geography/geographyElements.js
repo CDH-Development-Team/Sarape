@@ -18,17 +18,7 @@ export const GeographyContainer = styled.div`
     }
 `;
 
-export const MosaicWrapper = styled.div`
-width: 100%;
-`;
 
-export const MosaicImg = styled.div`
-    position: absolute;
-    top: ${({ top }) => top};
-    left: ${({ left }) => left};
-    max-width: ${({ width }) => width};
-    
-`;
 
 export const HeaderText=styled.div`
 margin: 50px;
@@ -38,9 +28,8 @@ column-count:3;
 }
 `;
 
- export const GeographyEntry = styled.div`
-height: 100%;
-margin-top:100px;
+ export const GeographyEntry = styled.div`  
+maxHeight:100%;
 padding: 10px;
 `;
 
@@ -112,6 +101,14 @@ top:0;
 left:0;
 `;
 
+export const MosaicModal = styled.div`
+position:absolute;
+top:0;
+left:0;
+background: #000;
+display:none;
+`;
+
 export const GeographyMosaicParent = styled.div` 
     display: grid; 
     grid-template-columns: repeat(18, 1fr); 
@@ -139,3 +136,31 @@ export const GeographyMosaicParent = styled.div`
     export const GeographyMosaic15 = styled.div`grid-area: 6 / 12 / 9 / 16; `;
     export const GeographyMosaic16 = styled.div `grid-area: 3 / 16 / 7 / 19;`;
     export const GeographyMosaic17 = styled.div `grid-area: 7 / 16 / 9 / 19;`;
+
+
+
+    export const HistoryMosaicParent = styled.div` 
+        display: grid; 
+        grid-template-columns: repeat(38, 1fr); 
+        grid-template-rows: repeat(24, 1fr); 
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0 auto;
+        height: ${({height}) => (height)+"px"};
+    width: ${({width}) => (width)+"px"}; 
+        `;
+
+        export const HistoryMosaic1 = styled.div `grid-area: 1 / 1 / 9 / 10; `; 
+        export const HistoryMosaic2 = styled.div `grid-area: 1 / 10 / 6 / 20;`;
+        export const HistoryMosaic3 = styled.div `grid-area: 1 / 20 / 6 / 27;`;
+        export const HistoryMosaic4 = styled.div `grid-area: 1 / 27 / 6 / 39;`;
+        export const HistoryMosaic5 = styled.div `grid-area: 9 / 1 / 20 / 10;`; 
+        export const HistoryMosaic6 = styled.div `grid-area: 20 / 3 / 25 / 10;`;
+        export const HistoryMosaic7 = styled.div `grid-area: 20 / 1 / 25 / 3;`;
+        export const HistoryMosaic8 = styled.div `grid-area: 6 / 10 / 20 / 20;`;
+        export const HistoryMosaic9 = styled.div `grid-area: 20 / 10 / 25 / 20;`;
+        export const HistoryMosaic10 = styled.div `grid-area: 6 / 20 / 10 / 27;`;
+        export const HistoryMosaic11 = styled.div `grid-area: 10 / 20 / 15 / 27;`;
+        export const HistoryMosaic12 = styled.div `grid-area: 15 / 20 / 25 / 27;`;
+        export const HistoryMosaic13 = styled.div `grid-area: 6 / 27 / 14 / 39; `;
+        export const HistoryMosaic14 = styled.div `grid-area: 14 / 27 / 25 / 39;`; 
