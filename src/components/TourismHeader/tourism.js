@@ -21,9 +21,13 @@ const TourismSection = ({lightBg, id, imgStart, topLine, lightText, headline, da
                         <Column2>
                             <Heading lightText={lightText}>{headline}</Heading>
                             <ImgWrap2>
-                                <Subtitle darkText={darkText}>{description}</Subtitle>
+                                <TextHead>
+                                The Mexican nationalist movement of the early 1900s, appropriated the country’s Spanish and Indigenous identities to create a hybrid “Mexican” identity. The Saltillo sarape turned out to be one of the country’s most enduring symbols. This period saw the rise of the rainbow-striped blanket, which became synonymous with Mexico through its use in films, posters, and advertising.
+                                <br/><br/>As tourism to Mexico increased, many visitors purchased these colorful sarapes as souvenirs. With demand on the rise, sarape-manufacturing plants were established. Through the use of electric-powered looms, synthetic dyes, and acrylic yarns, production time was shortened and the number of textiles increased. As a result, by the 1930s, there was a drastic decline in handwoven sarapes and the use of natural-dyed yarns.
+                                </TextHead>
+                                {/* <Subtitle darkText={darkText}>{description}</Subtitle>
+                                <Subtitle darkText={darkText}>{description2}</Subtitle> */}
                                 <Img2 src={img} alt={alt}/>
-                                <Subtitle darkText={darkText}>{description2}</Subtitle>
                                 <Caption darkText={darkText}>{description3}</Caption>
                             </ImgWrap2>
                         </Column2>

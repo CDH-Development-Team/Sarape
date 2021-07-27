@@ -115,18 +115,25 @@ export const ImgWrap2 = styled.div`
 `;
 
 export const Img = styled.img`
-    max-width:100%;
-    height:auto;
-    transform: scale(0.75, 0.75);
-    margin: 0 0 10px 0;
-    padding-right: 0;
-    // padding-top: 4%;
-`;
-
-export const Img2 = styled.img`
-    max-width:100%;
-    height:auto;
+    width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
     padding-top: 4%;
+`;
+
+export const Img2 = styled.img`
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding-right: 0;
+    padding-top: 4%;
+`;
+
+export const TextHead = styled.div`
+    max-width: 550px;
+    margin-bottom: 5%;
+    padding: 4%;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: myriad-pro,sans-serif;
+    color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 `;
