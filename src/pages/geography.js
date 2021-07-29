@@ -15,7 +15,7 @@ const GeographyPage = () => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle} />
             
-            {/* <Geography/> */}
+            <Geography/> 
         </>
     )
 }
