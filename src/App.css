@@ -10,11 +10,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "CancioneITCStd";
+  font-family: "myriad-pro";
   /* font-family: myriad-pro, sans-serif; */
   line-height: ch;
   overflow-x: hidden; 
   /* src: url('webFonts/CancioneITCStd/font.woff2') format('woff2'), url('webFonts/CancioneITCStd/font.woff') format('woff'); */
+}
+
+h1 {
+  font-family: "CancioneITCStd"
 }
 /* html, body, #root, .App {
   height: 100%;
