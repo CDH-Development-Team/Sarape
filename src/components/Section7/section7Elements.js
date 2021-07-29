@@ -36,8 +36,6 @@ export const InfoRow = styled.div`
 
 
 
-
-
 export const Column1 = styled.div`
     margin-bottom: 0px;
     padding: 0 15px;

@@ -1,15 +1,15 @@
 import React, {useState} from 'react';
-import Icon1 from '../../images/svg-4.svg';
-import Icon2 from '../../images/svg-5.svg';
-import Icon3 from '../../images/svg-6.svg';
-import img2 from "../../textiles_png/7_textiles/7A1_1978-1-2.png";
-import img3 from "../../textiles_png/7_textiles/7A2_1980-29-1.png";
-import img4 from "../../textiles_png/7_textiles/7B1_1976-11-1.png";
-import img5 from "../../textiles_png/7_textiles/7B2_E-6102.png";
-import img6 from "../../textiles_png/7_textiles/7C1_E-2724.png";
-import img7 from "../../textiles_png/7_textiles/7C2_E-8988.png";
-import img8 from "../../textiles_png/7_textiles/7C3_E-83.png";
-import img9 from "../../textiles_png/7_textiles/7C4_at_2020-337-1.png";
+
+import img2 from "../../textiles_png/6_textiles/6A1_at_2020-15-1.png";
+import img3 from "../../textiles_png/6_textiles/6A2_at_2020-13-1.png";
+import img4 from "../../textiles_png/6_textiles/6A3_E-1642.png";
+import img5 from "../../textiles_png/6_textiles/6B1_19766_HIRES.png";
+import img6 from "../../textiles_png/6_textiles/6B2_12504.png";
+import img7 from "../../textiles_png/6_textiles/6B4_at_2020-15-2.png";
+import img8 from "../../textiles_png/6_textiles/6B5_E-4735.png";
+import img9 from "../../textiles_png/6_textiles/6C1_at_2020-13-2.png";
+import img10 from "../../textiles_png/6_textiles/6C2_at_2020-14-2.png";
+import img11 from "../../textiles_png/6_textiles/6C3_1980-2-53.png";
 
 import { 
     ServicesContainer, 
@@ -28,7 +28,7 @@ const Section6 = () => {
         setShowModal(prev => !prev);
     };
     return (
-        <ServicesContainer id="section7">
+        <ServicesContainer id="section6">
             <ServicesWrapper>
                 <ServicesCard>
                     <ServicesIcon onClick={openModal} src={img2}/>
@@ -47,21 +47,27 @@ const Section6 = () => {
                 <ServicesCard>
                     <ServicesIcon onClick={openModal} src={img6}/>
                     <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {img6} />
+                    <ServicesIcon onClick={openModal} src={img7}/>
+                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {img7} />
                 </ServicesCard>
                 <ServicesCard>
-                    <ServicesIcon onClick={openModal} src={img7}/>
-                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {img7} />  
                     <ServicesIcon onClick={openModal} src={img8}/>
-                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {img8} />                   
+                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {img8} />
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon onClick={openModal} src={img9}/>
-                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {img9} />                    
+                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {img9} />  
+                    <ServicesIcon onClick={openModal} src={img10}/>
+                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {img10} />                   
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon onClick={openModal} src={img11}/>
+                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {img11} />                    
                 </ServicesCard>
             </ServicesWrapper>
             <br></br>
             <br></br>
-            <ServicesH1>Satillo Influences</ServicesH1>
+            <ServicesH1>HISTORICAL TEXTILES 1750-1980</ServicesH1>
         </ServicesContainer>
         
     )

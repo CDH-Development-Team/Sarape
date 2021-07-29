@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import HistoricalSection from '../components/Section7/section7index';
-import { sixObj } from '../components/HistoricalTextiles/historicalData';
+import { sixObj, sixObjOne, sixObjTwo, sixObjThree} from '../components/HistoricalTextiles/historicalData';
 import Section6 from '../components/Services/section6';
 
 
@@ -21,6 +21,9 @@ const HistoricalTextiles = () => {
             <br></br>
             <Section6 />
             <HistoricalSection {...sixObj}/>
+            <HistoricalSection {...sixObjOne}/>
+            <HistoricalSection {...sixObjTwo}/>
+            <HistoricalSection {...sixObjThree}/>
         </>
     )
 }

@@ -8,24 +8,27 @@ const HistoricalSection = ({lightBg, id, imgStart, topLine, lightText, headline,
             <InfoContainer lightBg={lightBg} id={id}>
            
                 <InfoWrapper>
-                    <Heading lightText={lightText}>{headline}</Heading>
+                    
                     <InfoRow imgStart={imgStart}>
                     
                         <Column1 block={block}>
+                            <Heading lightText={lightText}>{headline}</Heading>
                             <TextWrapper>
                                 <TopLine>{topLine}</TopLine>
                                 
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
                                 <Subtitle darkText={darkText}>{description2}</Subtitle>
                                 <Subtitle darkText={darkText}>{description3}</Subtitle>
+                                <Img border="none" smallImg={smallImg} src={img3} alt=" "/>
+                                <Subtitle darkText={darkText}>{imgdesc4}</Subtitle>
                             </TextWrapper>
                         </Column1>    
                         <Column2 block={block}>
                             <ImgWrap>
                                 <Subtitle darkText={darkText}>{imgdesc}</Subtitle>
-                                <Img border="none" smallImg={smallImg} src={img} alt=""/>
+                                <Img border="none" smallImg={smallImg} src={img} alt=" "/>
                                 <Subtitle darkText={darkText}>{imgdesc2}</Subtitle>
-                                <Img border="none" smallImg={smallImg} src={img2} alt=""/>
+                                <Img border="none" smallImg={smallImg} src={img2} alt=" "/>
                                 <Subtitle darkText={darkText}>{imgdesc3}</Subtitle>
                             </ImgWrap>
                         </Column2>
