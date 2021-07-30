@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap");
+@import url("//hello.myfonts.net/count/3e947d");
 
 :root {
   --primaryColor: #028090;
@@ -11,6 +12,41 @@
   box-sizing: border-box;
 }
 
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+     /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+     /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 /* body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
@@ -29,16 +65,29 @@
 
 .content {
   display: flex;
-  height: 100%;
+  height: auto;
   width: 100%;
   margin: 0;
   padding: 0;
   background-color: #4a0033;
+  font-family: myriad-pro, sans-serif;
 }
+
+.content1 {
+    /* display: flex; */
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #4a0033;
+    font-family: myriad-pro, sans-serif;
+  }
 
 .text {
   padding: 2rem;
   color: #fff;
+  font-family: myriad-pro, sans-serif;
+  max-width: 420px;
 }
 
 .content img {
@@ -47,6 +96,23 @@
   /* object-fit: cover; */
 }
 
+.quote{
+    font-size: 1.5rem;
+    font-family: cursive;
+    padding: 1.3rem;
+    color: #fff;
+}
+
+.author{
+    font-size: 1.5rem;
+    font-family: cursive;
+    padding-left: 38rem;
+    color: #fff;
+}
+
+.quoteDiv{
+    padding: 2rem;
+}
 
 @media screen and (max-width: 768px) {
   .content {

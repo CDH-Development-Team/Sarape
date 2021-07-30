@@ -18,8 +18,6 @@ const Section7Home = () => {
         <>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle} />
-            <br></br>
-            <br></br>
             <ServicesSeven/>
             <Section7 {...sevenObj}/>
             <Section7 {...sevenObjOne}/>
