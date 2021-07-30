@@ -17,13 +17,8 @@ function App() {
     <Router >
       <Switch>
         <Route path = "/" component={Home} exact />
-<<<<<<< HEAD
 	<Route path = "/fragments" component={fragments} exact />
         <Route path = "/porfirio" component={SigninPage} exact />
-=======
-      	<Route path = "/fragments" component={fragments} exact />
-        <Route path = "/signin" component={SigninPage} exact />
->>>>>>> 409b0a3446e9022afd56bf1a8d3fdbe26395f5b2
         <Route path = "/tourism" component={Tourism} exact />
         <Route path = "/geography" component={GeographyPage} exact />
         <Route path = "/history" component={HistoryPage} exact />

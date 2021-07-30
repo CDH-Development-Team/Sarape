@@ -127,7 +127,7 @@ const Geography = () => {
             () =>{
                 setContent(
                     <GeographyEntry>
-<GeographyEntryImg><img src={Icon2} width={"100%"}></img><GeographyEntryDescription>
+<GeographyEntryImg height={height}><img src={Icon2} width={"100%"}></img><GeographyEntryDescription>
 Entrance into Guadalajara<br/>Homenaje á Cristóbal Colón: Antigüedades Méxicanas, Lienza 53.<br/> Fray Angelico Chavez History Library/New Mexico History Museum, 972MexH
 </GeographyEntryDescription>
 </GeographyEntryImg>
@@ -151,7 +151,7 @@ Tlaxcalan forces accompanied the Spaniards on post-conquest explorations of nort
         () =>{
             setContent(
                 <GeographyEntry>
-<GeographyEntryImg><img src={Icon6} width={"100%"}></img><GeographyEntryDescription>
+<GeographyEntryImg height={height}><img src={Icon6} width={"100%"}></img><GeographyEntryDescription>
 Mitla, Oaxaca, Mexico<br/> Joel Carillet, photographer, 2018
 </GeographyEntryDescription>
 </GeographyEntryImg>
@@ -171,7 +171,7 @@ Mitla, another capital of the early Zapotec civilization, is known for the geome
             () =>{
                 setContent(
                     <GeographyEntry>
-<GeographyEntryImg><img src={Icon7} width={"100%"}></img><GeographyEntryDescription>
+<GeographyEntryImg height={height}><img src={Icon7} width={"100%"}></img><GeographyEntryDescription>
 Mitla, Oaxaca, Mexico<br/> Alana Coghlan, photographer, 2013
 </GeographyEntryDescription>
 </GeographyEntryImg>
@@ -190,7 +190,7 @@ Notice the architectural details carved into these ancient walls at Mitla. Today
         () => {
             setContent(
             <GeographyEntry>
-<GeographyEntryImg><img src={Icon1} width={"100%"}></img><GeographyEntryDescription>
+<GeographyEntryImg height={height}><img src={Icon1} width={"100%"}></img><GeographyEntryDescription>
 Homenaje á Cristóbal Colón: Antigüedades Méxicanas, Lienza 27.<br/> Fray Angelico Chavez History Library/New Mexico History Museum, 972MexH</GeographyEntryDescription></GeographyEntryImg>
 <GeographyEntryText>La Malinche, a Nahua woman, interprets for Hernan Cortés in a discussion with Tlaxcalans about forming an alliance against the Aztecs. Notice the Tlaxcalans wearing textiles draped like cloaks. These weavings may have influenced the Saltillo sarape’s design and how it was worn.</GeographyEntryText>
 </GeographyEntry>
@@ -214,7 +214,7 @@ Homenaje á Cristóbal Colón: Antigüedades Méxicanas, Lienza 27.<br/> Fray An
     () =>{
         setContent(
             <GeographyEntry>
-<GeographyEntryImg><img src={Icon13} height={"100%"} width={"100%"}></img></GeographyEntryImg>
+<GeographyEntryImg height={height}><img src={Icon13} height={"100%"} width={"100%"}></img></GeographyEntryImg>
 <GeographyEntryText>By the early 1600s, the 1,500-mile-long northern trade route, El Camino Real de Tierra Adentro, was established, taking both Spanish and Indigenous Mexican influence into what is today New Mexico. El Camino Real means the Royal Road, sometimes referred to as the King’s Road because it was controlled by the King of Spain or his representatives. It connected the Spanish Colonial capital at Mexico City to Ohkay Owingeh (the Pueblo of San Juan) near Santa Fe, New Mexico. Thousands of settlers, along with militia, friars, and priests, used this road for colonization and commerce, which in turn helped carry the Saltillo sarape northward.</GeographyEntryText>
 
 </GeographyEntry>
@@ -229,7 +229,7 @@ Homenaje á Cristóbal Colón: Antigüedades Méxicanas, Lienza 27.<br/> Fray An
     () => {
     setContent(
 <GeographyEntry wide={true}>
-<GeographyEntryImg wide={true}><img src={Icon3} width={"100%"}></img>
+<GeographyEntryImg wide={true} height={height}><img src={Icon3} height={"100%"} width={"100%"}></img>
 </GeographyEntryImg>
 <GeographyEntryText wide={true}>
 Monte Albán was the most important center of the Zapotec civilization politically, economically, and culturally. One of the oldest Mesoamerican cities, it was inhabited for nearly 1,500 years by a succession of Olmecs, Zapotecs, and Mixtecs until about 850 CE (1,270 years ago). 
@@ -251,7 +251,7 @@ Monte Albán, Oaxaca, Mexico<br/> Dana Danielson, photographer, 2013
     () => {
         setContent(
         <GeographyEntry wide={true}>
-<GeographyEntryImg wide={true}><img src={Icon4} width={"100%"}></img>
+<GeographyEntryImg height={height} wide={true}><img src={Icon4} width={"100%"}></img>
 </GeographyEntryImg>
 <GeographyEntryDescription wide={true}>
 Teotitlán del Valle, Oaxaca, Mexico<br/> Joe Coca, photographer, 2019
@@ -269,7 +269,7 @@ openModal();
     () => {
         setContent(
             <GeographyEntry>
-<GeographyEntryImg><img src={Icon12} height={"100%"} width={"100%"}></img>
+<GeographyEntryImg height={height}><img src={Icon12} height={"100%"} width={"100%"}></img>
 </GeographyEntryImg>
 <GeographyEntryText>
 The original source of the sarape’s patterns, including the central diamond and circular medallion, is still debated and remains a bit of a mystery. The central diamond was a prominent design on ancient Zapotec architecture, and is still used on Saltillo sarapes. The Zapotec civilization is among the oldest in Mexico, and it was one of the most sophisticated in early Mesoamerica. For more than 2,500 years, the Zapotecs have lived in Oaxaca’s central valley. Early on, they developed impressive trade networks, exchanging weavings, pottery, jewelry, and foods. Their architecture and engineering skills are evidenced in their two ancient capital cities, Mitla and Monte Albán, and related irrigation systems. They also developed hieroglyphic writing, mathematics, and a calendar.The Zapotec town of Teotitlán del Valle, Oaxaca, remains one of the most important weaving centers in Mexico. About 80 percent of the population of 6,000 are involved in some aspect of the weaving tradition, and most people still earn their living as weavers. With nearly a million members, today Zapotecs are the third-largest Indigenous group in Mexico. The majority live in their ancestral homeland in the state of Oaxaca, but there are also large populations outside Mexico, most notably in California (an estimated 80,000 reside in the Los Angeles area) and, to a lesser degree, in other parts of the United States.
@@ -292,7 +292,7 @@ The original source of the sarape’s patterns, including the central diamond an
         setContent(
 
 <GeographyEntry wide={true}>
-<GeographyEntryImg wide={true}><img src={Icon5} width={"100%"}></img>
+<GeographyEntryImg height={height} wide={true}><img src={Icon5} height={"100%"}></img>
 </GeographyEntryImg>
 <GeographyEntryDescription wide={true}>
 Teotitlán del Valle, Oaxaca, Mexico<br/> Javier Lazo, photographer, 2019
@@ -308,13 +308,15 @@ Teotitlán del Valle, Oaxaca, Mexico<br/> Javier Lazo, photographer, 2019
     () => {
         setContent(
             <GeographyEntry>
-<GeographyEntryImg><img src={Icon8} height={"100%"} width={"100%"}></img><GeographyEntryDescription>
-Mitla, Oaxaca, Mexico<br/> Alana Coghlan, photographer, 2013
-</GeographyEntryDescription>
+<GeographyEntryImg height={height}><img src={Icon8} height={"100%"}></img>
 </GeographyEntryImg>
 <GeographyEntryText>
 Textile fragment with indigo design, c. 1250–1500 CE  Casas Grandes, northern Sierra province, Río Chico region, Chihuahua, Mexico ASM 22551
 </GeographyEntryText>
+<GeographyEntryDescription>
+Mitla, Oaxaca, Mexico<br/> Alana Coghlan, photographer, 2013
+</GeographyEntryDescription>
+
 </GeographyEntry>
         );
         openModal();
