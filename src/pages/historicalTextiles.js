@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-import HistoricalSection from '../components/Section7/section7index';
+import HistoricalSection from '../components/HistoricalTextiles/historicalTextiles.js';
 import { sixObj, sixObjOne, sixObjTwo, sixObjThree} from '../components/HistoricalTextiles/historicalData';
 import Section6 from '../components/Services/section6';
 
@@ -17,8 +17,6 @@ const HistoricalTextiles = () => {
         <>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle} />
-            <br></br>
-            <br></br>
             <Section6 />
             <HistoricalSection {...sixObj}/>
             <HistoricalSection {...sixObjOne}/>
