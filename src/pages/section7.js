@@ -16,17 +16,9 @@ const Section7Home = () => {
 
     return (
         <>
-            <Sidebar isOpen={isOpen} toggle={toggle}/>
-            <Navbar toggle={toggle} />
+
             <FamilyPage/>
-            <Section7 {...sevenObj}/>
-            <Section7 {...sevenObjOne}/>
-            <Section7 {...sevenObjTwo}/>
-            <Section7 {...sevenObjThree}/>
-            <Section7 {...sevenObjFour}/>
-            <Section7 {...sevenObjFive}/>
-            <Section7 {...sevenObjSix}/>
-            <Section7 {...sevenObjSeven}/>
+
         </>
     )
 }

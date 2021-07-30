@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import HistoricalSection from '../components/HistoricalTextiles/historicalTextiles.js';
 import { sixObj, sixObjOne, sixObjTwo, sixObjThree} from '../components/HistoricalTextiles/historicalData';
 import Section6 from '../components/Services/section6';
+import FamilyPage from '../pages/historicalModals.js';
 
 
 const HistoricalTextiles = () => {
@@ -15,13 +16,7 @@ const HistoricalTextiles = () => {
 
     return (
         <>
-            <Sidebar isOpen={isOpen} toggle={toggle}/>
-            <Navbar toggle={toggle} />
-            <Section6 />
-            <HistoricalSection {...sixObj}/>
-            <HistoricalSection {...sixObjOne}/>
-            <HistoricalSection {...sixObjTwo}/>
-            <HistoricalSection {...sixObjThree}/>
+            <FamilyPage/>
         </>
     )
 }
