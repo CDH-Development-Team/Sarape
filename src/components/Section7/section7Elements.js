@@ -83,6 +83,7 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
+    font-family: myraid-pro;
     color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 `;
 

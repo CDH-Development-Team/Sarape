@@ -5,7 +5,7 @@ import Section7 from '../components/Section7/section7index';
 import { sevenObj, sevenObjOne, sevenObjTwo, sevenObjThree, sevenObjFour, sevenObjFive, sevenObjSix, sevenObjSeven} from '../components/Section7/section7-data';
 import ServicesSeven from '../components/Services/section7';
 import Services from '../components/Services';
-
+import FamilyPage from '../pages/section7Modals.js';
 
 const Section7Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +16,7 @@ const Section7Home = () => {
 
     return (
         <>
+<<<<<<< HEAD
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle} />
             <ServicesSeven/>
@@ -27,6 +28,11 @@ const Section7Home = () => {
             <Section7 {...sevenObjFive}/>
             <Section7 {...sevenObjSix}/>
             <Section7 {...sevenObjSeven}/>
+=======
+
+            <FamilyPage/>
+
+>>>>>>> 7f28e4e81ff36b3effadf7d1e35fc6acb3ad657e
         </>
     )
 }

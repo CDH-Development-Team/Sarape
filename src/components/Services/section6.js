@@ -19,7 +19,7 @@ import {
     ServicesIcon, 
     ServicesH2, 
     ServicesP } from './ServicesElements';
-import Modal from '../Modal';
+import Modal from '../Modal/index.js';
 
 const Section6 = () => {
     const [showModal, setShowModal] = useState(false);

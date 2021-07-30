@@ -1,3 +1,7 @@
 .mosaic{
     overflow:hidden;
 }
+
+*{
+    font-family: myriad-pro;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import { SidebarContainer, Icon, ClosedIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute } from "./SidebarElements";
 
 const Sidebar = ({toggle, isOpen}) => {
@@ -9,10 +10,10 @@ const Sidebar = ({toggle, isOpen}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="/" onClick={toggle}>
+                    <SidebarLink BrowserRouter="/" onClick={toggle}>
                         Home
                     </SidebarLink>
-                    <SidebarLink to="/geography" onClick={toggle}>
+                    <SidebarLink Link="/geography" onClick={toggle}>
                         Geography
                     </SidebarLink>
                     <SidebarLink to="/history" onClick={toggle}>

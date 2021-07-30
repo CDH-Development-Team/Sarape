@@ -56,7 +56,7 @@ const History = () =>{
             onRequestClose={closeModal}
             style={customStyles}
             >
-                <img src={close} onClick={closeModal} style={{width:"5%"}}/>
+                <img src={close} onClick={closeModal} style={{width:"5%", float:"right"}}/>
 
                 
             {content}
@@ -69,15 +69,17 @@ const History = () =>{
             () => {
                 setContent(
     <BackgroundDiv>
-        <BackgroundImg><img src={Icon1} width={"100%"}/>
-        <BackgroundContentLeft>
-        Zoque woman weaving on a backstrap loomTuxtla Gutiérrez, Chiapas, MexicoDonald Cordry, photographer, 1940ASM Cordry 1143
-        </BackgroundContentLeft>
-
-        <BackgroundContentRight>
-        The Indigenous peoples of the Americas have a long and rich history of weaving. Chroniclers of Cortes’s expedition described the Tlaxcalan people as being dressed in clothing that was finely woven and adorned with precious metals and feathers. Indigenous weavers wove clothing using plant fibers, including cotton and ixtle, the fiber of the maguey or agave plant, on backstrap tension looms which are still used today. A backstrap loom’s warp threads are either looped around two rods or tied to them. The top rod is secured with twine to a stationary object; the bottom rod is attached to a strap around the weaver’s waist. This allows the weaver to regulate the tension by moving her body slightly closer to, or farther from, a stationary point.
-        </BackgroundContentRight>
+        <BackgroundImg height={height}><img src={Icon1} height={"100%"}/>
         </BackgroundImg>
+        <GeographyEntryText>
+        The Indigenous peoples of the Americas have a long and rich history of weaving. Chroniclers of Cortes’s expedition described the Tlaxcalan people as being dressed in clothing that was finely woven and adorned with precious metals and feathers. Indigenous weavers wove clothing using plant fibers, including cotton and ixtle, the fiber of the maguey or agave plant, on backstrap tension looms which are still used today. A backstrap loom’s warp threads are either looped around two rods or tied to them. The top rod is secured with twine to a stationary object; the bottom rod is attached to a strap around the weaver’s waist. This allows the weaver to regulate the tension by moving her body slightly closer to, or farther from, a stationary point.
+        </GeographyEntryText>
+        <GeographyEntryDescription>
+        Zoque woman weaving on a backstrap loomTuxtla Gutiérrez, Chiapas, MexicoDonald Cordry, photographer, 1940ASM Cordry 1143
+        </GeographyEntryDescription>
+
+        
+
     </BackgroundDiv>);
                 openModal();
             }
@@ -143,12 +145,12 @@ const History = () =>{
             () =>{
                 setContent(
                     <GeographyEntry>
-    <GeographyEntryImg><img src={Icon2} width={"100%"}/>
+    <GeographyEntryImg ><img src={Icon2} width={"80%"}/>
     </GeographyEntryImg>
 
     <GeographyEntryText>
     How people dress and adorn themselves has long served as a form of identity, signaling culture and status. During the time of the Aztec empire (1345–1521 CE), both custom and law controlled what people could wear according to their class. The influence of the Spaniards on Indigenous lifeways, including their clothing, can be seen through illustrations in codices* produced under Spanish rule.<br/><br/> The Codex Mendoza illustrates Aztec people of high status, priests, and rulers wearing tilmàtli, decorated cloaks woven of cotton or ixtle on a backstrap loom. The motifs and materials of the tilmàtliindicated the wearer’s class and rank. It is possible that the Saltillo sarape’s designs and how it was worn were influenced by the tilmàtli.<br></br><br></br><br></br>*Codices is the plural of codex. 
-<br/><br/><br/><br/><br/><br/>right<br></br>Notice how the tilmàtli are similar to the Saltillo sarape in design and how they were worn.<br/><br/>Codex Mendoza, Folio 65r, c. 1541–1542<br/>Viceroyalty of Spain<br></br>Bodleian Library, Oxford University
+<br/><br/>right<br></br>Notice how the tilmàtli are similar to the Saltillo sarape in design and how they were worn.<br/><br/>Codex Mendoza, Folio 65r, c. 1541–1542<br/>Viceroyalty of Spain<br></br>Bodleian Library, Oxford University
     </GeographyEntryText>
 </GeographyEntry>
                 );
@@ -170,8 +172,8 @@ const History = () =>{
             () =>{
                 setContent(
                     <GeographyEntry wide={true}>
-    <GeographyEntryImg wide={true} style={{padding:"0px 50px"}}>
-        <img src = {Icon4} width={"100%"}></img>
+    <GeographyEntryImg wide={true} height={height}>
+        <img src = {Icon4} height={"100%"} width={"100%"}></img>
     </GeographyEntryImg>
     <GeographyEntryText wide={true}>
     The Aztecs’ tilmàtli, tied at the shoulder as depicted in several codices, is also part of the sarape’s cultural lineage. This style is similar to a poncho.
@@ -191,7 +193,7 @@ const History = () =>{
             () => {
                 setContent(
                     <GeographyEntry>
-<GeographyEntryImg><img src={Icon3} width={"100%"}></img></GeographyEntryImg>
+<GeographyEntryImg><img src={Icon3} width={"90%"}></img></GeographyEntryImg>
 <GeographyEntryText>
 excoco ruler Nezahualpilli shown wearing a xiuhtilmatli (blue cape), which would have been woven on a backstrap loom. Note the complex designs and the natural dye colors: blue from the indigo plant and red from cochineal insects.
 </GeographyEntryText>
