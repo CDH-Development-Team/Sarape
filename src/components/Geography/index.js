@@ -112,7 +112,7 @@ const Geography = () => {
             onRequestClose={closeModal}
             style={customStyles}
             >
-                <img src={close} onClick={closeModal} style={{width:"5%"}}/>
+                <img src={close} onClick={closeModal} style={{width:"5%", float:"right"}}/>
 
                 
             {content}
@@ -127,13 +127,15 @@ const Geography = () => {
             () =>{
                 setContent(
                     <GeographyEntry>
-<GeographyEntryImg height={height}><img src={Icon2} width={"100%"}></img><GeographyEntryDescription>
-Entrance into Guadalajara<br/>Homenaje á Cristóbal Colón: Antigüedades Méxicanas, Lienza 53.<br/> Fray Angelico Chavez History Library/New Mexico History Museum, 972MexH
-</GeographyEntryDescription>
-</GeographyEntryImg>
+<GeographyEntryImg height={height}><img src={Icon2} width={"100%"}></img></GeographyEntryImg>
 <GeographyEntryText>
 Tlaxcalan forces accompanied the Spaniards on post-conquest explorations of northern Mexico. This scene is from the 1522 exploration led by Cristóbal de Olid, one of Cortés’s lieutenants.
 </GeographyEntryText>
+<GeographyEntryDescription>
+Entrance into Guadalajara<br/>Homenaje á Cristóbal Colón: Antigüedades Méxicanas, Lienza 53.<br/> Fray Angelico Chavez History Library/New Mexico History Museum, 972MexH
+</GeographyEntryDescription>
+
+
 </GeographyEntry>
                 );
                 openModal();}
@@ -171,7 +173,7 @@ Mitla, another capital of the early Zapotec civilization, is known for the geome
             () =>{
                 setContent(
                     <GeographyEntry>
-<GeographyEntryImg height={height}><img src={Icon7} width={"100%"}></img><GeographyEntryDescription>
+<GeographyEntryImg><img src={Icon7} width={"100%"}></img><GeographyEntryDescription>
 Mitla, Oaxaca, Mexico<br/> Alana Coghlan, photographer, 2013
 </GeographyEntryDescription>
 </GeographyEntryImg>
