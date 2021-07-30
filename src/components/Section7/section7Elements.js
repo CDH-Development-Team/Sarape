@@ -36,8 +36,6 @@ export const InfoRow = styled.div`
 
 
 
-
-
 export const Column1 = styled.div`
     margin-bottom: 0px;
     padding: 0 15px;
@@ -85,6 +83,7 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
+    font-family: myraid-pro;
     color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 `;
 

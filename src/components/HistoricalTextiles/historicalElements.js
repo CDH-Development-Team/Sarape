@@ -69,7 +69,7 @@ export const TopLine = styled.p`
 `;
 
 export const Heading = styled.h1`
-    margin-bottom: 24px;
+    margin-bottom: 14px;
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
@@ -84,6 +84,7 @@ export const Subtitle = styled.p`
     max-width: 440px;
     margin-bottom: 35px;
     font-size: 18px;
+    font-family: myraid-pro;
     line-height: 24px;
     color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 `;

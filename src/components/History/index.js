@@ -68,18 +68,17 @@ const History = () =>{
         <img src={Icon1} height={"100%"} width={"100%"} onClick={
             () => {
                 setContent(
-                    <BackgroundDiv>
-    <BackgroundImg><img src={Icon1} width={"100%"}/>
-    <BackgroundContentLeft>
-    Zoque woman weaving on a backstrap loomTuxtla Gutiérrez, Chiapas, MexicoDonald Cordry, photographer, 1940ASM Cordry 1143
-    </BackgroundContentLeft>
+    <BackgroundDiv>
+        <BackgroundImg><img src={Icon1} width={"100%"}/>
+        <BackgroundContentLeft>
+        Zoque woman weaving on a backstrap loomTuxtla Gutiérrez, Chiapas, MexicoDonald Cordry, photographer, 1940ASM Cordry 1143
+        </BackgroundContentLeft>
 
-    <BackgroundContentRight>
-    The Indigenous peoples of the Americas have a long and rich history of weaving. Chroniclers of Cortes’s expedition described the Tlaxcalan people as being dressed in clothing that was finely woven and adorned with precious metals and feathers. Indigenous weavers wove clothing using plant fibers, including cotton and ixtle, the fiber of the maguey or agave plant, on backstrap tension looms which are still used today. A backstrap loom’s warp threads are either looped around two rods or tied to them. The top rod is secured with twine to a stationary object; the bottom rod is attached to a strap around the weaver’s waist. This allows the weaver to regulate the tension by moving her body slightly closer to, or farther from, a stationary point.
-    </BackgroundContentRight>
-    </BackgroundImg>
-</BackgroundDiv>
-                );
+        <BackgroundContentRight>
+        The Indigenous peoples of the Americas have a long and rich history of weaving. Chroniclers of Cortes’s expedition described the Tlaxcalan people as being dressed in clothing that was finely woven and adorned with precious metals and feathers. Indigenous weavers wove clothing using plant fibers, including cotton and ixtle, the fiber of the maguey or agave plant, on backstrap tension looms which are still used today. A backstrap loom’s warp threads are either looped around two rods or tied to them. The top rod is secured with twine to a stationary object; the bottom rod is attached to a strap around the weaver’s waist. This allows the weaver to regulate the tension by moving her body slightly closer to, or farther from, a stationary point.
+        </BackgroundContentRight>
+        </BackgroundImg>
+    </BackgroundDiv>);
                 openModal();
             }
         }></img>
@@ -92,18 +91,18 @@ const History = () =>{
         <img src={Icon7} height={"100%"} width={"100%"} onClick={
             () => {
                 setContent(
-                    <GeographyEntry>
-    <GeographyEntryImg>
-        <img src={Icon7} width={"100%"}></img>
-    </GeographyEntryImg>
-    <GeographyEntryText>
-    The Spanish capa (cape), a large overcoat with an open front and often a hood, may have been an influence on the sarape as a more formal garment. 
-    </GeographyEntryText>
+    <GeographyEntry>
+        <GeographyEntryImg>
+            <img src={Icon7} width={"100%"}></img>
+        </GeographyEntryImg>
+        <GeographyEntryText>
+        The Spanish capa (cape), a large overcoat with an open front and often a hood, may have been an influence on the sarape as a more formal garment. 
+        </GeographyEntryText>
 
-    <GeographyEntryDescription>
-    Spanish cape, late 1500s <br/>Silk, metal thread <br/>Purchase, Rogers Fund, 1939<br/>The Metropolitan Museum of Art, 39.53
-    </GeographyEntryDescription>
-</GeographyEntry>
+        <GeographyEntryDescription>
+        Spanish cape, late 1500s <br/>Silk, metal thread <br/>Purchase, Rogers Fund, 1939<br/>The Metropolitan Museum of Art, 39.53
+        </GeographyEntryDescription>
+    </GeographyEntry>
                 );
                 openModal();
             }
@@ -207,17 +206,17 @@ excoco ruler Nezahualpilli shown wearing a xiuhtilmatli (blue cape), which would
         <img src={Icon6} height={"100%"} width={"100%"} onClick={
             () => {
                 setContent(
-                    <GeographyEntry>
-    <GeographyEntryImg>
-        <img src={Icon6} width={"100%"}></img>
-    </GeographyEntryImg>
-    <GeographyEntryText>
-    Sarapes are worn in many ways: wrapped or draped like a shawl, over one shoulder, or as a poncho. The typical sarape may be woven in one piece, but more frequently consists of two panels joined together leaving a neck slit, also called a bocamanga, through which the wearer’s head could fit.In Spanish Colonial times, the sarape was mainly worn in northern Mexico by hacendados, or ranch owners, who traveled on horseback. The sarape’s loose fit made it a practical riding garment. Later, it became a status symbol worn by wealthy “city folk.” While anyone could wear one, they were expensive to buy. These textiles were masterfully woven with incredible tightness and complex designs. It is possible that they were created in small workshops, located on many of the large ranches or haciendas
-    </GeographyEntryText>
-    <GeographyEntryDescription>
-    Rancheros, 1836 <br/>Carl Nebel   <br/>German, 1805–1855<br/>Lithograph<br/>Voyage Pittoresque et Archéologique dans la Partie la plus Intéressante du MéxiqueAlbum, Alamy Stock Photo
-    </GeographyEntryDescription>
-</GeographyEntry>
+    <GeographyEntry>
+        <GeographyEntryImg>
+            <img src={Icon6} width={"100%"}></img>
+        </GeographyEntryImg>
+        <GeographyEntryText>
+        Sarapes are worn in many ways: wrapped or draped like a shawl, over one shoulder, or as a poncho. The typical sarape may be woven in one piece, but more frequently consists of two panels joined together leaving a neck slit, also called a bocamanga, through which the wearer’s head could fit.In Spanish Colonial times, the sarape was mainly worn in northern Mexico by hacendados, or ranch owners, who traveled on horseback. The sarape’s loose fit made it a practical riding garment. Later, it became a status symbol worn by wealthy “city folk.” While anyone could wear one, they were expensive to buy. These textiles were masterfully woven with incredible tightness and complex designs. It is possible that they were created in small workshops, located on many of the large ranches or haciendas
+        </GeographyEntryText>
+        <GeographyEntryDescription>
+        Rancheros, 1836 <br/>Carl Nebel   <br/>German, 1805–1855<br/>Lithograph<br/>Voyage Pittoresque et Archéologique dans la Partie la plus Intéressante du MéxiqueAlbum, Alamy Stock Photo
+        </GeographyEntryDescription>
+    </GeographyEntry>
                 );
                 openModal();
             }

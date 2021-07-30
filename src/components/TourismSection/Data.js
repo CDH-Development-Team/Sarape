@@ -15,7 +15,7 @@ export const tourismObjOne = {
     description2: "As tourism to Mexico increased, many visitors purchased these colorful sarapes as souvenirs. With demand on the rise, sarape-manufacturing plants were established. Through the use of electric-powered looms, synthetic dyes, and acrylic yarns, production time was shortened and the number of textiles increased. As a result, by the 1930s, there was a drastic decline in handwoven sarapes and the use of natural-dyed yarns.",
     description3: "This poster promoting Mexican Tourism has iconic symbols of Mexico: A saguaro, a sombrero, a guitar, pyramids, and a colorful, striped Saltillo Sarape.",
     buttonLabel: "",
-    imgStart: false,
+    imgStart: true,
     img:null,
     artifact: img5,
     artifactAlt: 'Color Lithograph',
@@ -27,9 +27,9 @@ export const tourismObjOne = {
 
 export const tourismObjTwo = {
     id : 'SectionTwo',
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
     topLine: '',
     headline: "Tourism and the Saltillo",
     description: "Mexican ceramic artists in the area of Guadalajara responded to the tourist market by creating miniature scenes of Mexican people from the 1800s. Often, the male figures who rode or worked with horses were depicted wearing Saltillo sarapes.",
@@ -41,7 +41,7 @@ export const tourismObjTwo = {
     artifactInfo:'Ceramic Figurines, c. 1900-1920. ASM 156',
     dark: true,
     primary: true,
-    darkText: true
+    darkText: false
 };
 
 export const tourismObjThree = {
@@ -54,7 +54,7 @@ export const tourismObjThree = {
     description: "This photo shows tourists wearing Saltillo sarapes and sombreros while visiting Tijuana, Mexico. These items would have been purchased as souvenirs and gifts, increasing their recognition as symbols of Mexico.",
     description2: "Tourist Photograph, May 5, 1920. Tijuana, Mexico. Loan from Tom Kieft",
     buttonLabel: "",
-    imgStart: false,
+    imgStart: true,
     img: img1,
     artifact: img3,
     artifactAlt: "Sarape",
@@ -67,9 +67,9 @@ export const tourismObjThree = {
 
 export const tourismObjFour = {
     id : 'SectionFour',
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
     topLine: '',
     headline: "Tourism and the Saltillo",
     description: "Oaxaca continues to be an important weaving center whose textiles are sold worldwide. Most Zapotec weavers now use synthetic dyes, rather than the traditional natural dyes, which cuts down on the work and makes production faster.",
@@ -83,5 +83,5 @@ export const tourismObjFour = {
     alt: 'Paper',
     dark: true,
     primary: true,
-    darkText: true
+    darkText: false
 };
