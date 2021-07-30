@@ -11,9 +11,6 @@ import Icon9 from '../../textiles_png/3_textiles/AT-2020-16-7.png';
 import { homeObjOne, homeObjTwo, homeObjThree, SarapeObj1, SarapeObj2, SarapeObj3, SarapeObj4, SarapeObj5, SarapeObj6, SarapeObj7 } from '../InfoSection/Data';
 // import AnimeList from '../components/anime';
 
-
-import {fragmentOne, fragmentTwo, fragmentThree, fragmentFour, fragmentFive, fragmentSix} from './Fragment/FragmentsData.js';
-
 import { 
     ServicesContainer, 
     ServicesH1, 
@@ -21,6 +18,7 @@ import {
     ServicesCard, 
     ServicesIcon, 
     ServicesH2, 
+<<<<<<< HEAD
     ServicesP,
 	FragmentQuote,
 	FragmentDiv,
@@ -64,9 +62,21 @@ const Services = () => {
         setModalIsOpen(false)
     }
     return (
+=======
+    ServicesP } from './ServicesElements';
+import Modal from '../Modal';
 
+const Services = () => {
+    const [showModal, setShowModal] = useState(false);
+>>>>>>> f7b63ab8c7a3d2b06f591f077d33d23eb91b7bf6
+
+    const openModal = () => {
+        setShowModal(prev => !prev);
+    };
+    return (
         <ServicesContainer id="services">
             <ServicesH1>FRAGMENT SERIES BY PORFIRIO GUTIERREZ</ServicesH1>
+<<<<<<< HEAD
                 <ServicesP>
                 My ongoing Fragment series is my interpretation of one of the most remarkable weaving traditions created by the blending of Native American and European traditions. These pieces reflect how the merger created new forms of expression in the art of weaving. This style of weaving became part of our Mexican cultural identity and remains part of my personal expression. My Fragment series pays homage to our ancestral weavers, who, in many cases, were slaves yet they contributed their unique design sensibilities and left an artistic legacy we can still appreciate and respect today.
                 <br /><br />For more information go to porfiriogutiérrez.com
@@ -151,6 +161,47 @@ const Services = () => {
                     </FragmentDiv>
                 </FragmentQuote>
             </ServicesContainer>
+=======
+            <ServicesWrapper>
+                <ServicesCard>
+                    <ServicesIcon onClick={openModal} src={Icon4}/>
+                    {/* <ServicesH2>Reduce Expenses</ServicesH2>
+                    <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP> */}
+                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon4} />
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon onClick={openModal} src={Icon5}/>
+                    {/* <ServicesH2>Virtual offices</ServicesH2> */}
+                    {/* <ServicesP>You can access our platform from anywhere.</ServicesP> */}
+                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon5} />
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon onClick={openModal} src={Icon6}/>
+                    {/* <ServicesH2>Premium Benefits</ServicesH2> */}
+                    {/* <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
+                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon6} />
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon onClick={openModal} src={Icon7}/>
+                    {/* <ServicesH2>Premium Benefits</ServicesH2>
+                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
+                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon7} />
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon onClick={openModal} src={Icon8}/>
+                    {/* <ServicesH2>Premium Benefits</ServicesH2>
+                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
+                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon8} />                    
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon onClick={openModal} src={Icon9}/>
+                    {/* <ServicesH2>Premium Benefits</ServicesH2>
+                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
+                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon9} />                    
+                </ServicesCard>
+            </ServicesWrapper>
+        </ServicesContainer>
+>>>>>>> f7b63ab8c7a3d2b06f591f077d33d23eb91b7bf6
     )
 }
 
