@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Icon1 from '../../images/svg-4.svg';
 import Icon2 from '../../images/svg-5.svg';
 import Icon3 from '../../images/svg-6.svg';
@@ -8,6 +8,8 @@ import Icon6 from '../../textiles_png/3_textiles/AT-2020-16-4.png';
 import Icon7 from '../../textiles_png/3_textiles/AT-2020-16-5.png';
 import Icon8 from '../../textiles_png/3_textiles/AT-2020-16-6.png';
 import Icon9 from '../../textiles_png/3_textiles/AT-2020-16-7.png';
+import { homeObjOne, homeObjTwo, homeObjThree, SarapeObj1, SarapeObj2, SarapeObj3, SarapeObj4, SarapeObj5, SarapeObj6, SarapeObj7 } from '../InfoSection/Data';
+// import AnimeList from '../components/anime';
 
 
 import {fragmentOne, fragmentTwo, fragmentThree, fragmentFour, fragmentFive, fragmentSix} from './Fragment/FragmentsData.js';
@@ -25,8 +27,42 @@ import {
 	FragmentCite } from './ServicesElements';
 	
 import Fragment from './Fragment/index.js';
+import Modal from '../Modal';
+// import Modal from 'react-modal';
+import AnimeList from '../anime';
+import InfoSection from '../InfoSection';
+
+const customStyles = {
+    content : {
+      height                : 'auto',
+      width                 : '100%',
+      top                   : '50%',
+      left                  : '50%',
+      right                 : 'auto',
+      bottom                : 'auto',
+      marginRight           : '-50%',
+      transform             : 'translate(-50%, -50%)',
+      backgroundColor       : '#4a0033', 
+      zindex                : '1000',
+      borderRadius         :"10px"
+    }
+};
 
 const Services = () => {
+    const [showModal, setShowModal] = useState(false);
+
+    const openModal = () => {
+        setShowModal(prev => !prev);
+    };
+    const [modalIsOpen,setModalIsOpen] = useState(false);
+
+    const setModalIsOpenToTrue =()=>{
+        setModalIsOpen(true)
+    }
+
+    const setModalIsOpenToFalse =()=>{
+        setModalIsOpen(false)
+    }
     return (
 
         <ServicesContainer id="services">
@@ -37,34 +73,72 @@ const Services = () => {
                 </ServicesP>
                 <ServicesWrapper>
                     <ServicesCard>
-                        <ServicesIcon src={Icon4}/>
+                        <ServicesIcon onClick={openModal} src={Icon4}/>
+                        {/* <ServicesIcon onClick={setModalIsOpenToTrue} src={Icon4}/> */}
                         {/* <ServicesH2>Reduce Expenses</ServicesH2>
                         <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP> */}
+                        {/* <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon4} /> */}
+                        <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon4} /> 
+                        {/* <Modal isOpen={modalIsOpen} style={customStyles} onRequestClose={()=> setModalIsOpen(false)}> */}
+                        {/* <button onClick={setModalIsOpenToFalse}>x</button> */}
+                        {/* <InfoSection {...SarapeObj1}/> */}
+                        {/* <AnimeList imgSrc={Icon4}/> */}
+                        {/* </Modal> */}
                     </ServicesCard>
                     <ServicesCard>
-                        <ServicesIcon src={Icon5}/>
+                        <ServicesIcon onClick={openModal} src={Icon5}/>
                         {/* <ServicesH2>Virtual offices</ServicesH2> */}
                         {/* <ServicesP>You can access our platform from anywhere.</ServicesP> */}
+                        <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon5} /> 
+                        {/* <Modal isOpen={modalIsOpen} style={customStyles} onRequestClose={()=> setModalIsOpen(false)}>
+                        <button onClick={setModalIsOpenToFalse}>x</button>
+                        <InfoSection {...SarapeObj2}/> */}
+                        {/* <AnimeList imgSrc={Icon5}/> */}
+                        {/* </Modal> */}
                     </ServicesCard>
                     <ServicesCard>
-                        <ServicesIcon src={Icon6}/>
+                        <ServicesIcon onClick={openModal} src={Icon6}/>
                         {/* <ServicesH2>Premium Benefits</ServicesH2> */}
                         {/* <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
+                        <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon6} />                         
+                        {/* <Modal isOpen={modalIsOpen} style={customStyles} onRequestClose={()=> setModalIsOpen(false)}>
+                            <button onClick={setModalIsOpenToFalse}>x</button>
+                            <InfoSection {...SarapeObj3}/> */}
+                            {/* <AnimeList imgSrc={Icon6}/> */}
+                        {/* </Modal> */}
                     </ServicesCard>
                     <ServicesCard>
-                        <ServicesIcon src={Icon7}/>
+                        <ServicesIcon onClick={openModal} src={Icon7}/>
                         {/* <ServicesH2>Premium Benefits</ServicesH2>
                         <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
+                        <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon7} />                         
+                        {/* <Modal isOpen={modalIsOpen} style={customStyles} onRequestClose={()=> setModalIsOpen(false)}>
+                            <button onClick={setModalIsOpenToFalse}>x</button>
+                            <InfoSection {...SarapeObj4}/> */}
+                            {/* <AnimeList imgSrc={Icon7}/> */}
+                        {/* </Modal> */}
                     </ServicesCard>
                     <ServicesCard>
-                        <ServicesIcon src={Icon8}/>
+                        <ServicesIcon onClick={openModal} src={Icon8}/>
                         {/* <ServicesH2>Premium Benefits</ServicesH2>
                         <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
+                        <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon8} /> 
+                        {/* <Modal isOpen={modalIsOpen} style={customStyles} onRequestClose={()=> setModalIsOpen(false)}>
+                            <button onClick={setModalIsOpenToFalse}>x</button>
+                            <InfoSection {...SarapeObj5}/> */}
+                            {/* <AnimeList imgSrc={Icon8}/> */}
+                        {/* </Modal> */}
                     </ServicesCard>
                     <ServicesCard>
-                        <ServicesIcon src={Icon9}/>
+                        <ServicesIcon onClick={openModal} src={Icon9}/>
                         {/* <ServicesH2>Premium Benefits</ServicesH2>
                         <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
+                        <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon9} /> 
+                        {/* <Modal isOpen={modalIsOpen} style={customStyles} onRequestClose={()=> setModalIsOpen(false)}> */}
+                            {/* <button onClick={setModalIsOpenToFalse}>x</button> */}
+                            {/* <InfoSection {...SarapeObj6}/> */}
+                            {/* <AnimeList imgSrc={Icon9}/> */}
+                        {/* </Modal> */}
                     </ServicesCard>
                 </ServicesWrapper>
                 <FragmentQuote>
@@ -76,7 +150,6 @@ const Services = () => {
                         </FragmentCite>
                     </FragmentDiv>
                 </FragmentQuote>
-
             </ServicesContainer>
     )
 }

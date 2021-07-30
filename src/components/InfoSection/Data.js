@@ -5,7 +5,15 @@ import img4 from "../../images/pintura.jpg";
 import img5 from "../../images/svg-5.svg";
 import img6 from "../../images/tourismInMexico.jpg";
 import img7 from "../../images/candids.jpg";
-
+import Icon1 from '../../images/svg-4.svg';
+import Icon2 from '../../images/svg-5.svg';
+import Icon3 from '../../images/svg-6.svg';
+import Icon4 from '../../textiles_png/3_textiles/AT-2020-16-2.png';
+import Icon5 from '../../textiles_png/3_textiles/AT-2020-16-3.png';
+import Icon6 from '../../textiles_png/3_textiles/AT-2020-16-4.png';
+import Icon7 from '../../textiles_png/3_textiles/AT-2020-16-5.png';
+import Icon8 from '../../textiles_png/3_textiles/AT-2020-16-6.png';
+import Icon9 from '../../textiles_png/3_textiles/AT-2020-16-7.png';
 
 export const homeObjOne = {
     id : 'about',
@@ -161,6 +169,120 @@ export const tourismObjFour = {
     buttonLabel: "",
     imgStart: true,
     img: img7,
+    alt: 'Paper',
+    dark: true,
+    primary: true,
+    darkText: true
+};
+
+export const SarapeObj1 = {
+    id : '',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: '',
+    headline: "",
+    description: "This is a Sarape",
+    buttonLabel: "",
+    imgStart: true,
+    img: Icon1,
+    alt: 'Paper',
+    dark: true,
+    primary: true,
+    darkText: true
+};
+
+export const SarapeObj2 = {
+    id : '',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: '',
+    headline: "",
+    description: "",
+    buttonLabel: "",
+    imgStart: true,
+    img: Icon2,
+    alt: 'Paper',
+    dark: true,
+    primary: true,
+    darkText: true
+};
+export const SarapeObj3 = {
+    id : '',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: '',
+    headline: "",
+    description: "",
+    buttonLabel: "",
+    imgStart: true,
+    img: Icon3,
+    alt: 'Paper',
+    dark: true,
+    primary: true,
+    darkText: true
+};
+export const SarapeObj4 = {
+    id : '',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: '',
+    headline: "",
+    description: "",
+    buttonLabel: "",
+    imgStart: true,
+    img: Icon4,
+    alt: 'Paper',
+    dark: true,
+    primary: true,
+    darkText: true
+};
+export const SarapeObj5 = {
+    id : '',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: '',
+    headline: "",
+    description: "",
+    buttonLabel: "",
+    imgStart: true,
+    img: Icon5,
+    alt: 'Paper',
+    dark: true,
+    primary: true,
+    darkText: true
+};
+export const SarapeObj6 = {
+    id : '',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: '',
+    headline: "",
+    description: "",
+    buttonLabel: "",
+    imgStart: true,
+    img: Icon6,
+    alt: 'Paper',
+    dark: true,
+    primary: true,
+    darkText: true
+};
+export const SarapeObj7 = {
+    id : '',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: '',
+    headline: "",
+    description: "",
+    buttonLabel: "",
+    imgStart: true,
+    img: Icon7,
     alt: 'Paper',
     dark: true,
     primary: true,

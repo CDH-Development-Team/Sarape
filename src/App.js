@@ -9,14 +9,14 @@ import HistoryPage from "./pages/history.js";
 import Section7 from "./pages/section7.js"
 import Section5 from "./pages/section5.js"
 import Section6 from "./pages/historicalTextiles.js";
-
+import FamilyPage from './pages/section5Family';
 
 function App() {
   return (
     <Router >
       <Switch>
         <Route path = "/" component={Home} exact />
-	<Route path = "/fragments" component={fragments} exact />
+      	<Route path = "/fragments" component={fragments} exact />
         <Route path = "/signin" component={SigninPage} exact />
         <Route path = "/tourism" component={Tourism} exact />
         <Route path = "/geography" component={GeographyPage} exact />
@@ -24,9 +24,13 @@ function App() {
         <Route path = "/section7" component={Section7} exact />
         <Route path = "/section5" component={Section5} exact />
         <Route path = "/historicalTextiles" component={Section6} exact />
+        <Route path = "/section5Family" component={FamilyPage} exact />
       </Switch>
     </Router>
   );
 }
 
+
+
 export default App;
+
