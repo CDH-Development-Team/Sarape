@@ -3,6 +3,7 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS} from "react-scroll";
 
 
+
 export const Nav = styled.nav`
     background: rgba(173, 0, 66,1);
     height: 80px;
@@ -135,10 +136,12 @@ export const NavBtnLink = styled(LinkR)`
 
 export const NavP = styled.div`
     font-size: 40px;
+    font-family: "CancioneITCStd";
 `;
 
 export const NavP2 = styled.div`
     font-size: 1rem;
+    font-family: "CancioneITCStd";
 `;
 
 export const NavDiv = styled.div`

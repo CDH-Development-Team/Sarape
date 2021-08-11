@@ -17,7 +17,7 @@ function App() {
     <Router >
       <Switch>
         <Route path = "/" component={Home} exact />
-	<Route path = "/fragments" component={fragments} exact />
+	      <Route path = "/fragments" component={fragments} exact />
         <Route path = "/porfirio" component={SigninPage} exact />
         <Route path = "/tourism" component={Tourism} exact />
         <Route path = "/geography" component={GeographyPage} exact />
