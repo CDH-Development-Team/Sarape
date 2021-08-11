@@ -38,6 +38,7 @@ height: ${({height}) => (height*0.7)+"px"};
 max-width: ${({wide}) => (wide) ? '90%' : '50%'};
 float:right;
 margin-right: 10%;
+overflow:hidden;
 @media screen and (max-width: 480px){
 width:100%;
 }

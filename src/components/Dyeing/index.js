@@ -4,7 +4,7 @@ import Modal from 'react-modal';
 
 import { GeographyContainer, GeographyMosaicParent, GeographyMosaic1, GeographyMosaic2, GeographyMosaic3, GeographyMosaic4, GeographyMosaic5, GeographyMosaic6, GeographyMosaic7, GeographyMosaic8, GeographyMosaic9, GeographyMosaic10, GeographyMosaic11, GeographyMosaic12, GeographyMosaic13, GeographyMosaic14, GeographyMosaic15, GeographyMosaic16, GeographyMosaic17, MosaicWrapper, MosaicImg, HeaderText, GeographyEntry, GeographyEntryText, GeographyEntryImg, GeographyEntryDescription, GeographyStatues, Statue, StatueImg, BackgroundDiv, BackgroundContentLeft, BackgroundContentRight, BackgroundImg, HistoryMosaicParent, HistoryMosaic1, HistoryMosaic2, HistoryMosaic3, HistoryMosaic4, HistoryMosaic5, HistoryMosaic6, HistoryMosaic7, HistoryMosaic8, HistoryMosaic9, HistoryMosaic10, HistoryMosaic11, HistoryMosaic12, HistoryMosaic13, HistoryMosaic14} from '../Geography/geographyElements.js';
 import headerImg from '../../images/section 2/history/header.jpg'
-import Icon1 from '../../images/dyeing2.png'
+import Icon1 from '../../images/dyeing1.png'
 import Icon2 from "../../images/dyeing2.png"
 import Icon3 from "../../images/dyeing3.png"
 import Icon4 from "../../images/dyeing4.png"

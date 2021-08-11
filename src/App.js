@@ -12,6 +12,7 @@ import Section6 from "./pages/historicalTextiles.js";
 import FamilyPage from './pages/section5Family';
 import SaltilloPage from './pages/section7Modals';
 import TextilesPage from './pages/historicalModals';
+import dyeing from './pages/dyeing';
 function App() {
   return (
     <Router >
@@ -28,6 +29,7 @@ function App() {
         <Route path = "/section5Family" component={FamilyPage} exact />
         <Route path = "/section7influence" component={SaltilloPage} exact />
         <Route path = "/section6Textiles" component={TextilesPage} exact />
+        <Route path = "/dyeing" component={dyeing} exact />
       </Switch>
     </Router>
   );
