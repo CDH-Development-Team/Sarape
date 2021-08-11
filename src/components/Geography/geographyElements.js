@@ -122,8 +122,9 @@ export const GeographyMosaicParent = styled.div`
     grid-template-rows: repeat(8, 1fr); 
     grid-column-gap: 0px;
     grid-row-gap: 0px; 
+    margin: 20px;
     height: ${({height}) => (height)+"px"};
-    width: ${({width}) => (width)+"px"};
+    width: ${({width}) => (width-40)+"px"};
     `;
     export const GeographyMosaic1 = styled.div` grid-area: 1 / 1 / 4 / 3;`; 
     export const GeographyMosaic2 = styled.div` grid-area: 1 / 3 / 4 / 7; `;
