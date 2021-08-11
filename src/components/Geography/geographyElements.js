@@ -29,7 +29,6 @@ column-count:3;
 `;
 
  export const GeographyEntry = styled.div`  
-max-height:100%;
 padding: 10px;
 margin: auto 0;
 `;
@@ -39,6 +38,7 @@ height: ${({height}) => (height*0.7)+"px"};
 max-width: ${({wide}) => (wide) ? '90%' : '50%'};
 float:right;
 margin-right: 10%;
+overflow:hidden;
 @media screen and (max-width: 480px){
 width:100%;
 }
@@ -122,8 +122,9 @@ export const GeographyMosaicParent = styled.div`
     grid-template-rows: repeat(8, 1fr); 
     grid-column-gap: 0px;
     grid-row-gap: 0px; 
+    margin: 20px;
     height: ${({height}) => (height)+"px"};
-    width: ${({width}) => (width)+"px"};
+    width: ${({width}) => (width-40)+"px"};
     `;
     export const GeographyMosaic1 = styled.div` grid-area: 1 / 1 / 4 / 3;`; 
     export const GeographyMosaic2 = styled.div` grid-area: 1 / 3 / 4 / 7; `;

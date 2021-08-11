@@ -18,6 +18,7 @@ import Icon10 from '../../images/section 2/10.png';
 import Icon11 from '../../images/section 2/11.png';
 import Icon12 from '../../images/section 2/12.jpg';
 import Icon13 from '../../images/section 2/13.jpg';
+import Icon14 from '../../images/section 2/14.png';
 import Color1 from '../../images/section 2/color1.png'
 import headerImg from '../../images/section 2/header.jpg';
 
@@ -144,7 +145,49 @@ Entrance into Guadalajara<br/>Homenaje á Cristóbal Colón: Antigüedades Méxi
     </GeographyMosaic2>
 
     <GeographyMosaic3 className={"mosaic"}>
-    <img src={Color1} width ={"100%"} height={"100%"}></img>
+    <img src={Icon14} width ={"100%"} height={"100%"} onClick ={
+        () => {
+            setContent(
+
+<GeographyEntry>
+    <div style={{margin: "20px 40px", width:"70%"}}> 
+        Ceramics like these are associated with Mitla, called in Nahuatl Mictlán, meaning “place of the dead,” or underworld, and in Zapotec, Lyobaa, meaning “place of rest.” The ancient Zapotec religion was complex, with prayers and offerings made to many different gods or deities. Notice the sophisticated dress and adornment of these figures. 
+    </div>
+
+    <GeographyStatues>
+        
+        <Statue>
+            <StatueImg>
+                <img src={Icon10} width={"100%"}></img>
+            </StatueImg>
+            <div>
+            apotec pottery urn, possibly representing a king or a god<br/> Ceramic<br/> Gift of Elsie Scales, c.1923-1938<br/> Oaxaca, Mexico<br/> 12878
+            </div>
+        </Statue>
+        <Statue>
+            <StatueImg>
+                <img src={Icon11} width={"100%"}></img>
+            </StatueImg>
+            <div>
+            Zapotec pottery urn, representing Cocijo, god of rain and lightning<br/> Ceramic<br/> ASM Purchase in 1925<br/> Oaxaca, Mexico<br/> 13645
+            </div>
+        </Statue>
+        <Statue>
+            <StatueImg>
+                <img src={Icon9} width={"100%"}></img>
+            </StatueImg>
+            <div>
+                Zapotec pottery urn, possibly representing a king wearing a mask of Cocijo, god of rain and lightning<br/> Ceramic<br/> Collected on a University of Arizona Expedition, 1924–1925<br/> Oaxaca, Mexico<br/> 5536
+            </div>  
+        </Statue>
+
+    </GeographyStatues>
+
+</GeographyEntry>
+            );
+            openModal();
+        }
+    }></img>
     </GeographyMosaic3>
 
 
@@ -350,41 +393,6 @@ Mitla, Oaxaca, Mexico<br/> Alana Coghlan, photographer, 2013
 
 
 
-<GeographyEntry>
-    <div style={{margin: "20px 40px", width:"70%"}}> 
-        Ceramics like these are associated with Mitla, called in Nahuatl Mictlán, meaning “place of the dead,” or underworld, and in Zapotec, Lyobaa, meaning “place of rest.” The ancient Zapotec religion was complex, with prayers and offerings made to many different gods or deities. Notice the sophisticated dress and adornment of these figures. 
-    </div>
-
-    <GeographyStatues>
-        
-        <Statue>
-            <StatueImg>
-                <img src={Icon10} width={"100%"}></img>
-            </StatueImg>
-            <div>
-            apotec pottery urn, possibly representing a king or a god<br/> Ceramic<br/> Gift of Elsie Scales, c.1923-1938<br/> Oaxaca, Mexico<br/> 12878
-            </div>
-        </Statue>
-        <Statue>
-            <StatueImg>
-                <img src={Icon11} width={"100%"}></img>
-            </StatueImg>
-            <div>
-            Zapotec pottery urn, representing Cocijo, god of rain and lightning<br/> Ceramic<br/> ASM Purchase in 1925<br/> Oaxaca, Mexico<br/> 13645
-            </div>
-        </Statue>
-        <Statue>
-            <StatueImg>
-                <img src={Icon9} width={"100%"}></img>
-            </StatueImg>
-            <div>
-                Zapotec pottery urn, possibly representing a king wearing a mask of Cocijo, god of rain and lightning<br/> Ceramic<br/> Collected on a University of Arizona Expedition, 1924–1925<br/> Oaxaca, Mexico<br/> 5536
-            </div>  
-        </Statue>
-
-    </GeographyStatues>
-
-</GeographyEntry>
 
 
         </GeographyContainer>
