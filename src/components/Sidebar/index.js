@@ -10,7 +10,7 @@ const Sidebar = ({toggle, isOpen}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink BrowserRouter="/" onClick={toggle}>
+                    <SidebarLink to="/" onClick={toggle}>
                         Home
                     </SidebarLink>
                     <SidebarLink to="/geography" onClick={toggle}>
