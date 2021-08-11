@@ -10,6 +10,8 @@ import Icon8 from '../../textiles_png/3_textiles/AT-2020-16-6.png';
 import Icon9 from '../../textiles_png/3_textiles/AT-2020-16-7.png';
 import { homeObjOne, homeObjTwo, homeObjThree, SarapeObj1, SarapeObj2, SarapeObj3, SarapeObj4, SarapeObj5, SarapeObj6, SarapeObj7 } from '../InfoSection/Data';
 // import AnimeList from '../components/anime';
+import "./styles.css";
+// import Modal2 from '../components/Modal2/modal2';
 
 import { 
     ServicesContainer, 
@@ -20,9 +22,19 @@ import {
     ServicesH2, 
     ServicesP } from './ServicesElements';
 import Modal from '../Modal/index.js';
+import Modal2 from '../Modal2/modal2';
 
 const Services = () => {
     const [showModal, setShowModal] = useState(false);
+
+
+    const [show1, setShow1] = useState(false);
+    const [show2, setShow2] = useState(false);
+    const [show3, setShow3] = useState(false);
+    const [show4, setShow4] = useState(false);
+    const [show5, setShow5] = useState(false);
+    const [show6, setShow6] = useState(false);
+    const [show7, setShow7] = useState(false);
 
     const openModal = () => {
         setShowModal(prev => !prev);
@@ -32,42 +44,180 @@ const Services = () => {
             <ServicesH1>FRAGMENT SERIES BY PORFIRIO GUTIERREZ</ServicesH1>
             <ServicesWrapper>
                 <ServicesCard>
-                    <ServicesIcon onClick={openModal} src={Icon4}/>
+                    <ServicesIcon src={Icon4} onClick={() => setShow1(true)}/>
                     {/* <ServicesH2>Reduce Expenses</ServicesH2>
                     <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP> */}
                     <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon4} />
                 </ServicesCard>
                 <ServicesCard>
-                    <ServicesIcon onClick={openModal} src={Icon5}/>
+                    <ServicesIcon onClick={() => setShow2(true)} src={Icon5}/>
                     {/* <ServicesH2>Virtual offices</ServicesH2> */}
                     {/* <ServicesP>You can access our platform from anywhere.</ServicesP> */}
                     <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon5} />
                 </ServicesCard>
                 <ServicesCard>
-                    <ServicesIcon onClick={openModal} src={Icon6}/>
+                    <ServicesIcon onClick={() => setShow3(true)} src={Icon6}/>
                     {/* <ServicesH2>Premium Benefits</ServicesH2> */}
                     {/* <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
                     <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon6} />
                 </ServicesCard>
                 <ServicesCard>
-                    <ServicesIcon onClick={openModal} src={Icon7}/>
+                    <ServicesIcon onClick={() => setShow4(true)} src={Icon7}/>
                     {/* <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
                     <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon7} />
                 </ServicesCard>
                 <ServicesCard>
-                    <ServicesIcon onClick={openModal} src={Icon8}/>
+                    <ServicesIcon onClick={() => setShow5(true)} src={Icon8}/>
                     {/* <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
                     <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon8} />                    
                 </ServicesCard>
                 <ServicesCard>
-                    <ServicesIcon onClick={openModal} src={Icon9}/>
+                    <ServicesIcon onClick={() => setShow6(true)} src={Icon9}/>
                     {/* <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
                     <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon9} />                    
                 </ServicesCard>
             </ServicesWrapper>
+            <Modal2 show1={show1} onClose={() => setShow1(false)}>
+            <div className="content">
+            <img
+                src={Icon4}
+                alt="Developer"
+            />
+            <div className="text">
+                {/* <h2>John Doe</h2> */}
+                <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                aliquid placeat omnis adipisci dolores quae amet mollitia sint,
+                temporibus eum magnam facilis odio ex incidunt? Deleniti quam et
+                rem obcaecati. Laborum atque odit expedita nulla.
+                </div>
+                <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+                labore laborum, assumenda dolorum provident quod itaque earum,
+                officia in placeat dignissimos nostrum? Totam corrupti nihil
+                repudiandae ducimus atque quod eos!
+                </div>
+            </div>
+            </div>
+            </Modal2>
+            <Modal2 show2={show2} onClose={() => setShow2(false)}>
+            <div className="content">
+            <img
+                src={Icon5}
+                alt="Developer"
+            />
+            <div className="text">
+                {/* <h2>John Doe</h2> */}
+                <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                aliquid placeat omnis adipisci dolores quae amet mollitia sint,
+                temporibus eum magnam facilis odio ex incidunt? Deleniti quam et
+                rem obcaecati. Laborum atque odit expedita nulla.
+                </div>
+                <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+                labore laborum, assumenda dolorum provident quod itaque earum,
+                officia in placeat dignissimos nostrum? Totam corrupti nihil
+                repudiandae ducimus atque quod eos!
+                </div>
+            </div>
+            </div>
+            </Modal2>
+            <Modal2 show3={show3} onClose={() => setShow3(false)}>
+            <div className="content">
+            <img
+                src={Icon6}
+                alt="Developer"
+            />
+            <div className="text">
+                {/* <h2>John Doe</h2> */}
+                <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                aliquid placeat omnis adipisci dolores quae amet mollitia sint,
+                temporibus eum magnam facilis odio ex incidunt? Deleniti quam et
+                rem obcaecati. Laborum atque odit expedita nulla.
+                </div>
+                <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+                labore laborum, assumenda dolorum provident quod itaque earum,
+                officia in placeat dignissimos nostrum? Totam corrupti nihil
+                repudiandae ducimus atque quod eos!
+                </div>
+            </div>
+            </div>
+            </Modal2>
+            <Modal2 show4={show4} onClose={() => setShow4(false)}>
+            <div className="content">
+            <img
+                src={Icon7}
+                alt="Developer"
+            />
+            <div className="text">
+                {/* <h2>John Doe</h2> */}
+                <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                aliquid placeat omnis adipisci dolores quae amet mollitia sint,
+                temporibus eum magnam facilis odio ex incidunt? Deleniti quam et
+                rem obcaecati. Laborum atque odit expedita nulla.
+                </div>
+                <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+                labore laborum, assumenda dolorum provident quod itaque earum,
+                officia in placeat dignissimos nostrum? Totam corrupti nihil
+                repudiandae ducimus atque quod eos!
+                </div>
+            </div>
+            </div>
+            </Modal2>
+            <Modal2 show5={show5} onClose={() => setShow5(false)}>
+            <div className="content">
+            <img
+                src={Icon8}
+                alt="Developer"
+            />
+            <div className="text">
+                {/* <h2>John Doe</h2> */}
+                <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                aliquid placeat omnis adipisci dolores quae amet mollitia sint,
+                temporibus eum magnam facilis odio ex incidunt? Deleniti quam et
+                rem obcaecati. Laborum atque odit expedita nulla.
+                </div>
+                <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+                labore laborum, assumenda dolorum provident quod itaque earum,
+                officia in placeat dignissimos nostrum? Totam corrupti nihil
+                repudiandae ducimus atque quod eos!
+                </div>
+            </div>
+            </div>
+            </Modal2>
+            <Modal2 show6={show6} onClose={() => setShow6(false)}>
+            <div className="content">
+            <img
+                src={Icon9}
+                alt="Developer"
+            />
+            <div className="text">
+                {/* <h2>John Doe</h2> */}
+                <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                aliquid placeat omnis adipisci dolores quae amet mollitia sint,
+                temporibus eum magnam facilis odio ex incidunt? Deleniti quam et
+                rem obcaecati. Laborum atque odit expedita nulla.
+                </div>
+                <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+                labore laborum, assumenda dolorum provident quod itaque earum,
+                officia in placeat dignissimos nostrum? Totam corrupti nihil
+                repudiandae ducimus atque quod eos!
+                </div>
+            </div>
+            </div>
+            </Modal2>
         </ServicesContainer>
     )
 }
