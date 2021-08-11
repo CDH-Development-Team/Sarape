@@ -23,7 +23,7 @@ export const sixObj = {
     dark: true,
     primary: true,
     darkText: false,
-    smallImg: true
+    smallImg: false
 };
 
 
@@ -45,7 +45,7 @@ export const sixObjOne = {
     dark: true,
     primary: true,
     darkText: false,
-    smallImg: true
+    smallImg: false
 };
 
 export const sixObjTwo = {
@@ -71,7 +71,7 @@ export const sixObjTwo = {
     dark: true,
     primary: true,
     darkText: false,
-    smallImg: true
+    smallImg: false
 };
 
 export const sixObjThree= {
