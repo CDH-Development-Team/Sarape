@@ -30,12 +30,12 @@ column-count:3;
 
  export const GeographyEntry = styled.div`  
 padding: 10px;
-margin: auto 0;
+margin: 4% 0;
 `;
 
 export const GeographyEntryImg = styled.div`
 height: ${({height}) => (height*0.7)+"px"};
-max-width: ${({wide}) => (wide) ? '90%' : '50%'};
+max-width: ${({wide}) => (wide) ? '90%' : '40%'};
 float:right;
 margin-right: 10%;
 overflow:hidden;
@@ -46,8 +46,8 @@ width:100%;
 
 export const GeographyEntryText = styled.div`
 float: ${({wide}) => (wide) ? 'left' : 'right'};
-width: ${({wide}) => (wide) ? '35%' : '30%'};
-margin: ${({wide}) => (wide) ? "20px 50px 20px 20px" : "10px 20px 10% 20px"} ;
+width: ${({wide}) => (wide) ? '35%' : '40%'};
+margin: ${({wide}) => (wide) ? "20px 50px 20px 20px" : "7vh 20px 0 20px"} ;
 `;
 
 export const GeographyEntryDescription=styled.div`
