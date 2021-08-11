@@ -29,7 +29,6 @@ column-count:3;
 `;
 
  export const GeographyEntry = styled.div`  
-max-height:100%;
 padding: 10px;
 margin: auto 0;
 `;
