@@ -34,6 +34,7 @@ const ModalImg = styled.img`
     background: #000;
 `
 
+
 const ModalContent = styled.div`
     display: flex;
     flex-direction: column;
@@ -64,6 +65,7 @@ const CloseModalButton = styled(MdClose)`
     padding: 0;
     z-index: 10;
 `;
+
 
 const Modal = ({ showModal, setShowModal, ImgSrc }) => {
     const modalRef = useRef();

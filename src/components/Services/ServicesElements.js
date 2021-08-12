@@ -19,11 +19,50 @@ export const ServicesContainer = styled.div`
     }
 `;
 
+export const ServicesWrapper6 = styled.div`
+    max-width: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    grid-gap: 16px;
+    padding: 0 50px;
+	overflow-y: hidden;
+
+    @media screen and (max-width: 1000px){
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 768px){
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+`;
+export const ServicesWrapper7 = styled.div`
+    max-width: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    grid-gap: 16px;
+    padding: 0 50px;
+	overflow-y: hidden;
+
+    @media screen and (max-width: 1000px){
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 768px){
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+`;
+
 export const ServicesWrapper = styled.div`
     max-width: auto;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 16px;
     padding: 0 50px;

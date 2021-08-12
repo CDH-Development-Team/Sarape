@@ -11,6 +11,7 @@
     height: 100vh;
     z-index: 100;
     overflow-x: hidden;
+    overflow-y: hidden;
     background-color: rgba(31, 32, 41, 0.75);
     pointer-events: none;
     opacity: 0;

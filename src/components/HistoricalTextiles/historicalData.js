@@ -4,6 +4,7 @@ import img3 from "../../textiles_png/6_textiles/six_other/6B1_keift_saddle.png";
 import img4 from "../../textiles_png/6_textiles/six_other/6_map.png";
 import img5 from "../../textiles_png/6_textiles/six_other/6_three.png";
 import img6 from "../../textiles_png/6_textiles/six_other/6_four.png";
+import img7 from "../../textiles_png/6_textiles/6B2_12504.png";
 
 export const sixObj = {
     id : 'about',
@@ -61,17 +62,18 @@ export const sixObjTwo = {
     block: true,
     imgStart: false,
     imgdesc: "",
-    img: "",
-    img3: img2,
+    img: img2,
+    imgdesc2: "Mexican saddle C. 1860–1900On loan from Michael D. Higgins AT-2020-14-1",
+    img3: img7,
     alt: '',
-    imgdesc4: "Mexican saddle C. 1860–1900On loan from Michael D. HigginsAT-2020-14-1",
+    imgdesc4: "Post-Classic period Saltillo sarape, c. 1870 Wool, cotton, and indigo and possibly synthetic dyes 12504",
     img2: img3, 
     alt2: '',
-    imgdesc3: "Photographer unknown Published by Gevaey for FotoMex, c. 1910Collection of Tom Kieft",
+    imgdesc3: "Photographer unknown Published by Gevaey for FotoMex, c. 1910 Collection of Tom Kieft",
     dark: true,
     primary: true,
     darkText: false,
-    smallImg: false
+    smallImg: true
 };
 
 export const sixObjThree= {
