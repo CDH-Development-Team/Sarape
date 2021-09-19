@@ -79,6 +79,8 @@ const Modal2 = ({ modalStyle, children, show, onClose, backdropStyle, show1, sho
   return (
     <React.Fragment>
       <div ref={modalRef} style={backdropStyle} className={`${styles.modal}`}>
+   
+        <div style={modalStyle} className={styles.modal__wrap}>
         <Button
           onClick={onClose}
           style={{
@@ -86,7 +88,7 @@ const Modal2 = ({ modalStyle, children, show, onClose, backdropStyle, show1, sho
             height: 40,
             position: "absolute",
             top: 0,
-            right: 0,
+            right: "10px",
             margin: "1rem",
             cursor: "pointer"
           }}
@@ -99,7 +101,6 @@ const Modal2 = ({ modalStyle, children, show, onClose, backdropStyle, show1, sho
           />
           Close
         </Button>
-        <div style={modalStyle} className={styles.modal__wrap}>
           {children}
         </div>
       </div>
