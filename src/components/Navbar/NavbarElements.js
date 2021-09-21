@@ -85,7 +85,7 @@ export const NavItem = styled.div`
     list-style: none;
     text-align: center;
 
-    @media screen and (max-width:768px){
+    @media screen and (max-width:1000px){
         display: none;
     }
 

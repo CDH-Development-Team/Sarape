@@ -24,7 +24,7 @@ const customStyles = {
       left:0,
       width: "100%",    
       height: "100%",
-      background: "#000",
+      background: "#4a0033",
       color: "#fff"
     },
   };
@@ -96,14 +96,15 @@ const History = () =>{
     <GeographyEntry>
         <GeographyEntryImg>
             <img src={Icon7} width={"100%"}></img>
+            <GeographyEntryDescription>
+        Spanish cape, late 1500s <br/>Silk, metal thread <br/>Purchase, Rogers Fund, 1939<br/>The Metropolitan Museum of Art, 39.53
+        </GeographyEntryDescription>
         </GeographyEntryImg>
         <GeographyEntryText>
         The Spanish capa (cape), a large overcoat with an open front and often a hood, may have been an influence on the sarape as a more formal garment. 
         </GeographyEntryText>
 
-        <GeographyEntryDescription>
-        Spanish cape, late 1500s <br/>Silk, metal thread <br/>Purchase, Rogers Fund, 1939<br/>The Metropolitan Museum of Art, 39.53
-        </GeographyEntryDescription>
+        
     </GeographyEntry>
                 );
                 openModal();
@@ -123,12 +124,13 @@ const History = () =>{
 
 <GeographyEntry>
     <GeographyEntryImg><img src={Icon8} width={"100%"}/>
-    </GeographyEntryImg>
-
-    <GeographyEntryText>An Aztec woman teaches a girl to weave on a backstrap loom.</GeographyEntryText>
     <GeographyEntryDescription>
     Codex Mendoza, Vol. 3, Folio 60r, c. 1541–1542<br/>Viceroyalty of SpainBodleian Libraries,<br/> University of Oxford
     </GeographyEntryDescription>
+    </GeographyEntryImg>
+
+    <GeographyEntryText>An Aztec woman teaches a girl to weave on a backstrap loom.</GeographyEntryText>
+    
 </GeographyEntry>
                 );
                 openModal();
@@ -172,15 +174,16 @@ const History = () =>{
             () =>{
                 setContent(
                     <GeographyEntry wide={true}>
-    <GeographyEntryImg wide={true} height={height}>
-        <img src = {Icon4} height={"100%"} width={"100%"}></img>
-    </GeographyEntryImg>
-    <GeographyEntryText wide={true}>
+    <GeographyEntryImg wide={true} height={height/2}>
+        <img src = {Icon4} style={{width:"100%", margin:"auto 0%"}}></img>
+        <GeographyEntryText wide={true}>
     The Aztecs’ tilmàtli, tied at the shoulder as depicted in several codices, is also part of the sarape’s cultural lineage. This style is similar to a poncho.
     </GeographyEntryText>
     <GeographyEntryDescription wide={true}>
     Codex Primeros Memoriales, Vol. 3, Estampa 21<br></br>Bernardino Sahagún, Historia General de las Cosas de Nueva España Biblioteca Medicea Laurenziana
     </GeographyEntryDescription>
+    </GeographyEntryImg>
+    
 </GeographyEntry>
                 );
                 openModal();
@@ -211,13 +214,14 @@ excoco ruler Nezahualpilli shown wearing a xiuhtilmatli (blue cape), which would
     <GeographyEntry>
         <GeographyEntryImg>
             <img src={Icon6} width={"100%"}></img>
+            <GeographyEntryDescription>
+        Rancheros, 1836 <br/>Carl Nebel   <br/>German, 1805–1855<br/>Lithograph<br/>Voyage Pittoresque et Archéologique dans la Partie la plus Intéressante du MéxiqueAlbum, Alamy Stock Photo
+        </GeographyEntryDescription>
         </GeographyEntryImg>
         <GeographyEntryText>
         Sarapes are worn in many ways: wrapped or draped like a shawl, over one shoulder, or as a poncho. The typical sarape may be woven in one piece, but more frequently consists of two panels joined together leaving a neck slit, also called a bocamanga, through which the wearer’s head could fit.In Spanish Colonial times, the sarape was mainly worn in northern Mexico by hacendados, or ranch owners, who traveled on horseback. The sarape’s loose fit made it a practical riding garment. Later, it became a status symbol worn by wealthy “city folk.” While anyone could wear one, they were expensive to buy. These textiles were masterfully woven with incredible tightness and complex designs. It is possible that they were created in small workshops, located on many of the large ranches or haciendas
         </GeographyEntryText>
-        <GeographyEntryDescription>
-        Rancheros, 1836 <br/>Carl Nebel   <br/>German, 1805–1855<br/>Lithograph<br/>Voyage Pittoresque et Archéologique dans la Partie la plus Intéressante du MéxiqueAlbum, Alamy Stock Photo
-        </GeographyEntryDescription>
+        
     </GeographyEntry>
                 );
                 openModal();
@@ -234,7 +238,7 @@ excoco ruler Nezahualpilli shown wearing a xiuhtilmatli (blue cape), which would
 <br/><br/><br/><br/><br/><br/>
 
 
-<GeographyEntry wide={true}>
+{/* <GeographyEntry wide={true}>
     <GeographyEntryImg wide={true}>
         <img src={Icon5} width={"100%"} style={{padding:"0px 50px"}}></img>
     </GeographyEntryImg>
@@ -247,7 +251,7 @@ excoco ruler Nezahualpilli shown wearing a xiuhtilmatli (blue cape), which would
     </GeographyEntryDescription>
 </GeographyEntry>
 
-
+ */}
 
 
  </GeographyContainer>
