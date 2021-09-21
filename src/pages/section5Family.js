@@ -17,7 +17,7 @@ import Icon5 from "../images/5A1_Parents by Javier Lazo.jpg";
 import Icon6 from "../images/5B2_08-09-18 The Big Boys a.jpg";
 import Icon7 from "../images/By Alana Coghlan.jpg";
 import Icon8 from "../images/5A3_Familia.jpg";
-import { GeographyContainer, MosaicWrapper, MosaicImg, HeaderText, GeographyEntry, GeographyEntryText, GeographyEntryImg, GeographyEntryDescription, GeographyStatues, Statue, StatueImg, BackgroundDiv, BackgroundContentLeft, BackgroundContentRight, BackgroundImg, HistoryMosaicParent, HistoryMosaic1, HistoryMosaic2, HistoryMosaic3, HistoryMosaic4, HistoryMosaic5, HistoryMosaic6, HistoryMosaic7, HistoryMosaic8, HistoryMosaic9, HistoryMosaic10, HistoryMosaic11, HistoryMosaic12, HistoryMosaic13, HistoryMosaic14} from '../components/Geography/geographyElements.js';
+import { GeographyContainer, MosaicWrapper, MosaicImg, HeaderText, GeographyEntry, GeographyEntryText, GeographyEntryImg, GeographyEntryDescription, GeographyStatues, Statue, StatueImg, BackgroundDiv, BackgroundContentLeft, BackgroundContentRight, BackgroundImg, HistoryMosaicParent, HistoryMosaicParent2, HistoryMosaic1, HistoryMosaic2, HistoryMosaic3, HistoryMosaic4, HistoryMosaic5, HistoryMosaic6, HistoryMosaic7, HistoryMosaic8, HistoryMosaic9, HistoryMosaic10, HistoryMosaic11, HistoryMosaic12, HistoryMosaic13, HistoryMosaic14,HistoryMosaic15, HistoryMosaic16,HistoryMosaic17, HistoryMosaic18, HistoryMosaic19, HistoryMosaic20, HistoryMosaic21} from '../components/Geography/geographyElements.js';
 import Color1 from '../images/section 2/color1.png'
 import "../components/Geography/geography.css";
 import useWindowDimensions from '../components/Geography/dimensions';
@@ -62,150 +62,99 @@ const FamilyPage = () => {
     <Sidebar isOpen={isOpen} toggle={toggle}/>
     <Navbar toggle={toggle} />
  <GeographyContainer>
-     <HistoryMosaicParent height={((width-(width%38))/38*24)*0.8} width={(width-(width%38))*0.8}>
+     <HistoryMosaicParent2 height={(width-(width%16))/16*8} width={(width-(width%16))}>
         <HistoryMosaic1 className="mosaic">
         <img src={Icon1} height={"100%"} width={"100%"} onClick={() => setShow(true)}></img>
         </HistoryMosaic1>
 
-        <HistoryMosaic2 className="mosaic">
+        {/* <HistoryMosaic2 className="mosaic">
         <img src={Color1} height={"100%"} width={"100%"} ></img>
-        </HistoryMosaic2>
-        <HistoryMosaic3 className="mosaic">
-        <img src={Icon7} height={"100%"} width={"100%"} onClick={() => setShow6(true)}></img>
-        </HistoryMosaic3>
-        <HistoryMosaic4 className="mosaic">
+        </HistoryMosaic2> */}
+        <HistoryMosaic17 className="mosaic">
+        <img src={Icon2} height={"100%"} width={"100%"} onClick={() => setShow6(true)}></img>
+        </HistoryMosaic17>
+        {/* <HistoryMosaic4 className="mosaic">
         <img src={Color1} height={"100%"} width={"100%"} ></img>
         </HistoryMosaic4 >
         <HistoryMosaic5 className="mosaic">
         <img src={Color1} height={"100%"} width={"100%"} ></img>
-        </HistoryMosaic5 >
-        <HistoryMosaic6 className="mosaic">
-        <img src={Icon8} height={"100%"} width={"100%"} onClick={() => setShow7(true)}></img>
-        </HistoryMosaic6>
+        </HistoryMosaic5 > */}
+        <HistoryMosaic15 className="mosaic">
+        <img src={Icon6} height={"100%"} width={"100%"} onClick={() => setShow7(true)}></img>
+        </HistoryMosaic15>
 
-        <HistoryMosaic7 className="mosaic">
+        {/* <HistoryMosaic7 className="mosaic">
         <img src={Color1} height={"100%"} width={"100%"}></img>
-        </HistoryMosaic7>
+        </HistoryMosaic7> */}
 
-        <HistoryMosaic8 className="mosaic">
-        <img src={Icon2} height={"100%"} width={"100%"} onClick={() => setShow1(true)}></img>
-        </HistoryMosaic8>
-
+        <HistoryMosaic16 className="mosaic">
+        <img src={Icon4} height={"100%"} width={"100%"} onClick={() => setShow1(true)}></img>
+        </HistoryMosaic16>
+{/* 
         <HistoryMosaic9 className="mosaic">
         <img src={Color1} height={"100%"} width={"100%"}></img>
-        </HistoryMosaic9>
+        </HistoryMosaic9> */}
 
-        <HistoryMosaic10 className="mosaic">
-        <img src={Color1} height={"100%"} width={"100%"}></img>
-        </HistoryMosaic10>
+        <HistoryMosaic18 className="mosaic">
+        <img src={Icon3} height={"100%"} width={"100%"}></img>
+        </HistoryMosaic18>
 
-        <HistoryMosaic11 className="mosaic">
+        {/* <HistoryMosaic11 className="mosaic">
         <img src={Icon4} height={"100%"} width={"100%"} onClick={() => setShow3(true)}></img>
-        </HistoryMosaic11>
+        </HistoryMosaic11> */}
 
-        <HistoryMosaic12 className="mosaic">
-        <img src={Icon3} height={"100%"} width={"100%"} onClick={() => setShow2(true)}></img>
-        </HistoryMosaic12>
+        <HistoryMosaic19 className="mosaic">
+        <img src={Icon7} height={"100%"} width={"100%"} onClick={() => setShow2(true)}></img>
+        </HistoryMosaic19>
 
-        <HistoryMosaic13 className="mosaic">
+        <HistoryMosaic20 className="mosaic">
+        <img src={Icon8} height={"100%"} width={"100%"} onClick={() => setShow2(true)}></img>
+        </HistoryMosaic20>
+        <HistoryMosaic21 className="mosaic">
+        <img src={Icon5} height={"100%"} width={"100%"} onClick={() => setShow2(true)}></img>
+        </HistoryMosaic21>
+
+        {/* <HistoryMosaic13 className="mosaic">
         <img src={Icon6} height={"100%"} width={"100%"} onClick={() => setShow5(true)}></img>
-        </HistoryMosaic13>
-        <HistoryMosaic14 className="mosaic">
+        </HistoryMosaic13> */}
+        {/* <HistoryMosaic14 className="mosaic">
         <img src={Color1} height={"100%"} width={"100%"}></img>
-        </HistoryMosaic14>
-     </HistoryMosaicParent >
+        </HistoryMosaic14> */}
+     </HistoryMosaicParent2 >
  </GeographyContainer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-    {/* <div style={{
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100vh",
-          backgroundColor: "#4a0033"
-        }}>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100vh",
-          maxWidth: "100vh"
-        }}
-      >
-
-        <img
-            src={Icon1}
-            alt="Developer"
-            onClick={() => setShow(true)}
-          />
-          <img
-            src={Icon2}
-            alt="Developer"
-            onClick={() => setShow1(true)}
-          />
-          <img
-            src={Icon3}
-            alt="Developer"
-            onClick={() => setShow2(true)}
-          />
-          <img
-            src={Icon4}
-            alt="Developer"
-            onClick={() => setShow3(true)}
-          />
-          <img
-            src={Icon5}
-            alt="Developer"
-            onClick={() => setShow4(true)}
-          />
-          <img
-            src={Icon6}
-            alt="Developer"
-            onClick={() => setShow5(true)}
-          />
-          <img
-            src={Icon7}
-            alt="Developer"
-            onClick={() => setShow6(true)}
-          />
-          <img
-            src={Icon8}
-            alt="Developer"
-            onClick={() => setShow7(true)}
-          />
-      </div>
-      </div> */}
       <div style={{
           justifyContent: "center",
           alignItems: "center",
-          height: "100vh",
+          height: "auto",
           backgroundColor: "#4a0033",
-          padding: "10rem"
+          padding: "5rem"
         }}>
           <h1 style={{
               fontSize: "2rem",
               color: "#fff"
         }}>Family and Philosophy</h1><br/>
           <div className="row1" >
-                <div className="column1">
+                <div className="column1" style={{
+              fontSize: "1rem",
+              fontFamily:"myriad-pro",
+              color: "#fff"
+        }}>
                 My parents are the third generation of dyers and weavers in our family, which makes my siblings and me the fourth generation of weavers. As newlyweds, the first things your parents usually give you are a loom, a spinning wheel, and enough materials to start a studio, so you can feed your family. However, since my grandparents passed away before my parents got married, they had to figure it all out themselves.
                 </div>
-                <div className="column1">
+                <div className="column1" style={{
+              fontSize: "1rem",
+              fontFamily:"myriad-pro",
+              color: "#fff"
+        }}>
                 My parents have always worked collaboratively to create each piece—from cleaning wool, spinning it, collecting the plants for dyeing, dyeing the wool, to weaving. To execute a piece, my mom does the carding and spinning, and my dad weaves. They loved working at night because night brings calmness and concentration. This is how they raised eleven kids. They always say that they are blessed that their humble work as artisans enabled them to raise their kids.
                 </div>
             </div>
       </div>
+
+
+
+
       <Modal2 show={show} onClose={() => setShow(false)}>
         <div className="content">
           <img
@@ -329,7 +278,8 @@ const FamilyPage = () => {
                 fontSize: "0.75rem",
                 fontFamily: "myriad-pro",
                 padding: "1.3rem"
-              }}>My parents are the third generation of dyers and weavers in our family, which makes my siblings and me the fourth generation of weavers. As newlyweds, the first things your parents usually give you are a loom, a spinning wheel, and enough materials to start a studio, so you can feed your family. However, since my grandparents passed away </p>
+                }}>
+                  My parents are the third generation of dyers and weavers in our family, which makes my siblings and me the fourth generation of weavers. As newlyweds, the first things your parents usually give you are a loom, a spinning wheel, and enough materials to start a studio, so you can feed your family. However, since my grandparents passed away </p>
                 </div>
                 <div className="column">
                     <p style={{
@@ -469,19 +419,6 @@ const FamilyPage = () => {
     </React.Fragment>
   );
     // const [isOpen, setIsOpen] = useState(false);
-
-    // const toggle = () => {
-    //     setIsOpen(!isOpen);
-    // };
-
-    // return (
-    //     <>
-    //         <Sidebar isOpen={isOpen} toggle={toggle}/>
-    //         <Navbar toggle={toggle} />
-    //         {/* <FamilyMosaic /> */}
-    //         <Modal2 />
-    //     </>
-    // )
 }
 
 export default FamilyPage;

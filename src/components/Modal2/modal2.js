@@ -3,6 +3,7 @@ import CloseIcon from "../../CloseIcon";
 import Button from "../button/Button";
 // import CloseIcon from "../CloseIcon";
 import styles from "./modal.module.css";
+import {Icon, ClosedIcon} from './modalElements';
 
 const Modal2 = ({ modalStyle, children, show, onClose, backdropStyle, show1, show2, show3, show4, show5, show6, show7, show8, show9 }) => {
   const modalRef = useRef(null);
@@ -86,20 +87,19 @@ const Modal2 = ({ modalStyle, children, show, onClose, backdropStyle, show1, sho
           style={{
             width: 60,
             height: 40,
-            position: "absolute",
+            // position: "absolute",
             top: 0,
-            right: "10px",
+            right: 0,
             margin: "1rem",
-            cursor: "pointer"
+            cursor: "pointer",
+            backgroundColor: "transparent"
           }}
-          className={styles.close__btn}
+          // className={styles.close__btn}
         >
-          <CloseIcon
-            height="20px"
-            width="20px"
-            className={styles.close__icon}
-          />
-          Close
+          <ClosedIcon style={{
+            height: 60,
+            width: 40
+            }}/>
         </Button>
           {children}
         </div>
@@ -109,3 +109,5 @@ const Modal2 = ({ modalStyle, children, show, onClose, backdropStyle, show1, sho
 };
 
 export default Modal2;
+
+

@@ -27,7 +27,7 @@ const HeroSection1 = () => {
             <HeroBg>
                 <VideoBg autoPlay loop muted src={Video} type = 'video/mp4'/>
             </HeroBg>
-            <HeroContent>
+            {/* <HeroContent>
                 <HeroH1>PORFIRIO GUTIERREZ</HeroH1>
                 <HeroP>
                 Master Textile Artist Porfirio Gutiérrez, Exhibit Co-curator
@@ -40,12 +40,12 @@ const HeroSection1 = () => {
                 <br/><br/>
                 His studio revolves around the efforts and traditions of family and community, expressing an understanding and a vision that is rooted in his Zapotec culture. Gutiérrez reflects on his ancestors’ knowledge and wisdom to deepen his own understanding of his place in time and history. His work is the result of that reflective spirit and his desire to share his cultural appreciation with younger Zapotecs.
                 </HeroP>
-                {/* <HeroBtnWrapper>
+                <HeroBtnWrapper>
                     <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
                         Get started {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
-                </HeroBtnWrapper> */}
-            </HeroContent>
+                </HeroBtnWrapper> 
+            </HeroContent> */}
         </HeroContainer>
     )
 }

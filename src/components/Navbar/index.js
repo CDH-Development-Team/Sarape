@@ -15,7 +15,7 @@ const Navbar = ({ toggle }) => {
                         <NavLinks to="/index">
                             <NavDiv>
                                 <NavP>WRAPPED IN COLOR</NavP>
-                                <NavP2>LEGACIES OF THE MEXICAN SARAPE</NavP2>
+                                <NavP2 style={{fontSize:"1.4rem"}}>LEGACIES OF THE MEXICAN SARAPE</NavP2>
                             </NavDiv>
                         </NavLinks>
                         <NavLinks to="/signin">
