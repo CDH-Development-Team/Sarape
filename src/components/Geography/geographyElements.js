@@ -182,10 +182,44 @@ export const GeographyMosaicParent = styled.div`
         export const HistoryMosaic12 = styled.div `grid-area: 15 / 20 / 25 / 27;`;
         export const HistoryMosaic13 = styled.div `grid-area: 6 / 27 / 14 / 39; `;
         export const HistoryMosaic14 = styled.div `grid-area: 14 / 27 / 25 / 39;`; 
-        export const HistoryMosaic15 = styled.div `grid-area: 18 / 1 / 25 / 10;`;
+        export const HistoryMosaic15 = styled.div `grid-area: 18 / 1 / 25 / 11;`;
         export const HistoryMosaic16 = styled.div `grid-area: 9 / 10 / 18 / 20;`;
         export const HistoryMosaic17 = styled.div `grid-area: 1 / 28 / 9 / 20;`;
         export const HistoryMosaic18 = styled.div `grid-area: 1 / 34 / 8 / 38;`;
         export const HistoryMosaic19 = styled.div `grid-area: 18 / 20 / 25 / 28;`;
         export const HistoryMosaic20 = styled.div `grid-area: 18 / 34 / 25 / 40;`;
         export const HistoryMosaic21 = styled.div `grid-area: 12 / 28 / 18 / 34;`;
+
+
+        //For dyeing.js
+        export const HistoryMosaic22 = styled.div `grid-area: 1 / 1 / 9 / 7;`; 
+        export const HistoryMosaic23 = styled.div `grid-area: 1 / 7 / 5 / 11;`;
+        export const HistoryMosaic24 = styled.div `grid-area: 2 / 11 / 9 / 19;`;
+        export const HistoryMosaic25 = styled.div `grid-area: 1 / 25 / 9 / 30;`;
+        export const HistoryMosaic26 = styled.div `grid-area: 1 / 34 / 12 / 40;`;
+        export const HistoryMosaic27 = styled.div `grid-area: 9 / 1 / 18 / 11;`;
+        export const HistoryMosaic28 = styled.div `grid-area: 9 / 19 / 14 / 25;`;
+        export const HistoryMosaic29 = styled.div `grid-area: 9 / 30 / 18 / 34;`;
+        export const HistoryMosaic30 = styled.div `grid-area: 18 / 11 / 25 / 19;`;
+        export const HistoryMosaic31 = styled.div `grid-area: 14 / 25 / 25 / 30;`;
+        export const HistoryMosaic32 = styled.div `grid-area: 18 / 34 / 25 / 40;`;
+
+
+        //Colors
+        export const Color = styled.div `grid-area: 5 / 7 / 9 / 11;`;
+        export const Color2 = styled.div `grid-area: 1 / 11 / 2 / 19;`;
+        export const Color3 = styled.div `grid-area: 1 / 19 / 9 / 25;`;
+        export const Color4 = styled.div `grid-area: 1 / 30 / 9 / 34;`;
+        export const Color5 = styled.div `grid-area: 9 / 11 / 18 / 19;`;
+        export const Color6 = styled.div `grid-area: 14 / 19 / 25 / 25;`;
+        export const Color7 = styled.div `grid-area: 9 / 25 / 14 / 30;`;
+        export const Color8 = styled.div `grid-area: 12 / 34 / 18 / 40;`;
+        export const Color9 = styled.div `grid-area: 18 / 1 / 25 / 11;`;
+        export const Color10 = styled.div `grid-area: 18 / 30 / 25 / 34;`;
+
+        export const FC = styled.div `grid-area: 1 / 12 / 9 / 20;`;
+        export const FC1 = styled.div `grid-area: 1 / 28 / 12 / 34;`;
+        export const FC2 = styled.div `grid-area: 8 / 34 / 18 / 40;`;
+        export const FC3 = styled.div `grid-area: 9 / 1 / 18 / 11;`;
+        export const FC4 = styled.div `grid-area: 18 / 11 / 25 / 20;`;
+        export const FC5 = styled.div `grid-area: 18 / 28 / 25 / 34;`;

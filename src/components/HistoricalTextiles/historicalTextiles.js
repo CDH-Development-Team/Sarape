@@ -16,20 +16,20 @@ const HistoricalSection = ({lightBg, id, imgStart, topLine, lightText, headline,
                             <TextWrapper>
                                 <TopLine>{topLine}</TopLine>
                                 
-                                <Subtitle darkText={darkText}>{description}</Subtitle>
-                                <Subtitle darkText={darkText}>{description2}</Subtitle>
-                                <Subtitle darkText={darkText}>{description3}</Subtitle>
+                                <Subtitle darkText={darkText} style={{fontFamily:"myriad-pro"}}>{description}</Subtitle>
+                                <Subtitle darkText={darkText} style={{fontFamily:"myriad-pro"}}>{description2}</Subtitle>
+                                <Subtitle darkText={darkText} style={{fontFamily:"myriad-pro"}}>{description3}</Subtitle>
                                 <Img border="none" smallImg={smallImg} src={img3} alt=""/>
                                 <Subtitle darkText={darkText}>{imgdesc4}</Subtitle>
                             </TextWrapper>
                         </Column1>    
                         <Column2>
                             <ImgWrap>
-                                <Subtitle darkText={darkText}>{imgdesc}</Subtitle>
+                                <Subtitle darkText={darkText} style={{fontFamily:"myriad-pro"}}>{imgdesc}</Subtitle>
                                 <Img border="none" smallImg={smallImg} src={img} alt=""/>
-                                <Subtitle darkText={darkText}>{imgdesc2}</Subtitle>
+                                <Subtitle darkText={darkText} style={{fontFamily:"myriad-pro"}}>{imgdesc2}</Subtitle>
                                 <Img border="none" smallImg={smallImg} src={img2} alt=""/>
-                                <Subtitle darkText={darkText}>{imgdesc3}</Subtitle>
+                                <Subtitle darkText={darkText} style={{fontFamily:"myriad-pro"}}>{imgdesc3}</Subtitle>
                             </ImgWrap>
                         </Column2>
                     </InfoRow>    

@@ -135,7 +135,7 @@ const Services = () => {
              <div className="text">
           <h2>Classic Period Saltillo Sarapes</h2>
           <br></br>
-          <div>
+          <div style={{fontFamily:"myriad-pro"}}>
           Classic period Saltillo sarape, c. 1720–1860 {<br></br>}  
           Mexico Wool, cotton, cochineal and other natural dyes{<br></br>}  
           On loan from Arizona History Museum, 92.28{<br></br>} 
@@ -156,7 +156,7 @@ const Services = () => {
             <div className="text">
           <h2>Classic Period Saltillo Sarapes</h2>
             <br></br>
-            <div>
+            <div style={{fontFamily:"myriad-pro"}}>
             Classic period Saltillo sarape, c. 1720–1860{<br></br>}
             MexicoWool, cotton, and indigo dye{<br></br>}
             On loan from Tom Kieft{<br></br>}
@@ -174,7 +174,7 @@ const Services = () => {
             <div className="text">
           <h2>Classic Period Saltillo Sarapes</h2>
             <br></br>
-            <div>
+            <div style={{fontFamily:"myriad-pro"}}>
             Classic period Saltillo sarape, c. 1720–1860{<br></br>} 
             Mexico{<br></br>}  
             Wool, cotton, and cochineal, indigo, and other natural dyes{<br></br>} 
@@ -194,13 +194,13 @@ const Services = () => {
             <div className="text">
             <h2>Transition Period Saltillo Sarapes</h2>
             <br></br>
-            <div>
+            <div style={{fontFamily:"myriad-pro, san-serif"}}>
     Post-Classic period Saltillo sarape, c. 1870{<br></br>}
     Wool, cotton, and indigo and possibly synthetic dyes{<br></br>} 
     12504
             </div>
             <br></br>
-            <div>
+            <div style={{fontFamily:"myriad-pro"}}>
             Notice how, in this Transition period sarape, the designs have become increasingly 
             intricate and how the centralized diamond design has multiplied, as compared 
             to the sarapes made in the Classic period. 
@@ -217,14 +217,14 @@ const Services = () => {
            <div className="text">
           <h2>Transition Period Saltillo Sarapes</h2>
             <br></br>
-            <div>
+            <div style={{fontFamily:"myriad-pro"}}>
             Post-Classic period Saltillo sarape, c. 1880{<br></br>} 
             Wool, cotton, velvet, silver, and synthetic dyes{<br></br>} 
             On loan from Arizona History Museum, 86.60.19{<br></br>} 
             AT-2020-15-2
             </div>
             <br></br>
-            <div>
+            <div style={{fontFamily:"myriad-pro"}}>
             Notice the lavishly decorated neck-slit (bocamanga), 
             enabling this textile to be worn as a poncho.
 
@@ -242,7 +242,7 @@ const Services = () => {
             <div className="text">
           <h2>Transition Period Saltillo Sarapes</h2>
            <br></br>
-            <div>
+            <div style={{fontFamily:"myriad-pro"}}>
             Textile printed with Saltillo sarape design{<br></br>} 
              C. 1870–1900{<br></br>} 
              Made in Germany or Austria{<br></br>} 
@@ -250,7 +250,7 @@ const Services = () => {
              E-4735
             </div>
             <br></br>
-            <div>
+            <div style={{fontFamily:"myriad-pro"}}>
             Demand for Saltillo sarapes spread throughout the world in the 1800s. European entrepreneurs, capitalizing 
             on the popularity and high monetary value of these pieces, printed Saltillo sarape designs on woven textiles. 
             Sold in Europe and Mexico, these less-expensive, 
@@ -268,7 +268,7 @@ const Services = () => {
            <div className="text">
           <h2>Transition Period Saltillo Sarapes</h2>
           <br></br>
-            <div>
+            <div style={{fontFamily:"myriad-pro"}}>
             Textile printed with Saltillo sarape design{<br></br>} 
              C. 1870–1900{<br></br>} 
              Made in Germany or Austria{<br></br>} 
@@ -276,7 +276,7 @@ const Services = () => {
              E-4735
             </div>
             <br></br>
-            <div>
+            <div style={{fontFamily:"myriad-pro"}}>
             Demand for Saltillo sarapes spread throughout the world in the 1800s. 
             European entrepreneurs, capitalizing on the popularity and high monetary 
             value of these pieces, printed Saltillo sarape designs on woven textiles. 
@@ -313,14 +313,14 @@ const Services = () => {
              <div className="text">
           <h2>The Regional Styles</h2>
           <br></br>
-            <div>
+            <div style={{fontFamily:"myriad-pro"}}>
             Oaxacan sarape, c. 1920–1940{<br></br>} 
             Wool, natural and synthetic dyes{<br></br>}  
             On loan from Michael D. Higgins{<br></br>} 
             AT-2020-14-2
             </div>
             <br></br>
-            <div>
+            <div style={{fontFamily:"myriad-pro"}}>
             This sarape’s repeated diamond motifs may have been influenced 
             by the geometric designs on the walls of the ruins at Mitla in Oaxaca.
             </div>
