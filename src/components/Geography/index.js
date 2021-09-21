@@ -36,7 +36,7 @@ const customStyles = {
       left:0,
       width: "100%",    
       height: "100%",
-      background: "#000",
+      background: "#4a0033",
       color: "#fff"
     },
   };
@@ -128,13 +128,14 @@ const Geography = () => {
             () =>{
                 setContent(
                     <GeographyEntry>
-<GeographyEntryImg height={height}><img src={Icon2} width={"100%"}></img></GeographyEntryImg>
+<GeographyEntryImg height={height}><img src={Icon2} width={"100%"}></img>
+<GeographyEntryDescription>
+Entrance into Guadalajara<br/>Homenaje á Cristóbal Colón: Antigüedades Méxicanas, Lienza 53.<br/> Fray Angelico Chavez History Library/New Mexico History Museum, 972MexH
+</GeographyEntryDescription></GeographyEntryImg>
 <GeographyEntryText>
 Tlaxcalan forces accompanied the Spaniards on post-conquest explorations of northern Mexico. This scene is from the 1522 exploration led by Cristóbal de Olid, one of Cortés’s lieutenants.
 </GeographyEntryText>
-<GeographyEntryDescription>
-Entrance into Guadalajara<br/>Homenaje á Cristóbal Colón: Antigüedades Méxicanas, Lienza 53.<br/> Fray Angelico Chavez History Library/New Mexico History Museum, 972MexH
-</GeographyEntryDescription>
+
 
 
 </GeographyEntry>
@@ -274,14 +275,16 @@ Homenaje á Cristóbal Colón: Antigüedades Méxicanas, Lienza 27.<br/> Fray An
     () => {
     setContent(
 <GeographyEntry wide={true}>
-<GeographyEntryImg wide={true} height={height}><img src={Icon3} height={"100%"} width={"100%"}></img>
-</GeographyEntryImg>
-<GeographyEntryText wide={true}>
-Monte Albán was the most important center of the Zapotec civilization politically, economically, and culturally. One of the oldest Mesoamerican cities, it was inhabited for nearly 1,500 years by a succession of Olmecs, Zapotecs, and Mixtecs until about 850 CE (1,270 years ago). 
-</GeographyEntryText>
+<GeographyEntryImg wide={true} height={height}><img src={Icon3} style={{width:"100%", height:"auto"}}></img>
 <GeographyEntryDescription wide={true}>
 Monte Albán, Oaxaca, Mexico<br/> Dana Danielson, photographer, 2013
 </GeographyEntryDescription>
+<GeographyEntryText wide={true}>
+Monte Albán was the most important center of the Zapotec civilization politically, economically, and culturally. One of the oldest Mesoamerican cities, it was inhabited for nearly 1,500 years by a succession of Olmecs, Zapotecs, and Mixtecs until about 850 CE (1,270 years ago). 
+</GeographyEntryText>
+</GeographyEntryImg>
+
+
 </GeographyEntry>
     );
     openModal();
@@ -296,11 +299,12 @@ Monte Albán, Oaxaca, Mexico<br/> Dana Danielson, photographer, 2013
     () => {
         setContent(
         <GeographyEntry wide={true}>
-<GeographyEntryImg height={height} wide={true}><img src={Icon4} width={"100%"}></img>
-</GeographyEntryImg>
+<GeographyEntryImg height={height} wide={true}><img src={Icon4} style={{maxWidth:"80%", margin:"0 20%"}}></img>
 <GeographyEntryDescription wide={true}>
 Teotitlán del Valle, Oaxaca, Mexico<br/> Joe Coca, photographer, 2019
 </GeographyEntryDescription>
+</GeographyEntryImg>
+
 </GeographyEntry>);
 openModal();
     }
@@ -337,11 +341,12 @@ The original source of the sarape’s patterns, including the central diamond an
         setContent(
 
 <GeographyEntry wide={true}>
-<GeographyEntryImg height={height} wide={true}><img src={Icon5} height={"100%"}></img>
-</GeographyEntryImg>
+<GeographyEntryImg height={height} wide={true}><img src={Icon5} style={{maxWidth:"80%", margin:"auto 20%"}}></img>
 <GeographyEntryDescription wide={true}>
 Teotitlán del Valle, Oaxaca, Mexico<br/> Javier Lazo, photographer, 2019
 </GeographyEntryDescription>
+</GeographyEntryImg>
+
 </GeographyEntry>
         );
         openModal();
@@ -353,14 +358,15 @@ Teotitlán del Valle, Oaxaca, Mexico<br/> Javier Lazo, photographer, 2019
     () => {
         setContent(
             <GeographyEntry>
-<GeographyEntryImg height={height}><img src={Icon8} height={"100%"}></img>
+<GeographyEntryImg height={height}><img src={Icon8} style={{maxWidth:"70%", float:"right"}}></img>
+<GeographyEntryDescription>
+Mitla, Oaxaca, Mexico<br/> Alana Coghlan, photographer, 2013
+</GeographyEntryDescription>
 </GeographyEntryImg>
 <GeographyEntryText>
 Textile fragment with indigo design, c. 1250–1500 CE  Casas Grandes, northern Sierra province, Río Chico region, Chihuahua, Mexico ASM 22551
 </GeographyEntryText>
-<GeographyEntryDescription>
-Mitla, Oaxaca, Mexico<br/> Alana Coghlan, photographer, 2013
-</GeographyEntryDescription>
+
 
 </GeographyEntry>
         );

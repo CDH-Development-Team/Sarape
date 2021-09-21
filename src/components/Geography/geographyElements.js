@@ -34,11 +34,11 @@ margin: 4% 0;
 `;
 
 export const GeographyEntryImg = styled.div`
-height: ${({height}) => (height*0.7)+"px"};
+//height: ${({height}) => (height*0.7)+"px"};
 max-width: ${({wide}) => (wide) ? '90%' : '40%'};
 float:right;
 margin-right: 10%;
-overflow:hidden;
+//overflow:hidden;
 @media screen and (max-width: 480px){
 width:100%;
 }
@@ -47,7 +47,7 @@ width:100%;
 export const GeographyEntryText = styled.div`
 float: ${({wide}) => (wide) ? 'left' : 'right'};
 width: ${({wide}) => (wide) ? '35%' : '40%'};
-margin: ${({wide}) => (wide) ? "20px 50px 20px 20px" : "7vh 20px 0 20px"} ;
+margin: ${({wide}) => (wide) ? "20px 50px 20px 0px" : "7vh 20px 0 0px"} ;
 `;
 
 export const GeographyEntryDescription=styled.div`
@@ -80,7 +80,7 @@ export const StatueImg = styled.div`
 `;
 
 export const BackgroundDiv = styled.div`
-max-height:100%;
+//max-height:100%;
 padding: 10px;
 margin: auto 0;
 `;
@@ -112,7 +112,7 @@ export const MosaicModal = styled.div`
 position:absolute;
 top:0;
 left:0;
-background: #000;
+background: #4a0033;
 display:none;
 `;
 
