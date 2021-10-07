@@ -419,7 +419,26 @@ const DyeingPage = () => {
             <div className="quoteDiv" style={{color:"#fff",marginLeft:"7rem"}}>Juana Gutiérrez Contreras pulling yarn from the dye pot. Cochineal produced the red color.<br></br>Joe Coca, photographer, 2019</div>
         </div>
       </Modal2>
-      
+      <Modal2 show10={show10} onClose={() => setShow10(false)}>
+        <div className="content">
+          <div className="row1">
+            {/* <h2>John Doe</h2> */}
+            <div className="column2" >
+            <div style={{margin:"0rem 6rem 0 6rem", padding:"2rem" ,fontSize:"1.2rem",fontFamily:"myriad-pro",backgroundColor:"rgb(166,0,88)"}}>The life cycles of the cochineal insect and the pad of the nopal (prickly pear) are both approximately three to four months. In each cycle, new nopal pads— infested with cochineal— must be collected and then and hung up. About 1,000 nopal pads are required to harvest 1 kilo (2.2 pounds) of cochineal to use for dye. <br></br><br></br>At my studio, we farm only a small amount of cactus and produce a small number of cochineal insects. This is not enough for our usage of about 30 kilos (66 pounds) a year. In order to produce this much, we work collaboratively with other families who specialize in cultivating cochineal. They devote their lives to this practice. <br></br><br></br>As we preserve and sustain our art form, we are also honored to be contributing to many others’ livelihoods and the preservation of their traditional practices as well. While farming cactus and cochineal are extremely labor intensive and complex, I feel very blessed and honored to be part of this legacy.</div>
+            <div style={{padding:"1rem 6rem 0 8rem",fontSize:"1rem",fontFamily:"myriad-pro"}}>Front and back views of male and female cochineal insects José Antonio de Alzate y Ramirez<br></br>Memoria sobre la naturaleza, Cultivo, y Beneficio de la Grana, Mexico City, 1777 <br></br>Edward E. Ayer Manuscript Collection, Ayers Ms. 1031, plate 1<br></br>Newberry Library, Chicago</div>
+            </div>
+            <div className="column2">
+                <img
+                src={Icon10}
+                alt="Developer"
+                style={{width:"60%",marginLeft:"20%"}}
+            />
+            </div>
+
+          </div>
+        </div>
+      </Modal2>
+
       <Modal2 show9={show9} onClose={() => setShow9(false)}>
         <div className="content">
           <div className="row1">
@@ -439,29 +458,7 @@ const DyeingPage = () => {
           </div>
         </div>
       </Modal2>
-      <Modal2 show10={show10} onClose={() => setShow10(false)}>
-        <div className="content">
-          <img
-            src={Icon11}
-            alt="Developer"
-          />
-          <div className="text">
-            {/* <h2>John Doe</h2> */}
-            <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              aliquid placeat omnis adipisci dolores quae amet mollitia sint,
-              temporibus eum magnam facilis odio ex incidunt? Deleniti quam et
-              rem obcaecati. Laborum atque odit expedita nulla.
-            </div>
-            <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-              labore laborum, assumenda dolorum provident quod itaque earum,
-              officia in placeat dignissimos nostrum? Totam corrupti nihil
-              repudiandae ducimus atque quod eos!
-            </div>
-          </div>
-        </div>
-      </Modal2>
+      
     </React.Fragment>
   );
     // const [isOpen, setIsOpen] = useState(false);

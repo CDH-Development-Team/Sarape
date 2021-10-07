@@ -20,7 +20,10 @@ import {
     ServicesCard, 
     ServicesIcon, 
     ServicesH2, 
-    ServicesP } from './ServicesElements';
+    ServicesP,
+    Quote,
+    QuoteDiv,
+    QuoteAuthor } from './ServicesElements';
 import Modal from '../Modal/index.js';
 import Modal2 from '../Modal2/modal2';
 
@@ -42,6 +45,7 @@ const Services = () => {
     return (
         <ServicesContainer id="services">
             <ServicesH1>FRAGMENT SERIES BY PORFIRIO GUTIERREZ</ServicesH1>
+            <ServicesP>My ongoing Fragment series is my interpretation of one of the most remarkable weaving traditions created by the blending of Native American and European traditions. These pieces reflect how the merger created new forms of expression in the art of weaving. This style of weaving became part of our Mexican cultural identity and remains part of my personal expression. My Fragment series pays homage to our ancestral weavers, who, in many cases, were slaves yet they contributed their unique design sensibilities and left an artistic legacy we can still appreciate and respect today.</ServicesP>
             <ServicesWrapper>
                 <ServicesCard>
                     <ServicesIcon src={Icon4} onClick={() => setShow1(true)}/>
@@ -80,144 +84,211 @@ const Services = () => {
                     <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon9} />                    
                 </ServicesCard>
             </ServicesWrapper>
-            <Modal2 show1={show1} onClose={() => setShow1(false)}>
-            <div className="content">
+            
+        <Modal2 show1={show1} onClose={() => setShow1(false)}>
+            <div className="content" style={{alignItems:"right"}}>
+                <div className="text" style={{width:"50%", marginLeft:"6rem"}}>
+                    {/* <h2>John Doe</h2> */}
+                    <div
+                    style={{
+                        fontSize: "4rem",
+                        fontFamily: "CancioneITCStd",
+                        padding: "1.3rem"
+                    }}>
+                        FRAGMENT SERIES
+                    </div>
+                </div>
+                <div
+                    style={{height:"60%",width:"50%",alignItems:"right"}}
+                >
+                    <div style={{width:"65%", alignItems: 'right'}}>
+                        <img
+                            src={Icon4}
+                            // style={{width:"65%"}}
+                            alt="Developer"
+                        />
+                        <p style={{padding:"0 0 1rem 1.6rem", color: "white"}}>Naturally dyed. Dyes colors made from tree moss, black sapote, indigo, marush, and cochineal.<br></br>AT-2020-16-2</p>
+                    </div>
+                
+                </div>            
+            </div>
+        </Modal2>
+
+            {/* <Modal2 show1={show1} onClose={() => setShow1(false)}>
+                <div>
+                    <div>
+                            <img
+                                src={Icon4}
+                                alt="Developer"
+                                style={{width: "30%"}}
+                            />
+                    </div>
+                    <div>
+                    Naturally dyed. Dyes colors made from tree moss, black sapote, indigo, marush, and cochineal.<br></br>AT-2020-16-2
+                    </div>
+                </div> */}
+            {/* <div className="content">
             <img
                 src={Icon4}
                 alt="Developer"
+                style={{width: "30%"}}
             />
             <div className="text">
                 {/* <h2>John Doe</h2> */}
-                <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                aliquid placeat omnis adipisci dolores quae amet mollitia sint,
-                temporibus eum magnam facilis odio ex incidunt? Deleniti quam et
-                rem obcaecati. Laborum atque odit expedita nulla.
-                </div>
-                <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-                labore laborum, assumenda dolorum provident quod itaque earum,
-                officia in placeat dignissimos nostrum? Totam corrupti nihil
-                repudiandae ducimus atque quod eos!
+                {/* <div>
+                Naturally dyed. Dyes colors made from tree moss, black sapote, indigo, marush, and cochineal.<br></br>AT-2020-16-2
                 </div>
             </div>
-            </div>
-            </Modal2>
+            </div>  */}
+            {/* </Modal2> */}
+
             <Modal2 show2={show2} onClose={() => setShow2(false)}>
-            <div className="content">
-            <img
-                src={Icon5}
-                alt="Developer"
-            />
-            <div className="text">
-                {/* <h2>John Doe</h2> */}
-                <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                aliquid placeat omnis adipisci dolores quae amet mollitia sint,
-                temporibus eum magnam facilis odio ex incidunt? Deleniti quam et
-                rem obcaecati. Laborum atque odit expedita nulla.
+                <div className="content" style={{alignItems:"right"}}>
+                    <div className="text" style={{width:"50%", marginLeft:"6rem"}}>
+                        {/* <h2>John Doe</h2> */}
+                        <div
+                        style={{
+                            fontSize: "4rem",
+                            fontFamily: "CancioneITCStd",
+                            padding: "1.3rem"
+                        }}>
+                            FRAGMENT SERIES
+                        </div>
+                    </div>
+                    <div
+                        style={{height:"60%",width:"50%",alignItems:"right"}}
+                    >
+                        <div style={{width:"65%", alignItems: 'right'}}>
+                            <img
+                                src={Icon5}
+                                // style={{width:"65%"}}
+                                alt="Developer"
+                            />
+                            <p style={{padding:"0 0 1rem 1.6rem", color: "white"}}>Naturally dyed. Dyes colors made from tree moss, indigo, and cochineal.<br></br>AT-2020-16-3</p>
+                        </div>
+                    
+                    </div>            
                 </div>
-                <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-                labore laborum, assumenda dolorum provident quod itaque earum,
-                officia in placeat dignissimos nostrum? Totam corrupti nihil
-                repudiandae ducimus atque quod eos!
-                </div>
-            </div>
-            </div>
             </Modal2>
+            
             <Modal2 show3={show3} onClose={() => setShow3(false)}>
-            <div className="content">
-            <img
-                src={Icon6}
-                alt="Developer"
-            />
-            <div className="text">
-                {/* <h2>John Doe</h2> */}
-                <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                aliquid placeat omnis adipisci dolores quae amet mollitia sint,
-                temporibus eum magnam facilis odio ex incidunt? Deleniti quam et
-                rem obcaecati. Laborum atque odit expedita nulla.
+                <div className="content" style={{alignItems:"right"}}>
+                    <div className="text" style={{width:"50%", marginLeft:"6rem"}}>
+                        {/* <h2>John Doe</h2> */}
+                        <div
+                        style={{
+                            fontSize: "4rem",
+                            fontFamily: "CancioneITCStd",
+                            padding: "1.3rem"
+                        }}>
+                            FRAGMENT SERIES
+                        </div>
+                    </div>
+                    <div
+                        style={{height:"60%",width:"50%",alignItems:"right"}}
+                    >
+                        <div style={{width:"65%", alignItems: 'right'}}>
+                            <img
+                                src={Icon6}
+                                // style={{width:"65%"}}
+                                alt="Developer"
+                            />
+                            <p style={{padding:"0 0 1rem 1.6rem", color: "white"}}>Naturally dyed. Dyes colors made from indigo.<br></br>AT-2020-16-4</p>
+                        </div>
+                    
+                    </div>            
                 </div>
-                <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-                labore laborum, assumenda dolorum provident quod itaque earum,
-                officia in placeat dignissimos nostrum? Totam corrupti nihil
-                repudiandae ducimus atque quod eos!
-                </div>
-            </div>
-            </div>
             </Modal2>
             <Modal2 show4={show4} onClose={() => setShow4(false)}>
-            <div className="content">
-            <img
-                src={Icon7}
-                alt="Developer"
-            />
-            <div className="text">
-                {/* <h2>John Doe</h2> */}
-                <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                aliquid placeat omnis adipisci dolores quae amet mollitia sint,
-                temporibus eum magnam facilis odio ex incidunt? Deleniti quam et
-                rem obcaecati. Laborum atque odit expedita nulla.
+                <div className="content" style={{alignItems:"right"}}>
+                    <div className="text" style={{width:"50%", marginLeft:"6rem"}}>
+                        {/* <h2>John Doe</h2> */}
+                        <div
+                        style={{
+                            fontSize: "4rem",
+                            fontFamily: "CancioneITCStd",
+                            padding: "1.3rem"
+                        }}>
+                            FRAGMENT SERIES
+                        </div>
+                    </div>
+                    <div
+                        style={{height:"60%",width:"50%",alignItems:"right"}}
+                    >
+                        <div style={{width:"65%", alignItems: 'right'}}>
+                            <img
+                                src={Icon7}
+                                // style={{width:"65%"}}
+                                alt="Developer"
+                            />
+                            <p style={{padding:"0 0 1rem 1.6rem", color: "white"}}>Naturally dyed. Dyes colors made from indigo.<br></br>AT-2020-16-4</p>
+                        </div>
+                    
+                    </div>            
                 </div>
-                <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-                labore laborum, assumenda dolorum provident quod itaque earum,
-                officia in placeat dignissimos nostrum? Totam corrupti nihil
-                repudiandae ducimus atque quod eos!
-                </div>
-            </div>
-            </div>
             </Modal2>
             <Modal2 show5={show5} onClose={() => setShow5(false)}>
-            <div className="content">
-            <img
-                src={Icon8}
-                alt="Developer"
-            />
-            <div className="text">
-                {/* <h2>John Doe</h2> */}
-                <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                aliquid placeat omnis adipisci dolores quae amet mollitia sint,
-                temporibus eum magnam facilis odio ex incidunt? Deleniti quam et
-                rem obcaecati. Laborum atque odit expedita nulla.
+                <div className="content" style={{alignItems:"right"}}>
+                    <div className="text" style={{width:"50%", marginLeft:"6rem"}}>
+                        {/* <h2>John Doe</h2> */}
+                        <div
+                        style={{
+                            fontSize: "4rem",
+                            fontFamily: "CancioneITCStd",
+                            padding: "1.3rem"
+                        }}>
+                            FRAGMENT SERIES
+                        </div>
+                    </div>
+                    <div
+                        style={{height:"60%",width:"50%",alignItems:"right"}}
+                    >
+                        <div style={{width:"65%", alignItems: 'right'}}>
+                            <img
+                                src={Icon8}
+                                // style={{width:"65%"}}
+                                alt="Developer"
+                            />
+                            <p style={{padding:"0 0 1rem 1.6rem", color: "white"}}>Naturally dyed. Dyes colors made from tree moss, Mexican tarragon, indigo, and cochineal. <br></br>AT-2020-16-6</p>
+                        </div>
+                    
+                    </div>            
                 </div>
-                <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-                labore laborum, assumenda dolorum provident quod itaque earum,
-                officia in placeat dignissimos nostrum? Totam corrupti nihil
-                repudiandae ducimus atque quod eos!
-                </div>
-            </div>
-            </div>
             </Modal2>
             <Modal2 show6={show6} onClose={() => setShow6(false)}>
-            <div className="content">
-            <img
-                src={Icon9}
-                alt="Developer"
-            />
-            <div className="text">
-                {/* <h2>John Doe</h2> */}
-                <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                aliquid placeat omnis adipisci dolores quae amet mollitia sint,
-                temporibus eum magnam facilis odio ex incidunt? Deleniti quam et
-                rem obcaecati. Laborum atque odit expedita nulla.
+                <div className="content" style={{alignItems:"right"}}>
+                    <div className="text" style={{width:"50%", marginLeft:"6rem"}}>
+                        {/* <h2>John Doe</h2> */}
+                        <div
+                        style={{
+                            fontSize: "4rem",
+                            fontFamily: "CancioneITCStd",
+                            padding: "1.3rem"
+                        }}>
+                            FRAGMENT SERIES
+                        </div>
+                    </div>
+                    <div
+                        style={{height:"60%",width:"50%",alignItems:"right"}}
+                    >
+                        <div style={{width:"65%", alignItems: 'right'}}>
+                            <img
+                                src={Icon9}
+                                // style={{width:"65%"}}
+                                alt="Developer"
+                            />
+                            <p style={{padding:"0 0 1rem 1.6rem", color: "white"}}>Naturally dyed. Dyes colors made from Mexican tarragon, black sapote, indigo, and cochineal. <br></br>AT-2020-16-7</p>
+                        </div>
+                    
+                    </div>            
                 </div>
-                <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-                labore laborum, assumenda dolorum provident quod itaque earum,
-                officia in placeat dignissimos nostrum? Totam corrupti nihil
-                repudiandae ducimus atque quod eos!
-                </div>
-            </div>
-            </div>
             </Modal2>
+            <br></br><br></br>
+            <QuoteDiv>
+            <Quote>“This art form is a deep part of my culture and is my life. It is like my native language or our ceremonies. The cochineal produces a color just like the color of our blood; the weft and the warp are like the tissue in our body. Textiles are our second skin as well as a means of expression.” </Quote>
+            <QuoteAuthor>Porfirio Gutiérrez</QuoteAuthor>
+            </QuoteDiv>
+            
         </ServicesContainer>
     )
 }

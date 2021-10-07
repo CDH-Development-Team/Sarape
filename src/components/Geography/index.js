@@ -20,6 +20,11 @@ import Icon12 from '../../images/section 2/12.jpg';
 import Icon13 from '../../images/section 2/13.jpg';
 import Icon14 from '../../images/section 2/14.png';
 import Color1 from '../../images/section 2/color1.png'
+
+import Color4 from '../../images/color4.png'
+import Color5 from '../../images/color5.png'
+import Color8 from '../../images/color8.png'
+import Color11 from '../../images/color11.png'
 import headerImg from '../../images/section 2/header.jpg';
 
 
@@ -44,38 +49,6 @@ const customStyles = {
   
   
 const Geography = () => {
-    // function MosaicModal(props){
-    //     let subtitle;
-    //     const [modalIsOpen, setIsOpen] = React.useState(false);
-    
-        
-    //     function openModal() {
-    //         setIsOpen(true);
-    //       }
-    //       function afterOpenModal() {
-    //         // references are now sync'd and can be accessed.
-            
-    //       }
-        
-    //       function closeModal() {
-    //         setIsOpen(false);
-    //       }
-    //     return (
-            
-    //         <Modal
-    //         isOpen={modalIsOpen}
-    //         onAfterOpen={afterOpenModal}
-    //         onRequestClose={closeModal}
-    //         style={customStyles}
-    //         >
-    //             <img src={close} onClick={closeModal} style={{width:"5%", background:"white"}}/>
-    //             {props.content}
-    //         </Modal>
-            
-            
-    //     )
-    // }
-
     let subtitle;
         const [modalIsOpen, setIsOpen] = React.useState(false);
     
@@ -97,14 +70,6 @@ const Geography = () => {
     return (
         <>
         <GeographyContainer>
-        {/* <MosaicWrapper>
-        <MosaicImg width={'22%'} top={'0'} left={'0'}>
-            <img src={Icon4} width={'100%'}/>
-        </MosaicImg>
-        </MosaicWrapper> 
-        (width-(width%18))/18*8
-        (width-(width%18))
-        */}
         
 <GeographyMosaicParent  height={(width-(width%18))/18*8} width={(width-(width%18))}>
 <Modal
@@ -123,6 +88,7 @@ const Geography = () => {
     <GeographyMosaic1 className={"mosaic"}>
         <img src={Color1} height={"100%"} width={"100%"}></img>
     </GeographyMosaic1>
+
     <GeographyMosaic2 className={"mosaic"}> 
         <img src={Icon2} height={"100%"} width={"100%"} onClick={
             () =>{
@@ -248,11 +214,11 @@ Homenaje á Cristóbal Colón: Antigüedades Méxicanas, Lienza 27.<br/> Fray An
 </GeographyMosaic6>
 
 <GeographyMosaic7 className={"mosaic"}>
-<img src={Color1} height={"100%"} width={"100%"}></img>
+<img src={Color5} height={"100%"} width={"100%"}></img>
 </GeographyMosaic7>
 
 <GeographyMosaic8 className={"mosaic"}>
-<img src = {Color1} height={"100%"} width={"100%"}></img>
+<img src = {Color4} height={"100%"} width={"100%"}></img>
 </GeographyMosaic8>
 
 <GeographyMosaic9 className={"mosaic"}>
@@ -330,10 +296,10 @@ The original source of the sarape’s patterns, including the central diamond an
 }></img>
 </GeographyMosaic12>
 <GeographyMosaic13 className={"mosaic"}>
-<img src = {Color1} height={"100%"} width={"100%"}></img>
+<img src = {Color11} height={"100%"} width={"100%"}></img>
 </GeographyMosaic13>
 <GeographyMosaic14 className={"mosaic"}>
-<img src = {Color1} height={"100%"} width={"100%"}></img>
+<img src = {Color5} height={"100%"} width={"100%"}></img>
 </GeographyMosaic14>
 <GeographyMosaic15 className={"mosaic"}>
 <img src = {Icon5} height={"100%"} width={"100%"} onClick={

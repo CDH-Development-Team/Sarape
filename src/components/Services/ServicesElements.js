@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ServicesContainer = styled.div`
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,11 +10,8 @@ export const ServicesContainer = styled.div`
     align-items: center;
     
     @media screen and (max-width: 768px){
-
     }
-
     @media screen and (max-width: 480px){
-
     }
 `;
 
@@ -67,11 +63,9 @@ export const ServicesWrapper = styled.div`
     grid-gap: 16px;
     padding: 0 50px;
 	overflow-y: hidden;
-
     @media screen and (max-width: 1000px){
         grid-template-columns: 1fr 1fr;
     }
-
     @media screen and (max-width: 768px){
         grid-template-columns: 1fr;
         padding: 0 20px;
@@ -89,7 +83,6 @@ export const ServicesCard = styled.div`
     padding: 0px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
-
     &:hover {
         transform: scale(1.04);
         transition: all 0.2s ease-in-out;   
@@ -108,7 +101,6 @@ export const ServicesH1 = styled.h1`
     color: #fff;
     margin-bottom: 44px;
     margin-left: 30px;
-
     @media screen and (max-width: 480px){
         font-size: 2rem;
     }
@@ -117,14 +109,13 @@ export const ServicesH1 = styled.h1`
 export const ServicesH2 = styled.h2`
     font-size: 1rem;
     margin-bottom: 10px;
-
 `;
 
 export const ServicesP = styled.p`
     font-size: 1rem;
 	color: white;
 	margin-bottom: 80px;
-	width:40%;
+	width:50%;
     font-family: myriad-pro,sans-serif;
     font-weight: 10;
 	margin-left: 30px;
@@ -141,6 +132,42 @@ export const FragmentQuote = styled.div`
     font-size: 1rem;
 `;
 
+export const Quote = styled.p`
+    color: white;
+    // display: flex;
+    // justify-content:center;
+    width: 100%;
+    font-family: cursive,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+`
+
+export const QuoteDiv = styled.div`
+    position: relative;
+    color: white;
+    padding: 3rem;
+    // display: flex;
+    // justify-content:center;
+    width: 80%;
+    background: rgb(185, 48, 104);
+    font-family: cursive,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+`
+
+export const QuoteAuthor = styled.p`
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    color: white;
+    font-family: cursive,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-align: align-right;
+`
+
 export const FragmentDiv = styled.div`
 	width: 70%;
 	margin: 20px;
@@ -154,6 +181,4 @@ export const FragmentCite = styled.div`
 `;
 
 export const FragmentSeries = styled.div`
-
-
 `;

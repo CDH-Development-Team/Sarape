@@ -14,6 +14,10 @@ import Icon7 from "../../images/section 2/history/7.png"
 import Icon8 from "../../images/section 2/history/8.png"
 import close from '../../images/close.png';
 import Color1 from '../../images/section 2/color1.png'
+import Color4 from '../../images/color4.png'
+import Color5 from '../../images/color5.png'
+import Color8 from '../../images/color8.png'
+import Color11 from '../../images/color11.png'
 import "../Geography/geography.css";
 import useWindowDimensions from '../Geography/dimensions';
 
@@ -87,7 +91,7 @@ const History = () =>{
         </HistoryMosaic1>
 
         <HistoryMosaic2 className="mosaic">
-        <img src={Color1} height={"100%"} width={"100%"}></img>
+        <img src={Color8} height={"100%"} width={"100%"}></img>
         </HistoryMosaic2>
         <HistoryMosaic3 className="mosaic">
         <img src={Icon7} height={"100%"} width={"100%"} onClick={
@@ -112,10 +116,10 @@ const History = () =>{
         }></img>
         </HistoryMosaic3>
         <HistoryMosaic4 className="mosaic">
-        <img src={Color1} height={"100%"} width={"100%"}></img>
+        <img src={Color4} height={"100%"} width={"100%"}></img>
         </HistoryMosaic4 >
         <HistoryMosaic5 className="mosaic">
-        <img src={Color1} height={"100%"} width={"100%"}></img>
+        <img src={Color5} height={"100%"} width={"100%"}></img>
         </HistoryMosaic5 >
         <HistoryMosaic6 className="mosaic">
         <img src={Icon8} height={"100%"} width={"100%"} onClick={
@@ -139,7 +143,7 @@ const History = () =>{
         </HistoryMosaic6>
 
         <HistoryMosaic7 className="mosaic">
-        <img src={Color1} height={"100%"} width={"100%"}></img>
+        <img src={Color8} height={"100%"} width={"100%"}></img>
         </HistoryMosaic7>
 
         <HistoryMosaic8 className="mosaic">
@@ -229,7 +233,7 @@ excoco ruler Nezahualpilli shown wearing a xiuhtilmatli (blue cape), which would
         }></img>
         </HistoryMosaic13>
         <HistoryMosaic14 className="mosaic">
-        <img src={Color1} height={"100%"} width={"100%"}></img>
+        <img src={Color5} height={"100%"} width={"100%"}></img>
         </HistoryMosaic14>
      </HistoryMosaicParent >
 

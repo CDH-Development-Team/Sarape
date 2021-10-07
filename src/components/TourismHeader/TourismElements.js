@@ -91,8 +91,8 @@ export const Subtitle = styled.p`
 export const Caption = styled.p`
     max-width: 440px;
     margin-bottom: 5%;
-    padding-right: 4%;
-    padding-left: 4%;
+    // padding-right: 4%;
+    // padding-left: 4%;
     font-size: 18px;
     line-height: 24px;
     font-family: myriad-pro,sans-serif;
@@ -131,7 +131,7 @@ export const Img2 = styled.img`
 export const TextHead = styled.div`
     max-width: 550px;
     margin-bottom: 5%;
-    padding: 4%;
+    // padding: 4%;
     font-size: 16px;
     line-height: 24px;
     font-family: myriad-pro,sans-serif;

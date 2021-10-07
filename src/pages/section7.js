@@ -14,8 +14,8 @@ const Section7Home = () => {
     <React.Fragment>
         <Sidebar isOpen={isOpen} toggle={toggle}/>
         <Navbar toggle={toggle} />
-            <FamilyPage/>
-            </React.Fragment>
+        <FamilyPage/>
+    </React.Fragment>
     )
 }
 

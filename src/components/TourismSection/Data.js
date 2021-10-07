@@ -3,6 +3,7 @@ import img2 from "../../images/candids.jpg";
 import img3 from "../../textiles_png/8_textiles/8425.jpg";
 import img4 from "../../textiles_png/8_textiles/educational_textile.jpg";
 import img5 from "../../images/8-1_85_185_50A_crop.jpg";
+import img6 from "../../images/8_ceramics.png";
 
 export const tourismObjOne = {
     id : 'SectionOne',
@@ -36,7 +37,7 @@ export const tourismObjTwo = {
     description2:"The attire of the two male figures wrapped in Saltillo sarapes indicates they are part of the upper class. The vaquero carries a sarape rolled up behind his saddle. ",
     buttonLabel: "",
     imgStart: true,
-    artifact: img2,
+    artifact: img6,
     artifactAlt:'Ceramic Figurines',
     artifactInfo:'Ceramic Figurines, c. 1900-1920. ASM 156',
     dark: true,
