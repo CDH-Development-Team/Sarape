@@ -12,13 +12,13 @@ const Navbar = ({ toggle }) => {
                         <img style={{height: 2+"em"}} src={logo} alt="logo"/>
                     </NavLogo>
                     <NavMenu >
-                        <NavLinks to="/index" style={{overflow:"hidden"}}>
+                        <NavLinks to="/" style={{overflow:"hidden"}}>
                             <NavDiv>
                                 <NavP>WRAPPED IN COLOR</NavP>
                                 <NavP2 style={{fontSize:"1rem"}}>LEGACIES OF THE MEXICAN SARAPE</NavP2>
                             </NavDiv>
                         </NavLinks>
-                        <NavLinks to="/signin">
+                        <NavLinks to="/geography">
                             <NavDiv style={{margin: "0 0 0 6.5rem",textAlign: "right",overflow:"hidden"}}>
                                 <NavP2 style={{fontFamily: "myriad-pro"}}>About This Exhibit</NavP2>
                             </NavDiv>

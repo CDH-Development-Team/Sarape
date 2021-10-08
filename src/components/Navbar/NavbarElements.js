@@ -64,8 +64,9 @@ export const NavMenu = styled.div`
     width: 40rem;
     font-size: 2.0rem;
     padding-right: 0px;
-    margin-right: 140px; 
+    // margin-right: 140px; 
     display: flex;
+    justify-content: center:
     align-items: center;
     list-style: none;
     text-align: center;
@@ -91,7 +92,7 @@ export const NavItem = styled.div`
 
 `;
 
-export const NavLinks = styled(LinkS)`
+export const NavLinks = styled(LinkR)`
     color: #fff;
     display: flex;
     align-items: center;
@@ -146,5 +147,5 @@ export const NavP2 = styled.div`
 
 export const NavDiv = styled.div`
     margin: 0 auto;
-    align-items: left;
+    align-items: center;
 `;

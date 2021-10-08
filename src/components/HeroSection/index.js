@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-// import { Button } from 'react-scroll';
 import Video from "../../videos/video1.mp4";
+import GeographyPage from "../../pages/geography.js";
 import { Button } from "../ButtonElement";
 import { 
     HeroContainer, 
@@ -29,12 +29,8 @@ const HeroSection = () => {
             </HeroBg>
             <HeroContent>
                 <HeroH1>Wrapped In Color</HeroH1>
-                {/* <HeroP>
-                    Sign up for a new account today and receive $250 in credit 
-                    towards your next payment.
-                </HeroP> */}
                 <HeroBtnWrapper>
-                    <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
+                    <Button to="/geography" onMouseEnter={onHover} onMouseLeave={onHover}>
                         ENTER {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
                 </HeroBtnWrapper>
