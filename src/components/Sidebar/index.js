@@ -20,7 +20,7 @@ const Sidebar = ({toggle, isOpen}) => {
                         History
                     </SidebarLink>
                     <SidebarLink to="/porfirio" onClick={toggle}>
-                        Porifirio
+                        Porfirio
                     </SidebarLink>        
                     <SidebarLink to="/dyeing" onClick={toggle}>
                         Dyeing
