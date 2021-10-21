@@ -1,0 +1,1 @@
+<Modal2 show2={show2} onClose={() => setShow2(false)}></Modal2>
