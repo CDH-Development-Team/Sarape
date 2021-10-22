@@ -201,7 +201,7 @@ const DyeingPage = () => {
           backgroundColor: "#4a0033",
           padding: "3rem"
         }}>
-          <div style={{backgroundColor:"rgb(166,0,88)",padding:"1rem"}}><h1 style={{
+          <div style={{padding:"1rem"}}><h1 style={{
               fontSize: "2rem",
               color: "#fff"
         }}>Natural Dyeing</h1><br/>

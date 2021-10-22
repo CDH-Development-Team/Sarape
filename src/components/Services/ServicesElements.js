@@ -150,7 +150,6 @@ export const QuoteDiv = styled.div`
     // display: flex;
     // justify-content:center;
     width: 80%;
-    background: rgb(185, 48, 104);
     font-family: cursive,sans-serif;
     font-weight: 700;
     font-style: normal;
