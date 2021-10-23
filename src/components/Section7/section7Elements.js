@@ -13,7 +13,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 900px;
+    // height: 900px;
     overflow: hidden;
     width: 100%;
     max-width: 1100px;
@@ -42,7 +42,7 @@ export const Column1 = styled.div`
     margin-bottom: 0px;
     padding: 0 15px;
     grid-area: col1;
-    background-color: ${({ block }) => (block ? '#AD0042' : '#4a0033')};;
+    background-color: ${({ block }) => (block ? '#AD0042' : '#4a0033')};
 `;
 
 export const Column2 = styled.div`
@@ -55,7 +55,7 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
     max-width: 500px;
     padding-top: 0;
-    padding-bottom: 60px;
+    // padding-bottom: 60px;
 `;
 
 export const TopLine = styled.p`
@@ -103,5 +103,9 @@ export const Img = styled.img`
     width: ${({smallImg}) => (smallImg ? '50%' : '100%')};;
     margin: 0 0 10px 0;
     padding-right: 0;
+
+    @media screen and (max-width: 480px) {
+        width: 100%;
+    }
 `;
 
