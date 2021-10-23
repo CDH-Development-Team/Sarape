@@ -90,7 +90,14 @@
     padding: 10px;
     font-family: sans-serif;
     color: #fff;
+
      /* Should be removed. Only for demonstration */
+  }
+
+  @media screen and (max-width: 480px) {
+    .column1 {
+      width: 100%;
+    }
   }
   .column2 {
     float: left;
