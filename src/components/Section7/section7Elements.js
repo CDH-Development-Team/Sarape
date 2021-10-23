@@ -7,13 +7,11 @@ export const InfoContainer = styled.div`
     @media screen and (max-width: 768px) {
         padding: 100px 0;
     }
-
 `;
 
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    // height: 900px;
     overflow: hidden;
     width: 100%;
     max-width: 1100px;
@@ -55,7 +53,11 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
     max-width: 500px;
     padding-top: 0;
-    // padding-bottom: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (max-width: 480px) {
+        padding-bottom: 0px;
+    }
 `;
 
 export const TopLine = styled.p`
