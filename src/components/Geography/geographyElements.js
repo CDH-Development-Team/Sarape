@@ -26,6 +26,11 @@ margin: 50px;
 
 column-count:3;
 }
+
+@media screen and (max-width: 480px) {
+    margin: 0px;
+    margin-top: 50px;
+}
 `;
 
  export const GeographyEntry = styled.div`  
