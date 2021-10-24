@@ -94,11 +94,6 @@
      /* Should be removed. Only for demonstration */
   }
 
-  @media screen and (max-width: 480px) {
-    .column1 {
-      width: 100%;
-    }
-  }
   .column2 {
     float: left;
     width: 50%;
@@ -187,6 +182,16 @@
   }
 
   .content img {
+    width: 100%;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .column1 {
     width: 100%;
   }
 }
