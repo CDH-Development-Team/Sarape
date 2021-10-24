@@ -150,7 +150,7 @@ const FamilyPage = () => {
           alignItems: "center",
           height: "auto",
           backgroundColor: "#4a0033",
-          padding: "5rem"
+          padding: width > 480 ? "5rem" : "1rem"
         }}>
           <div style={{padding:"2rem"}}>
                       <h1 style={{
