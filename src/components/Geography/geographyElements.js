@@ -31,10 +31,11 @@ column-count:3;
  export const GeographyEntry = styled.div`  
 padding: 10px;
 margin: 4% 0;
+
 `;
 
 export const GeographyEntryImg = styled.div`
-//height: ${({height}) => (height*0.7)+"px"};
+// height: ${({height}) => (height*0.7)+"px"};
 max-width: ${({wide}) => (wide) ? '90%' : '40%'};
 float:right;
 margin-right: 10%;

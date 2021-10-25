@@ -178,8 +178,8 @@ const History = () =>{
             () =>{
                 setContent(
                     <GeographyEntry wide={true}>
-    <GeographyEntryImg wide={true} height={height/2}>
-        <img src = {Icon4} style={{width:"100%", margin:"auto 0%"}}></img>
+    <GeographyEntryImg wide={true} height={height}>
+        <img src = {Icon4} style={{width:"60.5%" ,margin:"auto 0%"}}></img>
         <GeographyEntryText wide={true}>
     The Aztecs’ tilmàtli, tied at the shoulder as depicted in several codices, is also part of the sarape’s cultural lineage. This style is similar to a poncho.
     </GeographyEntryText>
