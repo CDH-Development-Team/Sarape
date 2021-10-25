@@ -5,7 +5,7 @@ export const InfoContainer = styled.div`
     background: ${({ lightBg }) => (lightBg) ? '#f9f9f9' : '#4a0033'};
     padding-top: 100px;
     @media screen and (max-width: 768px) {
-        padding: 100px 0;
+        // padding: 100px 0;
     }
 `;
 
@@ -30,7 +30,7 @@ export const InfoRow = styled.div`
 
     @media screen and (max-width: 768px){
         grid-template-areas: ${({imgStart}) => 
-            imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+            imgStart ? `'col2' 'col1'` : `'col1 col1' 'col2 col2'`};
     }
 `;
 
