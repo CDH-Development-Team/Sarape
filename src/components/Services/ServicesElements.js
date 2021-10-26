@@ -100,7 +100,8 @@ export const ServicesH1 = styled.h1`
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 44px;
-    margin-left: 30px;
+    // margin-left: 30px;
+    text-align: center;
     @media screen and (max-width: 480px){
         font-size: 2rem;
     }
@@ -118,7 +119,10 @@ export const ServicesP = styled.p`
 	width:50%;
     font-family: myriad-pro,sans-serif;
     font-weight: 10;
-	margin-left: 30px;
+	// margin-left: 30px;
+    @media screen and (max-width: 480px) {
+        width: 70%;
+    }
 `;
 
 export const FragmentQuote = styled.div`
@@ -149,8 +153,7 @@ export const QuoteDiv = styled.div`
     padding: 3rem;
     // display: flex;
     // justify-content:center;
-    width: 80%;
-    background: rgb(185, 48, 104);
+    width: 90%;
     font-family: cursive,sans-serif;
     font-weight: 700;
     font-style: normal;

@@ -106,10 +106,7 @@ const FamilyPage = () => {
           />        
       </div>
       <div style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "10vh",
+          textAlign: "center",
           backgroundColor: "#4a0033",
           color: "white",
           fontSize:"30px",

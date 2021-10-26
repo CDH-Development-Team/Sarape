@@ -201,7 +201,7 @@ const DyeingPage = () => {
           backgroundColor: "#4a0033",
           padding: "3rem"
         }}>
-          <div style={{backgroundColor:"rgb(166,0,88)",padding:"1rem"}}><h1 style={{
+          <div style={{padding:"1rem"}}><h1 style={{
               fontSize: "2rem",
               color: "#fff"
         }}>Natural Dyeing</h1><br/>
@@ -214,6 +214,7 @@ const DyeingPage = () => {
                 }}>
                   The natural-dye practice involves chemistry, spiritual beliefs, and a deep understanding of the forces of nature. The shades of color a plant gives can vary greatly depending on where it was grown and whether the plant received enough water for the season—which makes the hue a living imprint of that particular season. This is how we know that nature is divine and that the plants are alive, just like us. It can take a lifetime to understand the depth of this practice.</p>
                 </div>
+                {width > 768 && <>
                 <div className="column">
                     <p style={{
                 fontSize: "1rem",
@@ -227,8 +228,25 @@ const DyeingPage = () => {
                     fontFamily: "myriad-pro",
                     padding: "0rem"
               }}>health of the dyers who use them and to the environment when they are disposed of in the ground or in water systems.<br></br><br></br>Today, only a few families in Teotitlán del Valle continue the ancient tradition of producing and using natural dyes. I am working to preserve this knowledge through my studio’s work and by teaching others. By reviving this tradition, my family and I are helping to preserve Zapotec identity and the environment.</p>
+                </div></>}
+                {width <= 768 && <>
+                  <div className="column">
+                    <p style={{
+                fontSize: "1rem",
+                fontFamily: "myriad-pro",
+                padding: "0rem"
+              }}>The Zapotec have been coloring yarns with natural dyes for thousands of years. However, this practice was threatened by the introduction of synthetic dyes, which enabled weavers to produce textiles more quickly for a growing commercial market. Over time, many Zapotec villages abandoned the more labor-intensive tradition of working with plants, minerals, and insects. While less expensive and easier to use then natural dyes, chemical dyes can also be highly toxic, particularly in large amounts. They present a threat to the health of the dyers who use them and to the environment when they are disposed of in the ground or in water systems.</p>
                 </div>
+                <div className="column">
+                    <p style={{
+                    fontSize: "1rem",
+                    fontFamily: "myriad-pro",
+                    padding: "0rem"
+              }}>Today, only a few families in Teotitlán del Valle continue the ancient tradition of producing and using natural dyes. I am working to preserve this knowledge through my studio’s work and by teaching others. By reviving this tradition, my family and I are helping to preserve Zapotec identity and the environment.</p>
+                </div>
+                </>}
             </div>
+
             </div>
       </div>
 

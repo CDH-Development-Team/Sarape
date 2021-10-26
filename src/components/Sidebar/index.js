@@ -29,7 +29,7 @@ const Sidebar = ({toggle, isOpen}) => {
                         Family
                     </SidebarLink>
                     <SidebarLink to="/historicalTextiles" onClick={toggle}>
-                        Sarape Styles
+                        Historical Textiles
                     </SidebarLink>  
                     <SidebarLink to="/section7" onClick={toggle}>
                         Saltillo Influences
