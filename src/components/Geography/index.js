@@ -115,8 +115,7 @@ Tlaxcalan forces accompanied the Spaniards on post-conquest explorations of nort
     <img src={Icon14} width ={"100%"} height={"100%"} onClick ={
         () => {
             setContent(
-
-<GeographyEntry>
+                <GeographyEntry>
     <div style={{margin: "20px 40px", width:"70%"}}> 
         Ceramics like these are associated with Mitla, called in Nahuatl Mictlán, meaning “place of the dead,” or underworld, and in Zapotec, Lyobaa, meaning “place of rest.” The ancient Zapotec religion was complex, with prayers and offerings made to many different gods or deities. Notice the sophisticated dress and adornment of these figures. 
     </div>
@@ -151,6 +150,7 @@ Tlaxcalan forces accompanied the Spaniards on post-conquest explorations of nort
     </GeographyStatues>
 
 </GeographyEntry>
+
             );
             openModal();
         }

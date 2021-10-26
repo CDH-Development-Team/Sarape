@@ -1,8 +1,10 @@
+import Modal from 'react-modal';
+//styling of the modal itself
 
 import React, { useState } from 'react';
 
-import Modal2 from '../Modal2/modal2';
-import Modal from '../Modal/index.js';
+//import Modal2 from '../Modal2/modal2';
+//import Modal from '../Modal/index.js';
 
 // import React, { useState } from "react";
 import "./styles.css";
@@ -20,6 +22,7 @@ import Icon7 from "../../textiles_png/6_textiles/6B5_E-4735.png";
 import Icon8 from "../../textiles_png/6_textiles/6C1_at_2020-13-2.png";
 import Icon9 from "../../textiles_png/6_textiles/6C2_at_2020-14-2.png";
 import Icon10 from "../../textiles_png/6_textiles/6C3_1980-2-53.png";
+import close from '../../images/close.png';
 
 // import AnimeList from '../components/anime';
 import "./styles.css";
@@ -34,12 +37,23 @@ import {
     ServicesH2, 
     ServicesP } from './ServicesElements';
 
+    const customStyles = {
+      content: {
+        position:"absolute",
+        top:0,
+        left:0,
+        width: "100%",    
+        height: "100%",
+        background: "#4a0033",
+        color: "#fff"
+      },
+    };
 
 const Services = () => {
     const [showModal, setShowModal] = useState(false);
 
 
-    const [show1, setShow1] = useState(false);
+    /*const [show1, setShow1] = useState(false);
     const [show2, setShow2] = useState(false);
     const [show3, setShow3] = useState(false);
     const [show4, setShow4] = useState(false);
@@ -49,85 +63,46 @@ const Services = () => {
     const [show8, setShow8] = useState(false);
     const [show9, setShow9] = useState(false);
     const [show10, setShow10] = useState(false);
+    
     const openModal = () => {
         setShowModal(prev => !prev);
-    };
+    };*/
+
+    const [modalIsOpen, setIsOpen] = React.useState(false);
+    const [content, setContent] = React.useState(null);
+        
+    function openModal() {
+        setIsOpen(true);
+      }
+      function closeModal() {
+        setIsOpen(false);
+      }
+      function afterOpenModal() {
+        // references are now sync'd and can be accessed.
+        
+      }
     return (
+      
         <ServicesContainer id="services">
+          <Modal
+            isOpen={modalIsOpen}
+            onAfterOpen={afterOpenModal}
+            onRequestClose={closeModal}
+            style={customStyles}
+            >
+                <img src={close} onClick={closeModal} style={{width:"5%", float:"right"}}/>
+
+                
+            {content}
+
+        
+            </Modal>
            
             <ServicesWrapper6>
                 <ServicesCard>
-                    <ServicesIcon src={Icon1} onClick={() => setShow1(true)}/>
-                    {/* <ServicesH2>Reduce Expenses</ServicesH2>
-                    <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP> */}
-                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon1} />
-                </ServicesCard>
-                <div>
-                <ServicesCard>
-                    <ServicesIcon onClick={() => setShow2(true)} src={Icon2}/>
-                    {/* <ServicesH2>Virtual offices</ServicesH2> */}
-                    {/* <ServicesP>You can access our platform from anywhere.</ServicesP> */}
-                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon2} />
-                </ServicesCard>
-                <ServicesCard>
-                    <ServicesIcon onClick={() => setShow3(true)} src={Icon3}/>
-                    {/* <ServicesH2>Premium Benefits</ServicesH2> */}
-                    {/* <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon3} />
-                </ServicesCard>
-                </div>
-                <ServicesCard>
-                    <ServicesIcon onClick={() => setShow4(true)} src={Icon4}/>
-                    {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon4} />
-                </ServicesCard>
-                <div>
-                <ServicesCard>
-                    <ServicesIcon onClick={() => setShow5(true)} src={Icon5}/>
-                    {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon5} />                    
-                </ServicesCard>
-                <ServicesCard>
-                    <ServicesIcon onClick={() => setShow6(true)} src={Icon6}/>
-                    {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon6} />                    
-                </ServicesCard>
-                </div>
-                <ServicesCard>
-                    <ServicesIcon onClick={() => setShow7(true)} src={Icon7}/>
-                    {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon7} />                    
-                </ServicesCard>
-                <div>
-                <ServicesCard>
-                    <ServicesIcon onClick={() => setShow8(true)} src={Icon8}/>
-                    {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon8} />                    
-                </ServicesCard>
-                <ServicesCard>
-                    <ServicesIcon onClick={() => setShow9(true)} src={Icon9}/>
-                    {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon9} />                    
-                </ServicesCard>
-                </div>
-                <ServicesCard>
-                    <ServicesIcon onClick={() => setShow10(true)} src={Icon10}/>
-                    {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-                    <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon10} />                    
-                </ServicesCard>
-                
-            </ServicesWrapper6>
-            <br></br>
-            <ServicesH1>Historical Textiles 1750-1980</ServicesH1>
-            <Modal2 show1={show1} onClose={() => setShow1(false)}>
-            <div className="content">
+                    <ServicesIcon src={Icon1} onClick={()=>{
+                      setContent(
+                        <div className="content">
             <img
                 src={Icon1}
                 alt="Developer"
@@ -146,9 +121,17 @@ const Services = () => {
             
           </div>
         </div>
-            </Modal2>
-            <Modal2 show2={show2} onClose={() => setShow2(false)}>
-            <div className="content">
+                      );
+                      openModal();
+                    }}/>
+                    {/* <ServicesH2>Reduce Expenses</ServicesH2>
+                    <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP> */}
+                </ServicesCard>
+                <div>
+                <ServicesCard>
+                <ServicesIcon src={Icon2} onClick={()=>{
+                      setContent(
+                        <div className="content">
             <img
                 src={Icon2}
                 alt="Developer"
@@ -164,9 +147,16 @@ const Services = () => {
             </div>
           </div>
         </div>
-            </Modal2>
-            <Modal2 show3={show3} onClose={() => setShow3(false)}>
-            <div className="content">
+                      );
+                      openModal();
+                    }}/>
+                    {/* <ServicesH2>Virtual offices</ServicesH2> */}
+                    {/* <ServicesP>You can access our platform from anywhere.</ServicesP> */}
+                </ServicesCard>
+                <ServicesCard>
+                <ServicesIcon src={Icon3} onClick={()=>{
+                      setContent(
+                        <div className="content">
             <img
                 src={Icon3}
                 alt="Developer"
@@ -184,9 +174,17 @@ const Services = () => {
           </div>
           
         </div>
-            </Modal2>
-            <Modal2 show4={show4} onClose={() => setShow4(false)}>
-            <div className="content">
+                      );
+                      openModal();
+                    }}/>
+                    {/* <ServicesH2>Premium Benefits</ServicesH2> */}
+                    {/* <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
+                </ServicesCard>
+                </div>
+                <ServicesCard>
+                <ServicesIcon src={Icon4} onClick={()=>{
+                      setContent(
+                        <div className="content">
             <img
                 src={Icon4}
                 alt="Developer"
@@ -207,9 +205,17 @@ const Services = () => {
             </div>
           </div>
         </div>
-            </Modal2>
-            <Modal2 show5={show5} onClose={() => setShow5(false)}>
-            <div className="content">
+                      );
+                      openModal();
+                    }}/>
+                    {/* <ServicesH2>Premium Benefits</ServicesH2>
+                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
+                </ServicesCard>
+                <div>
+                <ServicesCard>
+                <ServicesIcon src={Icon5} onClick={()=>{
+                      setContent(
+                        <div className="content">
             <img
                 src={Icon5}
                 alt="Developer"
@@ -232,9 +238,16 @@ const Services = () => {
             </div>
           </div>
         </div>
-            </Modal2>
-            <Modal2 show6={show6} onClose={() => setShow6(false)}>
-            <div className="content">
+                      );
+                      openModal();
+                    }}/>
+                    {/* <ServicesH2>Premium Benefits</ServicesH2>
+                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}        
+                </ServicesCard>
+                <ServicesCard>
+                <ServicesIcon src={Icon6} onClick={()=>{
+                      setContent(
+                        <div className="content">
             <img
                 src={Icon6}
                 alt="Developer"
@@ -258,9 +271,17 @@ const Services = () => {
             </div>
           </div>
         </div>
-            </Modal2>
-            <Modal2 show7={show7} onClose={() => setShow7(false)}>
-            <div className="content">
+                      );
+                      openModal();
+                    }}/>
+                    {/* <ServicesH2>Premium Benefits</ServicesH2>
+                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}              
+                </ServicesCard>
+                </div>
+                <ServicesCard>
+                <ServicesIcon src={Icon7} onClick={()=>{
+                      setContent(
+                        <div className="content">
             <img
                 src={Icon7}
                 alt="Developer"
@@ -285,9 +306,17 @@ const Services = () => {
             </div>
           </div>
         </div>
-            </Modal2>
-            <Modal2 show8={show8} onClose={() => setShow8(false)}>
-            <div className="content">
+                      );
+                      openModal();
+                    }}/>
+                    {/* <ServicesH2>Premium Benefits</ServicesH2>
+                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}                
+                </ServicesCard>
+                <div>
+                <ServicesCard>
+                <ServicesIcon src={Icon8} onClick={()=>{
+                      setContent(
+                        <div className="content">
             <img
                 src={Icon8}
                 alt="Developer"
@@ -303,9 +332,16 @@ const Services = () => {
             </div>
           </div>
         </div>
-            </Modal2>
-            <Modal2 show9={show9} onClose={() => setShow9(false)}>
-            <div className="content">
+                      );
+                      openModal();
+                    }}/>
+                    {/* <ServicesH2>Premium Benefits</ServicesH2>
+                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}                 
+                </ServicesCard>
+                <ServicesCard>
+                <ServicesIcon src={Icon9} onClick={()=>{
+                      setContent(
+                        <div className="content">
             <img
                 src={Icon9}
                 alt="Developer"
@@ -326,9 +362,17 @@ const Services = () => {
             </div>
           </div>
         </div>
-            </Modal2>
-            <Modal2 show10={show10} onClose={() => setShow10(false)}>
-            <div className="content">
+                      );
+                      openModal();
+                    }}/>
+                    {/* <ServicesH2>Premium Benefits</ServicesH2>
+                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}                 
+                </ServicesCard>
+                </div>
+                <ServicesCard>
+                <ServicesIcon src={Icon10} onClick={()=>{
+                      setContent(
+                        <div className="content">
             <img
                 src={Icon10}
                 alt="Developer"
@@ -350,7 +394,16 @@ const Services = () => {
             </div>
           </div>
         </div>
-            </Modal2>
+                      );
+                      openModal();
+                    }}/>
+                    {/* <ServicesH2>Premium Benefits</ServicesH2>
+                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}                 
+                </ServicesCard>
+                
+            </ServicesWrapper6>
+            <br></br>
+            <ServicesH1>Historical Textiles 1750-1980</ServicesH1>
             <HistoricalSection {...sixObj}/>
             <HistoricalSection {...sixObjOne}/>
             <HistoricalSection {...sixObjTwo}/>
