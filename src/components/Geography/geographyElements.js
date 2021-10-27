@@ -36,15 +36,14 @@ column-count:3;
  export const GeographyEntry = styled.div`  
 padding: 10px;
 margin: 4% 0;
-
 `;
 
 export const GeographyEntryImg = styled.div`
 // height: ${({height}) => (height*0.7)+"px"};
-max-width: ${({wide}) => (wide) ? '90%' : '40%'};
+max-width: ${({wide}) => (wide) ? '60%' : '40%'};
 float:right;
-margin-right: 10%;
-//overflow:hidden;
+margin-right: ${({wide}) => (wide) ? '25%' : '10%'};
+overflow:hidden;
 @media screen and (max-width: 480px){
 width:100%;
 }
@@ -57,10 +56,11 @@ margin: ${({wide}) => (wide) ? "20px 50px 20px 0px" : "7vh 20px 0 0px"} ;
 `;
 
 export const GeographyEntryDescription=styled.div`
-margin: 50px 10px;
+margin: 10px;
 width: ${({wide}) => (wide) ? '40%' : '90%'};
 float:right;
-text-align: right;  
+text-align: right;
+font-size: 10pt;
 `;
 
 export const GeographyStatues = styled.div`
