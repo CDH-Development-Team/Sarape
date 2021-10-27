@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Video from "../../videos/video1.mp4";
+import Video from "../../videos/TimeLapse2021_3.mp4";
 import GeographyPage from "../../pages/geography.js";
 import { Button } from "../ButtonElement";
 import { 

@@ -124,15 +124,27 @@ Tlaxcalan forces accompanied the Spaniards on post-conquest explorations of nort
         
         <Statue>
             <StatueImg>
-                <img src={Icon10} width={"100%"}></img>
+                <iframe 
+                  style={{display:'block'}, {width:"auto"}, {height:"auto"}, {marginLeft:"-15%"}} frameborder='0' 
+                  allowfullscreen mozallowfullscreen='true' webkitallowfullscreen='true' 
+                  allow='fullscreen; autoplay; vr' 
+                  xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                  src="https://sketchfab.com/models/6213003444c44bb2b019a37e7960be4a/embed">
+                </iframe>
             </StatueImg>
             <div>
-            apotec pottery urn, possibly representing a king or a god<br/> Ceramic<br/> Gift of Elsie Scales, c.1923-1938<br/> Oaxaca, Mexico<br/> 12878
+               Zapotec pottery urn, possibly representing a king or a god<br/> Ceramic<br/> Gift of Elsie Scales, c.1923-1938<br/> Oaxaca, Mexico<br/> 12878
             </div>
         </Statue>
         <Statue>
             <StatueImg>
-                <img src={Icon11} width={"100%"}></img>
+            <iframe 
+                  style={{display:'block'}, {width:"auto"}, {height:"auto"}, {marginLeft:"-15%"}} frameborder='0' 
+                  allowfullscreen mozallowfullscreen='true' webkitallowfullscreen='true' 
+                  allow='fullscreen; autoplay; vr' 
+                  xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                  src="https://sketchfab.com/models/c47b41ae58644ed3b8b3600315cd99d9/embed">
+                </iframe>
             </StatueImg>
             <div>
             Zapotec pottery urn, representing Cocijo, god of rain and lightning<br/> Ceramic<br/> ASM Purchase in 1925<br/> Oaxaca, Mexico<br/> 13645
@@ -140,7 +152,13 @@ Tlaxcalan forces accompanied the Spaniards on post-conquest explorations of nort
         </Statue>
         <Statue>
             <StatueImg>
-                <img src={Icon9} width={"100%"}></img>
+                <iframe 
+                  style={{display:'block'}, {width:"auto"}, {height:"auto"}, {marginLeft:"-15%"}} frameborder='0' 
+                  allowfullscreen mozallowfullscreen='true' webkitallowfullscreen='true' 
+                  allow='fullscreen; autoplay; vr' 
+                  xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                  src="https://sketchfab.com/models/f5b8c28294dc45bab024fa9b2506c046/embed">
+                </iframe>
             </StatueImg>
             <div>
                 Zapotec pottery urn, possibly representing a king wearing a mask of Cocijo, god of rain and lightning<br/> Ceramic<br/> Collected on a University of Arizona Expedition, 1924–1925<br/> Oaxaca, Mexico<br/> 5536
