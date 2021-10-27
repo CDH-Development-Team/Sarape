@@ -166,7 +166,7 @@ const Services = () => {
                     <ServicesIcon onClick={() => {
                         setContent(
                             <div className="content" style={{alignItems:"right"}}>
-                    <div className="text" style={{width:"50%", marginLeft:"6rem"}}>
+                    <div className="text" style={{width:"100%", marginLeft:"6rem"}}>
                         {/* <h2>John Doe</h2> */}
                         <div
                         style={{
@@ -178,12 +178,12 @@ const Services = () => {
                         </div>
                     </div>
                     <div
-                        style={{height:"60%",width:"50%",alignItems:"right"}}
+                        style={{alignItems:"right"}}
                     >
-                        <div style={{width:"65%", alignItems: 'right'}}>
+                        <div style={{height:"100%", width:"100%", alignItems: 'right', overflow: 'hidden'}}>
                             <img
                                 src={Icon6}
-                                // style={{width:"65%"}}
+                                style={{height:"65%"}}
                                 alt="Developer"
                             />
                             <p style={{padding:"0 0 1rem 1.6rem", color: "white"}}>Naturally dyed. Dyes colors made from indigo.<br></br>AT-2020-16-4</p>

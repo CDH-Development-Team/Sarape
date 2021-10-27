@@ -13,11 +13,13 @@ import FamilyPage from './pages/section5Family';
 import SaltilloPage from './pages/section7Modals';
 import TextilesPage from './pages/historicalModals';
 import dyeing from './pages/dyeing';
+import about from './pages/about';
 function App() {
   return (
     <Router >
       <Switch>
         <Route path = "/" component={Home} exact />
+        <Route path = "/about" component={about} exact />
 	      <Route path = "/fragments" component={fragments} exact />
         <Route path = "/porfirio" component={SigninPage} exact />
         <Route path = "/tourism" component={Tourism} exact />
