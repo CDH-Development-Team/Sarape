@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button } from "../ButtonElement";
 
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, ImgWrap2, Img, Img2, Img3, Artifact, Caption, TextHead } from './TourismElements';
+import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, ImgWrap2, Img, Img2, Img3, smallImg, Artifact, Caption, TextHead } from './TourismElements';
 
-const TourismSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText,description,description2,description3, buttonLabel, img,alt, artifact, artifactAlt, artifactInfo, primary, dark, dark2}) => {
+const TourismSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText,description,description2,description3, buttonLabel, img,alt, smallImg, artifact, artifactAlt, artifactInfo, primary, dark, dark2}) => {
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
@@ -22,7 +22,7 @@ const TourismSection = ({lightBg, id, imgStart, topLine, lightText, headline, da
                             <Heading lightText={lightText}>{headline}</Heading>
                             <ImgWrap2>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                                <Img2 src={img} alt={alt}/>
+                                <Img2 src={img} smallImg={smallImg} alt={alt}/>
                                 <Subtitle darkText={darkText}>{description2}</Subtitle>
                                 <Caption darkText={darkText}>{description3}</Caption>
                             </ImgWrap2>

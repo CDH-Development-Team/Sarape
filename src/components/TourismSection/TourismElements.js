@@ -91,7 +91,7 @@ export const Subtitle = styled.p`
 export const Caption = styled.p`
     max-width: 440px;
     margin-bottom: 5%;
-    margin-left: 9%;
+    margin-left: 0%;
     padding-right: 4%;
     padding-left: 4%;
     font-size: 18px;
@@ -116,13 +116,23 @@ export const ImgWrap2 = styled.div`
     align-items: right;
 `;
 
-export const Img = styled.img`
+/*export const Img = styled.img`
     max-width:100%;
     height:auto;
     transform: scale(0.75, 0.75);
     margin: 0 0 10px 0;
     padding-right: 0;
     // padding-top: 4%;
+`;*/
+
+export const Img = styled.img`
+    width: 60%;
+    margin: 0 0 50px 0;
+    padding-right: 0;
+
+    @media screen and (max-width: 480px) {
+        width: 100%;
+    }
 `;
 
 export const Img2 = styled.img`
