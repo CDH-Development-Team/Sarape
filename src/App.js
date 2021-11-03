@@ -14,6 +14,7 @@ import SaltilloPage from './pages/section7Modals';
 import TextilesPage from './pages/historicalModals';
 import dyeing from './pages/dyeing';
 import about from './pages/about';
+import credits from './pages/credits';
 function App() {
   return (
     <Router >
@@ -32,12 +33,11 @@ function App() {
         <Route path = "/section7influence" component={SaltilloPage} exact />
         <Route path = "/section6Textiles" component={TextilesPage} exact />
         <Route path = "/dyeing" component={dyeing} exact />
+        <Route path = "/credits" component={credits} exact />
       </Switch>
     </Router>
   );
 }
-
-
 
 export default App;
 

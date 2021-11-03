@@ -24,7 +24,7 @@ export const HeaderText=styled.div`
 margin: 50px;
 @media screen and (min-width: 768px){
 
-column-count:3;
+column-count:2;
 }
 
 @media screen and (max-width: 480px) {
