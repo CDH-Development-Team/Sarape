@@ -18,12 +18,13 @@ const Navbar = ({ toggle }) => {
                                 <NavP2 style={{fontSize:"1rem"}}>LEGACIES OF THE MEXICAN SARAPE</NavP2>
                             </NavDiv>
                         </NavLinks>
-                        <NavLinks to="/about">
-                            <NavDiv style={{margin: "0 0 0 6.5rem",textAlign: "right",overflow:"hidden"}}>
-                                <NavP2 style={{fontFamily: "myriad-pro"}}>About This Exhibit</NavP2>
-                            </NavDiv>
-                        </NavLinks>
+                        <NavLinks></NavLinks>
                     </NavMenu>
+                    <NavLinks to="/about" style={{ marginRight: '40px' }}>
+                        <NavDiv style={{textAlign: "right",overflow:"hidden"}}>
+                            <NavP2 style={{fontFamily: "myriad-pro"}}>About This Exhibit</NavP2>
+                        </NavDiv>
+                    </NavLinks>
 
                     <MobileIcon onClick={toggle}>
                         <FaBars />

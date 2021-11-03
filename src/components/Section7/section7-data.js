@@ -119,7 +119,7 @@ export const sevenObjFour = {
     description: "The Ortega family traces its history to Gabriel Ortega, who settled in what became Chimayo, New Mexico, in the early 1700s. He wove out of necessity to clothe his family and keep them warm. In the early 1900s, responding to a new tourist market, the Ortega family opened a general store where they sold their weavings, many influenced by the Saltillo sarape design. Today, they continue their family weaving business in Chimayo.",
     buttonLabel: "",
     imgStart: false,
-    img: "",
+    img: " ",
     img3: img5,
     imgdesc4: "Chimayo Weavers, Reyes Ortega at his loom Laura Gilpin, photographer, 1939 Chimayo, NM Amon Carter Museum of American Art, P1979.202.241, 1979",
     img2: img4,
