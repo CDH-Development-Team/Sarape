@@ -10,6 +10,19 @@ export const InfoContainer = styled.div`
     }
 `;
 
+export const HeaderText=styled.div`
+margin: 50px;
+@media screen and (min-width: 768px){
+
+column-count:2;
+}
+
+@media screen and (max-width: 480px) {
+    margin: 0px;
+    margin-top: 50px;
+}
+`;
+
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;

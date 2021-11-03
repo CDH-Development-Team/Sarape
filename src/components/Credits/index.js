@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from "../ButtonElement";
 
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, Subtitle1, BtnWrap, ImgWrap, Img } from './creditElements';
+import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, HeaderText, TextWrapper, TopLine, Heading, Subtitle, Subtitle1, BtnWrap, ImgWrap, Img } from './creditElements';
 
 const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText,description,description2,description3, cap, cap2, cap3, buttonLabel, img,alt, primary, dark, dark2}) => {
     return (
@@ -18,11 +18,15 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
                             </ImgWrap>
                         </Column1>  
                     </InfoRow>
+                </InfoWrapper>
+            </InfoContainer>
+            <InfoContainer>
+                <InfoWrapper>
                     <InfoRow>
                         <Column2>
                             <TextWrapper>
                                 <TopLine>{topLine}</TopLine>
-                                <Heading lightText={lightText}>{headline}</Heading>
+                                <HeaderText lightText={lightText}>{headline}</HeaderText>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
                                 <Subtitle darkText={darkText}>{description2}</Subtitle>
                                 <Subtitle darkText={darkText}>{description3}</Subtitle>
