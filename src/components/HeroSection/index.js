@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Video from "../../videos/video1.mp4";
+import Video from "../../videos/TimeLapse2021_3.mp4";
 import GeographyPage from "../../pages/geography.js";
 import { Button } from "../ButtonElement";
 import { 
@@ -23,14 +23,14 @@ const HeroSection = () => {
     };
 
     return (
-        <HeroContainer >
+        <HeroContainer>
             <HeroBg>
-                <VideoBg autoPlay loop muted src={Video} type = 'video/mp4'/>
+                <VideoBg autoPlay loop muted src={Video} style={{opacity: 0.55}} type = 'video/mp4'/>
             </HeroBg>
             <HeroContent>
                 <HeroH1>Wrapped In Color</HeroH1>
                 <HeroBtnWrapper>
-                    <Button to="/geography" onMouseEnter={onHover} onMouseLeave={onHover}>
+                    <Button to="/about" onMouseEnter={onHover} onMouseLeave={onHover}>
                         ENTER {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
                 </HeroBtnWrapper>

@@ -42,7 +42,8 @@ const customStyles = {
       width: "100%",    
       height: "100%",
       background: "#4a0033",
-      color: "#fff"
+      color: "#fff",
+      overflow: "hidden"
     },
   };
 
@@ -78,7 +79,7 @@ const Geography = () => {
             onRequestClose={closeModal}
             style={customStyles}
             >
-                <img src={close} onClick={closeModal} style={{width:"5%", float:"right"}}/>
+                <img src={close} onClick={closeModal} style={{width:"2.5%", float:"right"}}/>
 
                 
             {content}
@@ -124,15 +125,27 @@ Tlaxcalan forces accompanied the Spaniards on post-conquest explorations of nort
         
         <Statue>
             <StatueImg>
-                <img src={Icon10} width={"100%"}></img>
+                <iframe 
+                  style={{display:'block'}, {width:"auto"}, {height:"auto"}, {marginLeft:"-15%"}} frameborder='0' 
+                  allowfullscreen mozallowfullscreen='true' webkitallowfullscreen='true' 
+                  allow='fullscreen; autoplay; vr' 
+                  xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                  src="https://sketchfab.com/models/6213003444c44bb2b019a37e7960be4a/embed">
+                </iframe>
             </StatueImg>
             <div>
-            apotec pottery urn, possibly representing a king or a god<br/> Ceramic<br/> Gift of Elsie Scales, c.1923-1938<br/> Oaxaca, Mexico<br/> 12878
+               Zapotec pottery urn, possibly representing a king or a god<br/> Ceramic<br/> Gift of Elsie Scales, c.1923-1938<br/> Oaxaca, Mexico<br/> 12878
             </div>
         </Statue>
         <Statue>
             <StatueImg>
-                <img src={Icon11} width={"100%"}></img>
+            <iframe 
+                  style={{display:'block'}, {width:"auto"}, {height:"auto"}, {marginLeft:"-15%"}} frameborder='0' 
+                  allowfullscreen mozallowfullscreen='true' webkitallowfullscreen='true' 
+                  allow='fullscreen; autoplay; vr' 
+                  xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                  src="https://sketchfab.com/models/c47b41ae58644ed3b8b3600315cd99d9/embed">
+                </iframe>
             </StatueImg>
             <div>
             Zapotec pottery urn, representing Cocijo, god of rain and lightning<br/> Ceramic<br/> ASM Purchase in 1925<br/> Oaxaca, Mexico<br/> 13645
@@ -140,7 +153,13 @@ Tlaxcalan forces accompanied the Spaniards on post-conquest explorations of nort
         </Statue>
         <Statue>
             <StatueImg>
-                <img src={Icon9} width={"100%"}></img>
+                <iframe 
+                  style={{display:'block'}, {width:"auto"}, {height:"auto"}, {marginLeft:"-15%"}} frameborder='0' 
+                  allowfullscreen mozallowfullscreen='true' webkitallowfullscreen='true' 
+                  allow='fullscreen; autoplay; vr' 
+                  xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                  src="https://sketchfab.com/models/f5b8c28294dc45bab024fa9b2506c046/embed">
+                </iframe>
             </StatueImg>
             <div>
                 Zapotec pottery urn, possibly representing a king wearing a mask of Cocijo, god of rain and lightning<br/> Ceramic<br/> Collected on a University of Arizona Expedition, 1924–1925<br/> Oaxaca, Mexico<br/> 5536
@@ -240,16 +259,15 @@ Homenaje á Cristóbal Colón: Antigüedades Méxicanas, Lienza 27.<br/> Fray An
 <img src = {Icon3} height={"100%"} width={"100%"} onClick={
     () => {
     setContent(
-<GeographyEntry wide={true}>
-<GeographyEntryImg wide={true} height={height}><img src={Icon3} style={{width:"100%", height:"auto"}}></img>
-<GeographyEntryDescription wide={true}>
+<GeographyEntry>
+<GeographyEntryImg height={height}><img src={Icon3} style={{width:"100%"}}></img>
+<GeographyEntryDescription>
 Monte Albán, Oaxaca, Mexico<br/> Dana Danielson, photographer, 2013
 </GeographyEntryDescription>
-<GeographyEntryText wide={true}>
+</GeographyEntryImg>
+<GeographyEntryText>
 Monte Albán was the most important center of the Zapotec civilization politically, economically, and culturally. One of the oldest Mesoamerican cities, it was inhabited for nearly 1,500 years by a succession of Olmecs, Zapotecs, and Mixtecs until about 850 CE (1,270 years ago). 
 </GeographyEntryText>
-</GeographyEntryImg>
-
 
 </GeographyEntry>
     );
@@ -284,7 +302,7 @@ openModal();
     () => {
         setContent(
             <GeographyEntry>
-<GeographyEntryImg height={height}><img src={Icon12} height={"100%"} width={"100%"}></img>
+<GeographyEntryImg height={height}><img src={Icon12} height={"85%"} width={"85%"}></img>
 </GeographyEntryImg>
 <GeographyEntryText>
 The original source of the sarape’s patterns, including the central diamond and circular medallion, is still debated and remains a bit of a mystery. The central diamond was a prominent design on ancient Zapotec architecture, and is still used on Saltillo sarapes. The Zapotec civilization is among the oldest in Mexico, and it was one of the most sophisticated in early Mesoamerica. For more than 2,500 years, the Zapotecs have lived in Oaxaca’s central valley. Early on, they developed impressive trade networks, exchanging weavings, pottery, jewelry, and foods. Their architecture and engineering skills are evidenced in their two ancient capital cities, Mitla and Monte Albán, and related irrigation systems. They also developed hieroglyphic writing, mathematics, and a calendar.The Zapotec town of Teotitlán del Valle, Oaxaca, remains one of the most important weaving centers in Mexico. About 80 percent of the population of 6,000 are involved in some aspect of the weaving tradition, and most people still earn their living as weavers. With nearly a million members, today Zapotecs are the third-largest Indigenous group in Mexico. The majority live in their ancestral homeland in the state of Oaxaca, but there are also large populations outside Mexico, most notably in California (an estimated 80,000 reside in the Los Angeles area) and, to a lesser degree, in other parts of the United States.

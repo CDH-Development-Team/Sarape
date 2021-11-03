@@ -17,10 +17,10 @@ import Icon5 from "../images/5A1_Parents by Javier Lazo.jpg";
 import Icon6 from "../images/5B2_08-09-18 The Big Boys a.jpg";
 import Icon7 from "../images/By Alana Coghlan.jpg";
 import Icon8 from "../images/5A3_Familia.jpg";
-import { GeographyContainer, MosaicWrapper, MosaicImg, HeaderText, GeographyEntry, GeographyEntryText, GeographyEntryImg, GeographyEntryDescription, GeographyStatues, Statue, StatueImg, BackgroundDiv, BackgroundContentLeft, BackgroundContentRight, BackgroundImg, HistoryMosaicParent, HistoryMosaicParent2, HistoryMosaic1, HistoryMosaic2, HistoryMosaic3, HistoryMosaic4, HistoryMosaic5, HistoryMosaic6, HistoryMosaic7, HistoryMosaic8, HistoryMosaic9, HistoryMosaic10, HistoryMosaic11, HistoryMosaic12, HistoryMosaic13, HistoryMosaic14,HistoryMosaic15, HistoryMosaic16,HistoryMosaic17, HistoryMosaic18, HistoryMosaic19, HistoryMosaic20, HistoryMosaic21} from '../components/Geography/geographyElements.js';
+import { DyeingContainer, MosaicWrapper, MosaicImg, HeaderText, DyeingEntry, DyeingEntryText, DyeingEntryImg, DyeingEntryDescription, DyeingStatues, Statue, StatueImg, BackgroundDiv, BackgroundContentLeft, BackgroundContentRight, BackgroundImg, HistoryMosaicParent, HistoryMosaicParent2, HistoryMosaic1, HistoryMosaic2, HistoryMosaic3, HistoryMosaic4, HistoryMosaic5, HistoryMosaic6, HistoryMosaic7, HistoryMosaic8, HistoryMosaic9, HistoryMosaic10, HistoryMosaic11, HistoryMosaic12, HistoryMosaic13, HistoryMosaic14,HistoryMosaic15, HistoryMosaic16,HistoryMosaic17, HistoryMosaic18, HistoryMosaic19, HistoryMosaic20, HistoryMosaic21} from '../components/Dyeing/DyeingElements.js';
 import Color1 from '../images/section 2/color1.png'
-import "../components/Geography/geography.css";
-import useWindowDimensions from '../components/Geography/dimensions';
+import "../components/Dyeing/Dyeing.css";
+import useWindowDimensions from '../components/Dyeing/dimensions';
 
 
 const Dyeing = () => {
@@ -61,7 +61,7 @@ const Dyeing = () => {
     <React.Fragment>
     <Sidebar isOpen={isOpen} toggle={toggle}/>
     <Navbar toggle={toggle} />
- <GeographyContainer>
+ <DyeingContainer>
      <HistoryMosaicParent2 height={(width-(width%16))/16*8} width={(width-(width%16))}>
         <HistoryMosaic1 className="mosaic">
         <img src={Icon1} height={"100%"} width={"100%"} onClick={() => setShow(true)}></img>
@@ -121,7 +121,7 @@ const Dyeing = () => {
         <img src={Color1} height={"100%"} width={"100%"}></img>
         </HistoryMosaic14> */}
      </HistoryMosaicParent2 >
- </GeographyContainer>
+ </DyeingContainer>
 
       <div style={{
           justifyContent: "center",

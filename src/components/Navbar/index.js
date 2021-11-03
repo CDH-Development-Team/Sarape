@@ -12,18 +12,19 @@ const Navbar = ({ toggle }) => {
                         <img style={{height: 2+"em"}} src={logo} alt="logo"/>
                     </NavLogo>
                     <NavMenu >
-                        <NavLinks to="/" style={{overflow:"hidden"}}>
-                            <NavDiv>
+                        <NavLinks to="/" style={{display:'flex', justifyContent: 'center', overflow: 'hidden'}}>
+                            <NavDiv style={{textAlign: 'center'}}>
                                 <NavP>WRAPPED IN COLOR</NavP>
                                 <NavP2 style={{fontSize:"1rem"}}>LEGACIES OF THE MEXICAN SARAPE</NavP2>
                             </NavDiv>
                         </NavLinks>
-                        <NavLinks to="/geography">
-                            <NavDiv style={{margin: "0 0 0 6.5rem",textAlign: "right",overflow:"hidden"}}>
-                                <NavP2 style={{fontFamily: "myriad-pro"}}>About This Exhibit</NavP2>
-                            </NavDiv>
-                        </NavLinks>
+                        <NavLinks></NavLinks>
                     </NavMenu>
+                    <NavLinks to="/about" style={{ marginRight: '40px' }}>
+                        <NavDiv style={{textAlign: "right",overflow:"hidden"}}>
+                            <NavP2 style={{fontFamily: "myriad-pro"}}>About This Exhibit</NavP2>
+                        </NavDiv>
+                    </NavLinks>
 
                     <MobileIcon onClick={toggle}>
                         <FaBars />
