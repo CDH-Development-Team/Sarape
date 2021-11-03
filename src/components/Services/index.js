@@ -13,7 +13,6 @@ import { homeObjOne, homeObjTwo, homeObjThree, SarapeObj1, SarapeObj2, SarapeObj
 // import AnimeList from '../components/anime';
 import "./styles.css";
 // import Modal2 from '../components/Modal2/modal2';
-
 import { 
     ServicesContainer, 
     ServicesH1, 

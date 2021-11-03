@@ -2,7 +2,6 @@ import Modal from 'react-modal';
 //styling of the modal itself
 
 import React, { useState } from 'react';
-
 //import Modal2 from '../Modal2/modal2';
 //import Modal from '../Modal/index.js';
 
@@ -48,6 +47,7 @@ import {
         color: "#fff"
       },
     };
+
 
 const Services = () => {
     const [showModal, setShowModal] = useState(false);
