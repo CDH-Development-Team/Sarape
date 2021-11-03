@@ -24,7 +24,7 @@ export const HeaderText=styled.div`
 margin: 50px;
 @media screen and (min-width: 768px){
 
-column-count:2;
+column-count:3;
 }
 
 @media screen and (max-width: 480px) {
@@ -36,14 +36,15 @@ column-count:2;
  export const GeographyEntry = styled.div`  
 padding: 10px;
 margin: 4% 0;
+
 `;
 
 export const GeographyEntryImg = styled.div`
 // height: ${({height}) => (height*0.7)+"px"};
-max-width: ${({wide}) => (wide) ? '60%' : '40%'};
+max-width: ${({wide}) => (wide) ? '90%' : '40%'};
 float:right;
-margin-right: ${({wide}) => (wide) ? '25%' : '10%'};
-overflow:hidden;
+margin-right: 10%;
+//overflow:hidden;
 @media screen and (max-width: 480px){
 width:100%;
 }
@@ -56,11 +57,10 @@ margin: ${({wide}) => (wide) ? "20px 50px 20px 0px" : "7vh 20px 0 0px"} ;
 `;
 
 export const GeographyEntryDescription=styled.div`
-margin: 10px;
+margin: 50px 10px;
 width: ${({wide}) => (wide) ? '40%' : '90%'};
 float:right;
-text-align: right;
-font-size: 10pt;
+text-align: right;  
 `;
 
 export const GeographyStatues = styled.div`
@@ -229,3 +229,33 @@ export const GeographyMosaicParent = styled.div`
         export const FC3 = styled.div `grid-area: 9 / 1 / 18 / 11;`;
         export const FC4 = styled.div `grid-area: 18 / 11 / 25 / 20;`;
         export const FC5 = styled.div `grid-area: 18 / 28 / 25 / 34;`;
+
+
+        export const FamilyMosaicParent = styled.div` 
+        display: grid; 
+        grid-template-columns: repeat(16, 1fr); 
+        grid-template-rows: repeat(8, 1fr); 
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0 auto;
+    height: ${({height}) => (height)+"px"};
+    width: ${({width}) => (width-40)+"px"};
+    `;
+
+export const FamilyMosaic1 = styled.div`grid-area: 1 / 1 / 4 / 5;`
+export const FamilyMosaic2 = styled.div`grid-area: 4 / 1 / 7 / 4;`
+export const FamilyMosaic3 = styled.div`grid-area: 7 / 1 / 9 / 4;`
+export const FamilyMosaic4 = styled.div`grid-area: 1 / 5 / 4 / 8;`
+export const FamilyMosaic5 = styled.div`grid-area: 4 / 4 / 7 / 8;`
+export const FamilyMosaic6 = styled.div`grid-area: 7 / 4 / 9 / 8;`
+export const FamilyMosaic7 = styled.div`grid-area: 1 / 8 / 4 / 11;`
+export const FamilyMosaic8 = styled.div`grid-area: 4 / 8 / 7 / 11;`
+export const FamilyMosaic9 = styled.div`grid-area: 7 / 8 / 9 / 11;`
+export const FamilyMosaic10 = styled.div`grid-area: 1 / 11 / 5 / 14;` 
+export const FamilyMosaic11 = styled.div`grid-area: 5 / 11 / 7 / 14;`
+export const FamilyMosaic12 = styled.div`grid-area: 7 / 11 / 9 / 14;`
+export const FamilyMosaic13 = styled.div`grid-area: 1 / 14 / 4 / 16;` 
+export const FamilyMosaic14 = styled.div`grid-area: 1 / 16 / 4 / 17;`
+export const FamilyMosaic15 = styled.div`grid-area: 4 / 14 / 7 / 17;`
+export const FamilyMosaic16 = styled.div`grid-area: 7 / 14 / 9 / 17;`
+
