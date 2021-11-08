@@ -22,11 +22,11 @@ const Sidebar = ({toggle, isOpen}) => {
                     <SidebarLink to="/porfirio" onClick={toggle}>
                         Porfirio
                     </SidebarLink>        
-                    <SidebarLink to="/dyeing" onClick={toggle}>
-                        Dyeing
-                    </SidebarLink>
                     <SidebarLink to="/section5Family" onClick={toggle}>
                         Family
+                    </SidebarLink>
+                    <SidebarLink to="/dyeing" onClick={toggle}>
+                        Dyeing
                     </SidebarLink>
                     <SidebarLink to="/historicalTextiles" onClick={toggle}>
                         Historical Textiles

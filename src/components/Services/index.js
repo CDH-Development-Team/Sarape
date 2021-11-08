@@ -104,7 +104,7 @@ const Services = () => {
                 <div
                     style={{height:"60%",width:"50%",alignItems:"right"}}
                 >
-                    <div style={{width:"65%", alignItems: 'right'}}>
+                    <div style={{width:"85%", alignItems: 'right'}}>
                         <img
                             src={Icon4}
                             style={{width:"65%"}}
