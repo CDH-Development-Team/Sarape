@@ -70,16 +70,16 @@ const FamilyPage = () => {
     //       }
 
     // const [content, setContent] = React.useState(null);
-    const [modalIsOpen, setIsOpen] = React.useState(false);
-    const [isOpenSide, setIsOpenSide] = useState(false);
+    const [modalIsOpen, setIsOpenM] = React.useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
-    const toggleSide = () => {
-        setIsOpenSide(!isOpenSide);
+    const toggle = () => {
+        setIsOpen(!isOpen);
     };
     
         
         function openModal() {
-            setIsOpen(true);
+            setIsOpenM(true);
           }
           function afterOpenModal() {
             // references are now sync'd and can be accessed.
@@ -87,7 +87,7 @@ const FamilyPage = () => {
           }
         
           function closeModal() {
-            setIsOpen(false);
+            setIsOpenM(false);
           }
           const [content, setContent] = React.useState(null);
   return (
@@ -98,29 +98,29 @@ const FamilyPage = () => {
             onRequestClose={closeModal}
             style={customStyles}
             >
-                <img src={close} onClick={closeModal} style={{width:"5%", float:"right"}}/>
+                <img src={close} onClick={closeModal} style={{width:"2.5%", float:"right"}}/>
 
                 
             {content}
 
         
             </Modal>
-    <Sidebar isOpenSide={isOpenSide} toggleSide={toggleSide}/>
-    <Navbar toggleSide={toggleSide} />
+    <Sidebar isOpen={isOpen} toggle={toggle}/>
+    <Navbar toggle={toggle} />
  <GeographyContainer>
      <FamilyMosaicParent height={(width-(width%16))/16*8} width={(width-(width%16))} style={{marginright:0}}>
         <FamilyMosaic1 className="mosaic">
         <img src={Icon1} height={"100%"} width={"100%"} onClick={() =>{
           setContent(
             <div className="content" >
-          <div style={{overflow:"hidden"}}><img
+          <div style={{overflow:"hidden", width:"80%"}}><img
             src={Icon1}
             alt="Developer"
-            style={{height:"70%"}}
+            style={{width:"100%"}}
           />
-          <div style={{color:"#fff",paddingLeft:"50rem"}}>Bobbins of spun, dyed wool ready to use.<br></br>Craig Holmes, photographer, 2018</div>
+          <div style={{color:"#fff",}}>Bobbins of spun, dyed wool ready to use.<br></br>Craig Holmes, photographer, 2018</div>
           </div>
-          <div className="text" style={{width:"70%",backgroundColor:"rgb(166,0,88)"}}>
+          <div className="text" style={{width:"70%"}}>
             {/* <h2>John Doe</h2> */}
             <div>
             When the wool is dry, it is combed with carding paddles, which are like large hairbrushes with metal bristles. This helps to further clean, as well as align, the fibers for spinning into yarn. The fiber is removed from the carding paddles in one fluffy piece. That piece is then folded in half lengthwise and torn down the middle, just short of tearing the whole piece in half. The result is one long strip with the fibers all combed in the same direction. This facilitates spinning it into yarn.
@@ -174,7 +174,7 @@ const FamilyPage = () => {
               /></p>
                 </div>
             </div>
-            <div className="row" style={{backgroundColor:"rgb(166,0,88)", margin:"0 6rem 2rem 6rem"}}>
+            <div className="row" style={{margin:"0 6rem 2rem 6rem"}}>
                 <div className="column3">
                     <p style={{
                 fontSize: "1rem",
@@ -225,10 +225,11 @@ const FamilyPage = () => {
             <img
               src={Icon4}
               alt="Developer"
+              style={{
+                width: "50%"
+              }}
             />
-            <div className="pic" style={{width:"25.09%",marginLeft:"4rem",color:"#fff",fontSize:"1.1rem"}}>Sheep are usually sheared once a year. Over the course of a year, their coats gather burrs, plant matter, and dirt. Even though wool naturally repels impurities, it must be thoroughly cleaned and carded before being spun into yarn. Often, my mother says that water is alive with tremendous force; in her healing process, she works in harmony with this force. This makes me realize that the process of washing raw wool is also a ceremony.<br></br><br></br>Separating, cleaning, and washing raw wool are labor intensive. The first step is to open up and separate the matted fibers. Larger pieces of foreign matter are picked out by hand, and compacted wool is “fluffed” to make washing more effective. After this preliminary cleaning process, the wool is loaded into reed baskets and taken to the river to be washed. It is put in a tub, and a lather is worked up, using river water. After the dirt is loosened, the wool is put into a hamper-sized reed basket and washed again using the ribbed sides of the basket as a washboard. There is just enough space between the reeds to allow the river water to stream through, rinsing away the dirt without losing much wool.<br></br><br></br>Once the wool is clean, the basket is pulled from the river and set on the bank until the excess water runs off. The wet wads of newly washed wool are laid out to dry on large rocks. After the excess water has seeped out, the wool is placed into the baskets and taken home. In the courtyard, we place the wool on petate (woven palm fiber) mats to dry completely. </div>
-
-          <div style={{color:"#fff", padding:"1rem 0 0 60rem"}}>Andrea Contreras preparing cleaned wool for spinning.<br></br>Nikhol Esterás, photographer, 2017</div>
+            <div className="" style={{width:"40%", paddingLeft:"5%"}}>Sheep are usually sheared once a year. Over the course of a year, their coats gather burrs, plant matter, and dirt. Even though wool naturally repels impurities, it must be thoroughly cleaned and carded before being spun into yarn. Often, my mother says that water is alive with tremendous force; in her healing process, she works in harmony with this force. This makes me realize that the process of washing raw wool is also a ceremony.<br></br><br></br>Separating, cleaning, and washing raw wool are labor intensive. The first step is to open up and separate the matted fibers. Larger pieces of foreign matter are picked out by hand, and compacted wool is “fluffed” to make washing more effective. After this preliminary cleaning process, the wool is loaded into reed baskets and taken to the river to be washed. It is put in a tub, and a lather is worked up, using river water. After the dirt is loosened, the wool is put into a hamper-sized reed basket and washed again using the ribbed sides of the basket as a washboard. There is just enough space between the reeds to allow the river water to stream through, rinsing away the dirt without losing much wool.<br></br><br></br>Once the wool is clean, the basket is pulled from the river and set on the bank until the excess water runs off. The wet wads of newly washed wool are laid out to dry on large rocks. After the excess water has seeped out, the wool is placed into the baskets and taken home. In the courtyard, we place the wool on petate (woven palm fiber) mats to dry completely. <br></br>Andrea Contreras preparing cleaned wool for spinning.<br></br>Nikhol Esterás, photographer, 2017</div>
           </div>
           );
           openModal();
@@ -246,13 +247,13 @@ const FamilyPage = () => {
           <div className="row1">
             {/* <h2>John Doe</h2> */}
             <div className="column2" style={{width:"37%"}}>
-            <div style={{margin:"0rem 6rem 0 6rem", padding:"2rem" ,fontSize:"1rem",fontFamily:"myriad-pro",backgroundColor:"rgb(166,0,88)"}}>Biodiversity is endangered due to climate change. We experience these changes firsthand. During our last harvest in Teotitlán, we did not get enough rain. Most of the essential crops we use are either farmed without irrigation systems or grow wild in the mountains. We know the cycles of rainy and dry seasons, and plant in harmony with those times. However, this year the rains did not come. We had weeks of dry weather, and when the rains did finally come, it was too late for the corn harvest.<br></br><br></br>The harvest of indigo for this year was about a quarter of last year’s, which was a bad year for the plant. Without this plant, there will simply be no blue colors in our weavings. We always pay respect to Mother Earth by only taking what we need. Before we collect the plants, we give thanks to the greater being. To us, these plants are as important as food or medicine. Natural dye is not a trend for us; it is our way of life and our legacy.<br></br><br></br>This reality has inspired me to purchase a piece of land where we can grow our own plants for a more sustainable practice. In addition to natural-dye plants, we will grow medicinal plants that will enable my mother and brother to continue practicing traditional medicine. Our new garden will also serve as a place where young weavers from our community can come and learn about their legacy, as well as where dialogue and exchange can take place between our practice and interested people from around the world. This will be the way to document and preserve our cultural heritage for future generations. </div>
+            <div style={{ padding:"2rem" ,fontSize:"1rem",fontFamily:"myriad-pro"}}>Biodiversity is endangered due to climate change. We experience these changes firsthand. During our last harvest in Teotitlán, we did not get enough rain. Most of the essential crops we use are either farmed without irrigation systems or grow wild in the mountains. We know the cycles of rainy and dry seasons, and plant in harmony with those times. However, this year the rains did not come. We had weeks of dry weather, and when the rains did finally come, it was too late for the corn harvest.<br></br><br></br>The harvest of indigo for this year was about a quarter of last year’s, which was a bad year for the plant. Without this plant, there will simply be no blue colors in our weavings. We always pay respect to Mother Earth by only taking what we need. Before we collect the plants, we give thanks to the greater being. To us, these plants are as important as food or medicine. Natural dye is not a trend for us; it is our way of life and our legacy.<br></br><br></br>This reality has inspired me to purchase a piece of land where we can grow our own plants for a more sustainable practice. In addition to natural-dye plants, we will grow medicinal plants that will enable my mother and brother to continue practicing traditional medicine. Our new garden will also serve as a place where young weavers from our community can come and learn about their legacy, as well as where dialogue and exchange can take place between our practice and interested people from around the world. This will be the way to document and preserve our cultural heritage for future generations. </div>
             </div>
             <div className="column2" style={{width:"63%"}}>
                 <div><img
                 src={Icon2}
                 alt="Developer"
-                style={{width:"80%",marginLeft:"0%"}}
+                style={{width:"50%", margin:"0 10%"}}
             /></div>
             <div style={{padding:"0rem 6rem 0 0rem",fontSize:"1.35rem",fontFamily:"cursive", color:"#fff",width:"85%"}}>“The plants and trees are alive, just like us; we cannot hurt them nor cut them for any reason. We are supposed to only take what we need from nature.”<br></br><br></br><p style={{paddingLeft:"30rem",fontFamily:"cursive"}}>Amado Gutiérrez</p></div>
             </div>
@@ -279,7 +280,6 @@ const FamilyPage = () => {
                       <p style={{
                   fontSize: "1rem",
                   fontFamily: "myriad-pro",
-                  padding: "1.3rem"
                 }}><img
                 src={Icon7}
                 alt="Developer"
@@ -289,9 +289,7 @@ const FamilyPage = () => {
                   <div className="column6">
                       <p style={{
                   fontSize: "1rem",
-                  fontFamily: "myriad-pro",
-                  padding: "1.3rem",
-                  backgroundColor:"rgb(166,0,88)"
+                  fontFamily: "myriad-pro"
                   }}>For me, natural dyeing is a spiritual process. We must be mindful that Mother Earth is a living being with a tremendous force. All elements used for natural dyes, traditional medicine, and foods are grown, thanks to the rain, soil, and other important resources provided by a greater being. All of these elements are alive, and without them, there would simply not be the hues you see in our textiles.<br></br><br></br>The colors that come from plants go beyond beauty; they are connected to a living source and work in harmony with the wisdom of the practitioner. These dye materials are sacred and precious. They connect me and my family to the great master dyers and weavers of the past, who started these practices thousands of years ago.<br></br><br></br>Our exposure to traditional knowledge gives us an understanding of about ten different color hues. We are continuously researching and experimenting with a diverse array of plants and fibers to create more hues. We have now developed more than two hundred different colors, all from natural sources. As a result, we have tremendous respect for and connection to Mother Earth, understanding her limitations and the limitations of the materials. 
                      </p>
                   </div>
@@ -320,12 +318,11 @@ const FamilyPage = () => {
             alt="Developer"
           /> */}
           {/* <div className="text"> */}
-            <div className="row" style={{backgroundColor:"rgb(166,0,88)",margin:"2rem"}}>
+            <div className="row" style={{margin:"2rem"}}>
                 <div className="column">
                     <p style={{
                 fontSize: "1rem",
                 fontFamily: "myriad-pro",
-                padding: "1.3rem"
                 }}>
                   My parents are the third generation of dyers and weavers in our family, which makes my siblings and me the fourth generation of weavers. As newlyweds, the first things your parents usually give you are a loom, a spinning wheel, and enough materials to start a studio, so you can feed your family. However, since my grandparents passed away </p>
                 </div>
@@ -333,14 +330,12 @@ const FamilyPage = () => {
                     <p style={{
                 fontSize: "1rem",
                 fontFamily: "myriad-pro",
-                padding: "1.3rem"
               }}>before my parents got married, they had to figure it all out themselves.<br/><br/>My parents have always worked collaboratively to create each piece—from cleaning wool, spinning it, collecting the plants for dyeing, dyeing the wool, to weaving. To execute a piece, my mom </p>
                 </div>
                 <div className="column">
                     <p style={{
                     fontSize: "1rem",
                     fontFamily: "myriad-pro",
-                    padding: "1.3rem"
               }}>does the carding and spinning, and my dad weaves. They loved working at night because night brings calmness and concentration. This is how they raised eleven kids. They always say that they are blessed that their humble work as artisans enabled them to raise their kids.</p>
                 </div>
             </div>
@@ -349,14 +344,14 @@ const FamilyPage = () => {
                     <img
                         src={Icon5}
                         alt="Developer"
-                        style={{width:"90%"}}
+                        style={{width:"70%"}}
                     />
                 </div>
                 <div className="column1">
                     <img
                         src={Icon8}
                         alt="Developer"
-                        style={{width:"90%"}}
+                        style={{width:"70%"}}
                     />
                 </div>
             </div>
@@ -376,30 +371,23 @@ const FamilyPage = () => {
         <img src={Icon3} height={"100%"} width={"100%"} onClick={() => {
           setContent(
             <div className="content">
-          <div className="text" style={{width:"30%", marginLeft:"12rem"}}>
+          <div className="text" style={{width:"30%", marginLeft:"7rem"}}>
             {/* <h2>John Doe</h2> */}
             <div
             style={{
-                fontSize: "1.1rem",
-                fontFamily: "cursive",
-                padding: "1.3rem",
-                backgroundColor:"rgb(166,0,88)"
+                fontFamily: "cursive"
               }}>
             Preservation, education, and sustainability are all extremely important. They are my studio’s foundation for the future.   
             <br/><br/><div style={{
                 alignItems: "left"
               }}>
                 <p style={{
-                paddingLeft: "11rem",
                 fontFamily: "cursive"
               }}>Porfirio Gutierrez</p></div>
             </div>
             <div
             style={{
-                fontSize: "1rem",
                 fontFamily: "myriad-pro",
-                padding: "1.3rem",
-                backgroundColor:"rgb(166,0,88)",
                 marginTop:"1rem"
               }}>
             About nineteen years ago, I started my own studio involving my family and community. Our mission is to preserve and uplift our historically significant natural-dye practices. Our parents’ humble beginnings have grown into what is now Porfirio Gutiérrez Studio, with a team of thirty-five people who are mostly women. In addition, we work closely with cochineal and indigo farmers, spinners, and others who help with various essentials. About eighty people benefit from each textile that we sell. What started with two people working late to feed their family is now a large creative team trying to preserve our ancient traditions.
@@ -407,9 +395,7 @@ const FamilyPage = () => {
             <br/>
             <div
             style={{
-                fontSize: "0.8rem",
                 fontFamily: "myriad-pro",
-                padding: "1.3rem"
               }}>
             Porfirio Gutiérrez with a  full of pericón to use for <br></br>making a yellow dye. Pericón (Tagetes lucida) is <br></br>referred to as both Mexican mint marigold and <br></br>Mexican tarragon.<br/> Keith Recker, photographer, 2018
             </div>
@@ -444,44 +430,40 @@ const FamilyPage = () => {
             alt="Developer"
           /> */}
           {/* <div className="text"> */}
-            <div className="row">
+            <div className="row" style={{margin:"2rem"}}>
                 <div className="column">
                     <p style={{
                 fontSize: "1rem",
                 fontFamily: "myriad-pro",
-                padding: "1.3rem"
-              }}>My parents are the third generation of dyers and weavers in our family, which makes my siblings and me the fourth generation of weavers. As newlyweds, the first things your parents usually give you are a loom, a spinning wheel, and enough materials to start a studio, so you can feed your family. However, since my grandparents passed away </p>
+                }}>
+                  My parents are the third generation of dyers and weavers in our family, which makes my siblings and me the fourth generation of weavers. As newlyweds, the first things your parents usually give you are a loom, a spinning wheel, and enough materials to start a studio, so you can feed your family. However, since my grandparents passed away </p>
                 </div>
                 <div className="column">
                     <p style={{
                 fontSize: "1rem",
                 fontFamily: "myriad-pro",
-                padding: "1.3rem"
               }}>before my parents got married, they had to figure it all out themselves.<br/><br/>My parents have always worked collaboratively to create each piece—from cleaning wool, spinning it, collecting the plants for dyeing, dyeing the wool, to weaving. To execute a piece, my mom </p>
                 </div>
                 <div className="column">
                     <p style={{
                     fontSize: "1rem",
                     fontFamily: "myriad-pro",
-                    padding: "1.3rem"
               }}>does the carding and spinning, and my dad weaves. They loved working at night because night brings calmness and concentration. This is how they raised eleven kids. They always say that they are blessed that their humble work as artisans enabled them to raise their kids.</p>
                 </div>
             </div>
-            <div className="row1">
+            <div className="row1" style={{marginLeft:"3rem"}}>
                 <div className="column1">
                     <img
                         src={Icon5}
                         alt="Developer"
-                        style={{width:"100%",
-                            height:"100%"}}
+                        style={{width:"70%"}}
                     />
                 </div>
                 <div className="column1">
                     <img
                         src={Icon8}
                         alt="Developer"
-                        style={{width:"100%",
-                            height:"100%"}}
+                        style={{width:"70%"}}
                     />
                 </div>
             </div>

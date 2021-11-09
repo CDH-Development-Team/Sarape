@@ -60,7 +60,7 @@ const History = () =>{
             onRequestClose={closeModal}
             style={customStyles}
             >
-                <img src={close} onClick={closeModal} style={{width:"5%", float:"right"}}/>
+                <img src={close} onClick={closeModal} style={{width:"2.5%", float:"right"}}/>
 
                 
             {content}
@@ -202,7 +202,7 @@ const History = () =>{
                     <GeographyEntry>
 <GeographyEntryImg><img src={Icon3} width={"90%"}></img></GeographyEntryImg>
 <GeographyEntryText>
-excoco ruler Nezahualpilli shown wearing a xiuhtilmatli (blue cape), which would have been woven on a backstrap loom. Note the complex designs and the natural dye colors: blue from the indigo plant and red from cochineal insects.
+Texcoco ruler Nezahualpilli shown wearing a xiuhtilmatli (blue cape), which would have been woven on a backstrap loom. Note the complex designs and the natural dye colors: blue from the indigo plant and red from cochineal insects.
 </GeographyEntryText>
 </GeographyEntry>
                 );

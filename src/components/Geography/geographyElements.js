@@ -197,18 +197,6 @@ export const GeographyMosaicParent = styled.div`
         export const HistoryMosaic21 = styled.div `grid-area: 12 / 28 / 18 / 34;`;
 
 
-        //For dyeing.js
-        export const HistoryMosaic22 = styled.div `grid-area: 1 / 1 / 9 / 7;`; 
-        export const HistoryMosaic23 = styled.div `grid-area: 1 / 7 / 5 / 11;`;
-        export const HistoryMosaic24 = styled.div `grid-area: 2 / 11 / 9 / 19;`;
-        export const HistoryMosaic25 = styled.div `grid-area: 1 / 25 / 9 / 30;`;
-        export const HistoryMosaic26 = styled.div `grid-area: 1 / 34 / 12 / 40;`;
-        export const HistoryMosaic27 = styled.div `grid-area: 9 / 1 / 18 / 11;`;
-        export const HistoryMosaic28 = styled.div `grid-area: 9 / 19 / 14 / 25;`;
-        export const HistoryMosaic29 = styled.div `grid-area: 9 / 30 / 18 / 34;`;
-        export const HistoryMosaic30 = styled.div `grid-area: 18 / 11 / 25 / 19;`;
-        export const HistoryMosaic31 = styled.div `grid-area: 14 / 25 / 25 / 30;`;
-        export const HistoryMosaic32 = styled.div `grid-area: 18 / 34 / 25 / 40;`;
 
 
         //Colors
@@ -259,3 +247,35 @@ export const FamilyMosaic14 = styled.div`grid-area: 1 / 16 / 4 / 17;`
 export const FamilyMosaic15 = styled.div`grid-area: 4 / 14 / 7 / 17;`
 export const FamilyMosaic16 = styled.div`grid-area: 7 / 14 / 9 / 17;`
 
+
+    export const DyeMosaicParent = styled.div` 
+    display: grid; 
+    grid-template-columns: repeat(18, 1fr); 
+    grid-template-rows: repeat(8, 1fr); 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 0 auto;
+height: ${({height}) => (height)+"px"};
+width: ${({width}) => (width-40)+"px"};
+`;
+
+export const DyeMosaic1 = styled.div`grid-area: 1 / 1 / 4 / 3;`
+export const DyeMosaic2 = styled.div`grid-area: 1 / 3 / 3 / 6;` 
+export const DyeMosaic3 = styled.div`grid-area: 3 / 3 / 4 / 6;`
+export const DyeMosaic4 = styled.div`grid-area: 4 / 1 / 7 / 6;` 
+export const DyeMosaic5 = styled.div`grid-area: 7 / 1 / 9 / 6;`
+export const DyeMosaic6 = styled.div`grid-area: 1 / 6 / 4 / 9;`
+export const DyeMosaic7 = styled.div`grid-area: 4 / 6 / 7 / 9;`
+export const DyeMosaic8 = styled.div`grid-area: 7 / 6 / 9 / 9;`
+export const DyeMosaic9 = styled.div`grid-area: 1 / 9 / 4 / 12;` 
+export const DyeMosaic10 = styled.div`grid-area: 4 / 9 / 6 / 12;` 
+export const DyeMosaic11 = styled.div`grid-area: 6 / 9 / 9 / 12;` 
+export const DyeMosaic12 = styled.div`grid-area: 1 / 12 / 4 / 14;` 
+export const DyeMosaic13 = styled.div`grid-area: 4 / 12 / 6 / 14;` 
+export const DyeMosaic14 = styled.div`grid-area: 6 / 12 / 9 / 14;` 
+export const DyeMosaic15 = styled.div`grid-area: 1 / 14 / 4 / 16;` 
+export const DyeMosaic16 = styled.div`grid-area: 4 / 14 / 7 / 16;` 
+export const DyeMosaic17 = styled.div`grid-area: 7 / 14 / 9 / 16;` 
+export const DyeMosaic18 = styled.div`grid-area: 1 / 16 / 6 / 19;` 
+export const DyeMosaic19 = styled.div`grid-area: 6 / 16 / 7 / 19;` 
+export const DyeMosaic20 = styled.div`grid-area: 7 / 16 / 9 / 19;` 

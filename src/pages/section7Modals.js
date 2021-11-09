@@ -291,9 +291,6 @@ const FamilyPage = () => {
             2020-337-1
             </div>
             <br></br>
-            <div>
-              ADD 3D Photo
-            </div>
           </div>
         </div>
       </Modal2>
