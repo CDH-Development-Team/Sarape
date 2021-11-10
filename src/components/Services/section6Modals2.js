@@ -87,7 +87,7 @@ const Services = () => {
         onRequestClose={closeModal}
         style={customStyles}
       >
-        <img src={close} onClick={closeModal} style={{ width: "5%", float: "right" }} />
+        <img src={close} alt="" onClick={closeModal} style={{ width: "2.5%", float: "right" }} />
 
         {content}
       </Modal>
