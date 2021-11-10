@@ -1,4 +1,11 @@
-@import url("//hello.myfonts.net/count/3e947d");
+@import url("");
+
+@font-face {
+  font-family: 'Lucida';
+  src: url('LHANDW.TTF'); /* IE9 Compat Modes */
+  src: url('LHANDW.TTF')  format('truetype'), /* Safari, Android, iOS */
+
+}
 /* @import url("https://use.typekit.net/qpc1jsr.css"); */
   
 /* @font-face {
