@@ -111,6 +111,7 @@ const Services = () => {
                       Although the diamond may have been a traditional Rarámuri motif, the design
                       layout shows a definite Saltillo sarape influence.
                     </div>
+                    <br></br>
                     <div style={{ fontFamily: "myriad-pro" }}>
                       Post-Classic period Saltillo sarape, c. 1870 {<br></br>}
                       Wool, cotton, and indigo and possibly synthetic dyes{<br></br>}
@@ -143,6 +144,7 @@ const Services = () => {
                         This early-1900s Mayo sarape has an unusually large central diamond
                         superimposed on a typical Saltillo sarape design layout.
                       </div>
+                      <br></br>
                       <div style={{ fontFamily: "myriad-pro" }}>
                         Mayo sarape, c. 1920 {<br></br>}
                         Wool and indigo dye {<br></br>}
@@ -175,6 +177,7 @@ const Services = () => {
                         last quarter of the 1800s, in both New Mexico and Mexico, backgrounds of
                         Saltillo sarape designs became increasingly complex.
                       </div>
+                      <br></br>
                       <div style={{ fontFamily: "myriad-pro" }}>
                         Rio Grande blanket, c. 1890 {<br></br>}
                         New MexicoWool, cotton, and synthetic dyes{<br></br>}
@@ -206,6 +209,7 @@ const Services = () => {
                       This Chimayo blanket’s design shows a strong Mexican Saltillo influence yet
                       has a distinctive New Mexico flair.
                     </div>
+                    <br></br>
                     <div style={{ fontFamily: "myriad-pro, san-serif" }}>
                       Chimayo blanket, c. 1920–1950 {<br></br>}
                       Wool, cotton, and synthetic dyes {<br></br>}
@@ -241,6 +245,7 @@ const Services = () => {
                         cochineal and indigo. Military men were among the first Americans to
                         purchase Navajo sarapes.
                       </div>
+                      <br></br>
                       <div style={{ fontFamily: "myriad-pro" }}>
                         Navajo sarape with Saltillo influence, c. 1850 {<br></br>}
                         Wool, cotton, and cochineal and indigo dyes{<br></br>}
@@ -273,6 +278,7 @@ const Services = () => {
                         This Navajo blanket is woven with commercial pre-dyed Germantown yarns that
                         were supplied to Navajo weavers by traders.
                       </div>
+                      <br></br>
                       <div style={{ fontFamily: "myriad-pro" }}>
                         Navajo blanket, c. 1890{<br></br>}
                         Wool, cotton, and synthetic dyes{<br></br>}
@@ -308,6 +314,7 @@ const Services = () => {
                       market and were more likely used as rugs or hung on walls as artwork. The
                       diamond motif is abundant and centralized like a sarape.
                     </div>
+                    <br></br>
                     <div style={{ fontFamily: "myriad-pro" }}>
                       Navajo Third Phase Chief ’s blanket, c. 1927{<br></br>}
                       Wool, cotton, and synthetic dyes{<br></br>}

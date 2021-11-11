@@ -456,7 +456,7 @@ const FamilyPage = () => {
                           style={{
                             padding: "0rem 6rem 0 0rem",
                             fontSize: "1.35rem",
-                            fontFamily: "cursive",
+                            fontFamily: "Lucida",
                             color: "#fff",
                             width: "85%",
                           }}
@@ -465,7 +465,7 @@ const FamilyPage = () => {
                           them for any reason. We are supposed to only take what we need from
                           nature.”<br></br>
                           <br></br>
-                          <p style={{ paddingLeft: "30rem", fontFamily: "cursive" }}>
+                          <p style={{ paddingLeft: "30rem", fontFamily: "Lucida" }}>
                             Amado Gutiérrez
                           </p>
                         </div>
@@ -526,7 +526,7 @@ const FamilyPage = () => {
                     <div
                       style={{
                         color: "#fff",
-                        fontFamily: "cursive",
+                        fontFamily: "Lucida",
                         padding: "4rem",
                         fontSize: "1.6rem",
                       }}
@@ -539,7 +539,7 @@ const FamilyPage = () => {
                       think I put those thoughts into all the colors we make, and into all the parts
                       of my life.”<br></br>
                       <br></br>
-                      <p style={{ paddingLeft: "65rem", fontFamily: "cursive" }}>
+                      <p style={{ paddingLeft: "65rem", fontFamily: "Lucida" }}>
                         Juana Gutiérrez Cortreras
                       </p>
                     </div>
@@ -653,7 +653,7 @@ const FamilyPage = () => {
                       {/* <h2>John Doe</h2> */}
                       <div
                         style={{
-                          fontFamily: "cursive",
+                          fontFamily: "Lucida",
                         }}
                       >
                         Preservation, education, and sustainability are all extremely important.
@@ -667,7 +667,7 @@ const FamilyPage = () => {
                         >
                           <p
                             style={{
-                              fontFamily: "cursive",
+                              fontFamily: "Lucida",
                             }}
                           >
                             Porfirio Gutierrez

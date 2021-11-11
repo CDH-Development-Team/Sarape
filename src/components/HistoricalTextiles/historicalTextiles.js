@@ -68,7 +68,9 @@ const HistoricalSection = ({
                   {description3}
                 </Subtitle>
                 <Img border="none" smallImg={smallImg} src={img3} alt="" />
-                <Subtitle darkText={darkText}>{imgdesc4}</Subtitle>
+                <Subtitle darkText={darkText} style={{ fontFamily: "myriad-pro" }}>
+                  {imgdesc4}
+                </Subtitle>
               </TextWrapper>
             </Column1>
             <Column2>
