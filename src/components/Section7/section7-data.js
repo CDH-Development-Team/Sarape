@@ -55,13 +55,13 @@ export const sevenObjOne = {
   img: img8,
   alt: "One",
   imgdesc2:
-    "Rarámuri group" +
-    "Chihuahua, south of Barranca de San Carlos, Mexico Carl Lumholtz, photographer, 1892" +
+    "Rarámuri group " +
+    "Chihuahua, south of Barranca de San Carlos, Mexico Carl Lumholtz, photographer, 1892 " +
     "American Museum of Natural History Research Library, CL1633",
   img2: img9,
   alt2: "One",
   imgdesc3:
-    "Rarámuri weaver" +
+    "Rarámuri weaver " +
     "Basiguare, Guachochi, Chihuahua, Mexico Madeleine Rodack, photographer, 1976 ASM 2006-339",
   dark: true,
   primary: true,
@@ -88,7 +88,7 @@ export const sevenObjTwo = {
   imgdesc: "This Mayo weaver is creating a Saltillo- influenced diamond design.",
   img: img7,
   imgdesc2:
-    "Huatabampo, Sonora, Mexico" + "Donald B. Cordry, photographer, 1938 ASM Cordry Collection 414",
+    "Huatabampo, Sonora, Mexico Donald B. Cordry, photographer, 1938 ASM Cordry Collection 414",
   alt: "one",
   dark: true,
   primary: true,
@@ -160,15 +160,16 @@ export const sevenObjFive = {
   headline: "Saltillo influence in new mexico",
   description:
     "Similar to the Ortegas, the Trujillo family’s tradition of weaving goes back eight generations. The family opened Centinela Traditional Arts in 1982 next to their orchard in Chimayo. The shop promotes Irvin and Lisa Trujillo’s award-winning fine-art tapestry pieces, along with textiles in the traditional Chimayo and Rio Grande styles. Tapestry textiles use finer yarns and more warp thread per inch, tend to be more intricate in design, and are usually displayed like artworks on a wall. In 2007, Irvin was named a National Heritage Fellow by the National Endowment for the Arts.",
-  description2:
+  quote1:
     "“As a seventh-generation Rio Grande weaver living in Chimayo, New Mexico, my work has evolved" +
-    "from the traditional styles of my forefathers. I use design ideas from historic Rio Grande weavings of northern New Mexico and add my own aesthetic by combining old ideas with my own vision. My pieces may interpret my Hispanic history and culture, and document events of the modern world.”" +
-    "Irvin Trujillo",
+    "from the traditional styles of my forefathers. I use design ideas from historic Rio Grande weavings of northern New Mexico and add my own aesthetic by combining old ideas with my own vision. My pieces may interpret my Hispanic history and culture, and document events of the modern world.”",
+  author: "Irvin Trujillo",
+  smallDesc: "To view weavings by Irvin Trujillo go to: chimayoweavers.com/PORTILT",
   buttonLabel: "",
   imgStart: false,
   img: img3,
   imgdesc2:
-    "Irvin Trujillo’s father, Jake Trujillo, taught weaving to Navy chimayoweavers.com/PORTILT.html. sailors at Treasure Island, San Francisco, 1944. Photograph courtesy of Trujillo family",
+    "Irvin Trujillo’s father, Jake Trujillo, taught weaving to Navy sailors at Treasure Island, San Francisco, 1944. Photograph courtesy of Trujillo family",
   alt: "one",
   dark: true,
   primary: true,

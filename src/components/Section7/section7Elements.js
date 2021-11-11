@@ -107,3 +107,37 @@ export const Img = styled.img`
     width: 100%;
   }
 `;
+
+export const Quote = styled.p`
+  color: white;
+  // display: flex;
+  // justify-content:center;
+  width: 100%;
+  font-family: Lucida;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.3rem;
+`;
+
+export const QuoteDiv = styled.div`
+  position: relative;
+  color: white;
+  paddingbottom: 8rem;
+  // display: flex;
+  // justify-content:center;
+  width: 90%;
+  font-family: Lucida;
+  font-weight: 100;
+  font-style: normal;
+`;
+
+export const QuoteAuthor = styled.p`
+  position: relative;
+  margin-left: 14rem;
+  color: white;
+  font-family: Lucida;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2rem;
+  text-align: align-right;
+`;

@@ -14,6 +14,9 @@ import {
   ImgWrap,
   Img,
   Column,
+  Quote,
+  QuoteAuthor,
+  QuoteDiv,
 } from "./section7Elements";
 
 const SevenSection = ({
@@ -47,6 +50,9 @@ const SevenSection = ({
   dark2,
   smallImg,
   margImg,
+  quote1,
+  author,
+  smallDesc,
 }) => {
   console.log("margimage:", headline, margImg);
   return (
@@ -65,12 +71,22 @@ const SevenSection = ({
                 <Subtitle darkText={darkText} style={{ fontFamily: "myriad-pro" }}>
                   {description2}
                 </Subtitle>
+                <QuoteDiv>
+                  <Quote>{quote1}</Quote>
+                  <QuoteAuthor>{author}</QuoteAuthor>
+                </QuoteDiv>
                 <Subtitle darkText={darkText} style={{ fontFamily: "myriad-pro" }}>
                   {description3}
                 </Subtitle>
                 <Img border="none" smallImg={smallImg} src={img3} alt="" />
                 <Subtitle darkText={darkText} style={{ fontFamily: "myriad-pro" }}>
                   {imgdesc4}
+                </Subtitle>
+                <Subtitle
+                  darkText={darkText}
+                  style={{ fontFamily: "myriad-pro", fontSize: "13px" }}
+                >
+                  {smallDesc}
                 </Subtitle>
               </TextWrapper>
             </Column1>
