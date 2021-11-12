@@ -20,7 +20,8 @@ function App() {
     <Router >
       <Switch>
         <Route path = "/" component={Home} exact />
-        <Route path = "/about" component={about} exact />
+        <Route path = "/intro" component={about} exact />
+        <Route path = "/credits" component={credits} exact />
 	      <Route path = "/fragments" component={fragments} exact />
         <Route path = "/porfirio" component={SigninPage} exact />
         <Route path = "/tourism" component={Tourism} exact />
@@ -33,7 +34,6 @@ function App() {
         <Route path = "/section7influence" component={SaltilloPage} exact />
         <Route path = "/section6Textiles" component={TextilesPage} exact />
         <Route path = "/dyeing" component={dyeing} exact />
-        <Route path = "/credits" component={credits} exact />
       </Switch>
     </Router>
   );

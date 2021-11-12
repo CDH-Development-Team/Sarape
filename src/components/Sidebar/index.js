@@ -13,6 +13,9 @@ const Sidebar = ({toggle, isOpen}) => {
                     <SidebarLink to="/" onClick={toggle}>
                         Home
                     </SidebarLink>
+                    <SidebarLink to="/intro" onClick={toggle}>
+                        Introduction
+                    </SidebarLink>          
                     <SidebarLink to="/geography" onClick={toggle}>
                         Geography
                     </SidebarLink>
@@ -36,10 +39,7 @@ const Sidebar = ({toggle, isOpen}) => {
                     </SidebarLink> 
                     <SidebarLink to="/tourism" onClick={toggle}>
                         Tourism
-                    </SidebarLink>
-                    <SidebarLink to="/credits" onClick={toggle}>
-                        Credits
-                    </SidebarLink>                                                      
+                    </SidebarLink>                                            
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>
