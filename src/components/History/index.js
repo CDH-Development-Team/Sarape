@@ -103,11 +103,12 @@ const History = () => {
               alt=""
               height={"100%"}
               width={"100%"}
+              overflow={"hidden"}
               onClick={() => {
                 setContent(
                   <BackgroundDiv>
                     <BackgroundImg height={height}>
-                      <img alt="" src={Icon1} height={"100%"} />
+                      <img alt="" src={Icon1} height={"95%"} />
                     </BackgroundImg>
                     <GeographyEntryText>
                       The Indigenous peoples of the Americas have a long and rich history of
@@ -214,7 +215,7 @@ const History = () => {
                 setContent(
                   <GeographyEntry>
                     <GeographyEntryImg>
-                      <img alt="" src={Icon2} width={"80%"} />
+                      <img alt="" src={Icon2} width={"70%"} />
                     </GeographyEntryImg>
 
                     <GeographyEntryText>
@@ -236,6 +237,9 @@ const History = () => {
                       <br />
                       right<br></br>Notice how the tilmàtli are similar to the Saltillo sarape in
                       design and how they were worn.
+                      <br />
+                      <br />
+                      <br /> 
                       <br />
                       <br />
                       Codex Mendoza, Folio 65r, c. 1541–1542
@@ -267,7 +271,7 @@ const History = () => {
                 setContent(
                   <GeographyEntry wide={true}>
                     <GeographyEntryImg wide={true} height={height}>
-                      <img src={Icon4} alt="" style={{ width: "60.5%", margin: "auto 0%" }}></img>
+                      <img src={Icon4} alt="" style={{ width: "55%", margin: "auto 0%" }}></img>
                       <GeographyEntryText wide={true}>
                         The Aztecs’ tilmàtli, tied at the shoulder as depicted in several codices,
                         is also part of the sarape’s cultural lineage. This style is similar to a
@@ -295,7 +299,7 @@ const History = () => {
                 setContent(
                   <GeographyEntry>
                     <GeographyEntryImg>
-                      <img alt="" src={Icon3} width={"90%"}></img>
+                      <img alt="" src={Icon3} width={"75%"}></img>
                     </GeographyEntryImg>
                     <GeographyEntryText>
                       Texcoco ruler Nezahualpilli shown wearing a xiuhtilmatli (blue cape), which
