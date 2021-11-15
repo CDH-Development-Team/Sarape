@@ -361,7 +361,7 @@ const FamilyPage = () => {
                         width: "40%",
                         paddingLeft: "5%",
                         paddingRight: "10%",
-                        fontSize: "1.4rem",
+                        
                         fontFamily: "myriad-pro",
                       }}
                     >
@@ -434,7 +434,7 @@ const FamilyPage = () => {
                           style={{
                             paddingLeft: "5rem",
                             paddingRight: "5rem",
-                            fontSize: "1.4rem",
+                            
                             fontFamily: "myriad-pro",
                           }}
                         >
@@ -515,7 +515,7 @@ const FamilyPage = () => {
                         <div
                           style={{
                             paddingLeft: "10rem",
-                            fontSize: "1.4rem",
+                            
                             width: "90%",
                             fontFamily: "myriad-pro",
                           }}

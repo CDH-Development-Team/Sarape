@@ -545,14 +545,14 @@ const Geography = () => {
             The sarape has been woven in many places throughout Mexico, but is primarily associated
             with the town of Saltillo, in the state of Coahuila, in northeastern Mexico. The
             Saltillo sarape grew out of Indigenous weaving traditions and designs combined with
-            Spanish weaving technology and influence. <br />
+            Spanish weaving technology and influence. <br /><br />
             In 1519, upon entering Mexico, Spanish military leader Hernan Cortés and his soldiers
             formed an alliance with the Tlaxcalan Indians of central Mexico to take over the vast
             Aztec empire. After the defeat of the Aztecs, the Tlaxcalans were enlisted to help with
             Spain’s colonization efforts. In 1591, four hundred Tlaxcalan families were sent
             northward to help colonize the areas dominated by the Chichimeca Indians. In return, the
             Tlaxcalans were awarded greater privileges and their own area, called Barrio San Esteban
-            de Nuevo Tlaxcala, which would become Saltillo. <br />
+            de Nuevo Tlaxcala, which would become Saltillo. <br /><br />
             Saltillo grew to be an important center for trade, linking central Mexico with northern
             portions of Mexico and Texas. Continuing into the early 1800s, Saltillo held a bustling,
             annual trade fair, where Saltillo’s agrarian supplies, as well as sarapes, were traded
