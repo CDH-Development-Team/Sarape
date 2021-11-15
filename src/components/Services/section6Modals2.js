@@ -670,11 +670,15 @@ const Services = () => {
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img border="none" smallImg={sixObjTwo.smallImg} src={sixObjTwo.img} alt="" />
+                <div style={{ width: "50%" }}>
+                  <Img border="none" smallImg={sixObjTwo.smallImg} src={sixObjTwo.img} alt="" />
+                </div>
                 <Subtitle darkText={sixObjTwo.darkText} style={{ fontFamily: "myriad-pro" }}>
                   {sixObjTwo.imgdesc2}
                 </Subtitle>
-                <Img border="none" smallImg={sixObjTwo.smallImg} src={sixObjTwo.img2} alt="" />
+                <div style={{ width: "50%" }}>
+                  <Img border="none" smallImg={sixObjTwo.smallImg} src={sixObjTwo.img2} alt="" />
+                </div>
                 <Subtitle darkText={sixObjTwo.darkText} style={{ fontFamily: "myriad-pro" }}>
                   {sixObjTwo.imgdesc3}
                 </Subtitle>
