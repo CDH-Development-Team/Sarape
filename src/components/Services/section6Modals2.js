@@ -277,7 +277,7 @@ const Services = () => {
                   </div>
                   <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
                     <div style={{ width: "65%", alignItems: "right" }}>
-                      <img src={Icon5} style={{ width: "65%" }} alt="Developer" />
+                      <img src={Icon5} style={{ width: "75%" }} alt="Developer" />
                       <p style={{fontSize:"0.9rem", padding: "0 0 .5rem 1.2rem", color: "white"}}>
                         Post-Classic period sarape with concentric diamonds, c. 1870<br/>
                         Wool, cotton, and indigo and possibly synthetic dyes<br/>
@@ -402,7 +402,7 @@ const Services = () => {
                   </div>
                   <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
                     <div style={{ width: "65%", alignItems: "right" }}>
-                      <img src={Icon8} style={{ width: "65%" }} alt="Developer" />
+                      <img src={Icon8} style={{ width: "100%" }} alt="Developer" />
                       <p style={{fontSize:"0.9rem", padding: "0 0 .5rem 1.2rem", color: "white"}}>
                         Oaxacan sarape, c. 1900-1920<br/>
                         Wool, natural and synthetic dyes<br/>
@@ -443,7 +443,7 @@ const Services = () => {
                   </div>
                   <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
                     <div style={{ width: "65%", alignItems: "right" }}>
-                      <img src={Icon9} style={{ width: "65%" }} alt="Developer" />
+                      <img src={Icon9} style={{ width: "90%" }} alt="Developer" />
                       <p style={{fontSize:"0.9rem", padding: "0 0 .5rem 1.2rem", color: "white"}}>
                         Oaxacan sarape, c. 1920-1940<br/>
                         Wool, natural and synthetic dyes<br/>
@@ -486,7 +486,7 @@ const Services = () => {
                   </div>
                   <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
                     <div style={{ width: "65%", alignItems: "right" }}>
-                      <img src={Icon10} style={{ width: "65%" }} alt="Developer" />
+                      <img src={Icon10} style={{ width: "75%" }} alt="Developer" />
                       <p style={{fontSize:"0.9rem", padding: "0 0 .5rem 1.2rem", color: "white"}}>
                         Tlaxcalan sarape, c. 1980<br/>
                         Tlaxcalan, Mexico<br/>
