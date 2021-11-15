@@ -456,11 +456,10 @@ const Services = () => {
                 </Subtitle>
               </TextWrapper>
             </Column1>
-            <Column2>
-              <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
-                <div style={{ display: "flex", flexDirection: "column", justifyContent: "start", width: "80%" }}>
-                  <ImgWrap>
-                    <Img src={Icon4} onClick={() => {
+            <Column2 style={{ height: "900px" }}>
+              <div style={{ display: "flex", flexDirection: "row", height: "100%" }}>
+                <div style={{ display: "flex", flexDirection: "column", justifyContent: "start", alignItems: "center", width: "80%", height: "100%" }}>
+                    <Img style={{ width: "80%" }} src={Icon4} onClick={() => {
                       setContent(
                         <div className="content" style={{ alignItems: "right" }}>
                           <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
@@ -498,9 +497,7 @@ const Services = () => {
                       );
                       openModal();
                     }} />
-                  </ImgWrap>
-                  <ImgWrap>
-                    <Img src={Icon5} onClick={() => {
+                    <Img style={{ width: "80%" }} src={Icon5} onClick={() => {
                       setContent(
                         <div className="content" style={{ alignItems: "right" }}>
                           <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
@@ -535,11 +532,9 @@ const Services = () => {
                       );
                       openModal();
                     }} />
-                  </ImgWrap>
                 </div>
-                <div style={{ display: "flex", flexDirection: "column", justifyContent: "end", width: "80%" }}>
-                  <ImgWrap>
-                    <Img src={Icon6} onClick={() => {
+                <div style={{ display: "flex", flexDirection: "column", justifyContent: "end", alignItems: "center", width: "80%" }}>
+                    <Img style={{ width: "80%" }} src={Icon6} onClick={() => {
                       setContent(
                         <div className="content" style={{ alignItems: "right" }}>
                           <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
@@ -577,9 +572,7 @@ const Services = () => {
                       );
                       openModal();
                     }} />
-                  </ImgWrap>
-                  <ImgWrap>
-                    <Img src={Icon7} onClick={() => {
+                    <Img style={{ width: "80%" }} src={Icon7} onClick={() => {
                       setContent(
                         <div className="content" style={{ alignItems: "right" }}>
                           <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
@@ -622,7 +615,6 @@ const Services = () => {
                       );
                       openModal();
                     }} />
-                  </ImgWrap>
                 </div>
               </div>
             </Column2>
