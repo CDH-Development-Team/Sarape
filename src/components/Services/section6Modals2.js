@@ -1,5 +1,6 @@
 import Modal from "react-modal";
 //styling of the modal itself
+import styled from "styled-components";
 
 import React, { useState } from "react";
 //import Modal2 from '../Modal2/modal2';
@@ -31,7 +32,6 @@ import {
   ServicesContainer,
   ServicesH1,
   ServicesWrapper6,
-  ServicesCard,
   ServicesIcon,
   ServicesH2,
   ServicesP,
@@ -91,6 +91,19 @@ const Services = () => {
     // references are now sync'd and can be accessed.
   }
 
+  let Card = styled.div`
+    // background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    max-height: 500px;
+    padding: 0px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+  `
+
   return (
     <ServicesContainer id="services">
       <Modal isOpen={modalIsOpen} onAfterOpen={afterOpenModal} onRequestClose={closeModal} style={customStyles}>
@@ -99,47 +112,47 @@ const Services = () => {
         {content}
       </Modal>
       <ServicesWrapper6>
-        <ServicesCard>
+        <Card>
           <ServicesIcon src={Icon1} />
           {/* <ServicesH2>Reduce Expenses</ServicesH2>
                     <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP> */}
-        </ServicesCard>
+        </Card>
         <div>
-          <ServicesCard>
+          <Card>
             <ServicesIcon src={Icon2} />
             {/* <ServicesH2>Virtual offices</ServicesH2> */}
             {/* <ServicesP>You can access our platform from anywhere.</ServicesP> */}
-          </ServicesCard>
-          <ServicesCard>
+          </Card>
+          <Card>
             <ServicesIcon src={Icon3} />
             {/* <ServicesH2>Premium Benefits</ServicesH2> */}
             {/* <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-          </ServicesCard>
+          </Card>
         </div>
-        <ServicesCard>
+        <Card>
           <ServicesIcon src={Icon4} />
           {/* <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-        </ServicesCard>
+        </Card>
         <div>
-          <ServicesCard>
+          <Card>
             <ServicesIcon src={Icon5} />
             {/* <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-          </ServicesCard>
-          <ServicesCard>
+          </Card>
+          <Card>
             <ServicesIcon src={Icon6} />
             {/* <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-          </ServicesCard>
+          </Card>
         </div>
-        <ServicesCard>
+        <Card>
           <ServicesIcon src={Icon7} />
           {/* <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-        </ServicesCard>
+        </Card>
         <div>
-          <ServicesCard>
+          <Card>
             <ServicesIcon
               src={Icon8}
               onClick={() => {
@@ -179,8 +192,8 @@ const Services = () => {
             />
             {/* <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-          </ServicesCard>
-          <ServicesCard>
+          </Card>
+          <Card>
             <ServicesIcon
               src={Icon9}
               onClick={() => {
@@ -224,9 +237,9 @@ const Services = () => {
             />
             {/* <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-          </ServicesCard>
+          </Card>
         </div>
-        <ServicesCard>
+        <Card>
           <ServicesIcon
             src={Icon10}
             onClick={() => {
@@ -271,7 +284,7 @@ const Services = () => {
           />
           {/* <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-        </ServicesCard>
+        </Card>
       </ServicesWrapper6>
       <br></br>
       <ServicesH1>Historical Textiles 1750-1980</ServicesH1>
