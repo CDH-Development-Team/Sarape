@@ -445,7 +445,7 @@ const Services = () => {
             </Column1>
             <Column2>
               <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
-                <div style={{ display: "flex", flexDirection: "column", justifyContent: "start" }}>
+                <div style={{ display: "flex", flexDirection: "column", justifyContent: "start", width: "80%" }}>
                   <ImgWrap>
                     <Img src={Icon4} onClick={() => {
                       setContent(
@@ -524,7 +524,7 @@ const Services = () => {
                     }} />
                   </ImgWrap>
                 </div>
-                <div style={{ display: "flex", flexDirection: "column", justifyContent: "end" }}>
+                <div style={{ display: "flex", flexDirection: "column", justifyContent: "end", width: "80%" }}>
                   <ImgWrap>
                     <Img src={Icon6} onClick={() => {
                       setContent(
