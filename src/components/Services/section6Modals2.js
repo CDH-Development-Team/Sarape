@@ -617,9 +617,76 @@ const Services = () => {
         </InfoWrapper>
       </InfoContainer>
 
+      {/* sixObjTwo section */}
+      <InfoContainer lightBg={sixObjTwo.lightBg} id={sixObjTwo.id}>
+        <InfoWrapper>
+          <InfoRow imgStart={sixObjTwo.imgStart}>
+            <Column1>
+              <Heading lightText={sixObjTwo.lightText}>{sixObjTwo.headline}</Heading>
+              <TextWrapper>
+                <TopLine>{sixObjTwo.topLine}</TopLine>
+
+                <div style={{ width: "70%" }}>
+                  <Img border="none" smallImg={sixObjTwo.smallImg} src={sixObjTwo.img3} alt="" onClick={() => {
+                    setContent(
+                      <div className="content" style={{ alignItems: "right" }}>
+                        <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
+                          {/* <h2>John Doe</h2> */}
+                          <div
+                            style={{
+                              fontSize: "3rem",
+                              fontFamily: "CancioneITCStd",
+                              padding: "1.3rem",
+                            }}
+                          >
+                            Transition Period Saltillo Sarapes
+                          </div>
+                          <div style={{ fontSize: "1.2rem", fontFamily: "myriad-pro" }}>
+                            Notice the diamond elements within the central diamond. This well-worn weaving’s rich blue tones
+                            come from dye made from the indigo plant.
+                          </div>
+                        </div>
+                        <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
+                          <div style={{ width: "65%", alignItems: "right" }}>
+                            <img src={Icon5} style={{ width: "75%" }} alt="Developer" />
+                            <p style={{ fontSize: "0.9rem", padding: "0 0 .5rem 1.2rem", color: "white" }}>
+                              Post-Classic period sarape with concentric diamonds, c. 1870
+                              <br />
+                              Wool, cotton, and indigo and possibly synthetic dyes
+                              <br />
+                              12504
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                    openModal();
+                  }} />
+                </div>
+                <Subtitle darkText={sixObjTwo.darkText} style={{ fontFamily: "myriad-pro" }}>
+                  {sixObjTwo.imgdesc4}
+                </Subtitle>
+              </TextWrapper>
+            </Column1>
+            <Column2>
+              <ImgWrap>
+                <Img border="none" smallImg={sixObjTwo.smallImg} src={sixObjTwo.img} alt="" />
+                <Subtitle darkText={sixObjTwo.darkText} style={{ fontFamily: "myriad-pro" }}>
+                  {sixObjTwo.imgdesc2}
+                </Subtitle>
+                <Img border="none" smallImg={sixObjTwo.smallImg} src={sixObjTwo.img2} alt="" />
+                <Subtitle darkText={sixObjTwo.darkText} style={{ fontFamily: "myriad-pro" }}>
+                  {sixObjTwo.imgdesc3}
+                </Subtitle>
+              </ImgWrap>
+            </Column2>
+          </InfoRow>
+        </InfoWrapper>
+      </InfoContainer>
+
       {/* <HistoricalSection {...sixObj} /> */}
       {/* <HistoricalSection {...sixObjOne} /> */}
-      <HistoricalSection {...sixObjTwo} />
+      {/* <HistoricalSection {...sixObjTwo} /> */}
       <HistoricalSection {...sixObjThree} />
     </ServicesContainer>
   );
