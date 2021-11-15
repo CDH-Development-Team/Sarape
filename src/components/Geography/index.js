@@ -427,7 +427,7 @@ const Geography = () => {
                 setContent(
                   <GeographyEntry wide={true}>
                     <GeographyEntryImg height={height} wide={true}>
-                      <img src={Icon4} alt="" style={{ maxWidth: "80%", margin: "0 20%" }}></img>
+                      <img src={Icon4} alt="" style={{width: "65%", margin: "0 20%" }}></img>
                       <GeographyEntryDescription wide={true}>
                         Teotitlán del Valle, Oaxaca, Mexico
                         <br /> Joe Coca, photographer, 2019
@@ -495,7 +495,7 @@ const Geography = () => {
                 setContent(
                   <GeographyEntry wide={true}>
                     <GeographyEntryImg height={height} wide={true}>
-                      <img src={Icon5} alt="" style={{ maxWidth: "80%", margin: "auto 20%" }}></img>
+                      <img src={Icon5} alt="" style={{ maxWidth: "55%", margin: "0 20%" }}></img>
                       <GeographyEntryDescription wide={true}>
                         Teotitlán del Valle, Oaxaca, Mexico
                         <br /> Javier Lazo, photographer, 2019
