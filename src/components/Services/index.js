@@ -313,7 +313,7 @@ const Services = () => {
       </ServicesWrapper>
 
       <ServicesH1>FRAGMENT SERIES BY PORFIRIO GUTIERREZ</ServicesH1>
-      <ServicesP>
+      <ServicesP style={{ fontSize: "1.3rem" }}>
         My ongoing Fragment series is my interpretation of one of the most remarkable weaving
         traditions created by the blending of Native American and European traditions. These pieces
         reflect how the merger created new forms of expression in the art of weaving. This style of
@@ -358,13 +358,15 @@ const Services = () => {
       <br></br>
       <br></br>
       <QuoteDiv>
-        <Quote>
+        <Quote style={{ fontFamily: "Lucida", fontSize: "2rem" }}>
           “This art form is a deep part of my culture and is my life. It is like my native language
           or our ceremonies. The cochineal produces a color just like the color of our blood; the
           weft and the warp are like the tissue in our body. Textiles are our second skin as well as
           a means of expression.”{" "}
         </Quote>
-        <QuoteAuthor>Porfirio Gutiérrez</QuoteAuthor>
+        <QuoteAuthor style={{ fontFamily: "Lucida", fontSize: "2rem" }}>
+          Porfirio Gutiérrez
+        </QuoteAuthor>
       </QuoteDiv>
     </ServicesContainer>
   );
