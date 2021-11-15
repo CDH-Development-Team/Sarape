@@ -16,7 +16,9 @@ import Icon5 from "../images/5A1_Parents by Javier Lazo.jpg";
 import Icon6 from "../images/5B2_08-09-18 The Big Boys a.jpg";
 import Icon7 from "../images/By Alana Coghlan.jpg";
 import Icon8 from "../images/5A3_Familia.jpg";
+import Icon9 from "../images/new_family_img.jpg";
 import close from "../images/close.png";
+
 import "../components/Geography/geography.css";
 
 import Color1 from "../images/section 2/color1.png";
@@ -25,6 +27,7 @@ import Color4 from "../images/color4.png";
 import Color5 from "../images/color5.png";
 import Color8 from "../images/color8.png";
 import Color11 from "../images/color11.png";
+import Color10 from "../images/color10.png";
 
 import {
   GeographyContainer,
@@ -90,6 +93,9 @@ import {
   FamilyMosaic14,
   FamilyMosaic15,
   FamilyMosaic16,
+  FamilyMosaic17,
+  FamilyMosaic18,
+  FamilyMosaic19,
 } from "../components/Geography/geographyElements.js";
 
 import "../components/Geography/geography.css";
@@ -108,22 +114,6 @@ const customStyles = {
 };
 const FamilyPage = () => {
   const { height, width } = useWindowDimensions();
-  // let subtitle;
-  //     const [modalIsOpen, setIsOpen] = React.useState(false);
-
-  //     function openModal() {
-  //         setIsOpen(true);
-  //       }
-  //       function afterOpenModal() {
-  //         // references are now sync'd and can be accessed.
-
-  //       }
-
-  //       function closeModal() {
-  //         setIsOpen(false);
-  //       }
-
-  // const [content, setContent] = React.useState(null);
   const [modalIsOpen, setIsOpenM] = React.useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -158,8 +148,8 @@ const FamilyPage = () => {
       <Navbar toggle={toggle} />
       <GeographyContainer>
         <FamilyMosaicParent
-          height={((width - (width % 16)) / 16) * 8}
-          width={width - (width % 16)}
+          height={((width - (width % 17)) / 17) * 10}
+          width={width - (width % 17)}
           style={{ marginright: 0 }}
         >
           <FamilyMosaic1 className="mosaic">
@@ -171,8 +161,14 @@ const FamilyPage = () => {
               onClick={() => {
                 setContent(
                   <div className="content">
-                    <div className="text" style={{ width: "70%" }}>
-                      {/* <h2>John Doe</h2> */}
+                    <div
+                      className="text"
+                      style={{
+                        fontSize: "1.5rem",
+                        fontFamily: "myriad-pro",
+                        padding: "1.5rem",
+                      }}
+                    >
                       <div>
                         When the wool is dry, it is combed with carding paddles, which are like
                         large hairbrushes with metal bristles. This helps to further clean, as well
@@ -195,9 +191,17 @@ const FamilyPage = () => {
                         machine-spun wool yarn.
                       </div>
                       <br></br>
-                      <div style={{ color: "#fff" }}>
-                        Bobbins of spun, dyed wool ready to use.<br></br>Craig Holmes, photographer,
-                        2018
+                      <br></br>
+                      <div
+                        style={{
+                          color: "#fff",
+                          fontSize: "1.2rem",
+                          fontFamily: "myriad-pro",
+                          paddingTop: "28rem",
+                          paddingLeft: "40rem",
+                        }}
+                      >
+                        Bobbins of spun, dyed wool ready to use. Craig Holmes, photographer, 2018
                       </div>
                     </div>
                     <img src={Icon1} alt="Developer" style={{ width: "100%" }} />
@@ -233,9 +237,9 @@ const FamilyPage = () => {
                       <div className="column5">
                         <p
                           style={{
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             fontFamily: "myriad-pro",
-                            padding: "1.3rem",
+                            padding: "1.5rem",
                           }}
                         >
                           Churro sheep were introduced to the northern reaches of New Spain by
@@ -243,25 +247,19 @@ const FamilyPage = () => {
                           adopted Churro wool and continue to prize it today.<br></br>
                           <br></br>
                           <br></br>
-                          <br></br>
-                          <br></br>
-                          <br></br>
-                          <br></br>
-                          <br></br>
-                          <br></br>
-                          <br></br>
-                          <br></br>
-                          <br></br>
-                          <br></br>
-                          <br></br>
-                          <br></br>
-                          <br></br>
-                          <br></br>
-                          <br></br>
-                          <br></br>
-                          <br></br>Three male Navajo Churro sheep, Spin Dance Acres, <br></br>Boise,
-                          ID. <br></br>Bonnie Barcus, photographer, 2018{" "}
                         </p>
+                        <div
+                          style={{
+                            color: "#fff",
+                            fontSize: "1.2rem",
+                            fontFamily: "myriad-pro",
+                            paddingTop: "45rem",
+                            paddingLeft: "10rem",
+                          }}
+                        >
+                          <br></br>Three male Navajo Churro sheep, Spin Dance Acres, Boise, ID.
+                          Bonnie Barcus, <br></br>photographer, 2018{" "}
+                        </div>
                       </div>
                       <div className="column4">
                         <p
@@ -279,7 +277,7 @@ const FamilyPage = () => {
                       <div className="column3">
                         <p
                           style={{
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             fontFamily: "myriad-pro",
                             padding: "1rem",
                           }}
@@ -295,7 +293,7 @@ const FamilyPage = () => {
                       <div className="column3">
                         <p
                           style={{
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             fontFamily: "myriad-pro",
                             padding: "1rem",
                           }}
@@ -310,7 +308,7 @@ const FamilyPage = () => {
                       <div className="column3">
                         <p
                           style={{
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             fontFamily: "myriad-pro",
                             padding: "1rem",
                           }}
@@ -325,7 +323,7 @@ const FamilyPage = () => {
                       <div className="column3">
                         <p
                           style={{
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             fontFamily: "myriad-pro",
                             padding: "1rem",
                           }}
@@ -359,7 +357,13 @@ const FamilyPage = () => {
                   <div className="content">
                     <div
                       className=""
-                      style={{ width: "40%", paddingLeft: "5%", paddingRight: "10%" }}
+                      style={{
+                        width: "40%",
+                        paddingLeft: "5%",
+                        paddingRight: "10%",
+                        fontSize: "1.4rem",
+                        fontFamily: "myriad-pro",
+                      }}
                     >
                       Sheep are usually sheared once a year. Over the course of a year, their coats
                       gather burrs, plant matter, and dirt. Even though wool naturally repels
@@ -381,16 +385,26 @@ const FamilyPage = () => {
                       on the bank until the excess water runs off. The wet wads of newly washed wool
                       are laid out to dry on large rocks. After the excess water has seeped out, the
                       wool is placed into the baskets and taken home. In the courtyard, we place the
-                      wool on petate (woven palm fiber) mats to dry completely. <br></br>Andrea
-                      Contreras preparing cleaned wool for spinning.<br></br>Nikhol Esterás,
-                      photographer, 2017
+                      wool on petate (woven palm fiber) mats to dry completely.
+                      <p
+                        style={{
+                          color: "#fff",
+                          fontSize: "1.2rem",
+                          fontFamily: "myriad-pro",
+                          paddingTop: "10rem",
+                          paddingLeft: "1rem",
+                        }}
+                      >
+                        Andrea Contreras preparing cleaned wool for spinning. Nikhol Esterás,
+                        photographer, 2017
+                      </p>
+                      <br></br>
                     </div>
-                    <br></br>
                     <img
                       src={Icon4}
                       alt="Developer"
                       style={{
-                        width: "50%",
+                        width: "55%",
                       }}
                     />
                   </div>
@@ -415,9 +429,14 @@ const FamilyPage = () => {
                   <div className="content">
                     <div className="row1">
                       {/* <h2>John Doe</h2> */}
-                      <div className="column2" style={{ width: "37%" }}>
+                      <div>
                         <div
-                          style={{ padding: "2rem", fontSize: "1rem", fontFamily: "myriad-pro" }}
+                          style={{
+                            paddingLeft: "5rem",
+                            paddingRight: "5rem",
+                            fontSize: "1.4rem",
+                            fontFamily: "myriad-pro",
+                          }}
                         >
                           Biodiversity is endangered due to climate change. We experience these
                           changes firsthand. During our last harvest in Teotitlán, we did not get
@@ -443,22 +462,14 @@ const FamilyPage = () => {
                           around the world. This will be the way to document and preserve our
                           cultural heritage for future generations.{" "}
                         </div>
-                      </div>
-                      <div className="column2" style={{ width: "63%" }}>
-                        <div>
-                          <img
-                            src={Icon2}
-                            alt="Developer"
-                            style={{ width: "50%", margin: "0 10%" }}
-                          />
-                        </div>
                         <div
                           style={{
-                            padding: "0rem 6rem 0 0rem",
-                            fontSize: "1.35rem",
+                            fontSize: "2rem",
                             fontFamily: "Lucida",
                             color: "#fff",
                             width: "85%",
+                            paddingTop: "10rem",
+                            paddingLeft: "10rem",
                           }}
                         >
                           “The plants and trees are alive, just like us; we cannot hurt them nor cut
@@ -471,6 +482,15 @@ const FamilyPage = () => {
                         </div>
                       </div>
                     </div>
+                    <div>
+                      <div>
+                        <img
+                          src={Icon2}
+                          alt="Developer"
+                          style={{ marginRight: "5rem", width: "100%" }}
+                        />
+                      </div>
+                    </div>
                   </div>
                 );
                 openModal();
@@ -478,9 +498,7 @@ const FamilyPage = () => {
             ></img>
           </FamilyMosaic7>
 
-          <FamilyMosaic8 className="mosaic">
-            <img src={Color5} alt="" height={"100%"} width={"100%"}></img>
-          </FamilyMosaic8>
+          <FamilyMosaic8 className="mosaic"></FamilyMosaic8>
 
           <FamilyMosaic9 className="mosaic">
             <img
@@ -490,58 +508,69 @@ const FamilyPage = () => {
               width={"100%"}
               onClick={() => {
                 setContent(
-                  <div className="content1">
-                    <div className="row">
-                      <div
-                        className="column"
-                        style={{
-                          paddingLeft: "5rem",
-                          fontSize: "1rem",
-                          fontFamily: "myriad-pro",
-                        }}
-                      >
-                        For me, natural dyeing is a spiritual process. We must be mindful that
-                        Mother Earth is a living being with a tremendous force. All elements used
-                        for natural dyes, traditional medicine, and foods are grown, thanks to the
-                        rain, soil, and other important resources provided by a greater being. All
-                        of these elements are alive, and without them, there would simply not be the
-                        hues you see in our textiles.<br></br>
-                        <br></br>The colors that come from plants go beyond beauty; they are
-                        connected to a living source and work in harmony with the wisdom of the
-                        practitioner. These dye materials are sacred and precious. They connect me
-                        and my family to the great master dyers and weavers of the past, who started
-                        these practices thousands of years ago.<br></br>
-                        <br></br>Our exposure to traditional knowledge gives us an understanding of
-                        about ten different color hues. We are continuously researching and
-                        experimenting with a diverse array of plants and fibers to create more hues.
-                        We have now developed more than two hundred different colors, all from
-                        natural sources. As a result, we have tremendous respect for and connection
-                        to Mother Earth, understanding her limitations and the limitations of the
-                        materials.
-                      </div>
-                      <div className="column" style={{ paddingLeft: "5rem" }}>
-                        <img src={Icon7} alt="Developer" style={{ width: "100%" }} />
+                  <div className="content">
+                    <div className="row1">
+                      {/* <h2>John Doe</h2> */}
+                      <div>
+                        <div
+                          style={{
+                            paddingLeft: "10rem",
+                            fontSize: "1.4rem",
+                            width: "90%",
+                            fontFamily: "myriad-pro",
+                          }}
+                        >
+                          For me, natural dyeing is a spiritual process. We must be mindful that
+                          Mother Earth is a living being with a tremendous force. All elements used
+                          for natural dyes, traditional medicine, and foods are grown, thanks to the
+                          rain, soil, and other important resources provided by a greater being. All
+                          of these elements are alive, and without them, there would simply not be
+                          the hues you see in our textiles.<br></br>
+                          <br></br>The colors that come from plants go beyond beauty; they are
+                          connected to a living source and work in harmony with the wisdom of the
+                          practitioner. These dye materials are sacred and precious. They connect me
+                          and my family to the great master dyers and weavers of the past, who
+                          started these practices thousands of years ago.<br></br>
+                          <br></br>Our exposure to traditional knowledge gives us an understanding
+                          of about ten different color hues. We are continuously researching and
+                          experimenting with a diverse array of plants and fibers to create more
+                          hues. We have now developed more than two hundred different colors, all
+                          from natural sources. As a result, we have tremendous respect for and
+                          connection to Mother Earth, understanding her limitations and the
+                          limitations of the materials.
+                        </div>
+                        <div
+                          style={{
+                            fontSize: "2rem",
+                            fontFamily: "Lucida",
+                            color: "#fff",
+                            width: "85%",
+                            paddingTop: "10rem",
+                            paddingLeft: "10rem",
+                          }}
+                        >
+                          “When you work with nature respectfully, you do no harm. You do not need
+                          damaging chemicals. You do not need to harvest in ways that destroy. You
+                          do not hurt the environment and the world. I think this is what positive
+                          change is about: working in harmony with nature and working in ways that
+                          we can teach to young people, so that they can earn a living and keep our
+                          world healthy. I think I put those thoughts into all the colors we make,
+                          and into all the parts of my life.”<br></br>
+                          <br></br>
+                          <p style={{ paddingLeft: "30rem", fontFamily: "Lucida" }}>
+                            Juana Gutiérrez Cortreras
+                          </p>
+                        </div>
                       </div>
                     </div>
-                    <div
-                      style={{
-                        color: "#fff",
-                        fontFamily: "Lucida",
-                        padding: "4rem",
-                        fontSize: "1.6rem",
-                      }}
-                    >
-                      “When you work with nature respectfully, you do no harm. You do not need
-                      damaging chemicals. You do not need to harvest in ways that destroy. You do
-                      not hurt the environment and the world. I think this is what positive change
-                      is about: working in harmony with nature and working in ways that we can teach
-                      to young people, so that they can earn a living and keep our world healthy. I
-                      think I put those thoughts into all the colors we make, and into all the parts
-                      of my life.”<br></br>
-                      <br></br>
-                      <p style={{ paddingLeft: "65rem", fontFamily: "Lucida" }}>
-                        Juana Gutiérrez Cortreras
-                      </p>
+                    <div>
+                      <div>
+                        <img
+                          src={Icon7}
+                          alt="Developer"
+                          style={{ marginRight: "5rem", width: "100%" }}
+                        />
+                      </div>
                     </div>
                   </div>
                 );
@@ -572,7 +601,7 @@ const FamilyPage = () => {
                       <div className="column">
                         <p
                           style={{
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             fontFamily: "myriad-pro",
                           }}
                         >
@@ -586,7 +615,7 @@ const FamilyPage = () => {
                       <div className="column">
                         <p
                           style={{
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             fontFamily: "myriad-pro",
                           }}
                         >
@@ -601,7 +630,7 @@ const FamilyPage = () => {
                       <div className="column">
                         <p
                           style={{
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             fontFamily: "myriad-pro",
                           }}
                         >
@@ -622,12 +651,27 @@ const FamilyPage = () => {
                     </div>
 
                     <div className="quoteDiv">
-                      <p className="quote">
+                      <p
+                        className="quote"
+                        style={{
+                          fontFamily: "Lucida",
+                          fontSize: "2rem",
+                        }}
+                      >
                         “The greater being has given us the plants for food, dyes, and for medicine.
                         Because they connect us to Mother Earth, they are a deep part of our body
                         and our wellbeing. The wisdom to use them was inherited from our ancestors.”
                       </p>
-                      <p className="author"> Andrea Contreras</p>
+                      <p
+                        className="author"
+                        style={{
+                          fontFamily: "Lucida",
+                          fontSize: "2rem",
+                        }}
+                      >
+                        {" "}
+                        Andrea Contreras
+                      </p>
                     </div>
                   </div>
                 );
@@ -654,6 +698,7 @@ const FamilyPage = () => {
                       <div
                         style={{
                           fontFamily: "Lucida",
+                          fontSize: "1.7rem",
                         }}
                       >
                         Preservation, education, and sustainability are all extremely important.
@@ -665,19 +710,17 @@ const FamilyPage = () => {
                             alignItems: "left",
                           }}
                         >
-                          <p
-                            style={{
-                              fontFamily: "Lucida",
-                            }}
-                          >
+                          <p style={{ paddingLeft: "22rem", fontFamily: "Lucida" }}>
                             Porfirio Gutierrez
                           </p>
+                          <br></br>
                         </div>
                       </div>
                       <div
                         style={{
                           fontFamily: "myriad-pro",
-                          marginTop: "1rem",
+                          marginTop: "1.5rem",
+                          fontSize: "1.5rem",
                         }}
                       >
                         About nineteen years ago, I started my own studio involving my family and
@@ -694,12 +737,12 @@ const FamilyPage = () => {
                       <div
                         style={{
                           fontFamily: "myriad-pro",
+                          paddingTop: "40rem",
                         }}
                       >
-                        Porfirio Gutiérrez with a full of pericón to use for <br></br>making a
-                        yellow dye. Pericón (Tagetes lucida) is <br></br>referred to as both Mexican
-                        mint marigold and <br></br>Mexican tarragon.
-                        <br /> Keith Recker, photographer, 2018
+                        Porfirio Gutiérrez with a full of pericón to use for making a yellow dye.
+                        Pericón (Tagetes lucida) is referred to as both Mexican mint marigold and
+                        Mexican tarragon. Keith Recker, photographer, 2018
                       </div>
                     </div>
                     <img
@@ -740,7 +783,7 @@ const FamilyPage = () => {
                       <div className="column">
                         <p
                           style={{
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             fontFamily: "myriad-pro",
                           }}
                         >
@@ -754,7 +797,7 @@ const FamilyPage = () => {
                       <div className="column">
                         <p
                           style={{
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             fontFamily: "myriad-pro",
                           }}
                         >
@@ -769,7 +812,7 @@ const FamilyPage = () => {
                       <div className="column">
                         <p
                           style={{
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             fontFamily: "myriad-pro",
                           }}
                         >
@@ -790,12 +833,27 @@ const FamilyPage = () => {
                     </div>
 
                     <div className="quoteDiv">
-                      <p className="quote">
+                      <p
+                        className="quote"
+                        style={{
+                          fontFamily: "Lucida",
+                          fontSize: "2rem",
+                        }}
+                      >
                         “The greater being has given us the plants for food, dyes, and for medicine.
                         Because they connect us to Mother Earth, they are a deep part of our body
                         and our wellbeing. The wisdom to use them was inherited from our ancestors.”
                       </p>
-                      <p className="author"> Andrea Contreras</p>
+                      <p
+                        className="author"
+                        style={{
+                          fontFamily: "Lucida",
+                          fontSize: "2rem",
+                        }}
+                      >
+                        {" "}
+                        Andrea Contreras
+                      </p>
                     </div>
                   </div>
                 );
@@ -804,12 +862,79 @@ const FamilyPage = () => {
             ></img>
           </FamilyMosaic16>
 
-          {/* <HistoryMosaic13 className="mosaic">
-        <img src={Icon6} height={"100%"} width={"100%"} onClick={() => setShow5(true)}></img>
-        </HistoryMosaic13> */}
-          {/* <HistoryMosaic14 className="mosaic">
-        <img src={Color1} height={"100%"} width={"100%"}></img>
-        </HistoryMosaic14> */}
+          <FamilyMosaic17 className="mosaic">
+            <img src={Color1} alt="" height={"100%"} width={"100%"}></img>
+          </FamilyMosaic17>
+
+          <FamilyMosaic18 className="mosaic">
+            <img
+              src={Icon9}
+              alt=""
+              height={"70%"}
+              width={"100%"}
+              onClick={() => {
+                setContent(
+                  <div className="content1">
+                    {/* <img
+            src={Icon5}
+            alt="Developer"
+          /> */}
+                    {/* <div className="text"> */}
+                    <div className="row" style={{ margin: "2rem" }}>
+                      <div className="column">
+                        <div
+                          style={{
+                            color: "#fff",
+                            fontFamily: "Lucida",
+                            padding: "4rem",
+                            fontSize: "1.6rem",
+                          }}
+                        >
+                          There is a notation that a tradition cannot live outside of its place of
+                          origin, and in terms of my weaving and natural dyeing traditions that they
+                          stay on the other side of the border. In my opinion that is false—even if
+                          we were talking about a different continent—but we are focusing on the
+                          Americas, which is the same land as that of my ancestors.
+                          <br></br>
+                          <br></br>
+                          We often forget that our head is our house and traditions are alive within
+                          the people, therefore wherever people go they carry their traditions with
+                          them. That is how traditions stay alive, allowing them to grow, evolve,
+                          preserve, and innovate.<br></br>
+                          <br></br>
+                          <p style={{ paddingLeft: "22rem", fontFamily: "Lucida" }}>
+                            Porfirio Gutiérrez
+                          </p>
+                          <div
+                            style={{
+                              color: "#fff",
+                              fontFamily: "myriad-pro",
+                              paddingTop: "10rem",
+                              fontSize: "1rem",
+                            }}
+                          >
+                            Porfirio Gutiérrez working with his wife and son at his studio in
+                            Ventura, CA. Kate Kunath, photographer, 2021
+                          </div>
+                        </div>
+                      </div>
+
+                      <img
+                        src={Icon9}
+                        alt="Developer"
+                        style={{ height: "50%", width: "50%", alignItems: "right" }}
+                      />
+                    </div>
+                  </div>
+                );
+                openModal();
+              }}
+            ></img>
+          </FamilyMosaic18>
+
+          <FamilyMosaic19 className="mosaic">
+            <img src={Color10} alt="" height={"100%"} width={"100%"}></img>
+          </FamilyMosaic19>
         </FamilyMosaicParent>
       </GeographyContainer>
 
@@ -825,7 +950,7 @@ const FamilyPage = () => {
         <div style={{ padding: "2rem" }}>
           <h1
             style={{
-              fontSize: "2rem",
+              fontSize: "2.5rem",
               color: "#fff",
             }}
           >
@@ -836,7 +961,7 @@ const FamilyPage = () => {
             <div
               className="column1"
               style={{
-                fontSize: "1rem",
+                fontSize: "1.3rem",
                 fontFamily: "myriad-pro",
                 color: "#fff",
               }}
@@ -850,7 +975,7 @@ const FamilyPage = () => {
             <div
               className="column1"
               style={{
-                fontSize: "1rem",
+                fontSize: "1.3rem",
                 fontFamily: "myriad-pro",
                 color: "#fff",
               }}
