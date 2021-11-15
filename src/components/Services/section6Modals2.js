@@ -114,7 +114,7 @@ const Services = () => {
                   <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
                     <div style={{ width: "65%", alignItems: "right" }}>
                       <img src={Icon1} style={{ width: "65%" }} alt="Developer" />
-                      <p style={{ padding: "0 0 .5rem 1.2rem", color: "white"}}>
+                      <p style={{fontSize:"0.9rem", padding: "0 0 .5rem 1.2rem", color: "white"}}>
                         Classic period Saltillo sarape, c. 1720–1860<br/>
                         Mexico<br/>
                         Wool, cotton, and cochineal, and other natural dyes<br/>
@@ -153,7 +153,7 @@ const Services = () => {
                   <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
                     <div style={{ width: "65%", alignItems: "right" }}>
                       <img src={Icon2} style={{ width: "65%" }} alt="Developer" />
-                      <p style={{ padding: "0 0 .5rem 1.2rem", color: "white"}}>
+                      <p style={{fontSize:"0.9rem", padding: "0 0 .5rem 1.2rem", color: "white"}}>
                         Classic period Saltillo sarape, c. 1720–1860<br/>
                         Mexico<br/>
                         Wool, cotton, and indigo dye<br/>
@@ -191,7 +191,7 @@ const Services = () => {
                   <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
                     <div style={{ width: "65%", alignItems: "right" }}>
                       <img src={Icon3} style={{ width: "65%" }} alt="Developer" />
-                      <p style={{ padding: "0 0 .5rem 1.2rem", color: "white"}}>
+                      <p style={{fontSize:"0.9rem", padding: "0 0 .5rem 1.2rem", color: "white"}}>
                         Classic period Saltillo sarape, c. 1720–1860<br/>
                         Mexico<br/>
                         Wool, cotton, and cochineal, indigo, and other natural dyes<br/>
@@ -226,11 +226,17 @@ const Services = () => {
                     >
                       Transition Period Saltillo Sarapes
                     </div>
+                    <div style={{fontSize:"1.2rem", fontFamily: "myriad-pro" }}>
+                    Notice how, in this Transition period sarape, the designs have become increasingly 
+                    intricate and how the centralized diamond design has multiplied, as compared to the 
+                    sarapes made in the Classic period. 
+                    </div>
+
                   </div>
                   <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
                     <div style={{ width: "65%", alignItems: "right" }}>
                       <img src={Icon4} style={{ width: "65%" }} alt="Developer" />
-                      <p style={{ padding: "0 0 .5rem 1.2rem", color: "white"}}>
+                      <p style={{fontSize:"0.9rem", padding: "0 0 .5rem 1.2rem", color: "white"}}>
                         Post-Classic period sarape with concentric diamonds, c. 1870<br/>
                         Wool, cotton, and natural and synthetic dyes<br/>
                         Gift of Arizona Archaelogical and Historical Society<br/>
@@ -264,11 +270,15 @@ const Services = () => {
                     >
                       Transition Period Saltillo Sarapes
                     </div>
+                    <div style={{fontSize:"1.2rem", fontFamily: "myriad-pro" }}>
+                    Notice the diamond elements within the central diamond. This well-worn weaving’s rich blue 
+                    tones come from dye made from the indigo plant. 
+                    </div>
                   </div>
                   <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
                     <div style={{ width: "65%", alignItems: "right" }}>
                       <img src={Icon5} style={{ width: "65%" }} alt="Developer" />
-                      <p style={{ padding: "0 0 .5rem 1.2rem", color: "white"}}>
+                      <p style={{fontSize:"0.9rem", padding: "0 0 .5rem 1.2rem", color: "white"}}>
                         Post-Classic period sarape with concentric diamonds, c. 1870<br/>
                         Wool, cotton, and indigo and possibly synthetic dyes<br/>
                         12504
@@ -300,7 +310,7 @@ const Services = () => {
                     >
                       Transition Period Saltillo Sarapes<br/>
                     </div>
-                      <div style={{ fontFamily: "myriad-pro" }}>
+                      <div style={{fontSize:"1.2rem", fontFamily: "myriad-pro" }}>
                       Notice the lavishly decorated neck-slit <i>(bocamanga),</i> enabling this
                       textile to be worn as a poncho.
                     </div>
@@ -308,7 +318,7 @@ const Services = () => {
                   <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
                     <div style={{ width: "65%", alignItems: "right" }}>
                       <img src={Icon6} style={{ width: "65%" }} alt="Developer" />
-                      <p style={{ padding: "0 0 .5rem 1.2rem", color: "white"}}>
+                      <p style={{fontSize:"0.9rem", padding: "0 0 .5rem 1.2rem", color: "white"}}>
                         Post-Classic period Saltillo sarape, c. 1870<br/>
                         Wool, cotton, velvet, silver, and synthetic dyes<br/>
                         On loan from Arizona History Museum, 86.60.19<br/>
@@ -343,7 +353,7 @@ const Services = () => {
                       Transition Period Saltillo Sarapes<br/>
                     </div>
                     
-                      <div style={{ fontFamily: "myriad-pro" }}>
+                      <div style={{fontSize:"1.2rem", fontFamily: "myriad-pro" }}>
                       Demand for Saltillo sarapes spread throughout the world in the 1800s. European
                       entrepreneurs, capitalizing on the popularity and high monetary value of these
                       pieces, printed Saltillo sarape designs on woven textiles. Sold in Europe and
@@ -354,7 +364,7 @@ const Services = () => {
                   <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
                     <div style={{ width: "65%", alignItems: "right" }}>
                       <img src={Icon7} style={{ width: "65%" }} alt="Developer" />
-                      <p style={{ padding: "0 0 .5rem 1.2rem", color: "white"}}>
+                      <p style={{fontSize:"0.9rem", padding: "0 0 .5rem 1.2rem", color: "white"}}>
                         Textile printed with Saltillo sarape design<br/>
                         C. 1870-1900<br/>
                         Made in Germany or Austria<br/>
@@ -393,7 +403,7 @@ const Services = () => {
                   <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
                     <div style={{ width: "65%", alignItems: "right" }}>
                       <img src={Icon8} style={{ width: "65%" }} alt="Developer" />
-                      <p style={{ padding: "0 0 .5rem 1.2rem", color: "white"}}>
+                      <p style={{fontSize:"0.9rem", padding: "0 0 .5rem 1.2rem", color: "white"}}>
                         Oaxacan sarape, c. 1900-1920<br/>
                         Wool, natural and synthetic dyes<br/>
                         On loan from Tom Kieft<br/>
@@ -426,7 +436,7 @@ const Services = () => {
                     >
                       The Regional Styles<br/>
                     </div>
-                      <div style={{ fontFamily: "myriad-pro" }}>
+                      <div style={{fontSize:"1.2rem", fontFamily: "myriad-pro" }}>
                       This sarape's repeated diamond motifs may have been influenced by the
                       geometric designs on the walls of the ruins at Mitla in Oaxaca.
                     </div>
@@ -434,7 +444,7 @@ const Services = () => {
                   <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
                     <div style={{ width: "65%", alignItems: "right" }}>
                       <img src={Icon9} style={{ width: "65%" }} alt="Developer" />
-                      <p style={{ padding: "0 0 .5rem 1.2rem", color: "white"}}>
+                      <p style={{fontSize:"0.9rem", padding: "0 0 .5rem 1.2rem", color: "white"}}>
                         Oaxacan sarape, c. 1920-1940<br/>
                         Wool, natural and synthetic dyes<br/>
                         On loan from Michael D. Higgins<br/>
@@ -468,7 +478,7 @@ const Services = () => {
                     >
                       The Regional Styles<br/>
                     </div>
-                      <div style={{ fontFamily: "myriad-pro" }}>
+                      <div style={{fontSize: "1.2rem", fontFamily: "myriad-pro" }}>
                       This weaving, from the 1980s, is a version of a Classic period Saltillo sarape woven by a 
                       Tlaxcalan weaver. Tlaxcalans continue to weave sarapes using Classic period design 
                       elements because they are still sought after by commercial buyers.
@@ -477,7 +487,7 @@ const Services = () => {
                   <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
                     <div style={{ width: "65%", alignItems: "right" }}>
                       <img src={Icon10} style={{ width: "65%" }} alt="Developer" />
-                      <p style={{ padding: "0 0 .5rem 1.2rem", color: "white"}}>
+                      <p style={{fontSize:"0.9rem", padding: "0 0 .5rem 1.2rem", color: "white"}}>
                         Tlaxcalan sarape, c. 1980<br/>
                         Tlaxcalan, Mexico<br/>
                         Wool, natural and synthetic dyes<br/>
