@@ -626,7 +626,7 @@ const Services = () => {
               <TextWrapper>
                 <TopLine>{sixObjTwo.topLine}</TopLine>
 
-                <div style={{ width: "70%" }}>
+                <div style={{ width: "50%" }}>
                   <Img border="none" smallImg={sixObjTwo.smallImg} src={sixObjTwo.img3} alt="" onClick={() => {
                     setContent(
                       <div className="content" style={{ alignItems: "right" }}>
