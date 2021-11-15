@@ -164,7 +164,7 @@ const FamilyPage = () => {
                     <div
                       className="text"
                       style={{
-                        fontSize: "1.5rem",
+                        
                         fontFamily: "myriad-pro",
                         padding: "1.5rem",
                       }}
@@ -237,7 +237,7 @@ const FamilyPage = () => {
                       <div className="column5">
                         <p
                           style={{
-                            fontSize: "1.5rem",
+                            
                             fontFamily: "myriad-pro",
                             padding: "1.5rem",
                           }}
@@ -277,7 +277,7 @@ const FamilyPage = () => {
                       <div className="column3">
                         <p
                           style={{
-                            fontSize: "1.5rem",
+                            
                             fontFamily: "myriad-pro",
                             padding: "1rem",
                           }}
@@ -293,7 +293,7 @@ const FamilyPage = () => {
                       <div className="column3">
                         <p
                           style={{
-                            fontSize: "1.5rem",
+                            
                             fontFamily: "myriad-pro",
                             padding: "1rem",
                           }}
@@ -308,7 +308,7 @@ const FamilyPage = () => {
                       <div className="column3">
                         <p
                           style={{
-                            fontSize: "1.5rem",
+                            
                             fontFamily: "myriad-pro",
                             padding: "1rem",
                           }}
@@ -323,7 +323,7 @@ const FamilyPage = () => {
                       <div className="column3">
                         <p
                           style={{
-                            fontSize: "1.5rem",
+                            
                             fontFamily: "myriad-pro",
                             padding: "1rem",
                           }}
@@ -601,7 +601,6 @@ const FamilyPage = () => {
                       <div className="column">
                         <p
                           style={{
-                            fontSize: "1.5rem",
                             fontFamily: "myriad-pro",
                           }}
                         >
@@ -615,7 +614,6 @@ const FamilyPage = () => {
                       <div className="column">
                         <p
                           style={{
-                            fontSize: "1.5rem",
                             fontFamily: "myriad-pro",
                           }}
                         >
@@ -630,7 +628,6 @@ const FamilyPage = () => {
                       <div className="column">
                         <p
                           style={{
-                            fontSize: "1.5rem",
                             fontFamily: "myriad-pro",
                           }}
                         >
@@ -720,7 +717,7 @@ const FamilyPage = () => {
                         style={{
                           fontFamily: "myriad-pro",
                           marginTop: "1.5rem",
-                          fontSize: "1.5rem",
+                          
                         }}
                       >
                         About nineteen years ago, I started my own studio involving my family and
@@ -783,7 +780,6 @@ const FamilyPage = () => {
                       <div className="column">
                         <p
                           style={{
-                            fontSize: "1.5rem",
                             fontFamily: "myriad-pro",
                           }}
                         >
@@ -797,7 +793,6 @@ const FamilyPage = () => {
                       <div className="column">
                         <p
                           style={{
-                            fontSize: "1.5rem",
                             fontFamily: "myriad-pro",
                           }}
                         >
@@ -812,7 +807,6 @@ const FamilyPage = () => {
                       <div className="column">
                         <p
                           style={{
-                            fontSize: "1.5rem",
                             fontFamily: "myriad-pro",
                           }}
                         >
@@ -961,7 +955,6 @@ const FamilyPage = () => {
             <div
               className="column1"
               style={{
-                fontSize: "1.3rem",
                 fontFamily: "myriad-pro",
                 color: "#fff",
               }}
@@ -975,7 +968,6 @@ const FamilyPage = () => {
             <div
               className="column1"
               style={{
-                fontSize: "1.3rem",
                 fontFamily: "myriad-pro",
                 color: "#fff",
               }}

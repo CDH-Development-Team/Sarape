@@ -294,7 +294,7 @@ const Dyeing = () => {
             <div
               style={{
                 fontSize: "1.1rem",
-                fontFamily: "cursive",
+                fontFamily: "Lucida",
                 padding: "1.3rem",
               }}
             >
@@ -310,7 +310,7 @@ const Dyeing = () => {
                 <p
                   style={{
                     paddingLeft: "11rem",
-                    fontFamily: "cursive",
+                    fontFamily: "Lucida",
                   }}
                 >
                   Porfirio Gutierrez

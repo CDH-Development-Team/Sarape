@@ -242,9 +242,11 @@ const History = () => {
                       <br /> 
                       <br />
                       <br />
+                      <div className="credits">
                       Codex Mendoza, Folio 65r, c. 1541–1542
                       <br />
                       Viceroyalty of Spain<br></br>Bodleian Library, Oxford University
+                      </div>
                     </GeographyEntryText>
                   </GeographyEntry>
                 );
@@ -269,15 +271,15 @@ const History = () => {
               width={"100%"}
               onClick={() => {
                 setContent(
-                  <GeographyEntry wide={true}>
-                    <GeographyEntryImg wide={true} height={height}>
-                      <img src={Icon4} alt="" style={{ width: "55%", margin: "auto 0%" }}></img>
+                  <GeographyEntry>
+                    <GeographyEntryImg wide={true} height={height} >
+                      <img src={Icon4} alt="" style={{ width: "55%", float: "right" }}></img>
                       <GeographyEntryText wide={true}>
                         The Aztecs’ tilmàtli, tied at the shoulder as depicted in several codices,
                         is also part of the sarape’s cultural lineage. This style is similar to a
                         poncho.
                       </GeographyEntryText>
-                      <GeographyEntryDescription wide={true}>
+                      <GeographyEntryDescription>
                         Codex Primeros Memoriales, Vol. 3, Estampa 21<br></br>Bernardino Sahagún,
                         Historia General de las Cosas de Nueva España Biblioteca Medicea Laurenziana
                       </GeographyEntryDescription>

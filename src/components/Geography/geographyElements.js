@@ -36,7 +36,6 @@ export const GeographyEntryImg = styled.div`
   max-width: ${({ wide }) => (wide ? "90%" : "40%")};
   float: right;
   margin-right: 10%;
-  //overflow:hidden;
   @media screen and (max-width: 480px) {
     width: 100%;
   }
@@ -49,10 +48,11 @@ export const GeographyEntryText = styled.div`
 `;
 
 export const GeographyEntryDescription = styled.div`
-  margin: 50px 10px;
-  width: ${({ wide }) => (wide ? "40%" : "90%")};
+  margin: 50px 0px;
+  width: ${({ wide }) => (wide ? "40%" : "80%")};
   float: right;
   text-align: right;
+  font-size: 1.6vmin;
 `;
 
 export const GeographyStatues = styled.div`

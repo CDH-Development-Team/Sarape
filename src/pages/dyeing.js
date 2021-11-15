@@ -240,7 +240,7 @@ const DyeingPage = () => {
                           marginLeft: "5rem",
                           padding: "3rem 3rem 3rem 12rem",
                           fontFamily: "Lucida",
-                          fontSize: "1.5rem",
+                          
                         }}
                       >
                         “The dye plants that come from the earth <br></br>are the soul of my
@@ -313,7 +313,7 @@ const DyeingPage = () => {
                         margin: "2rem 0 0 2rem",
                         color: "#fff",
                         fontFamily: "Lucida",
-                        fontSize: "1.5rem",
+                        
                       }}
                     >
                       “Through my practice of working with natural dyes,<br></br> my life is shaped
