@@ -50,6 +50,8 @@ import {
   ImgWrap,
 } from "../InfoSection/infoElements";
 
+import useWindowDimensions from "../Geography/dimensions";
+
 const customStyles = {
   content: {
     position: "absolute",
@@ -90,6 +92,8 @@ const Services = () => {
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
   }
+
+  const { height, width } = useWindowDimensions();
 
   let Card = styled.div`
     // background: #fff;
@@ -290,7 +294,7 @@ const Services = () => {
       <ServicesH1>Historical Textiles 1750-1980</ServicesH1>
 
       {/* sixObj section */}
-      <InfoContainer lightBg={sixObj.lightBg} id={sixObj.id}>
+      <InfoContainer lightBg={sixObj.lightBg} id={sixObj.id} style={{ maxWidth: width > 768 ? "auto" : "600px" }}>
         <InfoWrapper>
           <InfoRow imgStart={sixObj.imgStart}>
             <Column1>
@@ -440,7 +444,7 @@ const Services = () => {
       </InfoContainer>
 
       {/* sixObjOne section */}
-      <InfoContainer lightBg={sixObjOne.lightBg} id={sixObjOne.id}>
+      <InfoContainer lightBg={sixObjOne.lightBg} id={sixObjOne.id} style={{ maxWidth: width > 768 ? "auto" : "600px" }}>
         <InfoWrapper>
           <InfoRow imgStart={sixObjOne.imgStart}>
             <Column1>
