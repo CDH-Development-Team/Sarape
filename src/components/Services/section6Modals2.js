@@ -36,7 +36,19 @@ import {
   ServicesH2,
   ServicesP,
 } from "./ServicesElements";
-import { Column1, InfoContainer, InfoRow, InfoWrapper, Heading, TextWrapper, TopLine, Subtitle, Img, Column2, ImgWrap } from "../InfoSection/infoElements";
+import {
+  Column1,
+  InfoContainer,
+  InfoRow,
+  InfoWrapper,
+  Heading,
+  TextWrapper,
+  TopLine,
+  Subtitle,
+  Img,
+  Column2,
+  ImgWrap,
+} from "../InfoSection/infoElements";
 
 const customStyles = {
   content: {
@@ -105,186 +117,24 @@ const Services = () => {
           </ServicesCard>
         </div>
         <ServicesCard>
-          <ServicesIcon
-            src={Icon4}
-            onClick={() => {
-              setContent(
-                <div className="content" style={{ alignItems: "right" }}>
-                  <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
-                    {/* <h2>John Doe</h2> */}
-                    <div
-                      style={{
-                        fontSize: "3rem",
-                        fontFamily: "CancioneITCStd",
-                        padding: "1.3rem",
-                      }}
-                    >
-                      Transition Period Saltillo Sarapes
-                    </div>
-                    <div style={{ fontSize: "1.2rem", fontFamily: "myriad-pro" }}>
-                      Notice how, in this Transition period sarape, the designs have become increasingly intricate and
-                      how the centralized diamond design has multiplied, as compared to the sarapes made in the Classic
-                      period.
-                    </div>
-                  </div>
-                  <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
-                    <div style={{ width: "65%", alignItems: "right" }}>
-                      <img src={Icon4} style={{ width: "65%" }} alt="Developer" />
-                      <p style={{ fontSize: "0.9rem", padding: "0 0 .5rem 1.2rem", color: "white" }}>
-                        Post-Classic period sarape with concentric diamonds, c. 1870
-                        <br />
-                        Wool, cotton, and natural and synthetic dyes
-                        <br />
-                        Gift of Arizona Archaelogical and Historical Society
-                        <br />
-                        19766
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              );
-              openModal();
-            }}
-          />
+          <ServicesIcon src={Icon4} />
           {/* <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
         </ServicesCard>
         <div>
           <ServicesCard>
-            <ServicesIcon
-              src={Icon5}
-              onClick={() => {
-                setContent(
-                  <div className="content" style={{ alignItems: "right" }}>
-                    <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
-                      {/* <h2>John Doe</h2> */}
-                      <div
-                        style={{
-                          fontSize: "3rem",
-                          fontFamily: "CancioneITCStd",
-                          padding: "1.3rem",
-                        }}
-                      >
-                        Transition Period Saltillo Sarapes
-                      </div>
-                      <div style={{ fontSize: "1.2rem", fontFamily: "myriad-pro" }}>
-                        Notice the diamond elements within the central diamond. This well-worn weaving’s rich blue tones
-                        come from dye made from the indigo plant.
-                      </div>
-                    </div>
-                    <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
-                      <div style={{ width: "65%", alignItems: "right" }}>
-                        <img src={Icon5} style={{ width: "75%" }} alt="Developer" />
-                        <p style={{ fontSize: "0.9rem", padding: "0 0 .5rem 1.2rem", color: "white" }}>
-                          Post-Classic period sarape with concentric diamonds, c. 1870
-                          <br />
-                          Wool, cotton, and indigo and possibly synthetic dyes
-                          <br />
-                          12504
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                );
-                openModal();
-              }}
-            />
+            <ServicesIcon src={Icon5} />
             {/* <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
           </ServicesCard>
           <ServicesCard>
-            <ServicesIcon
-              src={Icon6}
-              onClick={() => {
-                setContent(
-                  <div className="content" style={{ alignItems: "right" }}>
-                    <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
-                      {/* <h2>John Doe</h2> */}
-                      <div
-                        style={{
-                          fontSize: "3rem",
-                          fontFamily: "CancioneITCStd",
-                          padding: "1.3rem",
-                        }}
-                      >
-                        Transition Period Saltillo Sarapes
-                        <br />
-                      </div>
-                      <div style={{ fontSize: "1.2rem", fontFamily: "myriad-pro" }}>
-                        Notice the lavishly decorated neck-slit <i>(bocamanga),</i> enabling this textile to be worn as
-                        a poncho.
-                      </div>
-                    </div>
-                    <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
-                      <div style={{ width: "65%", alignItems: "right" }}>
-                        <img src={Icon6} style={{ width: "65%" }} alt="Developer" />
-                        <p style={{ fontSize: "0.9rem", padding: "0 0 .5rem 1.2rem", color: "white" }}>
-                          Post-Classic period Saltillo sarape, c. 1870
-                          <br />
-                          Wool, cotton, velvet, silver, and synthetic dyes
-                          <br />
-                          On loan from Arizona History Museum, 86.60.19
-                          <br />
-                          AT-2020-15-2
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                );
-                openModal();
-              }}
-            />
+            <ServicesIcon src={Icon6} />
             {/* <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
           </ServicesCard>
         </div>
         <ServicesCard>
-          <ServicesIcon
-            src={Icon7}
-            onClick={() => {
-              setContent(
-                <div className="content" style={{ alignItems: "right" }}>
-                  <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
-                    {/* <h2>John Doe</h2> */}
-                    <div
-                      style={{
-                        fontSize: "3rem",
-                        fontFamily: "CancioneITCStd",
-                        padding: "1.3rem",
-                      }}
-                    >
-                      Transition Period Saltillo Sarapes
-                      <br />
-                    </div>
-
-                    <div style={{ fontSize: "1.2rem", fontFamily: "myriad-pro" }}>
-                      Demand for Saltillo sarapes spread throughout the world in the 1800s. European entrepreneurs,
-                      capitalizing on the popularity and high monetary value of these pieces, printed Saltillo sarape
-                      designs on woven textiles. Sold in Europe and Mexico, these less-expensive, Saltillo-inspired
-                      textiles were popular with tourists and those who couldn’t afford a real Saltillo sarape.
-                    </div>
-                  </div>
-                  <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
-                    <div style={{ width: "65%", alignItems: "right" }}>
-                      <img src={Icon7} style={{ width: "65%" }} alt="Developer" />
-                      <p style={{ fontSize: "0.9rem", padding: "0 0 .5rem 1.2rem", color: "white" }}>
-                        Textile printed with Saltillo sarape design
-                        <br />
-                        C. 1870-1900
-                        <br />
-                        Made in Germany or Austria
-                        <br />
-                        Gift of Eman L. Beck estate
-                        <br />
-                        E-4735
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              );
-              openModal();
-            }}
-          />
+          <ServicesIcon src={Icon7} />
           {/* <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
         </ServicesCard>
@@ -426,6 +276,7 @@ const Services = () => {
       <br></br>
       <ServicesH1>Historical Textiles 1750-1980</ServicesH1>
 
+      {/* sixObj section */}
       <InfoContainer lightBg={sixObj.lightBg} id={sixObj.id}>
         <InfoWrapper>
           <InfoRow imgStart={sixObj.imgStart}>
@@ -440,56 +291,58 @@ const Services = () => {
             </Column1>
             <Column2>
               <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
-                  <ImgWrap>
-                    <Img
-                      border="none"
-                      smallImg={sixObj.smallImg}
-                      src={Icon1}
-                      onClick={() => {
-                        setContent(
-                          <div className="content" style={{ alignItems: "right" }}>
-                            <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
-                              {/* <h2>John Doe</h2> */}
-                              <div
-                                style={{
-                                  fontSize: "3rem",
-                                  fontFamily: "CancioneITCStd",
-                                  padding: "1.3rem",
-                                }}
-                              >
-                                Classic Period Saltillo Sarapes
-                              </div>
-                            </div>
-                            <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
-                              <div style={{ width: "65%", alignItems: "right" }}>
-                                <img src={Icon1} style={{ width: "65%" }} alt="Developer" />
-                                <p style={{ fontSize: "0.9rem", padding: "0 0 .5rem 1.2rem", color: "white" }}>
-                                  Classic period Saltillo sarape, c. 1720–1860
-                                  <br />
-                                  Mexico
-                                  <br />
-                                  Wool, cotton, and cochineal, and other natural dyes
-                                  <br />
-                                  On loan from Arizona History Museum, 92.98
-                                  <br />
-                                  AT-2020-15-1
-                                </p>
-                              </div>
+                <ImgWrap>
+                  <Img
+                    border="none"
+                    smallImg={sixObj.smallImg}
+                    src={Icon1}
+                    onClick={() => {
+                      setContent(
+                        <div className="content" style={{ alignItems: "right" }}>
+                          <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
+                            {/* <h2>John Doe</h2> */}
+                            <div
+                              style={{
+                                fontSize: "3rem",
+                                fontFamily: "CancioneITCStd",
+                                padding: "1.3rem",
+                              }}
+                            >
+                              Classic Period Saltillo Sarapes
                             </div>
                           </div>
-                        );
-                        openModal();
-                      }}
-                      alt=""
-                    />
-                    <Subtitle darkText={sixObj.darkText} style={{ fontFamily: "myriad-pro" }}>
-                      {sixObj.imgdesc2}
-                    </Subtitle>
-                  </ImgWrap>
-                  {/* Second column of images */}
-                  <div style={{ display: "flex", flexDirection: "column"}}>
-                    <ImgWrap>
-                      <Img src={Icon2} onClick={() => {
+                          <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
+                            <div style={{ width: "65%", alignItems: "right" }}>
+                              <img src={Icon1} style={{ width: "65%" }} alt="Developer" />
+                              <p style={{ fontSize: "0.9rem", padding: "0 0 .5rem 1.2rem", color: "white" }}>
+                                Classic period Saltillo sarape, c. 1720–1860
+                                <br />
+                                Mexico
+                                <br />
+                                Wool, cotton, and cochineal, and other natural dyes
+                                <br />
+                                On loan from Arizona History Museum, 92.98
+                                <br />
+                                AT-2020-15-1
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                      openModal();
+                    }}
+                    alt=""
+                  />
+                  <Subtitle darkText={sixObj.darkText} style={{ fontFamily: "myriad-pro" }}>
+                    {sixObj.imgdesc2}
+                  </Subtitle>
+                </ImgWrap>
+                {/* Second column of images */}
+                <div style={{ display: "flex", flexDirection: "column" }}>
+                  <ImgWrap>
+                    <Img
+                      src={Icon2}
+                      onClick={() => {
                         setContent(
                           <div className="content" style={{ alignItems: "right" }}>
                             <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
@@ -523,10 +376,13 @@ const Services = () => {
                           </div>
                         );
                         openModal();
-                      }}/>
-                    </ImgWrap>
-                    <ImgWrap>
-                      <Img src={Icon3} onClick={() => {
+                      }}
+                    />
+                  </ImgWrap>
+                  <ImgWrap>
+                    <Img
+                      src={Icon3}
+                      onClick={() => {
                         setContent(
                           <div className="content" style={{ alignItems: "right" }}>
                             <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
@@ -560,9 +416,201 @@ const Services = () => {
                           </div>
                         );
                         openModal();
-                      }} />
-                    </ImgWrap>
-                  </div>
+                      }}
+                    />
+                  </ImgWrap>
+                </div>
+              </div>
+            </Column2>
+          </InfoRow>
+        </InfoWrapper>
+      </InfoContainer>
+
+      {/* sixObjOne section */}
+      <InfoContainer lightBg={sixObjOne.lightBg} id={sixObjOne.id}>
+        <InfoWrapper>
+          <InfoRow imgStart={sixObjOne.imgStart}>
+            <Column1>
+              <Heading lightText={sixObjOne.lightText}>{sixObjOne.headline}</Heading>
+              <TextWrapper>
+                <TopLine>{sixObjOne.topLine}</TopLine>
+
+                <Subtitle darkText={sixObjOne.darkText} style={{ fontFamily: "myriad-pro" }}>
+                  {sixObjOne.description}
+                </Subtitle>
+                <Subtitle darkText={sixObjOne.darkText} style={{ fontFamily: "myriad-pro" }}>
+                  {sixObjOne.description2}
+                </Subtitle>
+              </TextWrapper>
+            </Column1>
+            <Column2>
+              <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                <div style={{ display: "flex", flexDirection: "column", justifyContent: "start" }}>
+                  <ImgWrap>
+                    <Img src={Icon4} onClick={() => {
+                      setContent(
+                        <div className="content" style={{ alignItems: "right" }}>
+                          <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
+                            {/* <h2>John Doe</h2> */}
+                            <div
+                              style={{
+                                fontSize: "3rem",
+                                fontFamily: "CancioneITCStd",
+                                padding: "1.3rem",
+                              }}
+                            >
+                              Transition Period Saltillo Sarapes
+                            </div>
+                            <div style={{ fontSize: "1.2rem", fontFamily: "myriad-pro" }}>
+                              Notice how, in this Transition period sarape, the designs have become increasingly intricate and
+                              how the centralized diamond design has multiplied, as compared to the sarapes made in the Classic
+                              period.
+                            </div>
+                          </div>
+                          <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
+                            <div style={{ width: "65%", alignItems: "right" }}>
+                              <img src={Icon4} style={{ width: "65%" }} alt="Developer" />
+                              <p style={{ fontSize: "0.9rem", padding: "0 0 .5rem 1.2rem", color: "white" }}>
+                                Post-Classic period sarape with concentric diamonds, c. 1870
+                                <br />
+                                Wool, cotton, and natural and synthetic dyes
+                                <br />
+                                Gift of Arizona Archaelogical and Historical Society
+                                <br />
+                                19766
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                      openModal();
+                    }} />
+                  </ImgWrap>
+                  <ImgWrap>
+                    <Img src={Icon5} onClick={() => {
+                      setContent(
+                        <div className="content" style={{ alignItems: "right" }}>
+                          <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
+                            {/* <h2>John Doe</h2> */}
+                            <div
+                              style={{
+                                fontSize: "3rem",
+                                fontFamily: "CancioneITCStd",
+                                padding: "1.3rem",
+                              }}
+                            >
+                              Transition Period Saltillo Sarapes
+                            </div>
+                            <div style={{ fontSize: "1.2rem", fontFamily: "myriad-pro" }}>
+                              Notice the diamond elements within the central diamond. This well-worn weaving’s rich blue tones
+                              come from dye made from the indigo plant.
+                            </div>
+                          </div>
+                          <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
+                            <div style={{ width: "65%", alignItems: "right" }}>
+                              <img src={Icon5} style={{ width: "75%" }} alt="Developer" />
+                              <p style={{ fontSize: "0.9rem", padding: "0 0 .5rem 1.2rem", color: "white" }}>
+                                Post-Classic period sarape with concentric diamonds, c. 1870
+                                <br />
+                                Wool, cotton, and indigo and possibly synthetic dyes
+                                <br />
+                                12504
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                      openModal();
+                    }} />
+                  </ImgWrap>
+                </div>
+                <div style={{ display: "flex", flexDirection: "column", justifyContent: "end" }}>
+                  <ImgWrap>
+                    <Img src={Icon6} onClick={() => {
+                      setContent(
+                        <div className="content" style={{ alignItems: "right" }}>
+                          <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
+                            {/* <h2>John Doe</h2> */}
+                            <div
+                              style={{
+                                fontSize: "3rem",
+                                fontFamily: "CancioneITCStd",
+                                padding: "1.3rem",
+                              }}
+                            >
+                              Transition Period Saltillo Sarapes
+                              <br />
+                            </div>
+                            <div style={{ fontSize: "1.2rem", fontFamily: "myriad-pro" }}>
+                              Notice the lavishly decorated neck-slit <i>(bocamanga),</i> enabling this textile to be worn as
+                              a poncho.
+                            </div>
+                          </div>
+                          <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
+                            <div style={{ width: "65%", alignItems: "right" }}>
+                              <img src={Icon6} style={{ width: "65%" }} alt="Developer" />
+                              <p style={{ fontSize: "0.9rem", padding: "0 0 .5rem 1.2rem", color: "white" }}>
+                                Post-Classic period Saltillo sarape, c. 1870
+                                <br />
+                                Wool, cotton, velvet, silver, and synthetic dyes
+                                <br />
+                                On loan from Arizona History Museum, 86.60.19
+                                <br />
+                                AT-2020-15-2
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                      openModal();
+                    }} />
+                  </ImgWrap>
+                  <ImgWrap>
+                    <Img src={Icon7} onClick={() => {
+                      setContent(
+                        <div className="content" style={{ alignItems: "right" }}>
+                          <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
+                            {/* <h2>John Doe</h2> */}
+                            <div
+                              style={{
+                                fontSize: "3rem",
+                                fontFamily: "CancioneITCStd",
+                                padding: "1.3rem",
+                              }}
+                            >
+                              Transition Period Saltillo Sarapes
+                              <br />
+                            </div>
+
+                            <div style={{ fontSize: "1.2rem", fontFamily: "myriad-pro" }}>
+                              Demand for Saltillo sarapes spread throughout the world in the 1800s. European entrepreneurs,
+                              capitalizing on the popularity and high monetary value of these pieces, printed Saltillo sarape
+                              designs on woven textiles. Sold in Europe and Mexico, these less-expensive, Saltillo-inspired
+                              textiles were popular with tourists and those who couldn’t afford a real Saltillo sarape.
+                            </div>
+                          </div>
+                          <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
+                            <div style={{ width: "65%", alignItems: "right" }}>
+                              <img src={Icon7} style={{ width: "65%" }} alt="Developer" />
+                              <p style={{ fontSize: "0.9rem", padding: "0 0 .5rem 1.2rem", color: "white" }}>
+                                Textile printed with Saltillo sarape design
+                                <br />
+                                C. 1870-1900
+                                <br />
+                                Made in Germany or Austria
+                                <br />
+                                Gift of Eman L. Beck estate
+                                <br />
+                                E-4735
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                      openModal();
+                    }} />
+                  </ImgWrap>
+                </div>
               </div>
             </Column2>
           </InfoRow>
@@ -570,7 +618,7 @@ const Services = () => {
       </InfoContainer>
 
       {/* <HistoricalSection {...sixObj} /> */}
-      <HistoricalSection {...sixObjOne} />
+      {/* <HistoricalSection {...sixObjOne} /> */}
       <HistoricalSection {...sixObjTwo} />
       <HistoricalSection {...sixObjThree} />
     </ServicesContainer>
