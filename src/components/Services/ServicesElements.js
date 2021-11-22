@@ -101,7 +101,7 @@ export const ServicesH1 = styled.h1`
   color: #fff;
   margin-bottom: 44px;
   // margin-left: 30px;
-  text-align: center;
+  text-align: left;
   @media screen and (max-width: 480px) {
     font-size: 2rem;
   }

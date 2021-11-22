@@ -58,32 +58,53 @@ const HistoricalSection = ({
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
 
-                <Subtitle darkText={darkText} style={{ fontFamily: "myriad-pro" }}>
+                <Subtitle
+                  darkText={darkText}
+                  style={{ fontFamily: "myriad-pro", fontSize: "1.5rem" }}
+                >
                   {description}
                 </Subtitle>
-                <Subtitle darkText={darkText} style={{ fontFamily: "myriad-pro" }}>
+                <Subtitle
+                  darkText={darkText}
+                  style={{ fontFamily: "myriad-pro", fontSize: "1.5rem" }}
+                >
                   {description2}
                 </Subtitle>
-                <Subtitle darkText={darkText} style={{ fontFamily: "myriad-pro" }}>
+                <Subtitle
+                  darkText={darkText}
+                  style={{ fontFamily: "myriad-pro", fontSize: "1.5rem" }}
+                >
                   {description3}
                 </Subtitle>
                 <Img border="none" smallImg={smallImg} src={img3} alt="" />
-                <Subtitle darkText={darkText} style={{ fontFamily: "myriad-pro" }}>
+                <Subtitle
+                  darkText={darkText}
+                  style={{ fontFamily: "myriad-pro", fontSize: "1.5rem" }}
+                >
                   {imgdesc4}
                 </Subtitle>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Subtitle darkText={darkText} style={{ fontFamily: "myriad-pro" }}>
+                <Subtitle
+                  darkText={darkText}
+                  style={{ fontFamily: "myriad-pro", fontSize: "1rem" }}
+                >
                   {imgdesc}
                 </Subtitle>
                 <Img border="none" smallImg={smallImg} src={img} alt="" />
-                <Subtitle darkText={darkText} style={{ fontFamily: "myriad-pro" }}>
+                <Subtitle
+                  darkText={darkText}
+                  style={{ fontFamily: "myriad-pro", fontSize: "1rem" }}
+                >
                   {imgdesc2}
                 </Subtitle>
                 <Img border="none" smallImg={smallImg} src={img2} alt="" />
-                <Subtitle darkText={darkText} style={{ fontFamily: "myriad-pro" }}>
+                <Subtitle
+                  darkText={darkText}
+                  style={{ fontFamily: "myriad-pro", fontSize: "1rem" }}
+                >
                   {imgdesc3}
                 </Subtitle>
               </ImgWrap>

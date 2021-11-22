@@ -48,11 +48,9 @@ export const GeographyEntryText = styled.div`
 `;
 
 export const GeographyEntryDescription = styled.div`
-  margin: 50px 0px;
   width: ${({ wide }) => (wide ? "40%" : "80%")};
-  float: right;
-  text-align: right;
-  font-size: 1.6vmin;
+  float: left;
+  text-align: left;
 `;
 
 export const GeographyStatues = styled.div`
