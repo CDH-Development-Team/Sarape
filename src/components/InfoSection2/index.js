@@ -49,27 +49,27 @@ const InfoSection = ({
             </Heading>
             <Subtitle
               darkText={darkText}
-              style={{ fontSize: "1.5rem", height: "125px" }}
+              style={{ fontSize: "1.5rem", height: "auto" }}
             >
               {description}
             </Subtitle>
             <Subtitle
               darkText={darkText}
-              style={{ fontSize: "1.5rem", height: "225px" }}
+              style={{ fontSize: "1.5rem", height: "auto" }}
             >
               {description2}
             </Subtitle>
             <Subtitle
               darkText={darkText}
-              style={{ fontSize: "1.5rem", height: "200px" }}
+              style={{ fontSize: "1.5rem", height: "auto" }}
             >
               {description3}
             </Subtitle>
             <div
               style={{
                 fontSize: "1rem",
-                marginLeft: "500px",
-                marginTop: "125px",
+                marginLeft: "280px",
+                marginTop: "70px",
               }}
             >
               <p darkText={darkText}>{cap}</p>
@@ -79,7 +79,7 @@ const InfoSection = ({
           </Column1>
           <Column2 style={{ marginRight: "50px" }}>
             <ImgWrap>
-              <Img src={img} alt={alt} style={{ marginTop: "10px" }} />
+              <Img src={img} alt={alt} style={{ marginTop: "5rem" }} />
             </ImgWrap>
           </Column2>
         </InfoRow>

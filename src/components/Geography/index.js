@@ -678,6 +678,7 @@ const Geography = () => {
             Coahuila, in northeastern Mexico. The Saltillo sarape grew out of
             Indigenous weaving traditions and designs combined with Spanish
             weaving technology and influence. <br />
+            <br></br>
             In 1519, upon entering Mexico, Spanish military leader Hernan Cortés
             and his soldiers formed an alliance with the Tlaxcalan Indians of
             central Mexico to take over the vast Aztec empire. After the defeat

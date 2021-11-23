@@ -112,10 +112,10 @@ const Services = () => {
                   >
                     <p
                       style={{
-                        marginTop: "30rem",
+                        marginTop: "25rem",
                         fontSize: "1rem",
                         color: "white",
-                        marginLeft: "20rem",
+                        marginLeft: "10rem",
                       }}
                     >
                       Naturally dyed. Dyes colors made from tree moss, black
@@ -155,10 +155,10 @@ const Services = () => {
                     {" "}
                     <p
                       style={{
-                        marginTop: "32rem",
+                        marginTop: "25rem",
                         fontSize: "1rem",
                         color: "white",
-                        marginLeft: "20rem",
+                        marginLeft: "15rem",
                       }}
                     >
                       Naturally dyed. Dyes colors made from tree moss, indigo,
@@ -197,7 +197,7 @@ const Services = () => {
                   >
                     <p
                       style={{
-                        marginTop: "37rem",
+                        marginTop: "36rem",
                         fontSize: "1rem",
                         color: "white",
                         marginLeft: "20rem",
@@ -244,10 +244,10 @@ const Services = () => {
                     {" "}
                     <p
                       style={{
-                        marginTop: "38rem",
+                        marginTop: "32rem",
                         fontSize: "1rem",
                         color: "white",
-                        marginLeft: "20rem",
+                        marginLeft: "15rem",
                       }}
                     >
                       Naturally dyed. Dyes colors made from indigo.<br></br>
@@ -286,10 +286,10 @@ const Services = () => {
                     {" "}
                     <p
                       style={{
-                        marginTop: "38rem",
+                        marginTop: "34rem",
                         fontSize: "1rem",
                         color: "white",
-                        marginLeft: "20rem",
+                        marginLeft: "15rem",
                       }}
                     >
                       Naturally dyed. Dyes colors made from tree moss, Mexican
@@ -327,10 +327,10 @@ const Services = () => {
                   >
                     <p
                       style={{
-                        marginTop: "38rem",
+                        marginTop: "34rem",
                         fontSize: "1rem",
                         color: "white",
-                        marginLeft: "20rem",
+                        marginLeft: "15rem",
                       }}
                     >
                       Naturally dyed. Dyes colors made from Mexican tarragon,
@@ -360,14 +360,19 @@ const Services = () => {
         </ServicesCard>
       </ServicesWrapper>
       <ServicesH1
-        style={{ marginTop: "30px", marginLeft: "-53rem", textAlign: "left" }}
+        style={{ marginTop: "30px", marginLeft: "-40rem", textAlign: "left" }}
       >
         FRAGMENT SERIES BY PORFIRIO GUTIERREZ
       </ServicesH1>
-      <InfoRow style={{ height: "300px" }}>
+      <InfoRow style={{ height: "400px" }}>
         <Column1>
           <div
-            style={{ color: "white", fontSize: "1.5rem", marginLeft: "3rem" }}
+            style={{
+              color: "white",
+              fontSize: "1.5rem",
+              height: "auto",
+              marginLeft: "3rem",
+            }}
           >
             My ongoing Fragment series is my interpretation of one of the most
             remarkable weaving traditions created by the blending of Native
@@ -387,6 +392,7 @@ const Services = () => {
               color: "white",
               fontSize: "1.5rem",
               marginRight: "3rem",
+              height: "auto",
             }}
           >
             “This art form is a deep part of my culture and is my life. It is
@@ -398,8 +404,9 @@ const Services = () => {
           <div
             style={{
               fontFamily: "Lucida",
-              marginTop: "35px",
-              marginLeft: "450px",
+              marginTop: "25px",
+              marginLeft: "350px",
+              height: "auto",
               color: "white",
               fontSize: "1.5rem",
             }}

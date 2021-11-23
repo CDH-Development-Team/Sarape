@@ -57,11 +57,11 @@ export const ServicesWrapper7 = styled.div`
 export const ServicesWrapper = styled.div`
   max-width: auto;
   margin: 0;
-  margin-left: -20rem;
+  margin-left: -10rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   align-items: left;
-  grid-gap: 25px;
+  grid-gap: 10px;
   padding: 0 0px;
   overflow: hidden;
   @media screen and (max-width: 1000px) {

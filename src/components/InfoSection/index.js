@@ -42,34 +42,33 @@ const InfoSection = ({
     <>
       <InfoContainer lightBg={lightBg} id={id}>
         <InfoRow imgStart={imgStart}>
-          <Column1 style={{ marginLeft: "3rem", width: "85%" }}>
+          <Column1 style={{ marginLeft: "3rem", width: "95%" }}>
             <TopLine>{topLine}</TopLine>
             <Heading lightText={lightText} style={{ fontSize: "2.5rem" }}>
               {headline}
             </Heading>
             <Subtitle
               darkText={darkText}
-              style={{ fontSize: "1.5rem", height: "175px" }}
+              style={{ fontSize: "1.5rem", height: "auto" }}
             >
               {description}
             </Subtitle>
             <Subtitle
               darkText={darkText}
-              style={{ fontSize: "1.5rem", height: "200px" }}
+              style={{ fontSize: "1.5rem", height: "auto" }}
             >
               {description2}
             </Subtitle>
             <Subtitle
               darkText={darkText}
-              style={{ fontSize: "1.5rem", height: "175px" }}
+              style={{ fontSize: "1.5rem", height: "auto" }}
             >
               {description3}
             </Subtitle>
             <div
               style={{
                 fontSize: "1rem",
-                marginLeft: "25rem",
-                marginTop: "-75px",
+                marginLeft: "20rem",
               }}
             >
               <p darkText={darkText}>{cap}</p>

@@ -209,8 +209,8 @@ const DyeingPage = () => {
                         </div>
                         <div
                           style={{
-                            marginLeft: "30rem",
-                            marginTop: "12rem",
+                            marginLeft: "25rem",
+                            marginTop: "5rem",
                             fontSize: "1rem",
                             fontFamily: "myriad-pro",
                           }}
@@ -258,12 +258,12 @@ const DyeingPage = () => {
                             fontFamily: "Lucida",
                           }}
                         >
-                          “The dye plants that come from the earth <br></br>are
-                          the soul of my artwork.” <br></br>
+                          “The dye plants that come from the earth are the soul
+                          of my artwork.” <br></br>
                           <p
                             style={{
                               fontFamily: "Lucida",
-                              paddingLeft: "18rem",
+                              paddingLeft: "12rem",
                               marginTop: "2rem",
                             }}
                           >
@@ -273,7 +273,7 @@ const DyeingPage = () => {
                         <div
                           style={{
                             marginLeft: "28rem",
-                            marginTop: "12rem",
+                            marginTop: "7rem",
                             fontSize: "1rem",
                             fontFamily: "myriad-pro",
                           }}
@@ -321,7 +321,7 @@ const DyeingPage = () => {
                         <div
                           style={{
                             marginLeft: "5rem",
-                            marginTop: "40rem",
+                            marginTop: "35rem",
                             fontSize: "1rem",
                             fontFamily: "myriad-pro",
                           }}
@@ -356,7 +356,7 @@ const DyeingPage = () => {
             <img
               src={Icon3}
               alt=""
-              width={"100%"}
+              style={{ width: "100%", marginTop: "3.7rem" }}
               onClick={() => {
                 setContent(
                   <div className="content">
@@ -377,7 +377,7 @@ const DyeingPage = () => {
                           style={{
                             fontFamily: "Lucida",
                             fontSize: "1.5rem",
-                            paddingLeft: "25rem",
+                            paddingLeft: "15rem",
                             marginTop: "2rem",
                           }}
                         >
@@ -386,7 +386,7 @@ const DyeingPage = () => {
                         <div
                           style={{
                             marginLeft: "22rem",
-                            marginTop: "16rem",
+                            marginTop: "10rem",
                             fontSize: "1rem",
                             fontFamily: "myriad-pro",
                           }}
@@ -425,13 +425,12 @@ const DyeingPage = () => {
               onClick={() => {
                 setContent(
                   <div className="content1">
-                    <div className="row" style={{ margin: "0 6rem 2rem 6rem" }}>
+                    <div className="row" style={{}}>
                       <div className="column5">
                         <p
                           style={{
                             fontSize: "1.5rem",
                             fontFamily: "myriad-pro",
-                            padding: "1rem",
                           }}
                         >
                           I inherited the deep artistic traditions and our rich
@@ -446,21 +445,10 @@ const DyeingPage = () => {
                           that one will follow that path. I do not work with
                           natural dyes simply because I was born into the
                           tradition, or because there is money to be made, or
-                          because it is a trend.
-                        </p>
-                      </div>
-
-                      <div className="column5">
-                        <p
-                          style={{
-                            fontSize: "1.5rem",
-                            fontFamily: "myriad-pro",
-                            padding: "1rem",
-                          }}
-                        >
-                          I work with natural dyes because I discovered my gift
-                          and calling within our traditional practice and
-                          developed a profound connection with Mother Earth.
+                          because it is a trend.I work with natural dyes because
+                          I discovered my gift and calling within our
+                          traditional practice and developed a profound
+                          connection with Mother Earth.
                           <br></br>
                           <br></br>Through my teaching, I aim to bring awareness
                           of traditional wisdom and values. It is extremely
@@ -471,29 +459,27 @@ const DyeingPage = () => {
                           is to confront the disconnect that exists between the
                           object and the culture that nurtures its creation.{" "}
                         </p>
+                        <div
+                          className="quoteDiv"
+                          style={{
+                            color: "#fff",
+                            fontSize: "1rem",
+                            marginLeft: "15rem",
+                          }}
+                        >
+                          Juana Gutiérrez Contreras pulling yarn from the dye
+                          pot. Cochineal produced the red color.<br></br>Joe
+                          Coca, photographer, 2019
+                        </div>
                       </div>
-                    </div>
-                    <div className="">
-                      <div className="">
+
+                      <div className="column5">
                         <img
                           src={Icon9}
                           alt="Developer"
-                          style={{ width: "80%", marginLeft: "9rem" }}
+                          style={{ width: "100%", marginTop: "10rem" }}
                         />
                       </div>
-                    </div>
-
-                    <div
-                      className="quoteDiv"
-                      style={{
-                        color: "#fff",
-                        fontSize: "1rem",
-                        marginLeft: "7rem",
-                      }}
-                    >
-                      Juana Gutiérrez Contreras pulling yarn from the dye pot.
-                      Cochineal produced the red color.<br></br>Joe Coca,
-                      photographer, 2019
                     </div>
                   </div>
                 );
@@ -548,7 +534,7 @@ const DyeingPage = () => {
                         <div
                           style={{
                             fontSize: "1rem",
-                            marginLeft: "25rem",
+                            marginLeft: "15rem",
                             marginRight: "3rem",
                             marginTop: "2rem",
                             fontFamily: "myriad-pro",
@@ -627,14 +613,14 @@ const DyeingPage = () => {
                         </div>
                         <div
                           style={{
-                            marginLeft: "20rem",
+                            marginLeft: "15rem",
                             marginTop: "3rem",
                             fontSize: "1rem",
                             fontFamily: "myriad-pro",
                           }}
                         >
                           Indigenous man using a deer’s tail to scrape cochineal
-                          off of a nopal pad.
+                          off of a nopal pad.<br></br>
                           <br></br>Memoria sobre la Naturaleza, Cultivo, y
                           Beneficio de la Grana, Mexico City, 1777<br></br>{" "}
                           Photograph of Ayer Ms. 1031, plate 7<br></br>
@@ -703,8 +689,8 @@ const DyeingPage = () => {
                         </div>
                         <div
                           style={{
-                            marginLeft: "25rem",
-                            marginTop: "8rem",
+                            marginLeft: "20rem",
+                            marginTop: "2rem",
                             fontSize: "1rem",
                             fontFamily: "myriad-pro",
                           }}
@@ -759,15 +745,15 @@ const DyeingPage = () => {
                         <div
                           style={{
                             marginLeft: "7rem",
-                            marginTop: "42rem",
+                            marginTop: "25rem",
                             fontSize: "1rem",
                             fontFamily: "myriad-pro",
                           }}
                         >
                           Using a mano and metate, cochineal is crushed into a
                           fine powder. To make dye, it will be combined with
-                          water and possibly other minerals.<br></br> Joe Coca,
-                          photographer, 2019
+                          water and possibly other minerals.<br></br>
+                          <br></br> Joe Coca, photographer, 2019
                         </div>
                       </div>
                       <div className="column7">
@@ -817,7 +803,7 @@ const DyeingPage = () => {
                             <br></br>{" "}
                             <p
                               style={{
-                                paddingLeft: "28rem",
+                                paddingLeft: "18rem",
                                 fontSize: "1.5rem",
                                 fontFamily: "Lucida",
                               }}
@@ -862,7 +848,7 @@ const DyeingPage = () => {
                           </div>
                           <div
                             style={{
-                              marginLeft: "35rem",
+                              marginLeft: "20rem",
                               marginTop: "3rem",
                               fontSize: "1rem",
                               fontFamily: "myriad-pro",
@@ -910,7 +896,7 @@ const DyeingPage = () => {
                         <div
                           style={{
                             marginLeft: "5rem",
-                            marginTop: "30rem",
+                            marginTop: "15rem",
                             fontSize: "1rem",
                             fontFamily: "myriad-pro",
                           }}
@@ -921,7 +907,7 @@ const DyeingPage = () => {
                           be scraped off, dried, and then ground into a rich,
                           purple-red powder to be used as a dye.
                           <br></br>
-                          <br></br>Javier Lazo Gutiérrez, photographer,
+                          <br></br>Javier Lazo Gutiérrez, photographer, 2016
                         </div>
                       </div>
                       <div className="column7">

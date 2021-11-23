@@ -75,8 +75,7 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
   margin-bottom: 35px;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: "1.5rem";
   font-family: myriad-pro, sans-serif;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
