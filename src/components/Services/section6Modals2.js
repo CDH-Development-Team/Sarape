@@ -27,6 +27,8 @@ import Icon7 from "../../textiles_png/6_textiles/6B5_E-4735.png";
 import Icon8 from "../../textiles_png/6_textiles/6C1_at_2020-13-2.png";
 import Icon9 from "../../textiles_png/6_textiles/6C2_at_2020-14-2.png";
 import Icon10 from "../../textiles_png/6_textiles/6C3_1980-2-53.png";
+import img2 from "../../textiles_png/6_textiles/six_other/6_saddle.png";
+import img3 from "../../textiles_png/6_textiles/six_other/6B1_keift_saddle.png";
 import close from "../../images/close.png";
 
 // import AnimeList from '../components/anime';
@@ -697,6 +699,16 @@ const Services = () => {
                                 style={{ width: "75%" }}
                                 alt="Developer"
                               />
+                              <img
+                                src={img2}
+                                style={{ width: "25%" }}
+                                alt="Developer"
+                              />
+                              <img
+                                src={img3}
+                                style={{ width: "25%" }}
+                                alt="Developer"
+                              />
                               <p
                                 style={{
                                   fontSize: "1rem",
@@ -977,6 +989,7 @@ const Services = () => {
                 </Subtitle>
               </ImgWrap>
             </Column2>
+            <HistoricalSection {...sixObjThree} />
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>
@@ -984,7 +997,6 @@ const Services = () => {
       {/* <HistoricalSection {...sixObj} /> */}
       {/* <HistoricalSection {...sixObjOne} /> */}
       {/* <HistoricalSection {...sixObjTwo} /> */}
-      <HistoricalSection {...sixObjThree} />
     </ServicesContainer>
   );
 };
