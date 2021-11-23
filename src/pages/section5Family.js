@@ -160,8 +160,7 @@ const FamilyPage = () => {
           <FamilyMosaic1 className="mosaic">
             <img
               src={Icon1}
-              height={"100%"}
-              width={"100%"}
+              style={{ height: "100%", width: "100%" }}
               alt=""
               onClick={() => {
                 setContent(
@@ -201,14 +200,13 @@ const FamilyPage = () => {
                         fiber), palm leaves, recycled copper thread, and
                         machine-spun wool yarn.
                       </div>
-                      <br></br>
-                      <br></br>
                       <div
                         style={{
                           color: "#fff",
                           fontSize: "1rem",
                           fontFamily: "myriad-pro",
-                          paddingTop: "10rem",
+                          marginLeft: "25rem",
+                          marginTop: "2rem",
                         }}
                       >
                         Bobbins of spun, dyed wool ready to use. Craig Holmes,
@@ -218,7 +216,7 @@ const FamilyPage = () => {
                     <img
                       src={Icon1}
                       alt="Developer"
-                      style={{ width: "100%" }}
+                      style={{ width: "100%", marginTop: "5rem" }}
                     />
                   </div>
                 );
@@ -257,107 +255,55 @@ const FamilyPage = () => {
                             fontSize: "1.5rem",
                           }}
                         >
-                          Churro sheep were introduced to the northern reaches
-                          of New Spain by Spanish colonizer Francisco Vázquez de
-                          Coronado in 1521. Weavers quickly adopted Churro wool
-                          and continue to prize it today.<br></br>
+                          Sheep are very special to my practice. Sheep’s wool
+                          comes in a variety of colors, ranging from white and
+                          light creams to tans, browns, and black. For dyeing
+                          yarn, white wool is the most desirable. Darker wool is
+                          also dyed, with beautiful results, but this cannot be
+                          achieved solely using natural dyes. Blending two or
+                          more colors of wool when carding gives a textured look
+                          to a yarn. Before we have wool to dye, though, the
+                          sheep must be sheared and their wool must be washed,
+                          carded (combed), and spun.
                           <br></br>
-                          <br></br>
+                          <br></br>My mother has been washing, carding, and
+                          spinning yarn since she was a young girl. She learned
+                          this skill at the knee of her mother, who was taught
+                          by her mother’s mother. Now in her late seventies, she
+                          concentrates more on grooming each piece, the final
+                          steps before presenting the textiles to the public.
+                          Today, we focus on the process of natural dyeing and
+                          weaving of textiles. We collaborate with other
+                          families in a nearby community to help with the
+                          washing, carding, and spinning of raw wool. In this
+                          way, we are contributing to other families’ livelihood
+                          as well as the preservation of their traditional
+                          practices.
                         </p>
                         <div
                           style={{
                             color: "#fff",
                             fontSize: "1rem",
                             fontFamily: "myriad-pro",
-                            paddingTop: "10rem",
+                            marginTop: "2rem",
+                            marginLeft: "15rem",
                           }}
                         >
+                          Churro sheep were introduced to the northern reaches
+                          of New Spain by Spanish colonizer Francisco Vázquez de
+                          Coronado in 1521. Weavers quickly adopted Churro wool
+                          and continue to prize it today.<br></br>
                           <br></br>Three male Navajo Churro sheep, Spin Dance
                           Acres, Boise, ID. Bonnie Barcus, <br></br>
                           photographer, 2018{" "}
                         </div>
                       </div>
-                      <div className="column4">
-                        <p
-                          style={{
-                            fontSize: "1.5rem",
-                            fontFamily: "myriad-pro",
-                            padding: "1.3rem",
-                          }}
-                        >
-                          <img
-                            src={Icon6}
-                            alt="Developer"
-                            style={{ width: "100%" }}
-                          />
-                        </p>
-                      </div>
-                    </div>
-                    <div className="row" style={{ margin: "0 6rem 2rem 6rem" }}>
-                      <div className="column3">
-                        <p
-                          style={{
-                            fontFamily: "myriad-pro",
-                            padding: "1rem",
-                            fontSize: "1.5rem",
-                          }}
-                        >
-                          Sheep are very special to my practice. Sheep’s wool
-                          comes in a variety of colors, ranging from white and
-                          light creams to tans, browns, and black. For dyeing
-                          yarn, white wool is the most desirable. Darker wool is
-                          also dyed, with beautiful results, but this cannot be
-                          achieved solely using natural dyes. Blending two
-                        </p>
-                      </div>
-
-                      <div className="column3">
-                        <p
-                          style={{
-                            fontFamily: "myriad-pro",
-                            padding: "1rem",
-                            fontSize: "1.5rem",
-                          }}
-                        >
-                          or more colors of wool when carding gives a textured
-                          look to a yarn. Before we have wool to dye, though,
-                          the sheep must be sheared and their wool must be
-                          washed, carded (combed), and spun.<br></br>
-                          <br></br>My mother has been washing, carding, and
-                          spinning yarn{" "}
-                        </p>
-                      </div>
-
-                      <div className="column3">
-                        <p
-                          style={{
-                            fontFamily: "myriad-pro",
-                            padding: "1rem",
-                            fontSize: "1.5rem",
-                          }}
-                        >
-                          since she was a young girl. She learned this skill at
-                          the knee of her mother, who was taught by her mother’s
-                          mother. Now in her late seventies, she concentrates
-                          more on grooming each piece, the final steps before
-                          presenting the textiles to the public. Today, we focus
-                          on the process of natural dyeing and weaving{" "}
-                        </p>
-                      </div>
-                      <div className="column3">
-                        <p
-                          style={{
-                            fontFamily: "myriad-pro",
-                            padding: "1rem",
-                            fontSize: "1.5rem",
-                          }}
-                        >
-                          of textiles. We collaborate with other families in a
-                          nearby community to help with the washing, carding,
-                          and spinning of raw wool. In this way, we are
-                          contributing to other families’ livelihood as well as
-                          the preservation of their traditional practices.{" "}
-                        </p>
+                      <div style={{ textAlign: "right", marginTop: "5rem" }}>
+                        <img
+                          src={Icon6}
+                          alt="Developer"
+                          style={{ width: "100%" }}
+                        />
                       </div>
                     </div>
                   </div>
@@ -383,9 +329,9 @@ const FamilyPage = () => {
                     <div
                       className=""
                       style={{
-                        width: "40%",
-                        paddingLeft: "5%",
-                        paddingRight: "10%",
+                        width: "60%",
+                        marginLeft: "2rem",
+                        marginRight: "3rem",
                         fontSize: "1.5rem",
                         fontFamily: "myriad-pro",
                       }}
@@ -423,12 +369,12 @@ const FamilyPage = () => {
                           color: "#fff",
                           fontSize: "1rem",
                           fontFamily: "myriad-pro",
-                          paddingTop: "7rem",
-                          paddingLeft: "1rem",
+                          paddingTop: "5rem",
+                          paddingLeft: "15rem",
                         }}
                       >
                         Andrea Contreras preparing cleaned wool for spinning.
-                        Nikhol Esterás, photographer, 2017
+                        <br></br>Nikhol Esterás, photographer, 2017
                       </p>
                       <br></br>
                     </div>
@@ -437,6 +383,7 @@ const FamilyPage = () => {
                       alt="Developer"
                       style={{
                         width: "55%",
+                        marginTop: "10rem",
                       }}
                     />
                   </div>
@@ -464,8 +411,8 @@ const FamilyPage = () => {
                       <div>
                         <div
                           style={{
-                            paddingLeft: "5rem",
-                            paddingRight: "5rem",
+                            marginLeft: "2rem",
+                            marginRight: "5rem",
                             fontSize: "1.5rem",
                             fontFamily: "myriad-pro",
                           }}
@@ -504,11 +451,22 @@ const FamilyPage = () => {
                         </div>
                         <div
                           style={{
+                            fontSize: "1rem",
+                            marginLeft: "38rem",
+                            marginTop: "2rem",
+                          }}
+                        >
+                          Baskets of dye materials <br></br>Joe Coca,
+                          photographer, 2019
+                        </div>
+                        <div
+                          style={{
                             fontSize: "1.5rem",
                             fontFamily: "Lucida",
                             color: "#fff",
-                            paddingTop: "10rem",
-                            paddingLeft: "4rem",
+                            paddingTop: "5rem",
+                            paddingLeft: "2rem",
+                            marginRight: "3rem",
                           }}
                         >
                           “The plants and trees are alive, just like us; we
@@ -518,7 +476,7 @@ const FamilyPage = () => {
                           <br></br>
                           <p
                             style={{
-                              paddingLeft: "5rem",
+                              paddingLeft: "32rem",
                               fontFamily: "Lucida",
                               fontSize: "1.5rem",
                             }}
@@ -533,7 +491,11 @@ const FamilyPage = () => {
                         <img
                           src={Icon2}
                           alt="Developer"
-                          style={{ marginRight: "5rem", width: "80%" }}
+                          style={{
+                            marginRight: "5rem",
+                            width: "100%",
+                            marginTop: "5rem",
+                          }}
                         />
                       </div>
                     </div>
@@ -561,8 +523,9 @@ const FamilyPage = () => {
                         <div
                           style={{
                             fontSize: "1.5rem",
-                            width: "90%",
+                            width: "80%",
                             fontFamily: "myriad-pro",
+                            marginLeft: "2rem",
                           }}
                         >
                           For me, natural dyeing is a spiritual process. We must
@@ -592,11 +555,22 @@ const FamilyPage = () => {
                         </div>
                         <div
                           style={{
+                            fontSize: "1rem",
+                            marginLeft: "30rem",
+                            marginTop: "2rem",
+                          }}
+                        >
+                          Undyed wool yarn<br></br>Alana Coghlan, photographer,
+                          2015
+                        </div>
+                        <div
+                          style={{
                             fontSize: "1.5rem",
                             fontFamily: "Lucida",
                             color: "#fff",
-                            width: "85%",
+                            width: "100%",
                             paddingTop: "5rem",
+                            marginLeft: "2rem",
                           }}
                         >
                           “When you work with nature respectfully, you do no
@@ -612,7 +586,7 @@ const FamilyPage = () => {
                           <br></br>
                           <p
                             style={{
-                              paddingLeft: "12rem",
+                              marginLeft: "28rem",
                               fontFamily: "Lucida",
                               fontSize: "1.5rem",
                             }}
@@ -627,7 +601,11 @@ const FamilyPage = () => {
                         <img
                           src={Icon7}
                           alt="Developer"
-                          style={{ marginRight: "5rem", width: "100%" }}
+                          style={{
+                            marginRight: "5rem",
+                            width: "100%",
+                            marginTop: "5rem",
+                          }}
                         />
                       </div>
                     </div>
@@ -656,13 +634,14 @@ const FamilyPage = () => {
             alt="Developer"
           /> */}
                     {/* <div className="text"> */}
-                    <div className="row" style={{ margin: "2rem" }}>
+                    <div className="row" style={{ margin: "1rem" }}>
                       <div className="column">
                         <p
                           style={{
                             fontFamily: "myriad-pro",
-
+                            marginRight: "7rem",
                             fontSize: "1.5rem",
+                            marginLeft: "2rem",
                           }}
                         >
                           My parents are the third generation of dyers and
@@ -671,53 +650,54 @@ const FamilyPage = () => {
                           first things your parents usually give you are a loom,
                           a spinning wheel, and enough materials to start a
                           studio, so you can feed your family. However, since my
-                          grandparents passed away{" "}
-                        </p>
-                      </div>
-                      <div className="column">
-                        <p
-                          style={{
-                            fontFamily: "myriad-pro",
-
-                            fontSize: "1.5rem",
-                          }}
-                        >
-                          before my parents got married, they had to figure it
-                          all out themselves.
+                          grandparents passed away before my parents got
+                          married, they had to figure it all out themselves.
                           <br />
                           <br />
                           My parents have always worked collaboratively to
                           create each piece—from cleaning wool, spinning it,
                           collecting the plants for dyeing, dyeing the wool, to
-                          weaving. To execute a piece, my mom{" "}
+                          weaving. To execute a piece, my mom does the carding
+                          and spinning, and my dad weaves. They loved working at
+                          night because night brings calmness and concentration.
+                          This is how they raised eleven kids. They always say
+                          that they are blessed that their humble work as
+                          artisans enabled them to raise their kids.
                         </p>
-                      </div>
-                      <div className="column">
                         <p
                           style={{
                             fontFamily: "myriad-pro",
-
-                            fontSize: "1.5rem",
+                            fontSize: "1rem",
+                            marginRight: "2rem",
+                            marginLeft: "20rem",
+                            marginTop: "2rem",
                           }}
                         >
-                          does the carding and spinning, and my dad weaves. They
-                          loved working at night because night brings calmness
-                          and concentration. This is how they raised eleven
-                          kids. They always say that they are blessed that their
-                          humble work as artisans enabled them to raise their
-                          kids.
+                          Porfirio’s parents, Amado Gutiérrez and Andrea
+                          Contreras.<br></br> Javier Lazo Gutiérrez,
+                          photographer, 2019
+                          <br></br>
+                          <br></br>
+                          The Gutiérrez family <br></br>Javier Lazo Gutiérrez,
+                          photographer 2015
                         </p>
                       </div>
-                    </div>
-                    <div className="row1" style={{ marginLeft: "3rem" }}>
-                      <div className="column1">
+                      <div
+                        className="column2"
+                        style={{
+                          marginTop: "2rem",
+                          marginLeft: "0rem",
+                          marginBottom: "3rem",
+                        }}
+                      >
                         <img
                           src={Icon5}
                           alt="Developer"
                           style={{ width: "70%" }}
                         />
                       </div>
-                      <div className="column1">
+                      <br></br>
+                      <div className="column2" style={{ marginLeft: "0rem" }}>
                         <img
                           src={Icon8}
                           alt="Developer"
@@ -725,6 +705,7 @@ const FamilyPage = () => {
                         />
                       </div>
                     </div>
+                    <div className="row1" style={{ marginLeft: "0rem" }}></div>
 
                     <div className="quoteDiv">
                       <p
@@ -773,7 +754,11 @@ const FamilyPage = () => {
                   <div className="content">
                     <div
                       className="text"
-                      style={{ width: "30%", marginLeft: "7rem" }}
+                      style={{
+                        width: "60%",
+                        marginLeft: "3rem",
+                        marginTop: "5rem",
+                      }}
                     >
                       {/* <h2>John Doe</h2> */}
                       <div
@@ -787,14 +772,10 @@ const FamilyPage = () => {
                         the future.
                         <br />
                         <br />
-                        <div
-                          style={{
-                            alignItems: "left",
-                          }}
-                        >
+                        <div>
                           <p
                             style={{
-                              paddingLeft: "10rem",
+                              paddingLeft: "25rem",
                               fontFamily: "Lucida",
                               fontSize: "1.5rem",
                             }}
@@ -829,8 +810,7 @@ const FamilyPage = () => {
                       <div
                         style={{
                           fontFamily: "myriad-pro",
-                          paddingTop: "40rem",
-
+                          marginLeft: "20rem",
                           fontSize: "1rem",
                         }}
                       >
@@ -846,6 +826,7 @@ const FamilyPage = () => {
                         height: "60%",
                         width: "40%",
                         alignItems: "right",
+                        marginTop: "5rem",
                       }}
                       alt="Developer"
                     />
@@ -878,13 +859,14 @@ const FamilyPage = () => {
             alt="Developer"
           /> */}
                     {/* <div className="text"> */}
-                    <div className="row" style={{ margin: "2rem" }}>
+                    <div className="row" style={{ margin: "1rem" }}>
                       <div className="column">
                         <p
                           style={{
                             fontFamily: "myriad-pro",
-
+                            marginRight: "7rem",
                             fontSize: "1.5rem",
+                            marginLeft: "2rem",
                           }}
                         >
                           My parents are the third generation of dyers and
@@ -893,53 +875,54 @@ const FamilyPage = () => {
                           first things your parents usually give you are a loom,
                           a spinning wheel, and enough materials to start a
                           studio, so you can feed your family. However, since my
-                          grandparents passed away{" "}
-                        </p>
-                      </div>
-                      <div className="column">
-                        <p
-                          style={{
-                            fontFamily: "myriad-pro",
-
-                            fontSize: "1.5rem",
-                          }}
-                        >
-                          before my parents got married, they had to figure it
-                          all out themselves.
+                          grandparents passed away before my parents got
+                          married, they had to figure it all out themselves.
                           <br />
                           <br />
                           My parents have always worked collaboratively to
                           create each piece—from cleaning wool, spinning it,
                           collecting the plants for dyeing, dyeing the wool, to
-                          weaving. To execute a piece, my mom{" "}
+                          weaving. To execute a piece, my mom does the carding
+                          and spinning, and my dad weaves. They loved working at
+                          night because night brings calmness and concentration.
+                          This is how they raised eleven kids. They always say
+                          that they are blessed that their humble work as
+                          artisans enabled them to raise their kids.
                         </p>
-                      </div>
-                      <div className="column">
                         <p
                           style={{
                             fontFamily: "myriad-pro",
-
-                            fontSize: "1.5rem",
+                            fontSize: "1rem",
+                            marginRight: "2rem",
+                            marginLeft: "20rem",
+                            marginTop: "2rem",
                           }}
                         >
-                          does the carding and spinning, and my dad weaves. They
-                          loved working at night because night brings calmness
-                          and concentration. This is how they raised eleven
-                          kids. They always say that they are blessed that their
-                          humble work as artisans enabled them to raise their
-                          kids.
+                          Porfirio’s parents, Amado Gutiérrez and Andrea
+                          Contreras.<br></br> Javier Lazo Gutiérrez,
+                          photographer, 2019
+                          <br></br>
+                          <br></br>
+                          The Gutiérrez family <br></br>Javier Lazo Gutiérrez,
+                          photographer 2015
                         </p>
                       </div>
-                    </div>
-                    <div className="row1" style={{ marginLeft: "3rem" }}>
-                      <div className="column1">
+                      <div
+                        className="column2"
+                        style={{
+                          marginTop: "2rem",
+                          marginLeft: "0rem",
+                          marginBottom: "3rem",
+                        }}
+                      >
                         <img
                           src={Icon5}
                           alt="Developer"
                           style={{ width: "70%" }}
                         />
                       </div>
-                      <div className="column1">
+                      <br></br>
+                      <div className="column2" style={{ marginLeft: "0rem" }}>
                         <img
                           src={Icon8}
                           alt="Developer"
@@ -947,6 +930,7 @@ const FamilyPage = () => {
                         />
                       </div>
                     </div>
+                    <div className="row1" style={{ marginLeft: "0rem" }}></div>
 
                     <div className="quoteDiv">
                       <p
@@ -1003,7 +987,7 @@ const FamilyPage = () => {
                         <div
                           style={{
                             color: "#fff",
-                            fontFamily: "Lucida",
+                            fontFamily: "myriad-pro",
                             padding: "1rem",
                             fontSize: "1.5rem",
                           }}
@@ -1023,21 +1007,13 @@ const FamilyPage = () => {
                           them. That is how traditions stay alive, allowing them
                           to grow, evolve, preserve, and innovate.<br></br>
                           <br></br>
-                          <p
-                            style={{
-                              paddingLeft: "14rem",
-                              fontFamily: "Lucida",
-                              fontSize: "1.5rem",
-                            }}
-                          >
-                            Porfirio Gutiérrez
-                          </p>
                           <div
                             style={{
                               color: "#fff",
                               fontFamily: "myriad-pro",
-                              paddingTop: "10rem",
+                              paddingTop: "5rem",
                               fontSize: "1rem",
+                              marginLeft: "20rem",
                             }}
                           >
                             Porfirio Gutiérrez working with his wife and son at
@@ -1076,14 +1052,14 @@ const FamilyPage = () => {
           alignItems: "center",
           height: "auto",
           backgroundColor: "#4a0033",
-          padding: width > 480 ? "5rem" : "1rem",
         }}
       >
-        <div style={{ padding: "2rem" }}>
+        <div style={{ padding: "3rem" }}>
           <h1
             style={{
               fontSize: "2.5rem",
               color: "#fff",
+              marginLeft: "-15px",
             }}
           >
             Family and Philosophy

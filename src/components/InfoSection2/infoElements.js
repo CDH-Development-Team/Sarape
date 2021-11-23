@@ -3,20 +3,18 @@ import styled from "styled-components";
 export const InfoContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#4a0033")};
-
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
 `;
 
 export const InfoWrapper = styled.div`
-  display: grid;
   z-index: 1;
+  margin-left: 2.5rem;
   width: 100%;
-  max-width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 0px;
+
   justify-content: center;
 `;
 
@@ -37,13 +35,14 @@ export const Column1 = styled.div`
   margin-bottom: 0px;
   padding: 0 15px;
   grid-area: col1;
-  background-color: ${({ block }) => (block ? "#AD0042" : "#4a0033")}; ;
+  height: 100%;
 `;
 
 export const Column2 = styled.div`
   margin-bottom: 0px;
   padding: 0 15px;
   grid-area: col2;
+  height: 100%;
 `;
 
 export const TextWrapper = styled.div`
@@ -63,7 +62,7 @@ export const TopLine = styled.p`
 `;
 
 export const Heading = styled.h1`
-  margin-bottom: 14px;
+  margin-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
@@ -75,11 +74,20 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: myriad-pro, sans-serif;
+  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+`;
+
+export const Subtitle1 = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
-  font-family: myraid-pro;
   line-height: 24px;
+  font-family: myriad-pro, sans-serif;
+  padding: 40px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
 
@@ -89,16 +97,12 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 50px;
-  height: 50%;
+  max-width: 555px;
+  height: 100%;
 `;
 
 export const Img = styled.img`
-  width: ${({ smallImg }) => (smallImg ? "50%" : "100%")};
+  width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
-
-  @media screen and (max-width: 480px) {
-    width: 100%;
-  }
 `;

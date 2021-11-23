@@ -56,12 +56,13 @@ export const ServicesWrapper7 = styled.div`
 
 export const ServicesWrapper = styled.div`
   max-width: auto;
-  margin: 0 auto;
+  margin: 0;
+  margin-left: -20rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  align-items: center;
-  grid-gap: 16px;
-  padding: 0 50px;
+  align-items: left;
+  grid-gap: 25px;
+  padding: 0 0px;
   overflow: hidden;
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
@@ -101,7 +102,7 @@ export const ServicesH1 = styled.h1`
   color: #fff;
   margin-bottom: 44px;
   // margin-left: 30px;
-  text-align: center;
+  text-align: left;
   @media screen and (max-width: 480px) {
     font-size: 2rem;
   }

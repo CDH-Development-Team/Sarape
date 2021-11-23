@@ -109,21 +109,29 @@ const Services = () => {
                   <div
                     className="text"
                     style={{ width: "50%", marginLeft: "6rem" }}
-                  ></div>
+                  >
+                    <p
+                      style={{
+                        marginTop: "30rem",
+                        fontSize: "1rem",
+                        color: "white",
+                        marginLeft: "20rem",
+                      }}
+                    >
+                      Naturally dyed. Dyes colors made from tree moss, black
+                      sapote, indigo, marush, and cochineal.<br></br>
+                      AT-2020-16-2
+                    </p>
+                  </div>
                   <div
-                    style={{ height: "60%", width: "50%", alignItems: "right" }}
+                    style={{ height: "80%", width: "60%", alignItems: "right" }}
                   >
                     <div style={{ width: "85%", alignItems: "right" }}>
                       <img
                         src={Icon4}
-                        style={{ width: "65%" }}
+                        style={{ width: "75%" }}
                         alt="Developer"
                       />
-                      <p style={{ padding: "0 0 1rem 1.6rem", color: "white" }}>
-                        Naturally dyed. Dyes colors made from tree moss, black
-                        sapote, indigo, marush, and cochineal.<br></br>
-                        AT-2020-16-2
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -143,21 +151,30 @@ const Services = () => {
                   <div
                     className="text"
                     style={{ width: "50%", marginLeft: "6rem" }}
-                  ></div>
+                  >
+                    {" "}
+                    <p
+                      style={{
+                        marginTop: "32rem",
+                        fontSize: "1rem",
+                        color: "white",
+                        marginLeft: "20rem",
+                      }}
+                    >
+                      Naturally dyed. Dyes colors made from tree moss, indigo,
+                      and cochineal.
+                      <br></br>AT-2020-16-3
+                    </p>
+                  </div>
                   <div
-                    style={{ height: "60%", width: "50%", alignItems: "right" }}
+                    style={{ height: "80%", width: "60%", alignItems: "right" }}
                   >
                     <div style={{ width: "85%", alignItems: "right" }}>
                       <img
                         src={Icon5}
-                        style={{ width: "65%" }}
+                        style={{ width: "75%" }}
                         alt="Developer"
                       />
-                      <p style={{ padding: "0 0 1rem 1.6rem", color: "white" }}>
-                        Naturally dyed. Dyes colors made from tree moss, indigo,
-                        and cochineal.
-                        <br></br>AT-2020-16-3
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -177,7 +194,19 @@ const Services = () => {
                   <div
                     className="text"
                     style={{ width: "100%", marginLeft: "6rem" }}
-                  ></div>
+                  >
+                    <p
+                      style={{
+                        marginTop: "37rem",
+                        fontSize: "1rem",
+                        color: "white",
+                        marginLeft: "20rem",
+                      }}
+                    >
+                      Naturally dyed. Dyes colors made from indigo.<br></br>
+                      AT-2020-16-4
+                    </p>
+                  </div>
                   <div style={{ alignItems: "right" }}>
                     <div
                       style={{
@@ -189,13 +218,9 @@ const Services = () => {
                     >
                       <img
                         src={Icon6}
-                        style={{ height: "85%" }}
+                        style={{ height: "100%" }}
                         alt="Developer"
                       />
-                      <p style={{ padding: "0 0 1rem 1.6rem", color: "white" }}>
-                        Naturally dyed. Dyes colors made from indigo.<br></br>
-                        AT-2020-16-4
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -215,20 +240,29 @@ const Services = () => {
                   <div
                     className="text"
                     style={{ width: "50%", marginLeft: "6rem" }}
-                  ></div>
-                  <div
-                    style={{ height: "60%", width: "50%", alignItems: "right" }}
                   >
-                    <div style={{ width: "65%", alignItems: "right" }}>
+                    {" "}
+                    <p
+                      style={{
+                        marginTop: "38rem",
+                        fontSize: "1rem",
+                        color: "white",
+                        marginLeft: "20rem",
+                      }}
+                    >
+                      Naturally dyed. Dyes colors made from indigo.<br></br>
+                      AT-2020-16-5
+                    </p>
+                  </div>
+                  <div
+                    style={{ height: "80%", width: "60%", alignItems: "right" }}
+                  >
+                    <div style={{ width: "85%", alignItems: "right" }}>
                       <img
                         src={Icon7}
                         style={{ width: "85%" }}
                         alt="Developer"
                       />
-                      <p style={{ padding: "0 0 1rem 1.6rem", color: "white" }}>
-                        Naturally dyed. Dyes colors made from indigo.<br></br>
-                        AT-2020-16-5
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -248,20 +282,29 @@ const Services = () => {
                   <div
                     className="text"
                     style={{ width: "50%", marginLeft: "6rem" }}
-                  ></div>
-                  <div
-                    style={{ height: "60%", width: "50%", alignItems: "right" }}
                   >
-                    <div style={{ width: "65%", alignItems: "right" }}>
+                    {" "}
+                    <p
+                      style={{
+                        marginTop: "38rem",
+                        fontSize: "1rem",
+                        color: "white",
+                        marginLeft: "20rem",
+                      }}
+                    >
+                      Naturally dyed. Dyes colors made from tree moss, Mexican
+                      tarragon, indigo, and cochineal. <br></br>AT-2020-16-6
+                    </p>
+                  </div>
+                  <div
+                    style={{ height: "80%", width: "60%", alignItems: "right" }}
+                  >
+                    <div style={{ width: "85%", alignItems: "right" }}>
                       <img
                         src={Icon8}
                         style={{ width: "85%" }}
                         alt="Developer"
                       />
-                      <p style={{ padding: "0 0 1rem 1.6rem", color: "white" }}>
-                        Naturally dyed. Dyes colors made from tree moss, Mexican
-                        tarragon, indigo, and cochineal. <br></br>AT-2020-16-6
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -281,21 +324,29 @@ const Services = () => {
                   <div
                     className="text"
                     style={{ width: "50%", marginLeft: "6rem" }}
-                  ></div>
-                  <div
-                    style={{ height: "60%", width: "50%", alignItems: "right" }}
                   >
-                    <div style={{ width: "65%", alignItems: "right" }}>
+                    <p
+                      style={{
+                        marginTop: "38rem",
+                        fontSize: "1rem",
+                        color: "white",
+                        marginLeft: "20rem",
+                      }}
+                    >
+                      Naturally dyed. Dyes colors made from Mexican tarragon,
+                      black sapote, indigo, and cochineal. <br></br>
+                      AT-2020-16-7
+                    </p>
+                  </div>
+                  <div
+                    style={{ height: "80%", width: "60%", alignItems: "right" }}
+                  >
+                    <div style={{ width: "85%", alignItems: "right" }}>
                       <img
                         src={Icon9}
                         style={{ width: "85%" }}
                         alt="Developer"
                       />
-                      <p style={{ padding: "0 0 1rem 1.6rem", color: "white" }}>
-                        Naturally dyed. Dyes colors made from Mexican tarragon,
-                        black sapote, indigo, and cochineal. <br></br>
-                        AT-2020-16-7
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -308,8 +359,11 @@ const Services = () => {
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
         </ServicesCard>
       </ServicesWrapper>
-
-      <ServicesH1>FRAGMENT SERIES BY PORFIRIO GUTIERREZ</ServicesH1>
+      <ServicesH1
+        style={{ marginTop: "30px", marginLeft: "-53rem", textAlign: "left" }}
+      >
+        FRAGMENT SERIES BY PORFIRIO GUTIERREZ
+      </ServicesH1>
       <InfoRow style={{ height: "300px" }}>
         <Column1>
           <div

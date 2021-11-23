@@ -34,7 +34,7 @@ const SigninPage = () => {
 
       <div
         style={{
-          textAlign: "center",
+          textAlign: "left",
           padding: "4rem",
           backgroundColor: "rgb(74, 0,51)",
           color: "#fff",
