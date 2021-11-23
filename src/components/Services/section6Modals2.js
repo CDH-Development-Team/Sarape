@@ -342,7 +342,6 @@ const Services = () => {
       <InfoContainer
         lightBg={sixObj.lightBg}
         id={sixObj.id}
-        style={{ maxWidth: width > 768 ? "auto" : "600px" }}
       >
         <InfoWrapper>
           <InfoRow imgStart={sixObj.imgStart}>
@@ -981,10 +980,109 @@ const Services = () => {
         </InfoWrapper>
       </InfoContainer>
 
+      <InfoContainer lightBg={sixObjThree.lightBg} id={sixObjThree.id}>
+          <InfoWrapper>
+              <InfoRow imgStart={sixObjThree.imgStart}>
+                  <Column1>
+                      <Heading lightText={sixObjThree.lightText}>{sixObjThree.headline}</Heading>
+                      <TextWrapper>
+                          <TopLine>{sixObjThree.topLine}</TopLine>
+
+                          <Subtitle
+                              darkText={sixObjThree.darkText}
+                              style={{
+                                  fontFamily: "myriad-pro",
+                                  fontSize: "1.5rem",
+                              }}
+                          >
+                              {sixObjThree.description}
+                          </Subtitle>
+                          <Subtitle
+                              darkText={sixObjThree.darkText}
+                              style={{
+                                  fontFamily: "myriad-pro",
+                                  fontSize: "1.5rem",
+                              }}
+                          >
+                              {sixObjThree.description2}
+                          </Subtitle>
+                          <Subtitle
+                              darkText={sixObjThree.darkText}
+                              style={{
+                                  fontFamily: "myriad-pro",
+                                  fontSize: "1.5rem",
+                              }}
+                          >
+                              {sixObjThree.description3}
+                          </Subtitle>
+                          <Img
+                              border="none"
+                              smallImg={sixObjThree.smallImg}
+                              src={sixObjThree.img3}
+                              alt=""
+                          />
+                          <Subtitle
+                              darkText={sixObjThree.darkText}
+                              style={{
+                                  fontFamily: "myriad-pro",
+                                  fontSize: "1.5rem",
+                              }}
+                          >
+                              {sixObjThree.imgdesc4}
+                          </Subtitle>
+                      </TextWrapper>
+                  </Column1>
+                  <Column2>
+                      <ImgWrap>
+                          <Subtitle
+                              darkText={sixObjThree.darkText}
+                              style={{
+                                  fontFamily: "myriad-pro",
+                                  fontSize: "1rem",
+                              }}
+                          >
+                              {sixObjThree.imgdesc}
+                          </Subtitle>
+                          <Img
+                              border="none"
+                              smallImg={sixObjThree.smallImg}
+                              src={sixObjThree.img}
+                              alt=""
+                          />
+                          <Subtitle
+                              darkText={sixObjThree.darkText}
+                              style={{
+                                  fontFamily: "myriad-pro",
+                                  fontSize: "1rem",
+                              }}
+                          >
+                              {sixObjThree.imgdesc2}
+                          </Subtitle>
+                          <Img
+                              border="none"
+                              smallImg={sixObjThree.smallImg}
+                              src={sixObjThree.img2}
+                              alt=""
+                          />
+                          <Subtitle
+                              darkText={sixObjThree.darkText}
+                              style={{
+                                  fontFamily: "myriad-pro",
+                                  fontSize: "1rem",
+                              }}
+                          >
+                              {sixObjThree.imgdesc3}
+                          </Subtitle>
+                      </ImgWrap>
+                  </Column2>
+              </InfoRow>
+          </InfoWrapper>
+      </InfoContainer>
+
       {/* <HistoricalSection {...sixObj} /> */}
       {/* <HistoricalSection {...sixObjOne} /> */}
       {/* <HistoricalSection {...sixObjTwo} /> */}
-      <HistoricalSection {...sixObjThree} />
+      {/* <HistoricalSection {...sixObjThree} /> */}
     </ServicesContainer>
   );
 };
