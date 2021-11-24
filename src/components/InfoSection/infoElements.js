@@ -13,7 +13,8 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   z-index: 1;
   margin-left: 2.5rem;
-  width: 100%;
+  margin-right: 2.5rem;
+  width: auto;
 
   justify-content: center;
 `;

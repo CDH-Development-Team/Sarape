@@ -183,7 +183,22 @@ const Services = () => {
                       className="text"
                       style={{ width: "50%", marginLeft: "6rem" }}
                     >
-                      {/* <h2>John Doe</h2> */}
+                      <p
+                        style={{
+                          fontSize: "1rem",
+                          marginTop: "25rem",
+                          marginLeft: "15rem",
+                          color: "white",
+                        }}
+                      >
+                        Oaxacan sarape, c. 1900-1920
+                        <br />
+                        Wool, natural and synthetic dyes
+                        <br />
+                        On loan from Tom Kieft
+                        <br />
+                        AT-2020-13-2
+                      </p>
                     </div>
                     <div
                       style={{
@@ -192,27 +207,12 @@ const Services = () => {
                         alignItems: "right",
                       }}
                     >
-                      <div style={{ width: "65%", alignItems: "right" }}>
+                      <div style={{ width: "85%", alignItems: "right" }}>
                         <img
                           src={Icon8}
                           style={{ width: "100%" }}
                           alt="Developer"
                         />
-                        <p
-                          style={{
-                            fontSize: "1rem",
-                            padding: "0 0 .5rem 1.2rem",
-                            color: "white",
-                          }}
-                        >
-                          Oaxacan sarape, c. 1900-1920
-                          <br />
-                          Wool, natural and synthetic dyes
-                          <br />
-                          On loan from Tom Kieft
-                          <br />
-                          AT-2020-13-2
-                        </p>
                       </div>
                     </div>
                   </div>
@@ -234,12 +234,28 @@ const Services = () => {
                       style={{ width: "50%", marginLeft: "6rem" }}
                     >
                       <div
-                        style={{ fontSize: "1.5rem", fontFamily: "myriad-pro" }}
+                        style={{ fontSize: "1rem", fontFamily: "myriad-pro" }}
                       >
                         This sarape's repeated diamond motifs may have been
                         influenced by the geometric designs on the walls of the
                         ruins at Mitla in Oaxaca.
                       </div>
+                      <p
+                        style={{
+                          fontSize: "1rem",
+                          color: "white",
+                          marginTop: "25rem",
+                          marginLeft: "15rem",
+                        }}
+                      >
+                        Oaxacan sarape, c. 1920-1940
+                        <br />
+                        Wool, natural and synthetic dyes
+                        <br />
+                        On loan from Michael D. Higgins
+                        <br />
+                        AT-2020-14-2
+                      </p>
                     </div>
                     <div
                       style={{
@@ -248,27 +264,12 @@ const Services = () => {
                         alignItems: "right",
                       }}
                     >
-                      <div style={{ width: "65%", alignItems: "right" }}>
+                      <div style={{ width: "85%", alignItems: "right" }}>
                         <img
                           src={Icon9}
                           style={{ width: "90%" }}
                           alt="Developer"
                         />
-                        <p
-                          style={{
-                            fontSize: "1rem",
-                            padding: "0 0 .5rem 1.2rem",
-                            color: "white",
-                          }}
-                        >
-                          Oaxacan sarape, c. 1920-1940
-                          <br />
-                          Wool, natural and synthetic dyes
-                          <br />
-                          On loan from Michael D. Higgins
-                          <br />
-                          AT-2020-14-2
-                        </p>
                       </div>
                     </div>
                   </div>
@@ -290,40 +291,39 @@ const Services = () => {
                     className="text"
                     style={{ width: "50%", marginLeft: "6rem" }}
                   >
-                    <div
-                      style={{ fontSize: "1.5rem", fontFamily: "myriad-pro" }}
-                    >
+                    <div style={{ fontSize: "1rem", fontFamily: "myriad-pro" }}>
                       This weaving, from the 1980s, is a version of a Classic
                       period Saltillo sarape woven by a Tlaxcalan weaver.
                       Tlaxcalans continue to weave sarapes using Classic period
                       design elements because they are still sought after by
                       commercial buyers.
                     </div>
+                    <p
+                      style={{
+                        fontSize: "1rem",
+                        marginTop: "25rem",
+                        marginLeft: "15rem",
+                        color: "white",
+                      }}
+                    >
+                      Tlaxcalan sarape, c. 1980
+                      <br />
+                      Tlaxcalan, Mexico
+                      <br />
+                      Wool, natural and synthetic dyes
+                      <br />
+                      1980-2-53
+                    </p>
                   </div>
                   <div
                     style={{ height: "60%", width: "50%", alignItems: "right" }}
                   >
-                    <div style={{ width: "65%", alignItems: "right" }}>
+                    <div style={{ width: "75%", alignItems: "right" }}>
                       <img
                         src={Icon10}
-                        style={{ width: "75%" }}
+                        style={{ width: "85%" }}
                         alt="Developer"
                       />
-                      <p
-                        style={{
-                          fontSize: "1rem",
-                          padding: "0 0 .5rem 1.2rem",
-                          color: "white",
-                        }}
-                      >
-                        Tlaxcalan sarape, c. 1980
-                        <br />
-                        Tlaxcalan, Mexico
-                        <br />
-                        Wool, natural and synthetic dyes
-                        <br />
-                        1980-2-53
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -341,11 +341,7 @@ const Services = () => {
       </ServicesH1>
 
       {/* sixObj section */}
-      <InfoContainer
-        lightBg={sixObj.lightBg}
-        id={sixObj.id}
-        style={{ maxWidth: width > 768 ? "auto" : "600px" }}
-      >
+      <InfoContainer lightBg={sixObj.lightBg} id={sixObj.id}>
         <InfoWrapper>
           <InfoRow imgStart={sixObj.imgStart}>
             <Column1>
@@ -372,7 +368,7 @@ const Services = () => {
                 <ImgWrap>
                   <Img
                     border="none"
-                    smallImg={sixObj.smallImg}
+                    style={{ width: "70%" }}
                     src={Icon1}
                     onClick={() => {
                       setContent(
@@ -384,39 +380,34 @@ const Services = () => {
                             className="text"
                             style={{ width: "50%", marginLeft: "6rem" }}
                           >
-                            {/* <h2>John Doe</h2> */}
+                            <p
+                              style={{
+                                fontSize: "1rem",
+
+                                marginTop: "30rem",
+                                marginLeft: "12rem",
+                                color: "white",
+                              }}
+                            >
+                              Classic period Saltillo sarape, c. 1720–1860
+                              Mexico Wool, cotton, and cochineal, and other
+                              natural dyes <br></br>On loan from Arizona History
+                              Museum, 92.98 <br></br>AT-2020-15-1
+                            </p>
                           </div>
                           <div
                             style={{
                               height: "60%",
-                              width: "50%",
+                              width: "60%",
                               alignItems: "right",
                             }}
                           >
-                            <div style={{ width: "65%", alignItems: "right" }}>
+                            <div style={{ width: "80%", alignItems: "right" }}>
                               <img
                                 src={Icon1}
-                                style={{ width: "65%" }}
+                                style={{ width: "80%" }}
                                 alt="Developer"
                               />
-                              <p
-                                style={{
-                                  fontSize: "1rem",
-                                  padding: "0 0 .5rem 1.2rem",
-                                  color: "white",
-                                }}
-                              >
-                                Classic period Saltillo sarape, c. 1720–1860
-                                <br />
-                                Mexico
-                                <br />
-                                Wool, cotton, and cochineal, and other natural
-                                dyes
-                                <br />
-                                On loan from Arizona History Museum, 92.98
-                                <br />
-                                AT-2020-15-1
-                              </p>
                             </div>
                           </div>
                         </div>
@@ -437,6 +428,7 @@ const Services = () => {
                   <ImgWrap>
                     <Img
                       src={Icon2}
+                      style={{ width: "70%" }}
                       onClick={() => {
                         setContent(
                           <div
@@ -447,40 +439,34 @@ const Services = () => {
                               className="text"
                               style={{ width: "50%", marginLeft: "6rem" }}
                             >
-                              {/* <h2>John Doe</h2> */}
+                              <p
+                                style={{
+                                  fontSize: "1rem",
+                                  marginTop: "35rem",
+                                  marginLeft: "11.5rem",
+                                  color: "white",
+                                }}
+                              >
+                                Classic period Saltillo sarape, c. 1720–1860
+                                Mexico Wool, cotton, and indigo dye <br></br>On
+                                loan from Tom Kieft <br></br>AT-2020-13
+                              </p>
                             </div>
                             <div
                               style={{
                                 height: "60%",
-                                width: "50%",
+                                width: "70%",
                                 alignItems: "right",
                               }}
                             >
                               <div
-                                style={{ width: "65%", alignItems: "right" }}
+                                style={{ width: "80%", alignItems: "right" }}
                               >
                                 <img
                                   src={Icon2}
-                                  style={{ width: "65%" }}
+                                  style={{ width: "80%" }}
                                   alt="Developer"
                                 />
-                                <p
-                                  style={{
-                                    fontSize: "1rem",
-                                    padding: "0 0 .5rem 1.2rem",
-                                    color: "white",
-                                  }}
-                                >
-                                  Classic period Saltillo sarape, c. 1720–1860
-                                  <br />
-                                  Mexico
-                                  <br />
-                                  Wool, cotton, and indigo dye
-                                  <br />
-                                  On loan from Tom Kieft
-                                  <br />
-                                  AT-2020-13
-                                </p>
                               </div>
                             </div>
                           </div>
@@ -492,6 +478,7 @@ const Services = () => {
                   <ImgWrap>
                     <Img
                       src={Icon3}
+                      style={{ width: "70%" }}
                       onClick={() => {
                         setContent(
                           <div
@@ -502,41 +489,40 @@ const Services = () => {
                               className="text"
                               style={{ width: "50%", marginLeft: "6rem" }}
                             >
-                              {/* <h2>John Doe</h2> */}
+                              <p
+                                style={{
+                                  fontSize: "1rem",
+                                  marginTop: "30rem",
+                                  marginLeft: "12rem",
+                                  color: "white",
+                                }}
+                              >
+                                Classic period Saltillo sarape, c. 1720–1860
+                                Mexico
+                                <br />
+                                Wool, cotton, and cochineal, indigo, and other
+                                natural dyes
+                                <br />
+                                Gift of Katherine and Alexandrine McEwen
+                                <br />
+                                E-1642
+                              </p>
                             </div>
                             <div
                               style={{
                                 height: "60%",
-                                width: "50%",
+                                width: "70%",
                                 alignItems: "right",
                               }}
                             >
                               <div
-                                style={{ width: "65%", alignItems: "right" }}
+                                style={{ width: "80%", alignItems: "right" }}
                               >
                                 <img
                                   src={Icon3}
-                                  style={{ width: "65%" }}
+                                  style={{ width: "80%" }}
                                   alt="Developer"
                                 />
-                                <p
-                                  style={{
-                                    fontSize: "1rem",
-                                    padding: "0 0 .5rem 1.2rem",
-                                    color: "white",
-                                  }}
-                                >
-                                  Classic period Saltillo sarape, c. 1720–1860
-                                  <br />
-                                  Mexico
-                                  <br />
-                                  Wool, cotton, and cochineal, indigo, and other
-                                  natural dyes
-                                  <br />
-                                  Gift of Katherine and Alexandrine McEwen
-                                  <br />
-                                  E-1642
-                                </p>
                               </div>
                             </div>
                           </div>
@@ -614,7 +600,7 @@ const Services = () => {
                           >
                             <div
                               style={{
-                                fontSize: "1.5rem",
+                                fontSize: "1rem",
                                 fontFamily: "myriad-pro",
                               }}
                             >
@@ -624,37 +610,38 @@ const Services = () => {
                               compared to the sarapes made in the Classic
                               period.
                             </div>
+                            <p
+                              style={{
+                                fontSize: "1rem",
+                                color: "white",
+                                marginTop: "25rem",
+                                marginLeft: "13rem",
+                              }}
+                            >
+                              Post-Classic period sarape with concentric
+                              diamonds, c. 1870
+                              <br />
+                              Wool, cotton, and natural and synthetic dyes
+                              <br />
+                              Gift of Arizona Archaelogical and Historical
+                              Society
+                              <br />
+                              19766
+                            </p>
                           </div>
                           <div
                             style={{
                               height: "60%",
-                              width: "50%",
+                              width: "70%",
                               alignItems: "right",
                             }}
                           >
-                            <div style={{ width: "65%", alignItems: "right" }}>
+                            <div style={{ width: "75%", alignItems: "right" }}>
                               <img
                                 src={Icon4}
-                                style={{ width: "65%" }}
+                                style={{ width: "75%" }}
                                 alt="Developer"
                               />
-                              <p
-                                style={{
-                                  fontSize: "1rem",
-                                  padding: "0 0 .5rem 1.2rem",
-                                  color: "white",
-                                }}
-                              >
-                                Post-Classic period sarape with concentric
-                                diamonds, c. 1870
-                                <br />
-                                Wool, cotton, and natural and synthetic dyes
-                                <br />
-                                Gift of Arizona Archaelogical and Historical
-                                Society
-                                <br />
-                                19766
-                              </p>
                             </div>
                           </div>
                         </div>
@@ -667,24 +654,35 @@ const Services = () => {
                     src={Icon5}
                     onClick={() => {
                       setContent(
-                        <div
-                          className="content"
-                          style={{ alignItems: "right" }}
-                        >
-                          <div
-                            className="text"
-                            style={{ width: "50%", marginLeft: "6rem" }}
-                          >
-                            <div
+                        <div className="content">
+                          <div className="text" style={{ marginLeft: "6rem" }}>
+                            <img
+                              src={Icon5}
+                              style={{ width: "80%", height: "80%" }}
+                              alt="Developer"
+                            />
+
+                            <p
                               style={{
-                                fontSize: "1.5rem",
-                                fontFamily: "myriad-pro",
+                                fontSize: "1rem",
+                                color: "white",
+                                marginLeft: "1rem",
+                                marginRight: "5rem",
                               }}
                             >
                               Notice the diamond elements within the central
                               diamond. This well-worn weaving’s rich blue tones
                               come from dye made from the indigo plant.
-                            </div>
+                              <br></br>
+                              <br></br>
+                              Post-Classic period sarape with concentric
+                              diamonds, c. 1870
+                              <br />
+                              Wool, cotton, and indigo and possibly synthetic
+                              dyes
+                              <br />
+                              12504
+                            </p>
                           </div>
                           <div
                             style={{
@@ -694,36 +692,40 @@ const Services = () => {
                             }}
                           >
                             <div style={{ width: "65%", alignItems: "right" }}>
-                              <img
-                                src={Icon5}
-                                style={{ width: "75%" }}
-                                alt="Developer"
-                              />
-                              <img
-                                src={img2}
-                                style={{ width: "25%" }}
-                                alt="Developer"
-                              />
-                              <img
-                                src={img3}
-                                style={{ width: "25%" }}
-                                alt="Developer"
-                              />
-                              <p
+                              <div>
+                                <img
+                                  src={img2}
+                                  style={{ width: "70%", marginTop: "2rem" }}
+                                  alt="Developer"
+                                />
+                              </div>
+                              <div
                                 style={{
+                                  color: "#fff",
+                                  fontFamily: "myriad-pro",
                                   fontSize: "1rem",
-                                  padding: "0 0 .5rem 1.2rem",
-                                  color: "white",
                                 }}
                               >
-                                Post-Classic period sarape with concentric
-                                diamonds, c. 1870
-                                <br />
-                                Wool, cotton, and indigo and possibly synthetic
-                                dyes
-                                <br />
-                                12504
-                              </p>
+                                Mexican saddle C. 1860–1900On loan from Michael
+                                D. Higgins AT-2020-14-1
+                              </div>
+                              <div>
+                                <img
+                                  src={img3}
+                                  style={{ width: "70%", marginTop: "5rem" }}
+                                  alt="Developer"
+                                />
+                              </div>
+                              <div
+                                style={{
+                                  color: "#fff",
+                                  fontFamily: "myriad-pro",
+                                  fontSize: "1rem",
+                                }}
+                              >
+                                Photographer unknown Published by Gevaey for
+                                FotoMex, c. 1910 Collection of Tom Kieft
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -758,7 +760,7 @@ const Services = () => {
 
                             <div
                               style={{
-                                fontSize: "1.5rem",
+                                fontSize: "1rem",
                                 fontFamily: "myriad-pro",
                               }}
                             >
@@ -766,35 +768,36 @@ const Services = () => {
                               <i>(bocamanga),</i> enabling this textile to be
                               worn as a poncho.
                             </div>
+                            <p
+                              style={{
+                                fontSize: "1rem",
+                                marginTop: "28rem",
+                                marginLeft: "10rem",
+                                color: "white",
+                              }}
+                            >
+                              Post-Classic period Saltillo sarape, c. 1870
+                              <br />
+                              Wool, cotton, velvet, silver, and synthetic dyes
+                              <br />
+                              On loan from Arizona History Museum, 86.60.19
+                              <br />
+                              AT-2020-15-2
+                            </p>
                           </div>
                           <div
                             style={{
                               height: "60%",
-                              width: "50%",
+                              width: "70%",
                               alignItems: "right",
                             }}
                           >
-                            <div style={{ width: "65%", alignItems: "right" }}>
+                            <div style={{ width: "75%", alignItems: "right" }}>
                               <img
                                 src={Icon6}
-                                style={{ width: "65%" }}
+                                style={{ width: "75%" }}
                                 alt="Developer"
                               />
-                              <p
-                                style={{
-                                  fontSize: "1rem",
-                                  padding: "0 0 .5rem 1.2rem",
-                                  color: "white",
-                                }}
-                              >
-                                Post-Classic period Saltillo sarape, c. 1870
-                                <br />
-                                Wool, cotton, velvet, silver, and synthetic dyes
-                                <br />
-                                On loan from Arizona History Museum, 86.60.19
-                                <br />
-                                AT-2020-15-2
-                              </p>
                             </div>
                           </div>
                         </div>
@@ -817,7 +820,7 @@ const Services = () => {
                           >
                             <div
                               style={{
-                                fontSize: "1.5rem",
+                                fontSize: "1rem",
                                 fontFamily: "myriad-pro",
                               }}
                             >
@@ -830,37 +833,38 @@ const Services = () => {
                               textiles were popular with tourists and those who
                               couldn’t afford a real Saltillo sarape.
                             </div>
+                            <p
+                              style={{
+                                fontSize: "1rem",
+                                marginTop: "20rem",
+                                marginLeft: "10rem",
+                                color: "white",
+                              }}
+                            >
+                              Textile printed with Saltillo sarape design
+                              <br />
+                              C. 1870-1900
+                              <br />
+                              Made in Germany or Austria
+                              <br />
+                              Gift of Eman L. Beck estate
+                              <br />
+                              E-4735
+                            </p>
                           </div>
                           <div
                             style={{
                               height: "60%",
-                              width: "50%",
+                              width: "70%",
                               alignItems: "right",
                             }}
                           >
-                            <div style={{ width: "65%", alignItems: "right" }}>
+                            <div style={{ width: "75%", alignItems: "right" }}>
                               <img
                                 src={Icon7}
-                                style={{ width: "65%" }}
+                                style={{ width: "75%" }}
                                 alt="Developer"
                               />
-                              <p
-                                style={{
-                                  fontSize: "1rem",
-                                  padding: "0 0 .5rem 1.2rem",
-                                  color: "white",
-                                }}
-                              >
-                                Textile printed with Saltillo sarape design
-                                <br />
-                                C. 1870-1900
-                                <br />
-                                Made in Germany or Austria
-                                <br />
-                                Gift of Eman L. Beck estate
-                                <br />
-                                E-4735
-                              </p>
                             </div>
                           </div>
                         </div>
@@ -875,121 +879,103 @@ const Services = () => {
         </InfoWrapper>
       </InfoContainer>
 
-      {/* sixObjTwo section */}
-      <InfoContainer lightBg={sixObjTwo.lightBg} id={sixObjTwo.id}>
+      <InfoContainer lightBg={sixObjThree.lightBg} id={sixObjThree.id}>
         <InfoWrapper>
-          <InfoRow imgStart={sixObjTwo.imgStart}>
+          <InfoRow imgStart={sixObjThree.imgStart}>
             <Column1>
-              <Heading lightText={sixObjTwo.lightText}>
-                {sixObjTwo.headline}
+              <Heading lightText={sixObjThree.lightText}>
+                {sixObjThree.headline}
               </Heading>
               <TextWrapper>
-                <TopLine>{sixObjTwo.topLine}</TopLine>
+                <TopLine>{sixObjThree.topLine}</TopLine>
 
-                <div style={{ width: "50%" }}>
-                  <Img
-                    border="none"
-                    smallImg={sixObjTwo.smallImg}
-                    src={sixObjTwo.img3}
-                    alt=""
-                    onClick={() => {
-                      setContent(
-                        <div
-                          className="content"
-                          style={{ alignItems: "right" }}
-                        >
-                          <div
-                            className="text"
-                            style={{ width: "50%", marginLeft: "6rem" }}
-                          >
-                            <div
-                              style={{
-                                fontSize: "1.5rem",
-                                fontFamily: "myriad-pro",
-                              }}
-                            >
-                              Notice the diamond elements within the central
-                              diamond. This well-worn weaving’s rich blue tones
-                              come from dye made from the indigo plant.
-                            </div>
-                          </div>
-                          <div
-                            style={{
-                              height: "60%",
-                              width: "50%",
-                              alignItems: "right",
-                            }}
-                          >
-                            <div style={{ width: "65%", alignItems: "right" }}>
-                              <img
-                                src={Icon5}
-                                style={{ width: "75%" }}
-                                alt="Developer"
-                              />
-                              <p
-                                style={{
-                                  fontSize: "1rem",
-                                  padding: "0 0 .5rem 1.2rem",
-                                  color: "white",
-                                }}
-                              >
-                                Post-Classic period sarape with concentric
-                                diamonds, c. 1870
-                                <br />
-                                Wool, cotton, and indigo and possibly synthetic
-                                dyes
-                                <br />
-                                12504
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      );
-                      openModal();
-                    }}
-                  />
-                </div>
                 <Subtitle
-                  darkText={sixObjTwo.darkText}
-                  style={{ fontFamily: "myriad-pro" }}
+                  darkText={sixObjThree.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1.5rem",
+                  }}
                 >
-                  {sixObjTwo.imgdesc4}
+                  {sixObjThree.description}
+                </Subtitle>
+                <Subtitle
+                  darkText={sixObjThree.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1.5rem",
+                  }}
+                >
+                  {sixObjThree.description2}
+                </Subtitle>
+                <Subtitle
+                  darkText={sixObjThree.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1.5rem",
+                  }}
+                >
+                  {sixObjThree.description3}
+                </Subtitle>
+                <Img
+                  border="none"
+                  smallImg={sixObjThree.smallImg}
+                  src={sixObjThree.img3}
+                  alt=""
+                />
+                <Subtitle
+                  darkText={sixObjThree.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1.5rem",
+                  }}
+                >
+                  {sixObjThree.imgdesc4}
                 </Subtitle>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <div style={{ width: "50%" }}>
-                  <Img
-                    border="none"
-                    smallImg={sixObjTwo.smallImg}
-                    src={sixObjTwo.img}
-                    alt=""
-                  />
-                </div>
                 <Subtitle
-                  darkText={sixObjTwo.darkText}
-                  style={{ fontFamily: "myriad-pro" }}
+                  darkText={sixObjThree.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                  }}
                 >
-                  {sixObjTwo.imgdesc2}
+                  {sixObjThree.imgdesc}
                 </Subtitle>
-                <div style={{ width: "50%" }}>
-                  <Img
-                    border="none"
-                    smallImg={sixObjTwo.smallImg}
-                    src={sixObjTwo.img2}
-                    alt=""
-                  />
-                </div>
+                <Img
+                  border="none"
+                  smallImg={sixObjThree.smallImg}
+                  src={sixObjThree.img}
+                  alt=""
+                />
                 <Subtitle
-                  darkText={sixObjTwo.darkText}
-                  style={{ fontFamily: "myriad-pro" }}
+                  darkText={sixObjThree.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                  }}
                 >
-                  {sixObjTwo.imgdesc3}
+                  {sixObjThree.imgdesc2}
+                </Subtitle>
+                <Img
+                  border="none"
+                  smallImg={sixObjThree.smallImg}
+                  src={sixObjThree.img2}
+                  alt=""
+                />
+                <Subtitle
+                  darkText={sixObjThree.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {sixObjThree.imgdesc3}
                 </Subtitle>
               </ImgWrap>
             </Column2>
-            <HistoricalSection {...sixObjThree} />
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>
