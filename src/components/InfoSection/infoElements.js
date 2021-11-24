@@ -36,6 +36,7 @@ export const Column1 = styled.div`
   margin-bottom: 0px;
   padding: 0 15px;
   grid-area: col1;
+  font-size: 1.5rem;
   height: 100%;
 `;
 

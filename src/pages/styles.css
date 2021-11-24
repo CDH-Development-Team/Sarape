@@ -103,6 +103,23 @@
      /* Should be removed. Only for demonstration */
   }
   
+  .column11{
+    width: 33.3%;
+    float: left;
+  }
+  .column12{
+    width: 33.3%;
+    float: center;
+  }
+  .column13{
+    width: 33.3%;
+    float: right;
+  }
+  .row1{
+    content: "";
+    display: table;
+    clear: both;
+  }
   /* Clear floats after the columns */
   .row1:after {
     content: "";

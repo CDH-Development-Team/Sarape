@@ -167,6 +167,7 @@ const Services = () => {
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
           </Card>
         </div>
+
         <Card>
           <ServicesIcon src={Icon7} />
           {/* <ServicesH2>Premium Benefits</ServicesH2>
@@ -174,163 +175,19 @@ const Services = () => {
         </Card>
         <div>
           <Card>
-            <ServicesIcon
-              src={Icon8}
-              onClick={() => {
-                setContent(
-                  <div className="content" style={{ alignItems: "right" }}>
-                    <div
-                      className="text"
-                      style={{ width: "50%", marginLeft: "6rem" }}
-                    >
-                      <p
-                        style={{
-                          fontSize: "1rem",
-                          marginTop: "25rem",
-                          marginLeft: "15rem",
-                          color: "white",
-                        }}
-                      >
-                        Oaxacan sarape, c. 1900-1920
-                        <br />
-                        Wool, natural and synthetic dyes
-                        <br />
-                        On loan from Tom Kieft
-                        <br />
-                        AT-2020-13-2
-                      </p>
-                    </div>
-                    <div
-                      style={{
-                        height: "60%",
-                        width: "50%",
-                        alignItems: "right",
-                      }}
-                    >
-                      <div style={{ width: "85%", alignItems: "right" }}>
-                        <img
-                          src={Icon8}
-                          style={{ width: "100%" }}
-                          alt="Developer"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                );
-                openModal();
-              }}
-            />
+            <ServicesIcon src={Icon8} />
             {/* <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
           </Card>
+
           <Card>
-            <ServicesIcon
-              src={Icon9}
-              onClick={() => {
-                setContent(
-                  <div className="content" style={{ alignItems: "right" }}>
-                    <div
-                      className="text"
-                      style={{ width: "50%", marginLeft: "6rem" }}
-                    >
-                      <div
-                        style={{ fontSize: "1rem", fontFamily: "myriad-pro" }}
-                      >
-                        This sarape's repeated diamond motifs may have been
-                        influenced by the geometric designs on the walls of the
-                        ruins at Mitla in Oaxaca.
-                      </div>
-                      <p
-                        style={{
-                          fontSize: "1rem",
-                          color: "white",
-                          marginTop: "25rem",
-                          marginLeft: "15rem",
-                        }}
-                      >
-                        Oaxacan sarape, c. 1920-1940
-                        <br />
-                        Wool, natural and synthetic dyes
-                        <br />
-                        On loan from Michael D. Higgins
-                        <br />
-                        AT-2020-14-2
-                      </p>
-                    </div>
-                    <div
-                      style={{
-                        height: "60%",
-                        width: "50%",
-                        alignItems: "right",
-                      }}
-                    >
-                      <div style={{ width: "85%", alignItems: "right" }}>
-                        <img
-                          src={Icon9}
-                          style={{ width: "90%" }}
-                          alt="Developer"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                );
-                openModal();
-              }}
-            />
+            <ServicesIcon src={Icon9} />
             {/* <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
           </Card>
         </div>
         <Card>
-          <ServicesIcon
-            src={Icon10}
-            onClick={() => {
-              setContent(
-                <div className="content" style={{ alignItems: "right" }}>
-                  <div
-                    className="text"
-                    style={{ width: "50%", marginLeft: "6rem" }}
-                  >
-                    <div style={{ fontSize: "1rem", fontFamily: "myriad-pro" }}>
-                      This weaving, from the 1980s, is a version of a Classic
-                      period Saltillo sarape woven by a Tlaxcalan weaver.
-                      Tlaxcalans continue to weave sarapes using Classic period
-                      design elements because they are still sought after by
-                      commercial buyers.
-                    </div>
-                    <p
-                      style={{
-                        fontSize: "1rem",
-                        marginTop: "25rem",
-                        marginLeft: "15rem",
-                        color: "white",
-                      }}
-                    >
-                      Tlaxcalan sarape, c. 1980
-                      <br />
-                      Tlaxcalan, Mexico
-                      <br />
-                      Wool, natural and synthetic dyes
-                      <br />
-                      1980-2-53
-                    </p>
-                  </div>
-                  <div
-                    style={{ height: "60%", width: "50%", alignItems: "right" }}
-                  >
-                    <div style={{ width: "75%", alignItems: "right" }}>
-                      <img
-                        src={Icon10}
-                        style={{ width: "85%" }}
-                        alt="Developer"
-                      />
-                    </div>
-                  </div>
-                </div>
-              );
-              openModal();
-            }}
-          />
+          <ServicesIcon src={Icon10} />
           {/* <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
         </Card>
@@ -656,46 +513,24 @@ const Services = () => {
                       setContent(
                         <div className="content">
                           <div className="text" style={{ marginLeft: "6rem" }}>
-                            <img
-                              src={Icon5}
-                              style={{ width: "80%", height: "80%" }}
-                              alt="Developer"
-                            />
-
                             <p
                               style={{
                                 fontSize: "1rem",
                                 color: "white",
-                                marginLeft: "1rem",
-                                marginRight: "5rem",
+                                marginRight: "1rem",
+                                marginBottom: "2rem",
                               }}
                             >
                               Notice the diamond elements within the central
                               diamond. This well-worn weaving’s rich blue tones
                               come from dye made from the indigo plant.
                               <br></br>
-                              <br></br>
-                              Post-Classic period sarape with concentric
-                              diamonds, c. 1870
-                              <br />
-                              Wool, cotton, and indigo and possibly synthetic
-                              dyes
-                              <br />
-                              12504
                             </p>
-                          </div>
-                          <div
-                            style={{
-                              height: "60%",
-                              width: "50%",
-                              alignItems: "right",
-                            }}
-                          >
                             <div style={{ width: "65%", alignItems: "right" }}>
                               <div>
                                 <img
                                   src={img2}
-                                  style={{ width: "70%", marginTop: "2rem" }}
+                                  style={{ width: "70%" }}
                                   alt="Developer"
                                 />
                               </div>
@@ -712,7 +547,7 @@ const Services = () => {
                               <div>
                                 <img
                                   src={img3}
-                                  style={{ width: "70%", marginTop: "5rem" }}
+                                  style={{ width: "70%", marginTop: "2rem" }}
                                   alt="Developer"
                                 />
                               </div>
@@ -727,6 +562,40 @@ const Services = () => {
                                 FotoMex, c. 1910 Collection of Tom Kieft
                               </div>
                             </div>
+                          </div>
+                          <div
+                            style={{
+                              height: "60%",
+                              alignItems: "right",
+                            }}
+                          >
+                            <img
+                              src={Icon5}
+                              style={{
+                                width: "70%",
+                                height: "80%",
+                                marginTop: "2rem",
+                              }}
+                              alt="Developer"
+                            />
+
+                            <p
+                              style={{
+                                fontSize: "1rem",
+                                color: "white",
+                                marginLeft: "1rem",
+                                marginRight: "5rem",
+                              }}
+                            >
+                              Post-Classic period sarape with concentric
+                              diamonds, <br />
+                              c. 1870
+                              <br />
+                              Wool, cotton, and indigo and possibly synthetic
+                              dyes
+                              <br />
+                              12504
+                            </p>
                           </div>
                         </div>
                       );
@@ -976,6 +845,205 @@ const Services = () => {
                 </Subtitle>
               </ImgWrap>
             </Column2>
+          </InfoRow>
+          <InfoRow imgStart={sixObj.imgStart} style={{ marginTop: "-10rem" }}>
+            <div class="row1">
+              <div
+                class="column11"
+                style={{
+                  width: "33.3%",
+                  marginLeft: "2rem",
+                  marginTop: "2rem",
+                }}
+              >
+                <ImgWrap>
+                  <Img
+                    border="none"
+                    style={{ width: "70%" }}
+                    src={Icon8}
+                    onClick={() => {
+                      setContent(
+                        <div
+                          className="content"
+                          style={{ alignItems: "right" }}
+                        >
+                          <div
+                            className="text"
+                            style={{ width: "50%", marginLeft: "6rem" }}
+                          >
+                            <p
+                              style={{
+                                fontSize: "1rem",
+
+                                marginTop: "30rem",
+                                marginLeft: "10rem",
+                                color: "white",
+                              }}
+                            >
+                              Oaxacan sarape, c. 1900-1920<br></br>
+                              Wool, natural and synthetic dyes. <br></br> On
+                              loan from Tom Kieft <br></br>AT-2020-13-2
+                            </p>
+                          </div>
+                          <div
+                            style={{
+                              height: "70%",
+                              width: "70%",
+                              alignItems: "right",
+                            }}
+                          >
+                            <div style={{ width: "90%", alignItems: "right" }}>
+                              <img
+                                src={Icon8}
+                                style={{ width: "90%" }}
+                                alt="Developer"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      );
+                      openModal();
+                    }}
+                    alt=""
+                  />
+
+                  <Subtitle
+                    darkText={sixObj.darkText}
+                    style={{ fontFamily: "myriad-pro" }}
+                  >
+                    {sixObj.imgdesc2}
+                  </Subtitle>
+                </ImgWrap>
+              </div>
+              <div class="column12" style={{ marginTop: "2rem" }}>
+                {/* Second column of images */}
+                <ImgWrap>
+                  <Img
+                    src={Icon9}
+                    style={{ width: "70%" }}
+                    onClick={() => {
+                      setContent(
+                        <div
+                          className="content"
+                          style={{ alignItems: "right" }}
+                        >
+                          <div
+                            className="text"
+                            style={{ width: "50%", marginLeft: "6rem" }}
+                          >
+                            <p
+                              style={{
+                                fontSize: "1rem",
+                                color: "white",
+                              }}
+                            >
+                              This sarape's repeated diamond motifs may have
+                              been influenced by the geometric designs on the
+                              walls of the ruins at Mitla in Oaxaca.
+                            </p>
+                            <p
+                              style={{
+                                fontSize: "1rem",
+                                marginTop: "30rem",
+                                marginLeft: "10rem",
+                                color: "white",
+                              }}
+                            >
+                              Oaxacan sarape, c. 1920-1940<br></br> Wool,
+                              natural and synthetic dyes<br></br> On loan from
+                              Michael D. Higgins<br></br> AT-2020-14-2
+                            </p>
+                          </div>
+                          <div
+                            style={{
+                              height: "70%",
+                              width: "70%",
+                              alignItems: "right",
+                            }}
+                          >
+                            <div style={{ width: "90%", alignItems: "right" }}>
+                              <img
+                                src={Icon9}
+                                style={{ width: "90%" }}
+                                alt="Developer"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      );
+                      openModal();
+                    }}
+                  />
+                </ImgWrap>
+              </div>
+              <div
+                class="column13"
+                style={{ marginTop: "-25rem", marginLeft: "5rem" }}
+              >
+                <ImgWrap>
+                  <Img
+                    src={Icon10}
+                    style={{ width: "70%" }}
+                    onClick={() => {
+                      setContent(
+                        <div
+                          className="content"
+                          style={{ alignItems: "right" }}
+                        >
+                          <div
+                            className="text"
+                            style={{ width: "50%", marginLeft: "6rem" }}
+                          >
+                            <p
+                              style={{
+                                fontSize: "1rem",
+                                color: "white",
+                              }}
+                            >
+                              This weaving, from the 1980s, is a version of a
+                              Classic period Saltillo sarape woven by a
+                              Tlaxcalan weaver. Tlaxcalans continue to weave
+                              sarapes using Classic period design elements
+                              because they are still sought after by commercial
+                              buyers.
+                            </p>
+                            <p
+                              style={{
+                                fontSize: "1rem",
+                                marginTop: "30rem",
+                                marginLeft: "10rem",
+                                color: "white",
+                              }}
+                            >
+                              Tlaxcalan sarape, c. 1980<br></br>
+                              Tlaxcalan, Mexico Wool, natural and synthetic dyes
+                              <br></br>
+                              1980-2-53
+                            </p>
+                          </div>
+                          <div
+                            style={{
+                              height: "60%",
+                              width: "70%",
+                              alignItems: "right",
+                            }}
+                          >
+                            <div style={{ width: "80%", alignItems: "right" }}>
+                              <img
+                                src={Icon10}
+                                style={{ width: "80%" }}
+                                alt="Developer"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      );
+                      openModal();
+                    }}
+                  />
+                </ImgWrap>
+              </div>
+            </div>
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>

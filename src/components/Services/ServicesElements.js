@@ -22,7 +22,7 @@ export const ServicesWrapper6 = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 16px;
-  padding: 0 50px;
+  padding: 0 20px;
   overflow-y: hidden;
 
   @media screen and (max-width: 1000px) {
