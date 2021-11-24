@@ -8,7 +8,7 @@ import {
   homeObjThree,
 } from "../components/InfoSection2/Data";
 import Services from "../components/Services";
-
+import Footer from "../components/Footer";
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,6 +21,7 @@ const About = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <InfoSection2 {...homeObjOne} />
+      <Footer />
     </>
   );
 };

@@ -61,11 +61,19 @@ const TourismSection = ({
             <Column2>
               <Heading lightText={lightText}>{headline}</Heading>
               <ImgWrap2>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
+                <Subtitle style={{ fontSize: "1rem" }} darkText={darkText}>
+                  {description}
+                </Subtitle>
                 <Img2 src={img} smallImg={smallImg} alt={alt} />
-                <Subtitle darkText={darkText}>{description2}</Subtitle>
-                <Caption darkText={darkText}>{artifactInfo}</Caption>
-                <Caption darkText={darkText}>{description3}</Caption>
+                <Subtitle style={{ fontSize: "1rem" }} darkText={darkText}>
+                  {description2}
+                </Subtitle>
+                <Caption style={{ fontSize: "1rem" }} darkText={darkText}>
+                  {artifactInfo}
+                </Caption>
+                <Caption style={{ fontSize: "1rem" }} darkText={darkText}>
+                  {description3}
+                </Caption>
               </ImgWrap2>
             </Column2>
           </InfoRow>
