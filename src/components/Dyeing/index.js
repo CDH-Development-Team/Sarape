@@ -230,11 +230,13 @@ const Dyeing = () => {
               color: "#fff",
             }}
           >
-            My parents are the third generation of dyers and weavers in our family, which makes my
-            siblings and me the fourth generation of weavers. As newlyweds, the first things your
-            parents usually give you are a loom, a spinning wheel, and enough materials to start a
-            studio, so you can feed your family. However, since my grandparents passed away before
-            my parents got married, they had to figure it all out themselves.
+            My parents are the third generation of dyers and weavers in our
+            family, which makes my siblings and me the fourth generation of
+            weavers. As newlyweds, the first things your parents usually give
+            you are a loom, a spinning wheel, and enough materials to start a
+            studio, so you can feed your family. However, since my grandparents
+            passed away before my parents got married, they had to figure it all
+            out themselves.
           </div>
           <div
             className="column1"
@@ -244,12 +246,13 @@ const Dyeing = () => {
               color: "#fff",
             }}
           >
-            My parents have always worked collaboratively to create each piece—from cleaning wool,
-            spinning it, collecting the plants for dyeing, dyeing the wool, to weaving. To execute a
-            piece, my mom does the carding and spinning, and my dad weaves. They loved working at
-            night because night brings calmness and concentration. This is how they raised eleven
-            kids. They always say that they are blessed that their humble work as artisans enabled
-            them to raise their kids.
+            My parents have always worked collaboratively to create each
+            piece—from cleaning wool, spinning it, collecting the plants for
+            dyeing, dyeing the wool, to weaving. To execute a piece, my mom does
+            the carding and spinning, and my dad weaves. They loved working at
+            night because night brings calmness and concentration. This is how
+            they raised eleven kids. They always say that they are blessed that
+            their humble work as artisans enabled them to raise their kids.
           </div>
         </div>
       </div>
@@ -260,15 +263,17 @@ const Dyeing = () => {
           <div className="text">
             {/* <h2>John Doe</h2> */}
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid placeat omnis
-              adipisci dolores quae amet mollitia sint, temporibus eum magnam facilis odio ex
-              incidunt? Deleniti quam et rem obcaecati. Laborum atque odit expedita nulla.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              aliquid placeat omnis adipisci dolores quae amet mollitia sint,
+              temporibus eum magnam facilis odio ex incidunt? Deleniti quam et
+              rem obcaecati. Laborum atque odit expedita nulla.
             </div>
             <br />
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita labore laborum,
-              assumenda dolorum provident quod itaque earum, officia in placeat dignissimos nostrum?
-              Totam corrupti nihil repudiandae ducimus atque quod eos!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              labore laborum, assumenda dolorum provident quod itaque earum,
+              officia in placeat dignissimos nostrum? Totam corrupti nihil
+              repudiandae ducimus atque quod eos!
             </div>
           </div>
         </div>
@@ -280,9 +285,10 @@ const Dyeing = () => {
             {/* <h2>John Doe</h2> */}
             <div>Whatever</div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita labore laborum,
-              assumenda dolorum provident quod itaque earum, officia in placeat dignissimos nostrum?
-              Totam corrupti nihil repudiandae ducimus atque quod eos!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              labore laborum, assumenda dolorum provident quod itaque earum,
+              officia in placeat dignissimos nostrum? Totam corrupti nihil
+              repudiandae ducimus atque quod eos!
             </div>
           </div>
         </div>
@@ -293,13 +299,13 @@ const Dyeing = () => {
             {/* <h2>John Doe</h2> */}
             <div
               style={{
-                fontSize: "1.1rem",
+                fontSize: "1.5rem",
                 fontFamily: "Lucida",
                 padding: "1.3rem",
               }}
             >
-              Preservation, education, and sustainability are all extremely important. They are my
-              studio’s foundation for the future.
+              Preservation, education, and sustainability are all extremely
+              important. They are my studio’s foundation for the future.
               <br />
               <br />
               <div
@@ -324,25 +330,28 @@ const Dyeing = () => {
                 padding: "1.3rem",
               }}
             >
-              About nineteen years ago, I started my own studio involving my family and community.
-              Our mission is to preserve and uplift our historically significant natural-dye
-              practices. Our parents’ humble beginnings have grown into what is now Porfirio
-              Gutiérrez Studio, with a team of thirty-five people who are mostly women. In addition,
-              we work closely with cochineal and indigo farmers, spinners, and others who help with
-              various essentials. About eighty people benefit from each textile that we sell. What
-              started with two people working late to feed their family is now a large creative team
-              trying to preserve our ancient traditions.
+              About nineteen years ago, I started my own studio involving my
+              family and community. Our mission is to preserve and uplift our
+              historically significant natural-dye practices. Our parents’
+              humble beginnings have grown into what is now Porfirio Gutiérrez
+              Studio, with a team of thirty-five people who are mostly women. In
+              addition, we work closely with cochineal and indigo farmers,
+              spinners, and others who help with various essentials. About
+              eighty people benefit from each textile that we sell. What started
+              with two people working late to feed their family is now a large
+              creative team trying to preserve our ancient traditions.
             </div>
             <br />
             <div
               style={{
-                fontSize: "0.75rem",
+                fontSize: "1rem",
                 fontFamily: "myriad-pro",
                 padding: "1.3rem",
               }}
             >
-              Porfirio Gutiérrez with a full of pericón to use for making a yellow dye. Pericón
-              (Tagetes lucida) is referred to as both Mexican mint marigold and Mexican tarragon.
+              Porfirio Gutiérrez with a full of pericón to use for making a
+              yellow dye. Pericón (Tagetes lucida) is referred to as both
+              Mexican mint marigold and Mexican tarragon.
               <br /> Keith Recker, photographer, 2018
             </div>
           </div>
@@ -355,14 +364,16 @@ const Dyeing = () => {
           <div className="text">
             {/* <h2>John Doe</h2> */}
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid placeat omnis
-              adipisci dolores quae amet mollitia sint, temporibus eum magnam facilis odio ex
-              incidunt? Deleniti quam et rem obcaecati. Laborum atque odit expedita nulla.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              aliquid placeat omnis adipisci dolores quae amet mollitia sint,
+              temporibus eum magnam facilis odio ex incidunt? Deleniti quam et
+              rem obcaecati. Laborum atque odit expedita nulla.
             </div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita labore laborum,
-              assumenda dolorum provident quod itaque earum, officia in placeat dignissimos nostrum?
-              Totam corrupti nihil repudiandae ducimus atque quod eos!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              labore laborum, assumenda dolorum provident quod itaque earum,
+              officia in placeat dignissimos nostrum? Totam corrupti nihil
+              repudiandae ducimus atque quod eos!
             </div>
           </div>
         </div>
@@ -378,63 +389,75 @@ const Dyeing = () => {
             <div className="column">
               <p
                 style={{
-                  fontSize: "0.75rem",
+                  fontSize: "1.5rem",
                   fontFamily: "myriad-pro",
                   padding: "1.3rem",
                 }}
               >
-                My parents are the third generation of dyers and weavers in our family, which makes
-                my siblings and me the fourth generation of weavers. As newlyweds, the first things
-                your parents usually give you are a loom, a spinning wheel, and enough materials to
-                start a studio, so you can feed your family. However, since my grandparents passed
-                away{" "}
+                My parents are the third generation of dyers and weavers in our
+                family, which makes my siblings and me the fourth generation of
+                weavers. As newlyweds, the first things your parents usually
+                give you are a loom, a spinning wheel, and enough materials to
+                start a studio, so you can feed your family. However, since my
+                grandparents passed away{" "}
               </p>
             </div>
             <div className="column">
               <p
                 style={{
-                  fontSize: "0.75rem",
+                  fontSize: "1.5rem",
                   fontFamily: "myriad-pro",
                   padding: "1.3rem",
                 }}
               >
-                before my parents got married, they had to figure it all out themselves.
+                before my parents got married, they had to figure it all out
+                themselves.
                 <br />
                 <br />
-                My parents have always worked collaboratively to create each piece—from cleaning
-                wool, spinning it, collecting the plants for dyeing, dyeing the wool, to weaving. To
-                execute a piece, my mom{" "}
+                My parents have always worked collaboratively to create each
+                piece—from cleaning wool, spinning it, collecting the plants for
+                dyeing, dyeing the wool, to weaving. To execute a piece, my mom{" "}
               </p>
             </div>
             <div className="column">
               <p
                 style={{
-                  fontSize: "0.75rem",
+                  fontSize: "1.5rem",
                   fontFamily: "myriad-pro",
                   padding: "1.3rem",
                 }}
               >
-                does the carding and spinning, and my dad weaves. They loved working at night
-                because night brings calmness and concentration. This is how they raised eleven
-                kids. They always say that they are blessed that their humble work as artisans
+                does the carding and spinning, and my dad weaves. They loved
+                working at night because night brings calmness and
+                concentration. This is how they raised eleven kids. They always
+                say that they are blessed that their humble work as artisans
                 enabled them to raise their kids.
               </p>
             </div>
           </div>
           <div className="row1">
             <div className="column1">
-              <img src={Icon5} alt="Developer" style={{ width: "100%", height: "100%" }} />
+              <img
+                src={Icon5}
+                alt="Developer"
+                style={{ width: "100%", height: "100%" }}
+              />
             </div>
             <div className="column1">
-              <img src={Icon8} alt="Developer" style={{ width: "100%", height: "100%" }} />
+              <img
+                src={Icon8}
+                alt="Developer"
+                style={{ width: "100%", height: "100%" }}
+              />
             </div>
           </div>
 
           <div className="quoteDiv">
             <p className="quote">
-              “The greater being has given us the plants for food, dyes, and for medicine. Because
-              they connect us to Mother Earth, they are a deep part of our body and our wellbeing.
-              The wisdom to use them was inherited from our ancestors.”
+              “The greater being has given us the plants for food, dyes, and for
+              medicine. Because they connect us to Mother Earth, they are a deep
+              part of our body and our wellbeing. The wisdom to use them was
+              inherited from our ancestors.”
             </p>
             <p className="author"> Andrea Contreras</p>
           </div>
@@ -446,14 +469,16 @@ const Dyeing = () => {
           <div className="text">
             {/* <h2>John Doe</h2> */}
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid placeat omnis
-              adipisci dolores quae amet mollitia sint, temporibus eum magnam facilis odio ex
-              incidunt? Deleniti quam et rem obcaecati. Laborum atque odit expedita nulla.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              aliquid placeat omnis adipisci dolores quae amet mollitia sint,
+              temporibus eum magnam facilis odio ex incidunt? Deleniti quam et
+              rem obcaecati. Laborum atque odit expedita nulla.
             </div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita labore laborum,
-              assumenda dolorum provident quod itaque earum, officia in placeat dignissimos nostrum?
-              Totam corrupti nihil repudiandae ducimus atque quod eos!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              labore laborum, assumenda dolorum provident quod itaque earum,
+              officia in placeat dignissimos nostrum? Totam corrupti nihil
+              repudiandae ducimus atque quod eos!
             </div>
           </div>
         </div>
@@ -464,14 +489,16 @@ const Dyeing = () => {
           <div className="text">
             {/* <h2>John Doe</h2> */}
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid placeat omnis
-              adipisci dolores quae amet mollitia sint, temporibus eum magnam facilis odio ex
-              incidunt? Deleniti quam et rem obcaecati. Laborum atque odit expedita nulla.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              aliquid placeat omnis adipisci dolores quae amet mollitia sint,
+              temporibus eum magnam facilis odio ex incidunt? Deleniti quam et
+              rem obcaecati. Laborum atque odit expedita nulla.
             </div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita labore laborum,
-              assumenda dolorum provident quod itaque earum, officia in placeat dignissimos nostrum?
-              Totam corrupti nihil repudiandae ducimus atque quod eos!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              labore laborum, assumenda dolorum provident quod itaque earum,
+              officia in placeat dignissimos nostrum? Totam corrupti nihil
+              repudiandae ducimus atque quod eos!
             </div>
           </div>
         </div>
@@ -487,63 +514,75 @@ const Dyeing = () => {
             <div className="column">
               <p
                 style={{
-                  fontSize: "0.75rem",
+                  fontSize: "1.5rem",
                   fontFamily: "myriad-pro",
                   padding: "1.3rem",
                 }}
               >
-                My parents are the third generation of dyers and weavers in our family, which makes
-                my siblings and me the fourth generation of weavers. As newlyweds, the first things
-                your parents usually give you are a loom, a spinning wheel, and enough materials to
-                start a studio, so you can feed your family. However, since my grandparents passed
-                away{" "}
+                My parents are the third generation of dyers and weavers in our
+                family, which makes my siblings and me the fourth generation of
+                weavers. As newlyweds, the first things your parents usually
+                give you are a loom, a spinning wheel, and enough materials to
+                start a studio, so you can feed your family. However, since my
+                grandparents passed away{" "}
               </p>
             </div>
             <div className="column">
               <p
                 style={{
-                  fontSize: "0.75rem",
+                  fontSize: "1.5rem",
                   fontFamily: "myriad-pro",
                   padding: "1.3rem",
                 }}
               >
-                before my parents got married, they had to figure it all out themselves.
+                before my parents got married, they had to figure it all out
+                themselves.
                 <br />
                 <br />
-                My parents have always worked collaboratively to create each piece—from cleaning
-                wool, spinning it, collecting the plants for dyeing, dyeing the wool, to weaving. To
-                execute a piece, my mom{" "}
+                My parents have always worked collaboratively to create each
+                piece—from cleaning wool, spinning it, collecting the plants for
+                dyeing, dyeing the wool, to weaving. To execute a piece, my mom{" "}
               </p>
             </div>
             <div className="column">
               <p
                 style={{
-                  fontSize: "0.75rem",
+                  fontSize: "1.5rem",
                   fontFamily: "myriad-pro",
                   padding: "1.3rem",
                 }}
               >
-                does the carding and spinning, and my dad weaves. They loved working at night
-                because night brings calmness and concentration. This is how they raised eleven
-                kids. They always say that they are blessed that their humble work as artisans
+                does the carding and spinning, and my dad weaves. They loved
+                working at night because night brings calmness and
+                concentration. This is how they raised eleven kids. They always
+                say that they are blessed that their humble work as artisans
                 enabled them to raise their kids.
               </p>
             </div>
           </div>
           <div className="row1">
             <div className="column1">
-              <img src={Icon5} alt="Developer" style={{ width: "100%", height: "100%" }} />
+              <img
+                src={Icon5}
+                alt="Developer"
+                style={{ width: "100%", height: "100%" }}
+              />
             </div>
             <div className="column1">
-              <img src={Icon8} alt="Developer" style={{ width: "100%", height: "100%" }} />
+              <img
+                src={Icon8}
+                alt="Developer"
+                style={{ width: "100%", height: "100%" }}
+              />
             </div>
           </div>
 
           <div className="quoteDiv">
             <p className="quote">
-              “The greater being has given us the plants for food, dyes, and for medicine. Because
-              they connect us to Mother Earth, they are a deep part of our body and our wellbeing.
-              The wisdom to use them was inherited from our ancestors.”
+              “The greater being has given us the plants for food, dyes, and for
+              medicine. Because they connect us to Mother Earth, they are a deep
+              part of our body and our wellbeing. The wisdom to use them was
+              inherited from our ancestors.”
             </p>
             <p className="author"> Andrea Contreras</p>
           </div>

@@ -20,7 +20,7 @@
   /* Create three equal columns that floats next to each other */
   .column {
     float: left;
-    width: 33.33%;
+    width: 50%;
     padding: 10px;
     font-family: sans-serif;
     color: #fff;
@@ -37,7 +37,7 @@
   }
   .column4 {
     float: left;
-    width: 75%;
+    width:50%;
     padding: 1rem 2rem 1rem 2rem;
     font-family: myriad-pro;
     color: #fff;
@@ -45,7 +45,7 @@
   }
   .column5 {
     float: left;
-    width: 25%;
+    width: 50%;
     padding: 1rem 2rem 1rem 2rem;
     font-family: myriad-pro;
     color: #fff;
@@ -103,6 +103,23 @@
      /* Should be removed. Only for demonstration */
   }
   
+  .column11{
+    width: 33.3%;
+    float: left;
+  }
+  .column12{
+    width: 33.3%;
+    float: center;
+  }
+  .column13{
+    width: 33.3%;
+    float: right;
+  }
+  .row1{
+    content: "";
+    display: table;
+    clear: both;
+  }
   /* Clear floats after the columns */
   .row1:after {
     content: "";

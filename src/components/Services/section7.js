@@ -1,86 +1,980 @@
+import Modal from "react-modal";
+//styling of the modal itself
+import styled from "styled-components";
 import React, { useState } from "react";
-import Icon1 from "../../images/svg-4.svg";
-import Icon2 from "../../images/svg-5.svg";
-import Icon3 from "../../images/svg-6.svg";
-import img2 from "../../textiles_png/7_textiles/7A1_1978-1-2.png";
-import img3 from "../../textiles_png/7_textiles/7A2_1980-29-1.png";
-import img4 from "../../textiles_png/7_textiles/7B1_1976-11-1.png";
-import img5 from "../../textiles_png/7_textiles/7B2_E-6102.png";
-import img6 from "../../textiles_png/7_textiles/7C1_E-2724.png";
-import img7 from "../../textiles_png/7_textiles/7C2_E-8988.png";
-import img8 from "../../textiles_png/7_textiles/7C3_E-83.png";
-import img9 from "../../textiles_png/7_textiles/7C4_at_2020-337-1.png";
+//import Modal2 from '../Modal2/modal2';
+//import Modal from '../Modal/index.js';
+
+// import React, { useState } from "react";
+import "./styles.css";
+
+import Section7 from "../Section7/section7index";
+
+import {
+  sevenObj,
+  sevenObjOne,
+  sevenObjTwo,
+  sevenObjThree,
+  sevenObjFour,
+  sevenObjFive,
+  sevenObjSix,
+  sevenObjSeven,
+} from "../Section7/section7-data";
+
+import Icon1 from "../../textiles_png/7_textiles/7A1_1978-1-2.png";
+import Icon2 from "../../textiles_png/7_textiles/7A2_1980-29-1.png";
+import Icon3 from "../../textiles_png/7_textiles/7B1_1976-11-1.png";
+import Icon4 from "../../textiles_png/7_textiles/7B2_E-6102.png";
+import Icon5 from "../../textiles_png/7_textiles/7C1_E-2724.png";
+import Icon6 from "../../textiles_png/7_textiles/7C2_E-8988.png";
+import Icon7 from "../../textiles_png/7_textiles/7C3_E-83.png";
+import Icon8 from "../../textiles_png/7_textiles/7C4_at_2020-337-1.png";
+import close from "../../images/close.png";
+// import AnimeList from '../components/anime';
+import "./styles.css";
+// import Modal2 from '../components/Modal2/modal2';
 
 import {
   ServicesContainer,
   ServicesH1,
-  ServicesWrapper,
-  ServicesCard,
+  ServicesWrapper7,
   ServicesIcon,
   ServicesH2,
   ServicesP,
 } from "./ServicesElements";
-import Modal from "../Modal/index.js";
 
-const Section7 = () => {
+import {
+  Column1,
+  InfoContainer,
+  InfoRow,
+  InfoWrapper,
+  Heading,
+  TextWrapper,
+  TopLine,
+  Subtitle,
+  Img,
+  Column2,
+  ImgWrap,
+} from "../InfoSection/infoElements";
+
+import useWindowDimensions from "../Geography/dimensions";
+
+const customStyles = {
+  content: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    background: "#4a0033",
+    color: "#fff",
+  },
+};
+
+const Services = () => {
   const [showModal, setShowModal] = useState(false);
 
-  const openModal = () => {
-    setShowModal((prev) => !prev);
-  };
+  /*const [show1, setShow1] = useState(false);
+      const [show2, setShow2] = useState(false);
+      const [show3, setShow3] = useState(false);
+      const [show4, setShow4] = useState(false);
+      const [show5, setShow5] = useState(false);
+      const [show6, setShow6] = useState(false);
+      const [show7, setShow7] = useState(false);
+      const [show8, setShow8] = useState(false);
+      const [show9, setShow9] = useState(false);
+      const [show10, setShow10] = useState(false);
+      
+      const openModal = () => {
+          setShowModal(prev => !prev);
+      };*/
+
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [content, setContent] = React.useState(null);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+  function closeModal() {
+    setIsOpen(false);
+  }
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+  }
+  const { height, width } = useWindowDimensions();
+  let Card = styled.div`
+    // background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    max-height: 500px;
+    padding: 0px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+  `;
+
   return (
-    <ServicesContainer id="section7">
-      <ServicesWrapper>
-        <ServicesCard>
-          <ServicesIcon onClick={openModal} src={img2} />
+    <ServicesContainer id="services">
+      <Modal
+        isOpen={modalIsOpen}
+        onAfterOpen={afterOpenModal}
+        onRequestClose={closeModal}
+        style={customStyles}
+      >
+        <img
+          src={close}
+          alt=""
+          onClick={closeModal}
+          style={{ width: "2.5%", float: "right" }}
+        />
+
+        {content}
+      </Modal>
+      <ServicesWrapper7>
+        <Card>
+          <ServicesIcon src={Icon1} />
           {/* <ServicesH2>Reduce Expenses</ServicesH2>
                     <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP> */}
-          <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc={img2} />
-        </ServicesCard>
-        <ServicesCard>
-          <ServicesIcon onClick={openModal} src={img3} />
-          {/* <ServicesH2>Virtual offices</ServicesH2> */}
-          {/* <ServicesP>You can access our platform from anywhere.</ServicesP> */}
-          <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc={img3} />
-          <ServicesIcon onClick={openModal} src={img4} />
-          {/* <ServicesH2>Premium Benefits</ServicesH2> */}
-          {/* <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-          <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc={img4} />
-        </ServicesCard>
-        <ServicesCard>
-          <ServicesIcon onClick={openModal} src={img5} />
-          {/* <ServicesH2>Premium Benefits</ServicesH2> */}
-          {/* <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-          <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc={img5} />
-        </ServicesCard>
-        <ServicesCard>
-          <ServicesIcon onClick={openModal} src={img6} />
+        </Card>
+        <div>
+          <Card>
+            <ServicesIcon src={Icon2} />
+            {/* <ServicesH2>Virtual offices</ServicesH2> */}
+            {/* <ServicesP>You can access our platform from anywhere.</ServicesP> */}
+          </Card>
+          <Card>
+            <ServicesIcon src={Icon3} />
+            {/* <ServicesH2>Premium Benefits</ServicesH2> */}
+            {/* <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
+          </Card>
+        </div>
+        <Card>
+          <ServicesIcon src={Icon4} />
           {/* <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-          <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc={img6} />
-        </ServicesCard>
-        <ServicesCard>
-          <ServicesIcon onClick={openModal} src={img7} />
+        </Card>
+        <div>
+          <Card>
+            <ServicesIcon src={Icon5} />
+            {/* <ServicesH2>Premium Benefits</ServicesH2>
+                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
+          </Card>
+          <Card>
+            <ServicesIcon src={Icon6} />
+            {/* <ServicesH2>Premium Benefits</ServicesH2>
+                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
+          </Card>
+        </div>
+
+        <Card>
+          <ServicesIcon src={Icon7} />
           {/* <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-          <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc={img7} />
-          <ServicesIcon onClick={openModal} src={img8} />
+        </Card>
+        <Card>
+          <ServicesIcon src={Icon8} />
           {/* <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-          <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc={img8} />
-        </ServicesCard>
-        <ServicesCard>
-          <ServicesIcon onClick={openModal} src={img9} />
-          {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
-          <Modal showModal={showModal} setShowModal={setShowModal} ImgSrc={img9} />
-        </ServicesCard>
-      </ServicesWrapper>
+        </Card>
+      </ServicesWrapper7>
       <br></br>
-      <br></br>
-      <ServicesH1>Satillo Influences</ServicesH1>
+
+      {/* sixObj section */}
+      <InfoContainer lightBg={sevenObj.lightBg} id={sevenObj.id}>
+        <InfoWrapper>
+          <InfoRow imgStart={sevenObj.imgStart}>
+            <Column1>
+              <Heading lightText={sevenObj.lightText}>
+                {sevenObj.headline}
+              </Heading>
+              <TextWrapper>
+                <TopLine>{sevenObj.topLine}</TopLine>
+                <Subtitle
+                  darkText={sevenObj.darkText}
+                  style={{ fontFamily: "myriad-pro" }}
+                >
+                  {sevenObj.description}
+                </Subtitle>
+              </TextWrapper>
+            </Column1>
+            <Column2>
+              {/* Second column of images */}
+              <div class="row">
+                <div class="column1">
+                  <Img
+                    border="none"
+                    smallImg={sevenObj.smallImg}
+                    src={sevenObj.img}
+                    alt=""
+                  />
+                  <Subtitle
+                    darkText={sevenObj.darkText}
+                    style={{ fontFamily: "myriad-pro" }}
+                  >
+                    {sevenObj.imgdesc2}
+                  </Subtitle>
+                </div>
+                <Img
+                  border="none"
+                  smallImg={sevenObj.smallImg}
+                  src={sevenObj.img2}
+                  alt=""
+                />
+              </div>
+            </Column2>
+          </InfoRow>
+        </InfoWrapper>
+      </InfoContainer>
+
+      {/* sixObjOne section */}
+      <InfoContainer
+        lightBg={sevenObjOne.lightBg}
+        id={sevenObjOne.id}
+        style={{ maxWidth: width > 768 ? "auto" : "600px" }}
+      >
+        <InfoWrapper>
+          <InfoRow imgStart={sevenObjOne.imgStart}>
+            <Column1>
+              <Heading lightText={sevenObjOne.lightText}>
+                {sevenObjOne.headline}
+              </Heading>
+              <TextWrapper>
+                <TopLine>{sevenObjOne.topLine}</TopLine>
+
+                <Subtitle
+                  darkText={sevenObjOne.darkText}
+                  style={{ fontFamily: "myriad-pro" }}
+                >
+                  {sevenObjOne.description}
+                </Subtitle>
+                <Subtitle
+                  darkText={sevenObjOne.darkText}
+                  style={{ fontFamily: "myriad-pro" }}
+                >
+                  {sevenObjOne.description2}
+                </Subtitle>
+              </TextWrapper>
+            </Column1>
+            <Column2>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "start",
+                  alignItems: "center",
+                  marginTop: "6rem",
+                }}
+              >
+                <Subtitle
+                  darkText={sevenObjOne.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                    width: "85%",
+                  }}
+                >
+                  {sevenObjOne.description}
+                </Subtitle>
+                <Img
+                  border="none"
+                  style={{
+                    width: "85%",
+                  }}
+                  src={sevenObjOne.img}
+                  alt=""
+                />
+                <Subtitle
+                  darkText={sevenObjOne.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                    width: "85%",
+                  }}
+                >
+                  {sevenObjOne.imgdesc2}
+                </Subtitle>
+                <Img
+                  border="none"
+                  style={{
+                    width: "85%",
+                  }}
+                  src={sevenObjOne.img2}
+                  alt=""
+                />
+                <Subtitle
+                  darkText={sevenObjOne.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                    width: "85%",
+                  }}
+                >
+                  {sevenObjOne.imgdesc3}
+                </Subtitle>
+              </div>
+            </Column2>
+          </InfoRow>
+          <ImgWrap style={{ marginTop: "-20rem" }}>
+            <Img
+              border="none"
+              style={{ width: "25%", marginLeft: "5rem" }}
+              src={Icon1}
+              onClick={() => {
+                setContent(
+                  <div className="content" style={{ alignItems: "right" }}>
+                    <div
+                      className="text"
+                      style={{ width: "50%", marginLeft: "6rem" }}
+                    >
+                      <p
+                        style={{
+                          fontSize: "1rem",
+                          marginTop: "5rem",
+                          color: "white",
+                        }}
+                      >
+                        Although the diamond may have been a traditional
+                        Rarámuri motif, the design layout shows a definite
+                        Saltillo sarape influence.
+                      </p>
+                      <p
+                        style={{
+                          fontSize: "1rem",
+
+                          marginTop: "25rem",
+                          marginLeft: "10rem",
+                          color: "white",
+                        }}
+                      >
+                        Post-Classic period Saltillo sarape, c. 1870 <br></br>
+                        Wool, cotton, and indigo and possibly synthetic dyes
+                        <br></br>1250
+                      </p>
+                    </div>
+                    <div
+                      style={{
+                        height: "60%",
+                        width: "70%",
+                        alignItems: "right",
+                      }}
+                    >
+                      <div style={{ width: "90%", alignItems: "right" }}>
+                        <img
+                          src={Icon1}
+                          style={{ width: "90%" }}
+                          alt="Developer"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                );
+                openModal();
+              }}
+              alt=""
+            />
+          </ImgWrap>
+        </InfoWrapper>
+      </InfoContainer>
+
+      <InfoContainer
+        lightBg={sevenObjTwo.lightBg}
+        id={sevenObjTwo.id}
+        style={{ maxWidth: width > 768 ? "auto" : "600px" }}
+      >
+        <InfoWrapper>
+          <InfoRow imgStart={sevenObjTwo.imgStart}>
+            <Column1>
+              <Heading lightText={sevenObjTwo.lightText}>
+                {sevenObjTwo.headline}
+              </Heading>
+              <TextWrapper>
+                <TopLine>{sevenObjTwo.topLine}</TopLine>
+
+                <Subtitle
+                  darkText={sevenObjTwo.darkText}
+                  style={{ fontFamily: "myriad-pro" }}
+                >
+                  {sevenObjTwo.description}
+                </Subtitle>
+                <Subtitle
+                  darkText={sevenObjTwo.darkText}
+                  style={{ fontFamily: "myriad-pro" }}
+                >
+                  {sevenObjTwo.description2}
+                </Subtitle>
+                <Subtitle
+                  darkText={sevenObjTwo.darkText}
+                  style={{ fontFamily: "myriad-pro" }}
+                >
+                  {sevenObjTwo.description3}
+                </Subtitle>
+              </TextWrapper>
+            </Column1>
+            <Column2>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "start",
+                  alignItems: "center",
+                  marginTop: "6rem",
+                }}
+              >
+                <Subtitle
+                  darkText={sevenObjTwo.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                    width: "85%",
+                  }}
+                >
+                  {sevenObjTwo.imgdesc}
+                </Subtitle>
+                <Img
+                  border="none"
+                  style={{
+                    width: "85%",
+                  }}
+                  src={sevenObjTwo.img}
+                  alt=""
+                />
+                <Subtitle
+                  darkText={sevenObjTwo.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                    width: "85%",
+                  }}
+                >
+                  {sevenObjTwo.imgdesc2}
+                </Subtitle>
+                <ImgWrap>
+                  <Img
+                    border="none"
+                    style={{ width: "65%", marginLeft: "5rem" }}
+                    src={Icon2}
+                    onClick={() => {
+                      setContent(
+                        <div
+                          className="content"
+                          style={{ alignItems: "right" }}
+                        >
+                          <div
+                            className="text"
+                            style={{ width: "50%", marginLeft: "6rem" }}
+                          >
+                            <p
+                              style={{
+                                fontSize: "1rem",
+                                marginTop: "2rem",
+                                color: "white",
+                              }}
+                            >
+                              This early-1900s Mayo sarape has an unusually
+                              large central diamond superimposed on a typical
+                              Saltillo sarape design layout
+                            </p>
+                            <p
+                              style={{
+                                fontSize: "1rem",
+
+                                marginTop: "25rem",
+                                marginLeft: "10rem",
+                                color: "white",
+                              }}
+                            >
+                              Mayo sarape, c. 1920 <br></br>Wool and indigo dye{" "}
+                              <br></br>Gift of the University of Arizona
+                              Foundation
+                              <br></br>1980-29-1
+                            </p>
+                          </div>
+                          <div
+                            style={{
+                              height: "60%",
+                              width: "70%",
+                              alignItems: "right",
+                            }}
+                          >
+                            <div style={{ width: "85%", alignItems: "right" }}>
+                              <img
+                                src={Icon2}
+                                style={{ width: "85%" }}
+                                alt="Developer"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      );
+                      openModal();
+                    }}
+                    alt=""
+                  />
+                </ImgWrap>
+              </div>
+            </Column2>
+          </InfoRow>
+        </InfoWrapper>
+      </InfoContainer>
+
+      <InfoContainer lightBg={sevenObjThree.lightBg} id={sevenObjThree.id}>
+        <InfoWrapper>
+          <InfoRow imgStart={sevenObjThree.imgStart}>
+            <Column1>
+              <Heading lightText={sevenObjThree.lightText}>
+                {sevenObjThree.headline}
+              </Heading>
+              <TextWrapper>
+                <TopLine>{sevenObjThree.topLine}</TopLine>
+
+                <Subtitle
+                  darkText={sevenObjThree.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1.5rem",
+                  }}
+                >
+                  {sevenObjThree.description}
+                </Subtitle>
+                <Subtitle
+                  darkText={sevenObjThree.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1.5rem",
+                  }}
+                >
+                  {sevenObjThree.description2}
+                </Subtitle>
+                <Subtitle
+                  darkText={sevenObjThree.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1.5rem",
+                  }}
+                >
+                  {sevenObjThree.description3}
+                </Subtitle>
+                <Img
+                  border="none"
+                  smallImg={sevenObjThree.smallImg}
+                  src={sevenObjThree.img3}
+                  alt=""
+                />
+                <Subtitle
+                  darkText={sevenObjThree.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1.5rem",
+                  }}
+                >
+                  {sevenObjThree.imgdesc4}
+                </Subtitle>
+              </TextWrapper>
+            </Column1>
+            <Column2>
+              <ImgWrap>
+                <Subtitle
+                  darkText={sevenObjThree.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {sevenObjThree.imgdesc}
+                </Subtitle>
+                <Img
+                  border="none"
+                  smallImg={sevenObjThree.smallImg}
+                  src={sevenObjThree.img}
+                  alt=""
+                />
+                <Subtitle
+                  darkText={sevenObjThree.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {sevenObjThree.imgdesc2}
+                </Subtitle>
+                <Img
+                  border="none"
+                  smallImg={sevenObjThree.smallImg}
+                  src={sevenObjThree.img2}
+                  alt=""
+                />
+                <Subtitle
+                  darkText={sevenObjThree.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {sevenObjThree.imgdesc3}
+                </Subtitle>
+                <Img
+                  border="none"
+                  style={{ width: "55%", marginLeft: "5rem" }}
+                  src={Icon3}
+                  onClick={() => {
+                    setContent(
+                      <div className="content" style={{ alignItems: "right" }}>
+                        <div
+                          className="text"
+                          style={{ width: "50%", marginLeft: "6rem" }}
+                        >
+                          <p
+                            style={{
+                              fontSize: "1rem",
+                              color: "white",
+                            }}
+                          >
+                            Large, bold elements were common in Rio Grande
+                            blanket designs. During the last quarter of the
+                            1800s, in both New Mexico and Mexico, backgrounds of
+                            Saltillo sarape designs became increasingly complex.
+                          </p>
+                          <p
+                            style={{
+                              fontSize: "1rem",
+
+                              marginTop: "22rem",
+                              marginLeft: "10rem",
+                              color: "white",
+                            }}
+                          >
+                            Rio Grande blanket, c. 1890 <br></br>New MexicoWool,
+                            cotton, and synthetic dyes <br></br>Gift of Mr. and
+                            Mrs. William Serat, 1976 <br></br>1976-11-1
+                          </p>
+                        </div>
+                        <div
+                          style={{
+                            height: "60%",
+                            width: "70%",
+                            alignItems: "right",
+                          }}
+                        >
+                          <div style={{ width: "85%", alignItems: "right" }}>
+                            <img
+                              src={Icon3}
+                              style={{ width: "85%" }}
+                              alt="Developer"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    );
+                    openModal();
+                  }}
+                  alt=""
+                />
+              </ImgWrap>
+            </Column2>
+          </InfoRow>
+        </InfoWrapper>
+      </InfoContainer>
+
+      <InfoContainer lightBg={sevenObjFour.lightBg} id={sevenObjFour.id}>
+        <InfoWrapper>
+          <InfoRow imgStart={sevenObjFour.imgStart}>
+            <Column1>
+              <Heading lightText={sevenObjFour.lightText}>
+                {sevenObjFour.headline}
+              </Heading>
+              <TextWrapper>
+                <TopLine>{sevenObjFour.topLine}</TopLine>
+
+                <Subtitle
+                  darkText={sevenObjFour.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1.5rem",
+                    marginBottom: "7rem",
+                  }}
+                >
+                  {sevenObjFour.description}
+                </Subtitle>
+                <Subtitle
+                  darkText={sevenObjFour.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1.5rem",
+                  }}
+                >
+                  {sevenObjFour.description2}
+                </Subtitle>
+                <Subtitle
+                  darkText={sevenObjFour.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1.5rem",
+                  }}
+                >
+                  {sevenObjFour.description3}
+                </Subtitle>
+                <Img
+                  border="none"
+                  style={{ width: "50%" }}
+                  src={sevenObjFour.img3}
+                  alt=""
+                />
+                <Subtitle
+                  darkText={sevenObjFour.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                  }}
+                >
+                  Chimayo Weavers, Reyes Ortega at his loom <br></br>Laura
+                  Gilpin, photographer, 1939 <br></br>Chimayo, NM <br></br>Amon
+                  Carter Museum of American Art,<br></br> P1979.202.241, 1979
+                </Subtitle>
+              </TextWrapper>
+            </Column1>
+            <Column2>
+              <ImgWrap>
+                <Subtitle
+                  darkText={sevenObjFour.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {sevenObjFour.imgdesc}
+                </Subtitle>
+                <Img
+                  border="none"
+                  style={{ width: "50%" }}
+                  src={sevenObjFour.img}
+                  alt=""
+                />
+                <Subtitle
+                  darkText={sevenObjFour.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {sevenObjFour.imgdesc2}
+                </Subtitle>
+                <Img
+                  border="none"
+                  style={{
+                    width: "55%",
+                    marginLeft: "5rem",
+                    marginTop: "-2rem",
+                  }}
+                  src={Icon4}
+                  onClick={() => {
+                    setContent(
+                      <div className="content" style={{ alignItems: "right" }}>
+                        <div
+                          className="text"
+                          style={{ width: "50%", marginLeft: "6rem" }}
+                        >
+                          <p
+                            style={{
+                              fontSize: "1rem",
+                              color: "white",
+                            }}
+                          >
+                            This Chimayo blanket’s design shows a strong Mexican
+                            Saltillo influence yet has a distinctive New Mexico
+                            flair
+                          </p>
+                          <p
+                            style={{
+                              fontSize: "1rem",
+
+                              marginTop: "22rem",
+                              marginLeft: "10rem",
+                              color: "white",
+                            }}
+                          >
+                            Chimayo blanket, c. 1920–1950<br></br> Wool, cotton,
+                            and synthetic dyes<br></br>Gift of Mrs. Robert
+                            Schuman Steinert, 1964 <br></br>E-610
+                          </p>
+                        </div>
+                        <div
+                          style={{
+                            height: "60%",
+                            width: "70%",
+                            alignItems: "right",
+                          }}
+                        >
+                          <div style={{ width: "85%", alignItems: "right" }}>
+                            <img
+                              src={Icon4}
+                              style={{ width: "85%" }}
+                              alt="Developer"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    );
+                    openModal();
+                  }}
+                  alt=""
+                />
+                <Img
+                  border="none"
+                  style={{ width: "50%", marginTop: "2rem" }}
+                  src={sevenObjFour.img2}
+                  alt=""
+                />
+                <Subtitle
+                  darkText={sevenObjFour.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                  }}
+                >
+                  Chris Ortega, seventh-generation weaver, at his loom <br></br>
+                  Robert Ortega, photographer, 2020
+                </Subtitle>
+              </ImgWrap>
+            </Column2>
+          </InfoRow>
+        </InfoWrapper>
+      </InfoContainer>
+
+      <InfoContainer lightBg={sevenObjFive.lightBg} id={sevenObjFive.id}>
+        <InfoWrapper>
+          <div class="row">
+            <div style={{ width: "60%", float: "left" }}>
+              <Heading lightText={sevenObjFive.lightText}>
+                {sevenObjFive.headline}
+              </Heading>
+              <TextWrapper>
+                <TopLine>{sevenObjFive.topLine}</TopLine>
+
+                <Subtitle
+                  darkText={sevenObjFive.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1.5rem",
+                  }}
+                >
+                  {sevenObjFive.description}
+                </Subtitle>
+                <Subtitle
+                  darkText={sevenObjFive.darkText}
+                  style={{
+                    fontFamily: "Lucida",
+                    fontSize: "1.5rem",
+                  }}
+                >
+                  {sevenObjFive.quote1}
+                </Subtitle>
+              </TextWrapper>
+            </div>
+            <div style={{ width: "40%", float: "right" }}>
+              <ImgWrap>
+                <Img
+                  border="none"
+                  style={{ width: "90%", marginTop: "10rem" }}
+                  src={sevenObjFive.img}
+                  alt=""
+                />
+                <Subtitle
+                  darkText={sevenObjFive.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                  }}
+                >
+                  Irvin Trujillo’s father, Jake Trujillo, taught weaving to Navy
+                  sailors at Treasure Island, San Francisco, 1944. <br></br>
+                  Photograph courtesy of Trujillo family
+                </Subtitle>
+                <Subtitle
+                  darkText={sevenObjFive.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {sevenObjFive.smallDesc}
+                </Subtitle>
+              </ImgWrap>
+            </div>
+          </div>
+        </InfoWrapper>
+      </InfoContainer>
+
+      <InfoContainer lightBg={sevenObjSix.lightBg} id={sevenObjSix.id}>
+        <InfoWrapper>
+          <div class="row">
+            <div style={{ width: "45%", float: "left" }}>
+              <Heading lightText={sevenObjSix.lightText}>
+                {sevenObjSix.headline}
+              </Heading>
+              <TextWrapper>
+                <TopLine>{sevenObjSix.topLine}</TopLine>
+
+                <Subtitle
+                  darkText={sevenObjSix.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1.5rem",
+                  }}
+                >
+                  {sevenObjSix.description}
+                </Subtitle>
+                <Subtitle
+                  darkText={sevenObjSix.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1.5rem",
+                  }}
+                >
+                  {sevenObjSix.description2}
+                </Subtitle>
+              </TextWrapper>
+            </div>
+            <div style={{ width: "50%", float: "right" }}>
+              <ImgWrap>
+                <Img
+                  border="none"
+                  style={{ width: "90%", marginTop: "10rem" }}
+                  src={sevenObjSix.img}
+                  alt=""
+                />
+                <Subtitle
+                  darkText={sevenObjSix.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                  }}
+                >
+                  A Navajo woman weaving on an upright, continuous-warp loom.
+                  <br></br>The rug has a centralized diamond design on an open
+                  field.
+                </Subtitle>
+                <Subtitle
+                  darkText={sevenObjSix.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                  }}
+                >
+                  Jesse Nusbaum, photographer, c. 1921–1931 <br></br>Denver
+                  Public Library, N-338
+                </Subtitle>
+              </ImgWrap>
+            </div>
+          </div>
+        </InfoWrapper>
+      </InfoContainer>
+      {/* <HistoricalSection {...sixObj} /> */}
+      {/* <HistoricalSection {...sixObjOne} /> */}
+      {/* <HistoricalSection {...sixObjTwo} /> */}
     </ServicesContainer>
   );
 };
 
-export default Section7;
+export default Services;

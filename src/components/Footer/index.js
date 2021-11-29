@@ -1,53 +1,55 @@
-import React from 'react';
+import React from "react";
 
-import {FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLink, FooterLinkItems, FooterLinkTitle} from "./footerElements"
+import {
+  FooterContainer,
+  FooterWrap,
+  FooterLinksContainer,
+  FooterLinksWrapper,
+  FooterLink,
+  FooterLinkItems,
+  FooterLinkTitle,
+} from "./footerElements";
 
 const Footer = () => {
-    return (
-        <>
-            <FooterContainer>
-                <FooterWrap>
-                    <FooterLinksContainer>
-                        <FooterLinksWrapper>
-                            <FooterLinkItems>
-                                <FooterLinkTitle>About Us</FooterLinkTitle>
-                                <FooterLink to="/signin">How it works</FooterLink>
-                                <FooterLink to="/signin">Testimonials</FooterLink>
-                                <FooterLink to="/signin">Careers</FooterLink>
-                                <FooterLink to="/signin">Investors</FooterLink>
-                                <FooterLink to="/signin">Terms of Service</FooterLink>
-                            </FooterLinkItems>
-                            <FooterLinkItems>
-                                <FooterLinkTitle>About Us</FooterLinkTitle>
-                                <FooterLink to="/signin">How it works</FooterLink>
-                                <FooterLink to="/signin">Testimonials</FooterLink>
-                                <FooterLink to="/signin">Careers</FooterLink>
-                                <FooterLink to="/signin">Investors</FooterLink>
-                                <FooterLink to="/signin">Terms of Service</FooterLink>
-                            </FooterLinkItems>
-                        </FooterLinksWrapper>
-                        <FooterLinksWrapper>
-                            <FooterLinkItems>
-                                <FooterLinkTitle>About Us</FooterLinkTitle>
-                                <FooterLink to="/signin">How it works</FooterLink>
-                                <FooterLink to="/signin">Testimonials</FooterLink>
-                                <FooterLink to="/signin">Careers</FooterLink>
-                                <FooterLink to="/signin">Investors</FooterLink>
-                                <FooterLink to="/signin">Terms of Service</FooterLink>
-                            </FooterLinkItems>
-                            <FooterLinkItems>
-                                <FooterLinkTitle>About Us</FooterLinkTitle>
-                                <FooterLink to="/signin">How it works</FooterLink>
-                                <FooterLink to="/signin">Testimonials</FooterLink>
-                                <FooterLink to="/signin">Careers</FooterLink>
-                                <FooterLink to="/signin">Investors</FooterLink>
-                                <FooterLink to="/signin">Terms of Service</FooterLink>
-                            </FooterLinkItems>
-                        </FooterLinksWrapper> 
-                    </FooterLinksContainer>    
-                </FooterWrap>    
-            </FooterContainer>      
-        </>
-    );
-}
+  return (
+    <>
+      <FooterContainer>
+        <FooterWrap>
+          <FooterLinksContainer>
+            <FooterLinksWrapper>
+              <FooterLinkItems>
+                <FooterLink to="/intro">Introduction</FooterLink>
+              </FooterLinkItems>
+              <FooterLinkItems>
+                <FooterLink to="/geography">History and Geography</FooterLink>
+              </FooterLinkItems>
+              <FooterLinkItems>
+                <FooterLink to="/porfirio">Porfirio Gutiérrez</FooterLink>
+              </FooterLinkItems>
+              <FooterLinkItems>
+                <FooterLink to="/section5Family">
+                  Family and Philosophy
+                </FooterLink>
+              </FooterLinkItems>
+              <FooterLinkItems>
+                <FooterLink to="/dyeing">Natural Dyeing</FooterLink>
+              </FooterLinkItems>
+              <FooterLinkItems>
+                <FooterLink to="/historicalTextiles">
+                  Historical Textiles
+                </FooterLink>
+              </FooterLinkItems>
+              <FooterLinkItems>
+                <FooterLink to="/section7">Saltillo Influences</FooterLink>
+              </FooterLinkItems>
+              <FooterLinkItems>
+                <FooterLink to="/tourism">Tourism</FooterLink>
+              </FooterLinkItems>
+            </FooterLinksWrapper>
+          </FooterLinksContainer>
+        </FooterWrap>
+      </FooterContainer>
+    </>
+  );
+};
 export default Footer;

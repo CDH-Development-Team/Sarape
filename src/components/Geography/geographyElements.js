@@ -50,11 +50,9 @@ export const GeographyEntryText = styled.div`
 `;
 
 export const GeographyEntryDescription = styled.div`
-  margin: 50px 0px;
   width: ${({ wide }) => (wide ? "40%" : "80%")};
-  float: right;
-  text-align: right;
-  font-size: 1rem;
+  float: left;
+  text-align: left;
 `;
 
 export const GeographyStatues = styled.div`
@@ -316,7 +314,7 @@ export const FC5 = styled.div`
 export const FamilyMosaicParent = styled.div`
   display: grid;
   grid-template-columns: repeat(19, 1fr);
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-rows: repeat(9, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   margin: 0 auto;

@@ -36,6 +36,7 @@ import {
   QuoteDiv,
   QuoteAuthor,
 } from "./ServicesElements";
+import { Column1, Column2, InfoRow } from "../InfoSection/infoElements.js";
 /*import Modal from '../Modal/index.js';
 import Modal2 from '../Modal2/modal2';
 */
@@ -89,7 +90,12 @@ const Services = () => {
         onRequestClose={closeModal}
         style={customStyles}
       >
-        <img src={close} alt="" onClick={closeModal} style={{ width: "2.5%", float: "right" }} />
+        <img
+          src={close}
+          alt=""
+          onClick={closeModal}
+          style={{ width: "2.5%", float: "right" }}
+        />
         {content}
       </Modal>
 
@@ -100,25 +106,32 @@ const Services = () => {
             onClick={() => {
               setContent(
                 <div className="content" style={{ alignItems: "right" }}>
-                  <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
-                    {/* <h2>John Doe</h2> */}
-                    <div
+                  <div
+                    className="text"
+                    style={{ width: "50%", marginLeft: "6rem" }}
+                  >
+                    <p
                       style={{
-                        fontSize: "4rem",
-                        fontFamily: "CancioneITCStd",
-                        padding: "1.3rem",
+                        marginTop: "25rem",
+                        fontSize: "1rem",
+                        color: "white",
+                        marginLeft: "10rem",
                       }}
                     >
-                      FRAGMENT SERIES
-                    </div>
+                      Naturally dyed. Dyes colors made from tree moss, black
+                      sapote, indigo, marush, and cochineal.<br></br>
+                      AT-2020-16-2
+                    </p>
                   </div>
-                  <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
+                  <div
+                    style={{ height: "80%", width: "60%", alignItems: "right" }}
+                  >
                     <div style={{ width: "85%", alignItems: "right" }}>
-                      <img src={Icon4} style={{ width: "65%" }} alt="Developer" />
-                      <p style={{ padding: "0 0 1rem 1.6rem", color: "white" }}>
-                        Naturally dyed. Dyes colors made from tree moss, black sapote, indigo,
-                        marush, and cochineal.<br></br>AT-2020-16-2
-                      </p>
+                      <img
+                        src={Icon4}
+                        style={{ width: "75%" }}
+                        alt="Developer"
+                      />
                     </div>
                   </div>
                 </div>
@@ -135,25 +148,33 @@ const Services = () => {
             onClick={() => {
               setContent(
                 <div className="content" style={{ alignItems: "right" }}>
-                  <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
-                    {/* <h2>John Doe</h2> */}
-                    <div
+                  <div
+                    className="text"
+                    style={{ width: "50%", marginLeft: "6rem" }}
+                  >
+                    {" "}
+                    <p
                       style={{
-                        fontSize: "4rem",
-                        fontFamily: "CancioneITCStd",
-                        padding: "1.3rem",
+                        marginTop: "25rem",
+                        fontSize: "1rem",
+                        color: "white",
+                        marginLeft: "15rem",
                       }}
                     >
-                      FRAGMENT SERIES
-                    </div>
+                      Naturally dyed. Dyes colors made from tree moss, indigo,
+                      and cochineal.
+                      <br></br>AT-2020-16-3
+                    </p>
                   </div>
-                  <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
+                  <div
+                    style={{ height: "80%", width: "60%", alignItems: "right" }}
+                  >
                     <div style={{ width: "85%", alignItems: "right" }}>
-                      <img src={Icon5} style={{ width: "65%" }} alt="Developer" />
-                      <p style={{ padding: "0 0 1rem 1.6rem", color: "white" }}>
-                        Naturally dyed. Dyes colors made from tree moss, indigo, and cochineal.
-                        <br></br>AT-2020-16-3
-                      </p>
+                      <img
+                        src={Icon5}
+                        style={{ width: "75%" }}
+                        alt="Developer"
+                      />
                     </div>
                   </div>
                 </div>
@@ -170,17 +191,21 @@ const Services = () => {
             onClick={() => {
               setContent(
                 <div className="content" style={{ alignItems: "right" }}>
-                  <div className="text" style={{ width: "100%", marginLeft: "6rem" }}>
-                    {/* <h2>John Doe</h2> */}
-                    <div
+                  <div
+                    className="text"
+                    style={{ width: "100%", marginLeft: "6rem" }}
+                  >
+                    <p
                       style={{
-                        fontSize: "4rem",
-                        fontFamily: "CancioneITCStd",
-                        padding: "1.3rem",
+                        marginTop: "36rem",
+                        fontSize: "1rem",
+                        color: "white",
+                        marginLeft: "20rem",
                       }}
                     >
-                      FRAGMENT SERIES
-                    </div>
+                      Naturally dyed. Dyes colors made from indigo.<br></br>
+                      AT-2020-16-4
+                    </p>
                   </div>
                   <div style={{ alignItems: "right" }}>
                     <div
@@ -191,10 +216,11 @@ const Services = () => {
                         overflow: "hidden",
                       }}
                     >
-                      <img src={Icon6} style={{ height: "85%" }} alt="Developer" />
-                      <p style={{ padding: "0 0 1rem 1.6rem", color: "white" }}>
-                        Naturally dyed. Dyes colors made from indigo.<br></br>AT-2020-16-4
-                      </p>
+                      <img
+                        src={Icon6}
+                        style={{ height: "100%" }}
+                        alt="Developer"
+                      />
                     </div>
                   </div>
                 </div>
@@ -211,24 +237,32 @@ const Services = () => {
             onClick={() => {
               setContent(
                 <div className="content" style={{ alignItems: "right" }}>
-                  <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
-                    {/* <h2>John Doe</h2> */}
-                    <div
+                  <div
+                    className="text"
+                    style={{ width: "50%", marginLeft: "6rem" }}
+                  >
+                    {" "}
+                    <p
                       style={{
-                        fontSize: "4rem",
-                        fontFamily: "CancioneITCStd",
-                        padding: "1.3rem",
+                        marginTop: "32rem",
+                        fontSize: "1rem",
+                        color: "white",
+                        marginLeft: "15rem",
                       }}
                     >
-                      FRAGMENT SERIES
-                    </div>
+                      Naturally dyed. Dyes colors made from indigo.<br></br>
+                      AT-2020-16-5
+                    </p>
                   </div>
-                  <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
-                    <div style={{ width: "65%", alignItems: "right" }}>
-                      <img src={Icon7} style={{ width: "85%" }} alt="Developer" />
-                      <p style={{ padding: "0 0 1rem 1.6rem", color: "white" }}>
-                        Naturally dyed. Dyes colors made from indigo.<br></br>AT-2020-16-5
-                      </p>
+                  <div
+                    style={{ height: "80%", width: "60%", alignItems: "right" }}
+                  >
+                    <div style={{ width: "85%", alignItems: "right" }}>
+                      <img
+                        src={Icon7}
+                        style={{ width: "85%" }}
+                        alt="Developer"
+                      />
                     </div>
                   </div>
                 </div>
@@ -245,25 +279,32 @@ const Services = () => {
             onClick={() => {
               setContent(
                 <div className="content" style={{ alignItems: "right" }}>
-                  <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
-                    {/* <h2>John Doe</h2> */}
-                    <div
+                  <div
+                    className="text"
+                    style={{ width: "50%", marginLeft: "6rem" }}
+                  >
+                    {" "}
+                    <p
                       style={{
-                        fontSize: "4rem",
-                        fontFamily: "CancioneITCStd",
-                        padding: "1.3rem",
+                        marginTop: "34rem",
+                        fontSize: "1rem",
+                        color: "white",
+                        marginLeft: "15rem",
                       }}
                     >
-                      FRAGMENT SERIES
-                    </div>
+                      Naturally dyed. Dyes colors made from tree moss, Mexican
+                      tarragon, indigo, and cochineal. <br></br>AT-2020-16-6
+                    </p>
                   </div>
-                  <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
-                    <div style={{ width: "65%", alignItems: "right" }}>
-                      <img src={Icon8} style={{ width: "85%" }} alt="Developer" />
-                      <p style={{ padding: "0 0 1rem 1.6rem", color: "white" }}>
-                        Naturally dyed. Dyes colors made from tree moss, Mexican tarragon, indigo,
-                        and cochineal. <br></br>AT-2020-16-6
-                      </p>
+                  <div
+                    style={{ height: "80%", width: "60%", alignItems: "right" }}
+                  >
+                    <div style={{ width: "85%", alignItems: "right" }}>
+                      <img
+                        src={Icon8}
+                        style={{ width: "85%" }}
+                        alt="Developer"
+                      />
                     </div>
                   </div>
                 </div>
@@ -280,25 +321,32 @@ const Services = () => {
             onClick={() => {
               setContent(
                 <div className="content" style={{ alignItems: "right" }}>
-                  <div className="text" style={{ width: "50%", marginLeft: "6rem" }}>
-                    {/* <h2>John Doe</h2> */}
-                    <div
+                  <div
+                    className="text"
+                    style={{ width: "50%", marginLeft: "6rem" }}
+                  >
+                    <p
                       style={{
-                        fontSize: "4rem",
-                        fontFamily: "CancioneITCStd",
-                        padding: "1.3rem",
+                        marginTop: "34rem",
+                        fontSize: "1rem",
+                        color: "white",
+                        marginLeft: "15rem",
                       }}
                     >
-                      FRAGMENT SERIES
-                    </div>
+                      Naturally dyed. Dyes colors made from Mexican tarragon,
+                      black sapote, indigo, and cochineal. <br></br>
+                      AT-2020-16-7
+                    </p>
                   </div>
-                  <div style={{ height: "60%", width: "50%", alignItems: "right" }}>
-                    <div style={{ width: "65%", alignItems: "right" }}>
-                      <img src={Icon9} style={{ width: "85%" }} alt="Developer" />
-                      <p style={{ padding: "0 0 1rem 1.6rem", color: "white" }}>
-                        Naturally dyed. Dyes colors made from Mexican tarragon, black sapote,
-                        indigo, and cochineal. <br></br>AT-2020-16-7
-                      </p>
+                  <div
+                    style={{ height: "80%", width: "60%", alignItems: "right" }}
+                  >
+                    <div style={{ width: "85%", alignItems: "right" }}>
+                      <img
+                        src={Icon9}
+                        style={{ width: "85%" }}
+                        alt="Developer"
+                      />
                     </div>
                   </div>
                 </div>
@@ -311,63 +359,62 @@ const Services = () => {
                     <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
         </ServicesCard>
       </ServicesWrapper>
-
-      <ServicesH1>FRAGMENT SERIES BY PORFIRIO GUTIERREZ</ServicesH1>
-      <ServicesP style={{ fontSize: "1.3rem" }}>
-        My ongoing Fragment series is my interpretation of one of the most remarkable weaving
-        traditions created by the blending of Native American and European traditions. These pieces
-        reflect how the merger created new forms of expression in the art of weaving. This style of
-        weaving became part of our Mexican cultural identity and remains part of my personal
-        expression. My Fragment series pays homage to our ancestral weavers, who, in many cases,
-        were slaves yet they contributed their unique design sensibilities and left an artistic
-        legacy we can still appreciate and respect today.
-      </ServicesP>
-
-      {/*<Modal2 show1={show1} onClose={() => setShow1(false)}>*/}
-
-      {/*</Modal2>*/}
-
-      {/* <Modal2 show1={show1} onClose={() => setShow1(false)}>
-                <div>
-                    <div>
-                            <img
-                                src={Icon4}
-                                alt="Developer"
-                                style={{width: "30%"}}
-                            />
-                    </div>
-                    <div>
-                    Naturally dyed. Dyes colors made from tree moss, black sapote, indigo, marush, and cochineal.<br></br>AT-2020-16-2
-                    </div>
-                </div> */}
-      {/* <div className="content">
-            <img
-                src={Icon4}
-                alt="Developer"
-                style={{width: "30%"}}
-            />
-            <div className="text">
-                {/* <h2>John Doe</h2> */}
-      {/* <div>
-                Naturally dyed. Dyes colors made from tree moss, black sapote, indigo, marush, and cochineal.<br></br>AT-2020-16-2
-                </div>
-            </div>
-            </div>  */}
-      {/* </Modal2> */}
-
-      <br></br>
-      <br></br>
-      <QuoteDiv>
-        <Quote style={{ fontFamily: "Lucida", fontSize: "2rem" }}>
-          “This art form is a deep part of my culture and is my life. It is like my native language
-          or our ceremonies. The cochineal produces a color just like the color of our blood; the
-          weft and the warp are like the tissue in our body. Textiles are our second skin as well as
-          a means of expression.”{" "}
-        </Quote>
-        <QuoteAuthor style={{ fontFamily: "Lucida", fontSize: "2rem" }}>
-          Porfirio Gutiérrez
-        </QuoteAuthor>
-      </QuoteDiv>
+      <ServicesH1
+        style={{ marginTop: "30px", marginLeft: "-40rem", textAlign: "left" }}
+      >
+        FRAGMENT SERIES BY PORFIRIO GUTIERREZ
+      </ServicesH1>
+      <InfoRow style={{ height: "400px" }}>
+        <Column1>
+          <div
+            style={{
+              color: "white",
+              fontSize: "1.5rem",
+              height: "auto",
+              marginLeft: "3rem",
+            }}
+          >
+            My ongoing Fragment series is my interpretation of one of the most
+            remarkable weaving traditions created by the blending of Native
+            American and European traditions. These pieces reflect how the
+            merger created new forms of expression in the art of weaving. This
+            style of weaving became part of our Mexican cultural identity and
+            remains part of my personal expression. My Fragment series pays
+            homage to our ancestral weavers, who, in many cases, were slaves yet
+            they contributed their unique design sensibilities and left an
+            artistic legacy we can still appreciate and respect today.
+          </div>
+        </Column1>
+        <Column2>
+          <div
+            style={{
+              fontFamily: "Lucida",
+              color: "white",
+              fontSize: "1.5rem",
+              marginRight: "3rem",
+              height: "auto",
+            }}
+          >
+            “This art form is a deep part of my culture and is my life. It is
+            like my native language or our ceremonies. The cochineal produces a
+            color just like the color of our blood; the weft and the warp are
+            like the tissue in our body. Textiles are our second skin as well as
+            a means of expression.”{" "}
+          </div>
+          <div
+            style={{
+              fontFamily: "Lucida",
+              marginTop: "25px",
+              marginLeft: "350px",
+              height: "auto",
+              color: "white",
+              fontSize: "1.5rem",
+            }}
+          >
+            Porfirio Gutiérrez
+          </div>
+        </Column2>
+      </InfoRow>
     </ServicesContainer>
   );
 };

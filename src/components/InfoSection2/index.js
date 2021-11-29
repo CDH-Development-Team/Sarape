@@ -42,7 +42,7 @@ const InfoSection = ({
     <>
       <InfoContainer lightBg={lightBg} id={id}>
         <InfoRow imgStart={imgStart}>
-          <Column1 style={{ marginLeft: "3rem", width: "95%" }}>
+          <Column1 style={{ marginLeft: "3rem", width: "85%" }}>
             <TopLine>{topLine}</TopLine>
             <Heading lightText={lightText} style={{ fontSize: "2.5rem" }}>
               {headline}
@@ -68,7 +68,8 @@ const InfoSection = ({
             <div
               style={{
                 fontSize: "1rem",
-                marginLeft: "20rem",
+                marginLeft: "280px",
+                marginTop: "70px",
               }}
             >
               <p darkText={darkText}>{cap}</p>
@@ -78,7 +79,7 @@ const InfoSection = ({
           </Column1>
           <Column2 style={{ marginRight: "50px" }}>
             <ImgWrap>
-              <Img src={img} alt={alt} style={{ marginTop: "150px" }} />
+              <Img src={img} alt={alt} style={{ marginTop: "5rem" }} />
             </ImgWrap>
           </Column2>
         </InfoRow>

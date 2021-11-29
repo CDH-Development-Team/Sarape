@@ -89,7 +89,12 @@ const History = () => {
           onRequestClose={closeModal}
           style={customStyles}
         >
-          <img src={close} alt="" onClick={closeModal} style={{ width: "2.5%", float: "right" }} />
+          <img
+            src={close}
+            alt=""
+            onClick={closeModal}
+            style={{ width: "2.5%", float: "right" }}
+          />
 
           {content}
         </Modal>
@@ -108,24 +113,39 @@ const History = () => {
                 setContent(
                   <BackgroundDiv>
                     <BackgroundImg height={height}>
-                      <img alt="" src={Icon1} height={"95%"} />
+                      <img
+                        alt=""
+                        src={Icon1}
+                        style={{ height: "95%", marginTop: "10rem" }}
+                      />
                     </BackgroundImg>
-                    <GeographyEntryText>
-                      The Indigenous peoples of the Americas have a long and rich history of
-                      weaving. Chroniclers of Cortes’s expedition described the Tlaxcalan people as
-                      being dressed in clothing that was finely woven and adorned with precious
-                      metals and feathers. Indigenous weavers wove clothing using plant fibers,
-                      including cotton and ixtle, the fiber of the maguey or agave plant, on
-                      backstrap tension looms which are still used today. A backstrap loom’s warp
-                      threads are either looped around two rods or tied to them. The top rod is
-                      secured with twine to a stationary object; the bottom rod is attached to a
-                      strap around the weaver’s waist. This allows the weaver to regulate the
-                      tension by moving her body slightly closer to, or farther from, a stationary
-                      point.
+                    <GeographyEntryText style={{ fontSize: "1.5rem" }}>
+                      The Indigenous peoples of the Americas have a long and
+                      rich history of weaving. Chroniclers of Cortes’s
+                      expedition described the Tlaxcalan people as being dressed
+                      in clothing that was finely woven and adorned with
+                      precious metals and feathers. Indigenous weavers wove
+                      clothing using plant fibers, including cotton and ixtle,
+                      the fiber of the maguey or agave plant, on backstrap
+                      tension looms which are still used today. A backstrap
+                      loom’s warp threads are either looped around two rods or
+                      tied to them. The top rod is secured with twine to a
+                      stationary object; the bottom rod is attached to a strap
+                      around the weaver’s waist. This allows the weaver to
+                      regulate the tension by moving her body slightly closer
+                      to, or farther from, a stationary point.
                     </GeographyEntryText>
-                    <GeographyEntryDescription>
-                      Zoque woman weaving on a backstrap loomTuxtla Gutiérrez, Chiapas, MexicoDonald
-                      Cordry, photographer, 1940ASM Cordry 1143
+                    <GeographyEntryDescription
+                      style={{
+                        marginLeft: "150px",
+                        fontSize: "1rem",
+                        marginTop: "20px",
+                      }}
+                    >
+                      Zoque woman weaving on a backstrap loom <br /> Tuxtla
+                      Gutiérrez, Chiapas, Mexico <br /> Donald Cordry,
+                      photographer, 1940 <br />
+                      ASM Cordry 1143
                     </GeographyEntryDescription>
                   </BackgroundDiv>
                 );
@@ -148,18 +168,25 @@ const History = () => {
                   <GeographyEntry>
                     <GeographyEntryImg>
                       <img src={Icon7} alt="" width={"100%"}></img>
-                      <GeographyEntryDescription>
-                        Spanish cape, late 1500s <br />
-                        Silk, metal thread <br />
-                        Purchase, Rogers Fund, 1939
-                        <br />
-                        The Metropolitan Museum of Art, 39.53
-                      </GeographyEntryDescription>
                     </GeographyEntryImg>
-                    <GeographyEntryText>
-                      The Spanish capa (cape), a large overcoat with an open front and often a hood,
-                      may have been an influence on the sarape as a more formal garment.
+                    <GeographyEntryText style={{ fontSize: "1.5rem" }}>
+                      The Spanish capa (cape), a large overcoat with an open
+                      front and often a hood, may have been an influence on the
+                      sarape as a more formal garment.
                     </GeographyEntryText>
+                    <GeographyEntryDescription
+                      style={{
+                        marginLeft: "300px",
+                        marginTop: "-100px",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      Spanish cape, late 1500s <br />
+                      Silk, metal thread <br />
+                      Purchase, Rogers Fund, 1939
+                      <br />
+                      The Metropolitan Museum of Art, 39.53
+                    </GeographyEntryDescription>
                   </GeographyEntry>
                 );
                 openModal();
@@ -183,17 +210,24 @@ const History = () => {
                   <GeographyEntry>
                     <GeographyEntryImg>
                       <img alt="" src={Icon8} width={"100%"} />
-                      <GeographyEntryDescription>
-                        Codex Mendoza, Vol. 3, Folio 60r, c. 1541–1542
-                        <br />
-                        Viceroyalty of SpainBodleian Libraries,
-                        <br /> University of Oxford
-                      </GeographyEntryDescription>
                     </GeographyEntryImg>
 
-                    <GeographyEntryText>
-                      An Aztec woman teaches a girl to weave on a backstrap loom.
+                    <GeographyEntryText style={{ fontSize: "1.5rem" }}>
+                      An Aztec woman teaches a girl to weave on a backstrap
+                      loom.
                     </GeographyEntryText>
+                    <GeographyEntryDescription
+                      style={{
+                        marginLeft: "250px",
+                        marginTop: "-75px",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      Codex Mendoza, Vol. 3, Folio 60r, c. 1541–1542
+                      <br />
+                      Viceroyalty of SpainBodleian Libraries,
+                      <br /> University of Oxford
+                    </GeographyEntryDescription>
                   </GeographyEntry>
                 );
                 openModal();
@@ -215,37 +249,40 @@ const History = () => {
                 setContent(
                   <GeographyEntry>
                     <GeographyEntryImg>
-                      <img alt="" src={Icon2} width={"70%"} />
+                      <img
+                        alt=""
+                        src={Icon2}
+                        style={{ marginTop: "3.5rem", width: "100%" }}
+                      />
                     </GeographyEntryImg>
 
-                    <GeographyEntryText>
-                      How people dress and adorn themselves has long served as a form of identity,
-                      signaling culture and status. During the time of the Aztec empire (1345–1521
-                      CE), both custom and law controlled what people could wear according to their
-                      class. The influence of the Spaniards on Indigenous lifeways, including their
-                      clothing, can be seen through illustrations in codices* produced under Spanish
-                      rule.
+                    <GeographyEntryText style={{ fontSize: "1.5rem" }}>
+                      How people dress and adorn themselves has long served as a
+                      form of identity, signaling culture and status. During the
+                      time of the Aztec empire (1345–1521 CE), both custom and
+                      law controlled what people could wear according to their
+                      class. The influence of the Spaniards on Indigenous
+                      lifeways, including their clothing, can be seen through
+                      illustrations in codices* produced under Spanish rule.
                       <br />
-                      <br /> The Codex Mendoza illustrates Aztec people of high status, priests, and
-                      rulers wearing tilmàtli, decorated cloaks woven of cotton or ixtle on a
-                      backstrap loom. The motifs and materials of the tilmàtliindicated the wearer’s
-                      class and rank. It is possible that the Saltillo sarape’s designs and how it
-                      was worn were influenced by the tilmàtli.<br></br>
+                      <br /> The Codex Mendoza illustrates Aztec people of high
+                      status, priests, and rulers wearing tilmàtli, decorated
+                      cloaks woven of cotton or ixtle on a backstrap loom. The
+                      motifs and materials of the tilmàtliindicated the wearer’s
+                      class and rank. It is possible that the Saltillo sarape’s
+                      designs and how it was worn were influenced by the
+                      tilmàtli.<br></br>
                       <br></br>
-                      <br></br>*Codices is the plural of codex.
-                      <br />
-                      <br />
-                      right<br></br>Notice how the tilmàtli are similar to the Saltillo sarape in
-                      design and how they were worn.
-                      <br />
-                      <br />
-                      <br /> 
-                      <br />
-                      <br />
-                      <div className="credits">
-                      Codex Mendoza, Folio 65r, c. 1541–1542
-                      <br />
-                      Viceroyalty of Spain<br></br>Bodleian Library, Oxford University
+                      <div style={{ fontSize: "1rem" }}>
+                        *Codices is the plural of codex. right<br></br>Notice
+                        how the tilmàtli are similar to the Saltillo sarape in
+                        design and how they were worn.
+                      </div>
+                      <div className="credits" style={{ fontSize: "1rem" }}>
+                        Codex Mendoza, Folio 65r, c. 1541–1542
+                        <br />
+                        Viceroyalty of Spain<br></br>Bodleian Library, Oxford
+                        University
                       </div>
                     </GeographyEntryText>
                   </GeographyEntry>
@@ -272,16 +309,31 @@ const History = () => {
               onClick={() => {
                 setContent(
                   <GeographyEntry>
-                    <GeographyEntryImg wide={true} height={height} >
-                      <img src={Icon4} alt="" style={{ width: "55%", float: "right" }}></img>
-                      <GeographyEntryText wide={true}>
-                        The Aztecs’ tilmàtli, tied at the shoulder as depicted in several codices,
-                        is also part of the sarape’s cultural lineage. This style is similar to a
-                        poncho.
+                    <GeographyEntryImg wide={true} height={height}>
+                      <img
+                        src={Icon4}
+                        alt=""
+                        style={{ width: "55%", float: "right" }}
+                      ></img>
+                      <GeographyEntryText
+                        wide={true}
+                        style={{ fontSize: "1.5rem" }}
+                      >
+                        The Aztecs’ tilmàtli, tied at the shoulder as depicted
+                        in several codices, is also part of the sarape’s
+                        cultural lineage. This style is similar to a poncho.
                       </GeographyEntryText>
-                      <GeographyEntryDescription>
-                        Codex Primeros Memoriales, Vol. 3, Estampa 21<br></br>Bernardino Sahagún,
-                        Historia General de las Cosas de Nueva España Biblioteca Medicea Laurenziana
+                      <GeographyEntryDescription
+                        style={{
+                          marginTop: "-75px",
+                          marginLeft: "75px",
+                          fontSize: "1rem",
+                        }}
+                      >
+                        Codex Primeros Memoriales, Vol. 3, Estampa 21<br></br>
+                        Bernardino Sahagún, Historia General de las Cosas de
+                        <br></br>
+                        Nueva España Biblioteca Medicea Laurenziana
                       </GeographyEntryDescription>
                     </GeographyEntryImg>
                   </GeographyEntry>
@@ -301,13 +353,25 @@ const History = () => {
                 setContent(
                   <GeographyEntry>
                     <GeographyEntryImg>
-                      <img alt="" src={Icon3} width={"75%"}></img>
+                      <img alt="" src={Icon3} width={"90%"}></img>
                     </GeographyEntryImg>
-                    <GeographyEntryText>
-                      Texcoco ruler Nezahualpilli shown wearing a xiuhtilmatli (blue cape), which
-                      would have been woven on a backstrap loom. Note the complex designs and the
-                      natural dye colors: blue from the indigo plant and red from cochineal insects.
+                    <GeographyEntryText style={{ fontSize: "1.5rem" }}>
+                      Texcoco ruler Nezahualpilli shown wearing a xiuhtilmatli
+                      (blue cape), which would have been woven on a backstrap
+                      loom. Note the complex designs and the natural dye colors:
+                      blue from the indigo plant and red from cochineal insects.
                     </GeographyEntryText>
+                    <GeographyEntryDescription
+                      style={{
+                        marginLeft: "250px",
+                        marginTop: "-100px",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      Codex Ixtlilxochitl, Folio 108r, c. 1580–1584
+                      <br />
+                      Bibliothèque Nationale de Fr
+                    </GeographyEntryDescription>
                   </GeographyEntry>
                 );
                 openModal();
@@ -325,31 +389,46 @@ const History = () => {
                 setContent(
                   <GeographyEntry>
                     <GeographyEntryImg>
-                      <img alt="" src={Icon6} width={"100%"}></img>
-                      <GeographyEntryDescription>
-                        Rancheros, 1836 <br />
-                        Carl Nebel <br />
-                        German, 1805–1855
-                        <br />
-                        Lithograph
-                        <br />
-                        Voyage Pittoresque et Archéologique dans la Partie la plus Intéressante du
-                        MéxiqueAlbum, Alamy Stock Photo
-                      </GeographyEntryDescription>
+                      <img
+                        alt=""
+                        src={Icon6}
+                        style={{ marginTop: "150px", width: "100%" }}
+                      ></img>
                     </GeographyEntryImg>
-                    <GeographyEntryText>
-                      Sarapes are worn in many ways: wrapped or draped like a shawl, over one
-                      shoulder, or as a poncho. The typical sarape may be woven in one piece, but
-                      more frequently consists of two panels joined together leaving a neck slit,
-                      also called a bocamanga, through which the wearer’s head could fit.In Spanish
-                      Colonial times, the sarape was mainly worn in northern Mexico by hacendados,
-                      or ranch owners, who traveled on horseback. The sarape’s loose fit made it a
-                      practical riding garment. Later, it became a status symbol worn by wealthy
-                      “city folk.” While anyone could wear one, they were expensive to buy. These
-                      textiles were masterfully woven with incredible tightness and complex designs.
-                      It is possible that they were created in small workshops, located on many of
-                      the large ranches or haciendas
+                    <GeographyEntryText style={{ fontSize: "1.5rem" }}>
+                      Sarapes are worn in many ways: wrapped or draped like a
+                      shawl, over one shoulder, or as a poncho. The typical
+                      sarape may be woven in one piece, but more frequently
+                      consists of two panels joined together leaving a neck
+                      slit, also called a bocamanga, through which the wearer’s
+                      head could fit.In Spanish Colonial times, the sarape was
+                      mainly worn in northern Mexico by hacendados, or ranch
+                      owners, who traveled on horseback. The sarape’s loose fit
+                      made it a practical riding garment. Later, it became a
+                      status symbol worn by wealthy “city folk.” While anyone
+                      could wear one, they were expensive to buy. These textiles
+                      were masterfully woven with incredible tightness and
+                      complex designs. It is possible that they were created in
+                      small workshops, located on many of the large ranches or
+                      haciendas
                     </GeographyEntryText>
+                    <GeographyEntryDescription
+                      style={{
+                        marginTop: "25px",
+                        marginLeft: "200px",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      Rancheros, 1836 <br />
+                      Carl Nebel, German, 1805–1855
+                      <br />
+                      Lithograph
+                      <br />
+                      Voyage Pittoresque et Archéologique dans la Partie la plus{" "}
+                      <br />
+                      Intéressante du Méxique <br />
+                      Album, Alamy Stock Photo
+                    </GeographyEntryDescription>
                   </GeographyEntry>
                 );
                 openModal();

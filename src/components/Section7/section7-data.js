@@ -51,7 +51,8 @@ export const sevenObjOne = {
     "Designs are simple, and often include Saltillo sarape diamonds in different configurations. Saltillo sarape design elements have been used since at least the late 1800s. The Saltillo influence may have traveled up the Camino Real, the famed trade route between Mexico City and Santa Fe, which ran through parts of Rarámuri traditional territory in eastern Chihuahua. Spanish missions were established among the Rarámuri beginning in the early 1600s, so despite their remote location, they were not cut off from outside influences.",
   buttonLabel: "",
   imgStart: false,
-  imgdesc: "Notice the diamond pattern on the blanket worn by the man on the left.",
+  imgdesc:
+    "Notice the diamond pattern on the blanket worn by the man on the left.",
   img: img8,
   alt: "One",
   imgdesc2:
@@ -85,7 +86,8 @@ export const sevenObjTwo = {
     "Since at least the late 1800s, Mayo weavers have woven their own version of sarapes with designs clearly connected to Saltillo. These would have been popular items to trade with Mexican residents of the region, including those in the nearby colonial town of Alamos. In the 1940s, this formerly wealthy mining community attracted additional potential craft customers when American tourists “discovered” its charm and created an expatriate community there.",
   buttonLabel: "",
   imgStart: false,
-  imgdesc: "This Mayo weaver is creating a Saltillo- influenced diamond design.",
+  imgdesc:
+    "This Mayo weaver is creating a Saltillo- influenced diamond design.",
   img: img7,
   imgdesc2:
     "Huatabampo, Sonora, Mexico Donald B. Cordry, photographer, 1938 ASM Cordry Collection 414",
@@ -164,7 +166,8 @@ export const sevenObjFive = {
     "“As a seventh-generation Rio Grande weaver living in Chimayo, New Mexico, my work has evolved" +
     "from the traditional styles of my forefathers. I use design ideas from historic Rio Grande weavings of northern New Mexico and add my own aesthetic by combining old ideas with my own vision. My pieces may interpret my Hispanic history and culture, and document events of the modern world.”",
   author: "Irvin Trujillo",
-  smallDesc: "To view weavings by Irvin Trujillo go to: chimayoweavers.com/PORTILT",
+  smallDesc:
+    "To view weavings by Irvin Trujillo go to: chimayoweavers.com/PORTILT.html",
   buttonLabel: "",
   imgStart: false,
   img: img3,

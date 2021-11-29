@@ -1,6 +1,15 @@
-import React from 'react';
-import {Link} from "react-router-dom";
-import { SidebarContainer, Icon, ClosedIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute } from "./SidebarElements";
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  SidebarContainer,
+  Icon,
+  ClosedIcon,
+  SidebarWrapper,
+  SidebarMenu,
+  SidebarLink,
+  SideBtnWrap,
+  SidebarRoute,
+} from "./SidebarElements";
 
 const Sidebar = ({toggle, isOpen}) => {
     return (
