@@ -16,6 +16,7 @@ export const GeographyContainer = styled.div`
 
 export const HeaderText = styled.div`
   margin: 50px;
+  font-size: 1.5rem;
   @media screen and (min-width: 768px) {
     column-count: 2;
   }
@@ -45,6 +46,7 @@ export const GeographyEntryText = styled.div`
   float: ${({ wide }) => (wide ? "left" : "right")};
   width: ${({ wide }) => (wide ? "35%" : "40%")};
   margin: ${({ wide }) => (wide ? "20px 50px 20px 0px" : "7vh 20px 0 0px")};
+  font-size: 1.5rem;
 `;
 
 export const GeographyEntryDescription = styled.div`
@@ -52,7 +54,7 @@ export const GeographyEntryDescription = styled.div`
   width: ${({ wide }) => (wide ? "40%" : "80%")};
   float: right;
   text-align: right;
-  font-size: 1.6vmin;
+  font-size: 1rem;
 `;
 
 export const GeographyStatues = styled.div`
@@ -70,6 +72,7 @@ export const Statue = styled.div`
   padding: 0px;
   float: left;
   width: 25%;
+  font-size: 0.5rem;
 `;
 
 export const StatueImg = styled.div``;

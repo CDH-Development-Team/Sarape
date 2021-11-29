@@ -26,8 +26,13 @@
   font-size: 1.5vmin;
 }
 
+.modalText{
+  font-size: 1rem;
+}
+
 h1 {
-  font-family: "CancioneITCStd"
+  font-family: "CancioneITCStd";
+  font-size: 2.5rem;
 }
 /*h1 {
   font-family: "CancioneITCStd"

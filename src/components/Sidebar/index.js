@@ -17,19 +17,19 @@ const Sidebar = ({toggle, isOpen}) => {
                         Introduction
                     </SidebarLink>          
                     <SidebarLink to="/geography" onClick={toggle}>
-                        Geography
+                        History and Geography
                     </SidebarLink>
-                    <SidebarLink to="/history" onClick={toggle}>
+                    {/*<SidebarLink to="/history" onClick={toggle}>
                         History
-                    </SidebarLink>
+    </SidebarLink>*/}
                     <SidebarLink to="/porfirio" onClick={toggle}>
-                        Porfirio
+                        Porfirio Gutiérrez
                     </SidebarLink>        
                     <SidebarLink to="/section5Family" onClick={toggle}>
-                        Family
+                        Family and Philosophy
                     </SidebarLink>
                     <SidebarLink to="/dyeing" onClick={toggle}>
-                        Dyeing
+                        Natural Dyeing
                     </SidebarLink>
                     <SidebarLink to="/historicalTextiles" onClick={toggle}>
                         Historical Textiles

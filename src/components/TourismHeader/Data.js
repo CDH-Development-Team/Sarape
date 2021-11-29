@@ -19,7 +19,7 @@ export const tourismObjOne = {
     img:null,
     artifact: img5,
     artifactAlt: 'Color Lithograph',
-    artifactInfo: 'Color Lithograph, 1945. Jose Espert Arcos, Graphic Designer. Asociacion Mexicana de Turismo, Mexico. Harry Ransom Center. The University of Texas at Austin. Texas War Records Travel Posters Collection, 85.185.50A',
+    artifactInfo: 'Color Lithograph, 1945. Jose Espert Arcos, Graphic Designer. \nAsociacion Mexicana de Turismo, Mexico. Harry Ransom Center. The University of Texas at Austin. Texas War Records Travel Posters Collection, 85.185.50A',
     dark: true,
     primary: true,
     darkText: false

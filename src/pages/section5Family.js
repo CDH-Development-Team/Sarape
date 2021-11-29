@@ -164,9 +164,8 @@ const FamilyPage = () => {
                     <div
                       className="text"
                       style={{
-                        
                         fontFamily: "myriad-pro",
-                        padding: "1.5rem",
+                        padding: "1rem",
                       }}
                     >
                       <div>
@@ -195,10 +194,9 @@ const FamilyPage = () => {
                       <div
                         style={{
                           color: "#fff",
-                          fontSize: "1.2rem",
+                          fontSize: ".9rem",
                           fontFamily: "myriad-pro",
-                          paddingTop: "28rem",
-                          paddingLeft: "40rem",
+                          paddingTop: "10rem",
                         }}
                       >
                         Bobbins of spun, dyed wool ready to use. Craig Holmes, photographer, 2018
@@ -237,9 +235,8 @@ const FamilyPage = () => {
                       <div className="column5">
                         <p
                           style={{
-                            
                             fontFamily: "myriad-pro",
-                            padding: "1.5rem",
+                            padding: "1rem",
                           }}
                         >
                           Churro sheep were introduced to the northern reaches of New Spain by
@@ -251,10 +248,9 @@ const FamilyPage = () => {
                         <div
                           style={{
                             color: "#fff",
-                            fontSize: "1.2rem",
+                            fontSize: ".9rem",
                             fontFamily: "myriad-pro",
-                            paddingTop: "45rem",
-                            paddingLeft: "10rem",
+                            paddingTop: "10rem",
                           }}
                         >
                           <br></br>Three male Navajo Churro sheep, Spin Dance Acres, Boise, ID.
@@ -277,7 +273,6 @@ const FamilyPage = () => {
                       <div className="column3">
                         <p
                           style={{
-                            
                             fontFamily: "myriad-pro",
                             padding: "1rem",
                           }}
@@ -293,7 +288,6 @@ const FamilyPage = () => {
                       <div className="column3">
                         <p
                           style={{
-                            
                             fontFamily: "myriad-pro",
                             padding: "1rem",
                           }}
@@ -308,7 +302,6 @@ const FamilyPage = () => {
                       <div className="column3">
                         <p
                           style={{
-                            
                             fontFamily: "myriad-pro",
                             padding: "1rem",
                           }}
@@ -323,7 +316,6 @@ const FamilyPage = () => {
                       <div className="column3">
                         <p
                           style={{
-                            
                             fontFamily: "myriad-pro",
                             padding: "1rem",
                           }}
@@ -389,9 +381,9 @@ const FamilyPage = () => {
                       <p
                         style={{
                           color: "#fff",
-                          fontSize: "1.2rem",
+                          fontSize: ".5rem",
                           fontFamily: "myriad-pro",
-                          paddingTop: "10rem",
+                          paddingTop: "7rem",
                           paddingLeft: "1rem",
                         }}
                       >
@@ -464,19 +456,18 @@ const FamilyPage = () => {
                         </div>
                         <div
                           style={{
-                            fontSize: "2rem",
+                            fontSize: ".8rem",
                             fontFamily: "Lucida",
                             color: "#fff",
-                            width: "85%",
                             paddingTop: "10rem",
-                            paddingLeft: "10rem",
+                            paddingLeft: "4rem",
                           }}
                         >
                           “The plants and trees are alive, just like us; we cannot hurt them nor cut
                           them for any reason. We are supposed to only take what we need from
                           nature.”<br></br>
                           <br></br>
-                          <p style={{ paddingLeft: "30rem", fontFamily: "Lucida" }}>
+                          <p style={{ paddingLeft: "5rem", fontFamily: "Lucida" }}>
                             Amado Gutiérrez
                           </p>
                         </div>
@@ -487,7 +478,7 @@ const FamilyPage = () => {
                         <img
                           src={Icon2}
                           alt="Developer"
-                          style={{ marginRight: "5rem", width: "100%" }}
+                          style={{ marginRight: "5rem", width: "80%" }}
                         />
                       </div>
                     </div>
@@ -541,12 +532,11 @@ const FamilyPage = () => {
                         </div>
                         <div
                           style={{
-                            fontSize: "2rem",
+                            fontSize: ".8rem",
                             fontFamily: "Lucida",
                             color: "#fff",
                             width: "85%",
-                            paddingTop: "10rem",
-                            paddingLeft: "10rem",
+                            paddingTop: "5rem",
                           }}
                         >
                           “When you work with nature respectfully, you do no harm. You do not need
@@ -557,7 +547,7 @@ const FamilyPage = () => {
                           world healthy. I think I put those thoughts into all the colors we make,
                           and into all the parts of my life.”<br></br>
                           <br></br>
-                          <p style={{ paddingLeft: "30rem", fontFamily: "Lucida" }}>
+                          <p style={{ paddingLeft: "12rem", fontFamily: "Lucida" }}>
                             Juana Gutiérrez Cortreras
                           </p>
                         </div>
@@ -602,6 +592,8 @@ const FamilyPage = () => {
                         <p
                           style={{
                             fontFamily: "myriad-pro",
+
+                            fontSize: ".8rem",
                           }}
                         >
                           My parents are the third generation of dyers and weavers in our family,
@@ -615,6 +607,8 @@ const FamilyPage = () => {
                         <p
                           style={{
                             fontFamily: "myriad-pro",
+
+                            fontSize: ".8rem",
                           }}
                         >
                           before my parents got married, they had to figure it all out themselves.
@@ -629,6 +623,8 @@ const FamilyPage = () => {
                         <p
                           style={{
                             fontFamily: "myriad-pro",
+
+                            fontSize: ".8rem",
                           }}
                         >
                           does the carding and spinning, and my dad weaves. They loved working at
@@ -652,7 +648,7 @@ const FamilyPage = () => {
                         className="quote"
                         style={{
                           fontFamily: "Lucida",
-                          fontSize: "2rem",
+                          fontSize: ".8rem",
                         }}
                       >
                         “The greater being has given us the plants for food, dyes, and for medicine.
@@ -663,7 +659,7 @@ const FamilyPage = () => {
                         className="author"
                         style={{
                           fontFamily: "Lucida",
-                          fontSize: "2rem",
+                          fontSize: ".8rem",
                         }}
                       >
                         {" "}
@@ -695,7 +691,7 @@ const FamilyPage = () => {
                       <div
                         style={{
                           fontFamily: "Lucida",
-                          fontSize: "1.7rem",
+                          fontSize: "1.5rem",
                         }}
                       >
                         Preservation, education, and sustainability are all extremely important.
@@ -707,7 +703,7 @@ const FamilyPage = () => {
                             alignItems: "left",
                           }}
                         >
-                          <p style={{ paddingLeft: "22rem", fontFamily: "Lucida" }}>
+                          <p style={{ paddingLeft: "10rem", fontFamily: "Lucida" }}>
                             Porfirio Gutierrez
                           </p>
                           <br></br>
@@ -716,8 +712,9 @@ const FamilyPage = () => {
                       <div
                         style={{
                           fontFamily: "myriad-pro",
-                          marginTop: "1.5rem",
-                          
+
+                          fontSize: "1.5rem",
+                          marginTop: "5rem",
                         }}
                       >
                         About nineteen years ago, I started my own studio involving my family and
@@ -734,7 +731,9 @@ const FamilyPage = () => {
                       <div
                         style={{
                           fontFamily: "myriad-pro",
-                          paddingTop: "40rem",
+                          paddingTop: "8rem",
+
+                          fontSize: "1rem",
                         }}
                       >
                         Porfirio Gutiérrez with a full of pericón to use for making a yellow dye.
@@ -781,6 +780,8 @@ const FamilyPage = () => {
                         <p
                           style={{
                             fontFamily: "myriad-pro",
+
+                            fontSize: ".8rem",
                           }}
                         >
                           My parents are the third generation of dyers and weavers in our family,
@@ -794,6 +795,8 @@ const FamilyPage = () => {
                         <p
                           style={{
                             fontFamily: "myriad-pro",
+
+                            fontSize: ".8rem",
                           }}
                         >
                           before my parents got married, they had to figure it all out themselves.
@@ -808,6 +811,8 @@ const FamilyPage = () => {
                         <p
                           style={{
                             fontFamily: "myriad-pro",
+
+                            fontSize: ".8rem",
                           }}
                         >
                           does the carding and spinning, and my dad weaves. They loved working at
@@ -831,7 +836,7 @@ const FamilyPage = () => {
                         className="quote"
                         style={{
                           fontFamily: "Lucida",
-                          fontSize: "2rem",
+                          fontSize: ".8rem",
                         }}
                       >
                         “The greater being has given us the plants for food, dyes, and for medicine.
@@ -842,7 +847,7 @@ const FamilyPage = () => {
                         className="author"
                         style={{
                           fontFamily: "Lucida",
-                          fontSize: "2rem",
+                          fontSize: ".8rem",
                         }}
                       >
                         {" "}
@@ -880,8 +885,8 @@ const FamilyPage = () => {
                           style={{
                             color: "#fff",
                             fontFamily: "Lucida",
-                            padding: "4rem",
-                            fontSize: "1.6rem",
+                            padding: "1rem",
+                            fontSize: ".8rem",
                           }}
                         >
                           There is a notation that a tradition cannot live outside of its place of
@@ -896,7 +901,7 @@ const FamilyPage = () => {
                           them. That is how traditions stay alive, allowing them to grow, evolve,
                           preserve, and innovate.<br></br>
                           <br></br>
-                          <p style={{ paddingLeft: "22rem", fontFamily: "Lucida" }}>
+                          <p style={{ paddingLeft: "14rem", fontFamily: "Lucida" }}>
                             Porfirio Gutiérrez
                           </p>
                           <div
@@ -904,11 +909,11 @@ const FamilyPage = () => {
                               color: "#fff",
                               fontFamily: "myriad-pro",
                               paddingTop: "10rem",
-                              fontSize: "1rem",
+                              fontSize: ".5rem",
                             }}
                           >
                             Porfirio Gutiérrez working with his wife and son at his studio in
-                            Ventura, CA. Kate Kunath, photographer, 2021
+                            Ventura, CA. <br/>Kate Kunath, photographer, 2021
                           </div>
                         </div>
                       </div>
@@ -944,7 +949,7 @@ const FamilyPage = () => {
         <div style={{ padding: "2rem" }}>
           <h1
             style={{
-              fontSize: "2.5rem",
+              fontSize: "2rem",
               color: "#fff",
             }}
           >
@@ -956,6 +961,7 @@ const FamilyPage = () => {
               className="column1"
               style={{
                 fontFamily: "myriad-pro",
+                fontSize: ".7rem",
                 color: "#fff",
               }}
             >
@@ -969,6 +975,8 @@ const FamilyPage = () => {
               className="column1"
               style={{
                 fontFamily: "myriad-pro",
+
+                fontSize: ".7rem",
                 color: "#fff",
               }}
             >

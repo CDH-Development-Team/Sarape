@@ -319,7 +319,7 @@ const Dyeing = () => {
             </div>
             <div
               style={{
-                fontSize: "0.75rem",
+                fontSize: "1.5rem",
                 fontFamily: "myriad-pro",
                 padding: "1.3rem",
               }}

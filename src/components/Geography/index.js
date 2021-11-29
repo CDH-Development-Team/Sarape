@@ -58,6 +58,23 @@ import {
   GeographyMosaic15,
   GeographyMosaic16,
   GeographyMosaic17,
+  HistoryMosaicParent,
+  HistoryMosaic1,
+  HistoryMosaic2,
+  HistoryMosaic3,
+  HistoryMosaic4,
+  HistoryMosaic5,
+  HistoryMosaic6,
+  HistoryMosaic7,
+  HistoryMosaic8,
+  HistoryMosaic9,
+  HistoryMosaic10,
+  HistoryMosaic11,
+  HistoryMosaic12,
+  HistoryMosaic13,
+  HistoryMosaic14,
+  BackgroundDiv,
+  BackgroundImg
 } from "./geographyElements.js";
 import useWindowDimensions from "./dimensions";
 
@@ -187,7 +204,7 @@ const Geography = () => {
                             src="https://sketchfab.com/models/6213003444c44bb2b019a37e7960be4a/embed"
                           ></iframe>
                         </StatueImg>
-                        <div>
+                        <div className="modalText">
                           Zapotec pottery urn, possibly representing a king or a god
                           <br /> Ceramic
                           <br /> Gift of Elsie Scales, c.1923-1938
@@ -216,7 +233,7 @@ const Geography = () => {
                             src="https://sketchfab.com/models/c47b41ae58644ed3b8b3600315cd99d9/embed"
                           ></iframe>
                         </StatueImg>
-                        <div>
+                        <div className="modalText">
                           Zapotec pottery urn, representing Cocijo, god of rain and lightning
                           <br /> Ceramic
                           <br /> ASM Purchase in 1925
@@ -245,7 +262,7 @@ const Geography = () => {
                             src="https://sketchfab.com/models/f5b8c28294dc45bab024fa9b2506c046/embed"
                           ></iframe>
                         </StatueImg>
-                        <div>
+                        <div className="modalText">
                           Zapotec pottery urn, possibly representing a king wearing a mask of
                           Cocijo, god of rain and lightning
                           <br /> Ceramic
@@ -563,6 +580,275 @@ const Geography = () => {
             designs, became widely traded throughout the Americas and abroad.
           </HeaderText>
         </div>
+
+
+        <HistoryMosaicParent
+          height={((width - (width % 38)) / 38) * 24 * 0.8}
+          width={(width - (width % 38)) * 0.8}
+        >
+          <HistoryMosaic1 className="mosaic">
+            <img
+              src={Icon1}
+              alt=""
+              height={"100%"}
+              width={"100%"}
+              overflow={"hidden"}
+              onClick={() => {
+                setContent(
+                  <BackgroundDiv>
+                    <BackgroundImg height={height}>
+                      <img alt="" src={Icon1} height={"95%"} />
+                    </BackgroundImg>
+                    <GeographyEntryText>
+                      The Indigenous peoples of the Americas have a long and rich history of
+                      weaving. Chroniclers of Cortes’s expedition described the Tlaxcalan people as
+                      being dressed in clothing that was finely woven and adorned with precious
+                      metals and feathers. Indigenous weavers wove clothing using plant fibers,
+                      including cotton and ixtle, the fiber of the maguey or agave plant, on
+                      backstrap tension looms which are still used today. A backstrap loom’s warp
+                      threads are either looped around two rods or tied to them. The top rod is
+                      secured with twine to a stationary object; the bottom rod is attached to a
+                      strap around the weaver’s waist. This allows the weaver to regulate the
+                      tension by moving her body slightly closer to, or farther from, a stationary
+                      point.
+                    </GeographyEntryText>
+                    <GeographyEntryDescription>
+                      Zoque woman weaving on a backstrap loomTuxtla Gutiérrez, Chiapas, MexicoDonald
+                      Cordry, photographer, 1940ASM Cordry 1143
+                    </GeographyEntryDescription>
+                  </BackgroundDiv>
+                );
+                openModal();
+              }}
+            ></img>
+          </HistoryMosaic1>
+
+          <HistoryMosaic2 className="mosaic">
+            <img src={Color8} alt="" height={"100%"} width={"100%"}></img>
+          </HistoryMosaic2>
+          <HistoryMosaic3 className="mosaic">
+            <img
+              src={Icon7}
+              alt=""
+              height={"100%"}
+              width={"100%"}
+              onClick={() => {
+                setContent(
+                  <GeographyEntry>
+                    <GeographyEntryImg>
+                      <img src={Icon7} alt="" width={"100%"}></img>
+                      <GeographyEntryDescription>
+                        Spanish cape, late 1500s <br />
+                        Silk, metal thread <br />
+                        Purchase, Rogers Fund, 1939
+                        <br />
+                        The Metropolitan Museum of Art, 39.53
+                      </GeographyEntryDescription>
+                    </GeographyEntryImg>
+                    <GeographyEntryText>
+                      The Spanish capa (cape), a large overcoat with an open front and often a hood,
+                      may have been an influence on the sarape as a more formal garment.
+                    </GeographyEntryText>
+                  </GeographyEntry>
+                );
+                openModal();
+              }}
+            ></img>
+          </HistoryMosaic3>
+          <HistoryMosaic4 className="mosaic">
+            <img src={Color4} alt="" height={"100%"} width={"100%"}></img>
+          </HistoryMosaic4>
+          <HistoryMosaic5 className="mosaic">
+            <img src={Color5} alt="" height={"100%"} width={"100%"}></img>
+          </HistoryMosaic5>
+          <HistoryMosaic6 className="mosaic">
+            <img
+              src={Icon8}
+              alt=""
+              height={"100%"}
+              width={"100%"}
+              onClick={() => {
+                setContent(
+                  <GeographyEntry>
+                    <GeographyEntryImg>
+                      <img alt="" src={Icon8} width={"100%"} />
+                      <GeographyEntryDescription>
+                        Codex Mendoza, Vol. 3, Folio 60r, c. 1541–1542
+                        <br />
+                        Viceroyalty of SpainBodleian Libraries,
+                        <br /> University of Oxford
+                      </GeographyEntryDescription>
+                    </GeographyEntryImg>
+
+                    <GeographyEntryText>
+                      An Aztec woman teaches a girl to weave on a backstrap loom.
+                    </GeographyEntryText>
+                  </GeographyEntry>
+                );
+                openModal();
+              }}
+            ></img>
+          </HistoryMosaic6>
+
+          <HistoryMosaic7 className="mosaic">
+            <img src={Color8} alt="" height={"100%"} width={"100%"}></img>
+          </HistoryMosaic7>
+
+          <HistoryMosaic8 className="mosaic">
+            <img
+              src={Icon2}
+              alt=""
+              height={"100%"}
+              width={"100%"}
+              onClick={() => {
+                setContent(
+                  <GeographyEntry>
+                    <GeographyEntryImg>
+                      <img alt="" src={Icon2} width={"70%"} />
+                    </GeographyEntryImg>
+
+                    <GeographyEntryText>
+                      How people dress and adorn themselves has long served as a form of identity,
+                      signaling culture and status. During the time of the Aztec empire (1345–1521
+                      CE), both custom and law controlled what people could wear according to their
+                      class. The influence of the Spaniards on Indigenous lifeways, including their
+                      clothing, can be seen through illustrations in codices* produced under Spanish
+                      rule.
+                      <br />
+                      <br /> The Codex Mendoza illustrates Aztec people of high status, priests, and
+                      rulers wearing tilmàtli, decorated cloaks woven of cotton or ixtle on a
+                      backstrap loom. The motifs and materials of the tilmàtliindicated the wearer’s
+                      class and rank. It is possible that the Saltillo sarape’s designs and how it
+                      was worn were influenced by the tilmàtli.<br></br>
+                      <br></br>
+                      <br></br>*Codices is the plural of codex.
+                      <br />
+                      <br />
+                      right<br></br>Notice how the tilmàtli are similar to the Saltillo sarape in
+                      design and how they were worn.
+                      <br />
+                      <br />
+                      <br /> 
+                      <br />
+                      <br />
+                      <div className="credits">
+                      Codex Mendoza, Folio 65r, c. 1541–1542
+                      <br />
+                      Viceroyalty of Spain<br></br>Bodleian Library, Oxford University
+                      </div>
+                    </GeographyEntryText>
+                  </GeographyEntry>
+                );
+                openModal();
+              }}
+            ></img>
+          </HistoryMosaic8>
+
+          <HistoryMosaic9 className="mosaic">
+            <img src={Color1} alt="" height={"100%"} width={"100%"}></img>
+          </HistoryMosaic9>
+
+          <HistoryMosaic10 className="mosaic">
+            <img src={Color1} alt="" height={"100%"} width={"100%"}></img>
+          </HistoryMosaic10>
+
+          <HistoryMosaic11 className="mosaic">
+            <img
+              src={Icon4}
+              alt=""
+              height={"100%"}
+              width={"100%"}
+              onClick={() => {
+                setContent(
+                  <GeographyEntry>
+                    <GeographyEntryImg wide={true} height={height} >
+                      <img src={Icon4} alt="" style={{ width: "55%", float: "right" }}></img>
+                      <GeographyEntryText wide={true}>
+                        The Aztecs’ tilmàtli, tied at the shoulder as depicted in several codices,
+                        is also part of the sarape’s cultural lineage. This style is similar to a
+                        poncho.
+                      </GeographyEntryText>
+                      <GeographyEntryDescription>
+                        Codex Primeros Memoriales, Vol. 3, Estampa 21<br></br>Bernardino Sahagún,
+                        Historia General de las Cosas de Nueva España Biblioteca Medicea Laurenziana
+                      </GeographyEntryDescription>
+                    </GeographyEntryImg>
+                  </GeographyEntry>
+                );
+                openModal();
+              }}
+            ></img>
+          </HistoryMosaic11>
+
+          <HistoryMosaic12 className="mosaic">
+            <img
+              src={Icon3}
+              alt=""
+              height={"100%"}
+              width={"100%"}
+              onClick={() => {
+                setContent(
+                  <GeographyEntry>
+                    <GeographyEntryImg>
+                      <img alt="" src={Icon3} width={"75%"}></img>
+                    </GeographyEntryImg>
+                    <GeographyEntryText>
+                      Texcoco ruler Nezahualpilli shown wearing a xiuhtilmatli (blue cape), which
+                      would have been woven on a backstrap loom. Note the complex designs and the
+                      natural dye colors: blue from the indigo plant and red from cochineal insects.
+                    </GeographyEntryText>
+                  </GeographyEntry>
+                );
+                openModal();
+              }}
+            ></img>
+          </HistoryMosaic12>
+
+          <HistoryMosaic13 className="mosaic">
+            <img
+              src={Icon6}
+              alt=""
+              height={"100%"}
+              width={"100%"}
+              onClick={() => {
+                setContent(
+                  <GeographyEntry>
+                    <GeographyEntryImg>
+                      <img alt="" src={Icon6} width={"100%"}></img>
+                      <GeographyEntryDescription>
+                        Rancheros, 1836 <br />
+                        Carl Nebel <br />
+                        German, 1805–1855
+                        <br />
+                        Lithograph
+                        <br />
+                        Voyage Pittoresque et Archéologique dans la Partie la plus Intéressante du
+                        MéxiqueAlbum, Alamy Stock Photo
+                      </GeographyEntryDescription>
+                    </GeographyEntryImg>
+                    <GeographyEntryText>
+                      Sarapes are worn in many ways: wrapped or draped like a shawl, over one
+                      shoulder, or as a poncho. The typical sarape may be woven in one piece, but
+                      more frequently consists of two panels joined together leaving a neck slit,
+                      also called a bocamanga, through which the wearer’s head could fit.In Spanish
+                      Colonial times, the sarape was mainly worn in northern Mexico by hacendados,
+                      or ranch owners, who traveled on horseback. The sarape’s loose fit made it a
+                      practical riding garment. Later, it became a status symbol worn by wealthy
+                      “city folk.” While anyone could wear one, they were expensive to buy. These
+                      textiles were masterfully woven with incredible tightness and complex designs.
+                      It is possible that they were created in small workshops, located on many of
+                      the large ranches or haciendas
+                    </GeographyEntryText>
+                  </GeographyEntry>
+                );
+                openModal();
+              }}
+            ></img>
+          </HistoryMosaic13>
+          <HistoryMosaic14 className="mosaic">
+            <img src={Color5} alt="" height={"100%"} width={"100%"}></img>
+          </HistoryMosaic14>
+        </HistoryMosaicParent>
       </GeographyContainer>
     </>
   );
