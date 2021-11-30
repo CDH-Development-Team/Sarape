@@ -706,64 +706,10 @@ const Services = () => {
                 >
                   {sevenObjFour.description2}
                 </Subtitle>
-                <Subtitle
-                  darkText={sevenObjFour.darkText}
-                  style={{
-                    fontFamily: "myriad-pro",
-                    fontSize: "1.5rem",
-                  }}
-                >
-                  {sevenObjFour.description3}
-                </Subtitle>
-                <Img
-                  border="none"
-                  style={{ width: "50%" }}
-                  src={sevenObjFour.img3}
-                  alt=""
-                />
-                <Subtitle
-                  darkText={sevenObjFour.darkText}
-                  style={{
-                    fontFamily: "myriad-pro",
-                    fontSize: "1rem",
-                  }}
-                >
-                  Chimayo Weavers, Reyes Ortega at his loom <br></br>Laura
-                  Gilpin, photographer, 1939 <br></br>Chimayo, NM <br></br>Amon
-                  Carter Museum of American Art,<br></br> P1979.202.241, 1979
-                </Subtitle>
-              </TextWrapper>
-            </Column1>
-            <Column2>
-              <ImgWrap>
-                <Subtitle
-                  darkText={sevenObjFour.darkText}
-                  style={{
-                    fontFamily: "myriad-pro",
-                    fontSize: "1rem",
-                  }}
-                >
-                  {sevenObjFour.imgdesc}
-                </Subtitle>
-                <Img
-                  border="none"
-                  style={{ width: "50%" }}
-                  src={sevenObjFour.img}
-                  alt=""
-                />
-                <Subtitle
-                  darkText={sevenObjFour.darkText}
-                  style={{
-                    fontFamily: "myriad-pro",
-                    fontSize: "1rem",
-                  }}
-                >
-                  {sevenObjFour.imgdesc2}
-                </Subtitle>
                 <Img
                   border="none"
                   style={{
-                    width: "55%",
+                    width: "65%",
                     marginLeft: "5rem",
                     marginTop: "-2rem",
                   }}
@@ -820,6 +766,10 @@ const Services = () => {
                   }}
                   alt=""
                 />
+              </TextWrapper>
+            </Column1>
+            <Column2 style={{ marginLeft: "5rem" }}>
+              <ImgWrap>
                 <Img
                   border="none"
                   style={{ width: "50%", marginTop: "2rem" }}
@@ -836,6 +786,32 @@ const Services = () => {
                   Chris Ortega, seventh-generation weaver, at his loom <br></br>
                   Robert Ortega, photographer, 2020
                 </Subtitle>
+                <Subtitle
+                  darkText={sevenObjFour.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1.5rem",
+                  }}
+                >
+                  {sevenObjFour.description3}
+                </Subtitle>
+                <Img
+                  border="none"
+                  style={{ width: "50%" }}
+                  src={sevenObjFour.img3}
+                  alt=""
+                />
+                <Subtitle
+                  darkText={sevenObjFour.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                  }}
+                >
+                  Chimayo Weavers, Reyes Ortega at his loom <br></br>Laura
+                  Gilpin, photographer, 1939 <br></br>Chimayo, NM <br></br>Amon
+                  Carter Museum of American Art,<br></br> P1979.202.241, 1979
+                </Subtitle>
               </ImgWrap>
             </Column2>
           </InfoRow>
@@ -845,38 +821,36 @@ const Services = () => {
       <InfoContainer lightBg={sevenObjFive.lightBg} id={sevenObjFive.id}>
         <InfoWrapper>
           <div class="row">
-            <div style={{ width: "60%", float: "left" }}>
+            <div style={{ width: "55%", float: "left" }}>
               <Heading lightText={sevenObjFive.lightText}>
                 {sevenObjFive.headline}
               </Heading>
-              <TextWrapper>
-                <TopLine>{sevenObjFive.topLine}</TopLine>
+              <TopLine>{sevenObjFive.topLine}</TopLine>
 
-                <Subtitle
-                  darkText={sevenObjFive.darkText}
-                  style={{
-                    fontFamily: "myriad-pro",
-                    fontSize: "1.5rem",
-                  }}
-                >
-                  {sevenObjFive.description}
-                </Subtitle>
-                <Subtitle
-                  darkText={sevenObjFive.darkText}
-                  style={{
-                    fontFamily: "Lucida",
-                    fontSize: "1.5rem",
-                  }}
-                >
-                  {sevenObjFive.quote1}
-                </Subtitle>
-              </TextWrapper>
+              <Subtitle
+                darkText={sevenObjFive.darkText}
+                style={{
+                  fontFamily: "myriad-pro",
+                  fontSize: "1.5rem",
+                }}
+              >
+                {sevenObjFive.description}
+              </Subtitle>
+              <Subtitle
+                darkText={sevenObjFive.darkText}
+                style={{
+                  fontFamily: "Lucida",
+                  fontSize: "1.5rem",
+                }}
+              >
+                {sevenObjFive.quote1}
+              </Subtitle>
             </div>
             <div style={{ width: "40%", float: "right" }}>
               <ImgWrap>
                 <Img
                   border="none"
-                  style={{ width: "90%", marginTop: "10rem" }}
+                  style={{ width: "90%", marginTop: "5rem" }}
                   src={sevenObjFive.img}
                   alt=""
                 />
@@ -964,6 +938,341 @@ const Services = () => {
                 >
                   Jesse Nusbaum, photographer, c. 1921–1931 <br></br>Denver
                   Public Library, N-338
+                </Subtitle>
+              </ImgWrap>
+            </div>
+          </div>
+          <InfoRow imgStart={sevenObj.imgStart} style={{ marginTop: "-10rem" }}>
+            <div class="row1">
+              <div
+                class="column11"
+                style={{
+                  width: "33.3%",
+                  marginLeft: "2rem",
+                  marginTop: "15rem",
+                }}
+              >
+                <ImgWrap>
+                  <Img
+                    border="none"
+                    style={{ width: "75%" }}
+                    src={Icon5}
+                    onClick={() => {
+                      setContent(
+                        <div
+                          className="content"
+                          style={{ alignItems: "right" }}
+                        >
+                          <div
+                            className="text"
+                            style={{ width: "50%", marginLeft: "6rem" }}
+                          >
+                            <p
+                              style={{
+                                fontSize: "1rem",
+                                color: "white",
+                              }}
+                            >
+                              This textile was woven by a master artist who may
+                              have been inspired by a Saltillo sarape, as it has
+                              multiple diamond motifs. The weave is extremely
+                              tight, a characteristic of Classic period sarapes,
+                              and is dyed with cochineal and indigo. Military
+                              men were among the first Americans to purchase
+                              Navajo sarape
+                            </p>
+                            <p
+                              style={{
+                                fontSize: "1rem",
+
+                                marginTop: "25rem",
+                                marginLeft: "5rem",
+                                color: "white",
+                              }}
+                            >
+                              Navajo sarape with Saltillo influence, c. 1850
+                              <br></br>
+                              Wool, cotton, and cochineal and indigo dyes
+                              <br></br>
+                              Collected by Lieutenant John Sanford Mason,{" "}
+                              <br></br>c. 1870 <br></br>Purchase from Major
+                              Ennalls Waggaman, 1954 <br></br>E-2724
+                            </p>
+                          </div>
+                          <div
+                            style={{
+                              height: "70%",
+                              width: "70%",
+                              alignItems: "right",
+                            }}
+                          >
+                            <div style={{ width: "90%", alignItems: "right" }}>
+                              <img
+                                src={Icon5}
+                                style={{ width: "90%" }}
+                                alt="Developer"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      );
+                      openModal();
+                    }}
+                    alt=""
+                  />
+                </ImgWrap>
+              </div>
+              <div
+                class="column12"
+                style={{ marginTop: "5rem", marginRight: "5rem" }}
+              >
+                {/* Second column of images */}
+                <ImgWrap>
+                  <Img
+                    src={Icon6}
+                    style={{ width: "60%", marginLeft: "4rem" }}
+                    onClick={() => {
+                      setContent(
+                        <div
+                          className="content"
+                          style={{ alignItems: "right" }}
+                        >
+                          <div
+                            className="text"
+                            style={{ width: "50%", marginLeft: "6rem" }}
+                          >
+                            <p
+                              style={{
+                                fontSize: "1rem",
+                                color: "white",
+                              }}
+                            >
+                              This Navajo blanket is woven with commercial
+                              pre-dyed Germantown yarns that were supplied to
+                              Navajo weavers by traders.
+                            </p>
+
+                            <p
+                              style={{
+                                fontSize: "1rem",
+                                marginTop: "25rem",
+                                marginLeft: "10rem",
+                                color: "white",
+                              }}
+                            >
+                              Navajo blanket, c. 1890 <br></br>Wool, cotton, and
+                              synthetic dyes<br></br>Gift of the Estate of Julia
+                              Howell Overshiner, 1970<br></br>E-8988
+                            </p>
+                          </div>
+                          <div
+                            style={{
+                              height: "70%",
+                              width: "70%",
+                              alignItems: "right",
+                            }}
+                          >
+                            <div style={{ width: "80%", alignItems: "right" }}>
+                              <img
+                                src={Icon6}
+                                style={{ width: "80%" }}
+                                alt="Developer"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      );
+                      openModal();
+                    }}
+                  />
+                </ImgWrap>
+                <ImgWrap>
+                  <Img
+                    src={Icon7}
+                    style={{ width: "90%" }}
+                    onClick={() => {
+                      setContent(
+                        <div
+                          className="content"
+                          style={{ alignItems: "right" }}
+                        >
+                          <div
+                            className="text"
+                            style={{ width: "50%", marginLeft: "6rem" }}
+                          >
+                            <p
+                              style={{
+                                fontSize: "1rem",
+
+                                marginTop: "5rem",
+                                color: "white",
+                              }}
+                            >
+                              This is a Third Phase Chief ’s blanket, a style
+                              dating to the 1860s. While earlier versions were
+                              made to be worn, later ones were created for the
+                              tourist market and were more likely used as rugs
+                              or hung on walls as artwork. The diamond motif is
+                              abundant and centralized like a sarape
+                            </p>
+                            <p
+                              style={{
+                                fontSize: "1rem",
+                                marginTop: "15rem",
+                                marginLeft: "10rem",
+                                color: "white",
+                              }}
+                            >
+                              Navajo Third Phase Chief ’s blanket, c. 1927{" "}
+                              <br></br>Wool, cotton, and synthetic dyes<br></br>
+                              Lukachukai Mountains, AZ <br></br>Collected by E.
+                              J. Hands, 1927<br></br>E-83
+                            </p>
+                          </div>
+                          <div
+                            style={{
+                              height: "80%",
+                              width: "80%",
+                              alignItems: "right",
+                            }}
+                          >
+                            <div
+                              style={{
+                                width: "100%",
+                                alignItems: "right",
+                                marginTop: "5rem",
+                              }}
+                            >
+                              <img
+                                src={Icon7}
+                                style={{ width: "100%" }}
+                                alt="Developer"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      );
+                      openModal();
+                    }}
+                  />
+                </ImgWrap>
+              </div>
+              <div
+                class="column13"
+                style={{ marginTop: "-35rem", marginLeft: "7rem" }}
+              >
+                <ImgWrap>
+                  <Img
+                    src={Icon8}
+                    style={{ width: "75%" }}
+                    onClick={() => {
+                      setContent(
+                        <div
+                          className="content"
+                          style={{ alignItems: "right" }}
+                        >
+                          <div
+                            className="text"
+                            style={{ width: "50%", marginLeft: "6rem" }}
+                          >
+                            <p
+                              style={{
+                                fontSize: "1rem",
+                                marginTop: "30rem",
+                                marginLeft: "5rem",
+                                color: "white",
+                              }}
+                            >
+                              Poncho sarape, 2015<br></br>Kathy Marianito{" "}
+                              <br></br>Churro wool, cotton, cochineal and indigo
+                              dyes<br></br>Purchased by ASM Friends of
+                              Collections <br></br>2020-337-1
+                            </p>
+                          </div>
+                          <div
+                            style={{
+                              height: "60%",
+                              width: "70%",
+                              alignItems: "right",
+                            }}
+                          >
+                            <div style={{ width: "80%", alignItems: "right" }}>
+                              <img
+                                src={Icon8}
+                                style={{ width: "80%" }}
+                                alt="Developer"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      );
+                      openModal();
+                    }}
+                  />
+                </ImgWrap>
+              </div>
+            </div>
+          </InfoRow>
+        </InfoWrapper>
+      </InfoContainer>
+      <InfoContainer lightBg={sevenObjSeven.lightBg} id={sevenObjSeven.id}>
+        <InfoWrapper>
+          <div class="row">
+            <div style={{ width: "55%", float: "left" }}>
+              <Heading lightText={sevenObjSeven.lightText}>
+                {sevenObjSeven.headline}
+              </Heading>
+              <TopLine>{sevenObjSeven.topLine}</TopLine>
+
+              <Subtitle
+                darkText={sevenObjSeven.darkText}
+                style={{
+                  fontFamily: "myriad-pro",
+                  fontSize: "1.5rem",
+                }}
+              >
+                {sevenObjSeven.description}
+              </Subtitle>
+              <ImgWrap style={{ marginLeft: "5rem" }}>
+                <Img
+                  border="none"
+                  style={{ width: "50%", marginTop: "5rem" }}
+                  src={sevenObjSeven.img3}
+                  alt=""
+                />
+                <Subtitle
+                  darkText={sevenObjSeven.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                    marginRight: "10rem",
+                  }}
+                >
+                  At the 2015 Gallup Inter-Tribal Indian Ceremonial, Kathy
+                  Marianito was awarded first place in the poncho weavings
+                  category for this piece. Steve Getzwiller, Nizhoni Ranch
+                  Gallery, photographer, 2015
+                </Subtitle>
+              </ImgWrap>
+            </div>
+            <div style={{ width: "40%", float: "right" }}>
+              <ImgWrap>
+                <Img
+                  border="none"
+                  style={{ width: "50%", marginTop: "20rem" }}
+                  src={sevenObjSeven.img2}
+                  alt=""
+                />
+                <Subtitle
+                  darkText={sevenObjSeven.darkText}
+                  style={{
+                    fontFamily: "myriad-pro",
+                    fontSize: "1rem",
+                  }}
+                >
+                  J.B. Moore, The Catalogues of Fine Navajo Blankets, Rugs,
+                  Ceremonial Baskets, Silverware, Jewelry & Curios, 1903 and
+                  1911, Plate II
                 </Subtitle>
               </ImgWrap>
             </div>

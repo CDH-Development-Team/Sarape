@@ -79,7 +79,7 @@ const InfoSection = ({
           </Column1>
           <Column2 style={{ marginRight: "50px" }}>
             <ImgWrap>
-              <Img src={img} alt={alt} style={{ marginTop: "5rem" }} />
+              <Img src={img} alt={alt} />
             </ImgWrap>
           </Column2>
         </InfoRow>

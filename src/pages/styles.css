@@ -109,11 +109,10 @@
   }
   .column12{
     width: 33.3%;
-    float: center;
   }
   .column13{
     width: 33.3%;
-    float: right;
+    float:right;
   }
   .row1{
     content: "";

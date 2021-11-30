@@ -852,8 +852,8 @@ const Services = () => {
                 class="column11"
                 style={{
                   width: "33.3%",
-                  marginLeft: "2rem",
-                  marginTop: "2rem",
+                  marginLeft: "5rem",
+                  marginTop: "5rem",
                 }}
               >
                 <ImgWrap>
@@ -915,7 +915,10 @@ const Services = () => {
                   </Subtitle>
                 </ImgWrap>
               </div>
-              <div class="column12" style={{ marginTop: "2rem" }}>
+              <div
+                class="column12"
+                style={{ marginTop: "5rem", marginRight: "5rem" }}
+              >
                 {/* Second column of images */}
                 <ImgWrap>
                   <Img
@@ -978,7 +981,7 @@ const Services = () => {
               </div>
               <div
                 class="column13"
-                style={{ marginTop: "-25rem", marginLeft: "5rem" }}
+                style={{ marginTop: "-25rem", marginLeft: "7rem" }}
               >
                 <ImgWrap>
                   <Img
