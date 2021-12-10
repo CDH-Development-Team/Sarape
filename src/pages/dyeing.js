@@ -192,20 +192,20 @@ const DyeingPage = () => {
                             fontFamily: "myriad-pro",
                           }}
                         >
-                          Blue dye hues are made from the indigo plant
-                          (Indigofera tinctoria), also called añil in Spanish.
-                          It is one of the more complicated dyes to prepare. For
-                          the Porfirio Gutiérrez studio, we usually buy
-                          dehydrated indigo cake from the last few families in
-                          Oaxaca who grow and process the indigo plants. We
+                          Blue dye hues are made from the indigo plant (
+                          <i>Indigofera tinctoria</i>), also called añil in
+                          Spanish. It is one of the more complicated dyes to
+                          prepare. For the Porfirio Gutiérrez studio, we usually
+                          buy dehydrated indigo cake from the last few families
+                          in Oaxaca who grow and process the indigo plants. We
                           grind the indigo and put it in a clay pot with water
                           and various ingredients. For indigo to produce the
                           blue color, it needs a high (basic or alkaline) pH
-                          which is achieved by adding wood ash. We also add
-                          muicle (Justiciar spicigera), a reduction agent. This
-                          liquid is left to ferment for at least five days
-                          before it is ready to dye the yarn various shades of
-                          blue.
+                          which is achieved by adding wood ash. We also add{" "}
+                          <i>muicle (Justiciar spicigera)</i>, a reduction
+                          agent. This liquid is left to ferment for at least
+                          five days before it is ready to dye the yarn various
+                          shades of blue.
                         </div>
                         <div
                           style={{
@@ -215,9 +215,8 @@ const DyeingPage = () => {
                             fontFamily: "myriad-pro",
                           }}
                         >
-                          Juana Gutiérrez Contreras grinds indigo into a
-                          <br></br> powder to make the dye.<br></br>Joe Coca,
-                          photographer, 2019
+                          Juana Gutiérrez Contreras grinds indigo into a powder
+                          to make the dye.<br></br>Joe Coca, photographer, 2019
                         </div>
                       </div>
                       <div className="column2">
@@ -592,8 +591,9 @@ const DyeingPage = () => {
                           to create brilliant red weavings, in many different
                           hues, that are considered some of the finest textiles
                           in the world. The dye is derived from the dried bodies
-                          of tiny female cochineal (Dactylopius coccus) insects
-                          that live and feed on the nopal (prickly pear cactus).
+                          of tiny female cochineal (<i>Dactylopius coccus</i>)
+                          insects that live and feed on the nopal (prickly pear
+                          cactus).
                           <br></br>
                           <br></br> Cochineal has been cultivated in Mexico,
                           Central America, and South America for thousands of
@@ -621,9 +621,13 @@ const DyeingPage = () => {
                         >
                           Indigenous man using a deer’s tail to scrape cochineal
                           off of a nopal pad.<br></br>
-                          <br></br>Memoria sobre la Naturaleza, Cultivo, y
-                          Beneficio de la Grana, Mexico City, 1777<br></br>{" "}
-                          Photograph of Ayer Ms. 1031, plate 7<br></br>
+                          <br></br>
+                          <i>
+                            Memoria sobre la Naturaleza, Cultivo, y Beneficio de
+                            la Grana
+                          </i>
+                          , <br></br>Mexico City, 1777<br></br> Photograph of
+                          Ayer Ms. 1031, plate 7<br></br>
                           Edward E. Ayer Manuscript Collection<br></br>Newberry
                           Library, Chicago
                         </div>
@@ -689,7 +693,7 @@ const DyeingPage = () => {
                         </div>
                         <div
                           style={{
-                            marginLeft: "20rem",
+                            marginLeft: "19rem",
                             marginTop: "2rem",
                             fontSize: "1rem",
                             fontFamily: "myriad-pro",
@@ -697,8 +701,11 @@ const DyeingPage = () => {
                         >
                           Front and back views of male and female cochineal
                           insects José Antonio de Alzate y Ramirez<br></br>
-                          Memoria sobre la naturaleza, Cultivo, y Beneficio de
-                          la Grana, Mexico City, 1777 <br></br>Edward E. Ayer
+                          <i>
+                            Memoria sobre la naturaleza, Cultivo, y Beneficio de
+                            la Grana
+                          </i>
+                          ,<br></br> Mexico City, 1777 <br></br>Edward E. Ayer
                           Manuscript Collection, Ayers Ms. 1031, plate 1
                           <br></br>Newberry Library, Chicago
                         </div>

@@ -17,6 +17,7 @@ export const GeographyContainer = styled.div`
 export const HeaderText = styled.div`
   margin: 50px;
   font-size: 1.5rem;
+  font-family: myriad-pro;
   @media screen and (min-width: 768px) {
     column-count: 2;
   }
@@ -188,7 +189,7 @@ export const HistoryMosaicParent = styled.div`
 export const HistoryMosaicParent2 = styled.div`
   display: grid;
   grid-template-columns: repeat(38, 1fr);
-  grid-template-rows: repeat(24, 1fr);
+  grid-template-rows: repeat(10, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   margin: 0 auto;
@@ -259,7 +260,6 @@ export const HistoryMosaic20 = styled.div`
 export const HistoryMosaic21 = styled.div`
   grid-area: 12 / 28 / 18 / 34;
 `;
-
 //Colors
 export const Color = styled.div`
   grid-area: 5 / 7 / 9 / 11;

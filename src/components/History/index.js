@@ -170,9 +170,9 @@ const History = () => {
                       <img src={Icon7} alt="" width={"100%"}></img>
                     </GeographyEntryImg>
                     <GeographyEntryText style={{ fontSize: "1.5rem" }}>
-                      The Spanish capa (cape), a large overcoat with an open
-                      front and often a hood, may have been an influence on the
-                      sarape as a more formal garment.
+                      The Spanish <i>capa</i> (cape), a large overcoat with an
+                      open front and often a hood, may have been an influence on
+                      the sarape as a more formal garment.
                     </GeographyEntryText>
                     <GeographyEntryDescription
                       style={{
@@ -223,9 +223,9 @@ const History = () => {
                         fontSize: "1rem",
                       }}
                     >
-                      Codex Mendoza, Vol. 3, Folio 60r, c. 1541–1542
+                      Codex <i>Mendoza</i>, Vol. 3, Folio 60r, c. 1541–1542
                       <br />
-                      Viceroyalty of SpainBodleian Libraries,
+                      Viceroyalty of Spain<br></br>Bodleian Libraries,
                       <br /> University of Oxford
                     </GeographyEntryDescription>
                   </GeographyEntry>
@@ -265,21 +265,22 @@ const History = () => {
                       lifeways, including their clothing, can be seen through
                       illustrations in codices* produced under Spanish rule.
                       <br />
-                      <br /> The Codex Mendoza illustrates Aztec people of high
-                      status, priests, and rulers wearing tilmàtli, decorated
-                      cloaks woven of cotton or ixtle on a backstrap loom. The
-                      motifs and materials of the tilmàtliindicated the wearer’s
-                      class and rank. It is possible that the Saltillo sarape’s
-                      designs and how it was worn were influenced by the
-                      tilmàtli.<br></br>
+                      <br /> The Codex <i>Mendoza</i> illustrates Aztec people
+                      of high status, priests, and rulers wearing{" "}
+                      <i>tilmàtli</i>, decorated cloaks woven of cotton or{" "}
+                      <i>ixtle</i> on a backstrap loom. The motifs and materials
+                      of the <i>tilmàtli</i> indicated the wearer’s class and
+                      rank. It is possible that the Saltillo sarape’s designs
+                      and how it was worn were influenced by the <i>tilmàtli</i>
+                      .<br></br>
                       <br></br>
                       <div style={{ fontSize: "1rem" }}>
                         *Codices is the plural of codex. right<br></br>Notice
-                        how the tilmàtli are similar to the Saltillo sarape in
-                        design and how they were worn.
+                        how the <i>tilmàtli</i> are similar to the Saltillo
+                        sarape in design and how they were worn.
                       </div>
                       <div className="credits" style={{ fontSize: "1rem" }}>
-                        Codex Mendoza, Folio 65r, c. 1541–1542
+                        Codex <i>Mendoza</i>, Folio 65r, c. 1541–1542
                         <br />
                         Viceroyalty of Spain<br></br>Bodleian Library, Oxford
                         University
@@ -315,13 +316,11 @@ const History = () => {
                         alt=""
                         style={{ width: "55%", float: "right" }}
                       ></img>
-                      <GeographyEntryText
-                        wide={true}
-                        style={{ fontSize: "1.5rem" }}
-                      >
-                        The Aztecs’ tilmàtli, tied at the shoulder as depicted
-                        in several codices, is also part of the sarape’s
-                        cultural lineage. This style is similar to a poncho.
+                      <GeographyEntryText style={{ fontSize: "1.5rem" }}>
+                        The Aztecs’ <i>tilmàtli</i>, tied at the shoulder as
+                        depicted in several codices, is also part of the
+                        sarape’s cultural lineage. This style is similar to a
+                        poncho.
                       </GeographyEntryText>
                       <GeographyEntryDescription
                         style={{
@@ -330,10 +329,14 @@ const History = () => {
                           fontSize: "1rem",
                         }}
                       >
-                        Codex Primeros Memoriales, Vol. 3, Estampa 21<br></br>
-                        Bernardino Sahagún, Historia General de las Cosas de
+                        <i>Codex Primeros Memoriales</i>, Vol. 3, Estampa 21
                         <br></br>
-                        Nueva España Biblioteca Medicea Laurenziana
+                        Bernardino Sahagún,{" "}
+                        <i>
+                          Historia General de las Cosas de
+                          <br></br>
+                          Nueva España Biblioteca Medicea Laurenziana
+                        </i>
                       </GeographyEntryDescription>
                     </GeographyEntryImg>
                   </GeographyEntry>
@@ -356,10 +359,11 @@ const History = () => {
                       <img alt="" src={Icon3} width={"90%"}></img>
                     </GeographyEntryImg>
                     <GeographyEntryText style={{ fontSize: "1.5rem" }}>
-                      Texcoco ruler Nezahualpilli shown wearing a xiuhtilmatli
-                      (blue cape), which would have been woven on a backstrap
-                      loom. Note the complex designs and the natural dye colors:
-                      blue from the indigo plant and red from cochineal insects.
+                      Texcoco ruler Nezahualpilli shown wearing a{" "}
+                      <i>xiuhtilmatli</i> (blue cape), which would have been
+                      woven on a backstrap loom. Note the complex designs and
+                      the natural dye colors: blue from the indigo plant and red
+                      from cochineal insects.
                     </GeographyEntryText>
                     <GeographyEntryDescription
                       style={{
@@ -368,9 +372,9 @@ const History = () => {
                         fontSize: "1rem",
                       }}
                     >
-                      Codex Ixtlilxochitl, Folio 108r, c. 1580–1584
+                      <i>Codex Ixtlilxochitl,</i> Folio 108r, c. 1580–1584
                       <br />
-                      Bibliothèque Nationale de Fr
+                      Bibliothèque Nationale de France
                     </GeographyEntryDescription>
                   </GeographyEntry>
                 );
@@ -412,21 +416,25 @@ const History = () => {
                       small workshops, located on many of the large ranches or
                       haciendas
                     </GeographyEntryText>
+
                     <GeographyEntryDescription
                       style={{
                         marginTop: "25px",
-                        marginLeft: "200px",
+                        marginLeft: "280px",
                         fontSize: "1rem",
                       }}
                     >
-                      Rancheros, 1836 <br />
+                      <i>Rancheros</i>, 1836 <br />
                       Carl Nebel, German, 1805–1855
                       <br />
                       Lithograph
                       <br />
-                      Voyage Pittoresque et Archéologique dans la Partie la plus{" "}
+                      <i>
+                        Voyage Pittoresque et Archéologique dans
+                        <br />
+                        la Partie la plus Intéressante du Méxique
+                      </i>{" "}
                       <br />
-                      Intéressante du Méxique <br />
                       Album, Alamy Stock Photo
                     </GeographyEntryDescription>
                   </GeographyEntry>
@@ -446,21 +454,6 @@ const History = () => {
         <br />
         <br />
         <br />
-
-        {/* <GeographyEntry wide={true}>
-    <GeographyEntryImg wide={true}>
-        <img src={Icon5} width={"100%"} style={{padding:"0px 50px"}}></img>
-    </GeographyEntryImg>
-    <GeographyEntryText wide={true}>
-    Codices are illustrated texts written on long strips of deer hide, cotton cloth, or bark paper. Mixtec codices often depict life prior to Spanish arrival. 
-    </GeographyEntryText>
-
-    <GeographyEntryDescription wide={true}>
-    Facsimile (1963) of Codex Vindobonensis Mexicanus<br/>Mixtec, 1677 <br></br>ASM Library. F.1219.V63
-    </GeographyEntryDescription>
-</GeographyEntry>
-
- */}
       </GeographyContainer>
     </>
   );

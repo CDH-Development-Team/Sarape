@@ -194,11 +194,11 @@ const FamilyPage = () => {
                         use a manually powered wooden spinning wheel to
                         transform the wool into yarn. It is then naturally dyed
                         before using the spinning wheel to roll yarn from a ball
-                        into a large loop to be placed over the biilieelii, a
-                        rotating device used to feed the yarn onto a bobbin.
-                        Other materials used in our studio include ixtle (agave
-                        fiber), palm leaves, recycled copper thread, and
-                        machine-spun wool yarn.
+                        into a large loop to be placed over the{" "}
+                        <i>biilieelii</i>, a rotating device used to feed the
+                        yarn onto a bobbin. Other materials used in our studio
+                        include <i>ixtle</i> (agave fiber), palm leaves,
+                        recycled copper thread, and machine-spun wool yarn.
                       </div>
                       <div
                         style={{

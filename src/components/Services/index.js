@@ -374,15 +374,15 @@ const Services = () => {
               marginLeft: "3rem",
             }}
           >
-            My ongoing Fragment series is my interpretation of one of the most
-            remarkable weaving traditions created by the blending of Native
+            My ongoing <i>Fragment</i> series is my interpretation of one of the
+            most remarkable weaving traditions created by the blending of Native
             American and European traditions. These pieces reflect how the
             merger created new forms of expression in the art of weaving. This
             style of weaving became part of our Mexican cultural identity and
-            remains part of my personal expression. My Fragment series pays
-            homage to our ancestral weavers, who, in many cases, were slaves yet
-            they contributed their unique design sensibilities and left an
-            artistic legacy we can still appreciate and respect today.
+            remains part of my personal expression. My <i>Fragment</i> series
+            pays homage to our ancestral weavers, who, in many cases, were
+            slaves yet they contributed their unique design sensibilities and
+            left an artistic legacy we can still appreciate and respect today.
           </div>
         </Column1>
         <Column2>

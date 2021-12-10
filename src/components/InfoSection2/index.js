@@ -61,14 +61,24 @@ const InfoSection = ({
             </Subtitle>
             <Subtitle
               darkText={darkText}
-              style={{ fontSize: "1.5rem", height: "auto" }}
+              style={{
+                fontSize: "1.5rem",
+                height: "auto",
+              }}
             >
-              {description3}
+              A sarape is a woolen blanket woven longer than it is wide. Named
+              for the town of Saltillo, where they were popular trade items from
+              the 1600s to the 1800s, Saltillo sarapes are distinguished by a
+              central diamond design or a circular medallion on a contrasting
+              background enclosed by a border design. Traditionally, they are
+              woven on treadle looms with wool yarn colored by natural dyes
+              derived from plants, such as indigo (<i>Indigofera tinctoria</i>),
+              and from cochineal, an insect.
             </Subtitle>
             <div
               style={{
                 fontSize: "1rem",
-                marginLeft: "280px",
+                marginLeft: "400px",
                 marginTop: "70px",
               }}
             >

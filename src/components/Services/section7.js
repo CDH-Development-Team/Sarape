@@ -1270,9 +1270,12 @@ const Services = () => {
                     fontSize: "1rem",
                   }}
                 >
-                  J.B. Moore, The Catalogues of Fine Navajo Blankets, Rugs,
-                  Ceremonial Baskets, Silverware, Jewelry & Curios, 1903 and
-                  1911, Plate II
+                  J.B. Moore,{" "}
+                  <i>
+                    The Catalogues of Fine Navajo <br></br>Blankets, Rugs,
+                    Ceremonial Baskets,<br></br> Silverware, Jewelry & Curios
+                  </i>
+                  , 1903 and 1911, <br></br>Plate II
                 </Subtitle>
               </ImgWrap>
             </div>
