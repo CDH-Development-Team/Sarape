@@ -21,7 +21,7 @@ export const homeObjOne = {
   lightText: true,
   lightTextDesc: true,
   topLine: "",
-  headline: "",
+  headline: "Introduction",
   description:
     "Join Zapotec textile artist Porfirio Gutiérrez and ASM curators to learn about the iconic Mexican Saltillo sarape’s history, regional influence, and contemporary manifestations. Discover how Indigenous textiles embody the interconnection of peoples, traditions, arts, culture, and environmental stewardship.",
   description2:

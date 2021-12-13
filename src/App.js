@@ -1,6 +1,8 @@
 import './App.css';
+import './App.scss';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'; 
 import Home from "./pages";
+
 import fragments from "./pages/fragments.js";
 import SigninPage from "./pages/signin";
 import Tourism from "./pages/tourism";

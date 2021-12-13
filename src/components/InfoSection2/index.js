@@ -1,6 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 import { Button } from "../ButtonElement";
-
+import ModalVideo from 'react-modal-video'
 import {
   InfoContainer,
   InfoWrapper,
@@ -38,15 +38,23 @@ const InfoSection = ({
   dark,
   dark2,
 }) => {
+  const [isOpen, setOpen] = useState(false)
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
         <InfoRow imgStart={imgStart}>
           <Column1 style={{ marginLeft: "3rem", width: "85%" }}>
             <TopLine>{topLine}</TopLine>
-            <Heading lightText={lightText} style={{ fontSize: "2.5rem" }}>
+            <Heading lightText={lightText} style={{ fontSize: "2.5rem", position: "relative"}}>
               {headline}
+              <React.Fragment>
+			<ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="_6TEaFLJQGY" onClose={() => setOpen(false)} />
+
+			<button className="btn-primary" style={{marginLeft:"1rem", position: "absolute", top: "10%", height:"2rem"}} onClick={()=> setOpen(true)}>VIEW VIDEO</button>
+		</React.Fragment>
+              
             </Heading>
+            
             <Subtitle
               darkText={darkText}
               style={{ fontSize: "1.5rem", height: "auto" }}
