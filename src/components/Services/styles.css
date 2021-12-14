@@ -70,7 +70,7 @@
   margin: 0;
   padding: 0;
   background-color: #4a0033;
-  font-family: myriad-pro, sans-serif;
+  font-family: , sans-serif;
 }
 
 .content1 {
@@ -80,13 +80,13 @@
     margin: 0;
     padding: 0;
     background-color: #4a0033;
-    font-family: myriad-pro, sans-serif;
+    font-family: , sans-serif;
   }
 
 .text {
   padding: 2rem;
   color: #fff;
-  font-family: myriad-pro, sans-serif;
+  font-family: , sans-serif;
   max-width: 420px;
   font-size: 1.5rem;
 }

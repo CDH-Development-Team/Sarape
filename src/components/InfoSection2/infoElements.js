@@ -77,7 +77,7 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 1.5rem;
   font-weight: normal;
-  font-family: myriad-pro, sans-serif;
+  font-family: , sans-serif;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
 
@@ -86,7 +86,7 @@ export const Subtitle1 = styled.p`
   margin-bottom: 35px;
   font-size: 1.5rem;
   line-height: 24px;
-  font-family: myriad-pro, sans-serif;
+  font-family: , sans-serif;
   padding: 40px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;

@@ -694,7 +694,7 @@ const Geography = () => {
         <br />
         <div style={{ padding: "1rem", margin: "1.5rem" }}>
           <h1 style={{ fontSize: "2.5rem" }}> History and Geography</h1>
-          <HeaderText style={{ fontSize: "1.5rem", fontFamily: "myriad-pro" }}>
+          <HeaderText style={{ fontSize: "1.5rem", fontFamily: "" }}>
             The sarape has been woven in many places throughout Mexico, but is
             primarily associated with the town of Saltillo, in the state of
             Coahuila, in northeastern Mexico. The Saltillo sarape grew out of

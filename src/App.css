@@ -1,4 +1,4 @@
-@import url("");
+
 
 @font-face {
   font-family: 'Lucida';
@@ -14,11 +14,12 @@
   src: url('webFonts/CancioneITCStd/font.woff2') format('woff2'), url('webFonts/CancioneITCStd/font.woff') format('woff');
 } */
 
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "myriad-pro";
+  font-family: "Myriad Pro Regular";
   line-height: ch;
   overflow-x: hidden; 
 }

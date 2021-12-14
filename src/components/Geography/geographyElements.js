@@ -17,7 +17,7 @@ export const GeographyContainer = styled.div`
 export const HeaderText = styled.div`
   margin: 50px;
   font-size: 1.5rem;
-  font-family: myriad-pro;
+  font-family: ;
   @media screen and (min-width: 768px) {
     column-count: 2;
   }

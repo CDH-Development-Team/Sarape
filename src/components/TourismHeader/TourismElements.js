@@ -84,7 +84,7 @@ export const Subtitle = styled.p`
     padding: 4%;
     font-size: 16px;
     line-height: 24px;
-    font-family: myriad-pro,sans-serif;
+    font-family: ,sans-serif;
     color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 `;
 
@@ -95,7 +95,7 @@ export const Caption = styled.p`
     // padding-left: 4%;
     font-size: 18px;
     line-height: 24px;
-    font-family: myriad-pro,sans-serif;
+    font-family: ,sans-serif;
     color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 `;
 
@@ -134,6 +134,6 @@ export const TextHead = styled.div`
     // padding: 4%;
     font-size: 16px;
     line-height: 24px;
-    font-family: myriad-pro,sans-serif;
+    font-family: ,sans-serif;
     color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 `;

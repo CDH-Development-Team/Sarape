@@ -2,6 +2,7 @@ import Modal from "react-modal";
 //styling of the modal itself
 import styled from "styled-components";
 import React, { useState } from "react";
+import ModalVideo from 'react-modal-video'
 //import Modal2 from '../Modal2/modal2';
 //import Modal from '../Modal/index.js';
 
@@ -73,7 +74,7 @@ const customStyles = {
 
 const Services = () => {
   const [showModal, setShowModal] = useState(false);
-
+  const [vidOpen, setVidOpen] = useState(false);
   /*const [show1, setShow1] = useState(false);
       const [show2, setShow2] = useState(false);
       const [show3, setShow3] = useState(false);
@@ -189,11 +190,16 @@ const Services = () => {
               <Heading lightText={sevenObj.lightText}>
                 {sevenObj.headline}
               </Heading>
+              <React.Fragment>
+			<ModalVideo channel='youtube' autoplay isOpen={vidOpen} videoId="SedH0GmBYIM" onClose={() => setVidOpen(false)} />
+
+			<button className="btn-primary" style={{height:"2rem"}} onClick={()=> setVidOpen(true)}>Listen to the Curator</button>
+		</React.Fragment>
               <TextWrapper>
                 <TopLine>{sevenObj.topLine}</TopLine>
                 <Subtitle
                   darkText={sevenObj.darkText}
-                  style={{ fontFamily: "myriad-pro" }}
+                  style={{ fontFamily: "" }}
                 >
                   {sevenObj.description}
                 </Subtitle>
@@ -211,7 +217,7 @@ const Services = () => {
                   />
                   <Subtitle
                     darkText={sevenObj.darkText}
-                    style={{ fontFamily: "myriad-pro" }}
+                    style={{ fontFamily: "" }}
                   >
                     {sevenObj.imgdesc2}
                   </Subtitle>
@@ -245,13 +251,13 @@ const Services = () => {
 
                 <Subtitle
                   darkText={sevenObjOne.darkText}
-                  style={{ fontFamily: "myriad-pro" }}
+                  style={{ fontFamily: "" }}
                 >
                   {sevenObjOne.description}
                 </Subtitle>
                 <Subtitle
                   darkText={sevenObjOne.darkText}
-                  style={{ fontFamily: "myriad-pro" }}
+                  style={{ fontFamily: "" }}
                 >
                   {sevenObjOne.description2}
                 </Subtitle>
@@ -270,7 +276,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjOne.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1rem",
                     width: "85%",
                   }}
@@ -288,7 +294,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjOne.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1rem",
                     width: "85%",
                   }}
@@ -306,7 +312,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjOne.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1rem",
                     width: "85%",
                   }}
@@ -394,19 +400,19 @@ const Services = () => {
 
                 <Subtitle
                   darkText={sevenObjTwo.darkText}
-                  style={{ fontFamily: "myriad-pro" }}
+                  style={{ fontFamily: "" }}
                 >
                   {sevenObjTwo.description}
                 </Subtitle>
                 <Subtitle
                   darkText={sevenObjTwo.darkText}
-                  style={{ fontFamily: "myriad-pro" }}
+                  style={{ fontFamily: "" }}
                 >
                   {sevenObjTwo.description2}
                 </Subtitle>
                 <Subtitle
                   darkText={sevenObjTwo.darkText}
-                  style={{ fontFamily: "myriad-pro" }}
+                  style={{ fontFamily: "" }}
                 >
                   {sevenObjTwo.description3}
                 </Subtitle>
@@ -425,7 +431,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjTwo.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1rem",
                     width: "85%",
                   }}
@@ -443,7 +449,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjTwo.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1rem",
                     width: "85%",
                   }}
@@ -532,7 +538,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjThree.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1.5rem",
                   }}
                 >
@@ -541,7 +547,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjThree.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1.5rem",
                   }}
                 >
@@ -550,7 +556,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjThree.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1.5rem",
                   }}
                 >
@@ -565,7 +571,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjThree.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1.5rem",
                   }}
                 >
@@ -578,7 +584,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjThree.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1rem",
                   }}
                 >
@@ -593,7 +599,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjThree.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1rem",
                   }}
                 >
@@ -608,7 +614,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjThree.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1rem",
                   }}
                 >
@@ -690,7 +696,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjFour.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1.5rem",
                     marginBottom: "7rem",
                   }}
@@ -700,7 +706,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjFour.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1.5rem",
                   }}
                 >
@@ -779,7 +785,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjFour.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1rem",
                   }}
                 >
@@ -789,7 +795,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjFour.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1.5rem",
                   }}
                 >
@@ -804,7 +810,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjFour.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1rem",
                   }}
                 >
@@ -830,7 +836,7 @@ const Services = () => {
               <Subtitle
                 darkText={sevenObjFive.darkText}
                 style={{
-                  fontFamily: "myriad-pro",
+                  fontFamily: "",
                   fontSize: "1.5rem",
                 }}
               >
@@ -857,7 +863,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjFive.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1rem",
                   }}
                 >
@@ -868,7 +874,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjFive.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1rem",
                   }}
                 >
@@ -893,7 +899,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjSix.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1.5rem",
                   }}
                 >
@@ -902,7 +908,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjSix.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1.5rem",
                   }}
                 >
@@ -921,7 +927,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjSix.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1rem",
                   }}
                 >
@@ -932,7 +938,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjSix.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1rem",
                   }}
                 >
@@ -1227,7 +1233,7 @@ const Services = () => {
               <Subtitle
                 darkText={sevenObjSeven.darkText}
                 style={{
-                  fontFamily: "myriad-pro",
+                  fontFamily: "",
                   fontSize: "1.5rem",
                 }}
               >
@@ -1243,7 +1249,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjSeven.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1rem",
                     marginRight: "10rem",
                   }}
@@ -1266,7 +1272,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sevenObjSeven.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1rem",
                   }}
                 >

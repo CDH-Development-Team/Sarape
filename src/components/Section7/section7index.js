@@ -67,13 +67,13 @@ const SevenSection = ({
 
                 <Subtitle
                   darkText={darkText}
-                  style={{ fontFamily: "myriad-pro", fontSize: "1.5rem" }}
+                  style={{ fontFamily: "", fontSize: "1.5rem" }}
                 >
                   {description}
                 </Subtitle>
                 <Subtitle
                   darkText={darkText}
-                  style={{ fontFamily: "myriad-pro", fontSize: "1.5rem" }}
+                  style={{ fontFamily: "", fontSize: "1.5rem" }}
                 >
                   {description2}
                 </Subtitle>
@@ -83,20 +83,20 @@ const SevenSection = ({
                 </QuoteDiv>
                 <Subtitle
                   darkText={darkText}
-                  style={{ fontFamily: "myriad-pro", fontSize: "1rem" }}
+                  style={{ fontFamily: "", fontSize: "1rem" }}
                 >
                   {description3}
                 </Subtitle>
                 <Img border="none" smallImg={smallImg} src={img3} alt="" />
                 <Subtitle
                   darkText={darkText}
-                  style={{ fontFamily: "myriad-pro", fontSize: "1rem" }}
+                  style={{ fontFamily: "", fontSize: "1rem" }}
                 >
                   {imgdesc4}
                 </Subtitle>
                 <Subtitle
                   darkText={darkText}
-                  style={{ fontFamily: "myriad-pro", fontSize: "13px" }}
+                  style={{ fontFamily: "", fontSize: "13px" }}
                 >
                   {smallDesc}
                 </Subtitle>
@@ -108,13 +108,13 @@ const SevenSection = ({
                 <br></br>
                 <Subtitle
                   darkText={darkText}
-                  style={{ fontFamily: "myriad-pro" }}
+                  style={{ fontFamily: "" }}
                 >
                   {imgdesc}
                 </Subtitle>
                 <Subtitle
                   darkText={darkText}
-                  style={{ fontFamily: "myriad-pro" }}
+                  style={{ fontFamily: "" }}
                 >
                   {imgdesc2}
                 </Subtitle>
@@ -127,7 +127,7 @@ const SevenSection = ({
                 />
                 <Subtitle
                   darkText={darkText}
-                  style={{ fontFamily: "myriad-pro" }}
+                  style={{ fontFamily: "" }}
                 >
                   {imgdesc3}
                 </Subtitle>

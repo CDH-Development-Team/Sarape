@@ -60,26 +60,26 @@ const HistoricalSection = ({
 
                 <Subtitle
                   darkText={darkText}
-                  style={{ fontFamily: "myriad-pro", fontSize: "1.5rem" }}
+                  style={{ fontFamily: "", fontSize: "1.5rem" }}
                 >
                   {description}
                 </Subtitle>
                 <Subtitle
                   darkText={darkText}
-                  style={{ fontFamily: "myriad-pro", fontSize: "1.5rem" }}
+                  style={{ fontFamily: "", fontSize: "1.5rem" }}
                 >
                   {description2}
                 </Subtitle>
                 <Subtitle
                   darkText={darkText}
-                  style={{ fontFamily: "myriad-pro", fontSize: "1.5rem" }}
+                  style={{ fontFamily: "", fontSize: "1.5rem" }}
                 >
                   {description3}
                 </Subtitle>
                 <Img border="none" smallImg={smallImg} src={img3} alt="" />
                 <Subtitle
                   darkText={darkText}
-                  style={{ fontFamily: "myriad-pro", fontSize: "1.5rem" }}
+                  style={{ fontFamily: "", fontSize: "1.5rem" }}
                 >
                   {imgdesc4}
                 </Subtitle>
@@ -89,21 +89,21 @@ const HistoricalSection = ({
               <ImgWrap>
                 <Subtitle
                   darkText={darkText}
-                  style={{ fontFamily: "myriad-pro", fontSize: "1rem" }}
+                  style={{ fontFamily: "", fontSize: "1rem" }}
                 >
                   {imgdesc}
                 </Subtitle>
                 <Img border="none" smallImg={smallImg} src={img} alt="" />
                 <Subtitle
                   darkText={darkText}
-                  style={{ fontFamily: "myriad-pro", fontSize: "1rem" }}
+                  style={{ fontFamily: "", fontSize: "1rem" }}
                 >
                   {imgdesc2}
                 </Subtitle>
                 <Img border="none" smallImg={smallImg} src={img2} alt="" />
                 <Subtitle
                   darkText={darkText}
-                  style={{ fontFamily: "myriad-pro", fontSize: "1rem" }}
+                  style={{ fontFamily: "", fontSize: "1rem" }}
                 >
                   {imgdesc3}
                 </Subtitle>

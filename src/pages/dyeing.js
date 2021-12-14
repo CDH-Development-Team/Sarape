@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import History from "../components/History";
 import FamilyMosaic from "../components/FamilyMosaic";
 import Modal2 from "../components/Modal2/modal2";
-
+import ModalVideo from 'react-modal-video'
 import Modal from "react-modal";
 
 // import React, { useState } from "react";
@@ -125,7 +125,7 @@ const DyeingPage = () => {
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
   }
-
+  const [vidOpen, setVidOpen] = useState(false);
   function closeModal() {
     setIsOpenM(false);
   }
@@ -189,7 +189,7 @@ const DyeingPage = () => {
                             marginLeft: "5rem",
                             marginTop: "5rem",
                             fontSize: "1.5rem",
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                           }}
                         >
                           Blue dye hues are made from the indigo plant (
@@ -212,7 +212,7 @@ const DyeingPage = () => {
                             marginLeft: "25rem",
                             marginTop: "5rem",
                             fontSize: "1rem",
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                           }}
                         >
                           Juana Gutiérrez Contreras grinds indigo into a powder
@@ -274,7 +274,7 @@ const DyeingPage = () => {
                             marginLeft: "28rem",
                             marginTop: "7rem",
                             fontSize: "1rem",
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                           }}
                         >
                           Indigo stained hands. <br></br>Nikhol Esterás,
@@ -322,7 +322,7 @@ const DyeingPage = () => {
                             marginLeft: "5rem",
                             marginTop: "35rem",
                             fontSize: "1rem",
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                           }}
                         >
                           Drying yarn.<br></br> Soraya Matos, photographer, 2018
@@ -387,7 +387,7 @@ const DyeingPage = () => {
                             marginLeft: "22rem",
                             marginTop: "10rem",
                             fontSize: "1rem",
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                           }}
                         >
                           Porfirio Gutiérrez with dyed skeins of yarn.<br></br>{" "}
@@ -429,7 +429,7 @@ const DyeingPage = () => {
                         <p
                           style={{
                             fontSize: "1.5rem",
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                           }}
                         >
                           I inherited the deep artistic traditions and our rich
@@ -507,7 +507,7 @@ const DyeingPage = () => {
                             marginRight: "2rem",
                             marginTop: "7rem",
                             fontSize: "1.5rem",
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                           }}
                         >
                           Spanish colonizers saw beauty, as well as economic
@@ -536,7 +536,7 @@ const DyeingPage = () => {
                             marginLeft: "15rem",
                             marginRight: "3rem",
                             marginTop: "2rem",
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                             color: "#fff",
                           }}
                         >
@@ -584,7 +584,7 @@ const DyeingPage = () => {
                             marginLeft: "2rem",
                             marginRight: "2rem",
                             marginTop: "2rem",
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                           }}
                         >
                           Cochineal dye has been widely used in Saltillo sarapes
@@ -616,7 +616,7 @@ const DyeingPage = () => {
                             marginLeft: "15rem",
                             marginTop: "3rem",
                             fontSize: "1rem",
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                           }}
                         >
                           Indigenous man using a deer’s tail to scrape cochineal
@@ -667,7 +667,7 @@ const DyeingPage = () => {
                             marginRight: "2rem",
                             marginTop: "2rem",
                             fontSize: "1.5rem",
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                           }}
                         >
                           The life cycles of the cochineal insect and the pad of
@@ -696,7 +696,7 @@ const DyeingPage = () => {
                             marginLeft: "19rem",
                             marginTop: "2rem",
                             fontSize: "1rem",
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                           }}
                         >
                           Front and back views of male and female cochineal
@@ -754,7 +754,7 @@ const DyeingPage = () => {
                             marginLeft: "7rem",
                             marginTop: "25rem",
                             fontSize: "1rem",
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                           }}
                         >
                           Using a mano and metate, cochineal is crushed into a
@@ -824,7 +824,7 @@ const DyeingPage = () => {
                               marginRight: "2rem",
                               marginTop: "2rem",
                               fontSize: "1.5rem",
-                              fontFamily: "myriad-pro",
+                              fontFamily: "",
                             }}
                           >
                             In the 1960s, our weaving tradition underwent a
@@ -858,7 +858,7 @@ const DyeingPage = () => {
                               marginLeft: "20rem",
                               marginTop: "3rem",
                               fontSize: "1rem",
-                              fontFamily: "myriad-pro",
+                              fontFamily: "",
                             }}
                           >
                             Dyeing with cochineal <br></br>Soraya Matos,
@@ -905,7 +905,7 @@ const DyeingPage = () => {
                             marginLeft: "5rem",
                             marginTop: "15rem",
                             fontSize: "1rem",
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                           }}
                         >
                           Andrea Contreras, Porfirio’s mom, plucking tree moss
@@ -954,9 +954,15 @@ const DyeingPage = () => {
               style={{
                 fontSize: "2.5rem",
                 color: "#fff",
+                position: "relative"
               }}
             >
               Natural Dyeing
+              <React.Fragment>
+			<ModalVideo channel='youtube' autoplay isOpen={vidOpen} videoId="9mKZ7VtYBOk" onClose={() => setVidOpen(false)} />
+
+			<button className="btn-primary" style={{marginLeft:"1rem", position: "absolute", top: "10%", height:"2rem"}} onClick={()=> setVidOpen(true)}>Listen to the Curator</button>
+		</React.Fragment>
             </h1>
             <br />
             <div className="row">
@@ -964,7 +970,7 @@ const DyeingPage = () => {
                 <p
                   style={{
                     fontSize: "1.5rem",
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     padding: "0rem",
                   }}
                 >
@@ -993,7 +999,7 @@ const DyeingPage = () => {
                     <p
                       style={{
                         fontSize: "1.5rem",
-                        fontFamily: "myriad-pro",
+                        fontFamily: "",
                         padding: "0rem",
                       }}
                     >
@@ -1014,7 +1020,7 @@ const DyeingPage = () => {
                     <p
                       style={{
                         fontSize: "1.5rem",
-                        fontFamily: "myriad-pro",
+                        fontFamily: "",
                         padding: "0rem",
                       }}
                     ></p>
@@ -1027,7 +1033,7 @@ const DyeingPage = () => {
                     <p
                       style={{
                         fontSize: "1.5rem",
-                        fontFamily: "myriad-pro",
+                        fontFamily: "",
                         padding: "0rem",
                       }}
                     >
@@ -1049,7 +1055,7 @@ const DyeingPage = () => {
                     <p
                       style={{
                         fontSize: "1.5rem",
-                        fontFamily: "myriad-pro",
+                        fontFamily: "",
                         padding: "0rem",
                       }}
                     >

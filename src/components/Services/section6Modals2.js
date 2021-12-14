@@ -1,7 +1,7 @@
 import Modal from "react-modal";
 //styling of the modal itself
 import styled from "styled-components";
-
+import ModalVideo from 'react-modal-video'
 import React, { useState } from "react";
 //import Modal2 from '../Modal2/modal2';
 //import Modal from '../Modal/index.js';
@@ -114,7 +114,9 @@ const Services = () => {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out;
   `;
-
+  const [vidOpen, setVidOpen] = useState(false);
+  const [vidOpen2, setVidOpen2] = useState(false);
+  const [vidOpen3, setVidOpen3] = useState(false);
   return (
     <ServicesContainer id="services">
       <Modal
@@ -202,12 +204,18 @@ const Services = () => {
         <InfoWrapper>
           <InfoRow imgStart={sixObj.imgStart}>
             <Column1>
-              <Heading lightText={sixObj.lightText}>{sixObj.headline}</Heading>
+              <Heading style={{position: "relative"}} lightText={sixObj.lightText}>{sixObj.headline}
+              </Heading>
+              <React.Fragment>
+			<ModalVideo channel='youtube' autoplay isOpen={vidOpen} videoId="-5AkIHdKZz4" onClose={() => setVidOpen(false)} />
+
+			<button className="btn-primary" style={{height:"2rem"}} onClick={()=> setVidOpen(true)}>Listen to the Curator</button>
+		</React.Fragment>
               <TextWrapper>
                 <TopLine>{sixObj.topLine}</TopLine>
                 <Subtitle
                   darkText={sixObj.darkText}
-                  style={{ fontFamily: "myriad-pro" }}
+                  style={{ fontFamily: "" }}
                 >
                   {sixObj.description}
                 </Subtitle>
@@ -275,7 +283,7 @@ const Services = () => {
                   />
                   <Subtitle
                     darkText={sixObj.darkText}
-                    style={{ fontFamily: "myriad-pro" }}
+                    style={{ fontFamily: "" }}
                   >
                     {sixObj.imgdesc2}
                   </Subtitle>
@@ -407,18 +415,23 @@ const Services = () => {
               <Heading lightText={sixObjOne.lightText}>
                 {sixObjOne.headline}
               </Heading>
+              <React.Fragment>
+			<ModalVideo channel='youtube' autoplay isOpen={vidOpen2} videoId="6ZHsiC7bLMI" onClose={() => setVidOpen2(false)} />
+
+			<button className="btn-primary" style={{height:"2rem"}} onClick={()=> setVidOpen2(true)}>Listen to the Curator</button>
+		</React.Fragment>
               <TextWrapper>
                 <TopLine>{sixObjOne.topLine}</TopLine>
 
                 <Subtitle
                   darkText={sixObjOne.darkText}
-                  style={{ fontFamily: "myriad-pro" }}
+                  style={{ fontFamily: "" }}
                 >
                   {sixObjOne.description}
                 </Subtitle>
                 <Subtitle
                   darkText={sixObjOne.darkText}
-                  style={{ fontFamily: "myriad-pro" }}
+                  style={{ fontFamily: "" }}
                 >
                   {sixObjOne.description2}
                 </Subtitle>
@@ -458,7 +471,7 @@ const Services = () => {
                             <div
                               style={{
                                 fontSize: "1rem",
-                                fontFamily: "myriad-pro",
+                                fontFamily: "",
                               }}
                             >
                               Notice how, in this Transition period sarape, the
@@ -537,7 +550,7 @@ const Services = () => {
                               <div
                                 style={{
                                   color: "#fff",
-                                  fontFamily: "myriad-pro",
+                                  fontFamily: "",
                                   fontSize: "1rem",
                                 }}
                               >
@@ -554,7 +567,7 @@ const Services = () => {
                               <div
                                 style={{
                                   color: "#fff",
-                                  fontFamily: "myriad-pro",
+                                  fontFamily: "",
                                   fontSize: "1rem",
                                 }}
                               >
@@ -630,7 +643,7 @@ const Services = () => {
                             <div
                               style={{
                                 fontSize: "1rem",
-                                fontFamily: "myriad-pro",
+                                fontFamily: "",
                               }}
                             >
                               Notice the lavishly decorated neck-slit{" "}
@@ -690,7 +703,7 @@ const Services = () => {
                             <div
                               style={{
                                 fontSize: "1rem",
-                                fontFamily: "myriad-pro",
+                                fontFamily: "",
                               }}
                             >
                               Demand for Saltillo sarapes spread throughout the
@@ -755,13 +768,18 @@ const Services = () => {
               <Heading lightText={sixObjThree.lightText}>
                 {sixObjThree.headline}
               </Heading>
+              <React.Fragment>
+			<ModalVideo channel='youtube' autoplay isOpen={vidOpen3} videoId="LTqW0otP2wM" onClose={() => setVidOpen3(false)} />
+
+			<button className="btn-primary" style={{height:"2rem"}} onClick={()=> setVidOpen3(true)}>Listen to the Curator</button>
+		</React.Fragment>
               <TextWrapper>
                 <TopLine>{sixObjThree.topLine}</TopLine>
 
                 <Subtitle
                   darkText={sixObjThree.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1.5rem",
                   }}
                 >
@@ -770,7 +788,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sixObjThree.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1.5rem",
                   }}
                 >
@@ -779,7 +797,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sixObjThree.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1.5rem",
                   }}
                 >
@@ -794,7 +812,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sixObjThree.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1.5rem",
                   }}
                 >
@@ -807,7 +825,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sixObjThree.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1rem",
                   }}
                 >
@@ -822,7 +840,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sixObjThree.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1rem",
                   }}
                 >
@@ -837,7 +855,7 @@ const Services = () => {
                 <Subtitle
                   darkText={sixObjThree.darkText}
                   style={{
-                    fontFamily: "myriad-pro",
+                    fontFamily: "",
                     fontSize: "1rem",
                   }}
                 >
@@ -909,7 +927,7 @@ const Services = () => {
 
                   <Subtitle
                     darkText={sixObj.darkText}
-                    style={{ fontFamily: "myriad-pro" }}
+                    style={{ fontFamily: "" }}
                   >
                     {sixObj.imgdesc2}
                   </Subtitle>

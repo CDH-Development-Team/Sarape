@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import History from "../components/History";
 import FamilyMosaic from "../components/FamilyMosaic";
 import Modal from "react-modal";
+import ModalVideo from 'react-modal-video'
 // import React, { useState } from "react";
 import "./styles.css";
 import Button from "../components/button/Button";
@@ -132,6 +133,7 @@ const FamilyPage = () => {
     setIsOpenM(false);
   }
   const [content, setContent] = React.useState(null);
+  const [vidOpen, setVidOpen] = useState(false);
   return (
     <React.Fragment>
       <Modal
@@ -168,7 +170,7 @@ const FamilyPage = () => {
                     <div
                       className="text"
                       style={{
-                        fontFamily: "myriad-pro",
+                        fontFamily: "",
                         padding: "1rem",
                         fontSize: "1.5rem",
                       }}
@@ -204,7 +206,7 @@ const FamilyPage = () => {
                         style={{
                           color: "#fff",
                           fontSize: "1rem",
-                          fontFamily: "myriad-pro",
+                          fontFamily: "",
                           marginLeft: "25rem",
                           marginTop: "2rem",
                         }}
@@ -250,7 +252,7 @@ const FamilyPage = () => {
                       <div className="column5">
                         <p
                           style={{
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                             padding: "1rem",
                             fontSize: "1.5rem",
                           }}
@@ -284,7 +286,7 @@ const FamilyPage = () => {
                           style={{
                             color: "#fff",
                             fontSize: "1rem",
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                             marginTop: "2rem",
                             marginLeft: "15rem",
                           }}
@@ -333,7 +335,7 @@ const FamilyPage = () => {
                         marginLeft: "2rem",
                         marginRight: "3rem",
                         fontSize: "1.5rem",
-                        fontFamily: "myriad-pro",
+                        fontFamily: "",
                       }}
                     >
                       Sheep are usually sheared once a year. Over the course of
@@ -368,7 +370,7 @@ const FamilyPage = () => {
                         style={{
                           color: "#fff",
                           fontSize: "1rem",
-                          fontFamily: "myriad-pro",
+                          fontFamily: "",
                           paddingTop: "5rem",
                           paddingLeft: "15rem",
                         }}
@@ -414,7 +416,7 @@ const FamilyPage = () => {
                             marginLeft: "2rem",
                             marginRight: "5rem",
                             fontSize: "1.5rem",
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                           }}
                         >
                           Biodiversity is endangered due to climate change. We
@@ -524,7 +526,7 @@ const FamilyPage = () => {
                           style={{
                             fontSize: "1.5rem",
                             width: "80%",
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                             marginLeft: "2rem",
                           }}
                         >
@@ -638,7 +640,7 @@ const FamilyPage = () => {
                       <div className="column">
                         <p
                           style={{
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                             marginRight: "7rem",
                             fontSize: "1.5rem",
                             marginLeft: "2rem",
@@ -666,7 +668,7 @@ const FamilyPage = () => {
                         </p>
                         <p
                           style={{
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                             fontSize: "1rem",
                             marginRight: "2rem",
                             marginLeft: "20rem",
@@ -787,7 +789,7 @@ const FamilyPage = () => {
                       </div>
                       <div
                         style={{
-                          fontFamily: "myriad-pro",
+                          fontFamily: "",
 
                           fontSize: "1.5rem",
                           marginTop: "5rem",
@@ -809,7 +811,7 @@ const FamilyPage = () => {
                       <br />
                       <div
                         style={{
-                          fontFamily: "myriad-pro",
+                          fontFamily: "",
                           marginLeft: "20rem",
                           fontSize: "1rem",
                         }}
@@ -863,7 +865,7 @@ const FamilyPage = () => {
                       <div className="column">
                         <p
                           style={{
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                             marginRight: "7rem",
                             fontSize: "1.5rem",
                             marginLeft: "2rem",
@@ -891,7 +893,7 @@ const FamilyPage = () => {
                         </p>
                         <p
                           style={{
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                             fontSize: "1rem",
                             marginRight: "2rem",
                             marginLeft: "20rem",
@@ -987,7 +989,7 @@ const FamilyPage = () => {
                         <div
                           style={{
                             color: "#fff",
-                            fontFamily: "myriad-pro",
+                            fontFamily: "",
                             padding: "1rem",
                             fontSize: "1.5rem",
                           }}
@@ -1010,7 +1012,7 @@ const FamilyPage = () => {
                           <div
                             style={{
                               color: "#fff",
-                              fontFamily: "myriad-pro",
+                              fontFamily: "",
                               paddingTop: "5rem",
                               fontSize: "1rem",
                               marginLeft: "20rem",
@@ -1060,16 +1062,23 @@ const FamilyPage = () => {
               fontSize: "2.5rem",
               color: "#fff",
               marginLeft: "-15px",
+              position: "relative",
             }}
           >
             Family and Philosophy
+            <React.Fragment>
+			<ModalVideo channel='youtube' autoplay isOpen={vidOpen} videoId="Y3vx5OLSWLs" onClose={() => setVidOpen(false)} />
+
+			<button className="btn-primary" style={{marginLeft:"1rem", position: "absolute", top: "10%", height:"2rem"}} onClick={()=> setVidOpen(true)}>Listen to the Curator</button>
+		</React.Fragment>
           </h1>
+          
           <br />
           <div className="row1">
             <div
               className="column1"
               style={{
-                fontFamily: "myriad-pro",
+                fontFamily: "",
                 fontSize: "1.5rem",
                 color: "#fff",
               }}
@@ -1085,7 +1094,7 @@ const FamilyPage = () => {
             <div
               className="column1"
               style={{
-                fontFamily: "myriad-pro",
+                fontFamily: "",
 
                 fontSize: "1.5rem",
                 color: "#fff",

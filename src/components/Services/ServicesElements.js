@@ -118,7 +118,7 @@ export const ServicesP = styled.p`
   color: white;
   margin-bottom: 80px;
   width: 50%;
-  font-family: myriad-pro, sans-serif;
+  font-family: , sans-serif;
   font-weight: 10;
   // margin-left: 30px;
   @media screen and (max-width: 480px) {
@@ -130,7 +130,7 @@ export const FragmentQuote = styled.div`
   color: white;
   display: flex;
   justify-content: center;\
-  font-family: myriad-pro-condensed, sans-serif;
+  font-family: -condensed, sans-serif;
   font-style: normal;
   font-size: 1.5rem;
 `;

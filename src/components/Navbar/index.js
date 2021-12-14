@@ -22,7 +22,7 @@ const Navbar = ({ toggle }) => {
                     </NavMenu>
                     <NavLinks to="/home" style={{ marginRight: '40px' }}>
                         <NavDiv style={{textAlign: "right",overflow:"hidden"}}>
-                            <NavP2 style={{fontFamily: "myriad-pro"}}>About This Exhibit</NavP2>
+                            <NavP2 style={{fontFamily: ""}}>About This Exhibit</NavP2>
                         </NavDiv>
                     </NavLinks>
 

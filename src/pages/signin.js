@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-
+import ModalVideo from 'react-modal-video'
 import InfoSection from "../components/InfoSection";
 import {
   Column1,
@@ -21,7 +21,7 @@ import HeroSection1 from "../components/HeroSection1";
 
 const SigninPage = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+const [vidOpen, setVidOpen] = useState(false);
   const toggle = () => {
     setIsOpen(!isOpen);
   };
@@ -40,7 +40,13 @@ const SigninPage = () => {
           color: "#fff",
         }}
       >
-        <h1 style={{ fontSize: "2.5rem" }}>PORFIRIO GUTIÉRREZ</h1>
+        <h1 style={{ fontSize: "2.5rem", position: "relative" }}>PORFIRIO GUTIÉRREZ
+        <React.Fragment>
+			<ModalVideo channel='youtube' autoplay isOpen={vidOpen} videoId="k651uaQj1gg" onClose={() => setVidOpen(false)} />
+
+			<button className="btn-primary" style={{marginLeft:"1rem", position: "absolute", top: "10%", height:"2rem"}} onClick={()=> setVidOpen(true)}>Listen to the Curator</button>
+		</React.Fragment>
+    </h1>
         <br></br>
         <br></br>
         <br></br>
@@ -48,7 +54,7 @@ const SigninPage = () => {
           <Column1
             style={{
               textAlign: "left",
-              fontFamily: "myriad-pro",
+              fontFamily: "",
               fontSize: "1.5rem",
               marginLeft: "1rem",
             }}
@@ -78,7 +84,7 @@ const SigninPage = () => {
           <Column2
             style={{
               textAlign: "left",
-              fontFamily: "myriad-pro",
+              fontFamily: "",
               fontSize: "1.5rem",
             }}
           >

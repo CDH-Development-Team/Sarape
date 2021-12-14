@@ -46,6 +46,7 @@ const InfoSection = ({
             <TopLine>{topLine}</TopLine>
             <Heading lightText={lightText} style={{ fontSize: "2.5rem" }}>
               {headline}
+              
             </Heading>
             <Subtitle
               darkText={darkText}

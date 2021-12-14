@@ -226,7 +226,7 @@ const Dyeing = () => {
             className="column1"
             style={{
               fontSize: "1rem",
-              fontFamily: "myriad-pro",
+              fontFamily: "",
               color: "#fff",
             }}
           >
@@ -242,7 +242,7 @@ const Dyeing = () => {
             className="column1"
             style={{
               fontSize: "1rem",
-              fontFamily: "myriad-pro",
+              fontFamily: "",
               color: "#fff",
             }}
           >
@@ -326,7 +326,7 @@ const Dyeing = () => {
             <div
               style={{
                 fontSize: "1.5rem",
-                fontFamily: "myriad-pro",
+                fontFamily: "",
                 padding: "1.3rem",
               }}
             >
@@ -345,7 +345,7 @@ const Dyeing = () => {
             <div
               style={{
                 fontSize: "1rem",
-                fontFamily: "myriad-pro",
+                fontFamily: "",
                 padding: "1.3rem",
               }}
             >
@@ -390,7 +390,7 @@ const Dyeing = () => {
               <p
                 style={{
                   fontSize: "1.5rem",
-                  fontFamily: "myriad-pro",
+                  fontFamily: "",
                   padding: "1.3rem",
                 }}
               >
@@ -406,7 +406,7 @@ const Dyeing = () => {
               <p
                 style={{
                   fontSize: "1.5rem",
-                  fontFamily: "myriad-pro",
+                  fontFamily: "",
                   padding: "1.3rem",
                 }}
               >
@@ -423,7 +423,7 @@ const Dyeing = () => {
               <p
                 style={{
                   fontSize: "1.5rem",
-                  fontFamily: "myriad-pro",
+                  fontFamily: "",
                   padding: "1.3rem",
                 }}
               >
@@ -515,7 +515,7 @@ const Dyeing = () => {
               <p
                 style={{
                   fontSize: "1.5rem",
-                  fontFamily: "myriad-pro",
+                  fontFamily: "",
                   padding: "1.3rem",
                 }}
               >
@@ -531,7 +531,7 @@ const Dyeing = () => {
               <p
                 style={{
                   fontSize: "1.5rem",
-                  fontFamily: "myriad-pro",
+                  fontFamily: "",
                   padding: "1.3rem",
                 }}
               >
@@ -548,7 +548,7 @@ const Dyeing = () => {
               <p
                 style={{
                   fontSize: "1.5rem",
-                  fontFamily: "myriad-pro",
+                  fontFamily: "",
                   padding: "1.3rem",
                 }}
               >
