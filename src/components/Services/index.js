@@ -362,7 +362,7 @@ const Services = () => {
       <ServicesH1
         style={{ marginTop: "30px", marginLeft: "-40rem", textAlign: "left" }}
       >
-        FRAGMENT SERIES BY PORFIRIO GUTIERREZ
+        FRAGMENT SERIES BY PORFIRIO GUTIÉRREZ
       </ServicesH1>
       <InfoRow style={{ height: "400px" }}>
         <Column1>
