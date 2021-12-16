@@ -10,7 +10,7 @@ import Modal from "react-modal";
 // import React, { useState } from "react";
 import "./styles.css";
 import Button from "../components/button/Button";
-
+import vocab from "../../src/images/vocab.jpg"
 import Icon1 from "../images/dyeing1.png";
 import Icon2 from "../images/dyeing2.png";
 import Icon3 from "../images/dyeing3.png";
@@ -1071,7 +1071,14 @@ const DyeingPage = () => {
               )}
             </div>
           </div>
+          <audio src="https://statemuseum.arizona.edu/sites/default/files/Words.mp3" autoplay controls controlsList="nodownload"></audio>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <img src={vocab} style={{width:'100%'}}></img>
         </div>
+
       </GeographyContainer>
     </React.Fragment>
   );
