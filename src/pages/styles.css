@@ -197,7 +197,25 @@
     width: 100%;
   }
 }
+.left-col{
+  width: 50%;
+  float:left;
+  padding: 2vw;
+  font-size: 1.5rem;
+}
 
+.right-col{
+  width: 50%;
+  float:right;
+  padding: 2vw;
+  font-size: 1.5rem;
+}
+
+.credsCDH{
+  padding: 2vw;
+  font-size: 1.5rem;
+  text-align:center;
+}
 @media screen and (max-width: 480px) {
   .column1 {
     width: 100%;

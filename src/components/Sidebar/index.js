@@ -53,7 +53,10 @@ const Sidebar = ({toggle, isOpen}) => {
                     </SidebarLink> 
                     <SidebarLink to="/tourism" onClick={toggle}>
                         Tourism
-                    </SidebarLink>                                            
+                    </SidebarLink>      
+                    <SidebarLink to="/" onClick={toggle}>
+                        Design your Sarape
+                    </SidebarLink>                                          
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>
