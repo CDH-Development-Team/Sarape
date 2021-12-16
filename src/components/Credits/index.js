@@ -2,6 +2,10 @@ import React from 'react';
 import img from '../../images/credits.png'
 import swlogo from '../../images/SW logo.jpg'
 import thrums from '../../images/thrumslogo.png'
+import cdhlogo from '../../images/CDH_logo_Primary.png'
+import higgins from '../../images/higgins.png'
+import med from '../../images/med.png'
+import asmlogo from '../../images/asmlogo.png'
 //import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 const Credits = () =>{
     return(
@@ -34,6 +38,22 @@ const Credits = () =>{
         Lisa Falk, project manager<br/>Andie Zelnio, project manager/designer<br/>Bryan Carter, CDH director <br/> Tehan Ketema, photographer <br />Samantha Mathis, developer<br/>Elijah Acuna, developer<br/>Ali Hamza Noor, developer<br/>Davlat Uralov, developer
         </div>
         </div>
+    </div>
+
+    <div width="100%">
+            <img className='logo' src={swlogo} width="40%"/>   
+            <img className='logo' src={asmlogo} width="40%"/>
+            
+    </div>
+        <br/><br/><br/>
+    <div width="100%">
+            <img className='logo' src={thrums} width="20%"/>
+            <img className='logo' src={higgins} width="10%" style={{}}/>
+            <img className='logo' src={med} width="40%" style={{}}/>
+    </div>
+    <br/><br/><br/>
+    <div style={{width:'50%', margin: '0 auto'}}>
+    <img className='logo' src={cdhlogo} style={{width:'90%'}} />
     </div>
     </div>
     )
