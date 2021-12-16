@@ -19,9 +19,6 @@ const Tourism = () => {
             <Navbar toggle={toggle} />
             <TourismHeader {...tourismObjOne}/>
             {/* <TourismSection {...tourismObjOne}/> */}
-            <TourismSection {...tourismObjTwo}/>
-            <TourismSection {...tourismObjThree}/>
-            <TourismSection {...tourismObjFour}/>
         </>
     )
 }
