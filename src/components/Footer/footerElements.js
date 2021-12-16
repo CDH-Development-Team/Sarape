@@ -11,8 +11,9 @@ export const FooterWrap = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1100px;
+  max-width: 90%;
   margin: 0 auto;
+  font-size: 10rem;
 `;
 
 export const FooterLinksContainer = styled.div`
@@ -59,7 +60,7 @@ export const FooterLink = styled(Link)`
   color: #fff;
   text-decoration: none;
   margin-bottom: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 
   &:hover {
     color: #490033;

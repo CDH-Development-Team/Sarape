@@ -8,9 +8,16 @@ const Navbar = ({ toggle }) => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to='/'>
-                        <img style={{height: 2+"em"}} src={logo} alt="logo"/>
-                    </NavLogo>
+                        <div style={{
+                            justifySelf: 'flex-start',
+                            cursor: 'pointer',
+                            display: 'flex',
+                            alignItems: 'center',
+                        }}>
+                        <a href="https://statemuseum.arizona.edu">
+                        <img style={{height: '4rem', marginTop:'0.5rem'}} src={logo} alt="logo"/>
+                        </a>
+                        </div>
                     <NavMenu >
                         <NavLinks to="/" style={{display:'flex', justifyContent: 'center', overflow: 'hidden'}}>
                             <NavDiv style={{textAlign: 'center'}}>

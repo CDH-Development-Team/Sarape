@@ -50,7 +50,7 @@ const InfoSection = ({
               <React.Fragment>
 			<ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="_6TEaFLJQGY" onClose={() => setOpen(false)} />
 
-			<button className="btn-primary" style={{marginLeft:"1rem", position: "absolute", top: "10%", height:"2rem"}} onClick={()=> setOpen(true)}>Listen to the Curator</button>
+			<button className="btn-primary" style={{marginLeft:"1rem", position: "absolute", top: "10%", height:"2rem", fontSize:'1.2rem'}} onClick={()=> setOpen(true)}>Listen to Curator</button>
 		</React.Fragment>
               
             </Heading>

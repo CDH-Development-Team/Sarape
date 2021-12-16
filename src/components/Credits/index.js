@@ -13,10 +13,10 @@ const Credits = () =>{
     <div style={{position: 'relative', width: '100%', fontSize: "1.5rem"}}>
     <img src={img} style={{width:"100%"}}>
     </img>
-    <div style={{position:'absolute', top:'5%', left:'15%', width:'70%', margin: '0 auto', color:'white'}}>
-        <p>“A family of reds, from purples and violets to deep reds, pinks, corals, and oranges, is created with different amounts of cochineal, different mordants and modifiers, and various overdyes of cochineal and other natural dyestuffs.”</p>
+    <div style={{position:'absolute', top:'5%', left:'15%', width:'70%', margin: '0 auto', color:'black'}}>
+        <p style={{fontFamily:'Lucida'}}>“A family of reds, from purples and violets to deep reds, pinks, corals, and oranges, is created with different amounts of cochineal, different mordants and modifiers, and various overdyes of cochineal and other natural dyestuffs.”</p>
         <br />
-        <p style={{fontSize:'1.2rem', float:'right'}}> Keith Recker, True Colors: World Masters of Natural Dyes and Pigments, Thrums Books, 2019 <br/>Joe Coca, photographer, 2019</p>
+        <p style={{fontSize:'1.2rem', float:'right'}}> Keith Recker, <i>True Colors: World Masters of Natural Dyes and Pigments,</i> Thrums Books, 2019 <br/>Joe Coca, photographer, 2019</p>
     </div>
     </div>
 
@@ -35,9 +35,11 @@ const Credits = () =>{
         <div style={{width: '100%'}} className='credsCDH'>
         <h4>ONLINE EXHIBIT CAME TOGETHER THROUGH THE WORK OF</h4><br/>
         <div>
-        Lisa Falk, project manager<br/>Andie Zelnio, project manager/designer<br/>Bryan Carter, CDH director <br/> Tehan Ketema, photographer <br />Samantha Mathis, developer<br/>Elijah Acuna, developer<br/>Ali Hamza Noor, developer<br/>Davlat Uralov, developer
+        Lisa Falk, project manager<br/>Andie Zelnio, project designer<br/>Bryan Carter, CDH director <br/> Tehan Ketema, photographer <br />Samantha Mathis, developer<br/>Elijah Acuna, developer<br/>Ali Hamza Noor, developer<br/>Davlat Uralov, developer
         </div>
         </div>
+
+        <h2 style={{textAlign: 'center'}}>The exhibit originally opened at Arizona State Museum in 2021.</h2>
     </div>
     <div style={{backgroundColor: '#b93069'}}>
         <br /><br /><br /><br /><br />
@@ -49,8 +51,8 @@ const Credits = () =>{
         <br/><br/><br/>
     <div width="100%">
             <img className='logo' src={thrums} width="20%"/>
-            <img className='logo' src={higgins} width="10%" style={{}}/>
-            <img className='logo' src={med} width="40%" style={{}}/>
+            <img className='logo' src={higgins} width="12%" style={{}}/>
+            <img className='logo' src={med} width="38%" style={{}}/>
     </div>
     <br/><br/><br/>
     <div style={{width:'50%', margin: '0 auto'}}>

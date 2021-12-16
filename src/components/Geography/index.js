@@ -15,8 +15,8 @@ import Icon8 from "../../images/section 2/8.png";
 import Icon9 from "../../images/section 2/9.png";
 import Icon10 from "../../images/section 2/10.png";
 import Icon11 from "../../images/section 2/11.png";
-import Icon12 from "../../images/section 2/12.jpg";
-import Icon13 from "../../images/section 2/13.jpg";
+import Icon12 from "../../images/section 2/12.png";
+import Icon13 from "../../images/section 2/13.png";
 import Icon14 from "../../images/section 2/14.png";
 import Color1 from "../../images/section 2/color1.png";
 
@@ -193,8 +193,8 @@ const Geography = () => {
                     >
                       Ceramics like these are associated with Mitla, called in
                       Nahuatl <i>Mictlán</i>, meaning “place of the dead,” or
-                      underworld, and in Zapotec, Lyobaa, meaning “place of
-                      rest.” The ancient Zapotec religion was complex, with
+                      underworld, and in Zapotec, Lyobaa, meaning "place of
+                      rest."<code>  </code>  The ancient Zapotec religion was complex, with
                       prayers and offerings made to many different gods or
                       deities. Notice the sophisticated dress and adornment of
                       these figures.
@@ -707,9 +707,9 @@ const Geography = () => {
             of the Aztecs, the Tlaxcalans were enlisted to help with Spain’s
             colonization efforts. In 1591, four hundred Tlaxcalan families were
             sent northward to help colonize the areas dominated by the
-            Chichimeca Indians. In return, the Tlaxcalans were awarded greater
+            Chichimeca Indians.  <br /> <br />In return, the Tlaxcalans were awarded greater
             privileges and their own area, called Barrio San Esteban de Nuevo
-            Tlaxcala, which would become Saltillo. <br />
+            Tlaxcala, which would become Saltillo. <br /> <br />
             Saltillo grew to be an important center for trade, linking central
             Mexico with northern portions of Mexico and Texas. Continuing into
             the early 1800s, Saltillo held a bustling, annual trade fair, where

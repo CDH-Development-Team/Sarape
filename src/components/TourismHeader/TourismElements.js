@@ -93,9 +93,7 @@ export const Caption = styled.p`
     margin-bottom: 5%;
     // padding-right: 4%;
     // padding-left: 4%;
-    font-size: 18px;
-    line-height: 24px;
-    font-family: ,sans-serif;
+    font-size: 1rem;
     color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 `;
 
@@ -132,8 +130,7 @@ export const TextHead = styled.div`
     max-width: 550px;
     margin-bottom: 5%;
     // padding: 4%;
-    font-size: 16px;
-    line-height: 24px;
-    font-family: ,sans-serif;
+    font-size: 1.5rem;
+    font-family: 'Myriad Pro Regular';
     color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 `;

@@ -29,7 +29,8 @@ const HeroSection = () => {
                 <VideoBg autoPlay loop muted src={Video} style={{opacity: 0.55}} type = 'video/mp4'/>
             </HeroBg>
             <HeroContent>
-                <HeroH1>Wrapped In Color</HeroH1>
+                <HeroH1 style={{fontSize: '7rem'}}>Wrapped In Color</HeroH1>
+                <HeroH1 style={{fontSize: '4rem'}}>Legacies of the Mexican Sarape</HeroH1>
                 <HeroBtnWrapper>
                     <Button to="/intro" onMouseEnter={onHover} onMouseLeave={onHover}>
                         ENTER {hover ? <ArrowForward /> : <ArrowRight />}
