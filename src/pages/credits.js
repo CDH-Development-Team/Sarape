@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-import InfoSection from '../components/InfoSection';
-import { homeObjOne, homeObjTwo, homeObjThree } from '../components/Credits/Data';
+import Credits from "../components/Credits";
 
-const Credits = () => {
+const CreditsPage = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => {
@@ -15,9 +14,9 @@ const Credits = () => {
         <>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle} />
-            <InfoSection {...homeObjOne}/>
+            <Credits />
         </>
     )
 }
 
-export default Credits;
+export default CreditsPage;

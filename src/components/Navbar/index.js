@@ -20,7 +20,7 @@ const Navbar = ({ toggle }) => {
                         </NavLinks>
                         <NavLinks></NavLinks>
                     </NavMenu>
-                    <NavLinks to="/home" style={{ marginRight: '40px' }}>
+                    <NavLinks to="/credits" style={{ marginRight: '40px' }}>
                         <NavDiv style={{textAlign: "right",overflow:"hidden"}}>
                             <NavP2 style={{fontFamily: ""}}>About This Exhibit</NavP2>
                         </NavDiv>
