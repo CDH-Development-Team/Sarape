@@ -35,7 +35,7 @@ export const Icon = styled.div`
 
 export const SidebarWrapper = styled.div`
     color: #fff;
-`
+`;
 export const SidebarMenu = styled.ul`
     display: grid;
     grid-template-columns: 1fr;
@@ -45,7 +45,7 @@ export const SidebarMenu = styled.ul`
     @media screen and (max-width: 480px){
         grid-template-rows: repeat(6,60px);
     }
-`
+`;
 
 export const SidebarLink = styled(LinkR)`
     display: flex;
@@ -63,12 +63,14 @@ export const SidebarLink = styled(LinkR)`
         color: #0c0c0c;
         transition: 0.2s ease-in-out;
     }
-`
+`;
 
 export const SideBtnWrap = styled.div`
     display: flex;
     justify-content: center;
-`
+`;
+
+
 
 export const SidebarRoute = styled(LinkR)`
     border-radius: 50px;
@@ -88,6 +90,6 @@ export const SidebarRoute = styled(LinkR)`
         background: #fff;
         color: #010606;
     }
-`
+`;
 
 

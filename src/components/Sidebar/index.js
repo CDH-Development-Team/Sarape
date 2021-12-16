@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styled from 'styled-components';
 import {
   SidebarContainer,
   Icon,
@@ -11,6 +12,7 @@ import {
   SidebarRoute,
 } from "./SidebarElements";
 
+
 const Sidebar = ({toggle, isOpen}) => {
     return (
         <SidebarContainer isOpen={isOpen} onClick={toggle}>
@@ -18,6 +20,9 @@ const Sidebar = ({toggle, isOpen}) => {
                 <ClosedIcon />
             </Icon>
             <SidebarWrapper>
+            <translateAlert style={{position: 'absolute', top:'2vh', width: '100%', textAlign: 'center', fontSize:'2vh'}}>
+                To change your language click the google translate icon on the above search bar
+                </translateAlert>
                 <SidebarMenu>
                     <SidebarLink to="/" onClick={toggle}>
                         Home
