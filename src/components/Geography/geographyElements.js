@@ -181,9 +181,9 @@ export const HistoryMosaicParent = styled.div`
   grid-template-rows: repeat(24, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  margin: 0 auto;
+  margin: 20px;
   height: ${({ height }) => height + "px"};
-  width: ${({ width }) => width + "px"};
+  width: ${({ width }) => width-20 + "px"};
 `;
 
 export const HistoryMosaicParent2 = styled.div`
@@ -193,8 +193,9 @@ export const HistoryMosaicParent2 = styled.div`
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   margin: 0 auto;
+  margin: 0 40px 0 20px;
   height: ${({ height }) => height + "px"};
-  width: ${({ width }) => width + "px"};
+  width: ${({ width }) => width -20 + "px"};
 `;
 
 export const HistoryMosaic1 = styled.div`

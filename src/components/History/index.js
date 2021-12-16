@@ -99,8 +99,8 @@ const History = () => {
           {content}
         </Modal>
         <HistoryMosaicParent
-          height={((width - (width % 38)) / 38) * 24 * 0.8}
-          width={(width - (width % 38)) * 0.8}
+          height={((width - (width % 38)) / 38) * 24 }
+          width={(width - (width % 38))}
         >
           <HistoryMosaic1 className="mosaic">
             <img
