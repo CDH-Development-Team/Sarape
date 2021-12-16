@@ -39,7 +39,8 @@ const Credits = () =>{
         </div>
         </div>
     </div>
-
+    <div style={{backgroundColor: '#b93069'}}>
+        <br /><br /><br /><br /><br />
     <div width="100%">
             <img className='logo' src={swlogo} width="40%"/>   
             <img className='logo' src={asmlogo} width="40%"/>
@@ -54,6 +55,7 @@ const Credits = () =>{
     <br/><br/><br/>
     <div style={{width:'50%', margin: '0 auto'}}>
     <img className='logo' src={cdhlogo} style={{width:'90%'}} />
+    </div>
     </div>
     </div>
     )

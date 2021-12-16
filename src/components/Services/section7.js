@@ -461,6 +461,7 @@ const Services = () => {
                     border="none"
                     style={{ width: "65%", marginLeft: "5rem" }}
                     src={Icon2}
+                    className ='textile'
                     onClick={() => {
                       setContent(
                         <div

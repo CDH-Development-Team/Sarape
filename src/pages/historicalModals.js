@@ -58,6 +58,7 @@ const FamilyPage = () => {
             src={Icon1}
             alt="Developer"
             onClick={() => setShow(true)}
+            className='textile'
           />
           <img
             src={Icon2}
