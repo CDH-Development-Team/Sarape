@@ -13,6 +13,7 @@ import {
     ArrowForward, 
     ArrowRight 
 } from './HeroElements';
+import Image360 from "..//../images/360-degrees.png"
 
 
 const HeroSection = () => { 
@@ -33,6 +34,8 @@ const HeroSection = () => {
                     <Button to="/intro" onMouseEnter={onHover} onMouseLeave={onHover}>
                         ENTER {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
+                    <a href = "https://my.matterport.com/show/?m=fU9JUqSoNBp" ><img src={Image360} style={{width: "9vw"}}>
+                    </img></a>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>
