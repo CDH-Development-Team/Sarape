@@ -417,38 +417,38 @@ export const DyeMosaic8 = styled.div`
   grid-area: 7 / 6 / 9 / 9;
 `;
 export const DyeMosaic9 = styled.div`
-  grid-area: 1 / 9 / 4 / 12;
+  grid-area: 1 / 9 / 4 / 11;
 `;
 export const DyeMosaic10 = styled.div`
-  grid-area: 4 / 9 / 6 / 12;
+  grid-area: 4 / 8 / 6 / 11;
 `;
 export const DyeMosaic11 = styled.div`
-  grid-area: 6 / 9 / 9 / 12;
+  grid-area: 6 / 9 / 9 / 11;
 `;
 export const DyeMosaic12 = styled.div`
-  grid-area: 1 / 12 / 4 / 14;
+  grid-area: 1 / 10 / 4 / 13;
 `;
 export const DyeMosaic13 = styled.div`
-  grid-area: 4 / 12 / 6 / 14;
+  grid-area: 4 / 11 / 6 / 13;
 `;
 export const DyeMosaic14 = styled.div`
-  grid-area: 6 / 12 / 9 / 14;
+  grid-area: 6 / 10 / 9 / 13;
 `;
 export const DyeMosaic15 = styled.div`
-  grid-area: 1 / 14 / 4 / 16;
+  grid-area: 1 / 13 / 4 / 15;
 `;
 export const DyeMosaic16 = styled.div`
-  grid-area: 4 / 14 / 7 / 16;
+  grid-area: 4 / 13 / 7 / 15;
 `;
 export const DyeMosaic17 = styled.div`
-  grid-area: 7 / 14 / 9 / 16;
+  grid-area: 7 / 13 / 9 / 15;
 `;
 export const DyeMosaic18 = styled.div`
-  grid-area: 1 / 16 / 6 / 19;
+  grid-area: 1 / 15 / 6 / 19;
 `;
 export const DyeMosaic19 = styled.div`
-  grid-area: 6 / 16 / 7 / 19;
+  grid-area: 6 / 15 / 7 / 19;
 `;
 export const DyeMosaic20 = styled.div`
-  grid-area: 7 / 16 / 9 / 19;
+  grid-area: 6 / 15 / 9 / 19;
 `;
