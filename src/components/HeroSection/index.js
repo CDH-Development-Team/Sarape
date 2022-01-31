@@ -34,9 +34,11 @@ const HeroSection = () => {
                 <HeroBtnWrapper>
                     <Button to="/intro" onMouseEnter={onHover} onMouseLeave={onHover}>
                         ENTER {hover ? <ArrowForward /> : <ArrowRight />}
+                    </Button><br/>
+                    <Button to={{pathname:"https://my.matterport.com/show/?m=fU9JUqSoNBp"}} target=
+                    "_blank" onMouseEnter={onHover} onMouseLeave={onHover}>
+                        360 OVERVIEW {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
-                    <a href = "https://my.matterport.com/show/?m=fU9JUqSoNBp" ><img src={Image360} style={{width: "9vw"}}>
-                    </img></a>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>
