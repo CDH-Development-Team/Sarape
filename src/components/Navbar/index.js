@@ -15,7 +15,7 @@ const Navbar = ({ toggle }) => {
                             alignItems: 'center',
                         }}>
                         <a href="https://statemuseum.arizona.edu">
-                        <img style={{height: '4rem', marginTop:'0.5rem'}} src={logo} alt="logo"/>
+                        <img style={{height: '3rem', marginTop:'0.5rem'}} src={logo} alt="logo"/>
                         </a>
                         </div>
                     <NavMenu >

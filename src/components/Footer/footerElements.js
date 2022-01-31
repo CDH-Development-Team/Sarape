@@ -6,7 +6,7 @@ export const FooterContainer = styled.footer`
 `;
 
 export const FooterWrap = styled.div`
-  padding: 28px 24px;
+  padding: 28px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,7 +38,7 @@ export const FooterLinkItems = styled.div`
   flex-directions: column;
   align-items: flex-start;
   margin-top: 5px;
-  margin-left: 15px;
+  margin-left: 35px;
   text-align: left;
   //width: 120px;
   box-sizing: border-box;
