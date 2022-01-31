@@ -44,7 +44,7 @@ const [vidOpen, setVidOpen] = useState(false);
         <React.Fragment>
 			<ModalVideo channel='youtube' autoplay isOpen={vidOpen} videoId="k651uaQj1gg" onClose={() => setVidOpen(false)} />
 
-			<button className="btn-primary" style={{marginLeft:"1rem", position: "absolute", top: "10%", height:"2rem"}} onClick={()=> setVidOpen(true)}>Listen to the Curator</button>
+			<button className="btn-primary" style={{marginLeft:"1rem", position: "absolute", top: "10%", height:"2rem", fontSize:'1.2rem'}} onClick={()=> setVidOpen(true)}>Listen to the Curator</button>
 		</React.Fragment>
     </h1>
         <br></br>

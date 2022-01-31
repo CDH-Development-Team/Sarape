@@ -961,7 +961,7 @@ const DyeingPage = () => {
               <React.Fragment>
 			<ModalVideo channel='youtube' style={{fontFamily: "Myriad Pro Regular"}} autoplay isOpen={vidOpen} videoId="9mKZ7VtYBOk" onClose={() => setVidOpen(false)} />
 
-			<button className="btn-primary" style={{marginLeft:"1rem", position: "absolute", top: "10%", height:"2rem"}} onClick={()=> setVidOpen(true)}>Listen to the Curator</button>
+			<button className="btn-primary" style={{marginLeft:"1rem", position: "absolute", top: "10%", height:"2rem", fontSize:'1.2rem'}} onClick={()=> setVidOpen(true)}>Listen to the Curator</button>
 		</React.Fragment>
             </h1>
             <br />

@@ -1069,7 +1069,7 @@ const FamilyPage = () => {
             <React.Fragment>
 			<ModalVideo channel='youtube' autoplay isOpen={vidOpen} videoId="Y3vx5OLSWLs" onClose={() => setVidOpen(false)} />
 
-			<button className="btn-primary" style={{marginLeft:"1rem", position: "absolute", top: "10%", height:"2rem"}} onClick={()=> setVidOpen(true)}>Listen to the Curator</button>
+			<button className="btn-primary" style={{marginLeft:"1rem", position: "absolute", top: "10%", height:"2rem", fontSize:'1.2rem'}} onClick={()=> setVidOpen(true)}>Listen to the Curator</button>
 		</React.Fragment>
           </h1>
           

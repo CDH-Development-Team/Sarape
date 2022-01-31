@@ -209,7 +209,7 @@ const Services = () => {
               <React.Fragment>
 			<ModalVideo channel='youtube' autoplay isOpen={vidOpen} videoId="-5AkIHdKZz4" onClose={() => setVidOpen(false)} />
 
-			<button className="btn-primary" style={{height:"2rem"}} onClick={()=> setVidOpen(true)}>Listen to the Curator</button>
+			<button className="btn-primary" style={{height:"2rem", fontSize:"1.2rem"}} onClick={()=> setVidOpen(true)}>Listen to the Curator</button>
 		</React.Fragment>
               <TextWrapper>
                 <TopLine>{sixObj.topLine}</TopLine>
@@ -418,7 +418,7 @@ const Services = () => {
               <React.Fragment>
 			<ModalVideo channel='youtube' autoplay isOpen={vidOpen2} videoId="6ZHsiC7bLMI" onClose={() => setVidOpen2(false)} />
 
-			<button className="btn-primary" style={{height:"2rem"}} onClick={()=> setVidOpen2(true)}>Listen to the Curator</button>
+			<button className="btn-primary" style={{height:"2rem", fontSize:"1.2rem"}} onClick={()=> setVidOpen2(true)}>Listen to the Curator</button>
 		</React.Fragment>
               <TextWrapper>
                 <TopLine>{sixObjOne.topLine}</TopLine>
@@ -771,7 +771,7 @@ const Services = () => {
               <React.Fragment>
 			<ModalVideo channel='youtube' autoplay isOpen={vidOpen3} videoId="LTqW0otP2wM" onClose={() => setVidOpen3(false)} />
 
-			<button className="btn-primary" style={{height:"2rem"}} onClick={()=> setVidOpen3(true)}>Listen to the Curator</button>
+			<button className="btn-primary" style={{height:"2rem", fontSize:"1.2rem"}} onClick={()=> setVidOpen3(true)}>Listen to the Curator</button>
 		</React.Fragment>
               <TextWrapper>
                 <TopLine>{sixObjThree.topLine}</TopLine>

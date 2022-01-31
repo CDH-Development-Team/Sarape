@@ -193,7 +193,7 @@ const Services = () => {
               <React.Fragment>
 			<ModalVideo channel='youtube' autoplay isOpen={vidOpen} videoId="SedH0GmBYIM" onClose={() => setVidOpen(false)} />
 
-			<button className="btn-primary" style={{height:"2rem"}} onClick={()=> setVidOpen(true)}>Listen to the Curator</button>
+			<button className="btn-primary" style={{height:"2rem", fontSize:"1.2rem"}} onClick={()=> setVidOpen(true)}>Listen to the Curator</button>
 		</React.Fragment>
               <TextWrapper>
                 <TopLine>{sevenObj.topLine}</TopLine>
