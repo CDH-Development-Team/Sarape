@@ -83,7 +83,7 @@ const Services = () => {
   }
 
   return (
-    <ServicesContainer id="services">
+    <ServicesContainer id="services" style="margin-bottom: 0px;">
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
@@ -103,6 +103,7 @@ const Services = () => {
         <ServicesCard>
           <ServicesIcon
             src={Icon4}
+            // style={{ width: "100%", height: "100%"}}
             onClick={() => {
               setContent(
                 <div className="content" style={{ alignItems: "right" }}>

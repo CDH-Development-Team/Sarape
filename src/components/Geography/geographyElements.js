@@ -336,7 +336,7 @@ export const FamilyMosaic4 = styled.div`
   grid-area: 1 / 5 / 4 / 8;
 `;
 export const FamilyMosaic5 = styled.div`
-  grid-area: 4 / 4 / 7 / 8;
+  grid-area: 4 / 3 / 7 / 8;
 `;
 export const FamilyMosaic6 = styled.div`
   grid-area: 7 / 4 / 9 / 8;
@@ -360,13 +360,13 @@ export const FamilyMosaic12 = styled.div`
   grid-area: 7 / 11 / 9 / 14;
 `;
 export const FamilyMosaic13 = styled.div`
-  grid-area: 1 / 14 / 4 / 16;
+  grid-area: 1 / 14 / 5 / 17;
 `;
 export const FamilyMosaic14 = styled.div`
-  grid-area: 1 / 16 / 4 / 17;
+  grid-area: 1 / 17 / 4 / 17;
 `;
 export const FamilyMosaic15 = styled.div`
-  grid-area: 4 / 14 / 7 / 17;
+  grid-area: 5 / 14 / 7 / 17;
 `;
 export const FamilyMosaic16 = styled.div`
   grid-area: 7 / 14 / 9 / 17;
