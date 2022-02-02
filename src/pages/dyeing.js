@@ -91,22 +91,6 @@ const DyeingPage = () => {
   const [content, setContent] = React.useState(null);
 
   const { width } = useWindowDimensions();
-  // let subtitle;
-  //     const [modalIsOpen, setIsOpen] = React.useState(false);
-
-  //     function openModal() {
-  //         setIsOpen(true);
-  //       }
-  //       function afterOpenModal() {
-  //         // references are now sync'd and can be accessed.
-
-  //       }
-
-  //       function closeModal() {
-  //         setIsOpen(false);
-  //       }
-
-  // const [content, setContent] = React.useState(null);
   return (
     <React.Fragment>
       <Modal
@@ -130,6 +114,7 @@ const DyeingPage = () => {
         <DyeMosaicParent
           height={((width - (width % 16)) / 16) * 8}
           width={width - (width % 16)}
+          style={{marginTop:"1rem"}}
         >
           <DyeMosaic1 className="mosaic">
             <img
@@ -141,7 +126,6 @@ const DyeingPage = () => {
                 setContent(
                   <div className="content">
                     <div className="row1">
-                      {/* <h2>John Doe</h2> */}
                       <div className="column2">
                         <div
                           style={{
@@ -182,7 +166,7 @@ const DyeingPage = () => {
                         <img
                           src={Icon1}
                           alt="Developer"
-                          style={{ width: "66%", marginLeft: "20%" }}
+                          style={{ width: "60%", marginLeft: "20%" }}
                         />
                       </div>
                     </div>
@@ -192,10 +176,6 @@ const DyeingPage = () => {
               }}
             ></img>
           </DyeMosaic1>
-
-          {/* <HistoryMosaic2 className="mosaic">
-        <img src={Color1} height={"100%"} width={"100%"} ></img>
-        </HistoryMosaic2> */}
           <DyeMosaic2 className="mosaic">
             <img
               src={Icon2}
@@ -206,7 +186,6 @@ const DyeingPage = () => {
                 setContent(
                   <div className="content">
                     <div className="row1">
-                      {/* <h2>John Doe</h2> */}
                       <div className="column2">
                         <div
                           style={{
@@ -221,7 +200,7 @@ const DyeingPage = () => {
                           <p
                             style={{
                               fontFamily: "Lucida",
-                              paddingLeft: "12rem",
+                              paddingLeft: "20rem",
                               marginTop: "2rem",
                             }}
                           >
@@ -244,7 +223,7 @@ const DyeingPage = () => {
                         <img
                           src={Icon2}
                           alt="Developer"
-                          style={{ width: "80%", marginTop: "5rem" }}
+                          style={{ width: "80%", marginTop: "5rem", marginLeft:"2rem"}}
                         />
                       </div>
                     </div>
@@ -254,12 +233,6 @@ const DyeingPage = () => {
               }}
             ></img>
           </DyeMosaic2>
-          {/* <HistoryMosaic4 className="mosaic">
-        <img src={Color1} height={"100%"} width={"100%"} ></img>
-        </HistoryMosaic4 >
-        <HistoryMosaic5 className="mosaic">
-        <img src={Color1} height={"100%"} width={"100%"} ></img>
-        </HistoryMosaic5 > */}
           <DyeMosaic3 className="mosaic">
             <img src={Color1} alt="" height={"100%"} width={"100%"}></img>
           </DyeMosaic3>
@@ -274,12 +247,11 @@ const DyeingPage = () => {
                 setContent(
                   <div className="content">
                     <div className="row1">
-                      {/* <h2>John Doe</h2> */}
                       <div className="column6">
                         <div
                           style={{
                             marginLeft: "5rem",
-                            marginTop: "35rem",
+                            marginTop: "2rem",
                             fontSize: "1rem",
                             fontFamily: "",
                           }}
@@ -287,13 +259,13 @@ const DyeingPage = () => {
                           Drying yarn.<br></br> Soraya Matos, photographer, 2018
                         </div>
                       </div>
-                      <div className="column7" style={{}}>
+                      <div className="column7">
                         <img
                           src={Icon6}
                           alt="Developer"
                           style={{
-                            width: "100%",
-                            marginTop: "5rem",
+                            width: "90%",
+                            marginTop: "2rem",
                             marginRight: "10rem",
                           }}
                         />
@@ -314,12 +286,11 @@ const DyeingPage = () => {
             <img
               src={Icon3}
               alt=""
-              style={{ width: "100%", marginTop: "3.7rem" }}
+              style={{ width: "100%", marginTop: "4.2rem" }}
               onClick={() => {
                 setContent(
                   <div className="content">
                     <div className="row1">
-                      {/* <h2>John Doe</h2> */}
                       <div className="column5">
                         <div
                           style={{
@@ -387,8 +358,9 @@ const DyeingPage = () => {
                       <div className="column5">
                         <p
                           style={{
-                            fontSize: "1.5rem",
+                            fontSize: "1.25rem",
                             fontFamily: "",
+                            marginTop: "2rem"
                           }}
                         >
                           I inherited the deep artistic traditions and our rich
@@ -435,7 +407,7 @@ const DyeingPage = () => {
                         <img
                           src={Icon9}
                           alt="Developer"
-                          style={{ width: "100%", marginTop: "10rem" }}
+                          style={{ width: "90%", marginTop:"2rem"}}
                         />
                       </div>
                     </div>
@@ -458,12 +430,10 @@ const DyeingPage = () => {
                 setContent(
                   <div className="content">
                     <div className="row1">
-                      {/* <h2>John Doe</h2> */}
                       <div className="column2">
                         <div
                           style={{
                             marginLeft: "2rem",
-                            marginRight: "2rem",
                             marginTop: "7rem",
                             fontSize: "1.5rem",
                             fontFamily: "",
@@ -535,11 +505,10 @@ const DyeingPage = () => {
                 setContent(
                   <div className="content">
                     <div className="row1">
-                      {/* <h2>John Doe</h2> */}
                       <div className="column5">
                         <div
                           style={{
-                            fontSize: "1.5rem",
+                            fontSize: "1.25rem",
                             marginLeft: "2rem",
                             marginRight: "2rem",
                             marginTop: "2rem",
@@ -573,7 +542,7 @@ const DyeingPage = () => {
                         <div
                           style={{
                             marginLeft: "15rem",
-                            marginTop: "3rem",
+                            marginTop: "2rem",
                             fontSize: "1rem",
                             fontFamily: "",
                           }}
@@ -595,7 +564,7 @@ const DyeingPage = () => {
                         <img
                           src={Icon4}
                           alt="Developer"
-                          style={{ width: "85%" }}
+                          style={{width: "65%", marginLeft:"8rem"}}
                         />
                       </div>
                     </div>
@@ -618,14 +587,13 @@ const DyeingPage = () => {
                 setContent(
                   <div className="content">
                     <div className="row1">
-                      {/* <h2>John Doe</h2> */}
                       <div className="column2">
                         <div
                           style={{
                             marginLeft: "2rem",
                             marginRight: "2rem",
                             marginTop: "2rem",
-                            fontSize: "1.5rem",
+                            fontSize: "1.25rem",
                             fontFamily: "",
                           }}
                         >
@@ -673,7 +641,7 @@ const DyeingPage = () => {
                         <img
                           src={Icon10}
                           alt="Developer"
-                          style={{ width: "70%", marginLeft: "2rem" }}
+                          style={{ width: "60%", marginLeft: "10rem" }}
                         />
                       </div>
                     </div>
@@ -705,13 +673,12 @@ const DyeingPage = () => {
                 setContent(
                   <div className="content">
                     <div className="row1">
-                      {/* <h2>John Doe</h2> */}
                       <div className="column6">
                         <div></div>
                         <div
                           style={{
-                            marginLeft: "7rem",
-                            marginTop: "25rem",
+                            marginLeft: "15rem",
+                            marginTop: "2rem",
                             fontSize: "1rem",
                             fontFamily: "",
                           }}
@@ -726,7 +693,7 @@ const DyeingPage = () => {
                         <img
                           src={Icon8}
                           alt="Developer"
-                          style={{ width: "50%", marginLeft: "10rem" }}
+                          style={{ width: "35%", marginLeft: "15rem", marginTop:"1rem" }}
                         />
                       </div>
                     </div>
@@ -750,38 +717,12 @@ const DyeingPage = () => {
                   <div className="content">
                     <div className="row1">
                       <div className="column2">
-                        <div
-                          style={{
-                          marginLeft: "2rem",
-                          marginRight: "2rem",
-                          marginTop: "2rem",
-                          fontSize: "1.5rem",
-                          fontFamily: "Lucida",
-                          }}
-                          >
-                            “There is no true soul in a commercially produced
-                            piece. It becomes a product. The weavers who adopted
-                            these new ways of producing textiles lost touch with
-                            our tradition. They are not honoring our ancestors
-                            through their techniques and methods. It’s about the
-                            way the whole piece is being created.” <br></br>
-                            <br></br>{" "}
-                            <p
-                              style={{
-                                paddingLeft: "18rem",
-                                fontSize: "1.5rem",
-                                fontFamily: "Lucida",
-                              }}
-                            >
-                              Porfirio Gutiérrez
-                            </p>
-                          </div>
                           <div
                             style={{
                               marginLeft: "2rem",
                               marginRight: "2rem",
                               marginTop: "2rem",
-                              fontSize: "1.5rem",
+                              fontSize: "1.25rem",
                               fontFamily: "",
                             }}
                           >
@@ -812,15 +753,30 @@ const DyeingPage = () => {
                             concerns and narrate our deep, rich Zapotec culture.
                           </div>
                           <div
-                            style={{
-                              marginLeft: "20rem",
-                              marginTop: "3rem",
-                              fontSize: "1rem",
-                              fontFamily: "",
-                            }}
+                          style={{
+                          marginLeft: "2rem",
+                          marginRight: "2rem",
+                          marginTop: "2rem",
+                          fontSize: "1.5rem",
+                          fontFamily: "Lucida",
+                          }}
                           >
-                            Dyeing with cochineal <br></br>Soraya Matos,
-                            photographer,
+                            “There is no true soul in a commercially produced
+                            piece. It becomes a product. The weavers who adopted
+                            these new ways of producing textiles lost touch with
+                            our tradition. They are not honoring our ancestors
+                            through their techniques and methods. It’s about the
+                            way the whole piece is being created.” <br></br>
+                            <br></br>{" "}
+                            <p
+                              style={{
+                                paddingLeft: "18rem",
+                                fontSize: "1.5rem",
+                                fontFamily: "Lucida",
+                              }}
+                            >
+                              Porfirio Gutiérrez
+                            </p>
                           </div>
                         </div>
                         <div className="column2">
@@ -828,11 +784,22 @@ const DyeingPage = () => {
                             src={Icon5}
                             alt="Developer"
                             style={{
-                              width: "75%",
-                              marginTop: "5rem",
+                              width: "65%",
+                              marginTop: "2rem",
                               marginLeft: "10%",
                             }}
                           />
+                          <div
+                            style={{
+                              marginLeft: "4.5rem",
+                              marginTop:"0.5rem",
+                              fontSize: "1rem",
+                              fontFamily: "",
+                            }}
+                          >
+                            Dyeing with cochineal <br></br>Soraya Matos,
+                            photographer,
+                        </div>
                         </div>
                       </div>
                     </div>
@@ -855,12 +822,11 @@ const DyeingPage = () => {
                 setContent(
                   <div className="content">
                     <div className="row1">
-                      {/* <h2>John Doe</h2> */}
                       <div className="column6">
                         <div
                           style={{
                             marginLeft: "5rem",
-                            marginTop: "15rem",
+                            marginTop: "1rem",
                             fontSize: "1rem",
                             fontFamily: "",
                           }}
@@ -888,13 +854,6 @@ const DyeingPage = () => {
               }}
             ></img>
           </DyeMosaic20>
-
-          {/* <HistoryMosaic13 className="mosaic">
-        <img src={Icon6} height={"100%"} width={"100%"} onClick={() => setShow5(true)}></img>
-        </HistoryMosaic13> */}
-          {/* <HistoryMosaic14 className="mosaic">
-        <img src={Color1} height={"100%"} width={"100%"}></img>
-        </HistoryMosaic14> */}
         </DyeMosaicParent>
 
         <div
