@@ -48,7 +48,7 @@ const SevenSection = ({
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
-              <Heading lightText={lightText}>{headline}</Heading>
+              <Heading lightText={lightText} style={{overflow: 'hidden'}}>{headline}</Heading>
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
 

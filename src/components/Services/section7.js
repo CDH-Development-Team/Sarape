@@ -105,7 +105,7 @@ const Services = () => {
 
         {content}
       </Modal>
-      <ServicesWrapper7>
+      <ServicesWrapper7 style={{marginTop:"2rem"}}>
         <Card>
           <ServicesIcon src={Icon1} />
         </Card>
@@ -139,11 +139,11 @@ const Services = () => {
       <br></br>
 
       {/* sixObj section */}
-      <InfoContainer lightBg={sevenObj.lightBg} id={sevenObj.id}>
+      <InfoContainer lightBg={sevenObj.lightBg} id={sevenObj.id} style={{marginBottom: '-6rem'}}>
         <InfoWrapper>
           <InfoRow imgStart={sevenObj.imgStart}>
             <Column1>
-              <Heading lightText={sevenObj.lightText}>
+              <Heading lightText={sevenObj.lightText} style={{overflow: 'hidden'}}>
                 {sevenObj.headline}
               </Heading>
               <React.Fragment>
@@ -164,20 +164,6 @@ const Services = () => {
             <Column2>
               {/* Second column of images */}
               <div class="row">
-                <div class="column1">
-                  <Img
-                    border="none"
-                    smallImg={sevenObj.smallImg}
-                    src={sevenObj.img}
-                    alt=""
-                  />
-                  <Subtitle
-                    darkText={sevenObj.darkText}
-                    style={{ fontFamily: "" }}
-                  >
-                    {sevenObj.imgdesc2}
-                  </Subtitle>
-                </div>
                 <Img
                   border="none"
                   smallImg={sevenObj.smallImg}
@@ -194,12 +180,12 @@ const Services = () => {
       <InfoContainer
         lightBg={sevenObjOne.lightBg}
         id={sevenObjOne.id}
-        style={{ maxWidth: width > 768 ? "auto" : "600px" }}
+        style={{ maxWidth: width > 768 ? "auto" : "600px", overflow: "hidden" }}
       >
-        <InfoWrapper>
+        <InfoWrapper style={{overflow: "visible"}}>
           <InfoRow imgStart={sevenObjOne.imgStart}>
             <Column1>
-              <Heading lightText={sevenObjOne.lightText}>
+              <Heading lightText={sevenObjOne.lightText} style={{overflow: 'hidden'}}>
                 {sevenObjOne.headline}
               </Heading>
               <TextWrapper>
@@ -278,10 +264,10 @@ const Services = () => {
               </div>
             </Column2>
           </InfoRow>
-          <ImgWrap style={{ marginTop: "-20rem" }}>
+          <ImgWrap style={{ marginTop: "-38rem" }}>
             <Img
               border="none"
-              style={{ width: "25%", marginLeft: "5rem" }}
+              style={{ width: "25%", marginLeft:"5rem" }}
               src={Icon1}
               onClick={() => {
                 setContent(
@@ -305,7 +291,7 @@ const Services = () => {
                         style={{
                           fontSize: "1rem",
 
-                          marginTop: "25rem",
+                          marginTop: "23rem",
                           marginLeft: "10rem",
                           color: "white",
                         }}
@@ -322,7 +308,7 @@ const Services = () => {
                         alignItems: "right",
                       }}
                     >
-                      <div style={{ width: "90%", alignItems: "right" }}>
+                      <div style={{ width: "60%", alignItems: "right", marginLeft:"10rem" }}>
                         <img
                           src={Icon1}
                           style={{ width: "90%" }}
@@ -348,7 +334,7 @@ const Services = () => {
         <InfoWrapper>
           <InfoRow imgStart={sevenObjTwo.imgStart}>
             <Column1>
-              <Heading lightText={sevenObjTwo.lightText}>
+              <Heading lightText={sevenObjTwo.lightText} style={{overflow: 'hidden'}}>
                 {sevenObjTwo.headline}
               </Heading>
               <TextWrapper>
@@ -464,7 +450,7 @@ const Services = () => {
                             <div style={{ width: "85%", alignItems: "right" }}>
                               <img
                                 src={Icon2}
-                                style={{ width: "85%" }}
+                                style={{ width: "55%", marginLeft:"10rem" }}
                                 alt="Developer"
                               />
                             </div>
@@ -486,7 +472,7 @@ const Services = () => {
         <InfoWrapper>
           <InfoRow imgStart={sevenObjThree.imgStart}>
             <Column1>
-              <Heading lightText={sevenObjThree.lightText}>
+              <Heading lightText={sevenObjThree.lightText} style={{overflow: 'hidden'}}>
                 {sevenObjThree.headline}
               </Heading>
               <TextWrapper>
@@ -579,7 +565,7 @@ const Services = () => {
                 </Subtitle>
                 <Img
                   border="none"
-                  style={{ width: "55%", marginLeft: "5rem" }}
+                  style={{ width: "35%", marginLeft: "25rem" }}
                   src={Icon3}
                   onClick={() => {
                     setContent(
@@ -644,7 +630,7 @@ const Services = () => {
         <InfoWrapper>
           <InfoRow imgStart={sevenObjFour.imgStart}>
             <Column1>
-              <Heading lightText={sevenObjFour.lightText}>
+              <Heading lightText={sevenObjFour.lightText} style={{overflow: 'hidden'}}>
                 {sevenObjFour.headline}
               </Heading>
               <TextWrapper>
@@ -718,7 +704,7 @@ const Services = () => {
                           <div style={{ width: "85%", alignItems: "right" }}>
                             <img
                               src={Icon4}
-                              style={{ width: "85%" }}
+                              style={{ width: "55%", marginLeft:"10rem" }}
                               alt="Developer"
                             />
                           </div>
@@ -731,11 +717,11 @@ const Services = () => {
                 />
               </TextWrapper>
             </Column1>
-            <Column2 style={{ marginLeft: "5rem" }}>
+            <Column2 style={{ marginLeft: "15rem" }}>
               <ImgWrap>
                 <Img
                   border="none"
-                  style={{ width: "50%", marginTop: "2rem" }}
+                  style={{ width: "80%", marginTop: "2rem" }}
                   src={sevenObjFour.img2}
                   alt=""
                 />
@@ -760,7 +746,7 @@ const Services = () => {
                 </Subtitle>
                 <Img
                   border="none"
-                  style={{ width: "50%" }}
+                  style={{ width: "80%" }}
                   src={sevenObjFour.img3}
                   alt=""
                 />
@@ -785,7 +771,7 @@ const Services = () => {
         <InfoWrapper>
           <div class="row">
             <div style={{ width: "55%", float: "left" }}>
-              <Heading lightText={sevenObjFive.lightText}>
+              <Heading lightText={sevenObjFive.lightText} style={{overflow: 'hidden'}}>
                 {sevenObjFive.headline}
               </Heading>
               <TopLine>{sevenObjFive.topLine}</TopLine>
@@ -847,7 +833,7 @@ const Services = () => {
         <InfoWrapper>
           <div class="row">
             <div style={{ width: "45%", float: "left" }}>
-              <Heading lightText={sevenObjSix.lightText}>
+              <Heading lightText={sevenObjSix.lightText} style={{overflow: 'hidden'}}>
                 {sevenObjSix.headline}
               </Heading>
               <TextWrapper>
@@ -877,7 +863,7 @@ const Services = () => {
               <ImgWrap>
                 <Img
                   border="none"
-                  style={{ width: "90%", marginTop: "10rem" }}
+                  style={{ width: "90%", marginTop: "6rem" }}
                   src={sevenObjSix.img}
                   alt=""
                 />
@@ -969,7 +955,7 @@ const Services = () => {
                               alignItems: "right",
                             }}
                           >
-                            <div style={{ width: "90%", alignItems: "right" }}>
+                            <div style={{ width: "65%", marginLeft:"10rem", alignItems: "right" }}>
                               <img
                                 src={Icon5}
                                 style={{ width: "90%" }}
@@ -1035,7 +1021,7 @@ const Services = () => {
                               alignItems: "right",
                             }}
                           >
-                            <div style={{ width: "80%", alignItems: "right" }}>
+                            <div style={{ width: "65%", marginLeft:"10rem", alignItems: "right" }}>
                               <img
                                 src={Icon6}
                                 style={{ width: "80%" }}
@@ -1108,7 +1094,7 @@ const Services = () => {
                             >
                               <img
                                 src={Icon7}
-                                style={{ width: "100%" }}
+                                style={{ width: "75%", marginLeft:"10rem" }}
                                 alt="Developer"
                               />
                             </div>
@@ -1159,7 +1145,7 @@ const Services = () => {
                               alignItems: "right",
                             }}
                           >
-                            <div style={{ width: "80%", alignItems: "right" }}>
+                            <div style={{ width: "65%", marginLeft:"10rem", alignItems: "right" }}>
                               <img
                                 src={Icon8}
                                 style={{ width: "80%" }}
@@ -1182,7 +1168,7 @@ const Services = () => {
         <InfoWrapper>
           <div class="row">
             <div style={{ width: "55%", float: "left" }}>
-              <Heading lightText={sevenObjSeven.lightText}>
+              <Heading lightText={sevenObjSeven.lightText} style={{overflow: 'hidden'}}>
                 {sevenObjSeven.headline}
               </Heading>
               <TopLine>{sevenObjSeven.topLine}</TopLine>
@@ -1245,9 +1231,6 @@ const Services = () => {
           </div>
         </InfoWrapper>
       </InfoContainer>
-      {/* <HistoricalSection {...sixObj} /> */}
-      {/* <HistoricalSection {...sixObjOne} /> */}
-      {/* <HistoricalSection {...sixObjTwo} /> */}
     </ServicesContainer>
   );
 };
