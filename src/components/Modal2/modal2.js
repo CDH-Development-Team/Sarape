@@ -1,9 +1,8 @@
 import React, { useEffect, useRef } from "react";
-import CloseIcon from "../../CloseIcon";
 import Button from "../button/Button";
 // import CloseIcon from "../CloseIcon";
 import styles from "./modal.module.css";
-import {Icon, ClosedIcon} from './modalElements';
+import { ClosedIcon } from './modalElements';
 
 const Modal2 = ({ modalStyle, children, show, onClose, backdropStyle, show1, show2, show3, show4, show5, show6, show7, show8, show9 }) => {
   const modalRef = useRef(null);

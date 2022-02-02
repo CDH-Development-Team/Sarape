@@ -1,7 +1,4 @@
-import React, { useState } from "react";
-import Icon1 from "../../images/svg-4.svg";
-import Icon2 from "../../images/svg-5.svg";
-import Icon3 from "../../images/svg-6.svg";
+import React from "react";
 import Icon4 from "../../textiles_png/3_textiles/AT-2020-16-2.png";
 import Icon5 from "../../textiles_png/3_textiles/AT-2020-16-3.png";
 import Icon6 from "../../textiles_png/3_textiles/AT-2020-16-4.png";
@@ -9,37 +6,15 @@ import Icon7 from "../../textiles_png/3_textiles/AT-2020-16-5.png";
 import Icon8 from "../../textiles_png/3_textiles/AT-2020-16-6.png";
 import Icon9 from "../../textiles_png/3_textiles/AT-2020-16-7.png";
 import close from "../../images/close.png";
-import {
-  homeObjOne,
-  homeObjTwo,
-  homeObjThree,
-  SarapeObj1,
-  SarapeObj2,
-  SarapeObj3,
-  SarapeObj4,
-  SarapeObj5,
-  SarapeObj6,
-  SarapeObj7,
-} from "../InfoSection/Data";
-// import AnimeList from '../components/anime';
 import "./styles.css";
-// import Modal2 from '../components/Modal2/modal2';
 import {
   ServicesContainer,
   ServicesH1,
   ServicesWrapper,
   ServicesCard,
   ServicesIcon,
-  ServicesH2,
-  ServicesP,
-  Quote,
-  QuoteDiv,
-  QuoteAuthor,
 } from "./ServicesElements";
 import { Column1, Column2, InfoRow } from "../InfoSection/infoElements.js";
-/*import Modal from '../Modal/index.js';
-import Modal2 from '../Modal2/modal2';
-*/
 
 import Modal from "react-modal";
 //styling of the modal itself
@@ -56,19 +31,6 @@ const customStyles = {
 };
 
 const Services = () => {
-  /*const [showModal, setShowModal] = useState(false);
-    const [show1, setShow1] = useState(false);
-    const [show2, setShow2] = useState(false);
-    const [show3, setShow3] = useState(false);
-    const [show4, setShow4] = useState(false);
-    const [show5, setShow5] = useState(false);
-    const [show6, setShow6] = useState(false);
-    const [show7, setShow7] = useState(false);
-
-    const openModal = () => {
-        setShowModal(prev => !prev);
-    };
-    */
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [content, setContent] = React.useState(null);
 
@@ -83,7 +45,7 @@ const Services = () => {
   }
 
   return (
-    <ServicesContainer id="services" style="margin-bottom: 0px;">
+    <ServicesContainer id="services" style={{marginBottom:"0px;"}}>
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
@@ -103,7 +65,6 @@ const Services = () => {
         <ServicesCard>
           <ServicesIcon
             src={Icon4}
-            // style={{ width: "100%", height: "100%"}}
             onClick={() => {
               setContent(
                 <div className="content" style={{ alignItems: "right" }}>
@@ -140,9 +101,6 @@ const Services = () => {
               openModal();
             }}
           />
-          {/* <ServicesH2>Reduce Expenses</ServicesH2>
-                    <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP> */}
-          {/*<Modal showModal={showModal} setShowModal={setShowModal} ImgSrc = {Icon4} />*/}
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon
@@ -184,8 +142,6 @@ const Services = () => {
             }}
             src={Icon5}
           />
-          {/* <ServicesH2>Virtual offices</ServicesH2> */}
-          {/* <ServicesP>You can access our platform from anywhere.</ServicesP> */}
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon
@@ -272,8 +228,6 @@ const Services = () => {
             }}
             src={Icon7}
           />
-          {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon
@@ -314,8 +268,6 @@ const Services = () => {
             }}
             src={Icon8}
           />
-          {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon
@@ -356,8 +308,6 @@ const Services = () => {
             }}
             src={Icon9}
           />
-          {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
         </ServicesCard>
       </ServicesWrapper>
       <ServicesH1

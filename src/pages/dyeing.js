@@ -1,15 +1,11 @@
 import React, { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-import History from "../components/History";
-import FamilyMosaic from "../components/FamilyMosaic";
-import Modal2 from "../components/Modal2/modal2";
 import ModalVideo from 'react-modal-video'
 import Modal from "react-modal";
 
 // import React, { useState } from "react";
 import "./styles.css";
-import Button from "../components/button/Button";
 import vocab from "../../src/images/vocab.png"
 import Icon1 from "../images/dyeing1.png";
 import Icon2 from "../images/dyeing2.png";
@@ -22,16 +18,6 @@ import Icon8 from "../images/dyeing8.png";
 import Icon9 from "../images/dyeing9.png";
 import Icon10 from "../images/dyeing10.png";
 import Icon11 from "../images/dyeing11.png";
-
-import Icon12 from "../images/color.png";
-import Icon13 from "../images/color2.png";
-import Icon14 from "../images/color3.png";
-import Icon15 from "../images/color4.png";
-import Icon16 from "../images/color5.png";
-import Icon17 from "../images/color6.png";
-import Icon18 from "../images/color7.png";
-import Icon19 from "../images/color8.png";
-import Icon20 from "../images/color9.png";
 import Icon21 from "../images/color10.png";
 
 import Color1 from "../images/section 2/color1.png";
@@ -44,33 +30,6 @@ import close from "../images/close.png";
 
 import {
   GeographyContainer,
-  MosaicWrapper,
-  MosaicImg,
-  HeaderText,
-  GeographyEntry,
-  GeographyEntryText,
-  GeographyEntryImg,
-  GeographyEntryDescription,
-  GeographyStatues,
-  Statue,
-  StatueImg,
-  BackgroundDiv,
-  BackgroundContentLeft,
-  BackgroundContentRight,
-  BackgroundImg,
-  HistoryMosaicParent,
-  HistoryMosaicParent2,
-  HistoryMosaic22,
-  HistoryMosaic23,
-  HistoryMosaic24,
-  HistoryMosaic25,
-  HistoryMosaic26,
-  HistoryMosaic27,
-  HistoryMosaic28,
-  HistoryMosaic29,
-  HistoryMosaic30,
-  HistoryMosaic31,
-  HistoryMosaic32,
 } from "../components/Geography/geographyElements.js";
 // import Color1 from '../images/section 2/color1.png'
 import "../components/Geography/geography.css";
@@ -131,7 +90,7 @@ const DyeingPage = () => {
   }
   const [content, setContent] = React.useState(null);
 
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
   // let subtitle;
   //     const [modalIsOpen, setIsOpen] = React.useState(false);
 
@@ -787,19 +746,18 @@ const DyeingPage = () => {
               height={"100%"}
               width={"100%"}
               onClick={() => {
-                {
-                  setContent(
-                    <div className="content">
-                      <div className="row1">
-                        <div className="column2">
-                          <div
-                            style={{
-                              marginLeft: "2rem",
-                              marginRight: "2rem",
-                              marginTop: "2rem",
-                              fontSize: "1.5rem",
-                              fontFamily: "Lucida",
-                            }}
+                {setContent(
+                  <div className="content">
+                    <div className="row1">
+                      <div className="column2">
+                        <div
+                          style={{
+                          marginLeft: "2rem",
+                          marginRight: "2rem",
+                          marginTop: "2rem",
+                          fontSize: "1.5rem",
+                          fontFamily: "Lucida",
+                          }}
                           >
                             “There is no true soul in a commercially produced
                             piece. It becomes a product. The weavers who adopted
@@ -868,7 +826,6 @@ const DyeingPage = () => {
                         <div className="column2">
                           <img
                             src={Icon5}
-                            alt=""
                             alt="Developer"
                             style={{
                               width: "75%",
@@ -1077,7 +1034,7 @@ const DyeingPage = () => {
           <br/>
           <br/>
           
-          <img src={vocab} style={{width:'100%'}}></img>
+          <img src={vocab} alt="" style={{width:'100%'}}></img>
         </div>
 
       </GeographyContainer>

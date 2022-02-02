@@ -17,8 +17,6 @@ import {
   ServicesWrapper,
   ServicesCard,
   ServicesIcon,
-  ServicesH2,
-  ServicesP,
 } from "./ServicesElements";
 import Modal from "../Modal/index.js";
 

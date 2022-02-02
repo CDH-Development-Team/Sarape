@@ -3,17 +3,11 @@ import Modal from "react-modal";
 import styled from "styled-components";
 import ModalVideo from 'react-modal-video'
 import React, { useState } from "react";
-//import Modal2 from '../Modal2/modal2';
-//import Modal from '../Modal/index.js';
-
-// import React, { useState } from "react";
 import "./styles.css";
-import HistoricalSection from "../HistoricalTextiles/historicalTextiles";
 
 import {
   sixObj,
   sixObjOne,
-  sixObjTwo,
   sixObjThree,
 } from "../HistoricalTextiles/historicalData";
 
@@ -30,18 +24,13 @@ import Icon10 from "../../textiles_png/6_textiles/6C3_1980-2-53.png";
 import img2 from "../../textiles_png/6_textiles/six_other/6_saddle.png";
 import img3 from "../../textiles_png/6_textiles/six_other/6B1_keift_saddle.png";
 import close from "../../images/close.png";
-
-// import AnimeList from '../components/anime';
 import "./styles.css";
-// import Modal2 from '../components/Modal2/modal2';
 
 import {
   ServicesContainer,
   ServicesH1,
   ServicesWrapper6,
   ServicesIcon,
-  ServicesH2,
-  ServicesP,
 } from "./ServicesElements";
 import {
   Column1,
@@ -72,22 +61,7 @@ const customStyles = {
 };
 
 const Services = () => {
-  /*const [show1, setShow1] = useState(false);
-    const [show2, setShow2] = useState(false);
-    const [show3, setShow3] = useState(false);
-    const [show4, setShow4] = useState(false);
-    const [show5, setShow5] = useState(false);
-    const [show6, setShow6] = useState(false);
-    const [show7, setShow7] = useState(false);
-    const [show8, setShow8] = useState(false);
-    const [show9, setShow9] = useState(false);
-    const [show10, setShow10] = useState(false);
-    
-    const openModal = () => {
-        setShowModal(prev => !prev);
-    };*/
 
-  const [showModal, setShowModal] = useState(false);
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [content, setContent] = React.useState(null);
   function openModal() {
@@ -100,7 +74,7 @@ const Services = () => {
     // references are now sync'd and can be accessed.
   }
 
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   let Card = styled.div`
     // background: #fff;

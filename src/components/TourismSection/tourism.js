@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "../ButtonElement";
 
 import {
   InfoContainer,
@@ -11,16 +10,11 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  BtnWrap,
   ImgWrap,
   ImgWrap2,
   Img,
   Img2,
-  Img3,
-  smallImg,
-  Artifact,
   Caption,
-  TextHead,
 } from "./TourismElements";
 
 const TourismSection = ({
@@ -34,16 +28,12 @@ const TourismSection = ({
   description,
   description2,
   description3,
-  buttonLabel,
   img,
   alt,
   smallImg,
   artifact,
   artifactAlt,
   artifactInfo,
-  primary,
-  dark,
-  dark2,
 }) => {
   return (
     <>

@@ -4,10 +4,7 @@ import Navbar from "../components/Navbar";
 import InfoSection2 from "../components/InfoSection2";
 import {
   homeObjOne,
-  homeObjTwo,
-  homeObjThree,
 } from "../components/InfoSection2/Data";
-import Services from "../components/Services";
 import Footer from "../components/Footer";
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);

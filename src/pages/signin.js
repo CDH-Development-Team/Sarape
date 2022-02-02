@@ -9,14 +9,9 @@ import {
   InfoRow,
 } from "../components/InfoSection/infoElements.js";
 import {
-  homeObjOne,
-  homeObjTwo,
-  homeObjThree,
   homeObjFour,
-  homeObjFive,
 } from "../components/InfoSection/Data";
 import Services from "../components/Services";
-import Footer from "../components/Footer";
 import HeroSection1 from "../components/HeroSection1";
 
 const SigninPage = () => {
@@ -109,7 +104,6 @@ const [vidOpen, setVidOpen] = useState(false);
       </div>
       <Services />
       <InfoSection {...homeObjFour} />
-      {/* <InfoSection {...homeObjFive}/>             */}
     </>
   );
 };

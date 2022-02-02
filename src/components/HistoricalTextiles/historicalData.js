@@ -1,4 +1,3 @@
-import img1 from "../../textiles_png/7_textiles/seven_other/7C4_Kathy Marianito in traditional garb.png";
 import img2 from "../../textiles_png/6_textiles/six_other/6_saddle.png";
 import img3 from "../../textiles_png/6_textiles/six_other/6B1_keift_saddle.png";
 import img4 from "../../textiles_png/6_textiles/six_other/6_map.png";

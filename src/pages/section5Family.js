@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-import History from "../components/History";
-import FamilyMosaic from "../components/FamilyMosaic";
 import Modal from "react-modal";
 import ModalVideo from 'react-modal-video'
 // import React, { useState } from "react";
 import "./styles.css";
-import Button from "../components/button/Button";
 
 import Icon1 from "../images/5B4_Bobbins by Craig Holmes.jpg";
 import Icon2 from "../images/PGOAX82718-0242.jpg";
@@ -32,49 +29,6 @@ import Color10 from "../images/color10.png";
 
 import {
   GeographyContainer,
-  MosaicWrapper,
-  MosaicImg,
-  HeaderText,
-  GeographyEntry,
-  GeographyEntryText,
-  GeographyEntryImg,
-  GeographyEntryDescription,
-  GeographyStatues,
-  Statue,
-  StatueImg,
-  BackgroundDiv,
-  BackgroundContentLeft,
-  BackgroundContentRight,
-  BackgroundImg,
-  HistoryMosaicParent,
-  HistoryMosaicParent2,
-  HistoryMosaic1,
-  HistoryMosaic2,
-  HistoryMosaic3,
-  HistoryMosaic4,
-  HistoryMosaic5,
-  HistoryMosaic6,
-  HistoryMosaic7,
-  HistoryMosaic8,
-  HistoryMosaic9,
-  HistoryMosaic10,
-  HistoryMosaic11,
-  HistoryMosaic12,
-  HistoryMosaic13,
-  HistoryMosaic14,
-  HistoryMosaic15,
-  HistoryMosaic16,
-  HistoryMosaic17,
-  HistoryMosaic18,
-  HistoryMosaic19,
-  HistoryMosaic20,
-  HistoryMosaic21,
-  FC,
-  FC1,
-  FC2,
-  FC3,
-  FC4,
-  FC5,
 } from "../components/Geography/geographyElements.js";
 import {
   FamilyMosaicParent,
@@ -114,7 +68,7 @@ const customStyles = {
   },
 };
 const FamilyPage = () => {
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
   const [modalIsOpen, setIsOpenM] = React.useState(false);
   const [isOpen, setIsOpen] = useState(false);
 

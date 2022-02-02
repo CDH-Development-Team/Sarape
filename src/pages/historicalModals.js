@@ -2,12 +2,9 @@
 import React, { useState } from 'react';
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-import History from '../components/History';
-import FamilyMosaic from '../components/FamilyMosaic';
 import Modal2 from '../components/Modal2/modal2';
 // import React, { useState } from "react";
 import "./styles.css";
-import Button from '../components/button/Button';
 import HistoricalSection from '../components/HistoricalTextiles/historicalTextiles';
 
 import { sixObj, sixObjOne, sixObjTwo, sixObjThree} from '../components/HistoricalTextiles/historicalData';

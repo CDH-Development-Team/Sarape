@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from "../ButtonElement";
 
 import img1 from "../../images/tourismInMexico.jpg";
 import img2 from "../../images/candids.jpg";
@@ -7,9 +6,9 @@ import img3 from "../../textiles_png/8_textiles/8425.jpg";
 import img4 from "../../textiles_png/8_textiles/educational_textile.jpg";
 import img5 from "../../images/8_ceramics.png";
 
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, ImgWrap2, Img, Img2, Img3, Artifact, Caption, TextHead } from './TourismElements';
+import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, ImgWrap, ImgWrap2, Img, Img2, Caption, TextHead } from './TourismElements';
 
-const TourismSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText,description,description2,description3, buttonLabel, img,alt, artifact, artifactAlt, artifactInfo, primary, dark, dark2}) => {
+const TourismSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText,description3,img,alt, artifact, artifactAlt, artifactInfo, primary, dark, dark2}) => {
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>

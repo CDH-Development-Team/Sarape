@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-import TourismSection from '../components/TourismSection/tourism.js';
 import TourismHeader from '../components/TourismHeader/tourism.js';
-import { tourismObjOne, tourismObjTwo, tourismObjThree, tourismObjFour } from '../components/TourismSection/Data';
-import InfoSection from '../components/InfoSection';
+import { tourismObjOne } from '../components/TourismSection/Data';
 
 const Tourism = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +16,6 @@ const Tourism = () => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle} />
             <TourismHeader {...tourismObjOne}/>
-            {/* <TourismSection {...tourismObjOne}/> */}
         </>
     )
 }

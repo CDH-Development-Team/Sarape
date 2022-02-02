@@ -1,13 +1,6 @@
 import Modal from "react-modal";
-//styling of the modal itself
-
 import React, { useState } from "react";
-//import Modal2 from '../Modal2/modal2';
-//import Modal from '../Modal/index.js';
-
-// import React, { useState } from "react";
 import "./styles.css";
-
 import Section7 from "../Section7/section7index";
 
 import {
@@ -30,9 +23,7 @@ import Icon6 from "../../textiles_png/7_textiles/7C2_E-8988.png";
 import Icon7 from "../../textiles_png/7_textiles/7C3_E-83.png";
 import Icon8 from "../../textiles_png/7_textiles/7C4_at_2020-337-1.png";
 import close from "../../images/close.png";
-// import AnimeList from '../components/anime';
 import "./styles.css";
-// import Modal2 from '../components/Modal2/modal2';
 
 import {
   ServicesContainer,
@@ -55,22 +46,6 @@ const customStyles = {
 
 const Services = () => {
   const [showModal, setShowModal] = useState(false);
-
-  /*const [show1, setShow1] = useState(false);
-      const [show2, setShow2] = useState(false);
-      const [show3, setShow3] = useState(false);
-      const [show4, setShow4] = useState(false);
-      const [show5, setShow5] = useState(false);
-      const [show6, setShow6] = useState(false);
-      const [show7, setShow7] = useState(false);
-      const [show8, setShow8] = useState(false);
-      const [show9, setShow9] = useState(false);
-      const [show10, setShow10] = useState(false);
-      
-      const openModal = () => {
-          setShowModal(prev => !prev);
-      };*/
-
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [content, setContent] = React.useState(null);
 

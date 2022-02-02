@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Modal from "react-modal";
 import "./geography.css";
 
@@ -12,9 +11,6 @@ import Icon5 from "../../images/section 2/5.png";
 import Icon6 from "../../images/section 2/6.png";
 import Icon7 from "../../images/section 2/7.png";
 import Icon8 from "../../images/section 2/8.png";
-import Icon9 from "../../images/section 2/9.png";
-import Icon10 from "../../images/section 2/10.png";
-import Icon11 from "../../images/section 2/11.png";
 import Icon12 from "../../images/section 2/12.png";
 import Icon13 from "../../images/section 2/13.png";
 import Icon14 from "../../images/section 2/14.png";
@@ -22,14 +18,10 @@ import Color1 from "../../images/section 2/color1.png";
 
 import Color4 from "../../images/color4.png";
 import Color5 from "../../images/color5.png";
-import Color8 from "../../images/color8.png";
 import Color11 from "../../images/color11.png";
-import headerImg from "../../images/section 2/header.jpg";
 
 import {
   GeographyContainer,
-  MosaicWrapper,
-  MosaicImg,
   HeaderText,
   GeographyEntry,
   GeographyEntryText,
@@ -58,23 +50,6 @@ import {
   GeographyMosaic15,
   GeographyMosaic16,
   GeographyMosaic17,
-  HistoryMosaicParent,
-  HistoryMosaic1,
-  HistoryMosaic2,
-  HistoryMosaic3,
-  HistoryMosaic4,
-  HistoryMosaic5,
-  HistoryMosaic6,
-  HistoryMosaic7,
-  HistoryMosaic8,
-  HistoryMosaic9,
-  HistoryMosaic10,
-  HistoryMosaic11,
-  HistoryMosaic12,
-  HistoryMosaic13,
-  HistoryMosaic14,
-  BackgroundDiv,
-  BackgroundImg,
 } from "./geographyElements.js";
 import useWindowDimensions from "./dimensions";
 
@@ -92,7 +67,6 @@ const customStyles = {
 };
 
 const Geography = () => {
-  let subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   function openModal() {
@@ -204,6 +178,7 @@ const Geography = () => {
                       <Statue>
                         <StatueImg>
                           <iframe
+                            title="Zapotec Pottery Urn"
                             style={
                               ({ display: "block" },
                               { width: "auto" },
@@ -234,6 +209,7 @@ const Geography = () => {
                       <Statue>
                         <StatueImg>
                           <iframe
+                          title="Zapotec Pottery Urn"
                             style={
                               ({ display: "block" },
                               { width: "auto" },
@@ -264,6 +240,7 @@ const Geography = () => {
                       <Statue>
                         <StatueImg>
                           <iframe
+                            title="Zapotec Pottery Urn"
                             style={
                               ({ display: "block" },
                               { width: "auto" },

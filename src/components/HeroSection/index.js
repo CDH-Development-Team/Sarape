@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import Video from "../../videos/TimeLapse2021_3.mp4";
-import GeographyPage from "../../pages/geography.js";
 import { Button } from "../ButtonElement";
 import { 
     HeroContainer, 
@@ -8,12 +7,10 @@ import {
     VideoBg, 
     HeroContent, 
     HeroH1, 
-    HeroP, 
     HeroBtnWrapper, 
     ArrowForward, 
     ArrowRight 
 } from './HeroElements';
-import Image360 from "..//../images/360-degrees.png"
 
 
 const HeroSection = () => { 

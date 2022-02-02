@@ -1,8 +1,5 @@
 import img from "../../images/porfirio.jpg";
-import img2 from "../../images/svg-2.svg";
-import img3 from "../../images/svg-3.svg";
 import img4 from "../../images/pintura.jpg";
-import img5 from "../../images/svg-5.svg";
 import img6 from "../../images/tourismInMexico.jpg";
 import img7 from "../../images/candids.jpg";
 import Icon1 from "../../images/svg-4.svg";
@@ -12,8 +9,6 @@ import Icon4 from "../../textiles_png/3_textiles/AT-2020-16-2.png";
 import Icon5 from "../../textiles_png/3_textiles/AT-2020-16-3.png";
 import Icon6 from "../../textiles_png/3_textiles/AT-2020-16-4.png";
 import Icon7 from "../../textiles_png/3_textiles/AT-2020-16-5.png";
-import Icon8 from "../../textiles_png/3_textiles/AT-2020-16-6.png";
-import Icon9 from "../../textiles_png/3_textiles/AT-2020-16-7.png";
 
 export const homeObjOne = {
   id: "about",

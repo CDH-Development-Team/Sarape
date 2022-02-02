@@ -1,22 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Modal from "react-modal";
 
 import {
   GeographyContainer,
-  MosaicWrapper,
-  MosaicImg,
-  HeaderText,
   GeographyEntry,
   GeographyEntryText,
   GeographyEntryImg,
   GeographyEntryDescription,
-  GeographyStatues,
-  Statue,
-  StatueImg,
   BackgroundDiv,
-  BackgroundContentLeft,
-  BackgroundContentRight,
   BackgroundImg,
   HistoryMosaicParent,
   HistoryMosaic1,
@@ -34,12 +25,10 @@ import {
   HistoryMosaic13,
   HistoryMosaic14,
 } from "../Geography/geographyElements.js";
-import headerImg from "../../images/section 2/history/header.jpg";
 import Icon1 from "../../images/section 2/history/1.png";
 import Icon2 from "../../images/section 2/history/2.png";
 import Icon3 from "../../images/section 2/history/3.png";
 import Icon4 from "../../images/section 2/history/4.png";
-import Icon5 from "../../images/section 2/history/5.png";
 import Icon6 from "../../images/section 2/history/6.png";
 import Icon7 from "../../images/section 2/history/7.png";
 import Icon8 from "../../images/section 2/history/8.png";
@@ -48,7 +37,6 @@ import Color1 from "../../images/section 2/color1.png";
 import Color4 from "../../images/color4.png";
 import Color5 from "../../images/color5.png";
 import Color8 from "../../images/color8.png";
-import Color11 from "../../images/color11.png";
 import "../Geography/geography.css";
 import useWindowDimensions from "../Geography/dimensions";
 
@@ -65,7 +53,6 @@ const customStyles = {
 };
 const History = () => {
   const { height, width } = useWindowDimensions();
-  let subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   function openModal() {

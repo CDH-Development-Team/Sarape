@@ -1,8 +1,5 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
-import { Link as LinkS} from "react-scroll";
-
-
 
 export const Nav = styled.nav`
     background: rgba(173, 0, 66,1);
@@ -13,8 +10,6 @@ export const Nav = styled.nav`
     font-size: 3rem;
     position: sticky;
     top: 0;
-
-
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
     }

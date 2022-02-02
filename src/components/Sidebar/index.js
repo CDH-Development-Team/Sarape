@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import styled from 'styled-components';
 import {
   SidebarContainer,
   Icon,
@@ -8,8 +6,6 @@ import {
   SidebarWrapper,
   SidebarMenu,
   SidebarLink,
-  SideBtnWrap,
-  SidebarRoute,
 } from "./SidebarElements";
 
 

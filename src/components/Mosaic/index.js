@@ -1,5 +1,5 @@
 import React,  { useState, useCallback }  from 'react';
-import { HeadWrapper,Head,Img1,Img2,Img3,Img4,Img5,Img6,Img7,Img8,Img9,Img10,Img11 } from "./MosaicElements";
+import { HeadWrapper,Head } from "./MosaicElements";
 import Gallery from "react-photo-gallery";
 
 

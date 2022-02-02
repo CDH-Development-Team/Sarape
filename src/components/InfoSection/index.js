@@ -1,18 +1,13 @@
 import React, {useState} from "react";
-import { Button } from "../ButtonElement";
 import ModalVideo from 'react-modal-video'
 import {
   InfoContainer,
-  InfoWrapper,
   InfoRow,
   Column1,
   Column2,
-  TextWrapper,
   TopLine,
   Heading,
   Subtitle,
-  Subtitle1,
-  BtnWrap,
   ImgWrap,
   Img,
 } from "./infoElements";
@@ -25,18 +20,11 @@ const InfoSection = ({
   lightText,
   headline,
   darkText,
-  description,
-  description2,
   description3,
-  cap,
   cap2,
   cap3,
-  buttonLabel,
   img,
-  alt,
-  primary,
-  dark,
-  dark2,
+  alt
 }) => {
   const [vidOpen, setVidOpen] = useState(false);
   return (

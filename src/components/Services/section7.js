@@ -3,14 +3,7 @@ import Modal from "react-modal";
 import styled from "styled-components";
 import React, { useState } from "react";
 import ModalVideo from 'react-modal-video'
-//import Modal2 from '../Modal2/modal2';
-//import Modal from '../Modal/index.js';
-
-// import React, { useState } from "react";
 import "./styles.css";
-
-import Section7 from "../Section7/section7index";
-
 import {
   sevenObj,
   sevenObjOne,
@@ -31,17 +24,12 @@ import Icon6 from "../../textiles_png/7_textiles/7C2_E-8988.png";
 import Icon7 from "../../textiles_png/7_textiles/7C3_E-83.png";
 import Icon8 from "../../textiles_png/7_textiles/7C4_at_2020-337-1.png";
 import close from "../../images/close.png";
-// import AnimeList from '../components/anime';
 import "./styles.css";
-// import Modal2 from '../components/Modal2/modal2';
 
 import {
   ServicesContainer,
-  ServicesH1,
   ServicesWrapper7,
   ServicesIcon,
-  ServicesH2,
-  ServicesP,
 } from "./ServicesElements";
 
 import {
@@ -73,23 +61,7 @@ const customStyles = {
 };
 
 const Services = () => {
-  const [showModal, setShowModal] = useState(false);
   const [vidOpen, setVidOpen] = useState(false);
-  /*const [show1, setShow1] = useState(false);
-      const [show2, setShow2] = useState(false);
-      const [show3, setShow3] = useState(false);
-      const [show4, setShow4] = useState(false);
-      const [show5, setShow5] = useState(false);
-      const [show6, setShow6] = useState(false);
-      const [show7, setShow7] = useState(false);
-      const [show8, setShow8] = useState(false);
-      const [show9, setShow9] = useState(false);
-      const [show10, setShow10] = useState(false);
-      
-      const openModal = () => {
-          setShowModal(prev => !prev);
-      };*/
-
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [content, setContent] = React.useState(null);
 
@@ -102,7 +74,7 @@ const Services = () => {
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
   }
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
   let Card = styled.div`
     // background: #fff;
     display: flex;
@@ -136,48 +108,32 @@ const Services = () => {
       <ServicesWrapper7>
         <Card>
           <ServicesIcon src={Icon1} />
-          {/* <ServicesH2>Reduce Expenses</ServicesH2>
-                    <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP> */}
         </Card>
         <div>
           <Card>
             <ServicesIcon src={Icon2} />
-            {/* <ServicesH2>Virtual offices</ServicesH2> */}
-            {/* <ServicesP>You can access our platform from anywhere.</ServicesP> */}
           </Card>
           <Card>
             <ServicesIcon src={Icon3} />
-            {/* <ServicesH2>Premium Benefits</ServicesH2> */}
-            {/* <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
           </Card>
         </div>
         <Card>
           <ServicesIcon src={Icon4} />
-          {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
+          
         </Card>
         <div>
           <Card>
-            <ServicesIcon src={Icon5} />
-            {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
+            <ServicesIcon src={Icon5} />      
           </Card>
           <Card>
             <ServicesIcon src={Icon6} />
-            {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
           </Card>
         </div>
-
         <Card>
           <ServicesIcon src={Icon7} />
-          {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
         </Card>
         <Card>
           <ServicesIcon src={Icon8} />
-          {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
         </Card>
       </ServicesWrapper7>
       <br></br>

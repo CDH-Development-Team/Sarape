@@ -6,12 +6,11 @@ import cdhlogo from '../../images/CDH_logo_Primary.png'
 import higgins from '../../images/higgins.png'
 import med from '../../images/med.png'
 import asmlogo from '../../images/asmlogo.png'
-//import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 const Credits = () =>{
     return(
         <div style={{backgroundColor:'#4a0033', color:'white'}}>
     <div style={{position: 'relative', width: '100%', fontSize: "1.5rem"}}>
-    <img src={img} style={{width:"100%"}}>
+    <img alt="" src={img} style={{width:"100%"}}>
     </img>
     <div style={{position:'absolute', top:'5%', left:'15%', width:'70%', margin: '0 auto', color:'black'}}>
         <p style={{fontFamily:'Lucida'}}>“A family of reds, from purples and violets to deep reds, pinks, corals, and oranges, is created with different amounts of cochineal, different mordants and modifiers, and various overdyes of cochineal and other natural dyestuffs.”</p>
@@ -44,19 +43,19 @@ const Credits = () =>{
     <div style={{backgroundColor: '#b93069'}}>
         <br /><br /><br /><br /><br />
     <div width="100%">
-            <img className='logo' src={swlogo} width="40%"/>   
-            <img className='logo' src={asmlogo} width="40%"/>
+            <img className='logo' alt="" src={swlogo} width="40%"/>   
+            <img className='logo' alt="" src={asmlogo} width="40%"/>
             
     </div>
         <br/><br/><br/>
     <div width="100%">
-            <img className='logo' src={thrums} width="20%"/>
-            <img className='logo' src={higgins} width="12%" style={{}}/>
-            <img className='logo' src={med} width="38%" style={{}}/>
+            <img className='logo' alt="" src={thrums} width="20%"/>
+            <img className='logo' alt="" src={higgins} width="12%" style={{}}/>
+            <img className='logo' alt="" src={med} width="38%" style={{}}/>
     </div>
     <br/><br/><br/>
     <div style={{width:'50%', margin: '0 auto'}}>
-    <img className='logo' src={cdhlogo} style={{width:'90%'}} />
+    <img className='logo' alt="" src={cdhlogo} style={{width:'90%'}} />
     </div>
     </div>
     </div>

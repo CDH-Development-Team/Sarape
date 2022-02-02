@@ -10,10 +10,8 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  BtnWrap,
   ImgWrap,
   Img,
-  Column,
 } from "./historicalElements";
 
 const HistoricalSection = ({
@@ -31,21 +29,9 @@ const HistoricalSection = ({
   imgdesc2,
   imgdesc3,
   imgdesc4,
-  imgdesc5,
-  imgdesc6,
-  buttonLabel,
-  block,
   img,
   img2,
   img3,
-  img4,
-  alt,
-  alt2,
-  alt3,
-  side,
-  primary,
-  dark,
-  dark2,
   smallImg,
 }) => {
   return (
