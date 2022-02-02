@@ -11,7 +11,7 @@ import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, Top
 const TourismSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText,description3,img,alt, artifact, artifactAlt, artifactInfo, primary, dark, dark2}) => {
     return (
         <>
-            <InfoContainer lightBg={lightBg} id={id}>
+            <InfoContainer lightBg={lightBg} id={id} style={{marginTop:"-4rem"}}>
                 <InfoWrapper>
                     <TopLine>{topLine}</TopLine>
                     <InfoRow imgStart={imgStart}>
@@ -19,12 +19,12 @@ const TourismSection = ({lightBg, id, imgStart, topLine, lightText, headline, da
                             <TextWrapper>
                                 <ImgWrap>
                                     <Img src={artifact} alt={artifactAlt}/>
-                                    <Caption darkText={darkText}>{artifactInfo}</Caption>
+                                    <Caption darkText={darkText} style={{fontSize: "1.15rem"}}>{artifactInfo}</Caption>
                                 </ImgWrap>
                             </TextWrapper>
                         </Column1>    
                         <Column2>
-                            <Heading lightText={lightText}>{headline}</Heading>
+                            <Heading lightText={lightText} style={{overflow: 'hidden'}}>{headline}</Heading>
                             <ImgWrap2>
                                 <TextHead>
                                 The Mexican nationalist movement of the early 1900s, appropriated the country’s Spanish and Indigenous identities to create a hybrid “Mexican” identity. The Saltillo sarape turned out to be one of the country’s most enduring symbols. This period saw the rise of the rainbow-striped blanket, which became synonymous with Mexico through its use in films, posters, and advertising.
@@ -33,7 +33,7 @@ const TourismSection = ({lightBg, id, imgStart, topLine, lightText, headline, da
                                 {/* <Subtitle darkText={darkText}>{description}</Subtitle>
                                 <Subtitle darkText={darkText}>{description2}</Subtitle> */}
                                 <Img2 src={img} alt={alt}/>
-                                <Caption darkText={darkText}>{description3}</Caption>
+                                <Caption darkText={darkText} style={{fontSize: "1.15rem"}}>{description3}</Caption>
                             </ImgWrap2>
                         </Column2>
                     </InfoRow>
@@ -42,7 +42,7 @@ const TourismSection = ({lightBg, id, imgStart, topLine, lightText, headline, da
                             <TextWrapper>
                                 <ImgWrap>
                                     <Img src={img5} alt={artifactAlt}/>
-                                    <Caption darkText={darkText}>{"Ceramic Figurines, c. 1900-1920. ASM 156"}</Caption>
+                                    <Caption darkText={darkText} style={{fontSize: "1.15rem"}}>{"Ceramic Figurines, c. 1900-1920. ASM 156"}</Caption>
                                 </ImgWrap>
                             </TextWrapper>
                         </Column1>    
@@ -64,7 +64,7 @@ const TourismSection = ({lightBg, id, imgStart, topLine, lightText, headline, da
                             <TextWrapper>
                                 <ImgWrap>
                                     <Img src={img3} style={{width:'50%', float: 'right'}} alt={'Tourist Photograph, May 5, 1920. Tijuana, Mexico. Loan from Tom Kieft'}/>
-                                    <Caption style={{float: 'right'}} darkText={darkText}>{'Rainbow-striped Saltillo Sarape c. 1900, Wool, Cotton, and Synthetic Dyes, ASM Purchase from Nelle A. Dermont, 1919, 8425'}</Caption>
+                                    <Caption style={{float: 'right', fontSize: "1.15rem"}} darkText={darkText}>{'Rainbow-striped Saltillo Sarape c. 1900, Wool, Cotton, and Synthetic Dyes, ASM Purchase from Nelle A. Dermont, 1919, 8425'}</Caption>
                                 </ImgWrap>
                             </TextWrapper>
                         </Column1>    
@@ -77,7 +77,7 @@ const TourismSection = ({lightBg, id, imgStart, topLine, lightText, headline, da
                                 {/* <Subtitle darkText={darkText}>{description}</Subtitle>
                                 <Subtitle darkText={darkText}>{description2}</Subtitle> */}
                                 <Img2 src={img1} alt={alt}/>
-                                <Caption darkText={darkText}>{'Tourist Photograph, May 5, 1920. Tijuana, Mexico. Loan from Tom Kieft'}</Caption>
+                                <Caption darkText={darkText} style={{fontSize: "1.15rem"}}>{'Tourist Photograph, May 5, 1920. Tijuana, Mexico. Loan from Tom Kieft'}</Caption>
                             </ImgWrap2>
                         </Column2>
                     </InfoRow>
@@ -86,7 +86,7 @@ const TourismSection = ({lightBg, id, imgStart, topLine, lightText, headline, da
                             <TextWrapper>
                                 <ImgWrap>
                                     <Img src={img4} style={{width:'50%', float: 'right'}} alt={'Tourist Photograph, May 5, 1920. Tijuana, Mexico. Loan from Tom Kieft'}/>
-                                    <Caption style={{float: 'right'}} darkText={darkText}>{'Morning Stars. Zapotec Textile. Wool, Cotton, and Synthetic Dyes. ASM Purchase For Education Collection. 2020'}</Caption>
+                                    <Caption style={{float: 'right', fontSize: "1.15rem"}} darkText={darkText}>{'Morning Stars. Zapotec Textile. Wool, Cotton, and Synthetic Dyes. ASM Purchase For Education Collection. 2020'}</Caption>
                                 </ImgWrap>
                             </TextWrapper>
                         </Column1>    
@@ -99,7 +99,7 @@ const TourismSection = ({lightBg, id, imgStart, topLine, lightText, headline, da
                                 {/* <Subtitle darkText={darkText}>{description}</Subtitle>
                                 <Subtitle darkText={darkText}>{description2}</Subtitle> */}
                                 <Img2 src={img2} style={{width:'85%'}} alt={alt}/>
-                                <Caption darkText={darkText}>{"Zapotec Textiles on Sale at the Arizona State Museum's Southwest Indian Art Fair. Alanah K. Tupponce, Photographer, 2011."}</Caption>
+                                <Caption darkText={darkText} style={{fontSize: "1.15rem"}}>{"Zapotec Textiles on Sale at the Arizona State Museum's Southwest Indian Art Fair. Alanah K. Tupponce, Photographer, 2011."}</Caption>
                             </ImgWrap2>
                         </Column2>
                     </InfoRow>
