@@ -50,7 +50,6 @@ const FamilyPage = () => {
           backgroundColor: "#4a0033"
         }}
       >
-        {/* <Button onClick={() => setShow(true)}>Open Modal</Button> */}
         <img
             src={Icon1}
             alt="Developer"
@@ -116,14 +115,14 @@ const FamilyPage = () => {
         <div className="content">
           <img
             src={Icon1}
-            alt="Developer"
+            alt="Classic Period Sarape"
           />
           
           <div className="text">
           <h2>Classic Period Saltillo Sarapes</h2>
           <br></br>
           <div>
-          Classic period Saltillo sarape, c. 1720–1860 {<br></br>}  
+          Classic period Saltio sarape, c. 1720–1860 {<br></br>}  
           Mexico Wool, cotton, cochineal and other natural dyes{<br></br>}  
           On loan from Arizona History Museum, 92.28{<br></br>} 
           AT-2020-15-1

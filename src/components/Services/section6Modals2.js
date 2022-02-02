@@ -108,64 +108,44 @@ const Services = () => {
 
         {content}
       </Modal>
-      <ServicesWrapper6>
+      <ServicesWrapper6 style={{marginTop:"4rem"}}>
         <Card>
           <ServicesIcon src={Icon1} />
-          {/* <ServicesH2>Reduce Expenses</ServicesH2>
-                    <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP> */}
         </Card>
         <div>
           <Card>
             <ServicesIcon src={Icon2} />
-            {/* <ServicesH2>Virtual offices</ServicesH2> */}
-            {/* <ServicesP>You can access our platform from anywhere.</ServicesP> */}
           </Card>
           <Card>
             <ServicesIcon src={Icon3} />
-            {/* <ServicesH2>Premium Benefits</ServicesH2> */}
-            {/* <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
           </Card>
         </div>
         <Card>
           <ServicesIcon src={Icon4} />
-          {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
         </Card>
         <div>
           <Card>
             <ServicesIcon src={Icon5} />
-            {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
           </Card>
           <Card>
             <ServicesIcon src={Icon6} />
-            {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
           </Card>
         </div>
 
         <Card>
           <ServicesIcon src={Icon7} />
-          {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
         </Card>
         <div>
           <Card>
             <ServicesIcon src={Icon8} />
-            {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
           </Card>
 
           <Card>
             <ServicesIcon src={Icon9} />
-            {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
           </Card>
         </div>
         <Card>
           <ServicesIcon src={Icon10} />
-          {/* <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership to get 5% cashback.</ServicesP> */}
         </Card>
       </ServicesWrapper6>
       <br></br>
@@ -207,7 +187,7 @@ const Services = () => {
                 <ImgWrap>
                   <Img
                     border="none"
-                    style={{ width: "70%" }}
+                    style={{ width: "65%", height:"95%" }}
                     src={Icon1}
                     onClick={() => {
                       setContent(
@@ -217,15 +197,14 @@ const Services = () => {
                         >
                           <div
                             className="text"
-                            style={{ width: "50%", marginLeft: "6rem" }}
+                            style={{ width: "50%"}}
                           >
                             <p
                               style={{
                                 fontSize: "1rem",
-
-                                marginTop: "30rem",
-                                marginLeft: "12rem",
+                                marginLeft: "12.5rem",
                                 color: "white",
+                                marginTop:"30rem"
                               }}
                             >
                               Classic period Saltillo sarape, c. 1720–1860
@@ -244,8 +223,8 @@ const Services = () => {
                             <div style={{ width: "80%", alignItems: "right" }}>
                               <img
                                 src={Icon1}
-                                style={{ width: "80%" }}
-                                alt="Developer"
+                                style={{ width: "53%", marginLeft:"15rem" }}
+                                alt="Classic period sarape"
                               />
                             </div>
                           </div>
@@ -267,7 +246,7 @@ const Services = () => {
                   <ImgWrap>
                     <Img
                       src={Icon2}
-                      style={{ width: "70%" }}
+                      style={{ width: "65%", height:"95%"  }}
                       onClick={() => {
                         setContent(
                           <div
@@ -281,7 +260,7 @@ const Services = () => {
                               <p
                                 style={{
                                   fontSize: "1rem",
-                                  marginTop: "35rem",
+                                  marginTop: "33rem",
                                   marginLeft: "11.5rem",
                                   color: "white",
                                 }}
@@ -303,7 +282,7 @@ const Services = () => {
                               >
                                 <img
                                   src={Icon2}
-                                  style={{ width: "80%" }}
+                                  style={{ width: "55%", marginLeft:"10rem" }}
                                   alt="Developer"
                                 />
                               </div>
@@ -317,7 +296,7 @@ const Services = () => {
                   <ImgWrap>
                     <Img
                       src={Icon3}
-                      style={{ width: "70%" }}
+                      style={{ width: "65%", height:"95%" }}
                       onClick={() => {
                         setContent(
                           <div
@@ -355,11 +334,11 @@ const Services = () => {
                               }}
                             >
                               <div
-                                style={{ width: "80%", alignItems: "right" }}
+                                style={{ width: "80%", marginLeft:"10rem", alignItems: "right" }}
                               >
                                 <img
                                   src={Icon3}
-                                  style={{ width: "80%" }}
+                                  style={{ width: "55%" }}
                                   alt="Developer"
                                 />
                               </div>
@@ -430,7 +409,7 @@ const Services = () => {
                   }}
                 >
                   <Img
-                    style={{ width: "80%" }}
+                    style={{  width: "65%", height:"95%" }}
                     src={Icon4}
                     onClick={() => {
                       setContent(
@@ -494,7 +473,7 @@ const Services = () => {
                     }}
                   />
                   <Img
-                    style={{ width: "80%" }}
+                    style={{ width: "65%", height:"95%" }}
                     src={Icon5}
                     onClick={() => {
                       setContent(
@@ -502,10 +481,9 @@ const Services = () => {
                           <div className="text" style={{ marginLeft: "6rem" }}>
                             <p
                               style={{
-                                fontSize: "1rem",
+                                fontSize: "1.25rem",
                                 color: "white",
                                 marginRight: "1rem",
-                                marginBottom: "2rem",
                               }}
                             >
                               Notice the diamond elements within the central
@@ -572,6 +550,7 @@ const Services = () => {
                                 color: "white",
                                 marginLeft: "1rem",
                                 marginRight: "5rem",
+                                marginTop:"1rem"
                               }}
                             >
                               Post-Classic period sarape with concentric
@@ -600,7 +579,7 @@ const Services = () => {
                   }}
                 >
                   <Img
-                    style={{ width: "80%" }}
+                    style={{ width: "65%", height:"95%" }}
                     src={Icon6}
                     onClick={() => {
                       setContent(
@@ -612,7 +591,6 @@ const Services = () => {
                             className="text"
                             style={{ width: "50%", marginLeft: "6rem" }}
                           >
-                            {/* <h2>John Doe</h2> */}
 
                             <div
                               style={{
@@ -662,7 +640,7 @@ const Services = () => {
                     }}
                   />
                   <Img
-                    style={{ width: "80%" }}
+                    style={{ width: "65%", height:"95%"  }}
                     src={Icon7}
                     onClick={() => {
                       setContent(
@@ -718,8 +696,8 @@ const Services = () => {
                             <div style={{ width: "75%", alignItems: "right" }}>
                               <img
                                 src={Icon7}
-                                style={{ width: "75%" }}
-                                alt="Developer"
+                                style={{ width: "65%" }}
+                                alt="Post classic period Sarape"
                               />
                             </div>
                           </div>
@@ -887,7 +865,7 @@ const Services = () => {
                             <div style={{ width: "90%", alignItems: "right" }}>
                               <img
                                 src={Icon8}
-                                style={{ width: "90%" }}
+                                style={{ width: "65%" }}
                                 alt="Developer"
                               />
                             </div>
@@ -959,7 +937,7 @@ const Services = () => {
                             <div style={{ width: "90%", alignItems: "right" }}>
                               <img
                                 src={Icon9}
-                                style={{ width: "90%" }}
+                                style={{ width: "65%" }}
                                 alt="Developer"
                               />
                             </div>
@@ -973,7 +951,7 @@ const Services = () => {
               </div>
               <div
                 class="column13"
-                style={{ marginTop: "-25rem", marginLeft: "7rem" }}
+                style={{ marginTop: "-30rem", marginLeft: "7rem"}}
               >
                 <ImgWrap>
                   <Img
@@ -1026,7 +1004,7 @@ const Services = () => {
                             <div style={{ width: "80%", alignItems: "right" }}>
                               <img
                                 src={Icon10}
-                                style={{ width: "80%" }}
+                                style={{ width: "60%", marginLeft:"5rem" }}
                                 alt="Developer"
                               />
                             </div>
@@ -1042,10 +1020,6 @@ const Services = () => {
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>
-
-      {/* <HistoricalSection {...sixObj} /> */}
-      {/* <HistoricalSection {...sixObjOne} /> */}
-      {/* <HistoricalSection {...sixObjTwo} /> */}
     </ServicesContainer>
   );
 };
