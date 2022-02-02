@@ -746,7 +746,7 @@ const DyeingPage = () => {
               height={"100%"}
               width={"100%"}
               onClick={() => {
-                {setContent(
+                setContent(
                   <div className="content">
                     <div className="row1">
                       <div className="column2">
@@ -839,7 +839,7 @@ const DyeingPage = () => {
                   );
                   openModal();
                 }
-              }}
+              }
             ></img>
           </DyeMosaic18>
           <DyeMosaic19 className="mosaic">
