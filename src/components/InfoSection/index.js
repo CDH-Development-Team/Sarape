@@ -33,7 +33,7 @@ const InfoSection = ({
         <InfoRow imgStart={imgStart}>
           <Column1 style={{ marginLeft: "3rem", width: "95%" }}>
             <TopLine>{topLine}</TopLine>
-            <Heading lightText={lightText} style={{ fontSize: "2.5rem", position: "relative" }}>
+            <Heading lightText={lightText} style={{fontSize: "2.5rem", position: "relative", overflow: "hidden" }}>
               {headline}
               <React.Fragment>
 			<ModalVideo channel='youtube' autoplay isOpen={vidOpen} videoId="TjpCPMdezo4" onClose={() => setVidOpen(false)} />

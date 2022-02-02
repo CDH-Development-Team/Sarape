@@ -35,7 +35,7 @@ const [vidOpen, setVidOpen] = useState(false);
           color: "#fff",
         }}
       >
-        <h1 style={{ fontSize: "2.5rem", position: "relative" }}>PORFIRIO GUTIÉRREZ
+        <h1 style={{ fontSize: "2.5rem", position: "relative"}}>PORFIRIO GUTIÉRREZ
         <React.Fragment>
 			<ModalVideo channel='youtube' autoplay isOpen={vidOpen} videoId="k651uaQj1gg" onClose={() => setVidOpen(false)} />
 

@@ -35,7 +35,7 @@ const InfoSection = ({
         <InfoRow imgStart={imgStart}>
           <Column1 style={{ marginLeft: "3rem", width: "85%" }}>
             <TopLine>{topLine}</TopLine>
-            <Heading lightText={lightText} style={{ fontSize: "2.5rem", position: "relative"}}>
+            <Heading lightText={lightText} style={{ fontSize: "2.5rem", position: "relative", overflow:"hidden"}}>
               {headline}
               <React.Fragment>
 			<ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="_6TEaFLJQGY" onClose={() => setOpen(false)} />
@@ -73,21 +73,19 @@ const InfoSection = ({
               derived from plants, such as indigo (<i>Indigofera tinctoria</i>),
               and from cochineal, an insect.
             </Subtitle>
-            <div
+          </Column1>
+          <Column2 style={{ marginRight: "50px" }}>
+            <ImgWrap>
+              <Img src={img} alt={alt} />
+              <div
               style={{
                 fontSize: "1rem",
-                marginLeft: "400px",
-                marginTop: "70px",
               }}
             >
               <p darkText={darkText}>{cap}</p>
               <p darkText={darkText}>{cap2}</p>
               <p darkText={darkText}>{cap3}</p>
             </div>
-          </Column1>
-          <Column2 style={{ marginRight: "50px" }}>
-            <ImgWrap>
-              <Img src={img} alt={alt} />
             </ImgWrap>
           </Column2>
         </InfoRow>
