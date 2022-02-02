@@ -158,7 +158,7 @@ const Services = () => {
         <InfoWrapper>
           <InfoRow imgStart={sixObj.imgStart}>
             <Column1>
-              <Heading style={{position: "relative"}} lightText={sixObj.lightText}>{sixObj.headline}
+              <Heading style={{position: "relative", overflow: "hidden"}} lightText={sixObj.lightText}>{sixObj.headline}
               </Heading>
               <React.Fragment>
 			<ModalVideo channel='youtube' autoplay isOpen={vidOpen} videoId="-5AkIHdKZz4" onClose={() => setVidOpen(false)} />
@@ -365,7 +365,7 @@ const Services = () => {
         <InfoWrapper>
           <InfoRow imgStart={sixObjOne.imgStart}>
             <Column1>
-              <Heading lightText={sixObjOne.lightText}>
+              <Heading lightText={sixObjOne.lightText} style={{overflow:"hidden"}}>
                 {sixObjOne.headline}
               </Heading>
               <React.Fragment>
@@ -717,7 +717,7 @@ const Services = () => {
         <InfoWrapper>
           <InfoRow imgStart={sixObjThree.imgStart}>
             <Column1>
-              <Heading lightText={sixObjThree.lightText}>
+              <Heading lightText={sixObjThree.lightText} style={{overflow:"hidden"}}>
                 {sixObjThree.headline}
               </Heading>
               <React.Fragment>

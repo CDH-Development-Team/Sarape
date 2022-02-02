@@ -60,6 +60,7 @@ export const TopLine = styled.p`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
+  overfow: hidden;
 `;
 
 export const Heading = styled.h1`
@@ -68,6 +69,7 @@ export const Heading = styled.h1`
   line-height: 1.1;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+  overfow: hidden;
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
