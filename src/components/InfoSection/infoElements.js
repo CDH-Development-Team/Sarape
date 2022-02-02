@@ -15,7 +15,6 @@ export const InfoWrapper = styled.div`
   margin-left: 2.5rem;
   margin-right: 2.5rem;
   width: auto;
-
   justify-content: center;
 `;
 
@@ -34,7 +33,7 @@ export const InfoRow = styled.div`
 
 export const Column1 = styled.div`
   margin-bottom: 0px;
-  padding: 0 15px;
+  padding: 0 1%;
   grid-area: col1;
   font-size: 1.5rem;
   height: 100%;
@@ -42,7 +41,7 @@ export const Column1 = styled.div`
 
 export const Column2 = styled.div`
   margin-bottom: 0px;
-  padding: 0 15px;
+  padding: 0 5%;
   grid-area: col2;
   height: 100%;
 `;

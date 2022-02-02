@@ -38,7 +38,7 @@ const InfoSection = ({
               <React.Fragment>
 			<ModalVideo channel='youtube' autoplay isOpen={vidOpen} videoId="TjpCPMdezo4" onClose={() => setVidOpen(false)} />
 
-			<button className="btn-primary" style={{height:"2rem", position:"absolute", top:"10%", marginLeft:"1rem"}} onClick={()=> setVidOpen(true)}>Listen to the Curator</button>
+			<button className="btn-primary" style={{marginLeft:"1rem", position: "absolute", top: "10%", height:"2rem", fontSize:'1.2rem'}} onClick={()=> setVidOpen(true)}>Listen to the Curator</button>
 		</React.Fragment>
             </Heading>
             
@@ -74,10 +74,13 @@ const InfoSection = ({
             >
               {description3}
             </Subtitle>
-            <div
+          </Column1>
+          <Column2 style={{ marginRight: "50px" }}>
+            <ImgWrap>
+              <Img src={img} alt={alt} />
+              <div
               style={{
                 fontSize: "1rem",
-                marginLeft: "20rem",
               }}
             >
               <p darkText={darkText}>
@@ -87,10 +90,6 @@ const InfoSection = ({
               <p darkText={darkText}>{cap2}</p>
               <p darkText={darkText}>{cap3}</p>
             </div>
-          </Column1>
-          <Column2 style={{ marginRight: "50px" }}>
-            <ImgWrap>
-              <Img src={img} alt={alt} style={{ marginTop: "150px" }} />
             </ImgWrap>
           </Column2>
         </InfoRow>

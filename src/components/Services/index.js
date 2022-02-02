@@ -61,7 +61,7 @@ const Services = () => {
         {content}
       </Modal>
 
-      <ServicesWrapper>
+      <ServicesWrapper style={{marginLeft:"0px"}}>
         <ServicesCard>
           <ServicesIcon
             src={Icon4}
@@ -70,11 +70,11 @@ const Services = () => {
                 <div className="content" style={{ alignItems: "right" }}>
                   <div
                     className="text"
-                    style={{ width: "50%", marginLeft: "6rem" }}
+                    style={{ width: "100%", marginLeft: "6rem" }}
                   >
                     <p
                       style={{
-                        marginTop: "25rem",
+                        marginTop: "1rem",
                         fontSize: "1rem",
                         color: "white",
                         marginLeft: "10rem",
@@ -109,12 +109,12 @@ const Services = () => {
                 <div className="content" style={{ alignItems: "right" }}>
                   <div
                     className="text"
-                    style={{ width: "50%", marginLeft: "6rem" }}
+                    style={{ width: "100%", marginLeft: "6rem" }}
                   >
                     {" "}
                     <p
                       style={{
-                        marginTop: "25rem",
+                        marginTop: "3rem",
                         fontSize: "1rem",
                         color: "white",
                         marginLeft: "15rem",
@@ -126,13 +126,13 @@ const Services = () => {
                     </p>
                   </div>
                   <div
-                    style={{ height: "80%", width: "60%", alignItems: "right" }}
+                    style={{ height: "80%", width: "80%", alignItems: "right" }}
                   >
                     <div style={{ width: "85%", alignItems: "right" }}>
                       <img
                         src={Icon5}
                         style={{ width: "75%" }}
-                        alt="Developer"
+                        alt="Sarape"
                       />
                     </div>
                   </div>
@@ -150,11 +150,11 @@ const Services = () => {
                 <div className="content" style={{ alignItems: "right" }}>
                   <div
                     className="text"
-                    style={{ width: "100%", marginLeft: "6rem" }}
+                    style={{ width: "100%", marginLeft: "1rem" }}
                   >
                     <p
                       style={{
-                        marginTop: "36rem",
+                        marginTop: "4rem",
                         fontSize: "1rem",
                         color: "white",
                         marginLeft: "20rem",
@@ -164,22 +164,13 @@ const Services = () => {
                       AT-2020-16-4
                     </p>
                   </div>
-                  <div style={{ alignItems: "right" }}>
-                    <div
-                      style={{
-                        height: "100%",
-                        width: "100%",
-                        alignItems: "right",
-                        overflow: "hidden",
-                      }}
-                    >
+                  <div style={{ width: "70%", alignItems: "right", overflow:"hidden"}}>
                       <img
                         src={Icon6}
-                        style={{ height: "100%" }}
-                        alt="Developer"
+                        style={{ width: "60%" }}
+                        alt="Sarape"
                       />
                     </div>
-                  </div>
                 </div>
               );
               openModal();
@@ -196,12 +187,12 @@ const Services = () => {
                 <div className="content" style={{ alignItems: "right" }}>
                   <div
                     className="text"
-                    style={{ width: "50%", marginLeft: "6rem" }}
+                    style={{ width: "100%", marginLeft: "6rem" }}
                   >
                     {" "}
                     <p
                       style={{
-                        marginTop: "32rem",
+                        marginTop: "1rem",
                         fontSize: "1rem",
                         color: "white",
                         marginLeft: "15rem",
@@ -211,16 +202,12 @@ const Services = () => {
                       AT-2020-16-5
                     </p>
                   </div>
-                  <div
-                    style={{ height: "80%", width: "60%", alignItems: "right" }}
-                  >
-                    <div style={{ width: "85%", alignItems: "right" }}>
+                    <div style={{ width: "70%", alignItems: "right", overflow:"hidden"}}>
                       <img
                         src={Icon7}
-                        style={{ width: "85%" }}
-                        alt="Developer"
+                        style={{ width: "60%" }}
+                        alt="Sarape"
                       />
-                    </div>
                   </div>
                 </div>
               );
@@ -236,12 +223,12 @@ const Services = () => {
                 <div className="content" style={{ alignItems: "right" }}>
                   <div
                     className="text"
-                    style={{ width: "50%", marginLeft: "6rem" }}
+                    style={{ width: "100%", marginLeft: "6rem" }}
                   >
                     {" "}
                     <p
                       style={{
-                        marginTop: "34rem",
+                        marginTop: "1rem",
                         fontSize: "1rem",
                         color: "white",
                         marginLeft: "15rem",
@@ -251,16 +238,12 @@ const Services = () => {
                       tarragon, indigo, and cochineal. <br></br>AT-2020-16-6
                     </p>
                   </div>
-                  <div
-                    style={{ height: "80%", width: "60%", alignItems: "right" }}
-                  >
-                    <div style={{ width: "85%", alignItems: "right" }}>
+                  <div style={{ width: "70%", alignItems: "right", overflow:"hidden"}}>
                       <img
                         src={Icon8}
-                        style={{ width: "85%" }}
-                        alt="Developer"
+                        style={{ width: "60%" }}
+                        alt="Sarape"
                       />
-                    </div>
                   </div>
                 </div>
               );
@@ -276,11 +259,11 @@ const Services = () => {
                 <div className="content" style={{ alignItems: "right" }}>
                   <div
                     className="text"
-                    style={{ width: "50%", marginLeft: "6rem" }}
+                    style={{ width: "100%", marginLeft: "6rem" }}
                   >
                     <p
                       style={{
-                        marginTop: "34rem",
+                        marginTop: "1rem",
                         fontSize: "1rem",
                         color: "white",
                         marginLeft: "15rem",
@@ -291,16 +274,12 @@ const Services = () => {
                       AT-2020-16-7
                     </p>
                   </div>
-                  <div
-                    style={{ height: "80%", width: "60%", alignItems: "right" }}
-                  >
-                    <div style={{ width: "85%", alignItems: "right" }}>
+                  <div style={{ width: "70%", alignItems: "right", overflow:"hidden"}}>
                       <img
                         src={Icon9}
-                        style={{ width: "85%" }}
-                        alt="Developer"
+                        style={{ width: "60%" }}
+                        alt="Sarape"
                       />
-                    </div>
                   </div>
                 </div>
               );
@@ -311,7 +290,7 @@ const Services = () => {
         </ServicesCard>
       </ServicesWrapper>
       <ServicesH1
-        style={{ marginTop: "30px", marginLeft: "-40rem", textAlign: "left" }}
+        style={{ marginTop: "30px", marginLeft: "-61rem", textAlign: "left" }}
       >
         FRAGMENT SERIES BY PORFIRIO GUTIÉRREZ
       </ServicesH1>

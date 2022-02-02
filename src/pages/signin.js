@@ -97,8 +97,7 @@ const [vidOpen, setVidOpen] = useState(false);
             knowledge and wisdom to deepen his own understanding of his place in
             time and history. His work is the result of that reflective spirit
             and his desire to share his cultural appreciation with younger
-            Zapotecs.<br></br>
-            <br></br>
+            Zapotecs.
           </Column2>
         </InfoRow>
       </div>
