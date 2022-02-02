@@ -94,7 +94,7 @@ const History = () => {
               src={Icon1}
               alt=""
               height={"100%"}
-              width={"100%"}
+              width={"90%"}
               overflow={"hidden"}
               onClick={() => {
                 setContent(
@@ -103,7 +103,7 @@ const History = () => {
                       <img
                         alt=""
                         src={Icon1}
-                        style={{ height: "95%", marginTop: "10rem" }}
+                        style={{ height: "100%", marginTop: "3.5rem" }}
                       />
                     </BackgroundImg>
                     <GeographyEntryText style={{ fontSize: "1.5rem" }}>
@@ -124,9 +124,8 @@ const History = () => {
                     </GeographyEntryText>
                     <GeographyEntryDescription
                       style={{
-                        marginLeft: "150px",
+                        marginLeft: "11rem",
                         fontSize: "1rem",
-                        marginTop: "20px",
                       }}
                     >
                       Zoque woman weaving on a backstrap loom <br /> Tuxtla

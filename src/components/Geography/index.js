@@ -198,8 +198,7 @@ const Geography = () => {
                           ></iframe>
                         </StatueImg>
                         <div style={{ fontSize: "1rem" }}>
-                          Zapotec pottery urn, possibly representing a king or a
-                          god
+                          Zapotec pottery urn, possibly representing a king or a god
                           <br /> Ceramic
                           <br /> Gift of Elsie Scales, c.1923-1938
                           <br /> Oaxaca, Mexico

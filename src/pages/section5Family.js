@@ -172,7 +172,7 @@ const FamilyPage = () => {
                     <img
                       src={Icon1}
                       alt="Developer"
-                      style={{ width: "100%", marginTop: "5rem" }}
+                      style={{ width: "100%", marginTop: "1.5rem" }}
                     />
                   </div>
                 );
@@ -181,18 +181,10 @@ const FamilyPage = () => {
             ></img>
           </FamilyMosaic1>
 
-          {/* <HistoryMosaic2 className="mosaic">
-        <img src={Color1} height={"100%"} width={"100%"} ></img>
-        </HistoryMosaic2> */}
+          
           <FamilyMosaic2 className="mosaic">
             <img src={Color1} alt="" height={"100%"} width={"100%"}></img>
           </FamilyMosaic2>
-          {/* <HistoryMosaic4 className="mosaic">
-        <img src={Color1} height={"100%"} width={"100%"} ></img>
-        </HistoryMosaic4 >
-        <HistoryMosaic5 className="mosaic">
-        <img src={Color1} height={"100%"} width={"100%"} ></img>
-        </HistoryMosaic5 > */}
           <FamilyMosaic3 className="mosaic">
             <img
               src={Icon6}
@@ -208,7 +200,7 @@ const FamilyPage = () => {
                           style={{
                             fontFamily: "",
                             padding: "1rem",
-                            fontSize: "1.5rem",
+                            fontSize: "1.4rem",
                           }}
                         >
                           Sheep are very special to my practice. Sheep’s wool
@@ -241,7 +233,6 @@ const FamilyPage = () => {
                             color: "#fff",
                             fontSize: "1rem",
                             fontFamily: "",
-                            marginTop: "2rem",
                             marginLeft: "15rem",
                           }}
                         >
@@ -249,17 +240,26 @@ const FamilyPage = () => {
                           of New Spain by Spanish colonizer Francisco Vázquez de
                           Coronado in 1521. Weavers quickly adopted Churro wool
                           and continue to prize it today.<br></br>
-                          <br></br>Three male Navajo Churro sheep, Spin Dance
-                          Acres, Boise, ID. Bonnie Barcus, <br></br>
-                          photographer, 2018{" "}
+                          <br></br>
                         </div>
                       </div>
-                      <div style={{ textAlign: "right", marginTop: "5rem" }}>
+                      <div style={{ textAlign: "left", marginTop: "2rem" }}>
                         <img
                           src={Icon6}
                           alt="Developer"
                           style={{ width: "100%" }}
                         />
+                        <div
+                          style={{
+                            color: "#fff",
+                            fontSize: "1rem",
+                            fontFamily: "",
+                          }}
+                        >
+                          Three male Navajo Churro sheep, Spin Dance
+                          Acres, Boise, ID. Bonnie Barcus, <br></br>
+                          photographer, 2018{" "}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -288,8 +288,9 @@ const FamilyPage = () => {
                         width: "60%",
                         marginLeft: "2rem",
                         marginRight: "3rem",
-                        fontSize: "1.5rem",
+                        fontSize: "1.25rem",
                         fontFamily: "",
+                        marginTop: "1rem"
                       }}
                     >
                       Sheep are usually sheared once a year. Over the course of
@@ -325,8 +326,8 @@ const FamilyPage = () => {
                           color: "#fff",
                           fontSize: "1rem",
                           fontFamily: "",
-                          paddingTop: "5rem",
-                          paddingLeft: "15rem",
+                          paddingTop: "1rem",
+                          paddingLeft: "30rem",
                         }}
                       >
                         Andrea Contreras preparing cleaned wool for spinning.
@@ -339,7 +340,7 @@ const FamilyPage = () => {
                       alt="Developer"
                       style={{
                         width: "55%",
-                        marginTop: "10rem",
+                        marginTop: "4rem",
                       }}
                     />
                   </div>
@@ -369,7 +370,8 @@ const FamilyPage = () => {
                           style={{
                             marginLeft: "2rem",
                             marginRight: "5rem",
-                            fontSize: "1.5rem",
+                            fontSize: "1.3rem",
+                            marginTop: "2rem",
                             fontFamily: "",
                           }}
                         >
@@ -420,7 +422,7 @@ const FamilyPage = () => {
                             fontSize: "1.5rem",
                             fontFamily: "Lucida",
                             color: "#fff",
-                            paddingTop: "5rem",
+                            paddingTop: "2rem",
                             paddingLeft: "2rem",
                             marginRight: "3rem",
                           }}
@@ -450,7 +452,7 @@ const FamilyPage = () => {
                           style={{
                             marginRight: "5rem",
                             width: "100%",
-                            marginTop: "5rem",
+                            marginTop: "1.5rem",
                           }}
                         />
                       </div>
@@ -474,14 +476,13 @@ const FamilyPage = () => {
                 setContent(
                   <div className="content">
                     <div className="row1">
-                      {/* <h2>John Doe</h2> */}
                       <div>
                         <div
                           style={{
                             fontSize: "1.5rem",
                             width: "80%",
                             fontFamily: "",
-                            marginLeft: "2rem",
+                            marginLeft: "1.2rem",
                           }}
                         >
                           For me, natural dyeing is a spiritual process. We must
@@ -509,11 +510,22 @@ const FamilyPage = () => {
                           to Mother Earth, understanding her limitations and the
                           limitations of the materials.
                         </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div>
+                        <img
+                          src={Icon7}
+                          alt="Developer"
+                          style={{
+                            marginRight: "5rem",
+                            width: "100%",
+                            marginTop: "2rem",
+                          }}
+                        />
                         <div
                           style={{
                             fontSize: "1rem",
-                            marginLeft: "30rem",
-                            marginTop: "2rem",
                           }}
                         >
                           Undyed wool yarn<br></br>Alana Coghlan, photographer,
@@ -525,8 +537,7 @@ const FamilyPage = () => {
                             fontFamily: "Lucida",
                             color: "#fff",
                             width: "100%",
-                            paddingTop: "5rem",
-                            marginLeft: "2rem",
+                            paddingTop: "1rem",
                           }}
                         >
                           “When you work with nature respectfully, you do no
@@ -552,19 +563,6 @@ const FamilyPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div>
-                      <div>
-                        <img
-                          src={Icon7}
-                          alt="Developer"
-                          style={{
-                            marginRight: "5rem",
-                            width: "100%",
-                            marginTop: "5rem",
-                          }}
-                        />
-                      </div>
-                    </div>
                   </div>
                 );
                 openModal();
@@ -585,18 +583,13 @@ const FamilyPage = () => {
               onClick={() => {
                 setContent(
                   <div className="content1">
-                    {/* <img
-            src={Icon5}
-            alt="Developer"
-          /> */}
-                    {/* <div className="text"> */}
-                    <div className="row" style={{ margin: "1rem" }}>
+                    <div className="row">
                       <div className="column">
                         <p
                           style={{
                             fontFamily: "",
                             marginRight: "7rem",
-                            fontSize: "1.5rem",
+                            fontSize: "1.25rem",
                             marginLeft: "2rem",
                           }}
                         >
@@ -610,6 +603,42 @@ const FamilyPage = () => {
                           married, they had to figure it all out themselves.
                           <br />
                           <br />
+                        </p>
+                        <div
+                        style={{
+                          marginLeft: "2rem",
+                        }}
+                      >
+                        <img
+                          src={Icon5}
+                          alt="Porfirio's Parents"
+                          style={{ width: "70%"}}
+                        />
+                        </div>
+                        <p  className="column"
+                          style={{
+                            fontFamily: "",
+                            fontSize: "1rem",
+                            marginRight: "2rem",
+                            marginLeft: "1.5rem",
+                            width:"110%"
+                          }}
+                        >
+                          Porfirio’s parents, Amado Gutiérrez and Andrea
+                          Contreras.<br></br> Javier Lazo Gutiérrez,
+                          photographer, 2019
+                        </p>
+                      </div>
+                      <div className="column2">
+                        <p
+                          style={{
+                            fontFamily: "",
+                            marginRight: "7rem",
+                            fontSize: "1.25rem",
+                            marginLeft: "2rem",
+                            marginTop:".5rem"
+                          }}
+                        >
                           My parents have always worked collaboratively to
                           create each piece—from cleaning wool, spinning it,
                           collecting the plants for dyeing, dyeing the wool, to
@@ -619,48 +648,35 @@ const FamilyPage = () => {
                           This is how they raised eleven kids. They always say
                           that they are blessed that their humble work as
                           artisans enabled them to raise their kids.
+                          <br />
+                          <br />
                         </p>
-                        <p
+                        <div
+                        style={{
+                          marginLeft: "2rem",
+                        }}
+                      >
+                        <img
+                          src={Icon8}
+                          alt="Porfirio's Family"
+                          style={{ width: "70%" }}
+                        />
+                        </div>
+                        <p  className="column2"
                           style={{
                             fontFamily: "",
                             fontSize: "1rem",
                             marginRight: "2rem",
-                            marginLeft: "20rem",
-                            marginTop: "2rem",
+                            marginLeft: "2rem",
+                            marginTop:".6rem"
                           }}
                         >
-                          Porfirio’s parents, Amado Gutiérrez and Andrea
-                          Contreras.<br></br> Javier Lazo Gutiérrez,
-                          photographer, 2019
-                          <br></br>
-                          <br></br>
                           The Gutiérrez family <br></br>Javier Lazo Gutiérrez,
                           photographer 2015
                         </p>
                       </div>
-                      <div
-                        className="column2"
-                        style={{
-                          marginTop: "2rem",
-                          marginLeft: "0rem",
-                          marginBottom: "3rem",
-                        }}
-                      >
-                        <img
-                          src={Icon5}
-                          alt="Developer"
-                          style={{ width: "70%" }}
-                        />
                       </div>
                       <br></br>
-                      <div className="column2" style={{ marginLeft: "0rem" }}>
-                        <img
-                          src={Icon8}
-                          alt="Developer"
-                          style={{ width: "70%" }}
-                        />
-                      </div>
-                    </div>
                     <div className="row1" style={{ marginLeft: "0rem" }}></div>
 
                     <div className="quoteDiv">
@@ -704,7 +720,7 @@ const FamilyPage = () => {
               src={Icon3}
               alt=""
               height={"100%"}
-              width={"100%"}
+              width={"110%"}
               onClick={() => {
                 setContent(
                   <div className="content">
@@ -713,40 +729,15 @@ const FamilyPage = () => {
                       style={{
                         width: "60%",
                         marginLeft: "3rem",
-                        marginTop: "5rem",
+                        marginTop: "1rem",
                       }}
                     >
-                      {/* <h2>John Doe</h2> */}
-                      <div
-                        style={{
-                          fontFamily: "Lucida",
-                          fontSize: "1.5rem",
-                        }}
-                      >
-                        Preservation, education, and sustainability are all
-                        extremely important. They are my studio’s foundation for
-                        the future.
-                        <br />
-                        <br />
-                        <div>
-                          <p
-                            style={{
-                              paddingLeft: "25rem",
-                              fontFamily: "Lucida",
-                              fontSize: "1.5rem",
-                            }}
-                          >
-                            Porfirio Gutierrez
-                          </p>
-                          <br></br>
-                        </div>
-                      </div>
                       <div
                         style={{
                           fontFamily: "",
 
                           fontSize: "1.5rem",
-                          marginTop: "5rem",
+                          marginTop: "1rem",
                         }}
                       >
                         About nineteen years ago, I started my own studio
@@ -775,16 +766,41 @@ const FamilyPage = () => {
                         referred to as both Mexican mint marigold and Mexican
                         tarragon. Keith Recker, photographer, 2018
                       </div>
+                      <div
+                        style={{
+                          fontFamily: "Lucida",
+                          marginTop:"1.5rem"
+                        }}
+                      >
+                        Preservation, education, and sustainability are all
+                        extremely important. They are my studio’s foundation for
+                        the future.
+                        <br />
+                        <br />
+                        <div>
+                          <p
+                            style={{
+                              paddingLeft: "25rem",
+                              fontFamily: "Lucida",
+                              fontSize: "1.5rem",
+                            }}
+                          >
+                            Porfirio Gutierrez
+                          </p>
+                          <br></br>
+                        </div>
+                      </div>
                     </div>
                     <img
                       src={Icon3}
                       style={{
-                        height: "60%",
-                        width: "40%",
+                        height: "40%",
+                        width: "30%",
                         alignItems: "right",
-                        marginTop: "5rem",
+                        marginTop: "3rem",
+                        marginLeft: "8rem"
                       }}
-                      alt="Developer"
+                      alt="Porfirio Gutierrez"
                     />
                   </div>
                 );
@@ -810,11 +826,6 @@ const FamilyPage = () => {
               onClick={() => {
                 setContent(
                   <div className="content1">
-                    {/* <img
-            src={Icon5}
-            alt="Developer"
-          /> */}
-                    {/* <div className="text"> */}
                     <div className="row" style={{ margin: "1rem" }}>
                       <div className="column">
                         <p
@@ -933,11 +944,6 @@ const FamilyPage = () => {
               onClick={() => {
                 setContent(
                   <div className="content1">
-                    {/* <img
-            src={Icon5}
-            alt="Developer"
-          /> */}
-                    {/* <div className="text"> */}
                     <div className="row" style={{ margin: "2rem" }}>
                       <div className="column">
                         <div
