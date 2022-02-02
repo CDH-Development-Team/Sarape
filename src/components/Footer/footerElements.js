@@ -38,11 +38,12 @@ export const FooterLinkItems = styled.div`
   flex-directions: column;
   align-items: flex-start;
   margin-top: 5px;
-  margin-left: 35px;
+  margin-left: 30px;
   text-align: left;
-  //width: 120px;
+  width: 100px;
   box-sizing: border-box;
   color: #fff;
+  text-align: center;
 
   @media screen and (max-width: 420px) {
     margin: 0;

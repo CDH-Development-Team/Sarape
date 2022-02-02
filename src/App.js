@@ -18,6 +18,8 @@ import TextilesPage from './pages/historicalModals';
 import dyeing from './pages/dyeing';
 import about from './pages/about';
 import credits from './pages/credits';
+import youtube from './pages/youtube';
+import designYourSarape from './pages/designYourSarape';
 function App() {
   return (
     <Router >
@@ -37,6 +39,8 @@ function App() {
         <Route path = "/section7influence" component={SaltilloPage} exact />
         <Route path = "/section6Textiles" component={TextilesPage} exact />
         <Route path = "/dyeing" component={dyeing} exact />
+        <Route path = "/youtube" component={youtube} exact />
+        <Route path = "/designYourSarape" component={designYourSarape} exact />
       </Switch>
     </Router>
   );

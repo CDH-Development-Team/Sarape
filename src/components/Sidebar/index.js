@@ -49,9 +49,12 @@ const Sidebar = ({toggle, isOpen}) => {
                     </SidebarLink> 
                     <SidebarLink to="/tourism" onClick={toggle}>
                         Tourism
-                    </SidebarLink>      
-                    <SidebarLink to="/" onClick={toggle}>
-                        Design your Sarape
+                    </SidebarLink>    
+                    <SidebarLink to="/youtube" onClick={toggle}>
+                        Youtube
+                    </SidebarLink>   
+                    <SidebarLink to="/designYourSarape" onClick={toggle}>
+                        Design Your Sarape
                     </SidebarLink>                                          
                 </SidebarMenu>
             </SidebarWrapper>

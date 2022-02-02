@@ -44,6 +44,12 @@ const Footer = () => {
               <FooterLinkItems>
                 <FooterLink to="/tourism">Tourism</FooterLink>
               </FooterLinkItems>
+              <FooterLinkItems>
+                <FooterLink to="/youtube">Youtube</FooterLink>
+              </FooterLinkItems>
+              <FooterLinkItems>
+                <FooterLink to="/designYourSarape">Design Your Sarape</FooterLink>
+              </FooterLinkItems>
             </FooterLinksWrapper>
           </FooterLinksContainer>
         </FooterWrap>
