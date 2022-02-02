@@ -111,7 +111,7 @@ const FamilyPage = () => {
         <FamilyMosaicParent
           height={((width - (width % 17)) / 17) * 10}
           width={width - (width % 17)}
-          style={{ marginright: 0 }}
+          style={{ marginright:0, marginTop:"1.5rem" }}
         >
           <FamilyMosaic1 className="mosaic">
             <img
