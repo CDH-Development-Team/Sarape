@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-import History from '../components/History';
 import Unity, { UnityContext } from "react-unity-webgl";
 
 const unityContext = new UnityContext({
@@ -9,6 +8,7 @@ const unityContext = new UnityContext({
   dataUrl: "./unity/build/build.data.unityweb",
   frameworkUrl: "./unity/build/build.framework.js.unityweb",
   codeUrl: "./unity/build/build.wasm.unityweb",
+  webglContextAttributes: {preserveDrawingBuffer:true}
 });
 
 function DesignYourSarape() {
@@ -21,12 +21,15 @@ function DesignYourSarape() {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
-      <Unity unityContext={UnityContext} className={"game-canvas"}
+      <Unity unityContext={unityContext} className={"game-canvas"}
         style={{
           height: "100%",
-          width: 950,
-          border: "2px solid black",
-          background: "grey", }}/>
+          width: "70%",
+          border: "1px solid black",
+          display:"block",
+          marginTop:"3rem",
+          marginLeft:"auto",
+          marginRight:"auto"}}/>
     </>
     )
 }
