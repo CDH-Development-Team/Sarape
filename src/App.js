@@ -19,12 +19,12 @@ import dyeing from './pages/dyeing';
 import about from './pages/about';
 import credits from './pages/credits';
 import youtube from './pages/youtube';
-import designYourSarape from './pages/designYourSarape';
+import DesignYourSarape from './pages/designYourSarape';
 function App() {
   return (
     <Router >
       <Switch>
-        <Route path = "/" component={Home} exact />
+        <Route path = "/sarape" component={Home} exact />
         <Route path = "/intro" component={about} exact />
         <Route path = "/credits" component={credits} exact />
 	      <Route path = "/fragments" component={fragments} exact />
@@ -40,7 +40,7 @@ function App() {
         <Route path = "/section6Textiles" component={TextilesPage} exact />
         <Route path = "/dyeing" component={dyeing} exact />
         <Route path = "/youtube" component={youtube} exact />
-        <Route path = "/designYourSarape" component={designYourSarape} exact />
+        <Route path = "/designYourSarape" component={DesignYourSarape} exact />
       </Switch>
     </Router>
   );

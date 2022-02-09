@@ -1,26 +1,34 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-import InfoSection2 from "../components/InfoSection2";
-import {
-  homeObjOne,
-} from "../components/InfoSection2/Data";
-import Footer from "../components/Footer";
-const About = () => {
+import History from '../components/History';
+import Unity, { UnityContext } from "react-unity-webgl";
+
+const unityContext = new UnityContext({
+  loaderUrl: "./unity/build/build.loader.js",
+  dataUrl: "./unity/build/build.data.unityweb",
+  frameworkUrl: "./unity/build/build.framework.js.unityweb",
+  codeUrl: "./unity/build/build.wasm.unityweb",
+});
+
+function DesignYourSarape() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
-
+    const toggle = () => {
+        setIsOpen(!isOpen);
+    };
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
-      <InfoSection2 {...homeObjOne} />
-      <Footer />
+      <Sidebar isOpen={isOpen} toggle={toggle}/>
+      <Navbar toggle={toggle}/>
+      <Unity unityContext={UnityContext} className={"game-canvas"}
+        style={{
+          height: "100%",
+          width: 950,
+          border: "2px solid black",
+          background: "grey", }}/>
     </>
-  );
-};
+    )
+}
 
-export default About;
+export default DesignYourSarape;

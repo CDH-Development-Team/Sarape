@@ -19,7 +19,7 @@ const Navbar = ({ toggle }) => {
                         </a>
                         </div>
                     <NavMenu >
-                        <NavLinks to="/" style={{display:'flex', justifyContent: 'center', overflow: 'hidden'}}>
+                        <NavLinks to="/sarape" style={{display:'flex', justifyContent: 'center', overflow: 'hidden'}}>
                             <NavDiv style={{textAlign: 'center'}}>
                                 <NavP>WRAPPED IN COLOR</NavP>
                                 <NavP2 style={{fontSize:"1.41rem"}}>LEGACIES OF THE MEXICAN SARAPE</NavP2>
