@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-import InfoSection2 from "../components/InfoSection2";
+import Thumbnail from "../components/Media";
 import {
-  homeObjOne,
-} from "../components/InfoSection2/Data";
+  homeObjOne, homeObjTwo, homeObjThree
+} from "../components/Media/Data";
 import Footer from "../components/Footer";
-const About = () => {
+const Media = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -17,10 +17,11 @@ const About = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
-      <InfoSection2 {...homeObjOne} />
-      <Footer />
+      <Thumbnail {...homeObjOne} />
+      <Thumbnail {...homeObjTwo} />
+      <Thumbnail {...homeObjThree} />
     </>
   );
 };
 
-export default About;
+export default Media;

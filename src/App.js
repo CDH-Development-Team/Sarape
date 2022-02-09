@@ -18,7 +18,7 @@ import TextilesPage from './pages/historicalModals';
 import dyeing from './pages/dyeing';
 import about from './pages/about';
 import credits from './pages/credits';
-import youtube from './pages/youtube';
+import media from './pages/media';
 import DesignYourSarape from './pages/designYourSarape';
 function App() {
   return (
@@ -39,7 +39,7 @@ function App() {
         <Route path = "/section7influence" component={SaltilloPage} exact />
         <Route path = "/section6Textiles" component={TextilesPage} exact />
         <Route path = "/dyeing" component={dyeing} exact />
-        <Route path = "/youtube" component={youtube} exact />
+        <Route path = "/media" component={media} exact />
         <Route path = "/designYourSarape" component={DesignYourSarape} exact />
       </Switch>
     </Router>

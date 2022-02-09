@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import Unity, { UnityContext } from "react-unity-webgl";
+import '../myriad/style.css';
+import '../App.css';
+import '../App.scss';
 
 const unityContext = new UnityContext({
-  loaderUrl: "./unity/build/build.loader.js",
-  dataUrl: "./unity/build/build.data.unityweb",
-  frameworkUrl: "./unity/build/build.framework.js.unityweb",
-  codeUrl: "./unity/build/build.wasm.unityweb",
+  loaderUrl: "unity/build/build.loader.js",
+  dataUrl: "unity/build/build.data.unityweb",
+  frameworkUrl: "unity/build/build.framework.js.unityweb",
+  codeUrl: "unity/build/build.wasm.unityweb",
   webglContextAttributes: {preserveDrawingBuffer:true}
 });
 
@@ -21,13 +24,12 @@ function DesignYourSarape() {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
-      <Unity unityContext={unityContext} className={"game-canvas"}
+      <Unity unityContext={unityContext}
         style={{
-          height: "100%",
-          width: "70%",
+          width: "90%",
           border: "1px solid black",
           display:"block",
-          marginTop:"3rem",
+          marginTop:".1rem",
           marginLeft:"auto",
           marginRight:"auto"}}/>
     </>
