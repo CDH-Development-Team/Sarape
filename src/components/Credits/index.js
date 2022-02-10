@@ -1,11 +1,11 @@
 import React from 'react';
 import img from '../../images/credits.png'
-import swlogo from '../../images/SW logo.jpg'
-import thrums from '../../images/thrumslogo.png'
+import swlogo from '../../images/SWTransparent.png'
+import thrums from '../../images/thrumsTransparent.png'
 import cdhlogo from '../../images/CDH_logo_Primary.png'
 import higgins from '../../images/higgins.png'
-import med from '../../images/med.png'
-import asmlogo from '../../images/asmlogo.png'
+import med from '../../images/medTransparent.png'
+import asmlogo from '../../images/asmTransparent.png'
 const Credits = () =>{
     return(
         <div style={{backgroundColor:'#4a0033', color:'white'}}>
@@ -34,7 +34,7 @@ const Credits = () =>{
         <div style={{width: '100%'}} className='credsCDH'>
         <h4>ONLINE EXHIBIT CAME TOGETHER THROUGH THE WORK OF</h4><br/>
         <div>
-        Lisa Falk, project manager<br/>Andie Zelnio, project designer<br/>Bryan Carter, CDH director <br/> Tehan Ketema, photographer <br />Samantha Mathis, developer<br/>Elijah Acuna, developer<br/>Ali Hamza Noor, developer<br/>Davlat Uralov, developer
+        Lisa Falk, project manager<br/>Andie Zelnio, project designer<br/>Bryan Carter, CDH director <br/> Tehan Ketema, photographer <br />Samantha Mathis, developer<br/>Elijah Acuna, developer<br/>Ali Hamza Noor, developer<br/>Davlat Uralov, developer<br/>Gabrielle Lampner, developer<br/>Jennifer Abarca, graphic designer
         </div>
         </div>
 
