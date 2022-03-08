@@ -7,18 +7,17 @@ import '../App.css';
 import '../App.scss';
 
 const unityContext = new UnityContext({
-  loaderUrl: "unity/build/build.loader.js",
-  dataUrl: "unity/build/build.data.unityweb",
-  frameworkUrl: "unity/build/build.framework.js.unityweb",
-  codeUrl: "unity/build/build.wasm.unityweb",
-  webglContextAttributes: {preserveDrawingBuffer:true}
+  loaderUrl: "/public/Build/build.loader.js",
+  dataUrl: "/public/Build/build.data",
+  frameworkUrl: "/public/Build/build.framework.js",
+  codeUrl: "/public/Build/build.wasm",
 });
 
-function DesignYourSarape() {
+const DesignYourSarape = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-    const toggle = () => {
-        setIsOpen(!isOpen);
+  const toggle = () => {
+      setIsOpen(!isOpen);
     };
   return (
     <>
