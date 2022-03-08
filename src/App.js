@@ -1,7 +1,7 @@
 import './myriad/style.css';
 import './App.css';
 import './App.scss';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'; 
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'; 
 import Home from "./pages";
 
 import fragments from "./pages/fragments.js";
@@ -23,7 +23,7 @@ import DesignYourSarape from './pages/designYourSarape';
 function App() {
   return (
     <Router >
-      <Switch>
+      <Routes>
         <Route path = "/sarape" component={Home} exact />
         <Route path = "/intro" component={about} exact />
         <Route path = "/credits" component={credits} exact />
@@ -41,7 +41,7 @@ function App() {
         <Route path = "/dyeing" component={dyeing} exact />
         <Route path = "/media" component={media} exact />
         <Route path = "/designYourSarape" component={DesignYourSarape} exact />
-      </Switch>
+      </Routes>
     </Router>
   );
 }

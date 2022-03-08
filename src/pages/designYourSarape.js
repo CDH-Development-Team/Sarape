@@ -23,14 +23,7 @@ const DesignYourSarape = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
-      <Unity unityContext={unityContext}
-        style={{
-          width: "90%",
-          border: "1px solid black",
-          display:"block",
-          marginTop:".1rem",
-          marginLeft:"auto",
-          marginRight:"auto"}}/>
+      
     </>
     )
 }
