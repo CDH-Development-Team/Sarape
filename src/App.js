@@ -24,23 +24,23 @@ function App() {
   return (
     <Router >
       <Routes>
-        <Route path = "/sarape" component={Home} exact />
+        <Route path = "/sarape" component={<Home/>} exact />
         <Route path = "/intro" component={about} exact />
         <Route path = "/credits" component={credits} exact />
 	      <Route path = "/fragments" component={fragments} exact />
-        <Route path = "/porfirio" component={SigninPage} exact />
-        <Route path = "/tourism" component={Tourism} exact />
-        <Route path = "/geography" component={GeographyPage} exact />
-        <Route path = "/history" component={HistoryPage} exact />
-        <Route path = "/section7" component={Section7} exact />
-        <Route path = "/section5" component={Section5} exact />
-        <Route path = "/historicalTextiles" component={Section6} exact />
-        <Route path = "/section5Family" component={FamilyPage} exact />
-        <Route path = "/section7influence" component={SaltilloPage} exact />
-        <Route path = "/section6Textiles" component={TextilesPage} exact />
+        <Route path = "/porfirio" component={<SigninPage/>} exact />
+        <Route path = "/tourism" component={<Tourism/>} exact />
+        <Route path = "/geography" component={<GeographyPage/>} exact />
+        <Route path = "/history" component={<HistoryPage/>} exact />
+        <Route path = "/section7" component={<Section7/>} exact />
+        <Route path = "/section5" component={<Section5/>} exact />
+        <Route path = "/historicalTextiles" component={<Section6/>} exact />
+        <Route path = "/section5Family" component={<FamilyPage/>} exact />
+        <Route path = "/section7influence" component={<SaltilloPage/>} exact />
+        <Route path = "/section6Textiles" component={<TextilesPage/>} exact />
         <Route path = "/dyeing" component={dyeing} exact />
         <Route path = "/media" component={media} exact />
-        <Route path = "/designYourSarape" component={DesignYourSarape} exact />
+        <Route path = "/designYourSarape" component={<DesignYourSarape/>} exact />
       </Routes>
     </Router>
   );
