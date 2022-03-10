@@ -20,7 +20,7 @@ const Sidebar = ({toggle, isOpen}) => {
                 To change your language click the google translate icon on the above search bar
                 </translateAlert>
                 <SidebarMenu>
-                    <SidebarLink to="/" onClick={toggle}>
+                    <SidebarLink to="/sarape" onClick={toggle}>
                         Home
                     </SidebarLink>
                     <SidebarLink to="/intro" onClick={toggle}>
