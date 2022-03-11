@@ -52,10 +52,7 @@ const Sidebar = ({toggle, isOpen}) => {
                     </SidebarLink>    
                     <SidebarLink to="/media" onClick={toggle}>
                         Media
-                    </SidebarLink>   
-                    <SidebarLink to="/designYourSarape" onClick={toggle}>
-                        Design Your Sarape
-                    </SidebarLink>                                          
+                    </SidebarLink>                                    
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>

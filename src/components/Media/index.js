@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import ModalVideo from 'react-modal-video'
 import {
   InfoContainer,
   InfoRow,
@@ -29,7 +28,7 @@ const InfoSection = ({
   alt,
   link
 }) => {
-  const [isOpen, setOpen] = useState(false)
+  const [setOpen] = useState(false)
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -39,7 +38,7 @@ const InfoSection = ({
             <Heading lightText={lightText} style={{ fontSize: "2.5rem", position: "relative", overflow:"hidden"}}>
               {headline}
               <React.Fragment>
-      <a href={link}>
+      <a href={link} target="_blank" rel="noreferrer">
 			<button className="btn-primary" style={{padding:".1rem", marginLeft:"1rem", position: "absolute", height:"100%", overflow:'hidden', fontSize:'1.1rem'}} onClick={()=> setOpen(true)}>Open In New Tab</button>
       </a>
     </React.Fragment>

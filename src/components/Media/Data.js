@@ -1,6 +1,7 @@
 import img from "../../images/youtube.png";
 import img2 from "../../images/porfirio.jpg";
 import img3 from "../../images/weaving.jpg";
+import img4 from "../../images/game_thumbnail.png";
 
 
 export const homeObjOne = {
@@ -52,4 +53,21 @@ export const homeObjThree = {
   primary: true,
   darkText: false,
   link: "https://www.bbc.com/travel/article/20210823-the-man-preserving-endangered-colours",
+};
+
+export const homeObjFour = {
+  id: "about",
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "",
+  headline: "Design Your Own Saltillo Sarape (Game)",
+  buttonLabel: "",
+  imgStart: false,
+  img: img4,
+  alt: "Sarape Designing Game",
+  dark: true,
+  primary: true,
+  darkText: false,
+  link: "https://eliacuna.itch.io/design-your-own-sarape",
 };

@@ -3,9 +3,8 @@ import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import Thumbnail from "../components/Media";
 import {
-  homeObjOne, homeObjTwo, homeObjThree
+  homeObjOne, homeObjTwo, homeObjThree, homeObjFour
 } from "../components/Media/Data";
-import Footer from "../components/Footer";
 const Media = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -20,6 +19,7 @@ const Media = () => {
       <Thumbnail {...homeObjOne} />
       <Thumbnail {...homeObjTwo} />
       <Thumbnail {...homeObjThree} />
+      <Thumbnail {...homeObjFour} />
     </>
   );
 };
