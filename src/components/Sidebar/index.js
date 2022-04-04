@@ -51,7 +51,7 @@ const Sidebar = ({toggle, isOpen}) => {
                         Tourism
                     </SidebarLink>    
                     <SidebarLink to="/media" onClick={toggle}>
-                        Media
+                        Films/Games/More
                     </SidebarLink>                                    
                 </SidebarMenu>
             </SidebarWrapper>

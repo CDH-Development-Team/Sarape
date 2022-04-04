@@ -3,6 +3,8 @@ import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import Geography from "../components/Geography";
 import History from "../components/History";
+import Footer from "../components/Footer";
+
 const GeographyPage = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,6 +19,7 @@ const GeographyPage = () => {
 
       <Geography />
       <History />
+      <Footer />
     </>
   );
 };

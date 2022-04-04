@@ -45,10 +45,7 @@ const Footer = () => {
                 <FooterLink to="/tourism">Tourism</FooterLink>
               </FooterLinkItems>
               <FooterLinkItems>
-                <FooterLink to="/youtube">Youtube</FooterLink>
-              </FooterLinkItems>
-              <FooterLinkItems>
-                <FooterLink to="/designYourSarape">Design Your Sarape</FooterLink>
+                <FooterLink to="/media">Media</FooterLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
           </FooterLinksContainer>

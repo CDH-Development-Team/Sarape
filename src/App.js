@@ -19,10 +19,12 @@ import dyeing from './pages/dyeing';
 import about from './pages/about';
 import credits from './pages/credits';
 import media from './pages/media';
-import DesignYourSarape from './pages/designYourSarape';
+import ScrollButton from './components/ScrollButton'
+
 function App() {
   return (
     <Router >
+      <ScrollButton />
       <Switch>
         <Route path = "/sarape" component={Home} exact />
         <Route path = "/intro" component={about} exact />
@@ -40,7 +42,6 @@ function App() {
         <Route path = "/section6Textiles" component={TextilesPage} exact />
         <Route path = "/dyeing" component={dyeing} exact />
         <Route path = "/media" component={media} exact />
-        <Route path = "/designYourSarape" component={DesignYourSarape} exact />
       </Switch>
     </Router>
   );

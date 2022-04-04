@@ -1,13 +1,13 @@
 .btn {
     font-family: "Ubuntu", sans-serif;
-    position: relative;
+    position: fixed;
     font-weight: 400;
     font-size: 1.3rem;
     line-height: 2;
     height: 50px;
     transition: all 200ms linear;
     border-radius: 4px;
-    width: 240px;
+    width: 100px;
     letter-spacing: 1px;
     display: inline-flex;
     align-items: center;
@@ -16,17 +16,21 @@
     align-self: center;
     border: none;
     cursor: pointer;
-    background-color: var(--primaryColor);
+    background-color: black;
     color: var(--secondaryColor);
     fill: var(--secondaryColor);
     box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
     outline: 0;
     text-transform: capitalize;
+    top: 4%;
+    opacity: 0.75;
+    right: 2%;
   }
   
   .btn:hover {
     background-color: var(--secondaryColor);
-    color: var(--primaryColor);
-    fill: var(--primaryColor);
+    color: black;
+    fill: gray;
+    opacity: 0.95;
   }
   

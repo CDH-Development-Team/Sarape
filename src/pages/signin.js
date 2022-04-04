@@ -13,6 +13,7 @@ import {
 } from "../components/InfoSection/Data";
 import Services from "../components/Services";
 import HeroSection1 from "../components/HeroSection1";
+import Footer from "../components/Footer";
 
 const SigninPage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -103,6 +104,7 @@ const [vidOpen, setVidOpen] = useState(false);
       </div>
       <Services />
       <InfoSection {...homeObjFour} />
+      <Footer />
     </>
   );
 };

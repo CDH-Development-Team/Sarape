@@ -57,6 +57,7 @@ import {
   DyeMosaic19,
   DyeMosaic20,
 } from "../components/Geography/geographyElements.js";
+import Footer from "../components/Footer";
 
 const customStyles = {
   content: {
@@ -997,6 +998,7 @@ const DyeingPage = () => {
         </div>
 
       </GeographyContainer>
+      <Footer />
     </React.Fragment>
   );
   // const [isOpen, setIsOpen] = useState(false);

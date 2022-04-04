@@ -34,7 +34,7 @@ const Credits = () =>{
         <div style={{width: '100%'}} className='credsCDH'>
         <h4>ONLINE EXHIBIT CAME TOGETHER THROUGH THE WORK OF</h4><br/>
         <div>
-        Lisa Falk, project manager<br/>Andie Zelnio, project designer<br/>Bryan Carter, CDH director <br/> Tehan Ketema, photographer <br />Samantha Mathis, developer<br/>Elijah Acuna, developer<br/>Ali Hamza Noor, developer<br/>Davlat Uralov, developer<br/>Gabrielle Lampner, developer<br/>Jennifer Abarca, graphic designer
+        Lisa Falk, project manager<br/>Andie Zelnio, project designer<br/>Bryan Carter, CDH director <br />Samantha Mathis, developer<br/>Elijah Acuna, developer<br/>Ali Hamza Noor, developer<br/>Davlat Uralov, developer<br/>Gabrielle Lampner, developer<br/> Parker Jones, developer<br/> Nate Teku, developer<br/>Tehan Ketema, photographer <br/>Myles Gordon, videographer<br/>Jennifer Abarca, graphic designer
         </div>
         </div>
 

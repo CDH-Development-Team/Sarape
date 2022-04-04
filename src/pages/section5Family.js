@@ -55,6 +55,7 @@ import {
 
 import "../components/Geography/geography.css";
 import useWindowDimensions from "../components/Geography/dimensions";
+import Footer from "../components/Footer";
 
 const customStyles = {
   content: {
@@ -1072,7 +1073,9 @@ const FamilyPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </React.Fragment>
+
   );
   // const [isOpen, setIsOpen] = useState(false);
 };
