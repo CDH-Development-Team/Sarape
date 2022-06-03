@@ -320,7 +320,7 @@ const FamilyPage = () => {
                       off. The wet wads of newly washed wool are laid out to dry
                       on large rocks. After the excess water has seeped out, the
                       wool is placed into the baskets and taken home. In the
-                      courtyard, we place the wool on petate (woven palm fiber)
+                      courtyard, we place the wool on <i>petate</i> (woven palm fiber)
                       mats to dry completely.
                       <p
                         style={{
@@ -377,16 +377,16 @@ const FamilyPage = () => {
                             marginRight: "3rem",
                           }}
                         >
-                          “The plants and trees are alive, just like us; we
+                          The plants and trees are alive, just like us; we
                           cannot hurt them nor cut them for any reason. We are
-                          supposed to only take what we need from nature.”
+                          supposed to only take what we need from nature.
                           <br></br>
                           <br></br>
                           <p
                             style={{
-                              paddingLeft: "32rem",
                               fontFamily: "Lucida",
                               fontSize: "1.5rem",
+                              marginLeft:"25rem"
                             }}
                           >
                             Amado Gutiérrez
@@ -433,16 +433,6 @@ const FamilyPage = () => {
                           This will be the way to document and preserve our
                           cultural heritage for future generations.{" "}
                         </div>
-                        <div
-                          style={{
-                            fontSize: "1rem",
-                            marginLeft: "38rem",
-                            marginTop: "2rem",
-                          }}
-                        >
-                          Baskets of dye materials <br></br>Joe Coca,
-                          photographer, 2019
-                        </div>
                       </div>
                     </div>
                     <div>
@@ -456,6 +446,15 @@ const FamilyPage = () => {
                             marginTop: "1.5rem",
                           }}
                         />
+                         <div
+                          style={{
+                            fontSize: "1rem",
+                            marginTop: ".5rem",
+                          }}
+                        >
+                          Baskets of dye materials <br></br>Joe Coca,
+                          photographer, 2019
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -541,7 +540,7 @@ const FamilyPage = () => {
                             paddingTop: "1rem",
                           }}
                         >
-                          “When you work with nature respectfully, you do no
+                          When you work with nature respectfully, you do no
                           harm. You do not need damaging chemicals. You do not
                           need to harvest in ways that destroy. You do not hurt
                           the environment and the world. I think this is what
@@ -550,13 +549,13 @@ const FamilyPage = () => {
                           people, so that they can earn a living and keep our
                           world healthy. I think I put those thoughts into all
                           the colors we make, and into all the parts of my
-                          life.”<br></br>
+                          life.<br></br>
                           <br></br>
                           <p
                             style={{
-                              marginLeft: "28rem",
                               fontFamily: "Lucida",
                               fontSize: "1.5rem",
+                              marginLeft:"25rem"
                             }}
                           >
                             Juana Gutiérrez Cortreras
@@ -585,95 +584,27 @@ const FamilyPage = () => {
                 setContent(
                   <div className="content1">
                     <div className="row">
-                      <div className="column">
-                        <p
-                          style={{
-                            fontFamily: "",
-                            marginRight: "7rem",
-                            fontSize: "1.25rem",
-                            marginLeft: "2rem",
-                          }}
-                        >
-                          My parents are the third generation of dyers and
-                          weavers in our family, which makes my siblings and me
-                          the fourth generation of weavers. As newlyweds, the
-                          first things your parents usually give you are a loom,
-                          a spinning wheel, and enough materials to start a
-                          studio, so you can feed your family. However, since my
-                          grandparents passed away before my parents got
-                          married, they had to figure it all out themselves.
-                          <br />
-                          <br />
-                        </p>
-                        <div
-                        style={{
-                          marginLeft: "2rem",
-                        }}
-                      >
-                        <img
-                          src={Icon5}
-                          alt="Porfirio's Parents"
-                          style={{ width: "70%"}}
-                        />
-                        </div>
-                        <p  className="column"
-                          style={{
-                            fontFamily: "",
-                            fontSize: "1rem",
-                            marginRight: "2rem",
-                            marginLeft: "1.5rem",
-                            width:"110%"
-                          }}
-                        >
-                          Porfirio’s parents, Amado Gutiérrez and Andrea
-                          Contreras.<br></br> Javier Lazo Gutiérrez,
-                          photographer, 2019
-                        </p>
-                      </div>
-                      <div className="column2">
-                        <p
-                          style={{
-                            fontFamily: "",
-                            marginRight: "7rem",
-                            fontSize: "1.25rem",
-                            marginLeft: "2rem",
-                            marginTop:".5rem"
-                          }}
-                        >
-                          My parents have always worked collaboratively to
-                          create each piece—from cleaning wool, spinning it,
-                          collecting the plants for dyeing, dyeing the wool, to
-                          weaving. To execute a piece, my mom does the carding
-                          and spinning, and my dad weaves. They loved working at
-                          night because night brings calmness and concentration.
-                          This is how they raised eleven kids. They always say
-                          that they are blessed that their humble work as
-                          artisans enabled them to raise their kids.
-                          <br />
-                          <br />
-                        </p>
-                        <div
-                        style={{
-                          marginLeft: "2rem",
-                        }}
-                      >
-                        <img
-                          src={Icon8}
-                          alt="Porfirio's Family"
-                          style={{ width: "70%" }}
-                        />
+                      <div className="column2" style={{ overflow: 'visible'}}>
+                        <div style={{ overflow: 'visible', marginLeft:"34%", width:"100%" }}>
+                          <img
+                            src={Icon5}
+                            alt="Porfirio's Parents"
+                            style={{ width: "135%", overflow: 'visible' }}
+                          />
                         </div>
                         <p  className="column2"
                           style={{
                             fontFamily: "",
                             fontSize: "1rem",
                             marginRight: "2rem",
-                            marginLeft: "2rem",
-                            marginTop:".6rem"
+                            marginLeft: "34%",
+                            marginTop:".5rem",
+                            width:"150%"
                           }}
                         >
-                          The Gutiérrez family <br></br>Javier Lazo Gutiérrez,
-                          photographer 2015
+                          Porfirio’s parents, Amado Gutiérrez and Andrea
+                          Contreras.<br></br> Javier Lazo Gutiérrez,
+                          photographer, 2019
                         </p>
                       </div>
                       </div>
@@ -710,7 +641,7 @@ const FamilyPage = () => {
                       <div
                         style={{
                           fontFamily: "Lucida",
-                          marginTop:"1.5rem"
+                          marginTop:".5rem"
                         }}
                       >
                         Preservation, education, and sustainability are all
@@ -721,9 +652,11 @@ const FamilyPage = () => {
                         <div>
                           <p
                             style={{
-                              paddingLeft: "25rem",
                               fontFamily: "Lucida",
                               fontSize: "1.5rem",
+                              width: "100%",
+                              overflow: "visible",
+                              marginLeft: "20rem"
                             }}
                           >
                             Porfirio Gutierrez
@@ -756,12 +689,12 @@ const FamilyPage = () => {
                       <div
                         style={{
                           fontFamily: "",
-                          marginLeft: "20rem",
                           fontSize: "1rem",
+                          marginleft: "1rem",
                         }}
                       >
-                        Porfirio Gutiérrez with a full of pericón to use for
-                        making a yellow dye. Pericón (Tagetes lucida) is
+                        Porfirio Gutiérrez with a full of <i>pericón</i> to use for
+                        making a yellow dye. <i>Pericón (Tagetes lucida)</i> is
                         referred to as both Mexican mint marigold and Mexican
                         tarragon. Keith Recker, photographer, 2018
                       </div>
@@ -770,10 +703,10 @@ const FamilyPage = () => {
                       src={Icon3}
                       style={{
                         height: "40%",
-                        width: "30%",
+                        width: "35%",
                         alignItems: "right",
                         marginTop: "3rem",
-                        marginLeft: "8rem"
+                        marginLeft: "6rem"
                       }}
                       alt="Porfirio Gutierrez"
                     />
@@ -800,93 +733,25 @@ const FamilyPage = () => {
               width={"100%"}
               onClick={() => {
                 setContent(
-                  <div className="content1">
+                  <div className="content1" style={{overflow:"visible"}}>
                     <div className="row">
-                      <div className="column">
-                        <p
-                          style={{
-                            fontFamily: "",
-                            marginRight: "7rem",
-                            fontSize: "1.25rem",
-                            marginLeft: "2rem",
-                          }}
-                        >
-                          My parents are the third generation of dyers and
-                          weavers in our family, which makes my siblings and me
-                          the fourth generation of weavers. As newlyweds, the
-                          first things your parents usually give you are a loom,
-                          a spinning wheel, and enough materials to start a
-                          studio, so you can feed your family. However, since my
-                          grandparents passed away before my parents got
-                          married, they had to figure it all out themselves.
-                          <br />
-                          <br />
-                        </p>
-                        <div
-                        style={{
-                          marginLeft: "2rem",
-                        }}
-                      >
-                        <img
-                          src={Icon5}
-                          alt="Porfirio's Parents"
-                          style={{ width: "70%"}}
-                        />
-                        </div>
-                        <p  className="column"
-                          style={{
-                            fontFamily: "",
-                            fontSize: "1rem",
-                            marginRight: "2rem",
-                            marginLeft: "1.5rem",
-                            width:"110%"
-                          }}
-                        >
-                          Porfirio’s parents, Amado Gutiérrez and Andrea
-                          Contreras.<br></br> Javier Lazo Gutiérrez,
-                          photographer, 2019
-                        </p>
-                      </div>
-                      <div className="column2">
-                        <p
-                          style={{
-                            fontFamily: "",
-                            marginRight: "7rem",
-                            fontSize: "1.25rem",
-                            marginLeft: "2rem",
-                            marginTop:".5rem"
-                          }}
-                        >
-                          My parents have always worked collaboratively to
-                          create each piece—from cleaning wool, spinning it,
-                          collecting the plants for dyeing, dyeing the wool, to
-                          weaving. To execute a piece, my mom does the carding
-                          and spinning, and my dad weaves. They loved working at
-                          night because night brings calmness and concentration.
-                          This is how they raised eleven kids. They always say
-                          that they are blessed that their humble work as
-                          artisans enabled them to raise their kids.
-                          <br />
-                          <br />
-                        </p>
-                        <div
-                        style={{
-                          marginLeft: "2rem",
-                        }}
-                      >
-                        <img
-                          src={Icon8}
-                          alt="Porfirio's Family"
-                          style={{ width: "70%" }}
-                        />
+                        
+                    <div className="column2" style={{ overflow: 'visible'}}>
+                        <div style={{ overflow: 'visible', marginLeft:"37%", width:"100%" }}>
+                          <img
+                            src={Icon8}
+                            alt="Porfirio's Parents"
+                            style={{ width: "135%", overflow: 'visible', marginTop: "2rem" }}
+                          />
                         </div>
                         <p  className="column2"
                           style={{
                             fontFamily: "",
                             fontSize: "1rem",
                             marginRight: "2rem",
-                            marginLeft: "2rem",
-                            marginTop:".6rem"
+                            marginLeft: "37%",
+                            marginTop:".5rem",
+                            width:"150%"
                           }}
                         >
                           The Gutiérrez family <br></br>Javier Lazo Gutiérrez,

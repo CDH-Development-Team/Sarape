@@ -155,7 +155,7 @@ const DyeingPage = () => {
                           style={{
                             marginLeft: "25rem",
                             marginTop: "5rem",
-                            fontSize: "1.5rem",
+                            fontSize: "1rem",
                             fontFamily: "",
                           }}
                         >
@@ -196,8 +196,8 @@ const DyeingPage = () => {
                             fontFamily: "Lucida",
                           }}
                         >
-                          “The dye plants that come from the earth are the soul
-                          of my artwork.” <br></br>
+                          The dye plants that come from the earth are the soul
+                          of my artwork.<br></br>
                           <p
                             style={{
                               fontFamily: "Lucida",
@@ -211,8 +211,8 @@ const DyeingPage = () => {
                         <div
                           style={{
                             marginLeft: "28rem",
-                            marginTop: "7rem",
-                            fontSize: "1.5rem",
+                            marginTop: "11rem",
+                            fontSize: "1rem",
                             fontFamily: "",
                           }}
                         >
@@ -307,7 +307,7 @@ const DyeingPage = () => {
                           style={{
                             fontFamily: "Lucida",
                             fontSize: "1.5rem",
-                            paddingLeft: "15rem",
+                            paddingLeft: "22rem",
                             marginTop: "2rem",
                           }}
                         >
@@ -316,9 +316,10 @@ const DyeingPage = () => {
                         <div
                           style={{
                             marginLeft: "22rem",
-                            marginTop: "10rem",
-                            fontSize: "1.5rem",
+                            marginTop: "16rem",
+                            fontSize: "1rem",
                             fontFamily: "",
+                            width:"100%"
                           }}
                         >
                           Porfirio Gutiérrez with dyed skeins of yarn.<br></br>{" "}
@@ -542,10 +543,12 @@ const DyeingPage = () => {
                         </div>
                         <div
                           style={{
-                            marginLeft: "15rem",
+                            marginLeft: "10rem",
                             marginTop: "2rem",
-                            fontSize: "1.5rem",
+                            fontSize: "1rem",
                             fontFamily: "",
+                            width: "100%",
+                            overflow: "visible"
                           }}
                         >
                           Indigenous man using a deer’s tail to scrape cochineal
@@ -762,16 +765,16 @@ const DyeingPage = () => {
                           fontFamily: "Lucida",
                           }}
                           >
-                            “There is no true soul in a commercially produced
+                            There is no true soul in a commercially produced
                             piece. It becomes a product. The weavers who adopted
                             these new ways of producing textiles lost touch with
                             our tradition. They are not honoring our ancestors
                             through their techniques and methods. It’s about the
-                            way the whole piece is being created.” <br></br>
+                            way the whole piece is being created.<br></br>
                             <br></br>{" "}
                             <p
                               style={{
-                                paddingLeft: "18rem",
+                                marginLeft: "20rem",
                                 fontSize: "1.5rem",
                                 fontFamily: "Lucida",
                               }}
@@ -1021,7 +1024,7 @@ const DyeingPage = () => {
           <br/>
           <br/>
           
-          <img src={vocab} alt="" style={{width:'100%'}}></img>
+          <img src={vocab} alt="" style={{width:'75%', marginLeft:'10rem'}}></img>
         </div>
 
       </GeographyContainer>
