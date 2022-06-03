@@ -290,7 +290,7 @@ const Services = () => {
         </ServicesCard>
       </ServicesWrapper>
       <ServicesH1
-        style={{ marginTop: "30px", marginLeft: "-61rem", textAlign: "left" }}
+        style={{ marginTop: "30px", marginLeft: "-54.5rem", textAlign: "left" }}
       >
         FRAGMENT SERIES BY PORFIRIO GUTIÉRREZ
       </ServicesH1>
