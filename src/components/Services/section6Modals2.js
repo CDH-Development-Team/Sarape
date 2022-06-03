@@ -149,7 +149,7 @@ const Services = () => {
         </Card>
       </ServicesWrapper6>
       <br></br>
-      <ServicesH1 style={{ fontSize: "2.5rem" }}>
+      <ServicesH1 style={{ fontSize: "4rem", marginLeft: "-50rem", marginTop:"3rem", marginBottom:"0rem", overflow: "visible" }}>
         Historical Textiles 1750-1980
       </ServicesH1>
 
@@ -158,10 +158,10 @@ const Services = () => {
         <InfoWrapper>
           <InfoRow imgStart={sixObj.imgStart}>
             <Column1>
-              <Heading style={{position: "relative", overflow: "hidden"}} lightText={sixObj.lightText}>{sixObj.headline}
+              <Heading style={{position: "relative", overflow: "visible", marginTop:"-.5rem"}} lightText={sixObj.lightText}>{sixObj.headline}
               </Heading>
               <React.Fragment>
-			<ModalVideo channel='youtube' autoplay isOpen={vidOpen} videoId="-5AkIHdKZz4" onClose={() => setVidOpen(false)} />
+			<ModalVideo channel='youtube' autoplay isOpen={vidOpen} videoId="6ZHsiC7bLMI" onClose={() => setVidOpen(false)} />
 
 			<button className="btn-primary" style={{height:"2rem", fontSize:"1.2rem"}} onClick={()=> setVidOpen(true)}>Listen to the Curator</button>
 		</React.Fragment>
@@ -202,9 +202,8 @@ const Services = () => {
                             <p
                               style={{
                                 fontSize: "1rem",
-                                marginLeft: "12.5rem",
+                                marginLeft: "5rem",
                                 color: "white",
-                                marginTop:"30rem"
                               }}
                             >
                               Classic period Saltillo sarape, c. 1720–1860
@@ -223,7 +222,7 @@ const Services = () => {
                             <div style={{ width: "80%", alignItems: "right" }}>
                               <img
                                 src={Icon1}
-                                style={{ width: "53%", marginLeft:"15rem" }}
+                                style={{ width: "60%", marginLeft:"15rem" }}
                                 alt="Classic period sarape"
                               />
                             </div>
@@ -260,8 +259,6 @@ const Services = () => {
                               <p
                                 style={{
                                   fontSize: "1rem",
-                                  marginTop: "33rem",
-                                  marginLeft: "11.5rem",
                                   color: "white",
                                 }}
                               >
@@ -282,7 +279,7 @@ const Services = () => {
                               >
                                 <img
                                   src={Icon2}
-                                  style={{ width: "55%", marginLeft:"10rem" }}
+                                  style={{ width: "65%", marginLeft:"10rem" }}
                                   alt="Developer"
                                 />
                               </div>
@@ -310,8 +307,6 @@ const Services = () => {
                               <p
                                 style={{
                                   fontSize: "1rem",
-                                  marginTop: "30rem",
-                                  marginLeft: "12rem",
                                   color: "white",
                                 }}
                               >
@@ -338,7 +333,7 @@ const Services = () => {
                               >
                                 <img
                                   src={Icon3}
-                                  style={{ width: "55%" }}
+                                  style={{ width: "65%" }}
                                   alt="Developer"
                                 />
                               </div>
@@ -369,7 +364,7 @@ const Services = () => {
                 {sixObjOne.headline}
               </Heading>
               <React.Fragment>
-			<ModalVideo channel='youtube' autoplay isOpen={vidOpen2} videoId="6ZHsiC7bLMI" onClose={() => setVidOpen2(false)} />
+			<ModalVideo channel='youtube' autoplay isOpen={vidOpen2} videoId="-5AkIHdKZz4" onClose={() => setVidOpen2(false)} />
 
 			<button className="btn-primary" style={{height:"2rem", fontSize:"1.2rem"}} onClick={()=> setVidOpen2(true)}>Listen to the Curator</button>
 		</React.Fragment>
@@ -423,7 +418,7 @@ const Services = () => {
                           >
                             <div
                               style={{
-                                fontSize: "1rem",
+                                fontSize: "1.5rem",
                                 fontFamily: "",
                               }}
                             >
@@ -437,8 +432,8 @@ const Services = () => {
                               style={{
                                 fontSize: "1rem",
                                 color: "white",
-                                marginTop: "25rem",
-                                marginLeft: "13rem",
+                                marginTop: ".5rem",
+                                marginLeft: "0rem",
                               }}
                             >
                               Post-Classic period sarape with concentric
@@ -462,7 +457,7 @@ const Services = () => {
                             <div style={{ width: "75%", alignItems: "right" }}>
                               <img
                                 src={Icon4}
-                                style={{ width: "75%" }}
+                                style={{ width: "65%", marginLeft: "12rem"}}
                                 alt="Developer"
                               />
                             </div>
@@ -506,13 +501,13 @@ const Services = () => {
                                   fontSize: "1rem",
                                 }}
                               >
-                                Mexican saddle C. 1860–1900On loan from Michael
+                                Mexican saddle C. 1860–1900<br/>On loan from Michael
                                 D. Higgins AT-2020-14-1
                               </div>
                               <div>
                                 <img
                                   src={img3}
-                                  style={{ width: "70%", marginTop: "2rem" }}
+                                  style={{ width: "75%", marginTop: "2rem" }}
                                   alt="Developer"
                                 />
                               </div>
@@ -524,7 +519,7 @@ const Services = () => {
                                 }}
                               >
                                 Photographer unknown Published by Gevaey for
-                                FotoMex, c. 1910 Collection of Tom Kieft
+                                FotoMex,<br/>c. 1910 Collection of Tom Kieft
                               </div>
                             </div>
                           </div>
@@ -548,8 +543,7 @@ const Services = () => {
                               style={{
                                 fontSize: "1rem",
                                 color: "white",
-                                marginLeft: "1rem",
-                                marginRight: "5rem",
+                                marginR: "5rem",
                                 marginTop:"1rem"
                               }}
                             >
@@ -594,8 +588,9 @@ const Services = () => {
 
                             <div
                               style={{
-                                fontSize: "1rem",
+                                fontSize: "1.5rem",
                                 fontFamily: "",
+                                width:"100%"
                               }}
                             >
                               Notice the lavishly decorated neck-slit{" "}
@@ -605,8 +600,6 @@ const Services = () => {
                             <p
                               style={{
                                 fontSize: "1rem",
-                                marginTop: "28rem",
-                                marginLeft: "10rem",
                                 color: "white",
                               }}
                             >
@@ -629,7 +622,7 @@ const Services = () => {
                             <div style={{ width: "75%", alignItems: "right" }}>
                               <img
                                 src={Icon6}
-                                style={{ width: "75%" }}
+                                style={{ width: "65%", marginLeft: "12rem"}}
                                 alt="Developer"
                               />
                             </div>
@@ -670,8 +663,7 @@ const Services = () => {
                             <p
                               style={{
                                 fontSize: "1rem",
-                                marginTop: "20rem",
-                                marginLeft: "10rem",
+                                marginTop: "0.5rem",
                                 color: "white",
                               }}
                             >
@@ -696,7 +688,7 @@ const Services = () => {
                             <div style={{ width: "75%", alignItems: "right" }}>
                               <img
                                 src={Icon7}
-                                style={{ width: "65%" }}
+                                style={{ width: "65%", marginLeft: "12rem"}}
                                 alt="Post classic period Sarape"
                               />
                             </div>
@@ -829,7 +821,7 @@ const Services = () => {
                 <ImgWrap>
                   <Img className="selector"
                     border="none"
-                    style={{ width: "70%" }}
+                    style={{ width: "65%", marginLeft:"6rem" }}
                     src={Icon8}
                     onClick={() => {
                       setContent(
@@ -844,9 +836,6 @@ const Services = () => {
                             <p
                               style={{
                                 fontSize: "1rem",
-
-                                marginTop: "30rem",
-                                marginLeft: "10rem",
                                 color: "white",
                               }}
                             >
@@ -865,7 +854,7 @@ const Services = () => {
                             <div style={{ width: "90%", alignItems: "right" }}>
                               <img
                                 src={Icon8}
-                                style={{ width: "65%" }}
+                                style={{ width: "65%", marginLeft: "12rem"}}
                                 alt="Developer"
                               />
                             </div>
@@ -906,7 +895,7 @@ const Services = () => {
                           >
                             <p
                               style={{
-                                fontSize: "1rem",
+                                fontSize: "1.5rem",
                                 color: "white",
                               }}
                             >
@@ -917,8 +906,7 @@ const Services = () => {
                             <p
                               style={{
                                 fontSize: "1rem",
-                                marginTop: "30rem",
-                                marginLeft: "10rem",
+                                marginTop: "0.5rem",
                                 color: "white",
                               }}
                             >
@@ -937,7 +925,7 @@ const Services = () => {
                             <div style={{ width: "90%", alignItems: "right" }}>
                               <img
                                 src={Icon9}
-                                style={{ width: "65%" }}
+                                style={{ width: "65%", marginLeft: "12rem"}}
                                 alt="Developer"
                               />
                             </div>
@@ -956,7 +944,7 @@ const Services = () => {
                 <ImgWrap>
                   <Img className="selector"
                     src={Icon10}
-                    style={{ width: "70%" }}
+                    style={{ width: "50%", marginTop:"4rem" }}
                     onClick={() => {
                       setContent(
                         <div
@@ -969,7 +957,7 @@ const Services = () => {
                           >
                             <p
                               style={{
-                                fontSize: "1rem",
+                                fontSize: "1.5rem",
                                 color: "white",
                               }}
                             >
@@ -983,8 +971,7 @@ const Services = () => {
                             <p
                               style={{
                                 fontSize: "1rem",
-                                marginTop: "30rem",
-                                marginLeft: "10rem",
+                                marginTop: "0.5rem",
                                 color: "white",
                               }}
                             >
@@ -1004,7 +991,7 @@ const Services = () => {
                             <div style={{ width: "80%", alignItems: "right" }}>
                               <img
                                 src={Icon10}
-                                style={{ width: "60%", marginLeft:"5rem" }}
+                                style={{ width: "65%", marginLeft:"12rem" }}
                                 alt="Developer"
                               />
                             </div>
