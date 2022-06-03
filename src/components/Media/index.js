@@ -22,17 +22,17 @@ const InfoSection = ({
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
-        <InfoRow imgStart={imgStart}>
-          <Column1 style={{ marginLeft: "3rem", width: "85%", overflow: "hidden"}}>
-            <React.Fragment>
-              <a href={link} target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
-                <Heading lightText={lightText} style={{ fontSize: "2.5rem", marginLeft:"50%",  marginTop:"5rem" }}>
-                  {headline}
-                </Heading>
-              </a>
-            </React.Fragment>
-            <ImgWrap>
-                  <Img src={img} alt={alt}/>
+        <InfoRow imgStart={imgStart} style={{overflow: 'visible', marginTop:"-4rem"}}>
+          <Column1 style={{ marginLeft: "3rem", width: "100%", overflow: "visible"}}>
+            <ImgWrap style={{overflow: 'visible'}}>
+              <React.Fragment style={{overflow: "visible"}}>
+                <a href={link} target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
+                  <Heading lightText={lightText} style={{ fontSize: "2.5rem", marginLeft:"25rem",  marginTop:"1rem", width: "100%"}}>
+                    {headline}
+                  </Heading>
+                <Img src={img} alt={alt} style={{width:"70%"}}/>
+                </a>
+              </React.Fragment>
             </ImgWrap>
           </Column1>
         </InfoRow>

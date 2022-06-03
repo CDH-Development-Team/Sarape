@@ -1,5 +1,5 @@
-import img from "../../images/image004.jpg";
-import img2 from "../../images/wic_pgtextile.jpeg";
+import img from "../../images/porfirio.jpg";
+import img2 from "../../images/porfirio26bb.jpg";
 import img3 from "../../images/porfiriowithsign.jpeg";
 import img4 from "../../images/game_thumbnail.png";
 import img5 from "../../images/booklet.png";
@@ -12,10 +12,10 @@ export const homeObjTwo = {
   lightText: true,
   lightTextDesc: true,
   topLine: "",
-  headline: "Wrapped In Color Textile Presentations",
+  headline: "Wrapped In Color Lecture Series (videos)",
   buttonLabel: "",
   imgStart: false,
-  img: img2,
+  img: img3,
   alt: "link thumbnail",
   dark: true,
   primary: true,
@@ -29,10 +29,10 @@ export const homeObjThree = {
   lightText: true,
   lightTextDesc: true,
   topLine: "",
-  headline: "Ancient Weaving with Porifiro Gutiérrez",
+  headline: "Ancient Weaving with Porifiro Gutiérrez (PBS)",
   buttonLabel: "",
   imgStart: false,
-  img: img3,
+  img: img2,
   alt: "Porfirio Gutiérrez",
   dark: true,
   primary: true,
@@ -46,10 +46,10 @@ export const homeObjFour = {
   lightText: true,
   lightTextDesc: true,
   topLine: "",
-  headline: "The Man Preserving Endangered Colours",
+  headline: "The Man Preserving Endangered Colours (BBC)",
   buttonLabel: "",
   imgStart: false,
-  img: img4,
+  img: img,
   alt: "Weaving fabrics",
   dark: true,
   primary: true,
@@ -66,7 +66,7 @@ export const homeObjOne = {
   headline: "Design Your Own Saltillo Sarape (Game)",
   buttonLabel: "",
   imgStart: false,
-  img: img,
+  img: img4,
   alt: "Sarape Designing Game",
   dark: true,
   primary: true,
@@ -80,7 +80,7 @@ export const homeObjFive = {
   lightText: true,
   lightTextDesc: true,
   topLine: "",
-  headline: "Exhibit Booklet",
+  headline: "Exhibit Booklet (PDF download)",
   buttonLabel: "",
   imgStart: false,
   img: img5,
@@ -97,7 +97,7 @@ export const homeObjSix = {
   lightText: true,
   lightTextDesc: true,
   topLine: "",
-  headline: "Porfirio Gutiérrez Studio (Studio)",
+  headline: "Porfirio Gutiérrez Studio (website)",
   buttonLabel: "",
   imgStart: false,
   img: img6,

@@ -81,7 +81,7 @@ export const sevenObjTwo = {
   description:
     "Mayo Indians (also called Yoreme) live primarily along the Río Mayo and Río Fuerte in the Mexican states of Sonora and Sinaloa. Since Spanish Colonial times, they may have been more fully integrated into mainstream Mexican culture than the Rarámuri were. Nevertheless, Mayos still maintain distinct religious practices along with their own language and craft traditions. Several villages are known for their blanket-weaving expertise.",
   description2:
-    "Mayo weavers are almost exclusively women. They use horizontal looms to produce two broad categories of blankets: plain-banded cobijas, which are mainly woven for the community’s use, and more decorative sarapes, which are primarily woven for trade. In Sinaloa’s Mayo community, a small number of men weave simple blankets on treadle looms.",
+    "Mayo weavers are almost exclusively women. They use horizontal looms to produce two broad categories of blankets: plain-bandedand and cobijas, which are mainly woven for the community’s use, and more decorative sarapes, which are primarily woven for trade. In Sinaloa’s Mayo community, a small number of men weave simple blankets on treadle looms.",
   description3:
     "Since at least the late 1800s, Mayo weavers have woven their own version of sarapes with designs clearly connected to Saltillo. These would have been popular items to trade with Mexican residents of the region, including those in the nearby colonial town of Alamos. In the 1940s, this formerly wealthy mining community attracted additional potential craft customers when American tourists “discovered” its charm and created an expatriate community there.",
   buttonLabel: "",
@@ -163,8 +163,8 @@ export const sevenObjFive = {
   description:
     "Similar to the Ortegas, the Trujillo family’s tradition of weaving goes back eight generations. The family opened Centinela Traditional Arts in 1982 next to their orchard in Chimayo. The shop promotes Irvin and Lisa Trujillo’s award-winning fine-art tapestry pieces, along with textiles in the traditional Chimayo and Rio Grande styles. Tapestry textiles use finer yarns and more warp thread per inch, tend to be more intricate in design, and are usually displayed like artworks on a wall. In 2007, Irvin was named a National Heritage Fellow by the National Endowment for the Arts.",
   quote1:
-    "“As a seventh-generation Rio Grande weaver living in Chimayo, New Mexico, my work has evolved" +
-    "from the traditional styles of my forefathers. I use design ideas from historic Rio Grande weavings of northern New Mexico and add my own aesthetic by combining old ideas with my own vision. My pieces may interpret my Hispanic history and culture, and document events of the modern world.”",
+    "As a seventh-generation Rio Grande weaver living in Chimayo, New Mexico, my work has evolved" +
+    "from the traditional styles of my forefathers. I use design ideas from historic Rio Grande weavings of northern New Mexico and add my own aesthetic by combining old ideas with my own vision. My pieces may interpret my Hispanic history and culture, and document events of the modern world.",
   author: "Irvin Trujillo",
   smallDesc:
     "To view weavings by Irvin Trujillo go to: chimayoweavers.com/PORTILT.html",
@@ -211,7 +211,7 @@ export const sevenObjSeven = {
   lightText: true,
   lightTextDesc: false,
   topLine: "",
-  headline: "Saltillo influence in navajo weaving",
+  headline: "",
   description:
     "Today, Navajo weavers, like their Oaxacan counterparts, continue to be inspired by weavings of the past while also creating innovative new designs. When designing this weaving, Kathy Marianito was inspired by a 1903 Navajo weaving that was sold through a catalog by Indian arts trader J. B. Moore. Both designs pay homage to Classic period Saltillo sarapes.",
   buttonLabel: "",

@@ -129,11 +129,11 @@ const Services = () => {
             <ServicesIcon src={Icon6} />
           </Card>
         </div>
-        <Card>
+        <Card style={{marginTop:"15rem", webkitTransform:"rotate(90deg)", marginLeft:"2rem"}}>
           <ServicesIcon src={Icon7} />
         </Card>
-        <Card>
-          <ServicesIcon src={Icon8} />
+        <Card style={{overflow:"visible"}}>
+          <ServicesIcon src={Icon8} style={{marginBottom:"15rem", marginLeft:"-23rem", overflow:"visible"}}/>
         </Card>
       </ServicesWrapper7>
       <br></br>
@@ -157,7 +157,8 @@ const Services = () => {
                   darkText={sevenObj.darkText}
                   style={{ fontFamily: "" }}
                 >
-                  {sevenObj.description}
+                  {sevenObj.description}<br/><br/>
+                  {"In the 1970s, through initiatives by the Mexican government to promote the country’s crafts, and the efforts of American traders to sell northwest Mexican handicrafts, a strong market was created for northern Mexico’s Indigenous weavings."}
                 </Subtitle>
               </TextWrapper>
             </Column1>
@@ -264,10 +265,10 @@ const Services = () => {
               </div>
             </Column2>
           </InfoRow>
-          <ImgWrap>
+          <ImgWrap style={{overflow: "visible"}}>
             <Img className="selector"
               border="none"
-              style={{ width: "25%", marginLeft:"5rem", marginTop:"-25rem", overflow: "visible"}}
+              style={{ width: "25%", marginLeft:"5rem", marginTop:"-45rem", overflow: "visible"}}
               src={Icon1}
               onClick={() => {
                 setContent(
@@ -278,7 +279,7 @@ const Services = () => {
                     >
                       <p
                         style={{
-                          fontSize: "1rem",
+                          fontSize: "1.5rem",
                           marginTop: "5rem",
                           color: "white",
                         }}
@@ -290,9 +291,7 @@ const Services = () => {
                       <p
                         style={{
                           fontSize: "1rem",
-
-                          marginTop: "23rem",
-                          marginLeft: "10rem",
+                          marginTop: "0.5rem",
                           color: "white",
                         }}
                       >
@@ -329,7 +328,7 @@ const Services = () => {
       <InfoContainer
         lightBg={sevenObjTwo.lightBg}
         id={sevenObjTwo.id}
-        style={{ maxWidth: width > 768 ? "auto" : "600px" }}
+        style={{ maxWidth: width > 768 ? "auto" : "600px", marginTop:"-5rem" }}
       >
         <InfoWrapper>
           <InfoRow imgStart={sevenObjTwo.imgStart}>
@@ -375,7 +374,7 @@ const Services = () => {
                   style={{
                     fontFamily: "",
                     fontSize: "1rem",
-                    width: "85%",
+                    width: "65%",
                   }}
                 >
                   {sevenObjTwo.imgdesc}
@@ -383,7 +382,7 @@ const Services = () => {
                 <Img
                   border="none"
                   style={{
-                    width: "85%",
+                    width: "65%",
                   }}
                   src={sevenObjTwo.img}
                   alt=""
@@ -393,7 +392,7 @@ const Services = () => {
                   style={{
                     fontFamily: "",
                     fontSize: "1rem",
-                    width: "85%",
+                    width: "65%",
                   }}
                 >
                   {sevenObjTwo.imgdesc2}
@@ -415,7 +414,7 @@ const Services = () => {
                           >
                             <p
                               style={{
-                                fontSize: "1rem",
+                                fontSize: "1.5rem",
                                 marginTop: "2rem",
                                 color: "white",
                               }}
@@ -427,9 +426,7 @@ const Services = () => {
                             <p
                               style={{
                                 fontSize: "1rem",
-
-                                marginTop: "25rem",
-                                marginLeft: "10rem",
+                                marginTop: "0.5rem",
                                 color: "white",
                               }}
                             >
@@ -449,7 +446,7 @@ const Services = () => {
                             <div style={{ width: "85%", alignItems: "right" }}>
                               <img
                                 src={Icon2}
-                                style={{ width: "55%", marginLeft:"10rem" }}
+                                style={{ width: "65%", marginLeft:"10rem" }}
                                 alt="Developer"
                               />
                             </div>
@@ -467,7 +464,7 @@ const Services = () => {
         </InfoWrapper>
       </InfoContainer>
 
-      <InfoContainer lightBg={sevenObjThree.lightBg} id={sevenObjThree.id}>
+      <InfoContainer lightBg={sevenObjThree.lightBg} id={sevenObjThree.id} style={{marginTop:"-5rem" }}>
         <InfoWrapper>
           <InfoRow imgStart={sevenObjThree.imgStart}>
             <Column1>
@@ -537,6 +534,7 @@ const Services = () => {
                   smallImg={sevenObjThree.smallImg}
                   src={sevenObjThree.img}
                   alt=""
+                  style={{width:"65%"}}
                 />
                 <Subtitle
                   darkText={sevenObjThree.darkText}
@@ -625,13 +623,10 @@ const Services = () => {
         </InfoWrapper>
       </InfoContainer>
 
-      <InfoContainer lightBg={sevenObjFour.lightBg} id={sevenObjFour.id}>
+      <InfoContainer lightBg={sevenObjFour.lightBg} id={sevenObjFour.id} style={{marginTop:"-5rem", overflow: "visible"}}>
         <InfoWrapper>
           <InfoRow imgStart={sevenObjFour.imgStart}>
             <Column1>
-              <Heading lightText={sevenObjFour.lightText} style={{overflow: 'hidden'}}>
-                {sevenObjFour.headline}
-              </Heading>
               <TextWrapper>
                 <TopLine>{sevenObjFour.topLine}</TopLine>
 
@@ -656,7 +651,7 @@ const Services = () => {
                 </Subtitle>
                 <Img
                   border="none"
-                  style={{ width: "80%", marginTop: "3rem" }}
+                  style={{ width: "80%", marginTop: "8rem" }}
                   src={sevenObjFour.img2}
                   alt=""
                 />
@@ -765,7 +760,7 @@ const Services = () => {
         </InfoWrapper>
       </InfoContainer>
 
-      <InfoContainer lightBg={sevenObjFive.lightBg} id={sevenObjFive.id} style={{marginTop:"-7rem"}}>
+      <InfoContainer lightBg={sevenObjFive.lightBg} id={sevenObjFive.id} style={{marginTop:"-9rem", overflow:"visible"}}>
         <InfoWrapper>
           <div class="row">
             <div style={{ width: "55%", float: "left" }}>
@@ -792,6 +787,16 @@ const Services = () => {
                 }}
               >
                 {sevenObjFive.quote1}
+              </Subtitle>
+              <Subtitle
+                darkText={sevenObjFive.darkText}
+                style={{
+                  fontFamily: "Lucida",
+                  fontSize: "1.5rem",
+                  marginLeft:"30rem"
+                }}
+              >
+                {sevenObjFive.author}
               </Subtitle>
             </div>
             <div style={{ width: "40%", float: "right" }}>
@@ -894,7 +899,7 @@ const Services = () => {
       </InfoContainer>
       <InfoContainer lightBg={sevenObjSeven.lightBg} id={sevenObjSeven.id} style={{marginTop:"-11rem", overflow: 'visible'}}>
         <InfoWrapper>
-        <div class="row" style={{width:"100%", marginBottom:"0", marginLeft:"0rem", marginTop: "0rem"}}>
+        <div class="row" style={{width:"100%", marginLeft:"0rem", marginTop: "0rem"}}>
         </div>
           <div class="row">
             <div style={{ width: "100%", float: "left" }}>
@@ -913,7 +918,7 @@ const Services = () => {
                   width: "100%"
                 }}
               >
-                <ImgWrap>
+                <ImgWrap style={{overflow:"visible"}}>
                   <Img className="selector"
                     border="none"
                     style={{ width: "20%", marginLeft:"0rem" }}
@@ -930,7 +935,7 @@ const Services = () => {
                           >
                             <p
                               style={{
-                                fontSize: "1rem",
+                                fontSize: "0.5rem",
                                 color: "white",
                               }}
                             >
@@ -945,9 +950,7 @@ const Services = () => {
                             <p
                               style={{
                                 fontSize: "1rem",
-
-                                marginTop: "25rem",
-                                marginLeft: "5rem",
+                                marginTop: ".5rem",
                                 color: "white",
                               }}
                             >
@@ -996,7 +999,7 @@ const Services = () => {
                           >
                             <p
                               style={{
-                                fontSize: "1rem",
+                                fontSize: "1.5rem",
                                 color: "white",
                               }}
                             >
@@ -1008,8 +1011,6 @@ const Services = () => {
                             <p
                               style={{
                                 fontSize: "1rem",
-                                marginTop: "25rem",
-                                marginLeft: "10rem",
                                 color: "white",
                               }}
                             >
@@ -1025,10 +1026,10 @@ const Services = () => {
                               alignItems: "right",
                             }}
                           >
-                            <div style={{ width: "65%", alignItems: "right" }}>
+                            <div style={{ width: "65%", alignItems: "right", overflow:"visible" }}>
                               <img
                                 src={Icon6}
-                                style={{ width: "80%" }}
+                                style={{ width: "80%", marginLeft:"12rem" }}
                                 alt="Developer"
                               />
                             </div>
@@ -1053,8 +1054,7 @@ const Services = () => {
                           >
                             <p
                               style={{
-                                fontSize: "1rem",
-
+                                fontSize: "1.5rem",
                                 marginTop: "5rem",
                                 color: "white",
                               }}
@@ -1069,8 +1069,7 @@ const Services = () => {
                             <p
                               style={{
                                 fontSize: "1rem",
-                                marginTop: "15rem",
-                                marginLeft: "10rem",
+                                marginTop:"0.5rem",
                                 color: "white",
                               }}
                             >
@@ -1106,9 +1105,13 @@ const Services = () => {
                       openModal();
                     }}
                   />
-                  <Img className="selector"
+                </ImgWrap>
+                {sevenObjSeven.description}
+              </Subtitle>
+              <ImgWrap style={{ marginLeft: "0rem", overflow:"visible" }}>
+              <Img className="selector"
                     src={Icon8}
-                    style={{ width: "18%", marginLeft: "65rem", marginTop: "-50rem"}}
+                    style={{ width: "18%", marginLeft: "2%", marginTop: "-50rem", overflow:"visible" }}
                     onClick={() => {
                       setContent(
                         <div
@@ -1116,36 +1119,52 @@ const Services = () => {
                           style={{ alignItems: "right" }}
                         >
                           <div
-                            className="text"
-                            style={{ width: "50%", marginLeft: "6rem" }}
-                          >
-                            <p
-                              style={{
-                                fontSize: "1rem",
-                                marginTop: "30rem",
-                                marginLeft: "5rem",
-                                color: "white",
-                              }}
-                            >
-                              Poncho sarape, 2015<br></br>Kathy Marianito{" "}
-                              <br></br>Churro wool, cotton, cochineal and indigo
-                              dyes<br></br>Purchased by ASM Friends of
-                              Collections <br></br>2020-337-1
-                            </p>
-                          </div>
-                          <div
                             style={{
                               height: "60%",
                               width: "70%",
                               alignItems: "right",
                             }}
                           >
-                            <div style={{ width: "65%", marginLeft:"10rem", alignItems: "right" }}>
+                            <div style={{ width: "65%", marginLeft:"4rem", alignItems: "right", overflow: "visible", marginTop:"-6rem" }}>
                               <img
                                 src={Icon8}
-                                style={{ width: "80%" }}
+                                style={{ width: "65%", marginTop:"5rem", overflow: "visible"}}
                                 alt="Developer"
                               />
+                              <Img
+                                border="none"
+                                style={{ width: "65%", marginLeft: "30rem", marginTop: "-50rem", overflow: "visible" }}
+                                src={sevenObjSeven.img2}
+                                alt=""
+                              />
+                              <p
+                              style={{
+                                fontSize: "1rem",
+                                color: "white",
+                              }}
+                            >
+                              Navajo blanket, c. 1890 <br></br>Wool, cotton, and
+                              synthetic dyes<br></br>Gift of the Estate of Julia
+                              Howell Overshiner, 1970<br></br>E-8988
+                            </p>
+                              <Subtitle
+                                darkText={sevenObjSeven.darkText}
+                                style={{
+                                  fontFamily: "",
+                                  fontSize: "1rem",
+                                  marginRight: "10rem",
+                                  marginLeft: "30rem",
+                                  marginTop:"-4rem",
+                                  width: "40%",
+                                }}
+                              >
+                                J.B. Moore,{" "}
+                                <i>
+                                  The Catalogues of Fine Navajo <br></br>Blankets, Rugs,
+                                  Ceremonial Baskets,<br></br> Silverware, Jewelry & Curios
+                                </i>
+                                , 1903 and 1911, <br></br>Plate II
+                              </Subtitle>
                             </div>
                           </div>
                         </div>
@@ -1153,13 +1172,9 @@ const Services = () => {
                       openModal();
                     }}
                   />
-                </ImgWrap>
-                {sevenObjSeven.description}
-              </Subtitle>
-              <ImgWrap style={{ marginLeft: "0rem" }}>
                 <Img
                   border="none"
-                  style={{ width: "30%", marginLeft: "4rem", marginTop: "3rem" }}
+                  style={{ width: "27%", marginTop: "2rem", marginLeft:"25rem"}}
                   src={sevenObjSeven.img3}
                   alt=""
                 />
@@ -1168,36 +1183,13 @@ const Services = () => {
                   style={{
                     fontFamily: "",
                     fontSize: "1rem",
-                    marginRight: "10rem",
-                    marginLeft: "4rem",
-                    width: "40%"
+                    marginLeft:"42rem"
                   }}
                 >
                   At the 2015 Gallup Inter-Tribal Indian Ceremonial, Kathy
                   Marianito was awarded first place in the poncho weavings
                   category for this piece. Steve Getzwiller, Nizhoni Ranch
                   Gallery, photographer, 2015
-                </Subtitle>
-                <Img
-                  border="none"
-                  style={{ width: "27%", marginTop: "-40rem", marginLeft:"45rem"}}
-                  src={sevenObjSeven.img2}
-                  alt=""
-                />
-                <Subtitle
-                  darkText={sevenObjSeven.darkText}
-                  style={{
-                    fontFamily: "",
-                    fontSize: "1rem",
-                    marginLeft:"45rem"
-                  }}
-                >
-                  J.B. Moore,{" "}
-                  <i>
-                    The Catalogues of Fine Navajo <br></br>Blankets, Rugs,
-                    Ceremonial Baskets,<br></br> Silverware, Jewelry & Curios
-                  </i>
-                  , 1903 and 1911, <br></br>Plate II
                 </Subtitle>
               </ImgWrap>
             </div>
