@@ -10,6 +10,7 @@ import {
 } from "./footerElements";
 
 const Footer = () => {
+
   return (
     <>
       <FooterContainer>
@@ -45,7 +46,7 @@ const Footer = () => {
                 <FooterLink to="/tourism">Tourism</FooterLink>
               </FooterLinkItems>
               <FooterLinkItems>
-                <FooterLink to="/media">Media</FooterLink>
+                <FooterLink to="/media">Films<br/>Games<br/>More</FooterLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
           </FooterLinksContainer>

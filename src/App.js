@@ -20,13 +20,16 @@ import about from './pages/about';
 import credits from './pages/credits';
 import media from './pages/media';
 import ScrollButton from './components/ScrollButton'
+import ScrollToTop from "./components/ScrollToTop";
+
 
 function App() {
   return (
     <Router >
+      <ScrollToTop>
       <ScrollButton />
       <Switch>
-        <Route path = "/sarape" component={Home} exact />
+        <Route path = "/" component={Home} exact />
         <Route path = "/intro" component={about} exact />
         <Route path = "/credits" component={credits} exact />
 	      <Route path = "/fragments" component={fragments} exact />
@@ -43,6 +46,7 @@ function App() {
         <Route path = "/dyeing" component={dyeing} exact />
         <Route path = "/media" component={media} exact />
       </Switch>
+      </ScrollToTop>
     </Router>
   );
 }

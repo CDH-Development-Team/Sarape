@@ -264,10 +264,10 @@ const Services = () => {
               </div>
             </Column2>
           </InfoRow>
-          <ImgWrap style={{ marginTop: "-38rem" }}>
-            <Img
+          <ImgWrap>
+            <Img className="selector"
               border="none"
-              style={{ width: "25%", marginLeft:"5rem" }}
+              style={{ width: "25%", marginLeft:"5rem", marginTop:"-25rem", overflow: "visible"}}
               src={Icon1}
               onClick={() => {
                 setContent(
@@ -399,11 +399,10 @@ const Services = () => {
                   {sevenObjTwo.imgdesc2}
                 </Subtitle>
                 <ImgWrap>
-                  <Img
+                  <Img className="selector"
                     border="none"
                     style={{ width: "65%", marginLeft: "5rem" }}
                     src={Icon2}
-                    className ='textile'
                     onClick={() => {
                       setContent(
                         <div
@@ -563,7 +562,7 @@ const Services = () => {
                 >
                   {sevenObjThree.imgdesc3}
                 </Subtitle>
-                <Img
+                <Img className="selector"
                   border="none"
                   style={{ width: "35%", marginLeft: "25rem" }}
                   src={Icon3}
@@ -657,10 +656,28 @@ const Services = () => {
                 </Subtitle>
                 <Img
                   border="none"
+                  style={{ width: "80%", marginTop: "3rem" }}
+                  src={sevenObjFour.img2}
+                  alt=""
+                />
+                <Subtitle
+                  darkText={sevenObjFour.darkText}
+                  style={{
+                    fontFamily: "",
+                    fontSize: "1rem"
+                  }}
+                >
+                  Chris Ortega, seventh-generation weaver, at his loom <br></br>
+                  Robert Ortega, photographer, 2020
+                </Subtitle>
+              </TextWrapper>
+            </Column1>
+            <Column2 style={{ marginLeft: "15rem", overflow: "hidden" }}>
+            <Img className="selector"
+                  border="none"
                   style={{
                     width: "65%",
                     marginLeft: "5rem",
-                    marginTop: "-2rem",
                   }}
                   src={Icon4}
                   onClick={() => {
@@ -672,7 +689,7 @@ const Services = () => {
                         >
                           <p
                             style={{
-                              fontSize: "1rem",
+                              fontSize: "1.5rem",
                               color: "white",
                             }}
                           >
@@ -715,26 +732,7 @@ const Services = () => {
                   }}
                   alt=""
                 />
-              </TextWrapper>
-            </Column1>
-            <Column2 style={{ marginLeft: "15rem" }}>
               <ImgWrap>
-                <Img
-                  border="none"
-                  style={{ width: "80%", marginTop: "2rem" }}
-                  src={sevenObjFour.img2}
-                  alt=""
-                />
-                <Subtitle
-                  darkText={sevenObjFour.darkText}
-                  style={{
-                    fontFamily: "",
-                    fontSize: "1rem",
-                  }}
-                >
-                  Chris Ortega, seventh-generation weaver, at his loom <br></br>
-                  Robert Ortega, photographer, 2020
-                </Subtitle>
                 <Subtitle
                   darkText={sevenObjFour.darkText}
                   style={{
@@ -757,7 +755,7 @@ const Services = () => {
                     fontSize: "1rem",
                   }}
                 >
-                  Chimayo Weavers, Reyes Ortega at his loom <br></br>Laura
+                  Reyes Ortega at his loom <br></br>Laura
                   Gilpin, photographer, 1939 <br></br>Chimayo, NM <br></br>Amon
                   Carter Museum of American Art,<br></br> P1979.202.241, 1979
                 </Subtitle>
@@ -767,7 +765,7 @@ const Services = () => {
         </InfoWrapper>
       </InfoContainer>
 
-      <InfoContainer lightBg={sevenObjFive.lightBg} id={sevenObjFive.id}>
+      <InfoContainer lightBg={sevenObjFive.lightBg} id={sevenObjFive.id} style={{marginTop:"-7rem"}}>
         <InfoWrapper>
           <div class="row">
             <div style={{ width: "55%", float: "left" }}>
@@ -781,6 +779,7 @@ const Services = () => {
                 style={{
                   fontFamily: "",
                   fontSize: "1.5rem",
+                  marginTop: "3.3rem",
                 }}
               >
                 {sevenObjFive.description}
@@ -829,7 +828,7 @@ const Services = () => {
         </InfoWrapper>
       </InfoContainer>
 
-      <InfoContainer lightBg={sevenObjSix.lightBg} id={sevenObjSix.id}>
+      <InfoContainer lightBg={sevenObjSix.lightBg} id={sevenObjSix.id} style={{marginTop:"-7rem"}}>
         <InfoWrapper>
           <div class="row">
             <div style={{ width: "45%", float: "left" }}>
@@ -891,20 +890,33 @@ const Services = () => {
               </ImgWrap>
             </div>
           </div>
-          <InfoRow imgStart={sevenObj.imgStart} style={{ marginTop: "-10rem" }}>
-            <div class="row1">
-              <div
-                class="column11"
+        </InfoWrapper>
+      </InfoContainer>
+      <InfoContainer lightBg={sevenObjSeven.lightBg} id={sevenObjSeven.id} style={{marginTop:"-11rem", overflow: 'visible'}}>
+        <InfoWrapper>
+        <div class="row" style={{width:"100%", marginBottom:"0", marginLeft:"0rem", marginTop: "0rem"}}>
+        </div>
+          <div class="row">
+            <div style={{ width: "100%", float: "left" }}>
+              <Heading lightText={sevenObjSeven.lightText} style={{overflow: 'visible'}}>
+                {sevenObjSeven.headline}
+                <InfoRow imgStart={sevenObj.imgStart} style={{marginLeft:"10rem"}}>
+          </InfoRow>
+              </Heading>
+              <TopLine>{sevenObjSeven.topLine}</TopLine>
+
+              <Subtitle
+                darkText={sevenObjSeven.darkText}
                 style={{
-                  width: "33.3%",
-                  marginLeft: "2rem",
-                  marginTop: "15rem",
+                  fontFamily: "",
+                  fontSize: "1.5rem",
+                  width: "100%"
                 }}
               >
                 <ImgWrap>
-                  <Img
+                  <Img className="selector"
                     border="none"
-                    style={{ width: "75%" }}
+                    style={{ width: "20%", marginLeft:"0rem" }}
                     src={Icon5}
                     onClick={() => {
                       setContent(
@@ -969,17 +981,9 @@ const Services = () => {
                     }}
                     alt=""
                   />
-                </ImgWrap>
-              </div>
-              <div
-                class="column12"
-                style={{ marginTop: "5rem", marginRight: "5rem" }}
-              >
-                {/* Second column of images */}
-                <ImgWrap>
-                  <Img
+                  <Img className="selector"
                     src={Icon6}
-                    style={{ width: "60%", marginLeft: "4rem" }}
+                    style={{ width: "17%", marginLeft: "5rem", marginTop:"0rem", overflow:"visible"}}
                     onClick={() => {
                       setContent(
                         <div
@@ -1021,7 +1025,7 @@ const Services = () => {
                               alignItems: "right",
                             }}
                           >
-                            <div style={{ width: "65%", marginLeft:"10rem", alignItems: "right" }}>
+                            <div style={{ width: "65%", alignItems: "right" }}>
                               <img
                                 src={Icon6}
                                 style={{ width: "80%" }}
@@ -1034,11 +1038,9 @@ const Services = () => {
                       openModal();
                     }}
                   />
-                </ImgWrap>
-                <ImgWrap>
-                  <Img
+                  <Img className="selector"
                     src={Icon7}
-                    style={{ width: "90%" }}
+                    style={{ width: "25%", marginTop:"-25rem", marginLeft:"40rem" }}
                     onClick={() => {
                       setContent(
                         <div
@@ -1104,16 +1106,9 @@ const Services = () => {
                       openModal();
                     }}
                   />
-                </ImgWrap>
-              </div>
-              <div
-                class="column13"
-                style={{ marginTop: "-35rem", marginLeft: "7rem" }}
-              >
-                <ImgWrap>
-                  <Img
+                  <Img className="selector"
                     src={Icon8}
-                    style={{ width: "75%" }}
+                    style={{ width: "18%", marginLeft: "65rem", marginTop: "-50rem"}}
                     onClick={() => {
                       setContent(
                         <div
@@ -1159,33 +1154,12 @@ const Services = () => {
                     }}
                   />
                 </ImgWrap>
-              </div>
-            </div>
-          </InfoRow>
-        </InfoWrapper>
-      </InfoContainer>
-      <InfoContainer lightBg={sevenObjSeven.lightBg} id={sevenObjSeven.id}>
-        <InfoWrapper>
-          <div class="row">
-            <div style={{ width: "55%", float: "left" }}>
-              <Heading lightText={sevenObjSeven.lightText} style={{overflow: 'hidden'}}>
-                {sevenObjSeven.headline}
-              </Heading>
-              <TopLine>{sevenObjSeven.topLine}</TopLine>
-
-              <Subtitle
-                darkText={sevenObjSeven.darkText}
-                style={{
-                  fontFamily: "",
-                  fontSize: "1.5rem",
-                }}
-              >
                 {sevenObjSeven.description}
               </Subtitle>
-              <ImgWrap style={{ marginLeft: "5rem" }}>
+              <ImgWrap style={{ marginLeft: "0rem" }}>
                 <Img
                   border="none"
-                  style={{ width: "50%", marginTop: "5rem" }}
+                  style={{ width: "30%", marginLeft: "4rem", marginTop: "3rem" }}
                   src={sevenObjSeven.img3}
                   alt=""
                 />
@@ -1195,6 +1169,8 @@ const Services = () => {
                     fontFamily: "",
                     fontSize: "1rem",
                     marginRight: "10rem",
+                    marginLeft: "4rem",
+                    width: "40%"
                   }}
                 >
                   At the 2015 Gallup Inter-Tribal Indian Ceremonial, Kathy
@@ -1202,13 +1178,9 @@ const Services = () => {
                   category for this piece. Steve Getzwiller, Nizhoni Ranch
                   Gallery, photographer, 2015
                 </Subtitle>
-              </ImgWrap>
-            </div>
-            <div style={{ width: "40%", float: "right" }}>
-              <ImgWrap>
                 <Img
                   border="none"
-                  style={{ width: "50%", marginTop: "20rem" }}
+                  style={{ width: "27%", marginTop: "-40rem", marginLeft:"45rem"}}
                   src={sevenObjSeven.img2}
                   alt=""
                 />
@@ -1217,6 +1189,7 @@ const Services = () => {
                   style={{
                     fontFamily: "",
                     fontSize: "1rem",
+                    marginLeft:"45rem"
                   }}
                 >
                   J.B. Moore,{" "}

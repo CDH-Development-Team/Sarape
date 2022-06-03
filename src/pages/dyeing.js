@@ -117,7 +117,7 @@ const DyeingPage = () => {
           width={width - (width % 16)}
           style={{marginTop:"1rem"}}
         >
-          <DyeMosaic1 className="mosaic">
+          <DyeMosaic1 className="selector">
             <img
               src={Icon1}
               alt=""
@@ -155,7 +155,7 @@ const DyeingPage = () => {
                           style={{
                             marginLeft: "25rem",
                             marginTop: "5rem",
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             fontFamily: "",
                           }}
                         >
@@ -177,7 +177,7 @@ const DyeingPage = () => {
               }}
             ></img>
           </DyeMosaic1>
-          <DyeMosaic2 className="mosaic">
+          <DyeMosaic2 className="selector">
             <img
               src={Icon2}
               alt=""
@@ -212,7 +212,7 @@ const DyeingPage = () => {
                           style={{
                             marginLeft: "28rem",
                             marginTop: "7rem",
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             fontFamily: "",
                           }}
                         >
@@ -238,7 +238,7 @@ const DyeingPage = () => {
             <img src={Color1} alt="" height={"100%"} width={"100%"}></img>
           </DyeMosaic3>
 
-          <DyeMosaic4 className="mosaic">
+          <DyeMosaic4 className="selector">
             <img
               src={Icon6}
               height={"100%"}
@@ -253,7 +253,7 @@ const DyeingPage = () => {
                           style={{
                             marginLeft: "5rem",
                             marginTop: "2rem",
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             fontFamily: "",
                           }}
                         >
@@ -283,7 +283,7 @@ const DyeingPage = () => {
             <img src={Color5} alt="" height={"100%"} width={"100%"}></img>
           </DyeMosaic5>
 
-          <DyeMosaic6 className="mosaic">
+          <DyeMosaic6 className="selector">
             <img
               src={Icon3}
               alt=""
@@ -317,7 +317,7 @@ const DyeingPage = () => {
                           style={{
                             marginLeft: "22rem",
                             marginTop: "10rem",
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             fontFamily: "",
                           }}
                         >
@@ -346,7 +346,7 @@ const DyeingPage = () => {
           <DyeMosaic7 className="mosaic">
             <img src={Color4} alt="" height={"100%"} width={"100%"}></img>
           </DyeMosaic7>
-          <DyeMosaic8 className="mosaic">
+          <DyeMosaic8 className="selector">
             <img
               src={Icon9}
               height={"100%"}
@@ -394,7 +394,7 @@ const DyeingPage = () => {
                           className="quoteDiv"
                           style={{
                             color: "#fff",
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             marginLeft: "15rem",
                           }}
                         >
@@ -421,7 +421,7 @@ const DyeingPage = () => {
           <DyeMosaic9 className="mosaic">
             <img src={Color11} alt="" height={"100%"} width={"100%"}></img>
           </DyeMosaic9>
-          <DyeMosaic10 className="mosaic">
+          <DyeMosaic10 className="selector">
             <img
               src={Icon7}
               alt=""
@@ -462,7 +462,7 @@ const DyeingPage = () => {
                         </div>
                         <div
                           style={{
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             marginLeft: "15rem",
                             marginRight: "3rem",
                             marginTop: "2rem",
@@ -496,7 +496,7 @@ const DyeingPage = () => {
             <img src={Color1} alt="" height={"100%"} width={"100%"}></img>
           </DyeMosaic11>
 
-          <DyeMosaic12 className="mosaic">
+          <DyeMosaic12 className="selector">
             <img
               src={Icon4}
               height={"100%"}
@@ -544,7 +544,7 @@ const DyeingPage = () => {
                           style={{
                             marginLeft: "15rem",
                             marginTop: "2rem",
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             fontFamily: "",
                           }}
                         >
@@ -578,7 +578,7 @@ const DyeingPage = () => {
           <DyeMosaic13 className="mosaic">
             <img src={Color5} alt="" height={"100%"} width={"100%"}></img>
           </DyeMosaic13>
-          <DyeMosaic14 className="mosaic">
+          <DyeMosaic14 className="selector">
             <img
               src={Icon10}
               height={"100%"}
@@ -623,7 +623,7 @@ const DyeingPage = () => {
                           style={{
                             marginLeft: "19rem",
                             marginTop: "2rem",
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             fontFamily: "",
                           }}
                         >
@@ -664,7 +664,7 @@ const DyeingPage = () => {
               }}
             ></img>
           </DyeMosaic15>
-          <DyeMosaic16 className="mosaic">
+          <DyeMosaic16 className="selector">
             <img
               src={Icon8}
               height={"100%"}
@@ -678,9 +678,9 @@ const DyeingPage = () => {
                         <div></div>
                         <div
                           style={{
-                            marginLeft: "15rem",
+                            marginLeft: "5rem",
                             marginTop: "2rem",
-                            fontSize: "1rem",
+                            fontSize: "1.5rem",
                             fontFamily: "",
                           }}
                         >
@@ -707,7 +707,7 @@ const DyeingPage = () => {
           <DyeMosaic17 className="mosaic">
             <img src={Icon21} alt="" height={"100%"} width={"100%"}></img>
           </DyeMosaic17>
-          <DyeMosaic18 className="mosaic">
+          <DyeMosaic18 className="selector">
             <img
               src={Icon5}
               alt=""
@@ -794,7 +794,7 @@ const DyeingPage = () => {
                             style={{
                               marginLeft: "4.5rem",
                               marginTop:"0.5rem",
-                              fontSize: "1rem",
+                              fontSize: "1.5rem",
                               fontFamily: "",
                             }}
                           >
@@ -813,7 +813,7 @@ const DyeingPage = () => {
           <DyeMosaic19 className="mosaic">
             <img src={Color8} alt="" height={"100%"} width={"100%"}></img>
           </DyeMosaic19>
-          <DyeMosaic20 className="mosaic">
+          <DyeMosaic20 className="selector">
             <img
               src={Icon11}
               alt=""
@@ -821,14 +821,15 @@ const DyeingPage = () => {
               width={"100%"}
               onClick={() => {
                 setContent(
+                  <div>
                   <div className="content">
                     <div className="row1">
                       <div className="column6">
                         <div
                           style={{
                             marginLeft: "5rem",
-                            marginTop: "1rem",
-                            fontSize: "1rem",
+                            marginTop: "1.5rem",
+                            fontSize: "1.5rem",
                             fontFamily: "",
                           }}
                         >
@@ -850,6 +851,32 @@ const DyeingPage = () => {
                       </div>
                     </div>
                   </div>
+                  <div className="quoteDiv">
+                  <p
+                    className="quote"
+                    style={{
+                      fontFamily: "Lucida",
+                      fontSize: "1.5rem",
+                    }}
+                  >
+                    “The greater being has given us the plants for food,
+                    dyes, and for medicine. Because they connect us to
+                    Mother Earth, they are a deep part of our body and our
+                    wellbeing. The wisdom to use them was inherited from our
+                    ancestors.”
+                  </p>
+                  <p
+                    className="author"
+                    style={{
+                      fontFamily: "Lucida",
+                      fontSize: "1.5rem",
+                    }}
+                  >
+                    {" "}
+                    Andrea Contreras
+                  </p>
+                </div>
+                </div>
                 );
                 openModal();
               }}

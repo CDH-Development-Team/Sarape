@@ -17,7 +17,7 @@ export const sevenObj = {
   lightText: true,
   lightTextDesc: false,
   topLine: "",
-  headline: " Saltillo Influence on indigenous communities in Northern Mexico",
+  headline: "Saltillo Influence on indigenous communities in North Mexico",
   description:
     "Looms used by Indigenous communities in northwest Mexico and the southwestern United States are different from those used by weavers elsewhere to produce sarapes. Instead of backstrap or treadle looms, they use horizontal looms made of hand-hewn logs. The weavings of the Rarámuri (Tarahumara) Indians in Chihuahua, and Mayo Indians in Sonora and Sinaloa, show the influence of Saltillo sarape designs.",
   description2:
@@ -141,7 +141,7 @@ export const sevenObjFour = {
   img: "\n\n",
   img3: img5,
   imgdesc4:
-    "Chimayo Weavers, Reyes Ortega at his loom Laura Gilpin, photographer, 1939 Chimayo, NM Amon Carter Museum of American Art, P1979.202.241, 1979",
+    "Reyes Ortega at his loom Laura Gilpin, photographer, 1939 Chimayo, NM Amon Carter Museum of American Art, P1979.202.241, 1979",
   img2: img4,
   imgdesc3:
     "Chris Ortega, seventh-generation weaver, at his loom Robert Ortega, photographer, 2020",
@@ -159,7 +159,7 @@ export const sevenObjFive = {
   lightText: true,
   lightTextDesc: false,
   topLine: "",
-  headline: "Saltillo influence in new mexico",
+  headline: "",
   description:
     "Similar to the Ortegas, the Trujillo family’s tradition of weaving goes back eight generations. The family opened Centinela Traditional Arts in 1982 next to their orchard in Chimayo. The shop promotes Irvin and Lisa Trujillo’s award-winning fine-art tapestry pieces, along with textiles in the traditional Chimayo and Rio Grande styles. Tapestry textiles use finer yarns and more warp thread per inch, tend to be more intricate in design, and are usually displayed like artworks on a wall. In 2007, Irvin was named a National Heritage Fellow by the National Endowment for the Arts.",
   quote1:

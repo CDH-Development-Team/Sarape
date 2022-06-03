@@ -89,7 +89,7 @@ const History = () => {
           height={((width - (width % 38)) / 38) * 24 }
           width={(width - (width % 38))}
         >
-          <HistoryMosaic1 className="mosaic">
+          <HistoryMosaic1 className={"selector"}>
             <img
               src={Icon1}
               alt=""
@@ -143,7 +143,7 @@ const History = () => {
           <HistoryMosaic2 className="mosaic">
             <img src={Color8} alt="" height={"100%"} width={"100%"}></img>
           </HistoryMosaic2>
-          <HistoryMosaic3 className="mosaic">
+          <HistoryMosaic3 className={"selector"}>
             <img
               src={Icon7}
               alt=""
@@ -185,7 +185,7 @@ const History = () => {
           <HistoryMosaic5 className="mosaic">
             <img src={Color5} alt="" height={"100%"} width={"100%"}></img>
           </HistoryMosaic5>
-          <HistoryMosaic6 className="mosaic">
+          <HistoryMosaic6 className={"selector"}>
             <img
               src={Icon8}
               alt=""
@@ -195,7 +195,7 @@ const History = () => {
                 setContent(
                   <GeographyEntry>
                     <GeographyEntryImg>
-                      <img alt="" src={Icon8} width={"100%"} />
+                      <img alt="" src={Icon8} width={"100%"} style={{marginTop:"-5rem"}} />
                     </GeographyEntryImg>
 
                     <GeographyEntryText style={{ fontSize: "1.5rem" }}>
@@ -209,7 +209,7 @@ const History = () => {
                         fontSize: "1rem",
                       }}
                     >
-                      Codex <i>Mendoza</i>, Vol. 3, Folio 60r, c. 1541–1542
+                      <i>Codex Mendoza</i>, Vol. 3, Folio 60r, c. 1541–1542
                       <br />
                       Viceroyalty of Spain<br></br>Bodleian Libraries,
                       <br /> University of Oxford
@@ -225,7 +225,7 @@ const History = () => {
             <img src={Color8} alt="" height={"100%"} width={"100%"}></img>
           </HistoryMosaic7>
 
-          <HistoryMosaic8 className="mosaic">
+          <HistoryMosaic8 className={"selector"}>
             <img
               src={Icon2}
               alt=""
@@ -251,7 +251,7 @@ const History = () => {
                       lifeways, including their clothing, can be seen through
                       illustrations in codices* produced under Spanish rule.
                       <br />
-                      <br /> The Codex <i>Mendoza</i> illustrates Aztec people
+                      <br /> The <i>Codex Mendoza</i> illustrates Aztec people
                       of high status, priests, and rulers wearing{" "}
                       <i>tilmàtli</i>, decorated cloaks woven of cotton or{" "}
                       <i>ixtle</i> on a backstrap loom. The motifs and materials
@@ -261,12 +261,12 @@ const History = () => {
                       .<br></br>
                       <br></br>
                       <div style={{ fontSize: "1rem" }}>
-                        *Codices is the plural of codex. right<br></br>Notice
+                        *Codices is the plural of codex.<br></br>Notice
                         how the <i>tilmàtli</i> are similar to the Saltillo
                         sarape in design and how they were worn.
                       </div>
                       <div className="credits" style={{ fontSize: "1rem" }}>
-                        Codex <i>Mendoza</i>, Folio 65r, c. 1541–1542
+                      <i>Codex Mendoza</i>, Folio 65r, c. 1541–1542
                         <br />
                         Viceroyalty of Spain<br></br>Bodleian Library, Oxford
                         University
@@ -287,7 +287,7 @@ const History = () => {
             <img src={Color1} alt="" height={"100%"} width={"100%"}></img>
           </HistoryMosaic10>
 
-          <HistoryMosaic11 className="mosaic">
+          <HistoryMosaic11 className={"selector"}>
             <img
               src={Icon4}
               alt=""
@@ -332,7 +332,7 @@ const History = () => {
             ></img>
           </HistoryMosaic11>
 
-          <HistoryMosaic12 className="mosaic">
+          <HistoryMosaic12 className={"selector"}>
             <img
               src={Icon3}
               alt=""
@@ -369,7 +369,7 @@ const History = () => {
             ></img>
           </HistoryMosaic12>
 
-          <HistoryMosaic13 className="mosaic">
+          <HistoryMosaic13 className={"selector"}>
             <img
               src={Icon6}
               alt=""
@@ -378,11 +378,11 @@ const History = () => {
               onClick={() => {
                 setContent(
                   <GeographyEntry>
-                    <GeographyEntryImg>
+                    <GeographyEntryImg style={{overflow:"visible"}}>
                       <img
                         alt=""
                         src={Icon6}
-                        style={{ marginTop: "150px", width: "100%" }}
+                        style={{marginTop:"3.5rem", marginLeft:"2rem", width: "100%" }}
                       ></img>
                     </GeographyEntryImg>
                     <GeographyEntryText style={{ fontSize: "1.5rem" }}>
@@ -391,7 +391,7 @@ const History = () => {
                       sarape may be woven in one piece, but more frequently
                       consists of two panels joined together leaving a neck
                       slit, also called a bocamanga, through which the wearer’s
-                      head could fit.In Spanish Colonial times, the sarape was
+                      head could fit.<br/><br/>In Spanish Colonial times, the sarape was
                       mainly worn in northern Mexico by hacendados, or ranch
                       owners, who traveled on horseback. The sarape’s loose fit
                       made it a practical riding garment. Later, it became a
@@ -406,7 +406,7 @@ const History = () => {
                     <GeographyEntryDescription
                       style={{
                         marginTop: "25px",
-                        marginLeft: "280px",
+                        marginLeft:"7.1rem",
                         fontSize: "1rem",
                       }}
                     >

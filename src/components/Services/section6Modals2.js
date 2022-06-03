@@ -185,7 +185,7 @@ const Services = () => {
                 }}
               >
                 <ImgWrap>
-                  <Img
+                  <Img className="selector"
                     border="none"
                     style={{ width: "65%", height:"95%" }}
                     src={Icon1}
@@ -244,7 +244,7 @@ const Services = () => {
                 {/* Second column of images */}
                 <div style={{ display: "flex", flexDirection: "column" }}>
                   <ImgWrap>
-                    <Img
+                    <Img className="selector"
                       src={Icon2}
                       style={{ width: "65%", height:"95%"  }}
                       onClick={() => {
@@ -294,7 +294,7 @@ const Services = () => {
                     />
                   </ImgWrap>
                   <ImgWrap>
-                    <Img
+                    <Img className="selector"
                       src={Icon3}
                       style={{ width: "65%", height:"95%" }}
                       onClick={() => {
@@ -408,7 +408,7 @@ const Services = () => {
                     height: "100%",
                   }}
                 >
-                  <Img
+                  <Img className="selector"
                     style={{  width: "65%", height:"95%" }}
                     src={Icon4}
                     onClick={() => {
@@ -472,7 +472,7 @@ const Services = () => {
                       openModal();
                     }}
                   />
-                  <Img
+                  <Img className="selector"
                     style={{ width: "65%", height:"95%" }}
                     src={Icon5}
                     onClick={() => {
@@ -578,7 +578,7 @@ const Services = () => {
                     width: "80%",
                   }}
                 >
-                  <Img
+                  <Img className="selector"
                     style={{ width: "65%", height:"95%" }}
                     src={Icon6}
                     onClick={() => {
@@ -639,7 +639,7 @@ const Services = () => {
                       openModal();
                     }}
                   />
-                  <Img
+                  <Img className="selector"
                     style={{ width: "65%", height:"95%"  }}
                     src={Icon7}
                     onClick={() => {
@@ -827,7 +827,7 @@ const Services = () => {
                 }}
               >
                 <ImgWrap>
-                  <Img
+                  <Img className="selector"
                     border="none"
                     style={{ width: "70%" }}
                     src={Icon8}
@@ -891,8 +891,8 @@ const Services = () => {
               >
                 {/* Second column of images */}
                 <ImgWrap>
-                  <Img
-                    src={Icon9}
+                  <Img className="selector"
+                    src={Icon9} 
                     style={{ width: "70%" }}
                     onClick={() => {
                       setContent(
@@ -954,7 +954,7 @@ const Services = () => {
                 style={{ marginTop: "-30rem", marginLeft: "7rem"}}
               >
                 <ImgWrap>
-                  <Img
+                  <Img className="selector"
                     src={Icon10}
                     style={{ width: "70%" }}
                     onClick={() => {

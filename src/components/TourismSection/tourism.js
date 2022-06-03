@@ -32,14 +32,15 @@ const TourismSection = ({
   alt,
   smallImg,
   artifact,
-  artifactAlt,
-  artifactInfo,
+  artifactAlt
 }) => {
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
-          <TopLine>{topLine}</TopLine>
+          <TopLine>
+            {topLine}
+          </TopLine>
           <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
@@ -49,7 +50,13 @@ const TourismSection = ({
               </TextWrapper>
             </Column1>
             <Column2>
-              <Heading lightText={lightText}>{headline}</Heading>
+              <Heading lightText={lightText}>
+                {headline}
+                <React.Fragment>
+                  <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="-tx-4kgcdu4" onClose={() => setOpen(false)} />
+                  <button className="btn-primary" style={{marginLeft:"1rem", position: "relative", top: "-0.5rem", height:"2rem", fontSize:'1.2rem'}} onClick={()=> setOpen(true)}>Listen to Curator</button>
+                </React.Fragment>
+              </Heading>
               <ImgWrap2>
                 <Subtitle style={{ fontSize: "1rem" }} darkText={darkText}>
                   {description}

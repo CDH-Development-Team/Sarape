@@ -14,8 +14,13 @@
   overflow-y: hidden;
   background-color: rgba(31, 32, 41, 0.75);
   pointer-events: none;
+  cursor: pointer;
   opacity: 0;
   transition: opacity 250ms 700ms ease;
+}
+
+.modal:hover {
+  cursor: pointer;
 }
 
 .visible {

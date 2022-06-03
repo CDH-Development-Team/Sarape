@@ -17,10 +17,11 @@ const Sidebar = ({toggle, isOpen}) => {
             </Icon>
             <SidebarWrapper>
             <translateAlert style={{position: 'absolute', top:'2vh', width: '100%', textAlign: 'center', fontSize:'2vh'}}>
-                To change your language click the google translate icon on the above search bar
+                Scroll down on pages for more. <br/>
+                Click on images to enlarge and for more information.
                 </translateAlert>
-                <SidebarMenu>
-                    <SidebarLink to="/sarape" onClick={toggle}>
+                <SidebarMenu onUpdate={() => window.scrollTo(0, 0)}>
+                    <SidebarLink to="/" onClick={toggle}>
                         Home
                     </SidebarLink>
                     <SidebarLink to="/intro" onClick={toggle}>
@@ -29,9 +30,6 @@ const Sidebar = ({toggle, isOpen}) => {
                     <SidebarLink to="/geography" onClick={toggle}>
                         History and Geography
                     </SidebarLink>
-                    {/*<SidebarLink to="/history" onClick={toggle}>
-                        History
-    </SidebarLink>*/}
                     <SidebarLink to="/porfirio" onClick={toggle}>
                         Porfirio Gutiérrez
                     </SidebarLink>        

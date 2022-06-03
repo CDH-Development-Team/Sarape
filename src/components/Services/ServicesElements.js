@@ -181,3 +181,10 @@ export const FragmentCite = styled.div`
 `;
 
 export const FragmentSeries = styled.div``;
+
+export const selector = styled.div`
+  ${FragmentDiv}:hover & {
+    height: 110%;
+    width: 110%;
+  }
+`;

@@ -1,5 +1,6 @@
 import React from "react";
 import Modal from "react-modal";
+import ModalVideo from 'react-modal-video'
 import "./geography.css";
 
 import Icon1 from "../../images/section 2/1.jpg";
@@ -82,6 +83,7 @@ const Geography = () => {
 
   const { height, width } = useWindowDimensions();
   const [content, setContent] = React.useState(null);
+  const [isOpen, setOpen] = React.useState(false)
   return (
     <>
       <GeographyContainer>
@@ -89,7 +91,7 @@ const Geography = () => {
           height={((width - (width % 18)) / 18) * 8}
           width={width - (width % 18)}
         >
-          <Modal
+          <Modal className="selector"
             isOpen={modalIsOpen}
             onAfterOpen={afterOpenModal}
             onRequestClose={closeModal}
@@ -108,7 +110,7 @@ const Geography = () => {
             <img src={Color1} alt="" height={"100%"} width={"100%"}></img>
           </GeographyMosaic1>
 
-          <GeographyMosaic2 className={"mosaic"}>
+          <GeographyMosaic2 className={"selector"}>
             <img
               src={Icon2}
               alt=""
@@ -149,7 +151,7 @@ const Geography = () => {
             ></img>
           </GeographyMosaic2>
 
-          <GeographyMosaic3 className={"mosaic"}>
+          <GeographyMosaic3 className={"selector"}>
             <img
               src={Icon14}
               alt=""
@@ -172,6 +174,15 @@ const Geography = () => {
                       prayers and offerings made to many different gods or
                       deities. Notice the sophisticated dress and adornment of
                       these figures.
+                    </div>
+                    <div
+                      style={{
+                        margin: "20px 40px 0px 50px",
+                        width: "70%",
+                        fontSize: "1.5rem",
+                      }}
+                    >
+                      Click on (show 2 arrows symbol) on 3D models to make fullscreen.
                     </div>
 
                     <GeographyStatues>
@@ -276,7 +287,7 @@ const Geography = () => {
             ></img>
           </GeographyMosaic3>
 
-          <GeographyMosaic4 className={"mosaic"}>
+          <GeographyMosaic4 className={"selector"}>
             <img
               src={Icon6}
               alt=""
@@ -293,7 +304,7 @@ const Geography = () => {
                       ></img>
                     </GeographyEntryImg>
                     <GeographyEntryText style={{ fontSize: "1.5rem" }}>
-                      Mitla, another capital of the early Zapotec civilization,
+                      Mitla, a capital of the early Zapotec civilization,
                       is known for the geometric designs covering many of its
                       buildings. These details inspired traditional Zapotec
                       weaving designs. Built about 1,600 years ago, Mitla was an
@@ -317,7 +328,7 @@ const Geography = () => {
             ></img>
           </GeographyMosaic4>
 
-          <GeographyMosaic5 className={"mosaic"}>
+          <GeographyMosaic5 className={"selector"}>
             <img
               src={Icon7}
               alt=""
@@ -356,7 +367,7 @@ const Geography = () => {
             ></img>
           </GeographyMosaic5>
 
-          <GeographyMosaic6 className={"mosaic"}>
+          <GeographyMosaic6 className={"selector"}>
             <img
               src={Icon1}
               alt=""
@@ -409,7 +420,7 @@ const Geography = () => {
             <img src={Color4} alt="" height={"100%"} width={"100%"}></img>
           </GeographyMosaic8>
 
-          <GeographyMosaic9 className={"mosaic"}>
+          <GeographyMosaic9 className={"selector"}>
             <img
               src={Icon13}
               alt=""
@@ -450,7 +461,7 @@ const Geography = () => {
             ></img>
           </GeographyMosaic9>
 
-          <GeographyMosaic10 className={"mosaic"}>
+          <GeographyMosaic10 className={"selector"}>
             <img
               src={Icon3}
               alt=""
@@ -461,14 +472,14 @@ const Geography = () => {
               onClick={() => {
                 setContent(
                   <GeographyEntry>
-                    <GeographyEntryImg height={height}>
+                    <GeographyEntryImg height={height} style={{width: "250%", overflow:"visible"}}>
                       <img
                         src={Icon3}
                         alt=""
-                        style={{ width: "100%", marginTop: "100px" }}
+                        style={{marginLeft:"-65%", width: "150%", height: "150%", overflow:"visible"}}
                       ></img>
                     </GeographyEntryImg>
-                    <GeographyEntryText style={{ fontSize: "1.5rem" }}>
+                    <GeographyEntryText style={{marginRight:"16%", fontSize: "1.5rem", width: "60%", marginTop:"0" }}>
                       Monte Albán was the most important center of the Zapotec
                       civilization politically, economically, and culturally.
                       One of the oldest Mesoamerican cities, it was inhabited
@@ -478,9 +489,10 @@ const Geography = () => {
                     </GeographyEntryText>
                     <GeographyEntryDescription
                       style={{
-                        marginLeft: "300px",
-                        marginTop: "-20px",
+                        marginLeft: "24%",
+                        marginTop: "1%",
                         fontSize: "1rem",
+                        width:"100%"
                       }}
                     >
                       Monte Albán, Oaxaca, Mexico
@@ -493,7 +505,7 @@ const Geography = () => {
             ></img>
           </GeographyMosaic10>
 
-          <GeographyMosaic11 className={"mosaic"}>
+          <GeographyMosaic11 className={"selector"}>
             <img
               src={Icon4}
               alt=""
@@ -502,14 +514,15 @@ const Geography = () => {
               onClick={() => {
                 setContent(
                   <GeographyEntry wide={true}>
-                    <GeographyEntryImg height={height} wide={true}>
+                    <GeographyEntryImg height={height} wide={true} style={{marginLeft:"3rem"}}>
                       <img
                         src={Icon4}
                         alt=""
                         style={{
-                          width: "65%",
+                          width: "90%",
+                          height:"90%",
                           float: "right",
-                          marginLeft: "300",
+                          marginLeft: "3rem",
                         }}
                       ></img>
                       <GeographyEntryDescription
@@ -531,7 +544,7 @@ const Geography = () => {
             ></img>
           </GeographyMosaic11>
 
-          <GeographyMosaic12 className={"mosaic"}>
+          <GeographyMosaic12 className={"selector"}>
             <img
               src={Icon12}
               alt=""
@@ -553,7 +566,7 @@ const Geography = () => {
                       the central diamond and circular medallion, is still
                       debated and remains a bit of a mystery. The central
                       diamond was a prominent design on ancient Zapotec
-                      architecture, and is still used on Saltillo sarapes. The
+                      architecture, and is still used on Saltillo sarapes. <br/><br/>The
                       Zapotec civilization is among the oldest in Mexico, and it
                       was one of the most sophisticated in early Mesoamerica.
                       For more than 2,500 years, the Zapotecs have lived in
@@ -563,11 +576,11 @@ const Geography = () => {
                       skills are evidenced in their two ancient capital cities,
                       Mitla and Monte Albán, and related irrigation systems.
                       They also developed hieroglyphic writing, mathematics, and
-                      a calendar.The Zapotec town of Teotitlán del Valle,
+                      a calendar.<br/><br/>The Zapotec town of Teotitlán del Valle,
                       Oaxaca, remains one of the most important weaving centers
                       in Mexico. About 80 percent of the population of 6,000 are
                       involved in some aspect of the weaving tradition, and most
-                      people still earn their living as weavers. With nearly a
+                      people still earn their living as weavers.<br/><br/>With nearly a
                       million members, today Zapotecs are the third-largest
                       Indigenous group in Mexico. The majority live in their
                       ancestral homeland in the state of Oaxaca, but there are
@@ -588,7 +601,7 @@ const Geography = () => {
           <GeographyMosaic14 className={"mosaic"}>
             <img src={Color5} alt="" height={"100%"} width={"100%"}></img>
           </GeographyMosaic14>
-          <GeographyMosaic15 className={"mosaic"}>
+          <GeographyMosaic15 className={"selector"}>
             <img
               src={Icon5}
               height={"100%"}
@@ -625,7 +638,7 @@ const Geography = () => {
               }}
             ></img>
           </GeographyMosaic15>
-          <GeographyMosaic16 className={"mosaic"}>
+          <GeographyMosaic16 className={"selector"}>
             <img
               src={Icon8}
               alt=""
@@ -641,20 +654,21 @@ const Geography = () => {
                         style={{ maxWidth: "70%", float: "right" }}
                       ></img>
                     </GeographyEntryImg>
-                    <GeographyEntryText style={{ fontSize: "1rem" }}>
-                      Textile fragment with indigo design, c. 1250–1500 CE Casas
-                      Grandes, northern Sierra province, Río Chico region,
-                      Chihuahua, Mexico ASM 22551
+                    <GeographyEntryText style={{ fontSize: "1.5rem" }}>
+                      This textile fragment from Chihuahua, Mexico, points to the Indigenous
+                      roots of the diamond designs in Satillo sarapes. This rare archaeological
+                      weaving is currently on exhibit in ASM's <i>Woven Through Time</i> exhibit
                     </GeographyEntryText>
                     <GeographyEntryDescription
                       style={{
-                        marginLeft: "400px",
-                        marginTop: "-50px",
+                        marginLeft: "7.5rem",
+                        marginTop: "-19rem",
                         fontSize: "1rem",
                       }}
                     >
-                      Mitla, Oaxaca, Mexico
-                      <br /> Alana Coghlan, photographer, 2013
+                      Textile fragment with indigo design, c. 1250–1500 CE Casas
+                      Grandes, northern Sierra province,<br/> Río Chico region,
+                      Chihuahua, Mexico 22551
                     </GeographyEntryDescription>
                   </GeographyEntry>
                 );
@@ -669,7 +683,12 @@ const Geography = () => {
         <br />
         <br />
         <div style={{ padding: "1rem", margin: "1.5rem" }}>
-          <h1 style={{ fontSize: "2.5rem" }}> History and Geography</h1>
+          <h1 style={{ fontSize: "2.5rem" }}> History and Geography
+            <React.Fragment>
+			        <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="7wIQR-HrYqQ" onClose={() => setOpen(false)} />
+			          <button className="btn-primary" style={{marginLeft:"1rem", position: "relative", top: "-0.5rem", height:"2rem", fontSize:'1.2rem'}} onClick={()=> setOpen(true)}>Listen to Curator</button>
+		        </React.Fragment>
+          </h1>
           <HeaderText style={{ fontSize: "1.5rem", fontFamily: "" }}>
             The sarape has been woven in many places throughout Mexico, but is
             primarily associated with the town of Saltillo, in the state of

@@ -77,18 +77,18 @@ const Services = () => {
                         marginTop: "1rem",
                         fontSize: "1rem",
                         color: "white",
-                        marginLeft: "10rem",
+                        marginLeft: "1rem",
                       }}
                     >
                       Naturally dyed. Dyes colors made from tree moss, black
-                      sapote, indigo, marush, and cochineal.<br></br>
+                      sapote, indigo, <i>marush</i>, and cochineal.<br></br>
                       AT-2020-16-2
                     </p>
                   </div>
                   <div
                     style={{ height: "80%", width: "60%", alignItems: "right" }}
                   >
-                    <div style={{ width: "85%", alignItems: "right" }}>
+                    <div style={{ width: "100%", alignItems: "right" }}>
                       <img
                         src={Icon4}
                         style={{ width: "75%" }}
@@ -117,7 +117,7 @@ const Services = () => {
                         marginTop: "3rem",
                         fontSize: "1rem",
                         color: "white",
-                        marginLeft: "15rem",
+                        marginLeft: "1rem",
                       }}
                     >
                       Naturally dyed. Dyes colors made from tree moss, indigo,
@@ -128,7 +128,7 @@ const Services = () => {
                   <div
                     style={{ height: "80%", width: "80%", alignItems: "right" }}
                   >
-                    <div style={{ width: "85%", alignItems: "right" }}>
+                    <div style={{ width: "100%", alignItems: "right" }}>
                       <img
                         src={Icon5}
                         style={{ width: "75%" }}
@@ -150,24 +150,24 @@ const Services = () => {
                 <div className="content" style={{ alignItems: "right" }}>
                   <div
                     className="text"
-                    style={{ width: "100%", marginLeft: "1rem" }}
+                    style={{ width: "100%", marginLeft: "6rem" }}
                   >
                     <p
                       style={{
                         marginTop: "4rem",
                         fontSize: "1rem",
                         color: "white",
-                        marginLeft: "20rem",
+                        marginLeft: "1rem",
                       }}
                     >
                       Naturally dyed. Dyes colors made from indigo.<br></br>
                       AT-2020-16-4
                     </p>
                   </div>
-                  <div style={{ width: "70%", alignItems: "right", overflow:"hidden"}}>
+                  <div style={{marginLeft:"6rem", width: "115%", alignItems: "right", overflow:"hidden"}}>
                       <img
                         src={Icon6}
-                        style={{ width: "60%" }}
+                        style={{ width: "70%" }}
                         alt="Sarape"
                       />
                     </div>
@@ -195,7 +195,7 @@ const Services = () => {
                         marginTop: "1rem",
                         fontSize: "1rem",
                         color: "white",
-                        marginLeft: "15rem",
+                        marginLeft: "1rem",
                       }}
                     >
                       Naturally dyed. Dyes colors made from indigo.<br></br>
@@ -205,7 +205,7 @@ const Services = () => {
                     <div style={{ width: "70%", alignItems: "right", overflow:"hidden"}}>
                       <img
                         src={Icon7}
-                        style={{ width: "60%" }}
+                        style={{ width: "75%" }}
                         alt="Sarape"
                       />
                   </div>
@@ -231,7 +231,7 @@ const Services = () => {
                         marginTop: "1rem",
                         fontSize: "1rem",
                         color: "white",
-                        marginLeft: "15rem",
+                        marginLeft: "1rem",
                       }}
                     >
                       Naturally dyed. Dyes colors made from tree moss, Mexican
@@ -241,7 +241,7 @@ const Services = () => {
                   <div style={{ width: "70%", alignItems: "right", overflow:"hidden"}}>
                       <img
                         src={Icon8}
-                        style={{ width: "60%" }}
+                        style={{ width: "75%" }}
                         alt="Sarape"
                       />
                   </div>
@@ -266,7 +266,7 @@ const Services = () => {
                         marginTop: "1rem",
                         fontSize: "1rem",
                         color: "white",
-                        marginLeft: "15rem",
+                        marginLeft: "1rem",
                       }}
                     >
                       Naturally dyed. Dyes colors made from Mexican tarragon,
@@ -277,7 +277,7 @@ const Services = () => {
                   <div style={{ width: "70%", alignItems: "right", overflow:"hidden"}}>
                       <img
                         src={Icon9}
-                        style={{ width: "60%" }}
+                        style={{ width: "75%" }}
                         alt="Sarape"
                       />
                   </div>

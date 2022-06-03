@@ -114,7 +114,7 @@ const FamilyPage = () => {
           width={width - (width % 17)}
           style={{ marginright:0, marginTop:"1.5rem" }}
         >
-          <FamilyMosaic1 className="mosaic">
+          <FamilyMosaic1 className="selector">
             <img
               src={Icon1}
               style={{ height: "100%", width: "100%" }}
@@ -186,7 +186,7 @@ const FamilyPage = () => {
           <FamilyMosaic2 className="mosaic">
             <img src={Color1} alt="" height={"100%"} width={"100%"}></img>
           </FamilyMosaic2>
-          <FamilyMosaic3 className="mosaic">
+          <FamilyMosaic3 className="selector">
             <img
               src={Icon6}
               alt=""
@@ -274,7 +274,7 @@ const FamilyPage = () => {
             <img src={Color4} alt="" height={"100%"} width={"100%"}></img>
           </FamilyMosaic4>
 
-          <FamilyMosaic5 className="mosaic">
+          <FamilyMosaic5 className="selector">
             <img
               src={Icon4}
               height={"100%"}
@@ -355,7 +355,7 @@ const FamilyPage = () => {
             <img src={Color8} alt="" height={"100%"} width={"100%"}></img>
           </FamilyMosaic6>
 
-          <FamilyMosaic7 className="mosaic">
+          <FamilyMosaic7 className="selector">
             <img
               src={Icon2}
               height={"100%"}
@@ -367,6 +367,31 @@ const FamilyPage = () => {
                     <div className="row1">
                       {/* <h2>John Doe</h2> */}
                       <div>
+                      <div
+                          style={{
+                            fontSize: "1.5rem",
+                            fontFamily: "Lucida",
+                            color: "#fff",
+                            paddingTop: "2rem",
+                            paddingLeft: "2rem",
+                            marginRight: "3rem",
+                          }}
+                        >
+                          “The plants and trees are alive, just like us; we
+                          cannot hurt them nor cut them for any reason. We are
+                          supposed to only take what we need from nature.”
+                          <br></br>
+                          <br></br>
+                          <p
+                            style={{
+                              paddingLeft: "32rem",
+                              fontFamily: "Lucida",
+                              fontSize: "1.5rem",
+                            }}
+                          >
+                            Amado Gutiérrez
+                          </p>
+                        </div>
                         <div
                           style={{
                             marginLeft: "2rem",
@@ -418,31 +443,6 @@ const FamilyPage = () => {
                           Baskets of dye materials <br></br>Joe Coca,
                           photographer, 2019
                         </div>
-                        <div
-                          style={{
-                            fontSize: "1.5rem",
-                            fontFamily: "Lucida",
-                            color: "#fff",
-                            paddingTop: "2rem",
-                            paddingLeft: "2rem",
-                            marginRight: "3rem",
-                          }}
-                        >
-                          “The plants and trees are alive, just like us; we
-                          cannot hurt them nor cut them for any reason. We are
-                          supposed to only take what we need from nature.”
-                          <br></br>
-                          <br></br>
-                          <p
-                            style={{
-                              paddingLeft: "32rem",
-                              fontFamily: "Lucida",
-                              fontSize: "1.5rem",
-                            }}
-                          >
-                            Amado Gutiérrez
-                          </p>
-                        </div>
                       </div>
                     </div>
                     <div>
@@ -467,7 +467,7 @@ const FamilyPage = () => {
 
           <FamilyMosaic8 className="mosaic"></FamilyMosaic8>
 
-          <FamilyMosaic9 className="mosaic">
+          <FamilyMosaic9 className="selector">
             <img
               src={Icon7}
               alt=""
@@ -575,7 +575,7 @@ const FamilyPage = () => {
             <img src={Color1} alt="" height={"100%"} width={"100%"}></img>
           </FamilyMosaic10>
 
-          <FamilyMosaic11 className="mosaic">
+          <FamilyMosaic11 className="selector">
             <img
               src={Icon5}
               alt=""
@@ -679,32 +679,6 @@ const FamilyPage = () => {
                       </div>
                       <br></br>
                     <div className="row1" style={{ marginLeft: "0rem" }}></div>
-
-                    <div className="quoteDiv">
-                      <p
-                        className="quote"
-                        style={{
-                          fontFamily: "Lucida",
-                          fontSize: "1.5rem",
-                        }}
-                      >
-                        “The greater being has given us the plants for food,
-                        dyes, and for medicine. Because they connect us to
-                        Mother Earth, they are a deep part of our body and our
-                        wellbeing. The wisdom to use them was inherited from our
-                        ancestors.”
-                      </p>
-                      <p
-                        className="author"
-                        style={{
-                          fontFamily: "Lucida",
-                          fontSize: "1.5rem",
-                        }}
-                      >
-                        {" "}
-                        Andrea Contreras
-                      </p>
-                    </div>
                   </div>
                 );
                 openModal();
@@ -716,7 +690,7 @@ const FamilyPage = () => {
             <img src={Color11} alt="" height={"100%"} width={"100%"}></img>
           </FamilyMosaic12>
 
-          <FamilyMosaic13 className="mosaic">
+          <FamilyMosaic13 className="selector">
             <img
               src={Icon3}
               alt=""
@@ -733,6 +707,30 @@ const FamilyPage = () => {
                         marginTop: "1rem",
                       }}
                     >
+                      <div
+                        style={{
+                          fontFamily: "Lucida",
+                          marginTop:"1.5rem"
+                        }}
+                      >
+                        Preservation, education, and sustainability are all
+                        extremely important. They are my studio’s foundation for
+                        the future.
+                        <br />
+                        <br />
+                        <div>
+                          <p
+                            style={{
+                              paddingLeft: "25rem",
+                              fontFamily: "Lucida",
+                              fontSize: "1.5rem",
+                            }}
+                          >
+                            Porfirio Gutierrez
+                          </p>
+                          <br></br>
+                        </div>
+                      </div>
                       <div
                         style={{
                           fontFamily: "",
@@ -767,30 +765,6 @@ const FamilyPage = () => {
                         referred to as both Mexican mint marigold and Mexican
                         tarragon. Keith Recker, photographer, 2018
                       </div>
-                      <div
-                        style={{
-                          fontFamily: "Lucida",
-                          marginTop:"1.5rem"
-                        }}
-                      >
-                        Preservation, education, and sustainability are all
-                        extremely important. They are my studio’s foundation for
-                        the future.
-                        <br />
-                        <br />
-                        <div>
-                          <p
-                            style={{
-                              paddingLeft: "25rem",
-                              fontFamily: "Lucida",
-                              fontSize: "1.5rem",
-                            }}
-                          >
-                            Porfirio Gutierrez
-                          </p>
-                          <br></br>
-                        </div>
-                      </div>
                     </div>
                     <img
                       src={Icon3}
@@ -818,7 +792,7 @@ const FamilyPage = () => {
             <img src={Color4} alt="" height={"100%"} width={"100%"}></img>
           </FamilyMosaic15>
 
-          <FamilyMosaic16 className="mosaic">
+          <FamilyMosaic16 className="selector">
             <img
               src={Icon8}
               alt=""
@@ -827,13 +801,13 @@ const FamilyPage = () => {
               onClick={() => {
                 setContent(
                   <div className="content1">
-                    <div className="row" style={{ margin: "1rem" }}>
+                    <div className="row">
                       <div className="column">
                         <p
                           style={{
                             fontFamily: "",
                             marginRight: "7rem",
-                            fontSize: "1.5rem",
+                            fontSize: "1.25rem",
                             marginLeft: "2rem",
                           }}
                         >
@@ -847,6 +821,42 @@ const FamilyPage = () => {
                           married, they had to figure it all out themselves.
                           <br />
                           <br />
+                        </p>
+                        <div
+                        style={{
+                          marginLeft: "2rem",
+                        }}
+                      >
+                        <img
+                          src={Icon5}
+                          alt="Porfirio's Parents"
+                          style={{ width: "70%"}}
+                        />
+                        </div>
+                        <p  className="column"
+                          style={{
+                            fontFamily: "",
+                            fontSize: "1rem",
+                            marginRight: "2rem",
+                            marginLeft: "1.5rem",
+                            width:"110%"
+                          }}
+                        >
+                          Porfirio’s parents, Amado Gutiérrez and Andrea
+                          Contreras.<br></br> Javier Lazo Gutiérrez,
+                          photographer, 2019
+                        </p>
+                      </div>
+                      <div className="column2">
+                        <p
+                          style={{
+                            fontFamily: "",
+                            marginRight: "7rem",
+                            fontSize: "1.25rem",
+                            marginLeft: "2rem",
+                            marginTop:".5rem"
+                          }}
+                        >
                           My parents have always worked collaboratively to
                           create each piece—from cleaning wool, spinning it,
                           collecting the plants for dyeing, dyeing the wool, to
@@ -856,75 +866,36 @@ const FamilyPage = () => {
                           This is how they raised eleven kids. They always say
                           that they are blessed that their humble work as
                           artisans enabled them to raise their kids.
+                          <br />
+                          <br />
                         </p>
-                        <p
+                        <div
+                        style={{
+                          marginLeft: "2rem",
+                        }}
+                      >
+                        <img
+                          src={Icon8}
+                          alt="Porfirio's Family"
+                          style={{ width: "70%" }}
+                        />
+                        </div>
+                        <p  className="column2"
                           style={{
                             fontFamily: "",
                             fontSize: "1rem",
                             marginRight: "2rem",
-                            marginLeft: "20rem",
-                            marginTop: "2rem",
+                            marginLeft: "2rem",
+                            marginTop:".6rem"
                           }}
                         >
-                          Porfirio’s parents, Amado Gutiérrez and Andrea
-                          Contreras.<br></br> Javier Lazo Gutiérrez,
-                          photographer, 2019
-                          <br></br>
-                          <br></br>
                           The Gutiérrez family <br></br>Javier Lazo Gutiérrez,
                           photographer 2015
                         </p>
                       </div>
-                      <div
-                        className="column2"
-                        style={{
-                          marginTop: "2rem",
-                          marginLeft: "0rem",
-                          marginBottom: "3rem",
-                        }}
-                      >
-                        <img
-                          src={Icon5}
-                          alt="Developer"
-                          style={{ width: "70%" }}
-                        />
                       </div>
                       <br></br>
-                      <div className="column2" style={{ marginLeft: "0rem" }}>
-                        <img
-                          src={Icon8}
-                          alt="Developer"
-                          style={{ width: "70%" }}
-                        />
-                      </div>
-                    </div>
                     <div className="row1" style={{ marginLeft: "0rem" }}></div>
-
-                    <div className="quoteDiv">
-                      <p
-                        className="quote"
-                        style={{
-                          fontFamily: "Lucida",
-                          fontSize: "1.5rem",
-                        }}
-                      >
-                        “The greater being has given us the plants for food,
-                        dyes, and for medicine. Because they connect us to
-                        Mother Earth, they are a deep part of our body and our
-                        wellbeing. The wisdom to use them was inherited from our
-                        ancestors.”
-                      </p>
-                      <p
-                        className="author"
-                        style={{
-                          fontFamily: "Lucida",
-                          fontSize: "1.5rem",
-                        }}
-                      >
-                        {" "}
-                        Andrea Contreras
-                      </p>
-                    </div>
                   </div>
                 );
                 openModal();
@@ -936,7 +907,7 @@ const FamilyPage = () => {
             <img src={Color1} alt="" height={"100%"} width={"100%"}></img>
           </FamilyMosaic17>
 
-          <FamilyMosaic18 className="mosaic">
+          <FamilyMosaic18 className="selector">
             <img
               src={Icon9}
               alt=""

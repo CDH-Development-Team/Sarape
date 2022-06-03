@@ -2,7 +2,7 @@
   "name": "scrolling",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://threesixty.aws.coh.arizona.edu/sarape",
+  "homepage": "https://sarape.aws.coh.arizona.edu/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.13.0",
     "@testing-library/react": "^11.2.7",
@@ -16,7 +16,7 @@
     "react-modal": "^3.14.3",
     "react-modal-video": "^1.2.8",
     "react-photo-gallery": "^8.0.0",
-    "react-router-dom": "^5.2.0",
+    "react-router-dom": "^5.3.1",
     "react-scripts": "^4.0.3",
     "react-scroll": "^1.8.2",
     "react-spring": "^9.2.4",

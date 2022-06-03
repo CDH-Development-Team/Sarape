@@ -52,7 +52,6 @@ const [vidOpen, setVidOpen] = useState(false);
               textAlign: "left",
               fontFamily: "",
               fontSize: "1.5rem",
-              marginLeft: "1rem",
             }}
           >
             Master Textile Artist Porfirio Gutiérrez, Exhibit Co-curator

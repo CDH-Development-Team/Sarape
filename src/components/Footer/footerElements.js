@@ -62,7 +62,7 @@ export const FooterLink = styled(Link)`
   text-decoration: none;
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
-
+  justify-content: center;
   &:hover {
     color: #490033;
     transition: 0.3s ease-out;

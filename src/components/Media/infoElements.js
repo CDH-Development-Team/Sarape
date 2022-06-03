@@ -12,43 +12,26 @@ export const InfoContainer = styled.div`
 
 export const InfoWrapper = styled.div`
   z-index: 1;
-  margin-left: 2.5rem;
   width: 100%;
-
-  justify-content: center;
 `;
 
 export const InfoRow = styled.div`
   display: grid;
   grid-auto-column: minmax(auto, 1fr);
-  align-items: center;
-  grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`};
-
-  @media screen and (max-width: 768px) {
-    grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
-  }
 `;
 
 export const Column1 = styled.div`
-  margin-bottom: 0px;
-  padding: 0 15px;
-  grid-area: col1;
-  height: 100%;
 `;
 
 export const Column2 = styled.div`
-  margin-bottom: 0px;
-  padding: 0 15px;
-  grid-area: col2;
-  height: 100%;
+  float: left;
+  width: 60%;
 `;
 
 export const TextWrapper = styled.div`
   max-width: 500px;
   padding-top: 0;
-  padding-bottom: 60px;
+  padding-bottom: 1rem;
 `;
 
 export const TopLine = styled.p`
@@ -58,11 +41,10 @@ export const TopLine = styled.p`
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  margin-bottom: 16px;
 `;
 
 export const Heading = styled.h1`
-  margin-bottom: 24px;
+  margin-bottom: -35px;
   font-size: 2.5rem;
   line-height: 1.1;
   font-weight: 600;
@@ -74,19 +56,15 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  margin-bottom: 35px;
   font-size: 1.5rem;
   font-weight: normal;
-  font-family: , sans-serif;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
 
 export const Subtitle1 = styled.p`
   max-width: 440px;
-  margin-bottom: 35px;
   font-size: 1.5rem;
   line-height: 24px;
-  font-family: , sans-serif;
   padding: 40px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
@@ -99,10 +77,10 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 555px;
   height: 100%;
+  color: fff;
 `;
 
 export const Img = styled.img`
   width: 100%;
-  margin: 0 0 10px 0;
   padding-right: 0;
 `;
