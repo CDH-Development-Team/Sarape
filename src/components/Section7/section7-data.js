@@ -81,7 +81,7 @@ export const sevenObjTwo = {
   description:
     "Mayo Indians (also called Yoreme) live primarily along the Río Mayo and Río Fuerte in the Mexican states of Sonora and Sinaloa. Since Spanish Colonial times, they may have been more fully integrated into mainstream Mexican culture than the Rarámuri were. Nevertheless, Mayos still maintain distinct religious practices along with their own language and craft traditions. Several villages are known for their blanket-weaving expertise.",
   description2:
-    "Mayo weavers are almost exclusively women. They use horizontal looms to produce two broad categories of blankets: plain-bandedand and cobijas, which are mainly woven for the community’s use, and more decorative sarapes, which are primarily woven for trade. In Sinaloa’s Mayo community, a small number of men weave simple blankets on treadle looms.",
+    "Mayo weavers are almost exclusively women. They use horizontal looms to produce two broad categories of blankets: plain-banded and cobijas, which are mainly woven for the community’s use, and more decorative sarapes, which are primarily woven for trade. In Sinaloa’s Mayo community, a small number of men weave simple blankets on treadle looms.",
   description3:
     "Since at least the late 1800s, Mayo weavers have woven their own version of sarapes with designs clearly connected to Saltillo. These would have been popular items to trade with Mexican residents of the region, including those in the nearby colonial town of Alamos. In the 1940s, this formerly wealthy mining community attracted additional potential craft customers when American tourists “discovered” its charm and created an expatriate community there.",
   buttonLabel: "",

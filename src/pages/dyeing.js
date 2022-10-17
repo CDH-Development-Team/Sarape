@@ -134,6 +134,7 @@ const DyeingPage = () => {
                             marginTop: "5rem",
                             fontSize: "1.5rem",
                             fontFamily: "",
+                            zIndex: 3
                           }}
                         >
                           Blue dye hues are made from the indigo plant (
@@ -177,12 +178,13 @@ const DyeingPage = () => {
               }}
             ></img>
           </DyeMosaic1>
-          <DyeMosaic2 className="selector">
+          <DyeMosaic2 className="selector" style={{overflow: 'visible'}}>
             <img
               src={Icon2}
               alt=""
               height={"100%"}
               width={"100%"}
+              style={{overflow: 'visible'}}
               onClick={() => {
                 setContent(
                   <div className="content">
@@ -194,6 +196,7 @@ const DyeingPage = () => {
                             marginTop: "7rem",
                             fontSize: "1.5rem",
                             fontFamily: "Lucida",
+                            zIndex: 3
                           }}
                         >
                           The dye plants that come from the earth are the soul
@@ -255,6 +258,7 @@ const DyeingPage = () => {
                             marginTop: "2rem",
                             fontSize: "1.5rem",
                             fontFamily: "",
+                            zIndex: 3
                           }}
                         >
                           Drying yarn.<br></br> Soraya Matos, photographer, 2018
@@ -287,7 +291,7 @@ const DyeingPage = () => {
             <img
               src={Icon3}
               alt=""
-              style={{ width: "100%", marginTop: "4.2rem" }}
+              style={{height:"100%", width: "120%", marginTop: "0rem", zIndex: 3}}
               onClick={() => {
                 setContent(
                   <div className="content">
@@ -298,6 +302,7 @@ const DyeingPage = () => {
                             marginTop: "6rem",
                             fontSize: "1.5rem",
                             fontFamily: "Lucida",
+                            zIndex: 3
                           }}
                         >
                           “Through my practice of working with natural dyes, my
@@ -333,6 +338,7 @@ const DyeingPage = () => {
                           style={{
                             width: "80%",
                             marginTop: "5rem",
+                            zIndex: 3
                           }}
                         />
                       </div>
@@ -352,7 +358,7 @@ const DyeingPage = () => {
               src={Icon9}
               height={"100%"}
               alt=""
-              width={"100%"}
+              width={"115%"}
               onClick={() => {
                 setContent(
                   <div className="content1">
@@ -362,7 +368,8 @@ const DyeingPage = () => {
                           style={{
                             fontSize: "1.25rem",
                             fontFamily: "",
-                            marginTop: "2rem"
+                            marginTop: "2rem",
+                            zIndex:3
                           }}
                         >
                           I inherited the deep artistic traditions and our rich
@@ -377,7 +384,7 @@ const DyeingPage = () => {
                           that one will follow that path. I do not work with
                           natural dyes simply because I was born into the
                           tradition, or because there is money to be made, or
-                          because it is a trend.I work with natural dyes because
+                          because it is a trend. I with natural dyes because
                           I discovered my gift and calling within our
                           traditional practice and developed a profound
                           connection with Mother Earth.
@@ -422,12 +429,13 @@ const DyeingPage = () => {
           <DyeMosaic9 className="mosaic">
             <img src={Color11} alt="" height={"100%"} width={"100%"}></img>
           </DyeMosaic9>
-          <DyeMosaic10 className="selector">
+          <DyeMosaic10 className="selector" style={{overflow: "visible", zIndex:2}}>
             <img
               src={Icon7}
               alt=""
               height={"100%"}
-              width={"100%"}
+              width={"90%"}
+              style={{marginLeft: "6.5rem", overflow: 'visible'}}
               onClick={() => {
                 setContent(
                   <div className="content">
@@ -435,8 +443,7 @@ const DyeingPage = () => {
                       <div className="column2">
                         <div
                           style={{
-                            marginLeft: "2rem",
-                            marginTop: "7rem",
+                            marginLeft: "1rem",
                             fontSize: "1.5rem",
                             fontFamily: "",
                           }}
@@ -466,7 +473,6 @@ const DyeingPage = () => {
                             fontSize: "1.5rem",
                             marginLeft: "15rem",
                             marginRight: "3rem",
-                            marginTop: "2rem",
                             fontFamily: "",
                             color: "#fff",
                           }}
@@ -483,7 +489,7 @@ const DyeingPage = () => {
                         <img
                           src={Icon7}
                           alt="Developer"
-                          style={{ width: "90%", marginTop: "10rem" }}
+                          style={{ width: "90%", marginLeft: "2rem" }}
                         />
                       </div>
                     </div>
@@ -493,8 +499,8 @@ const DyeingPage = () => {
               }}
             ></img>
           </DyeMosaic10>
-          <DyeMosaic11 className="mosaic">
-            <img src={Color1} alt="" height={"100%"} width={"100%"}></img>
+          <DyeMosaic11 className="mosaic" style={{overflow: 'visible'}}>
+            <img src={Color1} alt="" height={"100%"} width={"200%"}></img>
           </DyeMosaic11>
 
           <DyeMosaic12 className="selector">
@@ -587,6 +593,7 @@ const DyeingPage = () => {
               height={"100%"}
               alt=""
               width={"100%"}
+              style={{marginLeft: "0", marginTop: "0", overflow: 'hidden'}}
               onClick={() => {
                 setContent(
                   <div className="content">
@@ -599,6 +606,7 @@ const DyeingPage = () => {
                             marginTop: "2rem",
                             fontSize: "1.25rem",
                             fontFamily: "",
+                            zIndex: 3
                           }}
                         >
                           The life cycles of the cochineal insect and the pad of
@@ -655,23 +663,25 @@ const DyeingPage = () => {
               }}
             ></img>
           </DyeMosaic14>
-          <DyeMosaic15 className="mosaic">
+          <DyeMosaic15 className="mosaic" style={{overflow: 'visible'}}>
             <img
               src={Color4}
               alt=""
               height={"100%"}
-              width={"100%"}
+              width={"200%"}
+              style={{marginLeft: "0rem"}}
               onClick={() => {
                 setContent();
                 openModal();
               }}
             ></img>
           </DyeMosaic15>
-          <DyeMosaic16 className="selector">
+          <DyeMosaic16 className="selector" style={{overflow: 'visible'}}>
             <img
               src={Icon8}
-              height={"100%"}
-              width={"100%"}
+              height={"131%"}
+              width={"131%"}
+              style={{marginLeft: "0rem", overflow: 'visible'}}
               alt=""
               onClick={() => {
                 setContent(
@@ -685,6 +695,7 @@ const DyeingPage = () => {
                             marginTop: "2rem",
                             fontSize: "1.5rem",
                             fontFamily: "",
+                            zIndex: 3
                           }}
                         >
                           Using a mano and metate, cochineal is crushed into a
@@ -707,15 +718,16 @@ const DyeingPage = () => {
               }}
             ></img>
           </DyeMosaic16>
-          <DyeMosaic17 className="mosaic">
-            <img src={Icon21} alt="" height={"100%"} width={"100%"}></img>
+          <DyeMosaic17 className="mosaic" style={{overflow: 'visible', zIndex: 3}}>
+            <img src={Icon21} alt="" height={"100%"} width={"200%"}></img>
           </DyeMosaic17>
           <DyeMosaic18 className="selector">
             <img
               src={Icon5}
               alt=""
-              height={"100%"}
-              width={"100%"}
+              height={"85%"}
+              width={"85%"}
+              style={{marginLeft: "3rem"}}
               onClick={() => {
                 setContent(
                   <div className="content">
@@ -728,6 +740,7 @@ const DyeingPage = () => {
                               marginTop: "2rem",
                               fontSize: "1.25rem",
                               fontFamily: "",
+                              zIndex: 3
                             }}
                           >
                             In the 1960s, our weaving tradition underwent a
@@ -813,15 +826,18 @@ const DyeingPage = () => {
               }
             ></img>
           </DyeMosaic18>
-          <DyeMosaic19 className="mosaic">
-            <img src={Color8} alt="" height={"100%"} width={"100%"}></img>
+          <DyeMosaic19 className="mosaic" style={{overflow: 'hidden', zIndex: -1}}>
+            <img src={Color1} alt="" 
+                 height={"300%"} width={"100%"}
+                 style={{marginBottom: "-3rem"}}></img>
           </DyeMosaic19>
           <DyeMosaic20 className="selector">
             <img
               src={Icon11}
               alt=""
-              height={"100%"}
-              width={"100%"}
+              height={"85%"}
+              width={"85%"}
+              style={{marginLeft: "3rem", marginTop: "2.5rem"}}
               onClick={() => {
                 setContent(
                   <div>
@@ -834,6 +850,7 @@ const DyeingPage = () => {
                             marginTop: "1.5rem",
                             fontSize: "1.5rem",
                             fontFamily: "",
+                            zIndex: 3
                           }}
                         >
                           Andrea Contreras, Porfirio’s mom, plucking tree moss

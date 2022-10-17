@@ -9,3 +9,7 @@
 .selector:hover {
     cursor: pointer;
 }
+
+.modal-content {
+    z-index: 1;
+}

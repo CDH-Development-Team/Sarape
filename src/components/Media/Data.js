@@ -20,6 +20,7 @@ export const homeObjTwo = {
   dark: true,
   primary: true,
   darkText: false,
+  download: false,
   link: "https://www.youtube.com/playlist?list=PLvpN7OLy7kLu_mG7MDLamlApQJcNX0ee4",
 };
 
@@ -37,6 +38,7 @@ export const homeObjThree = {
   dark: true,
   primary: true,
   darkText: false,
+  download: false,
   link: "https://www.youtube.com/watch?v=b-9RrN3mPcw",
 };
 
@@ -54,6 +56,7 @@ export const homeObjFour = {
   dark: true,
   primary: true,
   darkText: false,
+  download: false,
   link: "https://www.bbc.com/travel/article/20210823-the-man-preserving-endangered-colours",
 };
 
@@ -71,6 +74,7 @@ export const homeObjOne = {
   dark: true,
   primary: true,
   darkText: false,
+  download: false,
   link: "https://eliacuna.itch.io/design-your-own-sarape",
 };
 
@@ -88,7 +92,8 @@ export const homeObjFive = {
   dark: true,
   primary: true,
   darkText: false,
-  link: "https://statemuseum.arizona.edu/exhibit/wrapped-in-color-booklet",
+  download: true,
+  link: "https://statemuseum.arizona.edu/sites/default/files/Wrapped%20in%20Color%20Exhibit%20Booklet%202.pdf",
 };
 
 export const homeObjSix = {
@@ -105,5 +110,6 @@ export const homeObjSix = {
   dark: true,
   primary: true,
   darkText: false,
+  download: false,
   link: "https://porfiriogutierrez.com/",
 };

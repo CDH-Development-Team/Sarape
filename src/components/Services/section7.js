@@ -1133,7 +1133,7 @@ const Services = () => {
                               />
                               <Img
                                 border="none"
-                                style={{ width: "65%", marginLeft: "30rem", marginTop: "-50rem", overflow: "visible" }}
+                                style={{ width: "50%", marginLeft: "30rem", marginTop: "-45rem", overflow: "visible" }}
                                 src={sevenObjSeven.img2}
                                 alt=""
                               />

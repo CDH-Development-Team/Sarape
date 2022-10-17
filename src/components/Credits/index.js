@@ -1,11 +1,11 @@
 import React from 'react';
 import img from '../../images/credits.png'
 import swlogo from '../../images/SWTransparent.png'
-import thrums from '../../images/thrumsTransparent.png'
+import thrums from '../../images/IMG_0371.PNG'
 import cdhlogo from '../../images/CDH_logo_Primary.png'
 import higgins from '../../images/higgins.png'
-import med from '../../images/medTransparent.png'
-import asmlogo from '../../images/asmTransparent.png'
+import med from '../../images/IMG_0366.PNG'
+import asmlogo from '../../images/IMG_0369.PNG'
 const Credits = () =>{
     return(
         <div style={{backgroundColor:'#4a0033', color:'white'}}>
